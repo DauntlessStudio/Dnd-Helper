@@ -1,0 +1,18 @@
+Project is split into 3 panels.
+
+1st panel (vertical on the left): contains a dice roller, left clicking a dice icon adds its roll to the total, right
+clicking removes the roll. Clicking on the result clears it.
+
+2nd panel (horizontal on the right upper): the primary game panel, contents can be tabbed between. Some options are:
+- combat panel: contains a grid with tokens representing the players and enemies. Quick placement for new players an
+enemies. The panel subdivides into the primary grid and a stack of combatents in the order of initiative. Selecting a
+grid token or a combatent grid icon brings up a more detailed modal window with extra info; displaying the HP, stats, 
+attacks, conditions, force/tech points, and powers (powers will have helper options for applying damage etc.). The
+NPCs HP can be modified from the token, side panel, or detail window.
+- rules quick reference panel: contains several links to simplified reminders on the rules of traversal, combat, 
+conditions, etc.
+- equipment panel: contains a searchable list of items, both homebrewed and from the source books.
+- generators: generators for names, random events, locations, npcs etc.
+
+3rd panel (horizontal on the right lower): the notes panel. Allows for quick note taking. Ideally this would allow
+some kind of integration with ObsidianMD.

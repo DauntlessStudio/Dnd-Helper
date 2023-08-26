@@ -1,0 +1,112 @@
+[gd_scene load_steps=10 format=3 uid="uid://dtjcb347i0ti3"]
+
+[ext_resource type="PackedScene" uid="uid://bvy5hcnfgt1e8" path="res://scenes/dice_button.tscn" id="1_edu4q"]
+[ext_resource type="Texture2D" uid="uid://c2bg61jiqp3s8" path="res://assets/d6.png" id="2_5337t"]
+[ext_resource type="Texture2D" uid="uid://ff51a616g2u0" path="res://assets/d8.png" id="3_5fylg"]
+[ext_resource type="Texture2D" uid="uid://bmt11pg1hine8" path="res://assets/d10.png" id="4_23apc"]
+[ext_resource type="Texture2D" uid="uid://nfwgxymmjihw" path="res://assets/d12.png" id="5_p7jb7"]
+[ext_resource type="Texture2D" uid="uid://doeg6wfjde3an" path="res://assets/d20.png" id="6_xs6di"]
+[ext_resource type="Script" path="res://scripts/dice_result_button.gd" id="7_kg6rj"]
+[ext_resource type="Resource" uid="uid://d0hjjki7jknfu" path="res://resources/dice_tally.tres" id="8_er55a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4cgq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainPanel" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offset = 180
+
+[node name="DiceBackground" type="Panel" parent="MainPanel"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="DiceContainer" type="VBoxContainer" parent="MainPanel/DiceBackground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DiceBox" type="HFlowContainer" parent="MainPanel/DiceBackground/DiceContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="d4" parent="MainPanel/DiceBackground/DiceContainer/DiceBox" instance=ExtResource("1_edu4q")]
+layout_mode = 2
+theme_override_colors/icon_pressed_color = Color(0.223529, 0.223529, 0.223529, 1)
+theme_override_colors/icon_hover_color = Color(0.658824, 0.658824, 0.658824, 1)
+
+[node name="d6" parent="MainPanel/DiceBackground/DiceContainer/DiceBox" instance=ExtResource("1_edu4q")]
+layout_mode = 2
+icon = ExtResource("2_5337t")
+diceValue = 6
+
+[node name="d8" parent="MainPanel/DiceBackground/DiceContainer/DiceBox" instance=ExtResource("1_edu4q")]
+layout_mode = 2
+icon = ExtResource("3_5fylg")
+diceValue = 8
+
+[node name="d10" parent="MainPanel/DiceBackground/DiceContainer/DiceBox" instance=ExtResource("1_edu4q")]
+layout_mode = 2
+icon = ExtResource("4_23apc")
+diceValue = 10
+
+[node name="d12" parent="MainPanel/DiceBackground/DiceContainer/DiceBox" instance=ExtResource("1_edu4q")]
+layout_mode = 2
+icon = ExtResource("5_p7jb7")
+diceValue = 12
+
+[node name="d20" parent="MainPanel/DiceBackground/DiceContainer/DiceBox" instance=ExtResource("1_edu4q")]
+layout_mode = 2
+icon = ExtResource("6_xs6di")
+diceValue = 20
+
+[node name="DiceResultButton" type="Button" parent="MainPanel/DiceBackground/DiceContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_pressed_color = Color(0.223529, 0.223529, 0.223529, 1)
+theme_override_colors/font_hover_color = Color(0.658824, 0.658824, 0.658824, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s4cgq")
+text = "00"
+flat = true
+script = ExtResource("7_kg6rj")
+diceTally = ExtResource("8_er55a")
+
+[node name="Label" type="Label" parent="MainPanel/DiceBackground/DiceContainer/DiceResultButton"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -2.0
+offset_right = 38.0
+offset_bottom = 26.0
+grow_horizontal = 0
+
+[node name="Timer" type="Timer" parent="MainPanel/DiceBackground/DiceContainer/DiceResultButton"]
+
+[node name="VSplitContainer" type="VSplitContainer" parent="MainPanel"]
+layout_mode = 2
+split_offset = 450
+
+[node name="TabContainer" type="TabContainer" parent="MainPanel/VSplitContainer"]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="MainPanel/VSplitContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="MainPanel/DiceBackground/DiceContainer/DiceResultButton" to="MainPanel/DiceBackground/DiceContainer/DiceResultButton" method="_on_pressed"]
+[connection signal="timeout" from="MainPanel/DiceBackground/DiceContainer/DiceResultButton/Timer" to="MainPanel/DiceBackground/DiceContainer/DiceResultButton" method="_hideRecentText"]

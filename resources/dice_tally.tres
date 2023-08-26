@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DiceTally" load_steps=2 format=3 uid="uid://d0hjjki7jknfu"]
+
+[ext_resource type="Script" path="res://scripts/dice_tally.gd" id="1_un543"]
+
+[resource]
+script = ExtResource("1_un543")
+diceMap = {
+"10": [],
+"12": [],
+"20": [],
+"4": [],
+"6": [],
+"8": []
+}
