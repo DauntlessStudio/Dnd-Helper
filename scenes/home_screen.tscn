@@ -138,13 +138,9 @@ file_mode = 0
 access = 2
 filters = PackedStringArray("*.txt")
 
-[node name="SaveButton" type="Button" parent="MainPanel/VSplitContainer/VBoxContainer/TextEdit"]
-text = "Save File"
-
 [connection signal="pressed" from="MainPanel/DiceBackground/DiceContainer/DiceResultButton" to="MainPanel/DiceBackground/DiceContainer/DiceResultButton" method="_on_pressed"]
 [connection signal="timeout" from="MainPanel/DiceBackground/DiceContainer/DiceResultButton/Timer" to="MainPanel/DiceBackground/DiceContainer/DiceResultButton" method="_hideRecentText"]
 [connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer/OpenButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_open_button_pressed"]
 [connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer/SaveButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_save_button_pressed"]
 [connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer/NewButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_new_button_pressed"]
 [connection signal="file_selected" from="MainPanel/VSplitContainer/VBoxContainer/TextEdit/FileDialog" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_file_dialog_file_selected"]
-[connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/TextEdit/SaveButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_save_button_pressed"]
