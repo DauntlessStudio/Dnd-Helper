@@ -1,0 +1,213 @@
+[gd_resource type="Resource" script_class="Character" load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ys6km"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_4x21r"]
+
+[sub_resource type="Resource" id="Resource_bcgf6"]
+script = ExtResource("1_ys6km")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0i3wh"]
+script = ExtResource("1_ys6km")
+name = "Electromagnetic Shielding"
+monsterBehaviorType = 0
+description = " The AT-TE is Immune to Ion damage."
+descriptionWithLinks = " The AT-TE is Immune to Ion damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_uxywi"]
+script = ExtResource("1_ys6km")
+name = "Heavy Durasteel Armor"
+monsterBehaviorType = 0
+description = " The outer layer of the AT-TE is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the AT-TE takes no damage from that attack. If the AT-TE takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
+descriptionWithLinks = " The outer layer of the AT-TE is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the AT-TE takes no damage from that attack. If the AT-TE takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_fwxg6"]
+script = ExtResource("1_ys6km")
+name = "Piloted"
+monsterBehaviorType = 0
+description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
+descriptionWithLinks = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_qnsvu"]
+script = ExtResource("1_ys6km")
+name = "Towering"
+monsterBehaviorType = 0
+description = " Creatures of Medium size or smaller can stand in the AT-TE's space."
+descriptionWithLinks = " Creatures of Medium size or smaller can stand in the AT-TE's space."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_05dkw"]
+script = ExtResource("1_ys6km")
+name = "Troop Transport"
+monsterBehaviorType = 0
+description = " The AT-TE can transport a maximum of 20 stormtroopers and five speeder bikes, which it can deploy using its Deploy Troops legendary action, or which can be fought by creatures inside of the AT-TE."
+descriptionWithLinks = " The AT-TE can transport a maximum of 20 stormtroopers and five speeder bikes, which it can deploy using its Deploy Troops legendary action, or which can be fought by creatures inside of the AT-TE."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0o673"]
+script = ExtResource("1_ys6km")
+name = "Vulnerable Interior"
+monsterBehaviorType = 0
+description = " The AT-TE's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
+descriptionWithLinks = " The AT-TE's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0gcmp"]
+script = ExtResource("1_ys6km")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The AT-TE makes four attacks: one with its laser cannon volley and three with its medium repeaters."
+descriptionWithLinks = " The AT-TE makes four attacks: one with its laser cannon volley and three with its medium repeaters."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_wcn7j"]
+script = ExtResource("1_ys6km")
+name = "Laser Cannon Volley"
+monsterBehaviorType = 0
+description = " The AT-TE chooses a point within 240 ft and lets loose a blast from its heavy laser cannon that explodes in a 15ft cube around that point. Each creature within the cube must succeed on a DC 16 Dexterity saving throw, taking 33 (6d10) energy damage on a failed save, or half as much damage on a successful one."
+descriptionWithLinks = " The AT-TE chooses a point within 240 ft and lets loose a blast from its heavy laser cannon that explodes in a 15ft cube around that point. Each creature within the cube must succeed on a DC 16 Dexterity saving throw, taking 33 (6d10) energy damage on a failed save, or half as much damage on a successful one."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ppu54"]
+script = ExtResource("1_ys6km")
+name = "Medium Repeaters"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +8 to hit, range 120/240 ft., one target. Hit: 19 (3d10+3) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +8 to hit, range 120/240 ft., one target. Hit: 19 (3d10+3) energy damage."
+attackType = 0
+restrictions = ""
+range = "range 120/240 ft."
+attackBonus = 8
+numberOfTargets = "one target."
+damage = 19
+damageRoll = "3d10+3"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_o8c7l"]
+script = ExtResource("1_ys6km")
+name = "Repeating Blasters"
+monsterBehaviorType = 0
+description = " The AT-TE makes a single attack with its medium repeaters."
+descriptionWithLinks = " The AT-TE makes a single attack with its medium repeaters."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_jpb6h"]
+script = ExtResource("1_ys6km")
+name = "Deploy Troops"
+monsterBehaviorType = 0
+description = " The AT-TE mobilizes some of the soldiers traveling within it. It deploys 1d4+2 Troopers. These troops appear in any unoccupied spaces within 10 feet of the AT-TE."
+descriptionWithLinks = " The AT-TE mobilizes some of the soldiers traveling within it. It deploys 1d4+2 Troopers. These troops appear in any unoccupied spaces within 10 feet of the AT-TE."
+attackType = 0
+restrictions = "Costs 2 Actions"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_4x21r")
+name = "AT-TE"
+flavorText = "The All Terrain Tactical Enforcer (AT-TE), is an all terrain assault walker developed for the Grand Army of the Republic during the Clone Wars. The walker is used for transporting platoons of troopers and attacking enemy installations. The AT-TE's cramped rear compartment contains computer hologram communication devices and space for troopers to stand during transportation. On the back end of the machine is a large door for quick deployment of troopers. Some versions of the walker were able to scale vertical cliffs. The typical arsenal includes a top-mounted mass-driver cannon, along with six other laser cannons placed strategically around the outside of the vehicle."
+sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
+size = 0
+types = Array[String](["construct"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 248
+speed = 40
+strength = 25
+dexterity = 16
+constitution = 21
+intelligence = 10
+wisdom = 10
+charisma = 7
+savingThrows = Array[String](["Str +12", "Con +10"])
+skills = Array[String]([])
+damageImmunities = Array[int]([6, 9, 10])
+damageResistances = Array[int]([11])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Poisoned", "Frightened", "Petrified", "Restrained", "Incapacitated", "Stunned", "Prone", "Blinded", "Charmed"])
+senses = Array[String](["-"])
+languages = Array[String](["-"])
+challengeRating = 18
+experiencePoints = 20000
+behaviors = Array[ExtResource("1_ys6km")]([SubResource("Resource_bcgf6"), SubResource("Resource_0i3wh"), SubResource("Resource_uxywi"), SubResource("Resource_fwxg6"), SubResource("Resource_qnsvu"), SubResource("Resource_05dkw"), SubResource("Resource_0o673"), SubResource("Resource_0gcmp"), SubResource("Resource_wcn7j"), SubResource("Resource_ppu54"), SubResource("Resource_o8c7l"), SubResource("Resource_jpb6h")])

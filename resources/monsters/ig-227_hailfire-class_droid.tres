@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ug6uu"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_fdl7f"]
+
+[sub_resource type="Resource" id="Resource_v7bod"]
+script = ExtResource("1_ug6uu")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid tank has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The droid tank has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_kmvp1"]
+script = ExtResource("1_ug6uu")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The droid tank makes two medium laser cannon attacks."
+descriptionWithLinks = " The droid tank makes two medium laser cannon attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rh1u5"]
+script = ExtResource("1_ug6uu")
+name = "Crushing Stride"
+monsterBehaviorType = 0
+description = " The droid tank moves up to its speed in a straight line. During this move, it can enter Large or smaller creatures' spaces. A creature whose space the droid tank enters must make a DC 18 Dexterity saving throw. On a successful save, the creature is pushed 5 feet to the nearest space out of the droid tank's path . On a failed save, the creature falls prone and takes 28 (8d6) kinetic damage. If the droid tank remains in the prone creature's space, the creature is also restrained until it's no longer in the same space as the droid tank. While restrained in this way, the creature, or another creature within 5 feet of it, can make a DC 18 Strength check. On a success, the creature is shunted to an unoccupied space of its choice within 5 feet of the droid tank and is no longer restrained."
+descriptionWithLinks = " The droid tank moves up to its speed in a straight line. During this move, it can enter Large or smaller creatures' spaces. A creature whose space the droid tank enters must make a DC 18 Dexterity saving throw. On a successful save, the creature is pushed 5 feet to the nearest space out of the droid tank's path . On a failed save, the creature falls prone and takes 28 (8d6) kinetic damage. If the droid tank remains in the prone creature's space, the creature is also restrained until it's no longer in the same space as the droid tank. While restrained in this way, the creature, or another creature within 5 feet of it, can make a DC 18 Strength check. On a success, the creature is shunted to an unoccupied space of its choice within 5 feet of the droid tank and is no longer restrained."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_twap7"]
+script = ExtResource("1_ug6uu")
+name = "Medium Laser Cannon"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack +9 to hit, 100/400, one target. Hit 20 (3d10 + 4) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack +9 to hit, 100/400, one target. Hit 20 (3d10 + 4) energy damage."
+attackType = 0
+restrictions = ""
+range = "100/400"
+attackBonus = 9
+numberOfTargets = "one target. Hit 20 (3d10 + 4) energy damage."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_xu1td"]
+script = ExtResource("1_ug6uu")
+name = "Missile Launchers"
+monsterBehaviorType = 0
+description = " The droid tank launches three missiles at points within 240 feet of it that it can see. Each creature within a 10-foot radius sphere of each point must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire and 21 (6d6) kinetic damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one sphere is affected only once. Large and larger constructs and structures have disadvantage on the saving throw, and suffer an additional 21 (6d6) fire and 21 (6d6) kinetic damage if they fail the save by 10 or more."
+descriptionWithLinks = " The droid tank launches three missiles at points within 240 feet of it that it can see. Each creature within a 10-foot radius sphere of each point must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire and 21 (6d6) kinetic damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one sphere is affected only once. Large and larger constructs and structures have disadvantage on the saving throw, and suffer an additional 21 (6d6) fire and 21 (6d6) kinetic damage if they fail the save by 10 or more."
+attackType = 0
+restrictions = "10/Day"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_fdl7f")
+name = "IG-227 Hailfire-Class Droid"
+flavorText = "The IG-227 Hailfire-class droid tank, also known simply as the hailfire droid or wheel droid, is a model of droid tank manufactured by Haor Chall Engineering that was used by the InterGalactic Banking Clan and Confederacy of Independent Systems during the Clone Wars as well as the Alliance to Restore the Republic during the Galactic Civil War.Able to roll rapidly into action, the IG-227 Hailfire-class droid tank is an armored missile platform easily identified by its treaded, hoop-like drive wheels 8.5 meters in diameter capable of moving it at intimidating speeds. Their light armor plating, brown and silver in color, made them fast at the cost of making them vulnerable to infantry attacks. Their red photoreceptor \"eye\" could lock on to both land and air targets at impressive distances, greatly improving the range of their missiles.Hailfire droids are equipped with two racks of missile launcher pods on either side of their heads, each carrying 15 guided missile warheads that leave behind a trail of black exhaust when fired. These projectiles are especially effective against stationary or slow-moving targets on terrain where blaster weapons are unusable due to a lack of clear lines of sight. The missiles are most effective at ranges less than a kilometer and follow deliberately swerving, evasive trajectories.  When the missiles are depleted, a hailfire droid is forced to rely upon its twin chin-mounted blasters."
+sectionText = "Droid tanks are massive droids that retain the abilities of a droid but come in a larger package, with different functionality and appearance."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 168
+speed = 50
+strength = 20
+dexterity = 18
+constitution = 19
+intelligence = 10
+wisdom = 10
+charisma = 1
+savingThrows = Array[String](["Dex +9", "Wis +5", "Cha +0"])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 120 ft.", "passive Perception 10"])
+languages = Array[String](["Binary", "Galactic Basic"])
+challengeRating = 14
+experiencePoints = 15000
+behaviors = Array[ExtResource("1_ug6uu")]([SubResource("Resource_v7bod"), SubResource("Resource_kmvp1"), SubResource("Resource_rh1u5"), SubResource("Resource_twap7"), SubResource("Resource_xu1td")])

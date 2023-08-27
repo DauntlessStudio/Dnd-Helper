@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_rbieq"]
+
+[resource]
+script = ExtResource("1_rbieq")
+name = "Kolto Cloud"
+powerType = 0
+prerequisite = ""
+level = 3
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "As you expel kolto, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your techcasting ability modifier. This power has no effect on droids or constructs.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd."
+higherLevelDescription = ""

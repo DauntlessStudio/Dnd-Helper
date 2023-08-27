@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_8f64d"]
+
+[resource]
+script = ExtResource("1_8f64d")
+name = "Greater Heal"
+powerType = 0
+prerequisite = "Improved Heal"
+level = 6
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This power also ends blindness, deafness, and any diseases affecting the target. This power has no effect on droids or constructs.
+
+***Force Potency.*** When you cast this power using a force slot of 7th level or higher, the healing increases by 10 for each slot level above 6th."
+higherLevelDescription = ""

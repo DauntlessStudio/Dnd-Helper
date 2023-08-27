@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_0bqpp"]
+
+[resource]
+script = ExtResource("1_0bqpp")
+name = "Convulsion"
+powerType = 0
+prerequisite = "Tremor"
+level = 3
+castingPeriod = 0
+powerRange = "120 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 kinetic damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.
+
+***Force Potency.*** When you cast this power using a force slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd."
+higherLevelDescription = ""

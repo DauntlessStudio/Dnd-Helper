@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_xr3rf"]
+
+[resource]
+script = ExtResource("1_xr3rf")
+name = "Transposition"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "90 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Another creature you can see within range has its form shimmer in a holographic configuration before collapsing. The target must succeed on a Constitution saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, the range of the power increases by 30 feet for each slot level above 2nd."
+higherLevelDescription = ""

@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fwu8w"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wxwca"]
+
+[sub_resource type="Resource" id="Resource_23rbj"]
+script = ExtResource("1_fwu8w")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The monkey-lizard has advantage on attack rolls against a creature if at least one of the monkey-lizard's allies is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The monkey-lizard has advantage on attack rolls against a creature if at least one of the monkey-lizard's allies is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_g5qfd"]
+script = ExtResource("1_fwu8w")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4-1) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4-1) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 1
+numberOfTargets = "one target."
+damage = 1
+damageRoll = "1d4-1"
+damageType = 7
+
+[resource]
+script = ExtResource("2_wxwca")
+name = "Monkey-Lizard"
+flavorText = ""
+sectionText = "Kowakian monkey-lizards are a bipedal reptilian species native to a jungle-like Outer Rim planet called Kowak. Although have had no established culture, Kowakian monkey-lizards were quite intelligent, and despite their silly, cruel nature, they are considered sentient by many sentientologists in the galaxy, although there was much debate over that designation. They are often kept as pets due to their mischievous nature."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 3
+speed = 30
+strength = 8
+dexterity = 14
+constitution = 11
+intelligence = 5
+wisdom = 12
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 11"])
+languages = Array[String](["ï¿½"])
+challengeRating = 0
+experiencePoints = 10
+behaviors = Array[ExtResource("1_fwu8w")]([SubResource("Resource_23rbj"), SubResource("Resource_g5qfd")])

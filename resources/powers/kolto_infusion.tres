@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_sq6oy"]
+
+[resource]
+script = ExtResource("1_sq6oy")
+name = "Kolto Infusion"
+powerType = 0
+prerequisite = ""
+level = 6
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Choose a creature that you can see within range. A surge of kolto energy washes over the creature, causing it to regain 70 hit points. This power also ends blindness, deafness, and any diseases affecting the target. This power has no effect on droids or constructs.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th."
+higherLevelDescription = ""

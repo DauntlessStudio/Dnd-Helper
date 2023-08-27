@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ylw6u"]
+
+[resource]
+script = ExtResource("1_ylw6u")
+name = "Wakefulness"
+powerType = 0
+prerequisite = "Breath Control"
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 8 hours"
+concentration = true
+forceAlignment = 0
+description = "You use the Force to control your body's functions. For the duration, you gain the following benefits:
+
+- You ignore the effects of any levels of exhaustion you have. 
+- You do not need to eat, drink, or sleep. You can't be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as reading and keeping watch. 
+
+If you still have any levels of exhaustion when this power ends, you must make a DC 15 Constitution saving throw. On a failed save, you gain one additional level of exhaustion."
+higherLevelDescription = ""

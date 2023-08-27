@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_otl2g"]
+
+[resource]
+script = ExtResource("1_otl2g")
+name = "Reveal Shatterpoint"
+powerType = 0
+prerequisite = "Sense Shatterpoint"
+level = 5
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You focus on a creature you can see within range, and gain uncanny insight on its defenses and capabilities through the Force. The target must make a Charisma saving throw. On a failed save, you have advantage on attack rolls against that creature, and it has disadvantage on attack rolls against you for the duration. On a successful save, you have advantage on the next attack roll you make against that creature, and it has disadvantage on its next attack roll against you. Once both attacks have been made, the power ends."
+higherLevelDescription = ""

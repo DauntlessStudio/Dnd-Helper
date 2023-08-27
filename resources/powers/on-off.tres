@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_vawuk"]
+
+[resource]
+script = ExtResource("1_vawuk")
+name = "On/Off"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "This power allows you to activate or deactivate any electronic device within range, as long as the device is not being wielded by a creature, and has a clearly defined on or off function that can be easily accessed from the outside of the device. Any device that requires a software-based shutdown sequence to activate or deactivate cannot be affected by *on/off*."
+higherLevelDescription = ""

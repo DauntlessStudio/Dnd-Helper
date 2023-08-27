@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_r8m8x"]
+
+[resource]
+script = ExtResource("1_r8m8x")
+name = "Lock"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Until dispelled"
+concentration = false
+forceAlignment = 0
+description = "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this power can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this power for 1 minute. Otherwise, it is impassable until it is broken or the power is dispelled or suppressed. Casting *release* on the object suppresses *lock* for 10 minutes.
+
+While affected by this power, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
+higherLevelDescription = ""

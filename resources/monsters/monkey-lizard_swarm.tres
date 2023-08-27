@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0hq3e"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wmm1x"]
+
+[sub_resource type="Resource" id="Resource_msetr"]
+script = ExtResource("1_0hq3e")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The swarm has advantage on attack rolls against a creature while at more than half of its hit points."
+descriptionWithLinks = " The swarm has advantage on attack rolls against a creature while at more than half of its hit points."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_n5r3x"]
+script = ExtResource("1_0hq3e")
+name = "Swarm"
+monsterBehaviorType = 0
+description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny porg. The swarm can't regain hit points or gain temporary hit points."
+descriptionWithLinks = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny porg. The swarm can't regain hit points or gain temporary hit points."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_v4vth"]
+script = ExtResource("1_0hq3e")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) kinetic damage, or 3 (1d6) kinetic damage if the swarm has half of its hit points or fewer."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) kinetic damage, or 3 (1d6) kinetic damage if the swarm has half of its hit points or fewer."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target in the swarm's space."
+damage = 7
+damageRoll = "2d6"
+damageType = 7
+
+[resource]
+script = ExtResource("2_wmm1x")
+name = "Monkey-Lizard Swarm"
+flavorText = ""
+sectionText = "Kowakian monkey-lizards are a bipedal reptilian species native to a jungle-like Outer Rim planet called Kowak. Although have had no established culture, Kowakian monkey-lizards were quite intelligent, and despite their silly, cruel nature, they are considered sentient by many sentientologists in the galaxy, although there was much debate over that designation. They are often kept as pets due to their mischievous nature."
+size = 0
+types = Array[String](["swarm of Tiny beasts"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 24
+speed = 30
+strength = 6
+dexterity = 14
+constitution = 8
+intelligence = 3
+wisdom = 12
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([3, 7])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Charmed", "Frightened", "Paralyzed", "Petrified", "Prone", "Restrained", "Stunned"])
+senses = Array[String](["passive Perception 15"])
+languages = Array[String](["ï¿½"])
+challengeRating = 12
+experiencePoints = 100
+behaviors = Array[ExtResource("1_0hq3e")]([SubResource("Resource_msetr"), SubResource("Resource_n5r3x"), SubResource("Resource_v4vth")])

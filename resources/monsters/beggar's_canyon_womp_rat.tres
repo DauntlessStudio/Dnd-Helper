@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_de361"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_qhnp6"]
+
+[sub_resource type="Resource" id="Resource_hns32"]
+script = ExtResource("1_de361")
+name = "Keen Hearing and Smell"
+monsterBehaviorType = 0
+description = " The rat has advantage on on Wisdom (Perception) checks that rely on hearing and smell."
+descriptionWithLinks = " The rat has advantage on on Wisdom (Perception) checks that rely on hearing and smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_u3oc8"]
+script = ExtResource("1_de361")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The rat has advantage on an attack roll against a creature if it is grappled by at least one of the rat's allies."
+descriptionWithLinks = " The rat has advantage on an attack roll against a creature if it is grappled by at least one of the rat's allies."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_eeb77"]
+script = ExtResource("1_de361")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2d4 + 2) kinetic damage.  If the target is a creature, it must succeed on a DC 11 Strength saving throw or be grappled."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2d4 + 2) kinetic damage.  If the target is a creature, it must succeed on a DC 11 Strength saving throw or be grappled."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_qhnp6")
+name = "Beggar's Canyon Womp Rat"
+flavorText = ""
+sectionText = "Native to Tatooine, the womp rat is a breed of rodent, and considered hairy, monstrous pests. They moved on four legs tipped with three-clawed paws, and had long tails and ears. Typically not much bigger than two meters, they possessed big, sharp fangs used to seize prey, and had large, yellow eyes.Womp rats were not timid creatures, hunting in packs and using their fangs to seize prey. When alone, a single womp rat was known to devour the garbage left by moisture farmers. When traveling in packs of up to 20 individuals, Womp Rats were known to overwhelm larger prey items, such as Dewbacks and Banthas. When they bite, their teeth set in and the animals will not release their hold, even if they are killed. There were three species of womp rats: ones that lived in Beggar's Canyon, ones that lived in the Jundland Wastes, and swamp womp rats. The Jundland Wastes womp rat appeared shortly after Imperials arrived on Tatooine, and some have speculated it was a mutated form of the Beggar's Canyon womp rat, affected by chemicals from Imperial waste dumps. Some of its mutations include a larger size, slower reproduction rate, and lower numbers than Beggar's Canyon womp rat. Their ears are also elongated and winglike. Another variety, the swamp womp rat, was found on a few fringe worlds as well as on Cularin."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 11
+speed = 40
+strength = 12
+dexterity = 15
+constitution = 12
+intelligence = 3
+wisdom = 12
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3", "Stealth +4"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 13"])
+languages = Array[String](["None"])
+challengeRating = 14
+experiencePoints = 50
+behaviors = Array[ExtResource("1_de361")]([SubResource("Resource_hns32"), SubResource("Resource_u3oc8"), SubResource("Resource_eeb77")])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_8rtro"]
+
+[resource]
+script = ExtResource("1_8rtro")
+name = "Wall Run"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 turn"
+concentration = false
+forceAlignment = 0
+description = "Until the end of the turn, you have a climbing speed equal to your walking speed and you have advantage on Dexterity (Acrobatics) and Strength (Athletics) checks that involve movement. For the same duration, you can move up, down, and across vertical surfaces while leaving your hands free. This does not allow you to move upside down along ceilings. If you are on a vertical surface when you no longer have a climbing speed, you immediately fall unless you have some other means of remaining there."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ovftm"]
+
+[resource]
+script = ExtResource("1_ovftm")
+name = "Grasping Vine"
+powerType = 0
+prerequisite = "Plant Surge"
+level = 4
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You make a vine sprout from the ground in an unoccupied space you can see. When you cast this power, you can make the vine whip a creature up to 30 feet from it, if you can see the target. The creature must pass a Dexterity save or be pulled 20 feet directly toward the vine.
+
+Until the power ends, you can use your bonus action to have the vine lash out again."
+higherLevelDescription = ""

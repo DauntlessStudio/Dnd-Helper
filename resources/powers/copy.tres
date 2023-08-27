@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_4l1ca"]
+
+[resource]
+script = ExtResource("1_4l1ca")
+name = "Copy"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "This power creates a perfect duplicate of any written, drawn, or digital visual, audio or text-based data that you touch onto a datapad or datacard you supply. You can copy up to 10 pages of text or 10 minutes of visual or audio data with one casting of this power. Enhanced documents, such as datacrons, blueprints, or encrypted documents, can't be copied with this power."
+higherLevelDescription = ""

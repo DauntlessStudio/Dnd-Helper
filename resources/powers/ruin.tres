@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_kkclh"]
+
+[resource]
+script = ExtResource("1_kkclh")
+name = "Ruin"
+powerType = 0
+prerequisite = "Wound"
+level = 7
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You channel the dark side of the Force to desecrate a creature you can see within range, causing waves of intense pain to assail it. If the target has 100 hit points or fewer, it is subject to crippling pain. Otherwise, the power has no effect on it. 
+
+While the target is affected by crippling pain, any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a power, it must first succeed on a Constitution saving throw, or the casting fails and the power is wasted.
+
+A target suffering this pain can make a Constitution saving throw at the end of each of its turns. On a successful save, the pain ends."
+higherLevelDescription = ""

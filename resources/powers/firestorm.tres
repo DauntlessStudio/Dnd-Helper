@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_cqqx3"]
+
+[resource]
+script = ExtResource("1_cqqx3")
+name = "Firestorm"
+powerType = 0
+prerequisite = ""
+level = 6
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Choose a point on the ground within range, incinerating everything in a 15-foot radius. All creatures must make a Dexterity saving throw, taking 8d8 fire damage on a failure or half as much on a success. All large or smaller creatures are pushed to the edge of the power's radius. You may choose one creature to be at the very center of the firestorm, if you do so that creature has disadvantage on its saving throw and is knocked prone on a failure.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 7th level or higher, the damage increases by 1d8 and the radius increases by 5 feet for each slot level above 6th."
+higherLevelDescription = ""

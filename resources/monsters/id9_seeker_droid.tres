@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_hsumt"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_hou7k"]
+
+[sub_resource type="Resource" id="Resource_4krv0"]
+script = ExtResource("1_hsumt")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ny014"]
+script = ExtResource("1_hsumt")
+name = "Shockprod"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
+descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 2
+numberOfTargets = "one target."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_hou7k")
+name = "ID9 Seeker Droid"
+flavorText = "ID9 seeker droids, also called Parrot Droids or Mimic Droids, are a model of seeker droids that resemble the much larger Viper probe droids. The body of ID9 seekers consistsd in a half-hemisphere dome with a red photoreceptor. Attached to that dome are five articulated, tentacle-like limbs that end in pincers. The ID9s are outfitted with electro-shock prods that allow them to harm organic lifeforms and incapacitate mechanical beings. They are capable of imitating the sounds of other droid models, and have two locomotions modes: hovering and crawling."
+sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 1
+speed = 5
+strength = 9
+dexterity = 11
+constitution = 8
+intelligence = 4
+wisdom = 10
+charisma = 10
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 13"])
+languages = Array[String](["â€”"])
+challengeRating = 0
+experiencePoints = 10
+behaviors = Array[ExtResource("1_hsumt")]([SubResource("Resource_4krv0"), SubResource("Resource_ny014")])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_se3h3"]
+
+[resource]
+script = ExtResource("1_se3h3")
+name = "Adrenaline"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You infuse one creature within range with a jittery burst of power, speeding its senses and reactions to the point of near precognition. The creature makes its initiative check with advantage."
+higherLevelDescription = ""

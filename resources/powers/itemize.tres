@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_hxgol"]
+
+[resource]
+script = ExtResource("1_hxgol")
+name = "Itemize"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You instantly learn the exact quantity of one type of item within 30 feet of you. It must be a type of item that you've handled in the past; you can't, for example, use *itemize* to find out how many *BKGs* are nearby if you've never handled such a weapon. The object being itemized must also be reasonably specific. You can learn how many meilooruns are nearby, for example, but not how much fruit."
+higherLevelDescription = ""

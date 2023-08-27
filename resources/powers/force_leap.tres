@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_t2k1g"]
+
+[resource]
+script = ExtResource("1_t2k1g")
+name = "Force Leap"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 round"
+concentration = false
+forceAlignment = 0
+description = "Until the end of your next turn, you can use your forcecasting ability score instead of your Strength score when you jump, and always count as having made a running start before jumping."
+higherLevelDescription = ""

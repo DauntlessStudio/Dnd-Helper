@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_5p2qm"]
+
+[resource]
+script = ExtResource("1_5p2qm")
+name = "Disperse Energy"
+powerType = 0
+prerequisite = ""
+level = 6
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You have resistance to acid, cold, fire, lightning, and sonic damage for the power's duration.
+
+When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the power ends."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_3bi8e"]
+
+[resource]
+script = ExtResource("1_3bi8e")
+name = "Truth Serum"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "10 minutes"
+concentration = false
+forceAlignment = 0
+description = "You administer a poison to a creature you touched that prevents it from telling lies. The creature touched must make a Constitution saving throw. On a success, nothing happens. On a failure, the creature can't speak a deliberate lie until the power ends.
+
+An affected creature is aware of the power and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
+higherLevelDescription = ""

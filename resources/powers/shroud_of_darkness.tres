@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_56ajq"]
+
+[resource]
+script = ExtResource("1_56ajq")
+name = "Shroud of Darkness"
+powerType = 0
+prerequisite = "Darkness"
+level = 4
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You become heavily obscured to others. Dim light within 10 feet of you becomes darkness, and bright light becomes dim light.
+
+Until the power ends, you have resistance to force damage. Additionally, whenever a creature within 10 feet of you hits you with an attack, it takes 2d8 necrotic damage."
+higherLevelDescription = ""

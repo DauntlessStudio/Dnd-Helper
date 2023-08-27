@@ -1,0 +1,38 @@
+extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var file = FileAccess.open("res://assets/monsters.json", FileAccess.READ)
+	var monsters = JSON.parse_string(file.get_as_text())
+	for monster in monsters:
+		var resCharacter = Character.new()
+		resCharacter.name = monster.name
+		resCharacter.flavorText = monster.flavorText
+		resCharacter.sectionText = monster.sectionText
+		resCharacter.size = monster.size
+		resCharacter.types = monster.types if monster.types else []
+		resCharacter.alignment = monster.alignment
+		resCharacter.armorType = monster.armorType
+		resCharacter.currentHitPoints = monster.hitPoints
+		resCharacter.maximumHitPoints = monster.hitPoints
+		resCharacter.speed = monster.speed
+		resCharacter.strength = monster.strength
+		resCharacter.dexterity = monster.dexterity
+		resCharacter.constitution = monster.constitution
+		resCharacter.intelligence = monster.intelligence
+		resCharacter.wisdom = monster.wisdom
+		resCharacter.charisma = monster.charisma
+		resCharacter.savingThrows = monster.savingThrows if monster.savingThrows else Array[String]
+		resCharacter.skills = monster.skills
+		resCharacter.damageImmunities = monster.damageImmunities
+		resCharacter.damageResistances = monster.damageResistances
+		resCharacter.damageVulnerabilities = monster.damageVulnerabilities
+		resCharacter.conditionImmunities = monster.conditionImmunities
+		resCharacter.senses = monster.senses
+		resCharacter.languages = monster.languages
+		resCharacter.challengeRating = monster.challengeRating
+		resCharacter.experiencePoints = monster.experiencePoints
+		var filename = "res://resources/monsters/%s.tres" % monster.name.replace(" ", "_").replace("/", "-").to_lower()
+		print(filename)
+		ResourceSaver.save(monster, filename)

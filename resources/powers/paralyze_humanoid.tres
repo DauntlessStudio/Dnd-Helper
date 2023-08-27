@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_33ef1"]
+
+[resource]
+script = ExtResource("1_33ef1")
+name = "Paralyze Humanoid"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You emit a paralyzing dart at a humanoid that you can see within range. The target must succeed on a Constitution saving throw or be poisoned for the duration. While poisoned in this way, the target is paralyzed. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the power ends on the target.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+higherLevelDescription = ""

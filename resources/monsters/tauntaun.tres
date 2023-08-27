@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="Character" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xarnj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ps627"]
+
+[sub_resource type="Resource" id="Resource_pjnyd"]
+script = ExtResource("1_xarnj")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 5
+damageRoll = "1d4+3"
+damageType = 7
+
+[resource]
+script = ExtResource("2_ps627")
+name = "Tauntaun"
+flavorText = "Tauntauns are a species of omnivorous reptomammals who are indigenous to the icy planet of Hoth. Tauntauns are commonly used as pack animals by Hoth's denizens. Tauntauns are also used as patrol mounts since they are so well-adapted to the cold."
+sectionText = "Ysalamiri are furry, lizard-like tree-dwellers about 2 feet in length, native to the planet Myrkr, and most known for their ability to create a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances ï¿½ sometimes by kilometers.Ysalamiri sink their claws into the Olbio trees on which they live and draw nutrients. It is very difficult to remove a ysalamir from its tree without killing it, although this has been known to happen. Some few have developed back harness or nutrient frames which allow transport of the ysalamiri and, therefore, their Force repelling bubble. Ysalamiri do not actually negate the Force; since all existence is infused with Force energy, this would not be possible. Rather, they project a bubble inside which users are unable to exert any influence over the Force. A single bubble measures a few meters in diameter; large groups of ysalamiri could extend their collective bubble by kilometers, but only in great numbers.Miriskin was a commodity  made from ysalamir skin."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 15
+speed = 50
+strength = 16
+dexterity = 8
+constitution = 14
+intelligence = 2
+wisdom = 8
+charisma = 5
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 9"])
+languages = Array[String](["ï¿½"])
+challengeRating = 18
+experiencePoints = 25
+behaviors = Array[ExtResource("1_xarnj")]([SubResource("Resource_pjnyd")])

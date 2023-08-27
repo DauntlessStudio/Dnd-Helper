@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_bui5e"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_myo0b"]
+
+[sub_resource type="Resource" id="Resource_vr3du"]
+script = ExtResource("1_bui5e")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid has disadvantage on saving throws against effects that deal ion or lightning damage."
+descriptionWithLinks = " The droid has disadvantage on saving throws against effects that deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_u28ic"]
+script = ExtResource("1_bui5e")
+name = "Keen Hearing and Sight"
+monsterBehaviorType = 0
+description = "  Tech Casting.  The astromech is a 3rd level tech caster (tech save DC 13, +5 to hit with power attacks, 15 tech points).  The astromech knows the following powers. At Will: jet of flame, mending, minor hologram, on/off 1st Level: decryption program, expeditious retreat, hologram, repair droid, target lock 2nd Level: translocate, motivator boost  The astromech droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+descriptionWithLinks = "  Tech Casting.  The astromech is a 3rd level tech caster (tech save DC 13, +5 to hit with power attacks, 15 tech points).  The astromech knows the following powers. At Will: jet of flame, mending, minor hologram, on/off 1st Level: decryption program, expeditious retreat, hologram, repair droid, target lock 2nd Level: translocate, motivator boost  The astromech droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_esl7u"]
+script = ExtResource("1_bui5e")
+name = "Shockprod"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) lightning damage."
+descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) lightning damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 3
+numberOfTargets = "one target."
+damage = 3
+damageRoll = "1d4+1"
+damageType = 8
+
+[resource]
+script = ExtResource("2_myo0b")
+name = "BB Series Astromech Droid"
+flavorText = "The BB series astromech droid was a model of astromech droid manufactured by Industrial Automaton and active during the era of the cold war, featuring a spherical body that allowed the droid to roll in any direction, with a head usually atop the body but not meant to be permanently physically attached to it (which would inhibit the droid's ability to roll around). Like earlier astromechs, the BB unit could fit into the droid socket of a starfighter."
+sectionText = "An astromech droid, also referred to as an astro droid or mech, was a type of repair droid that served as an automated mechanic on starships. These compact droids used tool-tipped appendages stored in recessed compartments. Many starfighters relied on astromech copilots to control flight and power distribution systems. Sitting in an astromech socket exposed to space, the droid, in addition to its piloting duties, could calculate hyperspace jumps and perform simple repairs.Most astromechs were only able to communicate in writing, conveyed via another computer system, or through a special code of clicks, bleeps, and similar sounds, known as binary. However, certain other droids, such as C-3PO, could understand the binary code of astromechs, and often translated from binary to other languages."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 14
+speed = 25
+strength = 5
+dexterity = 14
+constitution = 11
+intelligence = 17
+wisdom = 12
+charisma = 9
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3", "Technology +5", "Piloting +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Darkvision 30 Ft.", "passive Perception 13"])
+languages = Array[String](["Speaks binary", "underst", "s Basic"])
+challengeRating = 18
+experiencePoints = 25
+behaviors = Array[ExtResource("1_bui5e")]([SubResource("Resource_vr3du"), SubResource("Resource_u28ic"), SubResource("Resource_esl7u")])

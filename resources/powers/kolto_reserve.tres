@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_geowh"]
+
+[resource]
+script = ExtResource("1_geowh")
+name = "Kolto Reserve"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "Touch"
+duration = "or until the end of your next short or long rest; whichever happens first"
+concentration = false
+forceAlignment = 0
+description = "You touch a creature and grant it a small reserve of kolto. The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the power ends. If the power is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the powers ends. This power has no effect on droids or constructs."
+higherLevelDescription = ""

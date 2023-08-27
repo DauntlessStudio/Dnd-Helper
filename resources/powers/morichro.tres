@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ekn3r"]
+
+[resource]
+script = ExtResource("1_ekn3r")
+name = "Morichro"
+powerType = 0
+prerequisite = "Cloud Mind"
+level = 3
+castingPeriod = 0
+powerRange = "Touch"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death. 
+
+For the power's duration, or until you use an action to touch the target and dismiss the power, the target appears dead to all outward inspection and to powers used to determine the target's status. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or poisoned when you cast the power, or becomes diseased or poisoned while under the power's effect, the disease and poison have no effect until the power ends. This power has no effect on droids or constructs."
+higherLevelDescription = ""

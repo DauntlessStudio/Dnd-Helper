@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://iaugg6xndyhh"]
+
+[ext_resource type="Script" path="res://scripts/power_creator.gd" id="1_ej0oj"]
+[ext_resource type="Script" path="res://scripts/monster_creator.gd" id="2_jgiox"]
+
+[node name="resource_generator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Create Powers"
+script = ExtResource("1_ej0oj")
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Create Monsters"
+script = ExtResource("2_jgiox")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer/Button" method="generate"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="VBoxContainer/Button2" method="generate"]

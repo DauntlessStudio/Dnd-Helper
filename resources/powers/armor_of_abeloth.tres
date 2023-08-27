@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_c17ab"]
+
+[resource]
+script = ExtResource("1_c17ab")
+name = "Armor of Abeloth"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "A protective force surrounds you, manifesting as shimmering light that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 psychic damage.
+
+***Force Potency.*** When you cast this power using a force slot of 2nd level or higher, both the temporary hit points and the psychic damage increase by 5 for each slot."
+higherLevelDescription = ""

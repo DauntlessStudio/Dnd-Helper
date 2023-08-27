@@ -1,0 +1,273 @@
+[gd_resource type="Resource" script_class="Character" load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_cs8be"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ptwq6"]
+
+[sub_resource type="Resource" id="Resource_sj7jr"]
+script = ExtResource("1_cs8be")
+name = "Hardened Mind"
+monsterBehaviorType = 0
+description = " When the Grand Admiral makes a saving throw against illusions or to resist charm and fear effects, it may add its Intelligence modifier (8) to the roll."
+descriptionWithLinks = " When the Grand Admiral makes a saving throw against illusions or to resist charm and fear effects, it may add its Intelligence modifier (8) to the roll."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_wdxf0"]
+script = ExtResource("1_cs8be")
+name = "Hyper Intelligence"
+monsterBehaviorType = 0
+description = " At-will: assess the situation, analyze, decryption program, detect enhancement, spot the weakness, detect invisibility, detect traps  3/day each: element of surprise, explosion, tactical advantage, ballistic shield, salvo, friendly fire, greater analyze  1/day each: contingency, find the path, tactical superiority, stun, predictive AI  The Grand Admiral's techcasting ability is Intelligence (tech save DC 23, +15 to hit with tech attacks). The Grand Admiral innately knows the following tech powers:"
+descriptionWithLinks = " At-will: assess the situation, analyze, decryption program, detect enhancement, spot the weakness, detect invisibility, detect traps  3/day each: element of surprise, explosion, tactical advantage, ballistic shield, salvo, friendly fire, greater analyze  1/day each: contingency, find the path, tactical superiority, stun, predictive AI  The Grand Admiral's techcasting ability is Intelligence (tech save DC 23, +15 to hit with tech attacks). The Grand Admiral innately knows the following tech powers:"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_4u1je"]
+script = ExtResource("1_cs8be")
+name = "Leadership"
+monsterBehaviorType = 0
+description = " For 1 minute, the Grand Admiral can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Grand Admiral. A creature can benefit from only one Leadership die at a time. This effect ends if the Grand Admiral is incapacitated."
+descriptionWithLinks = " For 1 minute, the Grand Admiral can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Grand Admiral. A creature can benefit from only one Leadership die at a time. This effect ends if the Grand Admiral is incapacitated."
+attackType = 0
+restrictions = "1/rest"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_s5t5t"]
+script = ExtResource("1_cs8be")
+name = "Legendary Resistance"
+monsterBehaviorType = 0
+description = " If the Grand Admiral fails a saving throw, it can choose to succeed instead."
+descriptionWithLinks = " If the Grand Admiral fails a saving throw, it can choose to succeed instead."
+attackType = 0
+restrictions = "3/day"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_6n6ax"]
+script = ExtResource("1_cs8be")
+name = "Sidearm Mastery"
+monsterBehaviorType = 0
+description = " The Grand Admiral's ranged weapon attacks ignore half cover against targets within 15 feet of the Grand Admiral.  The Grand Admiral gains a +3 bonus to attack rolls made with a pistol."
+descriptionWithLinks = " The Grand Admiral's ranged weapon attacks ignore half cover against targets within 15 feet of the Grand Admiral.  The Grand Admiral gains a +3 bonus to attack rolls made with a pistol."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_5sbm5"]
+script = ExtResource("1_cs8be")
+name = "Targeted Analysis"
+monsterBehaviorType = 0
+description = " The Grand Admiral's attack rolls cannot suffer from disadvantage."
+descriptionWithLinks = " The Grand Admiral's attack rolls cannot suffer from disadvantage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rdicg"]
+script = ExtResource("1_cs8be")
+name = "Tech Resistance"
+monsterBehaviorType = 0
+description = " The Grand Admiral has advantage on saving throws against tech powers."
+descriptionWithLinks = " The Grand Admiral has advantage on saving throws against tech powers."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_k63vl"]
+script = ExtResource("1_cs8be")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The Grand Admiral makes three melee weapon attacks or three ranged weapon attacks."
+descriptionWithLinks = " The Grand Admiral makes three melee weapon attacks or three ranged weapon attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_3wo2f"]
+script = ExtResource("1_cs8be")
+name = "Heavy Pistol"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +15 to hit, range 40/160 ft., one target. Hit: 16 (1d8 + 2d6 + 5) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +15 to hit, range 40/160 ft., one target. Hit: 16 (1d8 + 2d6 + 5) energy damage."
+attackType = 0
+restrictions = ""
+range = "range 40/160 ft."
+attackBonus = 15
+numberOfTargets = "one target."
+damage = 16
+damageRoll = "1d8 + 2d6 + 5"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_xv6v3"]
+script = ExtResource("1_cs8be")
+name = "Techblade"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 12
+numberOfTargets = "one target."
+damage = 15
+damageRoll = "3d6 + 5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_iwgmx"]
+script = ExtResource("1_cs8be")
+name = "Unarmed Strike"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (1d4 + 2d6 + 5) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (1d4 + 2d6 + 5) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 12
+numberOfTargets = "one target."
+damage = 14
+damageRoll = "1d4 + 2d6 + 5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_gu32o"]
+script = ExtResource("1_cs8be")
+name = "All-Out Attack"
+monsterBehaviorType = 0
+description = " The Grand Admiral chooses a number of allies up to its Intelligence modifier (8) within 60 feet who can see or hear it. The chosen allies may then immediately use their reaction to make one weapon attack against a target of the Grand Admiral's choice. It may choose the target for each attack separately."
+descriptionWithLinks = " The Grand Admiral chooses a number of allies up to its Intelligence modifier (8) within 60 feet who can see or hear it. The chosen allies may then immediately use their reaction to make one weapon attack against a target of the Grand Admiral's choice. It may choose the target for each attack separately."
+attackType = 0
+restrictions = "1/rest"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_mvm46"]
+script = ExtResource("1_cs8be")
+name = "Calculated Timing"
+monsterBehaviorType = 0
+description = " The Grand Admiral can focus a target down with the help with an ally. Once per round, whenever a creature is attacked by someone other than the Grand Admiral, the Grand Admiral can use its reaction to make one weapon attack against them."
+descriptionWithLinks = " The Grand Admiral can focus a target down with the help with an ally. Once per round, whenever a creature is attacked by someone other than the Grand Admiral, the Grand Admiral can use its reaction to make one weapon attack against them."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_mmsbd"]
+script = ExtResource("1_cs8be")
+name = "Move"
+monsterBehaviorType = 0
+description = "The Grand Admiral can move up to its speed without provoking opportunity attacks."
+descriptionWithLinks = "The Grand Admiral can move up to its speed without provoking opportunity attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_vuupl"]
+script = ExtResource("1_cs8be")
+name = "Casting"
+monsterBehaviorType = 0
+description = "The Grand Admiral can cast an at-will power."
+descriptionWithLinks = "The Grand Admiral can cast an at-will power."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_tkknu"]
+script = ExtResource("1_cs8be")
+name = "Attack"
+monsterBehaviorType = 0
+description = "The Grand Admiral makes one Heavy Pistol, Techblade, or Unarmed Strike attack."
+descriptionWithLinks = "The Grand Admiral makes one Heavy Pistol, Techblade, or Unarmed Strike attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_ptwq6")
+name = "Grand Admiral"
+flavorText = ""
+sectionText = "As the branch of the galactic military that deals with space operations, the galactic navy has been composed of many sub-units and organizations, and has utilized a vast array of starships to achieve its objectives throughout the years.***Republic Navy.*** The Republic Navy, also referred to as the Republic fleet, Republic starfleet or the Galactic Republic fleet, was the military naval force of the Galactic Republic during the Clone Wars. The Navy served to transport the clone army across the galaxy while also engaging in ship-to-ship combat with the Confederacy navy. Following the end of the war and the formation of the Galactic Empire, the Republic Navy transitioned into the Imperial Navy.***Imperial Navy.*** The Imperial Navy, also known as the Imperial Starfleet or the Imperial fleet, was the naval branch of the Galactic Empire's military. It was created in the wake of the Clone Wars, when Chancellor Sheev Palpatine transformed the Galactic Republic he led into an authoritarian Empire. Consisting mainly of Star Destroyers and TIE fighters, the Imperial Navy was tasked with maintaining order in the galaxy.***First Order Navy.*** The First Order Navy, also referred to as the First Order fleet, was the naval branch of the First Order military. It superseded the Imperial Navy of the former Galactic Empire, it would be paramount to the gradual conquest and colonization of the Unknown Regions by the Imperial successor state, the First Order."
+size = 0
+types = Array[String](["humanoid"])
+alignment = "unaligned"
+armorType = "heavy combat suit and medium shield generator"
+hitPoints = 255
+speed = 30
+strength = 13
+dexterity = 20
+constitution = 18
+intelligence = 27
+wisdom = 23
+charisma = 20
+savingThrows = Array[String](["Dex +10", "Int +9", "Wis +7", "Cha"])
+skills = Array[String](["Athletics +8", "Deception +12", "Insight +20", "Investigation +22", "Lore +22", "Perception +20", "Persuasion +12"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([11])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Darkvision 120 ft.", "passive Perception 30"])
+languages = Array[String](["Galactic basic", "Cheunh", "", "any 3 others"])
+challengeRating = 20
+experiencePoints = 25000
+behaviors = Array[ExtResource("1_cs8be")]([SubResource("Resource_sj7jr"), SubResource("Resource_wdxf0"), SubResource("Resource_4u1je"), SubResource("Resource_s5t5t"), SubResource("Resource_6n6ax"), SubResource("Resource_5sbm5"), SubResource("Resource_rdicg"), SubResource("Resource_k63vl"), SubResource("Resource_3wo2f"), SubResource("Resource_xv6v3"), SubResource("Resource_iwgmx"), SubResource("Resource_gu32o"), SubResource("Resource_mvm46"), SubResource("Resource_mmsbd"), SubResource("Resource_vuupl"), SubResource("Resource_tkknu")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_m6we2"]
+
+[resource]
+script = ExtResource("1_m6we2")
+name = "Skill Protocol"
+powerType = 0
+prerequisite = ""
+level = 5
+castingPeriod = 0
+powerRange = "Touch"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You enhance a droid or construct's protocols. You touch one willing droid or construct and give it expertise in one tool or skill of your choice.
+
+You must choose a tool or skill in which the target is proficient and that isn't already benefiting from an effect, such as expertise, that doubles its proficiency bonus."
+higherLevelDescription = ""

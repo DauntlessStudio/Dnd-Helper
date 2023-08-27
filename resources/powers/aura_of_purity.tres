@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_3an32"]
+
+[resource]
+script = ExtResource("1_3an32")
+name = "Aura of Purity"
+powerType = 0
+prerequisite = "Restoration"
+level = 4
+castingPeriod = 0
+powerRange = "Self (30-foot radius)"
+duration = "up to 10 minutes"
+concentration = true
+forceAlignment = 0
+description = "Purifying energy radiates from you in a 30-foot radius. Until the power ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned. "
+higherLevelDescription = ""

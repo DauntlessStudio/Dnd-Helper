@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_mtcp2"]
+
+[resource]
+script = ExtResource("1_mtcp2")
+name = "Telekinetic Shield"
+powerType = 0
+prerequisite = "Animate Weapon"
+level = 3
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You lift three piles of debris or small objects from the ground and interpose them between you and your opponents for the duration. 
+
+While at least three piles remain, you have three-quarters cover. While two piles remain, you have half cover. While only one pile remains, you have one-quarter cover. The piles don't hinder your attacks. When you cast the power, or as an action on a subsequent turn, you can direct up to two piles to attack up to two creatures you can see within 30 feet. Make a ranged force attack roll for each pile. On a hit, a creature takes 2d6 kinetic plus 1d10 force damage. The pile is destroyed whether it hits or misses.
+
+***Force Potency.*** If you cast this power with a force slot of 4th level or higher, the power creates one additional pile for each level above 3rd. "
+higherLevelDescription = ""

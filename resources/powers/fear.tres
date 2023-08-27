@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_05iym"]
+
+[resource]
+script = ExtResource("1_05iym")
+name = "Fear"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You awaken the sense of mortality in one creature you can see within range. The target must succeed on a Wisdom saving throw or become frightened for the duration. A target with 25 hit points or fewer makes the saving throw with disadvantage. A frightened creature can repeat this save at the end of each of its turns, ending this effect on a success. This power has no effect on constructs or droids."
+higherLevelDescription = ""

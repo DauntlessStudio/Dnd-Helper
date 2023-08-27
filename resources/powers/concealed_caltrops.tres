@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ejtpa"]
+
+[resource]
+script = ExtResource("1_ejtpa")
+name = "Concealed Caltrops"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You scatter a large number of caltrops across ground in a 20-foot radius centered on a point within range. These caltrops pierce deep into the feet and boots of anyone who walks upon them. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 kinetic damage for every 5 feet it travels.
+
+The caltrops are nearly invisible to the naked eye. Any creature that can't see the area at the time the power is cast must make a Wisdom (Perception) check against your tech save DC to notice the caltrops before entering the area."
+higherLevelDescription = ""

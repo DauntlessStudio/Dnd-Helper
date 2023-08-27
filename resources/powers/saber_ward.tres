@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_jp3ew"]
+
+[resource]
+script = ExtResource("1_jp3ew")
+name = "Saber Ward"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 round"
+concentration = false
+forceAlignment = 0
+description = "You take a defensive stance. Until the end of your next turn, you have resistance against kinetic, energy, and ion damage dealt by weapons."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_e4rwd"]
+
+[resource]
+script = ExtResource("1_e4rwd")
+name = "Saber Onslaught"
+powerType = 0
+prerequisite = "Saber Strike"
+level = 4
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 turn"
+concentration = false
+forceAlignment = 0
+description = "You assume a battle stance. Until the end of your turn, your movement does not provoke opportunity attacks. Additionally, whenever you move, you can make one melee weapon attack against each creature you move within 5 feet of for the first time this turn. On a hit, the attack deals an extra 1d6 damage of the weapon's type, and the target must make a Strength saving throw. On a failed save, you can choose to either knock the target prone, or push it 5 feet away from you.
+
+***Force Potency.*** When you cast this power using a force slot of 5th level or higher, the bonus weapon damage increases by 1d6 for each slot level above 4th."
+higherLevelDescription = ""

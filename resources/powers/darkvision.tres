@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_s4vay"]
+
+[resource]
+script = ExtResource("1_s4vay")
+name = "Darkvision"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "or until the end of your next short or long rest; whichever happens first"
+concentration = false
+forceAlignment = 0
+description = "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet."
+higherLevelDescription = ""

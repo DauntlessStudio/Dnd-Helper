@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_7a3w0"]
+
+[resource]
+script = ExtResource("1_7a3w0")
+name = "Force Scream"
+powerType = 0
+prerequisite = ""
+level = 3
+castingPeriod = 0
+powerRange = "Self (15-foot radius)"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You emit a scream imbued with the power of the Force. Each creature you choose within 15 feet of you must succeed on a Constitution saving throw. On a failed save, a creature take 4d6 psychic damage, 4d6 sonic damage, and is deafened until the end of its next turn. On a successful save, it takes half as much damage and isn't deafened."
+higherLevelDescription = ""

@@ -1,0 +1,168 @@
+[gd_resource type="Resource" script_class="Character" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_kmdly"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_finnt"]
+
+[sub_resource type="Resource" id="Resource_gfgkx"]
+script = ExtResource("1_kmdly")
+name = "Infrared Vision"
+monsterBehaviorType = 0
+description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
+descriptionWithLinks = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rmtm7"]
+script = ExtResource("1_kmdly")
+name = "Regeneration"
+monsterBehaviorType = 0
+description = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
+descriptionWithLinks = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_idx32"]
+script = ExtResource("1_kmdly")
+name = "Martial Advantage"
+monsterBehaviorType = 0
+description = " Once per turn, the trandoshan can deal an extra 14 (4d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the trandoshan that isn't incapacitated."
+descriptionWithLinks = " Once per turn, the trandoshan can deal an extra 14 (4d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the trandoshan that isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_23gt2"]
+script = ExtResource("1_kmdly")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The trandoshan makes three melee weapon attacks. Alternatively, it can make two ranged attacks with its javelin."
+descriptionWithLinks = " The trandoshan makes three melee weapon attacks. Alternatively, it can make two ranged attacks with its javelin."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_vlags"]
+script = ExtResource("1_kmdly")
+name = "Trandoshan Sword"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) kinetic damage, or 9 (1d10 + 4) kinetic damage if used with two hands."
+descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) kinetic damage, or 9 (1d10 + 4) kinetic damage if used with two hands."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 7
+numberOfTargets = "one target."
+damage = 8
+damageRoll = "1d8 + 4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_i5dc1"]
+script = ExtResource("1_kmdly")
+name = "Javelin"
+monsterBehaviorType = 0
+description = " Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) kinetic damage."
+descriptionWithLinks = " Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft. or range 30/120 ft."
+attackBonus = 7
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "1d6 + 4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_tnj2m"]
+script = ExtResource("1_kmdly")
+name = "Shield Bash"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 6 (1d4 + 4) kinetic damage. If the target is Large or smaller, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 6 (1d4 + 4) kinetic damage. If the target is Large or smaller, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 7
+numberOfTargets = "one creature."
+damage = 6
+damageRoll = "1d4 + 4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_x11qi"]
+script = ExtResource("1_kmdly")
+name = "Leadership"
+monsterBehaviorType = 0
+description = " For 1 minute, the trandoshan can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the trandoshan. A creature can benefit from only one Leadership die at a time. This effect ends if the warlord is incapacitated."
+descriptionWithLinks = " For 1 minute, the trandoshan can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the trandoshan. A creature can benefit from only one Leadership die at a time. This effect ends if the warlord is incapacitated."
+attackType = 0
+restrictions = "Recharges after a Short or Long Rest"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_6d0hx"]
+script = ExtResource("1_kmdly")
+name = "Parry"
+monsterBehaviorType = 0
+description = " The trandoshan adds 3 to its AC against one melee attack that would hit it. To do so, the trandoshan must see the attacker and be wielding a melee weapon."
+descriptionWithLinks = " The trandoshan adds 3 to its AC against one melee attack that would hit it. To do so, the trandoshan must see the attacker and be wielding a melee weapon."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_finnt")
+name = "Trandoshan Huntmaster"
+flavorText = ""
+sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
+size = 0
+types = Array[String](["humanoid"])
+alignment = "any dark"
+armorType = "heavy combat suit, shield"
+hitPoints = 127
+speed = 30
+strength = 18
+dexterity = 14
+constitution = 16
+intelligence = 14
+wisdom = 16
+charisma = 15
+savingThrows = Array[String](["Strength +7", "Wisdom +6"])
+skills = Array[String](["Athletics +7", "Intimidation +5", "Perception +6", "Persuasion +5", "Stealth +6", "Survival +6"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 16"])
+languages = Array[String](["Galactic Basic", "Dosh"])
+challengeRating = 7
+experiencePoints = 2900
+behaviors = Array[ExtResource("1_kmdly")]([SubResource("Resource_gfgkx"), SubResource("Resource_rmtm7"), SubResource("Resource_idx32"), SubResource("Resource_23gt2"), SubResource("Resource_vlags"), SubResource("Resource_i5dc1"), SubResource("Resource_tnj2m"), SubResource("Resource_x11qi"), SubResource("Resource_6d0hx")])

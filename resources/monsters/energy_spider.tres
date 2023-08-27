@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fuugw"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2ab5o"]
+
+[sub_resource type="Resource" id="Resource_n011g"]
+script = ExtResource("1_fuugw")
+name = "Energy Absorption,"
+monsterBehaviorType = 0
+description = " Whenever the spider is subjected to energy damage, it takes no damage and instead regains a number of hit points equal to the energy damage dealt."
+descriptionWithLinks = " Whenever the spider is subjected to energy damage, it takes no damage and instead regains a number of hit points equal to the energy damage dealt."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_lqxvv"]
+script = ExtResource("1_fuugw")
+name = "Sunlight Sensitivity"
+monsterBehaviorType = 0
+description = " While in sunlight, the spider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+descriptionWithLinks = " While in sunlight, the spider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_lvomf"]
+script = ExtResource("1_fuugw")
+name = "Spider Climb"
+monsterBehaviorType = 0
+description = " The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+descriptionWithLinks = " The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ot5ou"]
+script = ExtResource("1_fuugw")
+name = "Web Sense"
+monsterBehaviorType = 0
+description = " While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+descriptionWithLinks = " While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_wdd4v"]
+script = ExtResource("1_fuugw")
+name = "Web Walker"
+monsterBehaviorType = 0
+description = " The spider ignores movement restrictions caused by webbing."
+descriptionWithLinks = " The spider ignores movement restrictions caused by webbing."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_bltgv"]
+script = ExtResource("1_fuugw")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 6
+damageRoll = "1d6 + 3"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_wybhb"]
+script = ExtResource("1_fuugw")
+name = "Web"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to kinetic, poison, and psychic damage)."
+descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to kinetic, poison, and psychic damage)."
+attackType = 0
+restrictions = "Recharge 5-6"
+range = "range 30/60 ft."
+attackBonus = 5
+numberOfTargets = "one creature."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_2ab5o")
+name = "Energy Spider"
+flavorText = ""
+sectionText = "Energy spiders or spice spiders are arachnids that inhabit the spice mines of Kessel. They live in complete darkness inside the mine's caves spinning webs made of glitterstim, a rare kind of spice. When fed ryll, the energy spiders produce glitteryll and grow to large sizes. A number of the creatures have been smuggled onto Ryloth, which is one of the few other worlds capable of supporting them.***Behavior.*** The spiders shoot webbing from their mouths to capture prey, impale them and then quickly suck the life energy from them. The spiders are known to feed on bogeys, as they are sources of pure energy that caused the glitterstim to react and produce light, alerting the spiders to their presence. The spiders also disliked bright light, since they lived in pitch black caves. Energy spiders were, however, drawn to the light produced by the glitterstim-bogey interaction, and there are even cases of mistaking other lighting sources for this interaction. They are one of the many threats faced by the spice miners, especially those who wander too deep into the caves where the spiders lived. Often, the administrators and superiors on Kessel will send disruptive prisoners to work in these deep tunnels, ensuring an often permanent solution to a prisoner problem. As energy spiders feed on energy, blaster bolts are ineffective against them and are merely absorbed. Curiously, ion weapons, since they affect energy and its distribution, are highly effective (but not lethal) against them."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 18
+speed = 30
+strength = 12
+dexterity = 16
+constitution = 13
+intelligence = 3
+wisdom = 12
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String](["Stealth +7", "Perception +3"])
+damageImmunities = Array[int]([3])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["blindsight 10 ft.", "darkvision 120 ft.", "passive Perception 13"])
+languages = Array[String](["ï¿½"])
+challengeRating = 12
+experiencePoints = 100
+behaviors = Array[ExtResource("1_fuugw")]([SubResource("Resource_n011g"), SubResource("Resource_lqxvv"), SubResource("Resource_lvomf"), SubResource("Resource_ot5ou"), SubResource("Resource_wdd4v"), SubResource("Resource_bltgv"), SubResource("Resource_wybhb")])

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_f6e8g"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_djqxm"]
+
+[sub_resource type="Resource" id="Resource_r04ol"]
+script = ExtResource("1_f6e8g")
+name = "Keen Smell"
+monsterBehaviorType = 0
+description = " The wampa has advantage on Wisdom (Perception) checks that rely on smell."
+descriptionWithLinks = " The wampa has advantage on Wisdom (Perception) checks that rely on smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0q6ca"]
+script = ExtResource("1_f6e8g")
+name = "Rocky Camouflage"
+monsterBehaviorType = 0
+description = " The wampa has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+descriptionWithLinks = " The wampa has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_t3foh"]
+script = ExtResource("1_f6e8g")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The wampa makes two attacks, one with its claw and one with its bite."
+descriptionWithLinks = " The wampa makes two attacks, one with its claw and one with its bite."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_4xqfj"]
+script = ExtResource("1_f6e8g")
+name = "Claw"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (2d6+5) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (2d6+5) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 8
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "2d6+5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_vcbxg"]
+script = ExtResource("1_f6e8g")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 7 (1d10+5) kinetic damage. The target is grappled (escape DC 16) Until this grapple ends, the target is restrained, and the wampa can't bite another target."
+descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 7 (1d10+5) kinetic damage. The target is grappled (escape DC 16) Until this grapple ends, the target is restrained, and the wampa can't bite another target."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 8
+numberOfTargets = "one creature."
+damage = 7
+damageRoll = "1d10+5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_1j6s7"]
+script = ExtResource("1_f6e8g")
+name = "Throw Boulder"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +8 to hit, reach 5 ft., range 25/50 ft., one target. Hit: 8 (1d8+5) kinetic damage. If the target is a creature, it must succeed a DC 15 Strength saving throw or be knocked prone."
+descriptionWithLinks = " Ranged Weapon Attack: +8 to hit, reach 5 ft., range 25/50 ft., one target. Hit: 8 (1d8+5) kinetic damage. If the target is a creature, it must succeed a DC 15 Strength saving throw or be knocked prone."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 8
+numberOfTargets = "range 25/50 ft."
+damage = 8
+damageRoll = "1d8+5"
+damageType = 7
+
+[resource]
+script = ExtResource("2_djqxm")
+name = "Cliff Wampa"
+flavorText = ""
+sectionText = "Wampas are semi-sentient predators with humanoid proportions that stand up to 12 feet tall. While they all share characteristics in common, there are three variations of wampa that are distinct based on their native planet."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 96
+speed = 40
+strength = 21
+dexterity = 11
+constitution = 18
+intelligence = 5
+wisdom = 13
+charisma = 12
+savingThrows = Array[String]([])
+skills = Array[String](["Athletics +8", "Perception +4", "Stealth +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
+languages = Array[String](["ï¿½"])
+challengeRating = 5
+experiencePoints = 1800
+behaviors = Array[ExtResource("1_f6e8g")]([SubResource("Resource_r04ol"), SubResource("Resource_0q6ca"), SubResource("Resource_t3foh"), SubResource("Resource_4xqfj"), SubResource("Resource_vcbxg"), SubResource("Resource_1j6s7")])

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_3ten1"]
+
+[resource]
+script = ExtResource("1_3ten1")
+name = "Wire Bind"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "1 minute"
+concentration = false
+forceAlignment = 0
+description = "You produce up to 4 wires, which bind creatures of your choice that you can see within range. A creature can be targeted by more than one wire. 
+
+Each target must make a Dexterity saving throw for each wire that targets it. On a failed save, the creature is restrained and falls prone as it is wrapped securely by the wire.
+
+A creature restrained by a wire can use its action to make a Strength or Dexterity check (its choice) against your tech save DC. On a success, it is no longer restrained by that wire. A wire can also be destroyed; each one has AC 15 and 10 hit points, and has immunity to all damage not dealt by melee weapons.
+
+A wire that misses its target or is escaped falls slack and disintegrates, as do all remaining wires when the power ends."
+higherLevelDescription = ""

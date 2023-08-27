@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_jd2wv"]
+
+[resource]
+script = ExtResource("1_jd2wv")
+name = "Overheat"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Choose a manufactured metal object, such as a blaster or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the power. Until the power ends, you can use a bonus action on each of your subsequent turns to cause this damage again.
+
+If an object is held, worn, or integrated, and a creature takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't�or can't�drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+higherLevelDescription = ""

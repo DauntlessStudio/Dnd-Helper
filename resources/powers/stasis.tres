@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_11gwn"]
+
+[resource]
+script = ExtResource("1_11gwn")
+name = "Stasis"
+powerType = 0
+prerequisite = "Stun"
+level = 5
+castingPeriod = 0
+powerRange = "90 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the power ends on the target. This power has no effect on droids or constructs. 
+
+***Force Potency.*** When you cast this power using a force slot of 6th level or higher, you can target an additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them."
+higherLevelDescription = ""

@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jembc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_lov43"]
+
+[sub_resource type="Resource" id="Resource_2g0hc"]
+script = ExtResource("1_jembc")
+name = "Keen Hearing"
+monsterBehaviorType = 0
+description = " The Shyrack has advantage on Wisdom (Perception) checks that rely on hearing."
+descriptionWithLinks = " The Shyrack has advantage on Wisdom (Perception) checks that rely on hearing."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_1spx6"]
+script = ExtResource("1_jembc")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one creature."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_lov43")
+name = "Shyrack"
+flavorText = ""
+sectionText = "Shyracks are cave-dwelling terrors that are fiercely territorial and attack any intruder with aggression and fervor. While typically cave bound, every sixty-three years the shyracks of Korriban spill from their cave habitats for an entire summer. These periods saw them fill the sky where they blotted out the sun and moon where they rained their bluish droppings onto everything below. Prior to the return of the Sith Empire, biologists from across the galaxy arrived on the planet in order to witness every sixty-third summer where they observed the purpling of the red Korriban terrain.While ungainly and slow-moving with no eyes, shyracks are potentially dangerous pests, especially when they converge as a swarm on an intruder. They are native to the Shyrack cave of Korriban and are natural rivals to the feared Tuk'ata."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 2
+speed = 0
+strength = 4
+dexterity = 16
+constitution = 9
+intelligence = 3
+wisdom = 12
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["blindsight 60ft", "passive Perception 11"])
+languages = Array[String](["â€”"])
+challengeRating = 0
+experiencePoints = 10
+behaviors = Array[ExtResource("1_jembc")]([SubResource("Resource_2g0hc"), SubResource("Resource_1spx6")])

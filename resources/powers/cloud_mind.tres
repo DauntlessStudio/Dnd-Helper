@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_rfirb"]
+
+[resource]
+script = ExtResource("1_rfirb")
+name = "Cloud Mind"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "90 feet"
+duration = "1 minute"
+concentration = false
+forceAlignment = 0
+description = "Roll 5d8; the total is how many hit points of creatures this power can affect. Creatures within 20 feet of a point you choose are affected in order of their current hit points.
+
+Starting with the creature that has the lowest current hit points, each creature affected by this power falls unconscious. If the power ends, the sleeper takes damage, or someone uses an action wake the sleeper, they will be awoken.
+
+Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.
+
+This power has no effect on droids or constructs.
+
+***Force Potency.*** When you cast this power using a force slot of 2nd level or higher, you can roll an additional 2d8 for each slot level above 1st. "
+higherLevelDescription = ""

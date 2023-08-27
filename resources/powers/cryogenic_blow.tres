@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_sscuh"]
+
+[resource]
+script = ExtResource("1_sscuh")
+name = "Cryogenic Blow"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "The next time you hit a creature with a weapon attack during this power's duration, the attack deals an extra 1d6 cold damage to the target. The target must make a Strength saving throw. On a failed save, it gains a level of slowed for the duration. At the start of each of its turns, the target can repeat the saving throw, ending the effect on itself on a success.
+
+***Overcharge Tech.*** If you cast this power using a tech slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_am5hd"]
+
+[resource]
+script = ExtResource("1_am5hd")
+name = "Flaming Shots"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You channel tech power through a blaster weapon you are wielding. When a target takes damage from the chosen weapon, the target takes an extra 1d6 fire damage. The power ends when twelve shots have been fired.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 4th level or higher, the number of shots you can take with this power increases by two for each slot level above 3rd."
+higherLevelDescription = ""

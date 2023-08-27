@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_f3pfk"]
+
+[resource]
+script = ExtResource("1_f3pfk")
+name = "Glide"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "1 minute"
+concentration = false
+forceAlignment = 0
+description = "One willing creature gains the ability to glide when falling. For the duration of the power, it falls at a rate of 30 feet per round and can move up to 30 feet horizontally as well on each of its turns. If the creature lands before the power ends, it takes no falling damage and can land on its feet, and the power ends for that creature."
+higherLevelDescription = ""

@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2l884"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xy3h2"]
+
+[sub_resource type="Resource" id="Resource_gnm08"]
+script = ExtResource("1_2l884")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_bi4kr"]
+script = ExtResource("1_2l884")
+name = "Sneak Attack"
+monsterBehaviorType = 0
+description = " The assassin droid deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin droid that isn't incapacitated and the assassin doesn't have disadvantage on the roll."
+descriptionWithLinks = " The assassin droid deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin droid that isn't incapacitated and the assassin doesn't have disadvantage on the roll."
+attackType = 0
+restrictions = "1/Turn"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_uqqs7"]
+script = ExtResource("1_2l884")
+name = "Sniper Rifle"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 9 (1d12+3) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 9 (1d12+3) energy damage."
+attackType = 0
+restrictions = ""
+range = "range 150/600 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 9
+damageRoll = "1d12+3"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_nwp5r"]
+script = ExtResource("1_2l884")
+name = "Stock Strike"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 2
+numberOfTargets = "one target."
+damage = 4
+damageRoll = "1d4+2"
+damageType = 7
+
+[resource]
+script = ExtResource("2_xy3h2")
+name = "Ig Series, Model 86"
+flavorText = "The IG series is a series of droids manufactured by Holowan Laboratories. They are often used as both bodyguards and assassins."
+sectionText = "Assassin droids are a type of droid built specifically for the purpose of assassination. These droids generally perform with unflinching loyalty to their masters, but rogue assassin droids are not unknown. Since their missions generally require a far higher degree of independent skill, savvy, and judgment than normally possessed by simple war droids, their programming subroutines, circuitry, and memory cores are of correspondingly higher sophistication.Equipped with an array of weapons, assassin droids are also used as elite infantry when the need for skillful and quickly adaptable soldiers with unquestionable loyalty arises.An inordinate number of assassin droids have achieved sentient independence, including IG-88 and C-3PX, presumably due to the higher level of autonomy incorporated into their processor design. These droids typically fund their independent existences through the use of their innate abilities, often plying their trade as bounty hunters."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 58
+speed = 30
+strength = 14
+dexterity = 17
+constitution = 15
+intelligence = 14
+wisdom = 13
+charisma = 7
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3", "Stealth +5", "Survival +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
+languages = Array[String](["Binary", "Galactic Basic"])
+challengeRating = 3
+experiencePoints = 700
+behaviors = Array[ExtResource("1_2l884")]([SubResource("Resource_gnm08"), SubResource("Resource_bi4kr"), SubResource("Resource_uqqs7"), SubResource("Resource_nwp5r")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_otbhr"]
+
+[resource]
+script = ExtResource("1_otbhr")
+name = "Greater Feedback"
+powerType = 0
+prerequisite = "Improved Feedback"
+level = 5
+castingPeriod = 0
+powerRange = "120 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this power. A target takes 8d6 psychic damage on a failed save, or half as much damage on a successful one.
+
+After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a d6 and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."
+higherLevelDescription = ""

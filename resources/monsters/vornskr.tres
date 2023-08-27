@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_am0w7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_v5cvt"]
+
+[sub_resource type="Resource" id="Resource_l0bse"]
+script = ExtResource("1_am0w7")
+name = "Force Tracking"
+monsterBehaviorType = 0
+description = " The vornskr can sense the presence of force creatures and objects up to 1 mile away. It knows the general direction they're in but not their exact locations."
+descriptionWithLinks = " The vornskr can sense the presence of force creatures and objects up to 1 mile away. It knows the general direction they're in but not their exact locations."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_c150o"]
+script = ExtResource("1_am0w7")
+name = "Keen Smell"
+monsterBehaviorType = 0
+description = " The vornskr has advantage on Wisdom (Perception) checks that rely on smell."
+descriptionWithLinks = " The vornskr has advantage on Wisdom (Perception) checks that rely on smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_nn257"]
+script = ExtResource("1_am0w7")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) kinetic damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) kinetic damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 6
+damageRoll = "1d8 + 2"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_lacc5"]
+script = ExtResource("1_am0w7")
+name = "Tail"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) kinetic damage plus 7 (2d6) poison damage. If the target is a creature it must also make DC 13 Constitution saving throw. On a failure, a creature is paralyzed for 1 minute. The creature can repeat this saving throw at end of each of its turns, ending the effect on itself."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) kinetic damage plus 7 (2d6) poison damage. If the target is a creature it must also make DC 13 Constitution saving throw. On a failure, a creature is paralyzed for 1 minute. The creature can repeat this saving throw at end of each of its turns, ending the effect on itself."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 5
+damageRoll = "1d6 + 2"
+damageType = 7
+
+[resource]
+script = ExtResource("2_v5cvt")
+name = "Vornskr"
+flavorText = ""
+sectionText = "The vornskr, native to the planet Myrkr, are a wild, vicious canine species that have the unusual ability to sense the Force. This ability evolved to help them hunt ysalamiri, but a side effect caused them to think that Force-sensitives were their favorite prey, including Jedi in their appetite.  Vornskrs were also used as guards in the Dark Force Temple on Dromund Kaas.  The Yuuzhan Vong used the species as a biological template for the voxyn.***Behavior.*** Vornskrs are primarily nocturnal hunters, and use their whip-like, mildly venomous tails to stun prey before finishing them off with their teeth. They are normally sedate during the day, but hunger or other factors may drive them to hunt during daylight hours.***Lightsaber Form.*** Before Jedi Master Mace Windu refined it into Vaapad, the Form VII style of lightsaber combat was referred to as the Way of the Vornskr."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 14
+speed = 40
+strength = 13
+dexterity = 15
+constitution = 10
+intelligence = 3
+wisdom = 15
+charisma = 7
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +4", "Stealth +6"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
+languages = Array[String](["ï¿½"])
+challengeRating = 1
+experiencePoints = 200
+behaviors = Array[ExtResource("1_am0w7")]([SubResource("Resource_l0bse"), SubResource("Resource_c150o"), SubResource("Resource_nn257"), SubResource("Resource_lacc5")])

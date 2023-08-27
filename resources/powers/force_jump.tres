@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_2nmxm"]
+
+[resource]
+script = ExtResource("1_2nmxm")
+name = "Force Jump"
+powerType = 0
+prerequisite = "Force Leap"
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Using the Force to augment the strength in your legs, you leap up to 30 feet to an unoccupied space you can see, provided you have a direct path to the space.
+
+***Force Potency.*** When you cast this power using a force slot of 2nd level or higher, your jump distance increases by 5 feet for each slot level above 1st."
+higherLevelDescription = ""

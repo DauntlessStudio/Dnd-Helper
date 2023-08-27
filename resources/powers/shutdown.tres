@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_hdlv2"]
+
+[resource]
+script = ExtResource("1_hdlv2")
+name = "Shutdown"
+powerType = 0
+prerequisite = ""
+level = 5
+castingPeriod = 0
+powerRange = "120 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You emit an electromagnetic pulse, shutting down all electronic devices, with the exception of your tech focus, that are not held by or under the direct control of a creature. If it is, the creature must succeed on an Intelligence saving throw to stop the device from being shut down. While the power is active, no electronic device in range can be started or restarted."
+higherLevelDescription = ""

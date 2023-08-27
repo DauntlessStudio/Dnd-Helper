@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_758c4"]
+
+[resource]
+script = ExtResource("1_758c4")
+name = "Enhance Droid"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You touch a droid or construct and upgrade one of its aspects. Choose one of the following effects; the target gains that effect until the power ends. 
+- ***Servomotor.*** The target has advantage on Strength checks, and its carrying capacity doubles. 
+- ***Motivator.*** The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated. 
+- ***Power Core.*** The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the power ends. 
+- ***Databanks.*** The target has advantage on Intelligence checks. 
+- ***Sensors.*** The target has advantage on Wisdom checks. 
+- ***Relations Protocols.*** The target has advantage on Charisma checks. 
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, you can target one additional droid or construct for each slot level above 2nd."
+higherLevelDescription = ""

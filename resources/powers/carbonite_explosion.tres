@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_2kjie"]
+
+[resource]
+script = ExtResource("1_2kjie")
+name = "Carbonite Explosion"
+powerType = 0
+prerequisite = ""
+level = 9
+castingPeriod = 0
+powerRange = "250 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You generate an explosion of cryogenic energy in a 60-foot-radius sphere centered on a point you can see 
+
+within range. Each creature in the affected area must make a Constitution saving throw. On a failed save, the creature takes 8d6 + 20 cold damage and is restrained for 1 minute as it is encased in carbonite. On a successful save, the creature takes half damage and is restrained until the end of its next turn. 
+
+As an action, a restrained creature can make a Strength check against your tech save DC, ending this effect on itself on a success.
+
+A creature reduced to 0 hit points by this power dies instantly, as its body shatters into frozen chunks."
+higherLevelDescription = ""

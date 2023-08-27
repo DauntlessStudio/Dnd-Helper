@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_yd04m"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_n2mne"]
+
+[sub_resource type="Resource" id="Resource_tx5fi"]
+script = ExtResource("1_yd04m")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The dragon makes three attacks: one with its bite and two with its claws."
+descriptionWithLinks = " The dragon makes three attacks: one with its bite and two with its claws."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_lo8st"]
+script = ExtResource("1_yd04m")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) kinetic damage plus 4 (2d4) toxin damage. The target must then succeed on a Constitution saving throw (DC 15) or become poisoned."
+descriptionWithLinks = " Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) kinetic damage plus 4 (2d4) toxin damage. The target must then succeed on a Constitution saving throw (DC 15) or become poisoned."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_xqx2v"]
+script = ExtResource("1_yd04m")
+name = "Claw"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) kineric damage plus 4 (2d4) toxin damage."
+descriptionWithLinks = " Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) kineric damage plus 4 (2d4) toxin damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_fp0gt"]
+script = ExtResource("1_yd04m")
+name = "Poisonous Saliva"
+monsterBehaviorType = 0
+description = " The dragon spits its poisonous saliva  in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) tocin damage on a failed save, or half as much damage on a successful one."
+descriptionWithLinks = " The dragon spits its poisonous saliva  in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) tocin damage on a failed save, or half as much damage on a successful one."
+attackType = 0
+restrictions = "Recharge 5-6"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_n2mne")
+name = "Krayt Dragon, Juvenile"
+flavorText = "The greater krayt was a rarer, larger species of krayt dragon, known for its tremendous size and continual growth over time. Creatures of near legendary status, greater krayt dragons had ten legs, measured at least 100 meters from snout to tail tip and had the ability to move through or on Tatooine's desert sand. Greater krayt dragons attacked with their massive jaws or whip-like spike-tail, using their claws only to move through the sand."
+sectionText = "Krayt dragons were large, carnivorous reptiles that hailed from Tatooine, a desert planet in the galaxy's Outer Rim Territories. They came in two subspecies and, despite their fierceness, were hunted for the precious pearls found in their bodies."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 168
+speed = 40
+strength = 23
+dexterity = 10
+constitution = 21
+intelligence = 5
+wisdom = 11
+charisma = 7
+savingThrows = Array[String](["Dex +4", "Con +9"])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 120ft", "passive perception 18"])
+languages = Array[String](["â€”"])
+challengeRating = 9
+experiencePoints = 5000
+behaviors = Array[ExtResource("1_yd04m")]([SubResource("Resource_tx5fi"), SubResource("Resource_lo8st"), SubResource("Resource_xqx2v"), SubResource("Resource_fp0gt")])

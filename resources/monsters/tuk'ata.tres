@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jssfk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ddirt"]
+
+[sub_resource type="Resource" id="Resource_jlvno"]
+script = ExtResource("1_jssfk")
+name = "Keen Senses"
+monsterBehaviorType = 0
+description = " The Tuk'ata has advantage on Wisdom (Perception) checks."
+descriptionWithLinks = " The Tuk'ata has advantage on Wisdom (Perception) checks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_iu05g"]
+script = ExtResource("1_jssfk")
+name = "Sith-born"
+monsterBehaviorType = 0
+description = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against Tuk'ata."
+descriptionWithLinks = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against Tuk'ata."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_onlk0"]
+script = ExtResource("1_jssfk")
+name = "Telepathy"
+monsterBehaviorType = 0
+description = " Tuk'ata can communicate telepathically with other creature within it's line of sight."
+descriptionWithLinks = " Tuk'ata can communicate telepathically with other creature within it's line of sight."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_s8ng4"]
+script = ExtResource("1_jssfk")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The Tuk'ata makes two attacks, once with its bite and once with its claws or poisonous stingers."
+descriptionWithLinks = " The Tuk'ata makes two attacks, once with its bite and once with its claws or poisonous stingers."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_3gw7x"]
+script = ExtResource("1_jssfk")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8+3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8+3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_qmdjc"]
+script = ExtResource("1_jssfk")
+name = "Claws"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6+3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6+3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_eui6q"]
+script = ExtResource("1_jssfk")
+name = "Poisonous Stingers"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4+3) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 13) or become poisoned."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4+3) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 13) or become poisoned."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_ddirt")
+name = "Tuk'ata"
+flavorText = ""
+sectionText = "The Force-sensitive tuk'ata, or Sith hounds, have been used for thousands of years to guard the tombs of the Dark Lords of the Sith on Korriban. ***Biology & Appearance.*** Sith hounds are oversized beasts that are bred to be both fearless and relentless. Their distinctive characteristics included sharp horns, long claws and savage teeth. Tuk'ata are unusually intelligent and are even able to communicate with one another through means unknown. It is claimed that originally the species was non-violent and grazing before being corrupted by Sith alchemy experiments that awakened latent parts of their brain which transformed them into unnatural abominations. On occasion, random mutations produce some tuk'ata that are able to live for centuries and grow to immense proportions.Considering that many Sith hounds were sealed inside the tombs themselves, some believe that they are immortal or draw nourishment from the Force itself, the latter part of which is likely true. It is also possible that they survive by feeding on small vermin or other creatures that infest the tombs as decay and time create new openings in the stone walls."
+size = 0
+types = Array[String](["aberration"])
+alignment = "lawful dark"
+armorType = "natural armor"
+hitPoints = 59
+speed = 30
+strength = 16
+dexterity = 11
+constitution = 16
+intelligence = 10
+wisdom = 11
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +2"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Darkvision 60ft", "passive Perception 12"])
+languages = Array[String](["Sith (telepathically)"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_jssfk")]([SubResource("Resource_jlvno"), SubResource("Resource_iu05g"), SubResource("Resource_onlk0"), SubResource("Resource_s8ng4"), SubResource("Resource_3gw7x"), SubResource("Resource_qmdjc"), SubResource("Resource_eui6q")])

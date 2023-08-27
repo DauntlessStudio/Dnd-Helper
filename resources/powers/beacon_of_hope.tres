@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_u8ery"]
+
+[resource]
+script = ExtResource("1_u8ery")
+name = "Beacon of Hope"
+powerType = 0
+prerequisite = "Heroism"
+level = 3
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "This power bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
+higherLevelDescription = ""

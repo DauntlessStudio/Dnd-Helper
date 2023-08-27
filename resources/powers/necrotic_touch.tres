@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_xaipw"]
+
+[resource]
+script = ExtResource("1_xaipw")
+name = "Necrotic Touch"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Touch"
+duration = "1 round"
+concentration = false
+forceAlignment = 0
+description = "You attempt to drain the essence from a creature. Make a melee force attack against the target. If the attack hits, the creature takes 1d6 necrotic damage, and you gain temporary hit points equal to the damage dealt until the end of your next turn.
+
+This power's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+higherLevelDescription = ""

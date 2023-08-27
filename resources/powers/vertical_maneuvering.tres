@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_o457w"]
+
+[resource]
+script = ExtResource("1_o457w")
+name = "Vertical Maneuvering"
+powerType = 0
+prerequisite = ""
+level = 3
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "If you cast this power as a reaction, your fall is stopped, and you remain aloft. For the duration, as long as you are within 30 feet of a solid surface, you have a flying speed of 40 feet. In addition, you can't be knocked prone, and you have advantage on saving throws made against effects that would push you or pull you. When the power ends, you are gently lowered to the ground, if you are within 30 feet of it."
+higherLevelDescription = ""

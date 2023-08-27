@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_whgr2"]
+
+[resource]
+script = ExtResource("1_whgr2")
+name = "Improved Restoration"
+powerType = 0
+prerequisite = "Restoration"
+level = 5
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target:
+- One effect that charmed the target.
+- One curse, including the target's attunement to a cursed item.
+- Any reduction to one of the target's ability scores.
+- One effect reducing the target's hit point maximum."
+higherLevelDescription = ""

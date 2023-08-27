@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ls1d7"]
+
+[resource]
+script = ExtResource("1_ls1d7")
+name = "Denounce"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "A target of your choice within range must make a Charisma saving throw. On a failed save, when the target makes their next attack roll or saving throw they must roll a d4 and subtract the number from it. The power then ends.
+
+This power's die increases at higher levels: to a d6 at 5th level, a d8 at 11th level, and a d10 at 17th level."
+higherLevelDescription = ""

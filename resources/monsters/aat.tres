@@ -1,0 +1,213 @@
+[gd_resource type="Resource" script_class="Character" load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ai1xj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ncijk"]
+
+[sub_resource type="Resource" id="Resource_4rhav"]
+script = ExtResource("1_ai1xj")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0co8i"]
+script = ExtResource("1_ai1xj")
+name = "Operated"
+monsterBehaviorType = 0
+description = " by a Pilot & Gunner roll a separate initiative for both"
+descriptionWithLinks = " by a Pilot & Gunner roll a separate initiative for both"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_c3c4o"]
+script = ExtResource("1_ai1xj")
+name = "Piloted"
+monsterBehaviorType = 0
+description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. Pilot Controls movement, Ram action, & Rocket launchers"
+descriptionWithLinks = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. Pilot Controls movement, Ram action, & Rocket launchers"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_a8agn"]
+script = ExtResource("1_ai1xj")
+name = "Gunner"
+monsterBehaviorType = 0
+description = " The construct requires an active gunner to operate the vehicles weaponry. Gunner controls Plasma Cannon & Medium Repeating Blasters"
+descriptionWithLinks = " The construct requires an active gunner to operate the vehicles weaponry. Gunner controls Plasma Cannon & Medium Repeating Blasters"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_x8mde"]
+script = ExtResource("1_ai1xj")
+name = "Freedom of Movement"
+monsterBehaviorType = 0
+description = " The AAT ignores difficult terrain and can pass through occupied hostile spaces"
+descriptionWithLinks = " The AAT ignores difficult terrain and can pass through occupied hostile spaces"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_n5iw2"]
+script = ExtResource("1_ai1xj")
+name = "Vulnerable Interior"
+monsterBehaviorType = 0
+description = " The AAT's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
+descriptionWithLinks = " The AAT's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_mxqec"]
+script = ExtResource("1_ai1xj")
+name = "Pilot"
+monsterBehaviorType = 0
+description = " of the AAT can use the Ram action and make 1 attack utilizing the Rocket Launcher"
+descriptionWithLinks = " of the AAT can use the Ram action and make 1 attack utilizing the Rocket Launcher"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_j67us"]
+script = ExtResource("1_ai1xj")
+name = "Ram"
+monsterBehaviorType = 0
+description = " Any creature within the AAT's movement path must make a DC 17 Dexterity saving throw, taking 26 (4d12) kinetic damage on a failed save and is knocked prone, or half as much damage on a successful one."
+descriptionWithLinks = " Any creature within the AAT's movement path must make a DC 17 Dexterity saving throw, taking 26 (4d12) kinetic damage on a failed save and is knocked prone, or half as much damage on a successful one."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_h233b"]
+script = ExtResource("1_ai1xj")
+name = "Rocket Launchers"
+monsterBehaviorType = 0
+description = " Ranged weapon range 100/400 DC 14 launches a barrage of rockets at a target and any creature within 10 feet Taking 6d6 kinetic damage on a failed save and half as much on a successful one"
+descriptionWithLinks = " Ranged weapon range 100/400 DC 14 launches a barrage of rockets at a target and any creature within 10 feet Taking 6d6 kinetic damage on a failed save and half as much on a successful one"
+attackType = 0
+restrictions = "6/day Reload 1 turn"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rhh80"]
+script = ExtResource("1_ai1xj")
+name = "Gunner"
+monsterBehaviorType = 0
+description = " can make two attacks using the medium repeating blasters"
+descriptionWithLinks = " can make two attacks using the medium repeating blasters"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0qvf0"]
+script = ExtResource("1_ai1xj")
+name = "Medium Repeating Blasters"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +10 to hit, range 120/240 ft., one target. Hit: 25 (4d10+6) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +10 to hit, range 120/240 ft., one target. Hit: 25 (4d10+6) energy damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_s4xom"]
+script = ExtResource("1_ai1xj")
+name = "Plasma Cannon"
+monsterBehaviorType = 0
+description = " The AAT launches a plasma shell 150/300 ft range target must be at least 15 ft away from the AAT.  Blast has a 15 foot radius. Each creature in that area must make a DC 18 Dexterity saving throw, taking 52 (8d12) fire damage on a failed save, or half as much damage on a successful one."
+descriptionWithLinks = " The AAT launches a plasma shell 150/300 ft range target must be at least 15 ft away from the AAT.  Blast has a 15 foot radius. Each creature in that area must make a DC 18 Dexterity saving throw, taking 52 (8d12) fire damage on a failed save, or half as much damage on a successful one."
+attackType = 0
+restrictions = "Recharge 5-6"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_ncijk")
+name = "AAT"
+flavorText = "The Armored Assault Tank, also known as the AAT battle tank or the AAT-1 Hover Tank, was a tank vehicle used by the Trade Federation[4] and later donated to the Confederacy of Independent Systems where it served as one of its backbone infantry defenses and backbone vehicles during the Clone Wars. Many of the AATs used by the Confederacy were painted in Confederate colors, such as blue, however there were still tanks used by the CIS in the previous tan used by the Trade Federation. The tanks were also donated to Death Watch during their alliance with the Confederacy."
+sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
+size = 0
+types = Array[String](["construct"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 168
+speed = 30
+strength = 20
+dexterity = 22
+constitution = 19
+intelligence = 10
+wisdom = 14
+charisma = 7
+savingThrows = Array[String](["Str +9", "Con +8"])
+skills = Array[String]([])
+damageImmunities = Array[int]([10, 9])
+damageResistances = Array[int]([11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String](["Poisoned", "Frightened", "Petrified", "Restrained", "Incapacitated", "Stunned", "Prone", "Blinded", "Charmed"])
+senses = Array[String](["passive perception 12"])
+languages = Array[String](["ï¿½"])
+challengeRating = 13
+experiencePoints = 10000
+behaviors = Array[ExtResource("1_ai1xj")]([SubResource("Resource_4rhav"), SubResource("Resource_0co8i"), SubResource("Resource_c3c4o"), SubResource("Resource_a8agn"), SubResource("Resource_x8mde"), SubResource("Resource_n5iw2"), SubResource("Resource_mxqec"), SubResource("Resource_j67us"), SubResource("Resource_h233b"), SubResource("Resource_rhh80"), SubResource("Resource_0qvf0"), SubResource("Resource_s4xom")])

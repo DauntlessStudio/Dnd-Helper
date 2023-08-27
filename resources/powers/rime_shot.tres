@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_f4egi"]
+
+[resource]
+script = ExtResource("1_f4egi")
+name = "Rime Shot"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Varies"
+duration = "1 round"
+concentration = false
+forceAlignment = 0
+description = "As part of the action used to cast this power, you must make a ranged weapon attack against one creature within your weapon's range, otherwise the power fails. On a hit, the target suffers the attack's normal effects, and the creature gains 1 slowed level until the end of its turn as the air around it turns frigid. 
+
+This power deals additional damage when you reach higher levels. At 5th level the ranged attack deals an extra 1d6 cold damage. This damage increases by 1d6 again at 11th level and 17th level."
+higherLevelDescription = ""

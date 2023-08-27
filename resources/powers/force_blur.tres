@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_3c0k8"]
+
+[resource]
+script = ExtResource("1_3c0k8")
+name = "Force Blur"
+powerType = 0
+prerequisite = "Force Mask"
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You use the Force to weave an illusion that blurs your form, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight."
+higherLevelDescription = ""

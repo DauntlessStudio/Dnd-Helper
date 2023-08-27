@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_p8a4s"]
+
+[resource]
+script = ExtResource("1_p8a4s")
+name = "Destroy Tech"
+powerType = 0
+prerequisite = ""
+level = 3
+castingPeriod = 0
+powerRange = "120 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Make a ranged tech attack against a creature within range. On a hit, the target takes 4d8 ion damage. Additionally, if the target has tech points, it must make an Intelligence saving throw. On a failed save, it loses 5 tech points, as though it expended a tech slot.
+
+***Overcharge Tech.*** When you cast this power with a tech slot of 4th level or higher, the ion damage increases by 1d8, and the amount of tech points lost increases by 1 for each slot level above 3rd."
+higherLevelDescription = ""

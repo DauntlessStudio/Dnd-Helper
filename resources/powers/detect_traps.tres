@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_baq03"]
+
+[resource]
+script = ExtResource("1_baq03")
+name = "Detect Traps"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You sense the presence, general location, and nature of any trap within 120 feet of you that is within line of sight. A trap, for this power, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended by its creator. 
+
+While the power is active, you have advantage on Wisdom (Perception) and Intelligence (Investigation) checks to find any traps that are within line of sight."
+higherLevelDescription = ""

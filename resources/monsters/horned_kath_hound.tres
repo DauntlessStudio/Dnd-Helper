@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fbg2b"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_enxln"]
+
+[sub_resource type="Resource" id="Resource_xiott"]
+script = ExtResource("1_fbg2b")
+name = "Keen Hearing and Smell"
+monsterBehaviorType = 0
+description = " The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+descriptionWithLinks = " The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_8bs3k"]
+script = ExtResource("1_fbg2b")
+name = "Charge"
+monsterBehaviorType = 0
+description = " If the hound moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the hound can make another attack with its tusks against it as a bonus action."
+descriptionWithLinks = " If the hound moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the hound can make another attack with its tusks against it as a bonus action."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_r6j3x"]
+script = ExtResource("1_fbg2b")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_a60lc"]
+script = ExtResource("1_fbg2b")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "2d4 + 2"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_s8x3c"]
+script = ExtResource("1_fbg2b")
+name = "Tusk"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 9
+damageRoll = "2d6 + 2"
+damageType = 7
+
+[resource]
+script = ExtResource("2_enxln")
+name = "Horned Kath Hound"
+flavorText = ""
+sectionText = "Kath hounds are about the size of a large dog, fur-covered, and each limb ends in four hoofed digits. They are generally not very hostile, unless provoked. At one point, the kath hounds started attacking the citizens of Dantooine and were blamed for numerous crimes, including the theft of a protocol droid. Kath hounds are also a popular pet for the crime lords of Nar Shaddaa, including Visquis and Vogga the Hutt. Domesticated kath hounds, called salkies, are also popular pets on Coruscant."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natutal armor"
+hitPoints = 22
+speed = 40
+strength = 14
+dexterity = 15
+constitution = 12
+intelligence = 3
+wisdom = 12
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 30 ft.", "passive Perception 13"])
+languages = Array[String](["ï¿½"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_fbg2b")]([SubResource("Resource_xiott"), SubResource("Resource_8bs3k"), SubResource("Resource_r6j3x"), SubResource("Resource_a60lc"), SubResource("Resource_s8x3c")])

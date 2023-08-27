@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_r0vfs"]
+
+[resource]
+script = ExtResource("1_r0vfs")
+name = "Breath Control"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "10 minutes"
+concentration = false
+forceAlignment = 0
+description = "You are able to slow your metabolism in such a way that you can stop breathing and resist the effect of toxins in your body. If you are poisoned, you neutralize the poison. If more than one poison afflicts you, you neutralize one poison that you know is present, or you neutralize one at random.
+
+For the duration, you have advantage on saving throws against being poisoned, resistance to poison damage, and you no longer need to breathe."
+higherLevelDescription = ""

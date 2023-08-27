@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_2i5y3"]
+
+[resource]
+script = ExtResource("1_2i5y3")
+name = "Mass Hysteria"
+powerType = 0
+prerequisite = "Hysteria"
+level = 9
+castingPeriod = 0
+powerRange = "120 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, manifesting their worst nightmares as an implacable threat visible only to them. Each creature in a 30-foot-radius sphere is frightened for the duration of the power. At the end of each of the frightened creature's turns, it must succeed on a Wisdom saving throw or take 5d10 psychic damage. On a successful save, the power ends for that creature. This power has no effect on droids or constructs."
+higherLevelDescription = ""

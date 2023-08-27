@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_1ox31"]
+
+[resource]
+script = ExtResource("1_1ox31")
+name = "Rescue"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You pull one willing ally you can see within 30 feet of you to an unoccupied space within 5 feet of you. The target must use their reaction to accept the pull."
+higherLevelDescription = ""

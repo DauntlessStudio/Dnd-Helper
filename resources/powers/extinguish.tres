@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_u2uul"]
+
+[resource]
+script = ExtResource("1_u2uul")
+name = "Extinguish"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "30 feet (5-foot cube)"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You spray carbon foam in a 5-foot cube originating from a point within range. Flames within the affected area are instantly quenched, and objects within the affected area cannot be ignited for at least one minute. Any creature in the affected area must make a Constitution saving throw or take 1d4 cold damage.
+
+When you reach 5th level, this power can instead target a 10-foot cube within range. You gain additional options of increasing size when you reach 11th level (15-foot cube), and 17th level (20-foot cube)."
+higherLevelDescription = ""

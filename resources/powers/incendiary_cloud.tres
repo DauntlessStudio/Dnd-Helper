@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_p46dj"]
+
+[resource]
+script = ExtResource("1_p46dj")
+name = "Incendiary Cloud"
+powerType = 0
+prerequisite = ""
+level = 8
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You create a swirling cloud of smoke shot through with white-hot embers in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
+
+When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the power's area for the first time on a turn or ends its turn there.
+
+The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_w0jgb"]
+
+[resource]
+script = ExtResource("1_w0jgb")
+name = "Resistance"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Touch"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You touch one willing creature. Once before the power ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. The power then ends.
+
+This power's die increases at higher levels: to a d6 at 5th level, a d8 at 11th level, and a d10 at 17th level."
+higherLevelDescription = ""

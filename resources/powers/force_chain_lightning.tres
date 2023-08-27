@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_hu1of"]
+
+[resource]
+script = ExtResource("1_hu1of")
+name = "Force Chain Lightning"
+powerType = 0
+prerequisite = "Force Lightning"
+level = 6
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.
+
+A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.
+
+***Force Potency.*** When you cast this power using a force slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
+higherLevelDescription = ""

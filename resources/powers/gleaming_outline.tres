@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_yyv8i"]
+
+[resource]
+script = ExtResource("1_yyv8i")
+name = "Gleaming Outline"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the power is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
+
+Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible."
+higherLevelDescription = ""

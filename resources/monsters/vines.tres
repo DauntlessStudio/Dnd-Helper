@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_uaewu"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2263m"]
+
+[sub_resource type="Resource" id="Resource_a5p0b"]
+script = ExtResource("1_uaewu")
+name = "Constrict"
+monsterBehaviorType = 0
+description = " Creatures grappled by the vines take 4 (1d8) kinetic damage at the start of every round."
+descriptionWithLinks = " Creatures grappled by the vines take 4 (1d8) kinetic damage at the start of every round."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_yahtc"]
+script = ExtResource("1_uaewu")
+name = "False Appearance"
+monsterBehaviorType = 0
+description = " While the vines remains motionless, they are indistinguishable from normal vines."
+descriptionWithLinks = " While the vines remains motionless, they are indistinguishable from normal vines."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_pkg57"]
+script = ExtResource("1_uaewu")
+name = "Vines"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 22 (4d8 + 4) kinetic damage, and the target is Grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the vines can't constrict another target."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 22 (4d8 + 4) kinetic damage, and the target is Grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the vines can't constrict another target."
+attackType = 0
+restrictions = ""
+range = "reach 15 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 22
+damageRoll = "4d8 + 4"
+damageType = 7
+
+[resource]
+script = ExtResource("2_2263m")
+name = "Vines"
+flavorText = ""
+sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
+size = 0
+types = Array[String](["plant"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 84
+speed = 20
+strength = 18
+dexterity = 14
+constitution = 12
+intelligence = 10
+wisdom = 7
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([4])
+conditionImmunities = Array[String](["Blinded", "Charmed", "Deafened", "Prone"])
+senses = Array[String](["Blindsight 60 ft. (blind beyond this radius)", "passive Perception 8"])
+languages = Array[String](["â€”"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_uaewu")]([SubResource("Resource_a5p0b"), SubResource("Resource_yahtc"), SubResource("Resource_pkg57")])

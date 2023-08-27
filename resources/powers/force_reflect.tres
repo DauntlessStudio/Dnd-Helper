@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_jamqe"]
+
+[resource]
+script = ExtResource("1_jamqe")
+name = "Force Reflect"
+powerType = 0
+prerequisite = "Saber Reflect"
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "In response to being attacked, you attempt to deflect the attack with the Force. When you use this power, the damage you take from the attack is reduced by 1d10. If you reduce the damage to 0 and the damage is energy, force, ion, kinetic, lightning, necrotic, or sonic, you can reflect the attack at a target within range as part of the same reaction. Make a ranged force attack at a target you can see. The attack has a normal range of 30 feet and a long range of 90 feet. On a hit, the target takes the triggering attack's normal damage.
+
+***Force Potency.*** When you cast this power using a force slot of 2nd level or higher, the damage reduction increases by 1d10 for each slot level above 1st."
+higherLevelDescription = ""

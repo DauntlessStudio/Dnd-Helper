@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_dxsi3"]
+
+[resource]
+script = ExtResource("1_dxsi3")
+name = "Telekinetic Wave"
+powerType = 0
+prerequisite = "Telekinetic Burst"
+level = 8
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You manipulate the Force in a 60-foot radius centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes 12d6 force damage, is knocked prone, and moved 5 feet in a direction of your choice. On a successful save, it takes half as much damage and isn't knocked prone or moved.
+
+***Force Potency.*** When you cast this power using a force slot of 9th level, the damage increases by 2d6."
+higherLevelDescription = ""

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_2v34y"]
+
+[resource]
+script = ExtResource("1_2v34y")
+name = "Destroy Droid"
+powerType = 0
+prerequisite = "Disable Droid"
+level = 7
+castingPeriod = 0
+powerRange = "120 feet (30-foot cube)"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Choose a point that you can see within range. Each droid or construct  must succeed on a Constitution saving throw or be paralyzed for the duration. At the beginning of each of its turns, an affected target takes energy damage equal to twice your forcecasting ability modifier and then repeats this saving throw. On a success, the power ends on the target."
+higherLevelDescription = ""

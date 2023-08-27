@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_unihm"]
+
+[resource]
+script = ExtResource("1_unihm")
+name = "Find the Path"
+powerType = 0
+prerequisite = ""
+level = 6
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 day"
+concentration = true
+forceAlignment = 0
+description = "This power calculates out the shortest, most direct physical route to a specific fixed location that you are familiar with on the same planet. If you name a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as \"a Black Sun lair\"), the power fails.
+
+For the duration, as long as you are on the same planet as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination."
+higherLevelDescription = ""

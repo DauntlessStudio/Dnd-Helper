@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_uxgtm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_dx413"]
+
+[sub_resource type="Resource" id="Resource_pcrps"]
+script = ExtResource("1_uxgtm")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_jx4lc"]
+script = ExtResource("1_uxgtm")
+name = "Strike"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d6 +5) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d6 +5) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 7
+numberOfTargets = "one target."
+damage = 8
+damageRoll = "1d6 +5"
+damageType = 7
+
+[resource]
+script = ExtResource("2_dx413")
+name = "KX-Series Security Droid"
+flavorText = "KX-series security droids, also referred to as enforcer droids, are a model of security droid manufactured by Arakyd Industries that was in service to the Galactic Empire during the Galactic Civil War.Enforcer droids come equipped with a built-in comm package, recharge port, and a computer interface arm that allows them to connect with standard communication frequencies for areas they are assigned to. The droids were designed with exaggerated human proportions but with the mobility of a human athlete. They were able to operate a variety or tools and equipment and can carry gear without becoming exhausted.While the Imperial Senate had prohibited the creation of battle droids, Arakyd was able to use a loophole in the law by marketing the KX-series as \"security droids.\" They were programmed without the standard restriction against harming organic sentient lifeforms.The KX-series droids were programmed to speak and interact with people, but were not as proficient at it as protocol droids were. They could handle a wide range of tasks, including escorting dignitaries, protecting important people and defending Imperial installations. The droids were also programmed to recognize and defer to Imperial Military officers ranked Lieutenant or higher."
+sectionText = "Security droids are a type of droid used as bodyguards, or to protect objects of value. During the Clone Wars, the term commonly referred to the security battle droid used by the Trade Federation and Confederacy of Independent Systems. The KX-series is one such example of a security droid model used by the Galactic Empire."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 34
+speed = 25
+strength = 21
+dexterity = 16
+constitution = 19
+intelligence = 13
+wisdom = 15
+charisma = 7
+savingThrows = Array[String]([])
+skills = Array[String](["Athletics +7", "Perception +4", "Intimidate +2"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([6, 8])
+conditionImmunities = Array[String](["Poisoned"])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
+languages = Array[String](["Galactic basic", "binary"])
+challengeRating = 1
+experiencePoints = 200
+behaviors = Array[ExtResource("1_uxgtm")]([SubResource("Resource_pcrps"), SubResource("Resource_jx4lc")])

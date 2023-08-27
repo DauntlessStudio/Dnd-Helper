@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_egvn3"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_a8mvh"]
+
+[sub_resource type="Resource" id="Resource_paeto"]
+script = ExtResource("1_egvn3")
+name = "Infrared Vision"
+monsterBehaviorType = 0
+description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
+descriptionWithLinks = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_pqjd1"]
+script = ExtResource("1_egvn3")
+name = "Regeneration"
+monsterBehaviorType = 0
+description = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
+descriptionWithLinks = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_pyo1w"]
+script = ExtResource("1_egvn3")
+name = "Double Weapon"
+monsterBehaviorType = 0
+description = " When the trandoshan attacks uses its multiattack, it can use a bonus action to make another attack. The trandoshans doesn't add its ability modifier to the damage of this attack."
+descriptionWithLinks = " When the trandoshan attacks uses its multiattack, it can use a bonus action to make another attack. The trandoshans doesn't add its ability modifier to the damage of this attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_hmios"]
+script = ExtResource("1_egvn3")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The trandoshan makes two weapon attacks."
+descriptionWithLinks = " The trandoshan makes two weapon attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_j5fnp"]
+script = ExtResource("1_egvn3")
+name = "Trandoshan Double-Sword"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "1d8 + 3"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_usup7"]
+script = ExtResource("1_egvn3")
+name = "Trandoshan Double-Sword"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d8) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d8) kinetic damage."
+attackType = 0
+restrictions = "Bonus Action Attack"
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 4
+damageRoll = "1d8"
+damageType = 7
+
+[resource]
+script = ExtResource("2_a8mvh")
+name = "Trandoshan Warrior"
+flavorText = ""
+sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
+size = 0
+types = Array[String](["humanoid"])
+alignment = "any dark"
+armorType = "natural armor"
+hitPoints = 60
+speed = 30
+strength = 16
+dexterity = 13
+constitution = 13
+intelligence = 10
+wisdom = 12
+charisma = 9
+savingThrows = Array[String](["Strength +5", "Wisdom +3"])
+skills = Array[String](["Athletics +5", "Perception +3", "Survival +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
+languages = Array[String](["Galactic Basic", "Dosh"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_egvn3")]([SubResource("Resource_paeto"), SubResource("Resource_pqjd1"), SubResource("Resource_pyo1w"), SubResource("Resource_hmios"), SubResource("Resource_j5fnp"), SubResource("Resource_usup7")])

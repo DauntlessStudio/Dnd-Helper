@@ -1,0 +1,153 @@
+[gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xgyyn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_exadl"]
+
+[sub_resource type="Resource" id="Resource_jk6l6"]
+script = ExtResource("1_xgyyn")
+name = "Shifting Molecules"
+monsterBehaviorType = 0
+description = " When the salamander enters or exits water, it changes the form of its molecular structure to mimic its surroundings. Other than its AC, its statistics are the same in each form. Any object it is wearing or carrying isn't transformed."
+descriptionWithLinks = " When the salamander enters or exits water, it changes the form of its molecular structure to mimic its surroundings. Other than its AC, its statistics are the same in each form. Any object it is wearing or carrying isn't transformed."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_viphc"]
+script = ExtResource("1_xgyyn")
+name = "Amphibious"
+monsterBehaviorType = 0
+description = " The salamander can breathe air and water."
+descriptionWithLinks = " The salamander can breathe air and water."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0bhqy"]
+script = ExtResource("1_xgyyn")
+name = "Diffuse Body"
+monsterBehaviorType = 0
+description = " The salamander can move through other creatures and objects no more than 10 feet in diameter as if they were difficult terrain. It takes 5 (1d10) kinetic damage if it ends its turn inside an object."
+descriptionWithLinks = " The salamander can move through other creatures and objects no more than 10 feet in diameter as if they were difficult terrain. It takes 5 (1d10) kinetic damage if it ends its turn inside an object."
+attackType = 0
+restrictions = "Liquid Form Only"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_trx05"]
+script = ExtResource("1_xgyyn")
+name = "Spider Climb"
+monsterBehaviorType = 0
+description = " The salamander can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+descriptionWithLinks = " The salamander can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+attackType = 0
+restrictions = "Solid Form Only"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ma8h6"]
+script = ExtResource("1_xgyyn")
+name = "Spiked Hide"
+monsterBehaviorType = 0
+description = " Any creature that grapples the salamander takes 3 (1d6) kinetic damage at the end of its turn."
+descriptionWithLinks = " Any creature that grapples the salamander takes 3 (1d6) kinetic damage at the end of its turn."
+attackType = 0
+restrictions = "Solid Form Only"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_iaiqb"]
+script = ExtResource("1_xgyyn")
+name = "Watery Stealth"
+monsterBehaviorType = 0
+description = " While underwater, the salamander has advantage on Dexterity (Stealth) checks made to hide, and it can take the Hide action as a bonus action."
+descriptionWithLinks = " While underwater, the salamander has advantage on Dexterity (Stealth) checks made to hide, and it can take the Hide action as a bonus action."
+attackType = 0
+restrictions = "Liquid Form Only"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ekifc"]
+script = ExtResource("1_xgyyn")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "1d8 + 2"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_u3xhm"]
+script = ExtResource("1_xgyyn")
+name = "Claw"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) kinetic damage."
+attackType = 0
+restrictions = "Solid Form Only"
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 8
+damageRoll = "1d10 + 3"
+damageType = 7
+
+[resource]
+script = ExtResource("2_exadl")
+name = "Mucous Salamander"
+flavorText = ""
+sectionText = "Mucous salamanders, or pinkish salamanders, are amphibians native to the bogs of Yavin 4. They possess the distinct ability to diffuse their molecular structures underwater, which allow them to swim faster and pass through hunters' nets. When a mucous salamander enters dry areas, it cN change its molecular structure into hardened scales for protection from predators, particularly the angler. "
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "15 natural armor in solid form"
+hitPoints = 44
+speed = 30
+strength = 16
+dexterity = 17
+constitution = 13
+intelligence = 3
+wisdom = 12
+charisma = 5
+savingThrows = Array[String]([])
+skills = Array[String](["Athletics +5", "Stealth +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([3, 6])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Prone", "Grappled"])
+senses = Array[String](["passive Perception 11"])
+languages = Array[String](["ï¿½"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_xgyyn")]([SubResource("Resource_jk6l6"), SubResource("Resource_viphc"), SubResource("Resource_0bhqy"), SubResource("Resource_trx05"), SubResource("Resource_ma8h6"), SubResource("Resource_iaiqb"), SubResource("Resource_ekifc"), SubResource("Resource_u3xhm")])

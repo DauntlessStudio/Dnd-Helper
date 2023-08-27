@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_qw8bu"]
+
+[resource]
+script = ExtResource("1_qw8bu")
+name = "Vitality Shield"
+powerType = 0
+prerequisite = "Force Body"
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "You siphon some of your own vitality to create a barrier in the Force around yourself. You take 2d8 true damage, and gain a number of temporary hit points equal to twice the amount of damage you took. If this damage would reduce your hit points to 0, the power fails. While you have these temporary hit points, you have advantage on Strength, Dexterity and Constitution saving throws. Any remaining temporary hit points are lost when this power ends.
+
+***Force Potency.*** When you cast this power using a force slot of 3rd level or higher, the true damage increases by 1d8 for each slot level above 2nd."
+higherLevelDescription = ""

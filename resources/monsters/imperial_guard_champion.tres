@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_4t8v4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uiedj"]
+
+[sub_resource type="Resource" id="Resource_sxg2j"]
+script = ExtResource("1_4t8v4")
+name = "Forcecasting"
+monsterBehaviorType = 0
+description = " At will: enfeeble  2/day each: battle meditation, fear, battle precognition  The Royal Guard Champion's innate forcecasting ability is Wisdom (force save DC 16, +8 to hit with force powers). It can innately cast the following Force Powers:"
+descriptionWithLinks = " Forcecasting. The Royal Guard Champion's innate forcecasting ability is Wisdom (force save DC 16, +8 to hit with force powers). It can innately cast the following Force Powers: [url=][/url]
+
+ At will: [url=enfeeble]enfeeble[/url]
+
+ 2/day each: [url=battle_meditation]battle meditation[/url], [url=fear]fear[/url], [url=battle_precognition]battle precognition[/url]"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_xtnye"]
+script = ExtResource("1_4t8v4")
+name = "Choreography of Belligerence"
+monsterBehaviorType = 0
+description = " The Royal Guard Champion has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The Royal Guard Champion has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_i6wyv"]
+script = ExtResource("1_4t8v4")
+name = "Rally the Troops"
+monsterBehaviorType = 0
+description = " As a bonus action, the Imperial Royal Guard Champion can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
+descriptionWithLinks = " As a bonus action, the Imperial Royal Guard Champion can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_3xo5f"]
+script = ExtResource("1_4t8v4")
+name = "Blaster Pistol"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +5 to hit, range 40/160, one target. Hit: 4 (1d6 + 1) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 40/160, one target. Hit: 4 (1d6 + 1) energy damage."
+attackType = 0
+restrictions = ""
+range = "range 40/160"
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 4
+damageRoll = "1d6 + 1"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_qoreu"]
+script = ExtResource("1_4t8v4")
+name = "Doublesword"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 13 (2d8 + 4) kinetic energy."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 13 (2d8 + 4) kinetic energy."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 13
+damageRoll = "2d8 + 4"
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_1y418"]
+script = ExtResource("1_4t8v4")
+name = "Parry"
+monsterBehaviorType = 0
+description = " The Royal Guard Champion adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard Champion must see the attacker and be wielding a melee weapon."
+descriptionWithLinks = " The Royal Guard Champion adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard Champion must see the attacker and be wielding a melee weapon."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_uiedj")
+name = "Imperial Guard Champion"
+flavorText = "Imperial Guard Champions, also known as Sovereign Protectors, are the most elite cadre of guardsmen in Imperial service.  Only the best of the elite Emperor's Royal Guard are specially chosen to become Sovereign Protectors. They endure years of selection procedures and training aimed at achieving perfection in soldiering. Extreme standards are set for combat fitness, stamina, strength, dexterity, mental acuity, reaction time, loyalty and intelligence. Their combat training includes the use of heavy blaster pistols and the deadly double vibroblade. They also have access to Emperor's Royal Guard TIE/IN starfighters, and are often sent on extremely vital missions."
+sectionText = "The Galactic Empire, also known as the Old Empire, the First Galactic Empire, Palpatine's New Order, the Imperium or simply the Empire, is the galactic government established by Supreme Chancellor Palpatine to replace the Galactic Republic in 19 BBY and bring Sith rule to the galaxy.  The government personnel of this new Empire are protected by some of its most highly trained warriors. "
+size = 0
+types = Array[String](["humanoid"])
+alignment = "lawful dark"
+armorType = "heavy durasteel armor"
+hitPoints = 180
+speed = 30
+strength = 19
+dexterity = 12
+constitution = 13
+intelligence = 11
+wisdom = 16
+charisma = 19
+savingThrows = Array[String](["Con +5", "Int +4", "Wis +7"])
+skills = Array[String](["Intimidation +8", "Perception +7"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Frightened"])
+senses = Array[String](["passive Perception 117"])
+languages = Array[String](["Galactic Basic"])
+challengeRating = 11
+experiencePoints = 7200
+behaviors = Array[ExtResource("1_4t8v4")]([SubResource("Resource_sxg2j"), SubResource("Resource_xtnye"), SubResource("Resource_i6wyv"), SubResource("Resource_3xo5f"), SubResource("Resource_qoreu"), SubResource("Resource_1y418")])

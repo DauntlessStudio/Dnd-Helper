@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_00dn2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_h36yg"]
+
+[sub_resource type="Resource" id="Resource_1jsfi"]
+script = ExtResource("1_00dn2")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The Kolkpravis Khagan makes three melee attacks once with Blade of Plague and twice with Blade of Pain."
+descriptionWithLinks = " The Kolkpravis Khagan makes three melee attacks once with Blade of Plague and twice with Blade of Pain."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_hdiyk"]
+script = ExtResource("1_00dn2")
+name = "Blade of Plague"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 5 ft, one target. Hit 13 (1d8 + 5 plus 1d8) kinetic damage and the target must succed on a DC 16 Constitution saving throw or become Poisoned."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft, one target. Hit 13 (1d8 + 5 plus 1d8) kinetic damage and the target must succed on a DC 16 Constitution saving throw or become Poisoned."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft"
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 13
+damageRoll = "1d8 + 5 plus 1d8"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_jsefi"]
+script = ExtResource("1_00dn2")
+name = "Blade of Pain"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 5 ft. or range 20/60, one target. Hit 13 (1d8 + 5 plus 1d8) kinetic damage plus 20 (4d10) lightining damage."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft. or range 20/60, one target. Hit 13 (1d8 + 5 plus 1d8) kinetic damage plus 20 (4d10) lightining damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft. or range 20/60"
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 13
+damageRoll = "1d8 + 5 plus 1d8"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_j6dg6"]
+script = ExtResource("1_00dn2")
+name = "Leadership"
+monsterBehaviorType = 0
+description = " For 1 minute, the Khan can utter a special command or warning whenever a nonhostile creature that it can see within 30 feetof it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Khan. A creature can benefit from only one Leadership die at a time. This effect ends if the Khan is incapacitated."
+descriptionWithLinks = " For 1 minute, the Khan can utter a special command or warning whenever a nonhostile creature that it can see within 30 feetof it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Khan. A creature can benefit from only one Leadership die at a time. This effect ends if the Khan is incapacitated."
+attackType = 0
+restrictions = "Recharges after a Short or Long Rest"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_8541x"]
+script = ExtResource("1_00dn2")
+name = "Parry"
+monsterBehaviorType = 0
+description = " The Khan adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard must see the attacker and bewielding a melee weapon."
+descriptionWithLinks = " The Khan adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard must see the attacker and bewielding a melee weapon."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_h36yg")
+name = "Kolkpravis Khagan"
+flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
+sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
+size = 0
+types = Array[String](["humanoid"])
+alignment = "lawful balanced"
+armorType = "powered battle armor"
+hitPoints = 113
+speed = 30
+strength = 20
+dexterity = 16
+constitution = 18
+intelligence = 11
+wisdom = 13
+charisma = 19
+savingThrows = Array[String](["Str +9", "Con +8", "Cha +8"])
+skills = Array[String](["Athletics +9", "Intimidation +8"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60ft", "passive Perception 10"])
+languages = Array[String](["Kaleesh", "Galactic Basic"])
+challengeRating = 9
+experiencePoints = 5000
+behaviors = Array[ExtResource("1_00dn2")]([SubResource("Resource_1jsfi"), SubResource("Resource_hdiyk"), SubResource("Resource_jsefi"), SubResource("Resource_j6dg6"), SubResource("Resource_8541x")])

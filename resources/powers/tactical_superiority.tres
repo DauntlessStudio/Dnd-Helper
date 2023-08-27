@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_afwam"]
+
+[resource]
+script = ExtResource("1_afwam")
+name = "Tactical Superiority"
+powerType = 0
+prerequisite = ""
+level = 7
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Choose up to two willing creatures that you can see within range. Until the power ends, each targets' speed is doubled, they gain a +2 bonus to AC, they have advantage on Dexterity saving throws, and they gain an additional action on each of their turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or the Use an Object Action. 
+
+When the power ends, each target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 8th-level or higher, you can target one additional creature for each slot level above 7th."
+higherLevelDescription = ""

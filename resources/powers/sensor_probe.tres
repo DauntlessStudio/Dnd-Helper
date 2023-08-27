@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_xnvgh"]
+
+[resource]
+script = ExtResource("1_xnvgh")
+name = "Sensor Probe"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You create a small, temporary, invisible probe that hovers in the air for the duration. You mentally receive visual information from the probe. It has darkvision out to 30 feet. The eye can look in every direction.
+
+As an action, you can move the probe up to 30 feet in any direction. There's no limit on how far away from you it can be. A solid barrier blocks the probe's movement, but it can pass through an opening at least 1 inch in diameter."
+higherLevelDescription = ""

@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_c8v5w"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5drfb"]
+
+[sub_resource type="Resource" id="Resource_1fov4"]
+script = ExtResource("1_c8v5w")
+name = "Keen Smell"
+monsterBehaviorType = 0
+description = " The scurrier has advantage on Wisdom (Perception) checks that rely on smell."
+descriptionWithLinks = " The scurrier has advantage on Wisdom (Perception) checks that rely on smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ewlsb"]
+script = ExtResource("1_c8v5w")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The scurrier has advantage on an attack roll against a creature if at least one of the scurrier's allies is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The scurrier has advantage on an attack roll against a creature if at least one of the scurrier's allies is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_fsv4s"]
+script = ExtResource("1_c8v5w")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) kinetic damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_idexh"]
+script = ExtResource("1_c8v5w")
+name = "Ram"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 2) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 2) kinetic damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_5drfb")
+name = "Scurrier"
+flavorText = "Scurriers are a species of small creatures native to Tatooine. The bipedal runners sport an elongated snout, horn-like appendages, and a pointed tail. They are present in the streets of cities like Mos Eisley and in the vicinity of more isolated settlements like the Lars moisture farm."
+sectionText = "Ysalamiri are furry, lizard-like tree-dwellers about 2 feet in length, native to the planet Myrkr, and most known for their ability to create a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances ï¿½ sometimes by kilometers.Ysalamiri sink their claws into the Olbio trees on which they live and draw nutrients. It is very difficult to remove a ysalamir from its tree without killing it, although this has been known to happen. Some few have developed back harness or nutrient frames which allow transport of the ysalamiri and, therefore, their Force repelling bubble. Ysalamiri do not actually negate the Force; since all existence is infused with Force energy, this would not be possible. Rather, they project a bubble inside which users are unable to exert any influence over the Force. A single bubble measures a few meters in diameter; large groups of ysalamiri could extend their collective bubble by kilometers, but only in great numbers.Miriskin was a commodity  made from ysalamir skin."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 7
+speed = 30
+strength = 7
+dexterity = 15
+constitution = 11
+intelligence = 2
+wisdom = 10
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Darkvision 60 ft.", "Passive Perception 10"])
+languages = Array[String](["-"])
+challengeRating = 14
+experiencePoints = 50
+behaviors = Array[ExtResource("1_c8v5w")]([SubResource("Resource_1fov4"), SubResource("Resource_ewlsb"), SubResource("Resource_fsv4s"), SubResource("Resource_idexh")])

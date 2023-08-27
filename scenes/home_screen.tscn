@@ -106,30 +106,30 @@ split_offset = 450
 [node name="TabContainer" type="TabContainer" parent="MainPanel/VSplitContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainPanel/VSplitContainer"]
+[node name="NoteTaker" type="VBoxContainer" parent="MainPanel/VSplitContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel/VSplitContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel/VSplitContainer/NoteTaker"]
 layout_mode = 2
 
-[node name="OpenButton" type="Button" parent="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer"]
+[node name="OpenButton" type="Button" parent="MainPanel/VSplitContainer/NoteTaker/HBoxContainer"]
 layout_mode = 2
 text = "Open File"
 
-[node name="SaveButton" type="Button" parent="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer"]
+[node name="SaveButton" type="Button" parent="MainPanel/VSplitContainer/NoteTaker/HBoxContainer"]
 layout_mode = 2
 text = "Save File"
 
-[node name="NewButton" type="Button" parent="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer"]
+[node name="NewButton" type="Button" parent="MainPanel/VSplitContainer/NoteTaker/HBoxContainer"]
 layout_mode = 2
 text = "New File"
 
-[node name="TextEdit" type="TextEdit" parent="MainPanel/VSplitContainer/VBoxContainer"]
+[node name="TextEdit" type="TextEdit" parent="MainPanel/VSplitContainer/NoteTaker"]
 layout_mode = 2
 size_flags_vertical = 3
 script = ExtResource("9_hm85s")
 
-[node name="FileDialog" type="FileDialog" parent="MainPanel/VSplitContainer/VBoxContainer/TextEdit"]
+[node name="FileDialog" type="FileDialog" parent="MainPanel/VSplitContainer/NoteTaker/TextEdit"]
 title = "Open a File"
 position = Vector2i(0, 36)
 size = Vector2i(800, 600)
@@ -140,7 +140,7 @@ filters = PackedStringArray("*.txt")
 
 [connection signal="pressed" from="MainPanel/DiceBackground/DiceContainer/DiceResultButton" to="MainPanel/DiceBackground/DiceContainer/DiceResultButton" method="_on_pressed"]
 [connection signal="timeout" from="MainPanel/DiceBackground/DiceContainer/DiceResultButton/Timer" to="MainPanel/DiceBackground/DiceContainer/DiceResultButton" method="_hideRecentText"]
-[connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer/OpenButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_open_button_pressed"]
-[connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer/SaveButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_save_button_pressed"]
-[connection signal="pressed" from="MainPanel/VSplitContainer/VBoxContainer/HBoxContainer/NewButton" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_new_button_pressed"]
-[connection signal="file_selected" from="MainPanel/VSplitContainer/VBoxContainer/TextEdit/FileDialog" to="MainPanel/VSplitContainer/VBoxContainer/TextEdit" method="_on_file_dialog_file_selected"]
+[connection signal="pressed" from="MainPanel/VSplitContainer/NoteTaker/HBoxContainer/OpenButton" to="MainPanel/VSplitContainer/NoteTaker/TextEdit" method="_on_open_button_pressed"]
+[connection signal="pressed" from="MainPanel/VSplitContainer/NoteTaker/HBoxContainer/SaveButton" to="MainPanel/VSplitContainer/NoteTaker/TextEdit" method="_on_save_button_pressed"]
+[connection signal="pressed" from="MainPanel/VSplitContainer/NoteTaker/HBoxContainer/NewButton" to="MainPanel/VSplitContainer/NoteTaker/TextEdit" method="_on_new_button_pressed"]
+[connection signal="file_selected" from="MainPanel/VSplitContainer/NoteTaker/TextEdit/FileDialog" to="MainPanel/VSplitContainer/NoteTaker/TextEdit" method="_on_file_dialog_file_selected"]

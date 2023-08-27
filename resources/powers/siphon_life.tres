@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_7apmf"]
+
+[resource]
+script = ExtResource("1_7apmf")
+name = "Siphon Life"
+powerType = 0
+prerequisite = "Drain Life"
+level = 5
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a Dexterity saving throw. On a successful save, the target takes 2d8 necrotic damage, and the power ends. On a failed save, the target takes 4d8 necrotic damage, and until the power ends, you can use your action on each of your turns to automatically deal 4d8 necrotic damage to the target. The power ends if you use your action to do anything else, if the target is ever outside the power's range, or if the target has total cover from you.
+
+Whenever the power deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes.
+
+***Force Potency.*** When you cast this power using a force slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+higherLevelDescription = ""

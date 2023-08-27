@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_4hxbg"]
+
+[resource]
+script = ExtResource("1_4hxbg")
+name = "Rebuke"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You strike a creature with the righteous fury of the Force. Make a melee force attack against the target, if the attack hits, the target takes force damage depending on its alignment: a dark-aligned creature takes 1d12 force damage, a balanced or unaligned creature takes 1d10 force damage, and a light-aligned creature takes 1d8 force damage.
+
+The power's damage increases by one die when you reach 5th, 11th, and 17th level."
+higherLevelDescription = ""

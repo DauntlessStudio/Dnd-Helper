@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_0b0uy"]
+
+[resource]
+script = ExtResource("1_0b0uy")
+name = "Spare the Dying"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You touch a living creature that has 0 hit points. The creature becomes stable. This power has no effect on droids or constructs."
+higherLevelDescription = ""

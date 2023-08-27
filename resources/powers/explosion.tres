@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_mt5e6"]
+
+[resource]
+script = ExtResource("1_mt5e6")
+name = "Explosion"
+powerType = 0
+prerequisite = ""
+level = 3
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You create an explosion at a point within range. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
+
+The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+higherLevelDescription = ""

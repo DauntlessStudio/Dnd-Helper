@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_4lnoi"]
+
+[resource]
+script = ExtResource("1_4lnoi")
+name = "True Sight"
+powerType = 0
+prerequisite = "Force Sight"
+level = 6
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "You shift your vision to see through use of the Force, 
+
+giving you the ability to see things as they actually are. For the duration, you have truesight and notice secret doors hidden by powers, all out to a range of 120 feet."
+higherLevelDescription = ""

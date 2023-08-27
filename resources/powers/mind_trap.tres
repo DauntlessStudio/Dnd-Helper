@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ck766"]
+
+[resource]
+script = ExtResource("1_ck766")
+name = "Mind Trap"
+powerType = 0
+prerequisite = "Force Confusion"
+level = 4
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You attempt to trap the mind of your target in a psychic cage. The target must make a Charisma saving throw. On a failed save, the creature is incapacitated for the duration as its mind is trapped. It can think, but it can't have any contact with or perceive the outside world. If the creature takes damage, it makes another Charisma save. On a success, the power ends. This power has no effect on droids or constructs.
+
+***Force Potency.*** When you cast this power using a force slot of 6th level or higher, after 1 minute of concentration the power's duration becomes 24 hours and it no longer requires your concentration."
+higherLevelDescription = ""

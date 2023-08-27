@@ -1,0 +1,168 @@
+[gd_resource type="Resource" script_class="Character" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0wmw4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_c40aw"]
+
+[sub_resource type="Resource" id="Resource_5y0ql"]
+script = ExtResource("1_0wmw4")
+name = "Brute"
+monsterBehaviorType = 0
+description = " The trandoshan deals an extra 3 (1d6) damage when it hits with a melee weapon attack (included in the attacks)."
+descriptionWithLinks = " The trandoshan deals an extra 3 (1d6) damage when it hits with a melee weapon attack (included in the attacks)."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_8ajjd"]
+script = ExtResource("1_0wmw4")
+name = "Frenzy"
+monsterBehaviorType = 0
+description = " When the trandoshan reduces a creature to 0 hit points with a melee attack on its turn, it can immediately move up to half its speed and make a vibrosword attack."
+descriptionWithLinks = " When the trandoshan reduces a creature to 0 hit points with a melee attack on its turn, it can immediately move up to half its speed and make a vibrosword attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_pj6ig"]
+script = ExtResource("1_0wmw4")
+name = "Infrared Vision"
+monsterBehaviorType = 0
+description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
+descriptionWithLinks = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_a3twh"]
+script = ExtResource("1_0wmw4")
+name = "Regeneration"
+monsterBehaviorType = 0
+description = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
+descriptionWithLinks = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_4la5u"]
+script = ExtResource("1_0wmw4")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The trandoshan makes three attacks with its sword or slugthrower."
+descriptionWithLinks = " The trandoshan makes three attacks with its sword or slugthrower."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ru7ei"]
+script = ExtResource("1_0wmw4")
+name = "Trandoshan Greatsword"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 4) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 4) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 7
+numberOfTargets = "one target."
+damage = 13
+damageRoll = "3d6 + 4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_vukil"]
+script = ExtResource("1_0wmw4")
+name = "Slugthrower"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +6 to hit, range 100/400., one target. Hit: 7 (1d8 + 3) kinetic damage."
+descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 100/400., one target. Hit: 7 (1d8 + 3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "range 100/400."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "1d8 + 3"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_p8ax1"]
+script = ExtResource("1_0wmw4")
+name = "Burst"
+monsterBehaviorType = 0
+description = " The trandoshan sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 14 Dexterity saving throw, taking 7 (1d8 + 3) kinetic damage on a failed save, or half as much on a successful one."
+descriptionWithLinks = " The trandoshan sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 14 Dexterity saving throw, taking 7 (1d8 + 3) kinetic damage on a failed save, or half as much on a successful one."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_foob0"]
+script = ExtResource("1_0wmw4")
+name = "Parry"
+monsterBehaviorType = 0
+description = " The trandoshan adds 3 to his AC against one melee attack that would hit him. To do so, the trandoshan must see the attacker and be wielding a melee weapon."
+descriptionWithLinks = " The trandoshan adds 3 to his AC against one melee attack that would hit him. To do so, the trandoshan must see the attacker and be wielding a melee weapon."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_c40aw")
+name = "Trandoshan Elite Warrior"
+flavorText = ""
+sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
+size = 0
+types = Array[String](["humanoid"])
+alignment = "any dark"
+armorType = "heavy combat suit"
+hitPoints = 127
+speed = 30
+strength = 19
+dexterity = 16
+constitution = 18
+intelligence = 10
+wisdom = 14
+charisma = 13
+savingThrows = Array[String](["Strength +7", "Wisdom +5"])
+skills = Array[String](["Athletics +7", "Intimidation +5", "Perception +5", "Survival +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 15"])
+languages = Array[String](["Galactic Basic", "Dosh"])
+challengeRating = 6
+experiencePoints = 1100
+behaviors = Array[ExtResource("1_0wmw4")]([SubResource("Resource_5y0ql"), SubResource("Resource_8ajjd"), SubResource("Resource_pj6ig"), SubResource("Resource_a3twh"), SubResource("Resource_4la5u"), SubResource("Resource_ru7ei"), SubResource("Resource_vukil"), SubResource("Resource_p8ax1"), SubResource("Resource_foob0")])

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_32hw5"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_4r111"]
+
+[sub_resource type="Resource" id="Resource_tqkm1"]
+script = ExtResource("1_32hw5")
+name = "Amphibious"
+monsterBehaviorType = 0
+description = " The dragon can breathe air and water."
+descriptionWithLinks = " The dragon can breathe air and water."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_h7opk"]
+script = ExtResource("1_32hw5")
+name = "Sith-born"
+monsterBehaviorType = 0
+description = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against Hssiss."
+descriptionWithLinks = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against Hssiss."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_f0ns7"]
+script = ExtResource("1_32hw5")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The Hssiss makes three attacks, once with its bite and twice with its claws."
+descriptionWithLinks = " The Hssiss makes three attacks, once with its bite and twice with its claws."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_7hn2m"]
+script = ExtResource("1_32hw5")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 14 (3d8+4) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 17) or become poisoned and take 6 (2d6) toxin damage per turn. The target is also grappled (escape DC 16). Until this grapple ends, the target is restrained, and the Hssiss can't bite another target"
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 14 (3d8+4) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 17) or become poisoned and take 6 (2d6) toxin damage per turn. The target is also grappled (escape DC 16). Until this grapple ends, the target is restrained, and the Hssiss can't bite another target"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_5u8fw"]
+script = ExtResource("1_32hw5")
+name = "Claws"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (3d6+4) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 15) or become poisoned and take 6 (2d6) toxin damage per turn."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (3d6+4) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 15) or become poisoned and take 6 (2d6) toxin damage per turn."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_8uqwr"]
+script = ExtResource("1_32hw5")
+name = "Invisibility"
+monsterBehaviorType = 0
+description = " The Hssiss magically turns Invisible until it attacks, or until its Concentration ends (as if concentrating on a power)."
+descriptionWithLinks = " The Hssiss magically turns Invisible until it attacks, or until its Concentration ends (as if concentrating on a power)."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_4r111")
+name = "Hssiss"
+flavorText = ""
+sectionText = "Hssiss, or dark side dragons, are a lizard species with the ability to influence Force-sensitive beings around them. ***Biology & Appearance.*** In appearance, Hssiss look like nothing more than particularly vicious reptiles, about three meters in length, with a green, scaly hide. In addition to those three meters, they have a meter long tail, covered in rows of spikes which stretch up past their backs and onto their necks. When in the lakes on Ambria, they hunt in pairs, grasping their prey with their strong jaws and sinking dozens of teeth into the unfortunate animal's body, while the other Hssiss sinks its jagged claws into it.***Abilities.*** Hssiss have a potent, venomous bite filled or powered by the Dark Side. Hssiss also have the ability to conceal themselves and become invisible, possibly doing so through the Force. ***Origins.*** Hssiss originated as savage reptilian predators on Ambria, and were one of the few creatures to survive the planet's destruction. They lived in and near Lake Natth, where Jedi Master Thon had imprisoned the dark side energies that had plagued the planet for millennia. The dark spirits then began to possess the creatures, turning them into something much foulerï¿½it is said that these \"dark side dragons\" aided those who used the dark side of the Force. Eventually, Great Bogga began to use them as body guards and pitted them against those who had failed him. When he realized how effective and vicious they were, he had them transported off-world and sold in bulk. Soon, Hssiss could be found all over the galaxy, especially on worlds where the dark side was strong, including Korriban, Mimban and Vjun."
+size = 0
+types = Array[String](["aberration"])
+alignment = "chaotic dark"
+armorType = "natural armor"
+hitPoints = 125
+speed = 30
+strength = 19
+dexterity = 14
+constitution = 17
+intelligence = 9
+wisdom = 12
+charisma = 8
+savingThrows = Array[String](["Dex +5", "Con +6", "Wis +3", "Cha +5"])
+skills = Array[String](["Perception +6", "Stealth +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Darkvision 60ft", "passive Perception 13"])
+languages = Array[String](["Can't speak but underst", "s comm", "s in Sith"])
+challengeRating = 7
+experiencePoints = 0
+behaviors = Array[ExtResource("1_32hw5")]([SubResource("Resource_tqkm1"), SubResource("Resource_h7opk"), SubResource("Resource_f0ns7"), SubResource("Resource_7hn2m"), SubResource("Resource_5u8fw"), SubResource("Resource_8uqwr")])

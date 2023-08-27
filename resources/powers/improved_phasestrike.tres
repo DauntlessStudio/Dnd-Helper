@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_sd44v"]
+
+[resource]
+script = ExtResource("1_sd44v")
+name = "Improved Phasestrike"
+powerType = 0
+prerequisite = "Phasestrike"
+level = 5
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Choose up to five creatures you can see within range. Make a melee force attack against each one. On hit, a target takes 6d10 force damage. You can then teleport to an unoccupied space you can see within 5 feet of one of the creatures you chose."
+higherLevelDescription = ""

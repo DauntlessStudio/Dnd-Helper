@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gl2di"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_awc0t"]
+
+[sub_resource type="Resource" id="Resource_sgrp2"]
+script = ExtResource("1_gl2di")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rua71"]
+script = ExtResource("1_gl2di")
+name = "Ball Form"
+monsterBehaviorType = 0
+description = " As a bonus action, the destroyer droid can transform into or out of ball form. While in ball form, the destroyer droid has increased speed, but it can not attack."
+descriptionWithLinks = " As a bonus action, the destroyer droid can transform into or out of ball form. While in ball form, the destroyer droid has increased speed, but it can not attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_x70ky"]
+script = ExtResource("1_gl2di")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The destroyer droid makes two weapon attacks."
+descriptionWithLinks = " The destroyer droid makes two weapon attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_v60bn"]
+script = ExtResource("1_gl2di")
+name = "Blaster Cannons"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +7 to hit, range 100/400, one target. Hit: 11 (2d6+4) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +7 to hit, range 100/400, one target. Hit: 11 (2d6+4) energy damage."
+attackType = 0
+restrictions = ""
+range = "range 100/400"
+attackBonus = 7
+numberOfTargets = "one target."
+damage = 11
+damageRoll = "2d6+4"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_43dth"]
+script = ExtResource("1_gl2di")
+name = "Blaster Volley"
+monsterBehaviorType = 0
+description = " The destroyer droid sprays a 10-foot-cube area within normal range of its blaster cannons with shots. Each creature in the area must make a DC 15 Dexterity saving throw, taking normal weapon damage on a failed save."
+descriptionWithLinks = " The destroyer droid sprays a 10-foot-cube area within normal range of its blaster cannons with shots. Each creature in the area must make a DC 15 Dexterity saving throw, taking normal weapon damage on a failed save."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_71whn"]
+script = ExtResource("1_gl2di")
+name = "Deflector Shield"
+monsterBehaviorType = 0
+description = " The destroyer droid adds 3 to its AC against one attack that would hit it. To do so, the destroyer droid must see the attacker."
+descriptionWithLinks = " The destroyer droid adds 3 to its AC against one attack that would hit it. To do so, the destroyer droid must see the attacker."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_awc0t")
+name = "Destroyer Droid"
+flavorText = "Melee destroyer droids are an early variation of the Trade Federation droideka. Developed as the ultimate melee unit, the Melee Destroyer Droid is tougher than the standard droidekas but utilizes weaker shields. The primary weapon of the grapple droideka is its lethal mechanical claws. "
+sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 142
+speed = 15
+strength = 14
+dexterity = 18
+constitution = 18
+intelligence = 13
+wisdom = 15
+charisma = 7
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 15"])
+languages = Array[String](["Binary", "Galactic Basic"])
+challengeRating = 7
+experiencePoints = 2900
+behaviors = Array[ExtResource("1_gl2di")]([SubResource("Resource_sgrp2"), SubResource("Resource_rua71"), SubResource("Resource_x70ky"), SubResource("Resource_v60bn"), SubResource("Resource_43dth"), SubResource("Resource_71whn")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_maob6"]
+
+[resource]
+script = ExtResource("1_maob6")
+name = "Affect Mind"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Choose a target within range that isn't hostile toward you. The target must make a Wisdom saving throw. On a failed save, you have advantage on all Charisma checks directed at that target. 
+
+On a successful save, the creature does not realize that you tried to use the Force to influence its mood, but it becomes immune to this power for one day. This power has no effect on droids or constructs."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_fwdhf"]
+
+[resource]
+script = ExtResource("1_fwdhf")
+name = "Corrosive Sphere"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You create a globule of acid and hurl it at a point within range, where it explodes in a 20-foot-radius sphere. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage and another 5d4 acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th."
+higherLevelDescription = ""

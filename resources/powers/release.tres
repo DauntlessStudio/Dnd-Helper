@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_amhwc"]
+
+[resource]
+script = ExtResource("1_amhwc")
+name = "Release"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Choose an object that you can see within range. The object can be a door, a box, a chest, a set of binders, a lock, or another object that contains a mundane or enhanced means that prevents access.
+
+A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.
+
+If you choose a target that is held shut with *lock*, that power is suppressed for 10 minutes, during which time the target can be opened and shut normally."
+higherLevelDescription = ""

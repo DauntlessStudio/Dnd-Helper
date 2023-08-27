@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_wob4x"]
+
+[resource]
+script = ExtResource("1_wob4x")
+name = "Condense/Vaporize"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "In an open container, you can create up to 10 gallons of drinkable water. You may also produce a rain that falls within a 30-foot cube and extinguishes open-air flames. You can destroy the same amount of water in an open container, or destroy a 30-foot cube of fog. 
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 2nd level or higher, the amount of water you can create increases by 10 gallons, or the size of the cube increases by 5 feet, for each slot level above 1st."
+higherLevelDescription = ""

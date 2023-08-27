@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_o82lv"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ddpyu"]
+
+[sub_resource type="Resource" id="Resource_w2kqt"]
+script = ExtResource("1_o82lv")
+name = "Grasping Tendrils"
+monsterBehaviorType = 0
+description = " The dianoga can have up to seven at a time. Each tentacle can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tentacle deals no damage to the dianoga, which can extrude a replacement tentacle on its next turn. A tentacle can also be broken if a creature takes an action and succeeds on a DC 16 Strength check against it."
+descriptionWithLinks = " The dianoga can have up to seven at a time. Each tentacle can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tentacle deals no damage to the dianoga, which can extrude a replacement tentacle on its next turn. A tentacle can also be broken if a creature takes an action and succeeds on a DC 16 Strength check against it."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_kybfa"]
+script = ExtResource("1_o82lv")
+name = "Limited Amphibiousness"
+monsterBehaviorType = 0
+description = " The dianoga can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+descriptionWithLinks = " The dianoga can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_y2jsq"]
+script = ExtResource("1_o82lv")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = "  The dianoga can make three attacks: two with its tentacles and one with its bite."
+descriptionWithLinks = "  The dianoga can make three attacks: two with its tentacles and one with its bite."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_bkgs2"]
+script = ExtResource("1_o82lv")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) kinetic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
+descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) kinetic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 7
+numberOfTargets = "one target."
+damage = 11
+damageRoll = "2d8 + 2"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_rj5gq"]
+script = ExtResource("1_o82lv")
+name = "Tentacles"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 11 (2d8 + 2) kinetic damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 11 (2d8 + 2) kinetic damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained."
+attackType = 0
+restrictions = ""
+range = "reach 15 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 11
+damageRoll = "2d8 + 2"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_sk416"]
+script = ExtResource("1_o82lv")
+name = "Tentacle Slam"
+monsterBehaviorType = 0
+description = " The dianoga slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) kinetic damage and be stunned until the end of the dianoga's next turn. On a successful save, the target takes half the kinetic damage and isn't stunned."
+descriptionWithLinks = " The dianoga slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) kinetic damage and be stunned until the end of the dianoga's next turn. On a successful save, the target takes half the kinetic damage and isn't stunned."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_ddpyu")
+name = "Dianoga, Adult"
+flavorText = ""
+sectionText = "Dianoga were large cephalopods, capable of growing up to ten meters in length, though most specimens grew to approximately five or six meters. They had a single eyestalk protruding from their mollusk-like bodies, and seven suckered tentacles surrounding a fanged maw containing a sharp serrated probe.Their bodies would become transparent when unfed, and, conversely, were known to change to reflect the color of the food they had eaten. This was achieved by diverting small portions of digested food into a series of ducts underneath the creature's skin, which would appear to affect the color of the dianoga's flesh.Over many millennia, dianoga migrated from Vodran by stowing away aboard garbage ships in their microscopic larval forms, and could be commonly found in trash compactors, garbage pits, and sewers across the galaxy, living off any present organic matter. They were primarily scavengers, and only posed a threat to living creatures when starving or threatened. Because of their penchant for living in and feeding on organic waste, dianoga were sometimes referred to as garbage squids, sewage squids, or trash monsters.Smaller dianoga were known to crawl out of toilets. Despite this, they could prove useful, since they served to rid waste of biological material, leaving behind salvageable minerals and metals. Only when a dianoga grew too large was it usually considered a threat, especially in urban areas.  However, the presence of a single dianoga was often cause for alarm, since the creatures were self-fertilizing hermaphrodites, and could quickly multiply to pose a larger problem.***Dianoga's Lair.*** A dianoga can often be found in trash compactors, garbage pits, sewers, water treatment facilities, and the like, throughout the galaxy.  Alternatively, some Dianoga's still live in natural environments such lakes and swamps.A dianoga knows its territory like the back of its tentacle, and can use the terrain to it's advantage.  When found in a confined setting with lots of refuse, such as in a garbage compactor, dianoga's are at their most deadly.  A dianoga encountered in it's lair has a challenge rating 1 higher than otherwise indicated.#### Lair ActionsOn initiative count 20 (losing initiative ties, the dianoga can take a lair action to cause one of the following effects; the dianoga cannot use the same effect two rounds in a row:- The water within 60 feet of the dianoga is filled with rippling waves.  Until initiative count 20 on the next round, that area is difficult terrain, and when a Medium or smaller creature moves into that area or starts its turn there, it must succeed on a DC 13 Strength saving throw or be knocked prone.- The dianoga retreats into the water and becomes invisible until initiative count 20 on the next turn or until the dianoga attacks, whichever comes first.- The dianoga causes the effects of the *Burst* power cast by a 1st level caster at any point it can see within the lair.#### Regional Effects- The area within 120 feet of the lair (if not separated from the lair by walls) is filled with a odorous mist, lightly obscuring the area.  The mist can be cleared away, for example, by a light wind, if the lair is not enclosed.- The area surrounding the lair is permeated by the stench of death and decay.  If a creature spends as least 1 hour within 500 feet of the lair (if not separated from the lair by walls), the creature must succeed a DC 12 Constitution saving throw or become poisoned.  A short rest in clean air will remove this poisoned condition.- Molds and fungi do not grow on surfaces within 500 feet of the lair, even where they would normally find purchase.- There are no obviously organic surfaces or creatures within 120 feet of the lair.If the Dianoga dies, these effects fade over the course of 1d10 days."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 105
+speed = 15
+strength = 18
+dexterity = 15
+constitution = 19
+intelligence = 6
+wisdom = 13
+charisma = 6
+savingThrows = Array[String](["Constitution +7"])
+skills = Array[String](["Stealth +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 11"])
+languages = Array[String](["Dianoga"])
+challengeRating = 5
+experiencePoints = 1800
+behaviors = Array[ExtResource("1_o82lv")]([SubResource("Resource_w2kqt"), SubResource("Resource_kybfa"), SubResource("Resource_y2jsq"), SubResource("Resource_bkgs2"), SubResource("Resource_rj5gq"), SubResource("Resource_sk416")])

@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dt2tf"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_aufnf"]
+
+[sub_resource type="Resource" id="Resource_7qiha"]
+script = ExtResource("1_dt2tf")
+name = "Keen Sight and Smell"
+monsterBehaviorType = 0
+description = " The flutterplume has advantage on Wisdom (Perception) checks that rely on sight or smell."
+descriptionWithLinks = " The flutterplume has advantage on Wisdom (Perception) checks that rely on sight or smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_a6flm"]
+script = ExtResource("1_dt2tf")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The flutterplume has advantage on an attack roll against a creature if at least one of the flutterplume's allies is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The flutterplume has advantage on an attack roll against a creature if at least one of the flutterplume's allies is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_24vvu"]
+script = ExtResource("1_dt2tf")
+name = "Beak"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: (1d4) kinetic damage"
+descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: (1d4) kinetic damage"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_aufnf")
+name = "Flutterplume"
+flavorText = ""
+sectionText = "Flutterplumes were feathered carrion-eaters native to the planet of Ord Mantell, but also had a sizable population on Alderaan. The enormous scavenger bird was noted for its impressive hook-like beak and four sets of curled talons that it used to tear apart and consume rotting carcasses. Its beautiful feathers were also valued as good luck charms. An abundant supply of fresh battlefield kills attracted flocks of these carrion eaters and there were stories of wounded men unable to defend them-selves being eaten by the hungry winged predators. Flutterplumes hunted in flocks of three or four, gliding on the thermal currents that blew across the planet"
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 5
+speed = 10
+strength = 7
+dexterity = 10
+constitution = 13
+intelligence = 2
+wisdom = 12
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 13"])
+languages = Array[String](["ï¿½"])
+challengeRating = 0
+experiencePoints = 25
+behaviors = Array[ExtResource("1_dt2tf")]([SubResource("Resource_7qiha"), SubResource("Resource_a6flm"), SubResource("Resource_24vvu")])

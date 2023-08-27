@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_j24p6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1xpx4"]
+
+[sub_resource type="Resource" id="Resource_mekjg"]
+script = ExtResource("1_j24p6")
+name = "Atmosphere Agnostic"
+monsterBehaviorType = 0
+description = " The mynock can survive in any type of atmosphere or vacuum."
+descriptionWithLinks = " The mynock can survive in any type of atmosphere or vacuum."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_00tvd"]
+script = ExtResource("1_j24p6")
+name = "Battery Drainer"
+monsterBehaviorType = 0
+description = " If the mynock attaches itself to a piece of equipment that needs energy to function, that piece will stop working until the Mynock is removed."
+descriptionWithLinks = " If the mynock attaches itself to a piece of equipment that needs energy to function, that piece will stop working until the Mynock is removed."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_o20rq"]
+script = ExtResource("1_j24p6")
+name = "Pack Tactics"
+monsterBehaviorType = 0
+description = " The mynock has advantage on an attack roll against a creature if at least one ally of the mynock is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The mynock has advantage on an attack roll against a creature if at least one ally of the mynock is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_mvovv"]
+script = ExtResource("1_j24p6")
+name = "Energy Drain"
+monsterBehaviorType = 0
+description = " The mynock can detach itself by spending 5 feet of its Movement. It does so after it drains 10 Hit Points of energy from the target or the target dies. A creature, including the target, can use its action to detach the Mynock.  Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) kinetic damage, and the mynock attaches to the target. If attached to a droid or construct, at the start of each of the mynock's turns, the target loses 5 (1d4 + 3) hit points due to energy being drained."
+descriptionWithLinks = " The mynock can detach itself by spending 5 feet of its Movement. It does so after it drains 10 Hit Points of energy from the target or the target dies. A creature, including the target, can use its action to detach the Mynock.  Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) kinetic damage, and the mynock attaches to the target. If attached to a droid or construct, at the start of each of the mynock's turns, the target loses 5 (1d4 + 3) hit points due to energy being drained."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one creature."
+damage = 5
+damageRoll = "1d4 + 3"
+damageType = 7
+
+[resource]
+script = ExtResource("2_1xpx4")
+name = "Mynock"
+flavorText = ""
+sectionText = "Mynocks are a species of silicon-based bat-like parasites that chew on the power cables and energy conductors of starships, and can drain a ship's entire power supply. They reproduce by splitting in two and growing new creatures from each half. Mynocks are capable of surviving in the atmospheres of planets and the vacuum of space, though only a few varieties lived on planets. They are also known to inhabit asteroid fields and the gullets of exogorths, where they share in its meals. "
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 7
+speed = 5
+strength = 4
+dexterity = 16
+constitution = 11
+intelligence = 2
+wisdom = 8
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 9"])
+languages = Array[String](["â€”"])
+challengeRating = 18
+experiencePoints = 25
+behaviors = Array[ExtResource("1_j24p6")]([SubResource("Resource_mekjg"), SubResource("Resource_00tvd"), SubResource("Resource_o20rq"), SubResource("Resource_mvovv")])

@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_tk7km"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ifwg6"]
+
+[sub_resource type="Resource" id="Resource_fglbi"]
+script = ExtResource("1_tk7km")
+name = "Keen Hearing"
+monsterBehaviorType = 0
+description = " The Shyrack has advantage on Wisdom (Perception) checks that rely on hearing."
+descriptionWithLinks = " The Shyrack has advantage on Wisdom (Perception) checks that rely on hearing."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_f6ya7"]
+script = ExtResource("1_tk7km")
+name = "Swarm"
+monsterBehaviorType = 0
+description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a small shyrack. The swarm can't regain hit points or gain temporary hit points."
+descriptionWithLinks = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a small shyrack. The swarm can't regain hit points or gain temporary hit points."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_l48if"]
+script = ExtResource("1_tk7km")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature in the swarm's space. Hit: 9 (2d8) kinetic damage, or 4 (1d8) kinetic damage if the swarm has half of its hit points or fewer."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature in the swarm's space. Hit: 9 (2d8) kinetic damage, or 4 (1d8) kinetic damage if the swarm has half of its hit points or fewer."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_ifwg6")
+name = "Shyrack Swarm"
+flavorText = ""
+sectionText = "Shyracks are cave-dwelling terrors that are fiercely territorial and attack any intruder with aggression and fervor. While typically cave bound, every sixty-three years the shyracks of Korriban spill from their cave habitats for an entire summer. These periods saw them fill the sky where they blotted out the sun and moon where they rained their bluish droppings onto everything below. Prior to the return of the Sith Empire, biologists from across the galaxy arrived on the planet in order to witness every sixty-third summer where they observed the purpling of the red Korriban terrain.While ungainly and slow-moving with no eyes, shyracks are potentially dangerous pests, especially when they converge as a swarm on an intruder. They are native to the Shyrack cave of Korriban and are natural rivals to the feared Tuk'ata."
+size = 0
+types = Array[String](["swarm of Small beasts"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 38
+speed = 0
+strength = 6
+dexterity = 18
+constitution = 11
+intelligence = 3
+wisdom = 12
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([3, 7])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Charmed", "Frightened", "Paralyzed", "Petrified", "Prone", "Restrained", "Stunned"])
+senses = Array[String](["blindsight 60 ft.", "passive Perception 11"])
+languages = Array[String](["â€”"])
+challengeRating = 1
+experiencePoints = 200
+behaviors = Array[ExtResource("1_tk7km")]([SubResource("Resource_fglbi"), SubResource("Resource_f6ya7"), SubResource("Resource_l48if")])

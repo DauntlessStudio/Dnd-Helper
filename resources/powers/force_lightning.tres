@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_88vkr"]
+
+[resource]
+script = ExtResource("1_88vkr")
+name = "Force Lightning"
+powerType = 0
+prerequisite = "Shock"
+level = 3
+castingPeriod = 0
+powerRange = "Self (100-foot line)"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. 
+
+The lightning ignites flammable objects in the area that aren't being worn or carried.
+
+***Force Potency.*** When you cast this power using a force slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+higherLevelDescription = ""

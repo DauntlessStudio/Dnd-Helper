@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_h8n3d"]
+
+[resource]
+script = ExtResource("1_h8n3d")
+name = "Locate Creature"
+powerType = 0
+prerequisite = "Locate Object"
+level = 4
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Describe or name a creature familiar to you. You sense the direction to the creature's location, as long as its within 1000 feet of you. If the creature is in motion, you know the direction of its movement. The power can locate a specific creature known to you or the nearest of a specific kind, as long as you have seen it while within 30 feet of it. If the creature is in a different form, the power doesn't work. This power can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature."
+higherLevelDescription = ""

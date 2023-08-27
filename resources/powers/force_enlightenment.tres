@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ogx64"]
+
+[resource]
+script = ExtResource("1_ogx64")
+name = "Force Enlightenment"
+powerType = 0
+prerequisite = "Guidance"
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You touch a creature and enhance it with the Force. Choose one of the following effects; the target gains that effect until the power ends.
+- ***Strength.*** The target has advantage on Strength checks, and his or her carrying capacity doubles.
+- ***Dexterity.*** The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
+- ***Endurance.*** The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the power ends.
+- ***Cunning.*** The target has advantage on Intelligence checks.
+- ***Wisdom.*** The target has advantage on Wisdom checks.
+- ***Splendor.*** The target has advantage on Charisma checks.
+
+This power has no effect on droids or constructs.
+
+***Force Potency.*** When you cast this power using a force slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+higherLevelDescription = ""

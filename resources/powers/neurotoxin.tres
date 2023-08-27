@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_1bjch"]
+
+[resource]
+script = ExtResource("1_1bjch")
+name = "Neurotoxin"
+powerType = 0
+prerequisite = ""
+level = 7
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You release a series of darts filled with neurotoxin. Choose any number of creatures you can see within range. Each creature  must make a Constitution saving throw. On a failed save, a creature suffers an effect based on its current hit points:
+
+- 60 hit points or fewer: poisoned for 1 minute
+- 50 hit points or fewer: poisoned and deafened for 1 minute
+- 40 hit points or fewer: poisoned, deafened, and blinded for 10 minutes
+- 30 hit points or fewer: poisoned, blinded, deafened, and stunned for 1 hour
+- 20 hit points or fewer: killed instantly
+
+This power has no effect on droids or constructs."
+higherLevelDescription = ""

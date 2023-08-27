@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ftwhm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_10otk"]
+
+[sub_resource type="Resource" id="Resource_oieem"]
+script = ExtResource("1_ftwhm")
+name = "Detect Force"
+monsterBehaviorType = 0
+description = " The inquisitor can sense the presence and direction of a creature who can cast force powers within 120 feet."
+descriptionWithLinks = " The inquisitor can sense the presence and direction of a creature who can cast force powers within 120 feet."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_2v2sw"]
+script = ExtResource("1_ftwhm")
+name = "Forcecasting"
+monsterBehaviorType = 0
+description = " At-Will: denounce, force disarm, force push/pull, mind trick, saber throw, slow  1st level: dark side tendrils, drain vitality, fear, force jump, sap vitality, sense force  2nd level: animate weapon, force sight, stun  3rd level: improved dark side tendrils, choke, force suppression, horror, sever force  4th level: dominate beast, drain life  5th level: dominate mind, siphon life  The inquisitor is a 12th-level forcecaster.  It's forcecasting ability is Charisma (force save DC 18, +10 to hit with power attacks).  The inquisitor has 41 force points and knows the following force powers:"
+descriptionWithLinks = " Forcecasting. The inquisitor is a 12th-level forcecaster.  It's forcecasting ability is Charisma (force save DC 18, +10 to hit with power attacks).  The inquisitor has 41 force points and knows the following force powers: [url=][/url]
+
+ At-Will: [url=denounce]denounce[/url], [url=force_disarm]force disarm[/url], [url=force_push-pull]force push/pull[/url], [url=mind_trick]mind trick[/url], [url=saber_throw]saber throw[/url], [url=slow]slow[/url]
+
+ 1st level: [url=dark_side_tendrils]dark side tendrils[/url], [url=drain_vitality]drain vitality[/url], [url=fear]fear[/url], [url=force_jump]force jump[/url], [url=sap_vitality]sap vitality[/url], [url=sense_force]sense force[/url]
+
+ 2nd level: [url=animate_weapon]animate weapon[/url], [url=force_sight]force sight[/url], [url=stun]stun[/url]
+
+ 3rd level: [url=improved_dark_side_tendrils]improved dark side tendrils[/url], [url=choke]choke[/url], [url=force_suppression]force suppression[/url], [url=horror]horror[/url], [url=sever_force]sever force[/url]
+
+ 4th level: [url=dominate_beast]dominate beast[/url], [url=drain_life]drain life[/url]
+
+ 5th level: [url=dominate_mind]dominate mind[/url], [url=siphon_life]siphon life[/url]"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_lx0tt"]
+script = ExtResource("1_ftwhm")
+name = "Force Resistance"
+monsterBehaviorType = 0
+description = "  The inquisitor has advantage on saving throws against force powers and resistance to damage dealt by force powers."
+descriptionWithLinks = "  The inquisitor has advantage on saving throws against force powers and resistance to damage dealt by force powers."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_p827t"]
+script = ExtResource("1_ftwhm")
+name = "War Casting"
+monsterBehaviorType = 0
+description = " When the inquisitor uses an action to cast a force power, they can use a bonus action to make a Spinning Double Saber attack."
+descriptionWithLinks = " War Casting. When the inquisitor uses an action to cast a force power, they can use a bonus action to make a Spinning Double Saber attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_q8vm8"]
+script = ExtResource("1_ftwhm")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The inquisitor makes three spinning doublesaber attacks."
+descriptionWithLinks = " The inquisitor makes three spinning doublesaber attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_5xlyd"]
+script = ExtResource("1_ftwhm")
+name = "Spinning Doublesaber"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 23 (4d8 + 5) energy damage."
+descriptionWithLinks = " Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 23 (4d8 + 5) energy damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 10
+numberOfTargets = "one target."
+damage = 23
+damageRoll = "4d8 + 5"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_fepeo"]
+script = ExtResource("1_ftwhm")
+name = "Dark Lightning"
+monsterBehaviorType = 0
+description = " Ranged Power Attack: +10 to hit, range 120 ft., one or two targets. Hit: 28 (8d6) necrotic damage.  The target must succeed on a DC 18 Strength saving throw or become restrained until the end of the inquisitor's next turn."
+descriptionWithLinks = " Ranged Power Attack: +10 to hit, range 120 ft., one or two targets. Hit: 28 (8d6) necrotic damage.  The target must succeed on a DC 18 Strength saving throw or become restrained until the end of the inquisitor's next turn."
+attackType = 0
+restrictions = ""
+range = "range 120 ft."
+attackBonus = 10
+numberOfTargets = "one or two targets."
+damage = 28
+damageRoll = "8d6"
+damageType = 9
+
+[resource]
+script = ExtResource("2_10otk")
+name = "Inquisitor, Grand"
+flavorText = "The Inquisitors were all former Jedi that had turned to the dark side in someway or another, with the Grand Inquisitor having served as a Jedi Temple Guard and the Tenth Brother being the former Jedi Master Prosset Dibs. The Emperor's apprentice Darth Vader soon discovered the program and was put in charge of them. Vader trained the Inquisitors in the ways of the dark side of the Force. As part of their training, a number of Inquisitors had parts of their body severed by Vader's lightsaber so that they would not forget the lesson of loss and to learn to abandon the tendency to fight defensively as former Jedi and adopt more offensive moves.Inquisitors also commanded Purge Troopers, which were elite death squads of clones. Due to the nature of their mission, Inquisitors had the power to commandeer any required Imperial Military forces, and all officers were to obey their orders. Any officer who came into contact with Force-sensitive beings was to immediately contact an Inquisitor to investigate the situation. Also, some Imperial officers disliked the interference of Inquisitors with some dismissing them as \"mystics.\" When the Inquisitors became part of the Inquisitorius, they left behind their former names and took up new names, with Brother or Sister denoting their sexes."
+sectionText = "Also known as the Order of Inquisitors, The Inquisitorious was an organization of Force-sensitive agents who worked for the Galactic Empire. Members of the Inquisitorius were known as Imperial Inquisitors, Inquisitors, Red Blades, Mystics by Imperial officers, and sometimes even Jedi hunters. They were tasked with hunting down the remaining Jedi who had survived Order 66 at the end of the Clone Wars."
+size = 0
+types = Array[String](["humanoid"])
+alignment = "lawful dark"
+armorType = "heavy combat suit"
+hitPoints = 143
+speed = 30
+strength = 11
+dexterity = 20
+constitution = 14
+intelligence = 13
+wisdom = 16
+charisma = 21
+savingThrows = Array[String](["Dex +10", "Wis +8", "Cha +10"])
+skills = Array[String](["Acrobatics +10", "Intimidation +10", "Perception +8", "Stealth +10"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
+languages = Array[String](["Galactic Basic", "two more of your choice"])
+challengeRating = 14
+experiencePoints = 11500
+behaviors = Array[ExtResource("1_ftwhm")]([SubResource("Resource_oieem"), SubResource("Resource_2v2sw"), SubResource("Resource_lx0tt"), SubResource("Resource_p827t"), SubResource("Resource_q8vm8"), SubResource("Resource_5xlyd"), SubResource("Resource_fepeo")])

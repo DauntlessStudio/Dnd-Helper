@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_hk1ib"]
+
+[resource]
+script = ExtResource("1_hk1ib")
+name = "Master Force Barrier"
+powerType = 0
+prerequisite = "Improved Force Barrier"
+level = 8
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "This power massively bolsters your allies with toughness and resolve. Creatures of your choice in a 30-foot radius around you when you cast this power gain the following benefits:
+- The creature sheds dim light in a 5-foot radius.
+- The creature has advantage on all saving throws
+- Other creatures have disadvantage on attack rolls against them.
+- When a dark side creature hits them with a melee attack, that creature must make a Constitution saving throw or be blinded until the power ends."
+higherLevelDescription = ""

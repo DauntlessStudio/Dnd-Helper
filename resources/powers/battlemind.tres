@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_emn7b"]
+
+[resource]
+script = ExtResource("1_emn7b")
+name = "Battlemind"
+powerType = 0
+prerequisite = "Battle Precognition"
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 10 minutes"
+concentration = true
+forceAlignment = 0
+description = "Through the Force, you gain a limited form of telepathy that enables you to anticipate the moves of your opponents in combat. While you aren't wearing armor or wielding a shield, you gain a +2 AC bonus against melee attacks and a +3 AC bonus against ranged attacks.
+
+This AC bonus is not applied against attacks from droids, constructs, or creatures with resistance or immunity to psychic damage."
+higherLevelDescription = ""

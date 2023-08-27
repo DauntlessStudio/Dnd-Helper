@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_p3aig"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_iy7d3"]
+
+[sub_resource type="Resource" id="Resource_jfmtg"]
+script = ExtResource("1_p3aig")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The vesuvague tree may make two constrict attacks per turn."
+descriptionWithLinks = " The vesuvague tree may make two constrict attacks per turn."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_c58co"]
+script = ExtResource("1_p3aig")
+name = "Constrict"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit 11 (1d8 + 5) kinetic damage, and a Large or smaller target is grappled (escape DC 16)."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit 11 (1d8 + 5) kinetic damage, and a Large or smaller target is grappled (escape DC 16)."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 11
+damageRoll = "1d8 + 5"
+damageType = 7
+
+[resource]
+script = ExtResource("2_iy7d3")
+name = "Vesuvague Tree"
+flavorText = "The Vesuvague Tree, also known as the Vesuvague Hanging Tree, is a carnivorous, semi-sentient, red-barked tree from the planet of Ithor. It is one of a number of intelligent plants from the world, a category of which included the Bafforr tree.The vesuvague tree, though rooted in the earth, is able to detect and move itself towards motion by sensing air vibrations in its leaves and ground vibrations in its roots. In order to catch its prey, it uses its quickly growing vines and roots, capable of extending multiple meters in mere seconds, to seize, strangle, and crush its food. Once a creature is dead, the tree buries its vines and roots inside of its prey, and slowly feeds off of its bodily fluids.The tree can be trained to respond to simple commands, much like a pet, and can understand words by using its leaves to sense the vibrations and patterns of spoken languages."
+sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
+size = 0
+types = Array[String](["tree"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 164
+speed = 10
+strength = 20
+dexterity = 6
+constitution = 20
+intelligence = 3
+wisdom = 6
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([7])
+damageVulnerabilities = Array[int]([4])
+conditionImmunities = Array[String](["Blinded", "Deafened", "Frightened"])
+senses = Array[String](["blindsight 90 ft.", "passive Perception 8"])
+languages = Array[String](["Galactic basic", "one other"])
+challengeRating = 7
+experiencePoints = 2900
+behaviors = Array[ExtResource("1_p3aig")]([SubResource("Resource_jfmtg"), SubResource("Resource_c58co")])

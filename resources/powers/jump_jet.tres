@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ids3y"]
+
+[resource]
+script = ExtResource("1_ids3y")
+name = "Jump Jet"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You boost yourself through the air with a brief surge of repulsor energy. You can rise a number of feet equal to 20 x your techcasting ability modifier. You can also move a number of feet horizontally during any part of the movement equal to 5 x your techcasting ability modifier. At the end of the turn on which you cast this power, you float gently to the ground if you are still aloft.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 2nd level or higher, you can rise an additional 20 feet, and move horizontally by another 5 feet for each slot level above 1st."
+higherLevelDescription = ""

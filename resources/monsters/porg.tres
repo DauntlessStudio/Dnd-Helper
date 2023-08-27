@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_g2614"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_g0qll"]
+
+[sub_resource type="Resource" id="Resource_43ff5"]
+script = ExtResource("1_g2614")
+name = "Keen Smell"
+monsterBehaviorType = 0
+description = " The porg has advantage on Wisdom (Perception) checks that rely on smell."
+descriptionWithLinks = " The porg has advantage on Wisdom (Perception) checks that rely on smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_1v8jt"]
+script = ExtResource("1_g2614")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_g0qll")
+name = "Porg"
+flavorText = ""
+sectionText = "Porgs are a species of non-sentient birds. They are stocky in nature, with two short wings, flat, beak-less faces, and two webbed feet. Porgs are sexually dimorphic; males are slightly larger than females, and males also have orange plumage around the eyes. Porgs of both sexes are covered in dense feathers, with white coloration on the body and face, and gray to brown on the wings and back. They are much lighter than they looked, thanks to a thick outer layer of waterproof feathers with a fluffy underlayer for warmth. They can fly short distances but not far enough to leave their native island. They can also run quite swiftly on the ground and are good at maneuvering into small spaces. The birds have stereoscopic vision, colored with brown irises and black pupils. Porgs favor cold environments."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 1
+speed = 10
+strength = 2
+dexterity = 14
+constitution = 8
+intelligence = 2
+wisdom = 12
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 13"])
+languages = Array[String](["ï¿½"])
+challengeRating = 0
+experiencePoints = 10
+behaviors = Array[ExtResource("1_g2614")]([SubResource("Resource_43ff5"), SubResource("Resource_1v8jt")])

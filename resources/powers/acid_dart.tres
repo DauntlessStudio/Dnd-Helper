@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_w5q7t"]
+
+[resource]
+script = ExtResource("1_w5q7t")
+name = "Acid Dart"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "90 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "A shimmering green dart streaks toward a target within range and bursts in a spray of acid. Make a ranged tech attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the dart splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd."
+higherLevelDescription = ""

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_bldgg"]
+
+[resource]
+script = ExtResource("1_bldgg")
+name = "Aura of Vigor"
+powerType = 0
+prerequisite = "Valor"
+level = 3
+castingPeriod = 0
+powerRange = "Self (30-foot radius)"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Envigorating energy radiates from you in a 30-foot radius. Until the power ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) deals an extra 1d4 damage with weapon attacks."
+higherLevelDescription = ""

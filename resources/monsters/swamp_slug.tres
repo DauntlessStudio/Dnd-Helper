@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fvst0"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_lr58b"]
+
+[sub_resource type="Resource" id="Resource_wmdnf"]
+script = ExtResource("1_fvst0")
+name = "Vile Stench"
+monsterBehaviorType = 0
+description = " Any creature that starts its turn within 10 feet of the slug must succeed on a DC 15 Constitution saving throw or take 9 (2d8) poison damage."
+descriptionWithLinks = " Any creature that starts its turn within 10 feet of the slug must succeed on a DC 15 Constitution saving throw or take 9 (2d8) poison damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_2y0i7"]
+script = ExtResource("1_fvst0")
+name = "Hold Breath"
+monsterBehaviorType = 0
+description = " The slug can hold its breath for 1 hour."
+descriptionWithLinks = " The slug can hold its breath for 1 hour."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_tb8hi"]
+script = ExtResource("1_fvst0")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The slug makes one bite attack and one slam attack."
+descriptionWithLinks = " The slug makes one bite attack and one slam attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_6icbo"]
+script = ExtResource("1_fvst0")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) kinetic damage, and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the slug can't bite another target."
+descriptionWithLinks = " Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) kinetic damage, and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the slug can't bite another target."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 11
+numberOfTargets = "one target."
+damage = 17
+damageRoll = "2d10 + 6"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_55qse"]
+script = ExtResource("1_fvst0")
+name = "Slam"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 11
+numberOfTargets = "one target."
+damage = 22
+damageRoll = "3d10 + 6"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_dwi4a"]
+script = ExtResource("1_fvst0")
+name = "Swallow"
+monsterBehaviorType = 0
+description = "If the slug dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.  The slug makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the slug, and it takes 7 (2d6) kinetic damage plus 7 (2d6) acid damage at the start of each of the slug's turns. The slug can have only one target swallowed at a time."
+descriptionWithLinks = "If the slug dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.  The slug makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the slug, and it takes 7 (2d6) kinetic damage plus 7 (2d6) acid damage at the start of each of the slug's turns. The slug can have only one target swallowed at a time."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_lr58b")
+name = "Swamp Slug"
+flavorText = ""
+sectionText = "An omnivorous species, swamp slugs have thousands of teeth and twenty-four pairs of legs. Their orange or golden eyes, the size of boulders, allow them to see clearly beneath the murky, cloudy waters, while the two rubbery antennae on the top of their heads, which grew to two meters, utilize sonar to pinpoint exact locations of objects, searching by motion. Swamp slugs are omnivores, eating anything organic that they can fit in their mouths of jagged teeth. The teeth, or radula, lining the slug's esophagus pulverize into organic slime any plant or animal matter that it ingests. An hermaphroditic species, the swamp slugs reproduce sexually. Each partner lays hundreds of eggs, most of which are eaten by other animals. They exude a thick, foul-smelling mucus which damages the breathing organs of other species. They are not desirable to eat by other predators and are given a wide berth in the swamps."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 175
+speed = 20
+strength = 22
+dexterity = 12
+constitution = 23
+intelligence = 3
+wisdom = 13
+charisma = 7
+savingThrows = Array[String](["Con +11"])
+skills = Array[String](["Perception +6"])
+damageImmunities = Array[int]([10])
+damageResistances = Array[int]([3, 6])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Poisoned", "Prone"])
+senses = Array[String](["blindsight 30 ft.", "darkvision 60 ft.", "passive Perception 16"])
+languages = Array[String](["â€”"])
+challengeRating = 14
+experiencePoints = 11500
+behaviors = Array[ExtResource("1_fvst0")]([SubResource("Resource_wmdnf"), SubResource("Resource_2y0i7"), SubResource("Resource_tb8hi"), SubResource("Resource_6icbo"), SubResource("Resource_55qse"), SubResource("Resource_dwi4a")])

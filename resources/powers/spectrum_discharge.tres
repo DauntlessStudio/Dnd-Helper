@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_eq88m"]
+
+[resource]
+script = ExtResource("1_eq88m")
+name = "Spectrum Discharge"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You touch a willing creature, granting it an elemental charge. Choose acid, cold, fire, lightning, poison or sonic. For the duration, a creature can use an action to expel energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save, or half as much damage on a successful one.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+higherLevelDescription = ""

@@ -1,0 +1,214 @@
+[gd_resource type="Resource" script_class="Character" load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_b405j"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nkx0a"]
+
+[sub_resource type="Resource" id="Resource_0dyyo"]
+script = ExtResource("1_b405j")
+name = "Legendary Resistance"
+monsterBehaviorType = 0
+description = " If the tactical droid fails a saving throw, it can choose to succeed instead."
+descriptionWithLinks = " If the tactical droid fails a saving throw, it can choose to succeed instead."
+attackType = 0
+restrictions = "3/Day"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_8sdm7"]
+script = ExtResource("1_b405j")
+name = "Master of the Droid"
+monsterBehaviorType = 0
+description = " While within 30 feet of the tactical droid, any droid ally of the tactical droid makes saving throws with advantage, and that ally regains 1d6 hit points whenever it starts its turn there."
+descriptionWithLinks = " While within 30 feet of the tactical droid, any droid ally of the tactical droid makes saving throws with advantage, and that ally regains 1d6 hit points whenever it starts its turn there."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rdqq4"]
+script = ExtResource("1_b405j")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The tactical droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The tactical droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_fet1w"]
+script = ExtResource("1_b405j")
+name = "Tactical Technology"
+monsterBehaviorType = 0
+description = " When the tactical droid casts a tech power that causes damage or that forces other creatures to make a saving throw, it can choose itself and any number of allies to be immune to the damage caused by the power and to succeed on the required saving throw."
+descriptionWithLinks = " When the tactical droid casts a tech power that causes damage or that forces other creatures to make a saving throw, it can choose itself and any number of allies to be immune to the damage caused by the power and to succeed on the required saving throw."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_8x2ih"]
+script = ExtResource("1_b405j")
+name = "Techcasting"
+monsterBehaviorType = 0
+description = " At-will: assess the situation, encrypted message, electroshock, poison spray, cryogenic burst, combustive shot  1st-level: homing rockets, expeditious retreat, repair droid  2nd-level: mirror image, charge power cell  3rd-level: explosion, tactical advantage  4th-level: sensor probe, synchronicity  5th-level: mass repair droid, toxic cloud  6th-level: security protocols  7th-level: tactical superiority  The tactical droid is a 13th-level techcaster. Its techcasting ability is Intelligence (power save DC18, +10 to hit with tech attacks) and it has 57 tech points. The tactical droid knows the following tech powers:"
+descriptionWithLinks = " Techcasting. The tactical droid is a 13th-level techcaster. Its techcasting ability is Intelligence (power save DC18, +10 to hit with tech attacks) and it has 57 tech points. The tactical droid knows the following tech powers: [url=][/url]
+
+ At-will: [url=assess_the_situation]assess the situation[/url], [url=encrypted_message]encrypted message[/url], [url=electroshock]electroshock[/url], [url=poison_spray]poison spray[/url], [url=cryogenic_burst]cryogenic burst[/url], [url=combustive_shot]combustive shot[/url]
+
+ 1st-level: [url=homing_rockets]homing rockets[/url], [url=expeditious_retreat]expeditious retreat[/url], [url=repair_droid]repair droid[/url]
+
+ 2nd-level: [url=mirror_image]mirror image[/url], [url=charge_power_cell]charge power cell[/url]
+
+ 3rd-level: [url=explosion]explosion[/url], [url=tactical_advantage]tactical advantage[/url]
+
+ 4th-level: [url=sensor_probe]sensor probe[/url], [url=synchronicity]synchronicity[/url]
+
+ 5th-level: [url=mass_repair_droid]mass repair droid[/url], [url=toxic_cloud]toxic cloud[/url]
+
+ 6th-level: [url=security_protocols]security protocols[/url]
+
+ 7th-level: [url=tactical_superiority]tactical superiority[/url]"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_88x0t"]
+script = ExtResource("1_b405j")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The tactical droid makes three biopistol attacks."
+descriptionWithLinks = " The tactical droid makes three biopistol attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ea5vg"]
+script = ExtResource("1_b405j")
+name = "Biopistol"
+monsterBehaviorType = 0
+description = " Melee Weapon Ateack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) kinetic damage plus 14 (4d6) poison damage."
+descriptionWithLinks = " Melee Weapon Ateack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) kinetic damage plus 14 (4d6) poison damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 8
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "1d8 + 3"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_sy8pp"]
+script = ExtResource("1_b405j")
+name = "Biopistol"
+monsterBehaviorType = 0
+description = " The tactical droid makes a biopistol attack."
+descriptionWithLinks = " The tactical droid makes a biopistol attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_a68p8"]
+script = ExtResource("1_b405j")
+name = "At-Will"
+monsterBehaviorType = 0
+description = " The tactical droid casts an at-will tech power."
+descriptionWithLinks = " The tactical droid casts an at-will tech power."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_u84q2"]
+script = ExtResource("1_b405j")
+name = "Move"
+monsterBehaviorType = 0
+description = " The tactical droid moves up to its speed without provoking opportunity attacks."
+descriptionWithLinks = " The tactical droid moves up to its speed without provoking opportunity attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_hl3tv"]
+script = ExtResource("1_b405j")
+name = "Construct Droid"
+monsterBehaviorType = 0
+description = " Up to five junk droids appear in unoccupied spaces within 30 feet of the tactical droid and remain until destroyed. Droids summoned in this way roll initiative and act in the next available turn. The tactical droid can have up to five droids summoned by this ability at a time."
+descriptionWithLinks = " Up to five junk droids appear in unoccupied spaces within 30 feet of the tactical droid and remain until destroyed. Droids summoned in this way roll initiative and act in the next available turn. The tactical droid can have up to five droids summoned by this ability at a time."
+attackType = 0
+restrictions = "Costs 3 Actions"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_nkx0a")
+name = "Super Tactical Droid"
+flavorText = "Super tactical droids are advanced tactical droids that had command capabilities during the Clone Wars, acting as generals of the Separatist Droid Army. They would often resort to threats and torture as interrogation routes. These droids were created to analyze a battle, calculate a possible battle-winning solution, and a time frame to carry out their plan. Being programmed with Separatist beliefs, they ruled through fear and through the lack of courage and hope in their victims and specifically \"freedom from the tyranny of the republic.\" Although Super Tactical Droids were not directly involved in combat, they were able to effectively use self-defense and an E-5 blaster rifle. Being programmed for success, they are willing to kill for the advancement of the Confederacy of Independent Systems.Building off their predecessors, the T-series tactical droid, they had a much more robotic inflection to their voices, as well a larger, more imposing and more damage-resistant body. These droids were also able to better process and adapt to sudden changes and unexpected complications and have more variables in their calculations. Although better than those before them, flaws in their programming were still prevalent. These included the difficulty to see approaches and plans that differ from their own, and the overconfidence in the Confederacy of Independent Systems and its army."
+sectionText = "Tactical droids are a type of battle droid designed to plan battle strategies. Baktoid Combat Automata manufactured several models of tactical droid, including the T-series tactical droid and a more advanced super tactical droid. Later, L-1 tactical droids would be used during the Galactic Civil War."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "powered battle armor"
+hitPoints = 105
+speed = 30
+strength = 14
+dexterity = 16
+constitution = 17
+intelligence = 21
+wisdom = 16
+charisma = 15
+savingThrows = Array[String]([])
+skills = Array[String](["Athletics +7", "Lore +10", "Perception +13", "Stealth +8"])
+damageImmunities = Array[int]([10])
+damageResistances = Array[int]([11, 9])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String](["Blinded", "Charmed", "Deafened", "Frightened", "Poisoned"])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 23"])
+languages = Array[String](["Galactic Basic", "Binary"])
+challengeRating = 15
+experiencePoints = 13000
+behaviors = Array[ExtResource("1_b405j")]([SubResource("Resource_0dyyo"), SubResource("Resource_8sdm7"), SubResource("Resource_rdqq4"), SubResource("Resource_fet1w"), SubResource("Resource_8x2ih"), SubResource("Resource_88x0t"), SubResource("Resource_ea5vg"), SubResource("Resource_sy8pp"), SubResource("Resource_a68p8"), SubResource("Resource_u84q2"), SubResource("Resource_hl3tv")])

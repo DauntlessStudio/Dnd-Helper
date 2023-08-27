@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i7pdr"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2y4v8"]
+
+[sub_resource type="Resource" id="Resource_70yjh"]
+script = ExtResource("1_i7pdr")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_iddol"]
+script = ExtResource("1_i7pdr")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The junk behemoth makes two blaster cannon attacks or two slam attacks."
+descriptionWithLinks = " The junk behemoth makes two blaster cannon attacks or two slam attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_hsprp"]
+script = ExtResource("1_i7pdr")
+name = "Blaster Cannon"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d10+1) energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d10+1) energy damage."
+attackType = 0
+restrictions = ""
+range = "range 80/320 ft."
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 6
+damageRoll = "1d10+1"
+damageType = 3
+
+[sub_resource type="Resource" id="Resource_d55v5"]
+script = ExtResource("1_i7pdr")
+name = "Slam"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d10+3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d10+3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 8
+damageRoll = "1d10+3"
+damageType = 7
+
+[resource]
+script = ExtResource("2_2y4v8")
+name = "Junk Behemoth"
+flavorText = ""
+sectionText = "Junk Droid, or Monster Droid, is the term used to describe any droid that is created by piecing together component parts of many other droids.Though anyone with the know-how can cobble together a junk droid, they are most notably created by the various Jawa tribes on Tatooine. Because they mainly sell their wares to moisture farmers and small town businesses, Jawas know what peoples' needs are, and are able to create custom droids to meet the individual needs of any customer.  Some junk droids are even made by themselves.  Because of their often mashed-together programming, they are considered dangerous by most civilized people, for they could go on a rampage, confuse orders, or even start building more of their own kind when having enough junk to do so.Though no two junk droids are exactly the same, they are generally constructed in four classes:* The Mechano-droid was a heavy labor unit* The Tracto-droid was a mobile scanning/radar unit* The Quad-pod droid was a cargo carrier* The Rollarc droid was a multipurpose unit suited to variable tasksJunk droids are sometimes sought after by eccentric collectors looking to find the most functional droid comprised the most incorporated parts that is the most pleasing to the eye."
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor scraps"
+hitPoints = 57
+speed = 30
+strength = 16
+dexterity = 12
+constitution = 17
+intelligence = 6
+wisdom = 8
+charisma = 5
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String]([])
+languages = Array[String](["Binary", "Galactic Basic"])
+challengeRating = 1
+experiencePoints = 200
+behaviors = Array[ExtResource("1_i7pdr")]([SubResource("Resource_70yjh"), SubResource("Resource_iddol"), SubResource("Resource_hsprp"), SubResource("Resource_d55v5")])

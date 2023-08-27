@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_gu30h"]
+
+[resource]
+script = ExtResource("1_gu30h")
+name = "Predictive AI"
+powerType = 0
+prerequisite = ""
+level = 9
+castingPeriod = 0
+powerRange = "Touch"
+duration = "or until the end of your next short or long rest; whichever happens first"
+concentration = false
+forceAlignment = 0
+description = "You touch a willing creature, granting them a limited AI companion that can predict the world around them. For the duration, the target can't be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.
+
+This power immediately ends if you cast it again before its duration ends."
+higherLevelDescription = ""

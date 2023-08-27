@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xet4c"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_kteko"]
+
+[sub_resource type="Resource" id="Resource_nag2r"]
+script = ExtResource("1_xet4c")
+name = "Fear of Fire"
+monsterBehaviorType = 0
+description = " If the wampa takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+descriptionWithLinks = " If the wampa takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_n3rs0"]
+script = ExtResource("1_xet4c")
+name = "Keen Smell"
+monsterBehaviorType = 0
+description = " The wampa has advantage on Wisdom (Perception) checks that rely on smell."
+descriptionWithLinks = " The wampa has advantage on Wisdom (Perception) checks that rely on smell."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0q7qx"]
+script = ExtResource("1_xet4c")
+name = "Snow Camouflage"
+monsterBehaviorType = 0
+description = " The wampa has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+descriptionWithLinks = " The wampa has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_a2ltf"]
+script = ExtResource("1_xet4c")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The wampa makes two attacks, one with its claw and one with its bite."
+descriptionWithLinks = " The wampa makes two attacks, one with its claw and one with its bite."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_5jikk"]
+script = ExtResource("1_xet4c")
+name = "Claw"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6+5) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6+5) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 12
+damageRoll = "2d6+5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_a3noo"]
+script = ExtResource("1_xet4c")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d10+2) kinetic damage. The target is grappled (escape DC 14) Until this grapple ends, the target is restrained, and the Snow Wampa can't bite another target."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d10+2) kinetic damage. The target is grappled (escape DC 14) Until this grapple ends, the target is restrained, and the Snow Wampa can't bite another target."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 6
+numberOfTargets = "one creature."
+damage = 7
+damageRoll = "1d10+2"
+damageType = 7
+
+[resource]
+script = ExtResource("2_kteko")
+name = "Snow Wampa"
+flavorText = ""
+sectionText = "Wampas are semi-sentient predators with humanoid proportions that stand up to 12 feet tall. While they all share characteristics in common, there are three variations of wampa that are distinct based on their native planet."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 51
+speed = 40
+strength = 19
+dexterity = 13
+constitution = 16
+intelligence = 5
+wisdom = 12
+charisma = 11
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +3", "Stealth +3"])
+damageImmunities = Array[int]([2])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
+languages = Array[String](["ï¿½"])
+challengeRating = 3
+experiencePoints = 700
+behaviors = Array[ExtResource("1_xet4c")]([SubResource("Resource_nag2r"), SubResource("Resource_n3rs0"), SubResource("Resource_0q7qx"), SubResource("Resource_a2ltf"), SubResource("Resource_5jikk"), SubResource("Resource_a3noo")])

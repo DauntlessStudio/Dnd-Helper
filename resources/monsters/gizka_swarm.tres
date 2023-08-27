@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_s8j6k"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_n7uwk"]
+
+[sub_resource type="Resource" id="Resource_vepvg"]
+script = ExtResource("1_s8j6k")
+name = "Swarm"
+monsterBehaviorType = 0
+description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny gizka. The swarm can't regain hit points or gain temporary hit points."
+descriptionWithLinks = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny gizka. The swarm can't regain hit points or gain temporary hit points."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_spp6u"]
+script = ExtResource("1_s8j6k")
+name = "Echolocation"
+monsterBehaviorType = 0
+description = " The swarm can't use its blindsight while deafened."
+descriptionWithLinks = " The swarm can't use its blindsight while deafened."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_hnbra"]
+script = ExtResource("1_s8j6k")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) kinetic damage or 3 (1d6) kinetic damage if the swarm has half of its hit points or fewer."
+descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) kinetic damage or 3 (1d6) kinetic damage if the swarm has half of its hit points or fewer."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 2
+numberOfTargets = "one target in the swarm's space."
+damage = 7
+damageRoll = "2d6"
+damageType = 7
+
+[resource]
+script = ExtResource("2_n7uwk")
+name = "Gizka Swarm"
+flavorText = ""
+sectionText = "Gizka are small reptiles that can be found all across the galaxy.***History.*** Whatever their native world, their extraordinary reproduction rate led to a fair amount of gizka on many worlds, even including uncharted planets such as Lehon, finding their way from the wreckage of crashed starships. It has been alternatively postulated that they came from that planet originally, spreading along with the Infinite Empire. Their exponential population growth led to them being considered pests on almost as many worlds as they inhabited, as they commonly eat electrical wiring.***Culture.*** They are the source for the delicacy gizka steak. Some species of sentient carnivores, like Trandoshans, seemed to think that gizka were one of those kinds of animals that \"everything tastes like.\""
+size = 0
+types = Array[String](["swarm of Tiny beasts"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 22
+speed = 20
+strength = 7
+dexterity = 14
+constitution = 10
+intelligence = 3
+wisdom = 14
+charisma = 5
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Charmed", "Frightened", "Paralyzed", "Petrified", "Prone", "Restrained", "Stunned"])
+senses = Array[String](["blindsight 120 feet (blind beyond this radius)", "passive Perception 10"])
+languages = Array[String](["ï¿½"])
+challengeRating = 14
+experiencePoints = 50
+behaviors = Array[ExtResource("1_s8j6k")]([SubResource("Resource_vepvg"), SubResource("Resource_spp6u"), SubResource("Resource_hnbra")])

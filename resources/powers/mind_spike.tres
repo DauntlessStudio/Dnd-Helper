@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_874hv"]
+
+[resource]
+script = ExtResource("1_874hv")
+name = "Mind Spike"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "Choose one creature you can see. The target must make a Wisdom saving throw. A creature takes 3d8 psychic damage on a failed save, or half as much damage on a successful one. Additionally, on a failed save, you always know the target's location, but only while the two of you are on the same planet. The target can't become hidden from you, and if it's invisible, it gains no benefits from this condition against you. This power has no effect on droids or constructs."
+higherLevelDescription = ""

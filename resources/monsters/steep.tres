@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_12qgg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_frwjr"]
+
+[sub_resource type="Resource" id="Resource_6se6i"]
+script = ExtResource("1_12qgg")
+name = "Amphibious"
+monsterBehaviorType = 0
+description = " The steep can breathe air and water."
+descriptionWithLinks = " The steep can breathe air and water."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0nev6"]
+script = ExtResource("1_12qgg")
+name = "Reckless"
+monsterBehaviorType = 0
+description = " At the start of its turn, the steep can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+descriptionWithLinks = " At the start of its turn, the steep can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_2g3n3"]
+script = ExtResource("1_12qgg")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (1d8 + 2) kinetic damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the steep can't bite another target."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (1d8 + 2) kinetic damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the steep can't bite another target."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 11
+damageRoll = "1d8 + 2"
+damageType = 7
+
+[resource]
+script = ExtResource("2_frwjr")
+name = "Steep"
+flavorText = ""
+sectionText = "The steep are a species of non-sentient amphibians native to the planet Metellos. They dwell in the sewage-filled seas of the planet, bobbing on the surface of the waters. At night, the carnivorous steeps wander the alleyways of Metellos' settlements, searching for children to eat.***Biology & Appearance.*** Steeps stand on four spindly legs, each of which ends with a webbed foot, and are capable of walking on land. The carnivorous amphibians are protected by a tough, rubbery hide of ten-centimeter-thick, brownish-white skin. Although their heads are large, their brains are small. A steep's mouth stretches from one side of the head to the other, with two eyes located on purple stalks protruding from the tops of their heads. Similarly purple-colored growths extend down the backs of the species.***Behavior.*** Designated as non-sentient, steeps are known for their lack of intelligence and, when fighting an adversary, will continue attacking relentlessly until they themselves have been killed. Steeps are named after their habit of \"steeping\" themselves in the sewage-filled waters of their homeworld Metellos' seas. The amphibians are frequently seen floating on the surface of the water. Steeps are known to roam down Metellean alleyways at night seeking children for prey."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 55
+speed = 30
+strength = 15
+dexterity = 13
+constitution = 13
+intelligence = 1
+wisdom = 10
+charisma = 3
+savingThrows = Array[String]([])
+skills = Array[String](["Stealth +4", "Percpection +3"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([3, 6])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
+languages = Array[String](["ï¿½"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_12qgg")]([SubResource("Resource_6se6i"), SubResource("Resource_0nev6"), SubResource("Resource_2g3n3")])

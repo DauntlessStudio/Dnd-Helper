@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_t4g7v"]
+
+[resource]
+script = ExtResource("1_t4g7v")
+name = "Master Force Scream"
+powerType = 0
+prerequisite = "Improved Force Scream"
+level = 8
+castingPeriod = 0
+powerRange = "Self (60-foot radius)"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You emit a cacophonous scream imbued with the power of the Force. Each creature you choose within 60 feet of you must succeed on a Constitution saving throw. On a failed save, a creature takes 6d6 psychic damage, 6d6 sonic damage, is deafened and blinded for 1 minute, and knocked prone. On a successful save, it takes half as much damage and isn't deafened, blinded, or knocked prone.
+
+A creature blinded by this power makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."
+higherLevelDescription = ""

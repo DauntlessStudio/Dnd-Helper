@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_nifis"]
+
+[resource]
+script = ExtResource("1_nifis")
+name = "Minor Hologram"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "10 feet"
+duration = "Up to 1 hour"
+concentration = false
+forceAlignment = 0
+description = "This ability is a minor tech trick that creates one of the following effects within range.
+- You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor. 
+- You instantaneously light or snuff out a source of light. 
+- You instantaneously clean or soil an object no larger than 1 cubic foot. 
+- You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. 
+- You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour. 
+- You create a trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn. 
+
+If you use this power multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+higherLevelDescription = ""

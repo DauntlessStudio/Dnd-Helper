@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_datpk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0mcxv"]
+
+[sub_resource type="Resource" id="Resource_mguh2"]
+script = ExtResource("1_datpk")
+name = "Brute"
+monsterBehaviorType = 0
+description = " A melee weapon does one extra die of damage when the wookiee hits with it (included in the attack)."
+descriptionWithLinks = " A melee weapon does one extra die of damage when the wookiee hits with it (included in the attack)."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_4pkgw"]
+script = ExtResource("1_datpk")
+name = "Berserk Charge"
+monsterBehaviorType = 0
+description = " If the wookiee surprises a creature and hits it with an attack during the first round of combat, the target takes an extar 7 (2d6) damage from the attack."
+descriptionWithLinks = " If the wookiee surprises a creature and hits it with an attack during the first round of combat, the target takes an extar 7 (2d6) damage from the attack."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_kpqop"]
+script = ExtResource("1_datpk")
+name = "Tech Casting"
+monsterBehaviorType = 0
+description = " At will: electrical burst, mending, on/off  1st level: element of surprise, kolto pack, repair droid  2nd level: hold droid, overheat  3rd level: enhance weapon, fabricate trap  The wookiee engineer is a 5th level tech caster (tech save DC 13, + 5 to hit with tech attacks).  The wookiee engineer has 23 tech points and knows the following tech powers:"
+descriptionWithLinks = " Tech Casting. The wookiee engineer is a 5th level tech caster (tech save DC 13, + 5 to hit with tech attacks).  The wookiee engineer has 23 tech points and knows the following tech powers: [url=][/url]
+
+ At will: [url=electrical_burst]electrical burst[/url], [url=mending]mending[/url], [url=on-off]on/off[/url]
+
+ 1st level: [url=element_of_surprise]element of surprise[/url], [url=kolto_pack]kolto pack[/url], [url=repair_droid]repair droid[/url]
+
+ 2nd level: [url=hold_droid]hold droid[/url], [url=overheat]overheat[/url]
+
+ 3rd level: [url=enhance_weapon]enhance weapon[/url], [url=fabricate_trap]fabricate trap[/url]"
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_7xjjv"]
+script = ExtResource("1_datpk")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The wookiee engineer makes two melee attacks."
+descriptionWithLinks = " The wookiee engineer makes two melee attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_me0t6"]
+script = ExtResource("1_datpk")
+name = "Vibromace"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, one target. Hit: 12 (2d10 + 3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, one target. Hit: 12 (2d10 + 3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "one target. *Hit:* 12 (2d10 + 3) kinetic damage."
+attackBonus = 5
+numberOfTargets = ""
+damage = 12
+damageRoll = "2d10 + 3"
+damageType = 7
+
+[resource]
+script = ExtResource("2_0mcxv")
+name = "Wookiee Engineer"
+flavorText = ""
+sectionText = "Wookiees are a tall species of furry humanoids from the planet Kashyyyk, who grow to a height of nearly three meters. They are covered from head to toe in a thick, shaggy coat of hair with water-shedding properties that notably comes in shades of brown, black, gray, and white. The species has two sexes, female and male. The latter grow long beards in adult life. Wookiee eye color ranges from blue to brown. Wookiees are big eaters, with the average adult requiring 3,500-6,000 calories a day of food.Wookiees have extendable claws which they use for climbing; using them for anything else violates the Wookiee honor code. Despite their fearsome appearance and volatile temperament, Wookiees are regarded as intelligent, sophisticated, loyal and trusting. When angered, Wookiees are known to descend into a berserker rage. Wookiees have a long lifespan, appearing not to age over a span of fifty years. ***History.*** The softening and repeal of anti-slavery laws under the Empire ultimately led to classifying the Wookiees as non-sentient. The Empire enslaved the Wookiees not because they were a meaningful threat to the Empire but because their massive, robust physiology allowed them to work long and hard in extreme conditions. As a result, many Wookiees were forced into slavery building much of the Imperial war machine, sent to be worked to death in the dangerous spice mines of the planet Kessel, or on construction sites such as the Death Star. Numerous Wookiees were bred for use in medical experimentation, and some were used as playthings, hunted for sport, or forced into gladiatorial combat.  Some of these wookiees turned towards darker pursuits after their rough treatment, such as the infamous bounty hunter Black Krrsantan."
+size = 0
+types = Array[String](["humanoid"])
+alignment = "unaligned"
+armorType = "hide"
+hitPoints = 60
+speed = 30
+strength = 16
+dexterity = 14
+constitution = 16
+intelligence = 16
+wisdom = 12
+charisma = 9
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +4", "Stealth +5", "Tech +6"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
+languages = Array[String](["Galactic Basic", "Shyriiwook"])
+challengeRating = 4
+experiencePoints = 1100
+behaviors = Array[ExtResource("1_datpk")]([SubResource("Resource_mguh2"), SubResource("Resource_4pkgw"), SubResource("Resource_kpqop"), SubResource("Resource_7xjjv"), SubResource("Resource_me0t6")])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_5p805"]
+
+[resource]
+script = ExtResource("1_5p805")
+name = "Reboot"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "1 round"
+concentration = false
+forceAlignment = 0
+description = "Choose a Medium or smaller droid or construct you can see. The target must make a Charisma saving throw. On a failed save, it is incapacitated until the start of your next turn. Each time the creature takes damage or is the target of a hostile power while incapacitated in this way, it can repeat this saving throw, ending the effect on a success."
+higherLevelDescription = ""

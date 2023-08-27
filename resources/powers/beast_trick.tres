@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_mpgk4"]
+
+[resource]
+script = ExtResource("1_mpgk4")
+name = "Beast Trick"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "24 hours"
+concentration = false
+forceAlignment = 0
+description = "This power lets you distract a beast. Choose a beast that you can see within range. If the beast's Intelligence is 4 or higher, the power fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the power's duration. If you or one of your companions harms the target, the power ends.
+
+***Force Potency.*** When you cast this power using a force slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
+higherLevelDescription = ""

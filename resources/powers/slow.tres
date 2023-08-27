@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_a8qc3"]
+
+[resource]
+script = ExtResource("1_a8qc3")
+name = "Slow"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "15 feet"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "A hostile creature of your choice must make a Constitution saving throw. On a failed save, the target gains 1 slowed level until the power ends. At the end of each of the creature's turns, it repeats this saving throw, ending the effect on a success.
+
+This power can affect multiple targets when you reach higher levels: two targets at 5th level, three targets at 11th level, and four targets at 17th level. "
+higherLevelDescription = ""

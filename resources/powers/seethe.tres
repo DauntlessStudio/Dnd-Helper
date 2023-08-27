@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_bhyxq"]
+
+[resource]
+script = ExtResource("1_bhyxq")
+name = "Seethe"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "Self"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You seethe with anger, letting the dark side of the Force flow through and empower you. As part of the action to cast this power, you spend one of your Hit Dice to recover hit points."
+higherLevelDescription = ""

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_efwi0"]
+
+[resource]
+script = ExtResource("1_efwi0")
+name = "Immolate"
+powerType = 0
+prerequisite = ""
+level = 5
+castingPeriod = 0
+powerRange = "90 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 8d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the power's duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 4d6 fire damage on a failed save, and the power ends on a successful one. These enhanced flames can't be extinguished by unenhanced means.
+
+If damage from this power kills a target, the target is turned to ash."
+higherLevelDescription = ""

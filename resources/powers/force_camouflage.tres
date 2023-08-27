@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_dchcn"]
+
+[resource]
+script = ExtResource("1_dchcn")
+name = "Force Camouflage"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You become invisible until the power ends. Anything you are wearing or carrying is invisible as long as it is on your person. The power ends if you attack, cast a power, or otherwise take a hostile action."
+higherLevelDescription = ""

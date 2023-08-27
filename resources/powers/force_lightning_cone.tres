@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_biv0q"]
+
+[resource]
+script = ExtResource("1_biv0q")
+name = "Force Lightning Cone"
+powerType = 0
+prerequisite = "Force Chain Lightning"
+level = 7
+castingPeriod = 0
+powerRange = "Self (60-foot cone)"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Lightning arcs from your hands. Each creature in a 60-foot cone must make a Dexterity saving throw. A creature takes 12d6 lightning damage on a failed save, or half as much on a successful one.
+
+***Force Potency.*** When you cast this power using a force slot of 8th level or higher, the damage increases by 2d6 for each slot level above 7th."
+higherLevelDescription = ""

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_7yt28"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2kijw"]
+
+[sub_resource type="Resource" id="Resource_rdu47"]
+script = ExtResource("1_7yt28")
+name = "Unhindered Movement"
+monsterBehaviorType = 0
+description = " The rathar's movement speed is not reduced while moving with a grappled creature."
+descriptionWithLinks = " The rathar's movement speed is not reduced while moving with a grappled creature."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_6i2a6"]
+script = ExtResource("1_7yt28")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The rathtar can use its Consume and then make four flailing arm attacks. Alternatively, the rathtar can make four attacks: two with its grasping tentacles and then two with its bite."
+descriptionWithLinks = " The rathtar can use its Consume and then make four flailing arm attacks. Alternatively, the rathtar can make four attacks: two with its grasping tentacles and then two with its bite."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_1ads7"]
+script = ExtResource("1_7yt28")
+name = "Bite"
+monsterBehaviorType = 0
+description = " The rathtar's gullet can hold only one Large creature or up to two Medium or smaller creatures inside it at a time. If the rathtar takes 20 damage or more on a single turn from a creature inside it, the rathtar must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creatures, which fall prone in a space within 10 feet of the rathtar. If the rathtar dies, the swallowed creatures are no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.   Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) kinetic damage, and the target is swallowed if it is a Medium or smaller creature. A swallowed creature is blinded and restrained, has total cover against attacks other effects outside the rathtar, and takes 14 (4d6) acid damage at the start of each of the rathtar's turns."
+descriptionWithLinks = " The rathtar's gullet can hold only one Large creature or up to two Medium or smaller creatures inside it at a time. If the rathtar takes 20 damage or more on a single turn from a creature inside it, the rathtar must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the swallowed creatures, which fall prone in a space within 10 feet of the rathtar. If the rathtar dies, the swallowed creatures are no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.   Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) kinetic damage, and the target is swallowed if it is a Medium or smaller creature. A swallowed creature is blinded and restrained, has total cover against attacks other effects outside the rathtar, and takes 14 (4d6) acid damage at the start of each of the rathtar's turns."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 14
+damageRoll = "2d8 + 5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_rajmh"]
+script = ExtResource("1_7yt28")
+name = "Flailing Arms"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5)  kinetic damage, and the target is grappled (escape DC 16) if it is Medium or smaller. Until the grapple ends, the rathar can't use this arm on another target. The rathtar has ten arms and can have up to four creatures grappled at a time."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5)  kinetic damage, and the target is grappled (escape DC 16) if it is Medium or smaller. Until the grapple ends, the rathar can't use this arm on another target. The rathtar has ten arms and can have up to four creatures grappled at a time."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 8
+damageRoll = "1d6 + 5"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_xlc5u"]
+script = ExtResource("1_7yt28")
+name = "Consume"
+monsterBehaviorType = 0
+description = " The rathtar moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. The first time the rathar enters a creature's space, the rathtar can make bite attack against that creature. If the attack misses, the creature is pushed 5 feet back or to the side of the rathtar, takes 9 (2d8) kinetic damage, and is knocked prone."
+descriptionWithLinks = " The rathtar moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. The first time the rathar enters a creature's space, the rathtar can make bite attack against that creature. If the attack misses, the creature is pushed 5 feet back or to the side of the rathtar, takes 9 (2d8) kinetic damage, and is knocked prone."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_t4vd0"]
+script = ExtResource("1_7yt28")
+name = "Grasping Tentacles"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 12 (2d6 + 5)  kinetic damage. If the target is a Medium or smaller creature, it must also make a DC 17 Strength saving throw. On a failed save, the target is pulled into an unoccupied space within 5 feet of the rathtar. The rathtar has two grasping tentacles."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 12 (2d6 + 5)  kinetic damage. If the target is a Medium or smaller creature, it must also make a DC 17 Strength saving throw. On a failed save, the target is pulled into an unoccupied space within 5 feet of the rathtar. The rathtar has two grasping tentacles."
+attackType = 0
+restrictions = ""
+range = "reach 15 ft."
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 12
+damageRoll = "2d6 + 5"
+damageType = 7
+
+[resource]
+script = ExtResource("2_2kijw")
+name = "Rathtar"
+flavorText = ""
+sectionText = "Rathtars were large, carnivorous cephalopods that were native to the planet Twon Ketee. Regarded as one of the most dangerous beasts in the galaxy, rathtars were known for hunting in packs, and their subspecies, the dwarf rathtar were involved in an incident known as the Trillia Massacre.   ***Biology.*** Although the study of rathtars was rare due to the danger posed by the beasts, it was believed that they shared common ancestry with other tentacled species such as the sarlaccs, the blixii, and the vixus of Umbara. Rathtars reproduced by fission, leading to rapidly increasing numbers if the species' population was not controlled.***Hunting.*** Rathtars appeared physiologically primitive, endowed with only rudimentary senses and possessing small brains. Despite the appearance of a mindless eating machine, rathtars proved effective at working together, and displayed affinity for pack hunting. Individual rathtars appeared to become smarter when in proximity to others of its species, and rathtar packs utilized howls, at a frequency beyond humanoid hearing, to communicate among one another. They also vocalized deafening roars when attacking and devouring prey, and let out horrifying shrieks of fury when in pain. If in danger from a rathtar, one's best hope was to hide, as the creatures were largely blind.***Feeding.*** Lacking a true skeleton, a rathtar had an enormous, round, slug-like body covered in light-reactive sensing orbs. They possessed multiple long, tentacle-like appendages; their principle feeding tentacles whipped out to capture and devour prey, which typically consisted of anything they perceived as non-rathtar. The creatures were ravenous and persistent eaters, capable of consuming virtually anything that they could fit into their robust, radial mouths, which were funnel-shaped and lined with rows of razor sharp teeth. Their throat distended outward into a hollow tongue, useful for swallowing struggling prey. The bilious creatures typically tore their meals apart piece by piece.***Movement.*** Capable of locomotion, rathtars curled their ambulatory tentacles inward to form a ball and roll themselves forward in a whirl of whipping tentacles. They moved deceptively fast for their size, and had adhesive pads on their pointed tentacle tipsï¿½known as a clubï¿½which helped them attach to surfaces. ***Tentacles and Tougness.*** Their tentacles had enormous strength, and were of a muscular hydrostat form. Their fleshy bodies were covered in a hard, rubbery exterior, giving the rathtars a heavy resistance to blaster bolts, small-arms fire, and even biting attacks."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 153
+speed = 40
+strength = 20
+dexterity = 10
+constitution = 17
+intelligence = 4
+wisdom = 13
+charisma = 5
+savingThrows = Array[String](["Con +7"])
+skills = Array[String](["Stealth +4"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([6])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String](["Poisoned", "Prone"])
+senses = Array[String](["blindsight 60 ft.", "passive Perception 15"])
+languages = Array[String](["ï¿½"])
+challengeRating = 9
+experiencePoints = 5000
+behaviors = Array[ExtResource("1_7yt28")]([SubResource("Resource_rdu47"), SubResource("Resource_6i2a6"), SubResource("Resource_1ads7"), SubResource("Resource_rajmh"), SubResource("Resource_xlc5u"), SubResource("Resource_t4vd0")])

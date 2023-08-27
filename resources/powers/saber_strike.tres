@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_1psr3"]
+
+[resource]
+script = ExtResource("1_1psr3")
+name = "Saber Strike"
+powerType = 0
+prerequisite = "Saber Assault"
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "As part of the action used to cast the power, you can move up to your speed and make one melee weapon attack. On a hit, the attack deals an extra 1d10 damage of the weapon's type. In addition, if you hit with the attack, the target must succeed on a Strength saving throw or be knocked prone.
+
+***Force Potency.*** When you cast this power using a force slot of 4th level or higher, the bonus weapon damage increases by 1d10 for every two slot levels above 2nd."
+higherLevelDescription = ""

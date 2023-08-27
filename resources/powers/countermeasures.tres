@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_02jtv"]
+
+[resource]
+script = ExtResource("1_02jtv")
+name = "Countermeasures"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Self"
+duration = "10 minutes"
+concentration = false
+forceAlignment = 0
+description = "For the duration, you gain the following benefits:
+- You are immune to the *homing rockets* tech power. 
+- You and objects you are wearing or carrying cannot be detected by tech powers that reveal your location, such as *scan area* or *frequency scan*, unless the caster makes a successful Intelligence saving throw. 
+- Creatures have disadvantage on Wisdom (Survival) checks to track you."
+higherLevelDescription = ""

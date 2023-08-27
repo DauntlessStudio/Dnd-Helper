@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_0qin1"]
+
+[resource]
+script = ExtResource("1_0qin1")
+name = "Locate Object"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "up to 10 minutes"
+concentration = true
+forceAlignment = 0
+description = "Describe or name an object. You sense the direction to the object's location, as long as its within 1000 feet of you. If the object is in motion, you know the direction of its movement. The power can locate a specific object known to you, as long as you have seen it while within 30 feet of it. Alternatively, the power can locate the nearest object of a particular kind. This power can't locate an object if any thickness of lead blocks a direct path between you and the object."
+higherLevelDescription = ""

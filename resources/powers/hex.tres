@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_nmq76"]
+
+[resource]
+script = ExtResource("1_nmq76")
+name = "Hex"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "90 feet"
+duration = "up to 1 hour"
+concentration = true
+forceAlignment = 0
+description = "You curse an opponent within range. Until the power ends, you deal an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also, choose one ability when you cast the power. The target has disadvantage on ability checks made with the chosen ability.
+
+If the target drops to 0 hit points before this power ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.
+
+***Force Potency.*** When you cast this power using a force slot of 3rd or 4th level, you can maintain your concentration on the power for up to 8 hours. When you use a force slot of 5th level or higher, you can maintain your concentration on the power for up to 24 hours."
+higherLevelDescription = ""

@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_m5n43"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_gkojw"]
+
+[sub_resource type="Resource" id="Resource_2jvfw"]
+script = ExtResource("1_m5n43")
+name = "Choreography of Belligerence"
+monsterBehaviorType = 0
+description = " The Imperial Royal Guard has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
+descriptionWithLinks = " The Imperial Royal Guard has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_vbwc7"]
+script = ExtResource("1_m5n43")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The Imperial Royal Guard makes two attacks."
+descriptionWithLinks = " The Imperial Royal Guard makes two attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_cgqjn"]
+script = ExtResource("1_m5n43")
+name = "Vibroblade"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +8 to hit, hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +8 to hit, hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "hit"
+attackBonus = 8
+numberOfTargets = "reach 5 ft."
+damage = 8
+damageRoll = "1d8 + 4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_6i0xk"]
+script = ExtResource("1_m5n43")
+name = "Force Pike"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit 9 (1d10 + 4) kinetic damage plus 12 (4d6) lightning damage. On a hit, the target must then succeed on a Constitution Saving Throw (DC 17) or become stunned."
+descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit 9 (1d10 + 4) kinetic damage plus 12 (4d6) lightning damage. On a hit, the target must then succeed on a Constitution Saving Throw (DC 17) or become stunned."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 8
+numberOfTargets = "one target."
+damage = 9
+damageRoll = "1d10 + 4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_jhvin"]
+script = ExtResource("1_m5n43")
+name = "Parry"
+monsterBehaviorType = 0
+description = " The Royal Gard adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard must see the attacker and bewielding a melee weapon."
+descriptionWithLinks = " The Royal Gard adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard must see the attacker and bewielding a melee weapon."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_gkojw")
+name = "Imperial Royal Guard"
+flavorText = "The Emperor's Royal Guard, also known as the Imperial Royal Guard, the Imperial Guard or the Red Guard, is an elite unit whose members serve as personal bodyguards to the Galactic Emperor. Fully clad in crimson robes and face-concealing helmets, the Emperor's guards are a silent, imposing, and deadly force armed with force pikes. In addition to strict requirements of size, strength, intelligence, and loyalty, only the most skilled soldiers in the Imperial Military qualify for duty in the Royal Guard. The Imperial Royal Guard is also occasionally assigned to provide protection to members of the Imperial Ruling Council and even Lord Vader himself."
+sectionText = "The Galactic Empire, also known as the Old Empire, the First Galactic Empire, Palpatine's New Order, the Imperium or simply the Empire, is the galactic government established by Supreme Chancellor Palpatine to replace the Galactic Republic in 19 BBY and bring Sith rule to the galaxy.  The government personnel of this new Empire are protected by some of its most highly trained warriors. "
+size = 0
+types = Array[String](["humanoid"])
+alignment = "lawful dark"
+armorType = "powered battle armor"
+hitPoints = 91
+speed = 30
+strength = 18
+dexterity = 14
+constitution = 16
+intelligence = 10
+wisdom = 17
+charisma = 9
+savingThrows = Array[String](["Dex +6", "Con +7", "Wis", "+7"])
+skills = Array[String](["Athletics +8", "Perception +7", "Insight +7"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 17"])
+languages = Array[String](["Glactic Basic"])
+challengeRating = 9
+experiencePoints = 5000
+behaviors = Array[ExtResource("1_m5n43")]([SubResource("Resource_2jvfw"), SubResource("Resource_vbwc7"), SubResource("Resource_cgqjn"), SubResource("Resource_6i0xk"), SubResource("Resource_jhvin")])

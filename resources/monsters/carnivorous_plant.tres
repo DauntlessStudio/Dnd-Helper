@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_uwl71"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nktpt"]
+
+[sub_resource type="Resource" id="Resource_kguty"]
+script = ExtResource("1_uwl71")
+name = "Corrode Metal"
+monsterBehaviorType = 0
+description = " Any unenhanced weapon made of metal that hits the plant corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. The plant can eat through 2-inch-thick, unenhanced metal in 1 round."
+descriptionWithLinks = " Any unenhanced weapon made of metal that hits the plant corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. The plant can eat through 2-inch-thick, unenhanced metal in 1 round."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_jums7"]
+script = ExtResource("1_uwl71")
+name = "False Appearance"
+monsterBehaviorType = 0
+description = " While the plant remains motionless, it is indistinguishable from a normal plant."
+descriptionWithLinks = " While the plant remains motionless, it is indistinguishable from a normal plant."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rg7nu"]
+script = ExtResource("1_uwl71")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) kinetic damage plus 7 (2d6) acid damage."
+descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) kinetic damage plus 7 (2d6) acid damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 2
+numberOfTargets = "one target."
+damage = 4
+damageRoll = "1d6 + 1"
+damageType = 7
+
+[resource]
+script = ExtResource("2_nktpt")
+name = "Carnivorous Plant"
+flavorText = ""
+sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
+size = 0
+types = Array[String](["plant"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 24
+speed = 10
+strength = 12
+dexterity = 11
+constitution = 16
+intelligence = 10
+wisdom = 10
+charisma = 2
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([1])
+damageVulnerabilities = Array[int]([4])
+conditionImmunities = Array[String](["Blinded", "Charmed", "Deafened", "Prone"])
+senses = Array[String](["Blindsight 60 ft. (blind beyond this radius)", "passive Perception 10"])
+languages = Array[String](["â€”"])
+challengeRating = 1
+experiencePoints = 100
+behaviors = Array[ExtResource("1_uwl71")]([SubResource("Resource_kguty"), SubResource("Resource_jums7"), SubResource("Resource_rg7nu")])

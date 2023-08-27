@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_y2dd7"]
+
+[resource]
+script = ExtResource("1_y2dd7")
+name = "Toxin Purge"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Touch"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "You touch a creature. If it is poisoned or diseased, you neutralize the poison or disease. If more than one poison or disease afflicts the target, you neutralize one poison or disease that you know is present, or you neutralize one at random.
+
+For the duration, the target has advantage on saving throws against being poisoned or diseased, and it has resistance to poison damage."
+higherLevelDescription = ""

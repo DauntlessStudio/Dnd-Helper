@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_3veat"]
+
+[resource]
+script = ExtResource("1_3veat")
+name = "Salvo"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "60 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You launch three projectiles at points you can see within range. Each creature within a 10-foot radius sphere of each point must make a Dexterity saving throw. A creature takes 3d6 fire and 3d6 kinetic damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one sphere is affected only once.
+
+The power damages objects in the area and ignites flammable objects that aren't being worn or carried.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 6th level or higher, you create four projectiles. When you cast this power using a tech slot of 8th level or higher, you create five projectiles."
+higherLevelDescription = ""

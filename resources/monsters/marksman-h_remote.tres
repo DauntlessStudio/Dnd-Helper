@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_s5emk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uyidg"]
+
+[sub_resource type="Resource" id="Resource_1wjaf"]
+script = ExtResource("1_s5emk")
+name = "Circuitry"
+monsterBehaviorType = 0
+description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_sra1q"]
+script = ExtResource("1_s5emk")
+name = "Safety Restraints"
+monsterBehaviorType = 0
+description = " The droid deals only non-lethal damage."
+descriptionWithLinks = " The droid deals only non-lethal damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_pyeby"]
+script = ExtResource("1_s5emk")
+name = "Interfaced Distraction Protocol"
+monsterBehaviorType = 0
+description = " While you are interfaced with this droid via the tracker droid interface tech power, when your droid is within 5 feet of a target, you do not provoke opportunity attacks when moving out of that creature's reach."
+descriptionWithLinks = " While you are interfaced with this droid via the tracker droid interface tech power, when your droid is within 5 feet of a target, you do not provoke opportunity attacks when moving out of that creature's reach."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_cbhxp"]
+script = ExtResource("1_s5emk")
+name = "Stunner"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +5 to hit, range 10/30 ft., one target. Hit: 1 energy damage."
+descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 10/30 ft., one target. Hit: 1 energy damage."
+attackType = 0
+restrictions = ""
+range = "range 10/30 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_uyidg")
+name = "Marksman-H Remote"
+flavorText = "Combat remotes (or \"seeker droids\" or \"training remotes\") are fast-moving and unpredictable. Commonly used by marksmen to improve aim and reaction time, they are equipped with non-lethal blasters to prevent injuries, and are usually shot at with light-only blasts. "
+sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
+size = 0
+types = Array[String](["droid"])
+alignment = "unaligned"
+armorType = "armor plating"
+hitPoints = 1
+speed = 30
+strength = 2
+dexterity = 16
+constitution = 8
+intelligence = 2
+wisdom = 12
+charisma = 4
+savingThrows = Array[String]([])
+skills = Array[String](["Acrobatics +5"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([9, 10, 11])
+damageVulnerabilities = Array[int]([6])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Blindsight 60 ft.", "passive Perception 11"])
+languages = Array[String](["â€”"])
+challengeRating = 0
+experiencePoints = 10
+behaviors = Array[ExtResource("1_s5emk")]([SubResource("Resource_1wjaf"), SubResource("Resource_sra1q"), SubResource("Resource_pyeby"), SubResource("Resource_cbhxp")])

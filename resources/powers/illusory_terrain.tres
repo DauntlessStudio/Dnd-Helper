@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_6tn28"]
+
+[resource]
+script = ExtResource("1_6tn28")
+name = "Illusory Terrain"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "300 feet"
+duration = "24 hours"
+concentration = false
+forceAlignment = 0
+description = "You make terrain in a 150-foot cube in range look, sound, and smell like some other sort of terrain. 
+
+The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your tech save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain."
+higherLevelDescription = ""

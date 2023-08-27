@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_r60bi"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ft2qu"]
+
+[sub_resource type="Resource" id="Resource_qlute"]
+script = ExtResource("1_r60bi")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = "  The rancor makes two attacks: one with its claws, and one with its bite."
+descriptionWithLinks = "  The rancor makes two attacks: one with its claws, and one with its bite."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_c1il4"]
+script = ExtResource("1_r60bi")
+name = "Claw"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit 7 (1d6+4) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit 7 (1d6+4) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "1d6+4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_thp8s"]
+script = ExtResource("1_r60bi")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit 9 (1d10+4) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit 9 (1d10+4) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 9
+damageRoll = "1d10+4"
+damageType = 7
+
+[resource]
+script = ExtResource("2_ft2qu")
+name = "Rancor, Juvenile"
+flavorText = ""
+sectionText = "Rancors are large carnivorous reptomammals native to the planet of Dathomir.  They are commonly kept as pets by affluent, less-than-reputable types."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 95
+speed = 30
+strength = 19
+dexterity = 11
+constitution = 20
+intelligence = 4
+wisdom = 9
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 120 ft.", "passive Perception 9"])
+languages = Array[String](["ï¿½"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_r60bi")]([SubResource("Resource_qlute"), SubResource("Resource_c1il4"), SubResource("Resource_thp8s")])

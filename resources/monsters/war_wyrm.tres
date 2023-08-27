@@ -1,0 +1,198 @@
+[gd_resource type="Resource" script_class="Character" load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1bjug"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_g3y5q"]
+
+[sub_resource type="Resource" id="Resource_4a6tb"]
+script = ExtResource("1_1bjug")
+name = "Tunneler"
+monsterBehaviorType = 0
+description = " The wyrm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+descriptionWithLinks = " The wyrm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_qejhu"]
+script = ExtResource("1_1bjug")
+name = "Legendary resistance"
+monsterBehaviorType = 0
+description = " If the wyrm fails a saving throw, it can choose to succeed instead."
+descriptionWithLinks = " If the wyrm fails a saving throw, it can choose to succeed instead."
+attackType = 0
+restrictions = "3/day"
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_78oj1"]
+script = ExtResource("1_1bjug")
+name = "Gargantuan Strength"
+monsterBehaviorType = 0
+description = " The wyrm's melee weapon attacks are considered enhanced."
+descriptionWithLinks = " The wyrm's melee weapon attacks are considered enhanced."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_hkrej"]
+script = ExtResource("1_1bjug")
+name = "Siege Monster"
+monsterBehaviorType = 0
+description = " The wyrm deals double damage to objects and structures."
+descriptionWithLinks = " The wyrm deals double damage to objects and structures."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_vbb6p"]
+script = ExtResource("1_1bjug")
+name = "Sith-born"
+monsterBehaviorType = 0
+description = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against war wyrms."
+descriptionWithLinks = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against war wyrms."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_4ll5j"]
+script = ExtResource("1_1bjug")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The wyrm makes two attacks: one with its bite and one with its tail."
+descriptionWithLinks = " The wyrm makes two attacks: one with its bite and one with its tail."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_r271m"]
+script = ExtResource("1_1bjug")
+name = "Bite"
+monsterBehaviorType = 0
+description = "If the wyrm takes 30 damage or more on a single turn from a creature inside it, the wyrm must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the wyrm. If the wyrm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.  Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 20 (3d8+7) kinetic damage. If the target is a Large or smaller creature, it must succeed on a DC 17 Dexterity saving throw or be swallowed by the wyrm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the wyrm, and it takes 21 (6d6) acid damage at the start of each of the wyrm's turns."
+descriptionWithLinks = "If the wyrm takes 30 damage or more on a single turn from a creature inside it, the wyrm must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the wyrm. If the wyrm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.  Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 20 (3d8+7) kinetic damage. If the target is a Large or smaller creature, it must succeed on a DC 17 Dexterity saving throw or be swallowed by the wyrm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the wyrm, and it takes 21 (6d6) acid damage at the start of each of the wyrm's turns."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 13
+numberOfTargets = "one target."
+damage = 20
+damageRoll = "3d8+7"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_yhitu"]
+script = ExtResource("1_1bjug")
+name = "Tail"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 17 (3d6+7) kinetic damage. If the target is a creature, it must succeed on a DC 19 Strength saving throw or be knocked prone."
+descriptionWithLinks = " Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 17 (3d6+7) kinetic damage. If the target is a creature, it must succeed on a DC 19 Strength saving throw or be knocked prone."
+attackType = 0
+restrictions = ""
+range = "reach 10 ft."
+attackBonus = 13
+numberOfTargets = "one target."
+damage = 17
+damageRoll = "3d6+7"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_x7gtn"]
+script = ExtResource("1_1bjug")
+name = "Cloud of Dust"
+monsterBehaviorType = 0
+description = " The wyrm lashes out and scatters a dusty wake. Each creature within 10 feet of the wyrm, including around a corner, must succeed on a DC 15 Constitution saving throw or be blinded until the end of the wyrm's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the wyrm's next turn."
+descriptionWithLinks = " The wyrm lashes out and scatters a dusty wake. Each creature within 10 feet of the wyrm, including around a corner, must succeed on a DC 15 Constitution saving throw or be blinded until the end of the wyrm's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the wyrm's next turn."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_rrmrl"]
+script = ExtResource("1_1bjug")
+name = "Tail Attack"
+monsterBehaviorType = 0
+description = " The wyrm makes one tail attack."
+descriptionWithLinks = " The wyrm makes one tail attack."
+attackType = 0
+restrictions = "Costs 2 Actions."
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ke5ph"]
+script = ExtResource("1_1bjug")
+name = "Move"
+monsterBehaviorType = 0
+description = " The wyrm moves up to its speed."
+descriptionWithLinks = " The wyrm moves up to its speed."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_g3y5q")
+name = "War Wyrm"
+flavorText = ""
+sectionText = "The war wyrm, or sith wyrm, was originally an exogorth altered through Sith alchemy by the Dark Lord of the Sith Naga Sadow and designed as a guardian. The ancient Massassi worshiped the beast as a god."
+size = 0
+types = Array[String](["aberration"])
+alignment = "chaotic dark"
+armorType = "None"
+hitPoints = 261
+speed = 50
+strength = 24
+dexterity = 16
+constitution = 18
+intelligence = 5
+wisdom = 10
+charisma = 8
+savingThrows = Array[String](["Con +10", "Wis +6"])
+skills = Array[String](["Athletics +13"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["Darkvision 60 ft.", "Blindsight 30 ft.", "Tremorsense 60 ft.", "passive Perception"])
+languages = Array[String](["Can't speak but underst", "s comm", "s in Sith"])
+challengeRating = 20
+experiencePoints = 25000
+behaviors = Array[ExtResource("1_1bjug")]([SubResource("Resource_4a6tb"), SubResource("Resource_qejhu"), SubResource("Resource_78oj1"), SubResource("Resource_hkrej"), SubResource("Resource_vbb6p"), SubResource("Resource_4ll5j"), SubResource("Resource_r271m"), SubResource("Resource_yhitu"), SubResource("Resource_x7gtn"), SubResource("Resource_rrmrl"), SubResource("Resource_ke5ph")])

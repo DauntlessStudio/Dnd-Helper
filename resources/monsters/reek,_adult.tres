@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0yiro"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7rmv2"]
+
+[sub_resource type="Resource" id="Resource_h85rg"]
+script = ExtResource("1_0yiro")
+name = "Charge"
+monsterBehaviorType = 0
+description = " If the reek moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 18 (4d8) kinetic damage. If the target is a Huge or smaller, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+descriptionWithLinks = " If the reek moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 18 (4d8) kinetic damage. If the target is a Huge or smaller, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_32fdt"]
+script = ExtResource("1_0yiro")
+name = "Gore"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8+6) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8+6) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 9
+numberOfTargets = "one target."
+damage = 24
+damageRoll = "4d8+6"
+damageType = 7
+
+[resource]
+script = ExtResource("2_7rmv2")
+name = "Reek, Adult"
+flavorText = ""
+sectionText = "Reeks are large, muscular quadrupeds native to the planet Ylesia. Though naturally herbivores, a starved reek can become a ravenous meat-eater. They sport two large cheek horns that can be used for head-locking in combat with another Reek as a sign of dominance."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 114
+speed = 50
+strength = 23
+dexterity = 8
+constitution = 17
+intelligence = 2
+wisdom = 12
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["passive Perception 11"])
+languages = Array[String](["ï¿½"])
+challengeRating = 7
+experiencePoints = 2900
+behaviors = Array[ExtResource("1_0yiro")]([SubResource("Resource_h85rg"), SubResource("Resource_32fdt")])

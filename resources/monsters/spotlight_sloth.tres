@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_kuvon"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_iymit"]
+
+[sub_resource type="Resource" id="Resource_1yl61"]
+script = ExtResource("1_kuvon")
+name = "Bioluminescent"
+monsterBehaviorType = 0
+description = " The sloth emits bright light in a 5-foot radius and dim light for an additional 10 ft.."
+descriptionWithLinks = " The sloth emits bright light in a 5-foot radius and dim light for an additional 10 ft.."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_l8v1r"]
+script = ExtResource("1_kuvon")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The sloth makes two fist attacks."
+descriptionWithLinks = " The sloth makes two fist attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_ji0wq"]
+script = ExtResource("1_kuvon")
+name = "Fist"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 10
+damageRoll = "2d6 + 3"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_ris22"]
+script = ExtResource("1_kuvon")
+name = "Fling Mud"
+monsterBehaviorType = 0
+description = " Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) kinetic damage. If the target is a Large or smaller creature, it is must also make a DC 13 Dexterity saving throw. On a failure, it is also blinded until the end of its next turn."
+descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) kinetic damage. If the target is a Large or smaller creature, it is must also make a DC 13 Dexterity saving throw. On a failure, it is also blinded until the end of its next turn."
+attackType = 0
+restrictions = ""
+range = "range 25/50 ft."
+attackBonus = 5
+numberOfTargets = "one target."
+damage = 6
+damageRoll = "1d6 + 3"
+damageType = 7
+
+[resource]
+script = ExtResource("2_iymit")
+name = "Spotlight Sloth"
+flavorText = "The Spotlight sloth, or Dagobah swamp sloth, is a large furry mammal covered in a waterproof greenish-brown fur. They are so named because of the blue bioluminescent patches beneath the leathery skin on their hairless chests. These \"spotlight\" patches, when revealed, are used to induce plants and fungi to unfold and/or burst. The sloth then uses its small paws to quickly stuff food in to its toothless mouth.The sloths are preyed upon by Dagobah's knobby white spiders. One stab of the spider's venomous stinger can knock out an unlucky sloth."
+sectionText = "Ysalamiri are furry, lizard-like tree-dwellers about 2 feet in length, native to the planet Myrkr, and most known for their ability to create a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances ï¿½ sometimes by kilometers.Ysalamiri sink their claws into the Olbio trees on which they live and draw nutrients. It is very difficult to remove a ysalamir from its tree without killing it, although this has been known to happen. Some few have developed back harness or nutrient frames which allow transport of the ysalamiri and, therefore, their Force repelling bubble. Ysalamiri do not actually negate the Force; since all existence is infused with Force energy, this would not be possible. Rather, they project a bubble inside which users are unable to exert any influence over the Force. A single bubble measures a few meters in diameter; large groups of ysalamiri could extend their collective bubble by kilometers, but only in great numbers.Miriskin was a commodity  made from ysalamir skin."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 26
+speed = 20
+strength = 16
+dexterity = 8
+constitution = 15
+intelligence = 6
+wisdom = 14
+charisma = 6
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
+languages = Array[String](["ï¿½"])
+challengeRating = 2
+experiencePoints = 450
+behaviors = Array[ExtResource("1_kuvon")]([SubResource("Resource_1yl61"), SubResource("Resource_l8v1r"), SubResource("Resource_ji0wq"), SubResource("Resource_ris22")])

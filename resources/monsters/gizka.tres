@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dmvgm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cgg7j"]
+
+[sub_resource type="Resource" id="Resource_x36ti"]
+script = ExtResource("1_dmvgm")
+name = "Echolocation"
+monsterBehaviorType = 0
+description = " The gizka can't use its blindsight while deafened."
+descriptionWithLinks = " The gizka can't use its blindsight while deafened."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_88ti4"]
+script = ExtResource("1_dmvgm")
+name = "Standing Leap"
+monsterBehaviorType = 0
+description = " The gizka's long jump is up to 10 feet and its high jump is up to 5 ft., with or without a running start."
+descriptionWithLinks = " The gizka's long jump is up to 10 feet and its high jump is up to 5 ft., with or without a running start."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_bwd0u"]
+script = ExtResource("1_dmvgm")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 0
+numberOfTargets = "one target."
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_cgg7j")
+name = "Gizka"
+flavorText = ""
+sectionText = "Gizka are small reptiles that can be found all across the galaxy.***History.*** Whatever their native world, their extraordinary reproduction rate led to a fair amount of gizka on many worlds, even including uncharted planets such as Lehon, finding their way from the wreckage of crashed starships. It has been alternatively postulated that they came from that planet originally, spreading along with the Infinite Empire. Their exponential population growth led to them being considered pests on almost as many worlds as they inhabited, as they commonly eat electrical wiring.***Culture.*** They are the source for the delicacy gizka steak. Some species of sentient carnivores, like Trandoshans, seemed to think that gizka were one of those kinds of animals that \"everything tastes like.\""
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "None"
+hitPoints = 1
+speed = 20
+strength = 2
+dexterity = 14
+constitution = 7
+intelligence = 2
+wisdom = 10
+charisma = 5
+savingThrows = Array[String]([])
+skills = Array[String]([])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["blindsight 120 ft. (blind beyond this radius)", "passive Perception 10"])
+languages = Array[String](["ï¿½"])
+challengeRating = 0
+experiencePoints = 10
+behaviors = Array[ExtResource("1_dmvgm")]([SubResource("Resource_x36ti"), SubResource("Resource_88ti4"), SubResource("Resource_bwd0u")])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_dhlm4"]
+
+[resource]
+script = ExtResource("1_dhlm4")
+name = "Detect Invisibility"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "Self"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "For the duration, you see invisible creatures and objects as if they were visible."
+higherLevelDescription = ""

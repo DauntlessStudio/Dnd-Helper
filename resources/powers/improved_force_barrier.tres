@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_ev4xf"]
+
+[resource]
+script = ExtResource("1_ev4xf")
+name = "Improved Force Barrier"
+powerType = 0
+prerequisite = "Force Barrier"
+level = 5
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "This power further bolsters your allies with toughness and resolve. Choose up to twelve creatures within range. Each target gains the following benefits:
+- The becomes immune to poison and disease. Any currently existing poison or diseases still exist.
+- The creature becomes immune to being frightened by powers.
+- The creature's hit point maximum and current hit points increase by 2d10 for the duration.
+
+These benefits last for 24 hours or until the end of your next long rest, whichever happens first."
+higherLevelDescription = ""

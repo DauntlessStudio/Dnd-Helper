@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_04vw3"]
+
+[resource]
+script = ExtResource("1_04vw3")
+name = "Short Circuit"
+powerType = 0
+prerequisite = ""
+level = 0
+castingPeriod = 0
+powerRange = "120 feet"
+duration = "1 round"
+concentration = false
+forceAlignment = 0
+description = "You electrocute a creature within range. Make a ranged tech attack against the creature. On a hit, the target takes 1d8 lightning damage. If the target is a droid, construct, or has a tech focus, it has disadvantage on the first attack roll it makes against you until the end of your next turn. 
+
+This power's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+higherLevelDescription = ""

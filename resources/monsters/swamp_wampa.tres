@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ay47r"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1ap56"]
+
+[sub_resource type="Resource" id="Resource_d50mv"]
+script = ExtResource("1_ay47r")
+name = "Putrid Smell"
+monsterBehaviorType = 0
+description = " The wampa has disadvantage on Dexterity (Stealth) checks. At the start of each wampas turns, each creature within 5 feet of it must succeed on a DC 14 Constitution saving throw or take 10 (4d4) poison damage."
+descriptionWithLinks = " The wampa has disadvantage on Dexterity (Stealth) checks. At the start of each wampas turns, each creature within 5 feet of it must succeed on a DC 14 Constitution saving throw or take 10 (4d4) poison damage."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_08kv2"]
+script = ExtResource("1_ay47r")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The wampa makes two attacks, one with its claw and one with its bite."
+descriptionWithLinks = " The wampa makes two attacks, one with its claw and one with its bite."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_0cv0y"]
+script = ExtResource("1_ay47r")
+name = "Claw"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (2d6+4) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (2d6+4) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 6
+numberOfTargets = "one target."
+damage = 7
+damageRoll = "2d6+4"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_h1r0b"]
+script = ExtResource("1_ay47r")
+name = "Bite"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d10+4) kinetic damage. The target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the wampa can't bite another target."
+descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d10+4) kinetic damage. The target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the wampa can't bite another target."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft."
+attackBonus = 6
+numberOfTargets = "one creature."
+damage = 7
+damageRoll = "1d10+4"
+damageType = 7
+
+[resource]
+script = ExtResource("2_1ap56")
+name = "Swamp Wampa"
+flavorText = ""
+sectionText = "Wampas are semi-sentient predators with humanoid proportions that stand up to 12 feet tall. While they all share characteristics in common, there are three variations of wampa that are distinct based on their native planet."
+size = 0
+types = Array[String](["beast"])
+alignment = "unaligned"
+armorType = "natural armor"
+hitPoints = 76
+speed = 40
+strength = 19
+dexterity = 11
+constitution = 18
+intelligence = 5
+wisdom = 10
+charisma = 11
+savingThrows = Array[String]([])
+skills = Array[String](["Perception +2", "Stealth +2"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
+languages = Array[String](["ï¿½"])
+challengeRating = 4
+experiencePoints = 1100
+behaviors = Array[ExtResource("1_ay47r")]([SubResource("Resource_d50mv"), SubResource("Resource_08kv2"), SubResource("Resource_0cv0y"), SubResource("Resource_h1r0b")])

@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_afu4v"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bahyd"]
+
+[sub_resource type="Resource" id="Resource_cfwji"]
+script = ExtResource("1_afu4v")
+name = "Multiattack"
+monsterBehaviorType = 0
+description = " The Kolkpravis Warrior makes two meelee attacks with its Shoni Spear or two ranged attack with its slugthrower."
+descriptionWithLinks = " The Kolkpravis Warrior makes two meelee attacks with its Shoni Spear or two ranged attack with its slugthrower."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[sub_resource type="Resource" id="Resource_yp4j6"]
+script = ExtResource("1_afu4v")
+name = "Lig Sword"
+monsterBehaviorType = 0
+description = " Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit 5 (1d8 + 1) kinetic damage."
+descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit 5 (1d8 + 1) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft"
+attackBonus = 4
+numberOfTargets = "one target."
+damage = 5
+damageRoll = "1d8 + 1"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_fx4je"]
+script = ExtResource("1_afu4v")
+name = "Shoni Spear"
+monsterBehaviorType = 0
+description = " Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60, one target. Hit 4 (1d6 + 1) kinetic damage."
+descriptionWithLinks = " Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60, one target. Hit 4 (1d6 + 1) kinetic damage."
+attackType = 0
+restrictions = ""
+range = "reach 5 ft. or range 20/60"
+attackBonus = 3
+numberOfTargets = "one target."
+damage = 4
+damageRoll = "1d6 + 1"
+damageType = 7
+
+[sub_resource type="Resource" id="Resource_tvfps"]
+script = ExtResource("1_afu4v")
+name = "Sudden Rush"
+monsterBehaviorType = 0
+description = " Until the end of the turn, the Kolkpravis Warrior's speed increases by 60 feet and it doesn't provoke opportunity attacks."
+descriptionWithLinks = " Until the end of the turn, the Kolkpravis Warrior's speed increases by 60 feet and it doesn't provoke opportunity attacks."
+attackType = 0
+restrictions = ""
+range = ""
+attackBonus = 0
+numberOfTargets = ""
+damage = 0
+damageRoll = ""
+damageType = 0
+
+[resource]
+script = ExtResource("2_bahyd")
+name = "Kolkpravis Warrior"
+flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
+sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
+size = 0
+types = Array[String](["humanoid"])
+alignment = "lawful balanced"
+armorType = "heavy combat suit"
+hitPoints = 22
+speed = 30
+strength = 12
+dexterity = 14
+constitution = 12
+intelligence = 11
+wisdom = 10
+charisma = 14
+savingThrows = Array[String](["Dex +4"])
+skills = Array[String](["Perception +2", "Stealth +4"])
+damageImmunities = Array[int]([])
+damageResistances = Array[int]([])
+damageVulnerabilities = Array[int]([])
+conditionImmunities = Array[String]([])
+senses = Array[String](["darkvision 60ft", "passive Perception 12"])
+languages = Array[String](["Kaleesh", "Galactic Basic"])
+challengeRating = 1
+experiencePoints = 200
+behaviors = Array[ExtResource("1_afu4v")]([SubResource("Resource_cfwji"), SubResource("Resource_yp4j6"), SubResource("Resource_fx4je"), SubResource("Resource_tvfps")])

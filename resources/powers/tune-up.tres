@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_6q3jx"]
+
+[resource]
+script = ExtResource("1_6q3jx")
+name = "Tune-up"
+powerType = 0
+prerequisite = ""
+level = 2
+castingPeriod = 0
+powerRange = "30 feet"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "Up to six droids or constructs of your choice that you can see within range each regain hit points equal to 2d8 + your techcasting ability modifier.
+
+***Overcharge Tech.*** When you cast this power using a tech slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
+higherLevelDescription = ""

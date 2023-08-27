@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_nneso"]
+
+[resource]
+script = ExtResource("1_nneso")
+name = "Force Mend"
+powerType = 0
+prerequisite = ""
+level = 7
+castingPeriod = 0
+powerRange = "Touch"
+duration = "1 hour"
+concentration = false
+forceAlignment = 0
+description = "You touch a creature and stimulate its natural healing ability. The target regains 4d8+15 hit points. For the duration of the power, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).
+
+If the creature has a severed part you hold it to the stump, the power instantaneously causes the limb to knit to the stump.
+
+This power has no effect on droids or constructs."
+higherLevelDescription = ""

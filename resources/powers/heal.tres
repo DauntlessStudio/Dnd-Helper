@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_kys84"]
+
+[resource]
+script = ExtResource("1_kys84")
+name = "Heal"
+powerType = 0
+prerequisite = ""
+level = 1
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "A creature you touch regains a number of hit points equal to 1d8 + your forcecasting ability modifier. This power has no effect on droids or constructs.
+
+***Force Potency.*** When you cast this power using a force slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+higherLevelDescription = ""

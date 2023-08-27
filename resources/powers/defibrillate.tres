@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_3pvd3"]
+
+[resource]
+script = ExtResource("1_3pvd3")
+name = "Defibrillate"
+powerType = 0
+prerequisite = ""
+level = 4
+castingPeriod = 0
+powerRange = "Touch"
+duration = "Instantaneous"
+concentration = false
+forceAlignment = 0
+description = "You touch a creature that has died within the last minute and administer a shock to restore it to life. That creature returns to life with 1 hit point. This power can't return to life a creature that has died of old age, nor can it restore any missing body parts. If the creature is lacking body parts or organs integral for its survival�its head, for instance�the power automatically fails. Once this power has restored a creature to life, it cannot benefit from this power again until it finishes a short or long rest."
+higherLevelDescription = ""

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_m3yr4"]
+
+[resource]
+script = ExtResource("1_m3yr4")
+name = "Improved Dark Side Tendrils"
+powerType = 0
+prerequisite = "Dark Side Tendrils"
+level = 3
+castingPeriod = 0
+powerRange = "150 feet"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "You summon a 20-foot-radius sphere of inky blackness at a point within range. No light, enhanced or otherwise, can illuminate the area, creatures fully within the area are blinded, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 necrotic damage. Any creature that ends its turn in the area must succeed on a Strength saving throw or take 2d6 poison damage as tendrils of dark energy caress it."
+higherLevelDescription = ""

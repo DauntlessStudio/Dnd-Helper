@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Power" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/character_scripts/power.gd" id="1_k5awo"]
+
+[resource]
+script = ExtResource("1_k5awo")
+name = "Stasis Field"
+powerType = 0
+prerequisite = "Stasis"
+level = 8
+castingPeriod = 0
+powerRange = "120 feet (30-foot cube)"
+duration = "up to 1 minute"
+concentration = true
+forceAlignment = 0
+description = "Choose a point that you can see within range. Each creature within range of that point must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of a target's turns, it can make another Wisdom saving throw. On a success, the power ends on the target. This power has no effect on droids or constructs. 
+
+***Force Potency.*** When you cast this power using a force slot of 9th level, the size of the cube increases to 40 feet."
+higherLevelDescription = ""
