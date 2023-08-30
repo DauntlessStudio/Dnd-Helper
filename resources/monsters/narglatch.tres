@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ft8hw"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ma6bl"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1igpo"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_sgseu"]
 
-[sub_resource type="Resource" id="Resource_d1bm2"]
-script = ExtResource("1_ft8hw")
+[sub_resource type="Resource" id="Resource_wsl8b"]
+script = ExtResource("1_1igpo")
 name = "Shadow Stealth"
 monsterBehaviorType = 0
 description = " While lightly or heavily obscured, the narglatch can take the Hide action as a bonus action."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m8q8t"]
-script = ExtResource("1_ft8hw")
+[sub_resource type="Resource" id="Resource_3c2vp"]
+script = ExtResource("1_1igpo")
 name = "Sure-Footed"
 monsterBehaviorType = 0
 description = " The narglatch has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i7the"]
-script = ExtResource("1_ft8hw")
+[sub_resource type="Resource" id="Resource_k1jnj"]
+script = ExtResource("1_1igpo")
 name = "Pounce"
 monsterBehaviorType = 0
 description = " If the narglatch moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the narglatch can make one bite attack against it as a bonus action."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qv0ke"]
-script = ExtResource("1_ft8hw")
+[sub_resource type="Resource" id="Resource_m72qs"]
+script = ExtResource("1_1igpo")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d10 + 2) kinetic damage."
@@ -63,8 +63,8 @@ damage = 11
 damageRoll = "2d10 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_3rspw"]
-script = ExtResource("1_ft8hw")
+[sub_resource type="Resource" id="Resource_npn3w"]
+script = ExtResource("1_1igpo")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 2) kinetic damage."
@@ -79,7 +79,7 @@ damageRoll = "2d8 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ma6bl")
+script = ExtResource("2_sgseu")
 name = "Narglatch"
 flavorText = ""
 sectionText = "The narglatch is a stealthy, feline, apex predator which can be found in diverse environments, such as the Gungan swamps of Naboo or the frozen tundras of its native Orto Plutonia. Escaped narglatches are a threat on Coruscant.  The narglatch are considered to be sacred by the indigenous Talz, who use them as mounts and a source of food.***Biology & Appearance.*** The narglatch male had additional fleshy spikes, while females were smoother. They both had non-retractable claws and a fan-like tail that acted as a rudder during high-speed chases and turns. The narglatch also had densely padded feet that made for silent footfalls.A pregnant narglatch always gave birth to twins, one of each gender. Since young narglatch could hunt immediately upon birth, mothers abandoned them. ***Behavior.*** Cubs hunted together until maturity, making themselves less vulnerable to such Naboo creatures, as saw-toothed granks, veermoks, and even more mature male narglatch. As they approached maturity, the cubs separated.A solitary hunter, narglatch silently stalked and quickly killed its prey, usually kaadu or jimvu. Narglatch generally avoided deep water, although they were capable swimmers should the need arise. One of the few creatures they actively avoided were zalaacas."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 14
 hitPoints = 60
 speed = 60
 strength = 15
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([3])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["ï¿½"])
-challengeRating = 3
+challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_ft8hw")]([SubResource("Resource_d1bm2"), SubResource("Resource_m8q8t"), SubResource("Resource_i7the"), SubResource("Resource_qv0ke"), SubResource("Resource_3rspw")])
+behaviors = Array[ExtResource("1_1igpo")]([SubResource("Resource_wsl8b"), SubResource("Resource_3c2vp"), SubResource("Resource_k1jnj"), SubResource("Resource_m72qs"), SubResource("Resource_npn3w")])

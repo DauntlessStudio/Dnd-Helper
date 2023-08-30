@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_006tu"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_dtqmk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_nqumt"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_y1mj4"]
 
-[sub_resource type="Resource" id="Resource_jjh31"]
-script = ExtResource("1_006tu")
+[sub_resource type="Resource" id="Resource_du2v3"]
+script = ExtResource("1_nqumt")
 name = "Dive Attack"
 monsterBehaviorType = 0
 description = " If the aiwha is flying and dives at least 30 feet straight toward a target and then hits it with a bite attack, the attack deals an extra 10 (3d6) damage to the target."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cn1yd"]
-script = ExtResource("1_006tu")
+[sub_resource type="Resource" id="Resource_k0ye7"]
+script = ExtResource("1_nqumt")
 name = "Echolocation"
 monsterBehaviorType = 0
 description = " The aiwha can't use its blindsight while deafened."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_l0t41"]
-script = ExtResource("1_006tu")
+[sub_resource type="Resource" id="Resource_ao7n1"]
+script = ExtResource("1_nqumt")
 name = "Hold Breath"
 monsterBehaviorType = 0
 description = " The aiwha can hold its breath for 30 minutes"
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0xuar"]
-script = ExtResource("1_006tu")
+[sub_resource type="Resource" id="Resource_i8lvf"]
+script = ExtResource("1_nqumt")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "3d6 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_dtqmk")
+script = ExtResource("2_y1mj4")
 name = "Aiwha"
 flavorText = ""
 sectionText = "Massive, winged cetaceans, the aiwha were native to both the oceans and skies of the planet Kamino, capable of both swimming and flying using their wingtips to propel them through either substance. Their long, beak-like mouths featured a baleen used for filtering krill from seawater. The non-sentient species, one of a wide variety of aquatic life on Kamino, was also known as the \"air whale\", and were a peaceful and majestic species. Aiwha gave out bleating cries when dying.***History.*** When the climate of Kamino changed drastically, leading to planet-wide flooding when the ice caps melted, the native Kaminoans adapted both themselves and some of their fellow creatures to their new environment. The aiwhas were among those who were adapted using the Kaminoans' advanced cloning technologies, and became biological curiosities used as mounts to traverse Kamino's endless ocean. The Kaminoans used aiwhas as mounts, although aiwha-riders traveled beneath the waters during the lashing tempests of the severe electrical storms which raged for much of the planet's year."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 12
 hitPoints = 82
 speed = 10
 strength = 19
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["blindsight 120 ft.", "passive Perception 13"])
 languages = Array[String](["ï¿½"])
-challengeRating = 3
+challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_006tu")]([SubResource("Resource_jjh31"), SubResource("Resource_cn1yd"), SubResource("Resource_l0t41"), SubResource("Resource_0xuar")])
+behaviors = Array[ExtResource("1_nqumt")]([SubResource("Resource_du2v3"), SubResource("Resource_k0ye7"), SubResource("Resource_ao7n1"), SubResource("Resource_i8lvf")])

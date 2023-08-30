@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gxw2t"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_rmhky"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_q523g"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uiebh"]
 
-[sub_resource type="Resource" id="Resource_vgbod"]
-script = ExtResource("1_gxw2t")
+[sub_resource type="Resource" id="Resource_miaqm"]
+script = ExtResource("1_q523g")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xu421"]
-script = ExtResource("1_gxw2t")
+[sub_resource type="Resource" id="Resource_woxc1"]
+script = ExtResource("1_q523g")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The junkyard droid makes two blaster carbine attacks or two vibroblade attacks."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_b6fvb"]
-script = ExtResource("1_gxw2t")
+[sub_resource type="Resource" id="Resource_8gc1b"]
+script = ExtResource("1_q523g")
 name = "Blaster Carbine"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 60/240 ft., one target. Hit: 5 (1d6+2) energy damage."
@@ -48,8 +48,8 @@ damage = 5
 damageRoll = "1d6+2"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_smd3x"]
-script = ExtResource("1_gxw2t")
+[sub_resource type="Resource" id="Resource_tvdor"]
+script = ExtResource("1_q523g")
 name = "Vibroblade"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "1d6+2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_rmhky")
+script = ExtResource("2_uiebh")
 name = "Junk Droid"
 flavorText = ""
 sectionText = "Junk Droid, or Monster Droid, is the term used to describe any droid that is created by piecing together component parts of many other droids.Though anyone with the know-how can cobble together a junk droid, they are most notably created by the various Jawa tribes on Tatooine. Because they mainly sell their wares to moisture farmers and small town businesses, Jawas know what peoples' needs are, and are able to create custom droids to meet the individual needs of any customer.  Some junk droids are even made by themselves.  Because of their often mashed-together programming, they are considered dangerous by most civilized people, for they could go on a rampage, confuse orders, or even start building more of their own kind when having enough junk to do so.Though no two junk droids are exactly the same, they are generally constructed in four classes:* The Mechano-droid was a heavy labor unit* The Tracto-droid was a mobile scanning/radar unit* The Quad-pod droid was a cargo carrier* The Rollarc droid was a multipurpose unit suited to variable tasksJunk droids are sometimes sought after by eccentric collectors looking to find the most functional droid comprised the most incorporated parts that is the most pleasing to the eye."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor scraps"
+armorClass = 13
 hitPoints = 13
 speed = 30
 strength = 10
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String]([])
 languages = Array[String](["Binary", "Galactic Basic"])
-challengeRating = 14
+challengeRating = "1/4"
 experiencePoints = 50
-behaviors = Array[ExtResource("1_gxw2t")]([SubResource("Resource_vgbod"), SubResource("Resource_xu421"), SubResource("Resource_b6fvb"), SubResource("Resource_smd3x")])
+behaviors = Array[ExtResource("1_q523g")]([SubResource("Resource_miaqm"), SubResource("Resource_woxc1"), SubResource("Resource_8gc1b"), SubResource("Resource_tvdor")])

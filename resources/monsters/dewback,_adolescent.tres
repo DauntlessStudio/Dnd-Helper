@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_u710d"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_qb1vn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_13nth"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_3bwcf"]
 
-[sub_resource type="Resource" id="Resource_80sl4"]
-script = ExtResource("1_u710d")
+[sub_resource type="Resource" id="Resource_ry4rk"]
+script = ExtResource("1_13nth")
 name = "Keen Smell"
 monsterBehaviorType = 0
 description = " The dewback has advantage on Wisdom (Perception) checks that rely on smell."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_780qt"]
-script = ExtResource("1_u710d")
+[sub_resource type="Resource" id="Resource_rahyb"]
+script = ExtResource("1_13nth")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The dewback makes two attacks: one with its bite and one with its claws."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0w6y8"]
-script = ExtResource("1_u710d")
+[sub_resource type="Resource" id="Resource_53a0v"]
+script = ExtResource("1_13nth")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8+4) kinetic damage."
@@ -48,8 +48,8 @@ damage = 8
 damageRoll = "1d8+4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_ecebw"]
-script = ExtResource("1_u710d")
+[sub_resource type="Resource" id="Resource_yhsnr"]
+script = ExtResource("1_13nth")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "2d6+4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_qb1vn")
+script = ExtResource("2_3bwcf")
 name = "Dewback, Adolescent"
 flavorText = ""
 sectionText = "Dewbacks were large, four-legged, omnivorous, cold-blooded reptiles native to the Dune Sea of Tatooine. As such, they were well-adapted to the harsh desert climate. This and the fact that they could be easily domesticated made them commonly employed as beasts of burden by both the inhabitants of the desert planet and the off-worlders wandering its dunes. ***Behavior.*** While they had a reputation for being solitary animals, wild dewbacks were also known to roam the seemingly endless deserts of Tatooine in single-file packs of two to five, searching for food and moisture during the day. To retain warmth and conserve energy, the dewbacks huddled together at night. The dew that accumulated on their backs during the night was both a source of moisture in the morning and the origin of the species's name.***Biology & Appearance.*** Adult dewbacks stood at 1.3 to 2.1 meters in height and could reach lengths of 2 to 3 meters. Though most of them were green, dewbacks with red, brown, gray and most rarely blue scales were known to exist. It was common for these scales to have a mottled or camouflage pattern to them. The special melanins contained within a dewback's hide, which cut down on the glare from the twin suns of Tatoo I and Tatoo II, preserved vital fluids and gave it the ability to go days without water and endure the extreme heat.***Mounts.*** Dewbacks were sold by Rothana Heavy Engineering to be used as mounts by Imperial troops. They were bundled in a herd of six animals and cost 16000 credits. "
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 11
 hitPoints = 34
 speed = 40
 strength = 19
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 13"])
 languages = Array[String](["ï¿½"])
-challengeRating = 1
+challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_u710d")]([SubResource("Resource_80sl4"), SubResource("Resource_780qt"), SubResource("Resource_0w6y8"), SubResource("Resource_ecebw")])
+behaviors = Array[ExtResource("1_13nth")]([SubResource("Resource_ry4rk"), SubResource("Resource_rahyb"), SubResource("Resource_53a0v"), SubResource("Resource_yhsnr")])

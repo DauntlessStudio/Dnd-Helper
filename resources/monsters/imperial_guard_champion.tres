@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_4t8v4"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uiedj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_6qiyl"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8ehm1"]
 
-[sub_resource type="Resource" id="Resource_sxg2j"]
-script = ExtResource("1_4t8v4")
+[sub_resource type="Resource" id="Resource_knrym"]
+script = ExtResource("1_6qiyl")
 name = "Forcecasting"
 monsterBehaviorType = 0
 description = " At will: enfeeble  2/day each: battle meditation, fear, battle precognition  The Royal Guard Champion's innate forcecasting ability is Wisdom (force save DC 16, +8 to hit with force powers). It can innately cast the following Force Powers:"
@@ -22,8 +22,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xtnye"]
-script = ExtResource("1_4t8v4")
+[sub_resource type="Resource" id="Resource_mquw8"]
+script = ExtResource("1_6qiyl")
 name = "Choreography of Belligerence"
 monsterBehaviorType = 0
 description = " The Royal Guard Champion has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
@@ -37,8 +37,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i6wyv"]
-script = ExtResource("1_4t8v4")
+[sub_resource type="Resource" id="Resource_mwst0"]
+script = ExtResource("1_6qiyl")
 name = "Rally the Troops"
 monsterBehaviorType = 0
 description = " As a bonus action, the Imperial Royal Guard Champion can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
@@ -52,8 +52,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3xo5f"]
-script = ExtResource("1_4t8v4")
+[sub_resource type="Resource" id="Resource_og7jx"]
+script = ExtResource("1_6qiyl")
 name = "Blaster Pistol"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 40/160, one target. Hit: 4 (1d6 + 1) energy damage."
@@ -67,8 +67,8 @@ damage = 4
 damageRoll = "1d6 + 1"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_qoreu"]
-script = ExtResource("1_4t8v4")
+[sub_resource type="Resource" id="Resource_d6bpj"]
+script = ExtResource("1_6qiyl")
 name = "Doublesword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 13 (2d8 + 4) kinetic energy."
@@ -82,8 +82,8 @@ damage = 13
 damageRoll = "2d8 + 4"
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1y418"]
-script = ExtResource("1_4t8v4")
+[sub_resource type="Resource" id="Resource_m4i1q"]
+script = ExtResource("1_6qiyl")
 name = "Parry"
 monsterBehaviorType = 0
 description = " The Royal Guard Champion adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard Champion must see the attacker and be wielding a melee weapon."
@@ -98,7 +98,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_uiedj")
+script = ExtResource("2_8ehm1")
 name = "Imperial Guard Champion"
 flavorText = "Imperial Guard Champions, also known as Sovereign Protectors, are the most elite cadre of guardsmen in Imperial service.  Only the best of the elite Emperor's Royal Guard are specially chosen to become Sovereign Protectors. They endure years of selection procedures and training aimed at achieving perfection in soldiering. Extreme standards are set for combat fitness, stamina, strength, dexterity, mental acuity, reaction time, loyalty and intelligence. Their combat training includes the use of heavy blaster pistols and the deadly double vibroblade. They also have access to Emperor's Royal Guard TIE/IN starfighters, and are often sent on extremely vital missions."
 sectionText = "The Galactic Empire, also known as the Old Empire, the First Galactic Empire, Palpatine's New Order, the Imperium or simply the Empire, is the galactic government established by Supreme Chancellor Palpatine to replace the Galactic Republic in 19 BBY and bring Sith rule to the galaxy.  The government personnel of this new Empire are protected by some of its most highly trained warriors. "
@@ -106,6 +106,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful dark"
 armorType = "heavy durasteel armor"
+armorClass = 18
 hitPoints = 180
 speed = 30
 strength = 19
@@ -122,6 +123,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String](["Frightened"])
 senses = Array[String](["passive Perception 117"])
 languages = Array[String](["Galactic Basic"])
-challengeRating = 11
+challengeRating = "11"
 experiencePoints = 7200
-behaviors = Array[ExtResource("1_4t8v4")]([SubResource("Resource_sxg2j"), SubResource("Resource_xtnye"), SubResource("Resource_i6wyv"), SubResource("Resource_3xo5f"), SubResource("Resource_qoreu"), SubResource("Resource_1y418")])
+behaviors = Array[ExtResource("1_6qiyl")]([SubResource("Resource_knrym"), SubResource("Resource_mquw8"), SubResource("Resource_mwst0"), SubResource("Resource_og7jx"), SubResource("Resource_d6bpj"), SubResource("Resource_m4i1q")])

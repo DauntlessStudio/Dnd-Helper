@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=12 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fws60"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_a3vq8"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_5pow4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8hj1a"]
 
-[sub_resource type="Resource" id="Resource_5pop6"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_44pkg"]
+script = ExtResource("1_5pow4")
 name = "Assassinate"
 monsterBehaviorType = 0
 description = " During its first turn, the assassin droid has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin droid scores against a surprised creature is a critical hit."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5x0rd"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_jvvhf"]
+script = ExtResource("1_5pow4")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_av86x"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_bgdjj"]
+script = ExtResource("1_5pow4")
 name = "Keen Hearing and Sight"
 monsterBehaviorType = 0
 description = " The probe droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qo255"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_l3fk7"]
+script = ExtResource("1_5pow4")
 name = "Sneak Attack"
 monsterBehaviorType = 0
 description = " The assassin droid deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the roll."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0d7aj"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_ghply"]
+script = ExtResource("1_5pow4")
 name = "Swarm Transport"
 monsterBehaviorType = 0
 description = " The assassin droid can transport a maximum of 1 Probe Killer Swarm, which it can deploy using its Deploy Probe Killers action."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7dmh8"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_phv2x"]
+script = ExtResource("1_5pow4")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The sssassin droid makes two leg slash attacks."
@@ -93,8 +93,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fv0mr"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_7jco6"]
+script = ExtResource("1_5pow4")
 name = "Leg Slash"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) kinetic damage."
@@ -108,8 +108,8 @@ damage = 7
 damageRoll = "1d8+3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_vdssg"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_ejk3o"]
+script = ExtResource("1_5pow4")
 name = "Deploy Probe Killers"
 monsterBehaviorType = 0
 description = " This droid swarm appears in any space within 5 feetof the assassin droid."
@@ -123,8 +123,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wiglq"]
-script = ExtResource("1_fws60")
+[sub_resource type="Resource" id="Resource_vyvsr"]
+script = ExtResource("1_5pow4")
 name = "Second Chance"
 monsterBehaviorType = 0
 description = " When the droid reaches zero hit points, it may immediately take the deploy probe killers action."
@@ -139,7 +139,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_a3vq8")
+script = ExtResource("2_8hj1a")
 name = "SD-K4 Assassin Droid"
 flavorText = "The SD-K4 assassin droid, also known as the assassin probe, is a model of assassin droid manufactured by the Techno Union. Used by the Confederacy of Independent Systems during the Clone Wars, it was also referred to as the Separatist assassin probe and Separatist assassin droid.The SD-K4 assassin droid is designed to assassinate targets with high efficiency. Spider-like droids programmed for quiet killing, SD-K4s move quietly on eight razored legs. They are equipped with multiple red photoreceptors for scanning their surroundings. If cornered or destroyed, an SD-K4 can release dozens of smaller probe killers from pores on its head to finish any job the assassin probe started. Probe killers, similar in appearance to their SD-K4 host but on a much smaller scale, lay dormant until the activated. "
 sectionText = "Assassin droids are a type of droid built specifically for the purpose of assassination. These droids generally perform with unflinching loyalty to their masters, but rogue assassin droids are not unknown. Since their missions generally require a far higher degree of independent skill, savvy, and judgment than normally possessed by simple war droids, their programming subroutines, circuitry, and memory cores are of correspondingly higher sophistication.Equipped with an array of weapons, assassin droids are also used as elite infantry when the need for skillful and quickly adaptable soldiers with unquestionable loyalty arises.An inordinate number of assassin droids have achieved sentient independence, including IG-88 and C-3PX, presumably due to the higher level of autonomy incorporated into their processor design. These droids typically fund their independent existences through the use of their innate abilities, often plying their trade as bounty hunters."
@@ -147,6 +147,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
+armorClass = 15
 hitPoints = 45
 speed = 5
 strength = 15
@@ -163,6 +164,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["Darkvision 120 Ft.", "passive Perception 14"])
 languages = Array[String](["â€”"])
-challengeRating = 4
+challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_fws60")]([SubResource("Resource_5pop6"), SubResource("Resource_5x0rd"), SubResource("Resource_av86x"), SubResource("Resource_qo255"), SubResource("Resource_0d7aj"), SubResource("Resource_7dmh8"), SubResource("Resource_fv0mr"), SubResource("Resource_vdssg"), SubResource("Resource_wiglq")])
+behaviors = Array[ExtResource("1_5pow4")]([SubResource("Resource_44pkg"), SubResource("Resource_jvvhf"), SubResource("Resource_bgdjj"), SubResource("Resource_l3fk7"), SubResource("Resource_ghply"), SubResource("Resource_phv2x"), SubResource("Resource_7jco6"), SubResource("Resource_ejk3o"), SubResource("Resource_vyvsr")])

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_wprrg"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xfdhm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0tu5l"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5wj7k"]
 
-[sub_resource type="Resource" id="Resource_7s47u"]
-script = ExtResource("1_wprrg")
+[sub_resource type="Resource" id="Resource_0qdl2"]
+script = ExtResource("1_0tu5l")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4g8uv"]
-script = ExtResource("1_wprrg")
+[sub_resource type="Resource" id="Resource_4jq4w"]
+script = ExtResource("1_0tu5l")
 name = "Interfaced Tracking Protocol"
 monsterBehaviorType = 0
 description = " While a creature is interfaced with this droid via the tracker droid interface tech power, when it makes a Wisdom (Survival) check to track a target, and this droid is also tracking that target, the interfaced creature gains advantage on the check. If it already has advantage, it can instead reroll one of the dice once."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uusef"]
-script = ExtResource("1_wprrg")
+[sub_resource type="Resource" id="Resource_srwh5"]
+script = ExtResource("1_0tu5l")
 name = "Shockprod"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
@@ -49,7 +49,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_xfdhm")
+script = ExtResource("2_5wj7k")
 name = "DRK-1 Tracker Droid"
 flavorText = "Developed by Arakyd Industries, the DRK-1 probe droid is a small, spherical automaton equipped with sophisticated sensor and communications packages. The DRK-1 features a trio of imaging sensors: a central photoreceptor, a magnetic imaging device, and a thermal imager. "
 sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
@@ -57,6 +57,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 11
 hitPoints = 1
 speed = 5
 strength = 3
@@ -73,6 +74,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["Darkvision 120 ft.", "passive Perception 13"])
 languages = Array[String](["â€”"])
-challengeRating = 0
+challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_wprrg")]([SubResource("Resource_7s47u"), SubResource("Resource_4g8uv"), SubResource("Resource_uusef")])
+behaviors = Array[ExtResource("1_0tu5l")]([SubResource("Resource_0qdl2"), SubResource("Resource_4jq4w"), SubResource("Resource_srwh5")])

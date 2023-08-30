@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=19 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_y2gpp"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_oyxca"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1gh8k"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r7h83"]
 
-[sub_resource type="Resource" id="Resource_3m1nq"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_pn1a4"]
+script = ExtResource("1_1gh8k")
 name = "Commando"
 monsterBehaviorType = 0
 description = " As a bonus action, the trandoshan can take the Dash and Hide actions on each of his turns."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kxgle"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_dvy7u"]
+script = ExtResource("1_1gh8k")
 name = "Infrared Vision"
 monsterBehaviorType = 0
 description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_d87jh"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_i0rxq"]
+script = ExtResource("1_1gh8k")
 name = "Legendary Resistance"
 monsterBehaviorType = 0
 description = " If the trandoshan fails a saving throw, it can choose to succeed instead."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pj5d4"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_bfl1w"]
+script = ExtResource("1_1gh8k")
 name = "Mortar Gun"
 monsterBehaviorType = 0
 description = " As a bonus action, the trandoshan can switch the firing mode of his mortar gun between a blaster and a grenade launcher."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_c14q1"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_si2jq"]
+script = ExtResource("1_1gh8k")
 name = "Precision Shot"
 monsterBehaviorType = 0
 description = " The trandoshan can roll his next ranged attack with advantage."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vtd13"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_ekfie"]
+script = ExtResource("1_1gh8k")
 name = "Regeneration"
 monsterBehaviorType = 0
 description = " The trandoshan regains 15 hit points at the start of its turn if it has at least 1 hit point."
@@ -93,8 +93,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_lflju"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_blglr"]
+script = ExtResource("1_1gh8k")
 name = "Sharpshooting Mastery"
 monsterBehaviorType = 0
 description = " The trandoshan's ranged attacks ignore half-cover and three-quarters cover, and attacking at long range doesn't impose disadvantage on his ranged weapon attack rolls."
@@ -108,8 +108,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_sbh4w"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_fivq5"]
+script = ExtResource("1_1gh8k")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trandoshan makes three claw attacks. Alternatively, it can make two ranged attacks with its mortar gun (blaster form only)."
@@ -123,8 +123,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bs1nn"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_h385f"]
+script = ExtResource("1_1gh8k")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) kinetic damage."
@@ -138,8 +138,8 @@ damage = 13
 damageRoll = "2d6 + 6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_dcc8y"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_850gm"]
+script = ExtResource("1_1gh8k")
 name = "Mortar Gun"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +9 to hit, range 100/400 ft., one target. Hit: 14 (1d12 + 8) energy damage."
@@ -153,8 +153,8 @@ damage = 14
 damageRoll = "1d12 + 8"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_rcwvu"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_122o6"]
+script = ExtResource("1_1gh8k")
 name = "Mortar Gun"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +9 to hit, range 30/60 ft., one target. Hit: 13 (1d10 + 8) kinetic damage. Hit or miss, the target and everycreature within 5 feet of it must succeed on a DC 17 Dexterity saving throw or take 14 (4d6) kinetic damage."
@@ -168,8 +168,8 @@ damage = 13
 damageRoll = "1d10 + 8"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_s1n5a"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_5rw4y"]
+script = ExtResource("1_1gh8k")
 name = "Dioxus Grenade"
 monsterBehaviorType = 0
 description = " The trandoshan throws a dioxus grenade, choosing a point within 45 ft., exploding in a 15 feet sphere. The fog lasts 1 round and the area is heavily obscured. When a creature enters the poison's area or starts its turn there, that creature must make a DC 17 Constitution saving throw. On a failure, the creature takes 22 (4d10) poison damage and is poisoned for 1 minute. On a success, the creature takes half the damage and isn't poisoned."
@@ -183,8 +183,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_oljni"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_kam6p"]
+script = ExtResource("1_1gh8k")
 name = "Dioxus Escape"
 monsterBehaviorType = 0
 description = " As a reaction when the trandoshan takes at least 20 damage from a melee attack, it can move up to its speed without provoking opportunity attacks. Additionally, if it's Dioxus Grenade ability is available the trandoshan can choose to drop a grenade where it was before its movement. The dioxus grenade detonates after the trandoshan has completed his movement."
@@ -198,8 +198,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qnkui"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_iadmw"]
+script = ExtResource("1_1gh8k")
 name = "Dioxus Grenade"
 monsterBehaviorType = 0
 description = "The trandoshan uses its Dioxus Grenade action. If it is unavailable, the trandoshan can roll to try and recharge it, using the grenade upon a successful recharge."
@@ -213,8 +213,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6dukb"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_47ub3"]
+script = ExtResource("1_1gh8k")
 name = "Heavy Fire"
 monsterBehaviorType = 0
 description = "The trandoshan  makes one mortar gun attack."
@@ -228,8 +228,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7u62j"]
-script = ExtResource("1_y2gpp")
+[sub_resource type="Resource" id="Resource_iwafo"]
+script = ExtResource("1_1gh8k")
 name = "Move"
 monsterBehaviorType = 0
 description = "The trandoshan can move up to its speed without provoking opportunity attacks."
@@ -244,7 +244,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_oyxca")
+script = ExtResource("2_r7h83")
 name = "Trandoshan T'doshok"
 flavorText = ""
 sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
@@ -252,6 +252,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful dark"
 armorType = "natural armor"
+armorClass = 17
 hitPoints = 144
 speed = 30
 strength = 23
@@ -268,6 +269,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 18"])
 languages = Array[String](["Galactic Basic", "Dosh", "Huttese"])
-challengeRating = 14
+challengeRating = "14"
 experiencePoints = 11450
-behaviors = Array[ExtResource("1_y2gpp")]([SubResource("Resource_3m1nq"), SubResource("Resource_kxgle"), SubResource("Resource_d87jh"), SubResource("Resource_pj5d4"), SubResource("Resource_c14q1"), SubResource("Resource_vtd13"), SubResource("Resource_lflju"), SubResource("Resource_sbh4w"), SubResource("Resource_bs1nn"), SubResource("Resource_dcc8y"), SubResource("Resource_rcwvu"), SubResource("Resource_s1n5a"), SubResource("Resource_oljni"), SubResource("Resource_qnkui"), SubResource("Resource_6dukb"), SubResource("Resource_7u62j")])
+behaviors = Array[ExtResource("1_1gh8k")]([SubResource("Resource_pn1a4"), SubResource("Resource_dvy7u"), SubResource("Resource_i0rxq"), SubResource("Resource_bfl1w"), SubResource("Resource_si2jq"), SubResource("Resource_ekfie"), SubResource("Resource_blglr"), SubResource("Resource_fivq5"), SubResource("Resource_h385f"), SubResource("Resource_850gm"), SubResource("Resource_122o6"), SubResource("Resource_5rw4y"), SubResource("Resource_kam6p"), SubResource("Resource_iadmw"), SubResource("Resource_47ub3"), SubResource("Resource_iwafo")])

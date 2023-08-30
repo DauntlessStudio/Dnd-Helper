@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=15 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jl23r"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_63kmj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_6fjqo"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_g4rby"]
 
-[sub_resource type="Resource" id="Resource_30iet"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_28ete"]
+script = ExtResource("1_6fjqo")
 name = "Creature Sense"
 monsterBehaviorType = 0
 description = " The bor gullet is aware of the presence of creatures within 1 mile of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each such creature, as well as each such creature's intelligence score, but it can't sense anything else about it. Droids and creatures protected by a mind blank power or other similar power cannot be perceived in this manner."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_or8bs"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_e6yyr"]
+script = ExtResource("1_6fjqo")
 name = "Fortified Mind"
 monsterBehaviorType = 0
 description = " The bor gullet has advantage on saving throws against being charmed and frightened, and it can't be put to sleep."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_hfxeo"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_dbqia"]
+script = ExtResource("1_6fjqo")
 name = "Legendary Resistance"
 monsterBehaviorType = 0
 description = " If the bor gullet fails a saving throw, it can choose to succeed instead."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_b1p0x"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_1oe3c"]
+script = ExtResource("1_6fjqo")
 name = "Psychic Link"
 monsterBehaviorType = 0
 description = " The bor gullet can establish a psychic link with any creature that it successfully grapples with its tentacles. Until the psychic link ends, the bor gullet can perceive everything the target senses. The target is aware that its mind is linked, and the bor gullet can terminate the link at any time (no action required). The target can use an action on its turn to attempt to break the psychic link, doing so with a successful DC 18 Intelligence saving throw. On a successful save, the target takes 10 (3d6) psychic damage. The psychic link also ends if the target and the bor gullet are more than 1 mile apart, with no consequences to the target. The bor gullet can form psychic links with up to ten creatures at a time."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uxjql"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_tldbk"]
+script = ExtResource("1_6fjqo")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The bor gullet makes three tentacle attacks."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1a8w3"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_rfte8"]
+script = ExtResource("1_6fjqo")
 name = "Tentacle"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 20 ft., one target. Hit: 6 (1d6 + 3) kinetic damage, and the target is grappled (escape DC 16) if it is Large or smaller. Until the grapple ends, the target takes 9 (1d8 + 5) psychic damage at the start of each of its turns, and bor gullet can't use this tentacle on another target. The bor gullet has six tentacles."
@@ -93,8 +93,8 @@ damage = 6
 damageRoll = "1d6 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_b861t"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_opd4c"]
+script = ExtResource("1_6fjqo")
 name = "Mind Blast"
 monsterBehaviorType = 0
 description = " The bor gullet emits psychic energy. Creatures of the bor gullet's choice within 60 feet of it must succeed on a DC 18 Intelligence saving throw or take 32 (5d10 + 5) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
@@ -108,8 +108,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1geye"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_wa4lm"]
+script = ExtResource("1_6fjqo")
 name = "Sense Thoughts"
 monsterBehaviorType = 0
 description = " The bor gullet targets a creature with which it has a psychic link. The bor gullet gains insight into the target's emotional state and any thoughts that loom large in its mind (including worries, loves, and hates). The bor gullet can also make a Charisma (Deception) check with advantage to deceive the target's mind into thinking it believes one idea or feels a particular emotion. The target contests this attempt with a Wisdom (Insight) check. If the bor gullet succeeds, the mind believes the deception for 1 hour or until evidence of the lie is presented to the target."
@@ -123,8 +123,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6ygdq"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_vxo2k"]
+script = ExtResource("1_6fjqo")
 name = "Tentacle"
 monsterBehaviorType = 0
 description = " The bor gullet makes a tentacle attack."
@@ -138,8 +138,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_p72qt"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_dgsoi"]
+script = ExtResource("1_6fjqo")
 name = "Break Concentration"
 monsterBehaviorType = 0
 description = " The bor gullet targets a creature within 120 feet of it with which it has a psychic link. The bor gullet breaks the creature's concentration on a power it is using. The creature also takes 1d4 psychic damage per level of the power."
@@ -153,8 +153,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fc57g"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_dbxfq"]
+script = ExtResource("1_6fjqo")
 name = "Psychic Pulse"
 monsterBehaviorType = 0
 description = " The bor gullet targets a creature within 120 feet of it with which it has a psychic link. Enemies of the bor gullet within 10 feet of that creature take 10 (3d6) psychic damage."
@@ -168,8 +168,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_we0vh"]
-script = ExtResource("1_jl23r")
+[sub_resource type="Resource" id="Resource_g6ied"]
+script = ExtResource("1_6fjqo")
 name = "Sever Psychic Link"
 monsterBehaviorType = 0
 description = " The bor gullet targets a creature within 120 feet of it with which it has a psychic link. The bor gullet ends the link, causing the creature to have disadvantage on all ability checks, attack rolls, and saving throws until the end of the creature's next turn."
@@ -184,7 +184,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_63kmj")
+script = ExtResource("2_g4rby")
 name = "Bor Gullet"
 flavorText = ""
 sectionText = "Bor gullets are a non-sentient, tentacled species found in the galaxy. They have the unique ability to read minds, with the unfortunate side-effect of causing insanity.  As a result, they were often used as a form of torture. Notably, Saw Gerrera's Partisans owned a bor gullet, and Harra the Hutt had collected a bor gullet in her menagerie on the planet Vodran."
@@ -192,6 +192,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 12
 hitPoints = 180
 speed = 10
 strength = 16
@@ -208,6 +209,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String](["Poisoned"])
 senses = Array[String](["blindsight 120 ft.", "passive Perception 18"])
 languages = Array[String](["underst", "s Galactic Basic but can't speak", "telepathy 120 ft."])
-challengeRating = 13
+challengeRating = "13"
 experiencePoints = 10000
-behaviors = Array[ExtResource("1_jl23r")]([SubResource("Resource_30iet"), SubResource("Resource_or8bs"), SubResource("Resource_hfxeo"), SubResource("Resource_b1p0x"), SubResource("Resource_uxjql"), SubResource("Resource_1a8w3"), SubResource("Resource_b861t"), SubResource("Resource_1geye"), SubResource("Resource_6ygdq"), SubResource("Resource_p72qt"), SubResource("Resource_fc57g"), SubResource("Resource_we0vh")])
+behaviors = Array[ExtResource("1_6fjqo")]([SubResource("Resource_28ete"), SubResource("Resource_e6yyr"), SubResource("Resource_dbqia"), SubResource("Resource_1oe3c"), SubResource("Resource_tldbk"), SubResource("Resource_rfte8"), SubResource("Resource_opd4c"), SubResource("Resource_wa4lm"), SubResource("Resource_vxo2k"), SubResource("Resource_dgsoi"), SubResource("Resource_dbxfq"), SubResource("Resource_g6ied")])

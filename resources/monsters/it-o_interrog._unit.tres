@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_02dhs"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_tmb0x"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jk464"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5d0ub"]
 
-[sub_resource type="Resource" id="Resource_0dpnc"]
-script = ExtResource("1_02dhs")
+[sub_resource type="Resource" id="Resource_5iemr"]
+script = ExtResource("1_jk464")
 name = "Flyby"
 monsterBehaviorType = 0
 description = " The IT-O Unit doesn't provoke opportunity attacks when it flies out of an enemy's reach."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kynu7"]
-script = ExtResource("1_02dhs")
+[sub_resource type="Resource" id="Resource_0lp2g"]
+script = ExtResource("1_jk464")
 name = "Dart Launcher"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +3 to hit, range 15/60 ft., one target. Hit: 1 kinetic damage plus 7 (2d6) poison damage. On a hit, the target must succeed on a Con. saving throw (DC 12) or become stunned for one round."
@@ -34,7 +34,7 @@ damageRoll = "2d6"
 damageType = 7
 
 [resource]
-script = ExtResource("2_tmb0x")
+script = ExtResource("2_5d0ub")
 name = "IT-O Interrog. Unit"
 flavorText = ""
 sectionText = "The Imperial Security Bureau (ISB), also referred to as the Security Bureau or Imperial Security, was a law-enforcement and intelligence agency of the Galactic Empire that was charged with matters of state security and ensuring the loyalty of citizens to the Empire. It was larger than its sister agency Imperial Intelligence, and was led by ISB highcommand.The Imperial Security Bureau was formed by Galactic Emperor Palpatine as a secret police organization, dedicated to rooting out enemies of the New Order and maintaining stability throughout Imperial territories shortly after the proclamation of the New Order. Prospective ISB personnel were drawn from the Imperial Academy system and given training within the ISB Academy and Offices complex, located within the Verity District on Coruscant. Members went through a training regimen which included learning xenophobic propaganda, and were taught from the ISB Loyalty Manual. Members of the ISB were taught a specialized vocabulary to prevent outsiders from understanding their conversations. The term \"auditing\" was used to signal that suspects knew they were being investigated. The practice of provoking a suspect to commit a crime was referred to as \"crustbusting,\" and interrogating a supposed innocent in hopes he or she would react suspiciously was known as \"scattering.\" Framing a wanted suspect for a crime to makesure he or she would be arrested was referred to as \"Jabba.\"  Following completion of the Academy, recruits filed into one of several branches of the organization described below.High-ranking ISB agents could command stormtrooper squads, override orders of civilian and military authorities, replace questionable officers and commandeer Imperial military hardware, including Star Destroyers."
@@ -42,6 +42,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 11
 hitPoints = 6
 speed = 0
 strength = 3
@@ -58,6 +59,6 @@ damageVulnerabilities = Array[int]([6, 8])
 conditionImmunities = Array[String](["Poisoned"])
 senses = Array[String](["passive Perception 10", "passive Insight 14"])
 languages = Array[String](["Binary", "knows Basic but can't speak it"])
-challengeRating = 14
+challengeRating = "1/4"
 experiencePoints = 50
-behaviors = Array[ExtResource("1_02dhs")]([SubResource("Resource_0dpnc"), SubResource("Resource_kynu7")])
+behaviors = Array[ExtResource("1_jk464")]([SubResource("Resource_5iemr"), SubResource("Resource_0lp2g")])

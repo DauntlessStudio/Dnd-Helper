@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8hs1x"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ra0dm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ojkxb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wykce"]
 
-[sub_resource type="Resource" id="Resource_r22th"]
-script = ExtResource("1_8hs1x")
+[sub_resource type="Resource" id="Resource_p1he2"]
+script = ExtResource("1_ojkxb")
 name = "False Appearance"
 monsterBehaviorType = 0
 description = " While the tree remains motionless, it is indistinguishable from a normal tree."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xbok7"]
-script = ExtResource("1_8hs1x")
+[sub_resource type="Resource" id="Resource_b1fjd"]
+script = ExtResource("1_ojkxb")
 name = "Rake"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) kinetic damage."
@@ -34,7 +34,7 @@ damageRoll = "1d4 - 1"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ra0dm")
+script = ExtResource("2_wykce")
 name = "Shrub"
 flavorText = ""
 sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
@@ -42,6 +42,7 @@ size = 0
 types = Array[String](["plant"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 9
 hitPoints = 10
 speed = 20
 strength = 3
@@ -58,6 +59,6 @@ damageVulnerabilities = Array[int]([4])
 conditionImmunities = Array[String](["Blinded", "Charmed", "Deafened", "Prone"])
 senses = Array[String](["Tremorsense 120 ft. (blind beyond this radius)", "passive Perception 10"])
 languages = Array[String](["â€”"])
-challengeRating = 0
+challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_8hs1x")]([SubResource("Resource_r22th"), SubResource("Resource_xbok7")])
+behaviors = Array[ExtResource("1_ojkxb")]([SubResource("Resource_p1he2"), SubResource("Resource_b1fjd")])

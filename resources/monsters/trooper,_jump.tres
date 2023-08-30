@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_nbshy"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_arqrb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_doiuw"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6srde"]
 
-[sub_resource type="Resource" id="Resource_bq05t"]
-script = ExtResource("1_nbshy")
+[sub_resource type="Resource" id="Resource_732n2"]
+script = ExtResource("1_doiuw")
 name = "Jetpack"
 monsterBehaviorType = 0
 description = " Activating or deactivating the jetpack requires a bonus action and, while active, the trooper has a flying speed of 30 feet. The jetpack lasts for a maximum of 10 minutes."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yslvo"]
-script = ExtResource("1_nbshy")
+[sub_resource type="Resource" id="Resource_4m5uc"]
+script = ExtResource("1_doiuw")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trooper makes two attacks, one with its blaster pistol and one with its wrist launcher."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ro57o"]
-script = ExtResource("1_nbshy")
+[sub_resource type="Resource" id="Resource_0ul13"]
+script = ExtResource("1_doiuw")
 name = "Blaster Pistol"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 40/160 ft., one target. Hit: 6 (1d6+3) energy damage."
@@ -48,8 +48,8 @@ damage = 6
 damageRoll = "1d6+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_y08mv"]
-script = ExtResource("1_nbshy")
+[sub_resource type="Resource" id="Resource_sfb7b"]
+script = ExtResource("1_doiuw")
 name = "Wrist Launcher"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 6 (1d6+3) kinetic damage, and each creature within 5 feet must make a DC 13 Dexterity saving throw, taking 3 (1d6) kinetic damage on a failed save, or half on a successful save."
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_arqrb")
+script = ExtResource("2_6srde")
 name = "Trooper, Jump"
 flavorText = "Whether clones, conscripts, or academy recruits, the backbone of the central government's war and peace machine are well trained, well armed, and well armored individuals.  Deployed throughout the galaxy to deal with threats to authority, these troopers have various roles and specialties."
 sectionText = "As the branch of the galactic military that dealt with surface operations, the galactic army was composed of many sub-units and organizations, and utilized a vast array of vehicles to achieve its objectives throughout the years.***Grand Army of the Republic.*** The Grand Army of the Republic (GAR), also known as the Republic Army or the clone army, was the army branch of the Republic Military during the Clone Wars. The Grand Army initially consisted of over a million clone troopers; genetically identical soldiers cloned from a human template, outfitted with armor, weapons and gear, and programmed for absolute loyalty to the Galactic Republic. Formed as a result of the Republic's efforts to create a centralized army in response to the threat of separatism, the Grand Army represented the evolution of galactic warfare at the time of its introduction on Geonosis, and was instrumental to the Sith Order's secret plot to take over the galaxy.***Imperial Army.*** As the ultimate evolution of the Grand Army of the Republic, the Imperial Army swiftly asserted dominance throughout the galaxy, making use of highly trained soldiers, mechanized walkers, and overwhelming numbers. The Imperial Army worked in tandem with the forces of the Imperial Navy, relying on the numerous fleets to transport legions of troopers across the far reaches of the galaxy. The most common soldiers of the Empire's ground forces were known as Imperial Army soldiers, the core infantry of the army tasked with establishing Imperial regimes and pacifying troublesome worlds. As the Imperials reinforced their grip on the galaxy, these units were gradually phased out in favor of stormtroopers, elite shock troops fanatically loyal to the Emperor himself.***First Order.*** The First Order army was the ground-based service branch of the First Order military. Formed from the Imperial Army of the Galactic Empire, it was responsible for maintaining order throughout First Order space as well as the gradual conquest and colonization of the Unknown Regions."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "any alignment"
 armorType = "light battle armor"
+armorClass = 15
 hitPoints = 32
 speed = 30
 strength = 13
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 11"])
 languages = Array[String](["Galactic Basic", "one other"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_nbshy")]([SubResource("Resource_bq05t"), SubResource("Resource_yslvo"), SubResource("Resource_ro57o"), SubResource("Resource_y08mv")])
+behaviors = Array[ExtResource("1_doiuw")]([SubResource("Resource_732n2"), SubResource("Resource_4m5uc"), SubResource("Resource_0ul13"), SubResource("Resource_sfb7b")])

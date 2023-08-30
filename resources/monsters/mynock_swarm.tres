@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ps8f0"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2f74u"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_oo72b"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_lrkk1"]
 
-[sub_resource type="Resource" id="Resource_ldmjo"]
-script = ExtResource("1_ps8f0")
+[sub_resource type="Resource" id="Resource_ilg03"]
+script = ExtResource("1_oo72b")
 name = "Atmosphere Agnostic"
 monsterBehaviorType = 0
 description = " The mynock swarm can survive in any type of atmosphere or vacuum."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_j4oyp"]
-script = ExtResource("1_ps8f0")
+[sub_resource type="Resource" id="Resource_jqlet"]
+script = ExtResource("1_oo72b")
 name = "Pack Tactics"
 monsterBehaviorType = 0
 description = " The mynock swarm has advantage on an attack roll against a creature if at least one ally of the mynock swarm is within 5 feet of the creature and the ally isn't incapacitated."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cbcgh"]
-script = ExtResource("1_ps8f0")
+[sub_resource type="Resource" id="Resource_652q0"]
+script = ExtResource("1_oo72b")
 name = "Swarm"
 monsterBehaviorType = 0
 description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a small mynock. The swarm can't regain hit points or gain temporary hit points."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_e0ln4"]
-script = ExtResource("1_ps8f0")
+[sub_resource type="Resource" id="Resource_glnac"]
+script = ExtResource("1_oo72b")
 name = "Energy Drain"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 17 (4d6 + 3) kinetic damage, the swarm loses 3 (1d6) hit points, and a mynock attaches to the target, and is considered a separate creature with its own statistics for the remainder of combat."
@@ -64,7 +64,7 @@ damageRoll = "4d6 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_2f74u")
+script = ExtResource("2_lrkk1")
 name = "Mynock Swarm"
 flavorText = ""
 sectionText = "Mynocks are a species of silicon-based bat-like parasites that chew on the power cables and energy conductors of starships, and can drain a ship's entire power supply. They reproduce by splitting in two and growing new creatures from each half. Mynocks are capable of surviving in the atmospheres of planets and the vacuum of space, though only a few varieties lived on planets. They are also known to inhabit asteroid fields and the gullets of exogorths, where they share in its meals. "
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["swarm of Small beasts"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 14
 hitPoints = 39
 speed = 5
 strength = 6
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String](["Charmed", "Frightened", "Paralyzed", "Petrified", "Prone", "Restrained", "Stunned"])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 9"])
 languages = Array[String](["â€”"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_ps8f0")]([SubResource("Resource_ldmjo"), SubResource("Resource_j4oyp"), SubResource("Resource_cbcgh"), SubResource("Resource_e0ln4")])
+behaviors = Array[ExtResource("1_oo72b")]([SubResource("Resource_ilg03"), SubResource("Resource_jqlet"), SubResource("Resource_652q0"), SubResource("Resource_glnac")])

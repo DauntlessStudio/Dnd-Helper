@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ek1su"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_tllmg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_a4p64"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_f8bj1"]
 
-[sub_resource type="Resource" id="Resource_5ca4h"]
-script = ExtResource("1_ek1su")
+[sub_resource type="Resource" id="Resource_1hmbf"]
+script = ExtResource("1_a4p64")
 name = "Spider Climb"
 monsterBehaviorType = 0
 description = " The rathtar can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5m5ln"]
-script = ExtResource("1_ek1su")
+[sub_resource type="Resource" id="Resource_2gxv7"]
+script = ExtResource("1_a4p64")
 name = "Grasping Arms"
 monsterBehaviorType = 0
 description = " The rathtar can have up to eight arms at a time.  Each arm can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage).  Destroying an arm deals no damage to the rathtar, which can extrude a replacement arm on its next turn.  An arm can also be broken if a creature takes an action and succeeds on a DC 15 Strength check against it."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_26vll"]
-script = ExtResource("1_ek1su")
+[sub_resource type="Resource" id="Resource_chq0p"]
+script = ExtResource("1_a4p64")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The rathtar makes four flailing arm attacks, uses Reel, and makes one attack with its bite."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vshal"]
-script = ExtResource("1_ek1su")
+[sub_resource type="Resource" id="Resource_yuxkl"]
+script = ExtResource("1_a4p64")
 name = "Flailing Arms"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 15 ft., one target. Hit: 6 (1d4 + 4)  kinetic damage, and the target is grappled (escape DC 15) if it is Medium or smaller. Until the grapple ends, the rathar can't use this arm on another target. The rathtar has eight arms and can have up to four creatures grappled at a time."
@@ -63,8 +63,8 @@ damage = 6
 damageRoll = "1d4 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_f4rbl"]
-script = ExtResource("1_ek1su")
+[sub_resource type="Resource" id="Resource_jw6cc"]
+script = ExtResource("1_a4p64")
 name = "Bite"
 monsterBehaviorType = 0
 description = "  Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) kinetic damage."
@@ -78,8 +78,8 @@ damage = 11
 damageRoll = "2d6 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_qja5j"]
-script = ExtResource("1_ek1su")
+[sub_resource type="Resource" id="Resource_knfrh"]
+script = ExtResource("1_a4p64")
 name = "Reel"
 monsterBehaviorType = 0
 description = " The rathtar pulls each creature grapples by it up to 15 feet straight toward it."
@@ -94,7 +94,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_tllmg")
+script = ExtResource("2_f8bj1")
 name = "Rathtar, Dwarf"
 flavorText = ""
 sectionText = "Rathtars were large, carnivorous cephalopods that were native to the planet Twon Ketee. Regarded as one of the most dangerous beasts in the galaxy, rathtars were known for hunting in packs, and their subspecies, the dwarf rathtar were involved in an incident known as the Trillia Massacre.   ***Biology.*** Although the study of rathtars was rare due to the danger posed by the beasts, it was believed that they shared common ancestry with other tentacled species such as the sarlaccs, the blixii, and the vixus of Umbara. Rathtars reproduced by fission, leading to rapidly increasing numbers if the species' population was not controlled.***Hunting.*** Rathtars appeared physiologically primitive, endowed with only rudimentary senses and possessing small brains. Despite the appearance of a mindless eating machine, rathtars proved effective at working together, and displayed affinity for pack hunting. Individual rathtars appeared to become smarter when in proximity to others of its species, and rathtar packs utilized howls, at a frequency beyond humanoid hearing, to communicate among one another. They also vocalized deafening roars when attacking and devouring prey, and let out horrifying shrieks of fury when in pain. If in danger from a rathtar, one's best hope was to hide, as the creatures were largely blind.***Feeding.*** Lacking a true skeleton, a rathtar had an enormous, round, slug-like body covered in light-reactive sensing orbs. They possessed multiple long, tentacle-like appendages; their principle feeding tentacles whipped out to capture and devour prey, which typically consisted of anything they perceived as non-rathtar. The creatures were ravenous and persistent eaters, capable of consuming virtually anything that they could fit into their robust, radial mouths, which were funnel-shaped and lined with rows of razor sharp teeth. Their throat distended outward into a hollow tongue, useful for swallowing struggling prey. The bilious creatures typically tore their meals apart piece by piece.***Movement.*** Capable of locomotion, rathtars curled their ambulatory tentacles inward to form a ball and roll themselves forward in a whirl of whipping tentacles. They moved deceptively fast for their size, and had adhesive pads on their pointed tentacle tipsï¿½known as a clubï¿½which helped them attach to surfaces. ***Tentacles and Tougness.*** Their tentacles had enormous strength, and were of a muscular hydrostat form. Their fleshy bodies were covered in a hard, rubbery exterior, giving the rathtars a heavy resistance to blaster bolts, small-arms fire, and even biting attacks."
@@ -102,6 +102,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 15
 hitPoints = 114
 speed = 30
 strength = 18
@@ -118,6 +119,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String](["Poisoned", "Prone"])
 senses = Array[String](["blindsight 60 ft.", "passive Perception 11"])
 languages = Array[String](["ï¿½"])
-challengeRating = 5
+challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_ek1su")]([SubResource("Resource_5ca4h"), SubResource("Resource_5m5ln"), SubResource("Resource_26vll"), SubResource("Resource_vshal"), SubResource("Resource_f4rbl"), SubResource("Resource_qja5j")])
+behaviors = Array[ExtResource("1_a4p64")]([SubResource("Resource_1hmbf"), SubResource("Resource_2gxv7"), SubResource("Resource_chq0p"), SubResource("Resource_yuxkl"), SubResource("Resource_jw6cc"), SubResource("Resource_knfrh")])

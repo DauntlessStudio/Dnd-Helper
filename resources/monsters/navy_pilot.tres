@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=4 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_vl4xe"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_eo4fw"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_x7o2k"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_e5gh4"]
 
-[sub_resource type="Resource" id="Resource_ewsit"]
-script = ExtResource("1_vl4xe")
+[sub_resource type="Resource" id="Resource_o8ynq"]
+script = ExtResource("1_x7o2k")
 name = "Light Pistol"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 40/160 ft., one target. Hit: 4 (1d4 + 2) energy damage."
@@ -19,7 +19,7 @@ damageRoll = "1d4 + 2"
 damageType = 3
 
 [resource]
-script = ExtResource("2_eo4fw")
+script = ExtResource("2_e5gh4")
 name = "Navy Pilot"
 flavorText = ""
 sectionText = "As the branch of the galactic military that deals with space operations, the galactic navy has been composed of many sub-units and organizations, and has utilized a vast array of starships to achieve its objectives throughout the years.***Republic Navy.*** The Republic Navy, also referred to as the Republic fleet, Republic starfleet or the Galactic Republic fleet, was the military naval force of the Galactic Republic during the Clone Wars. The Navy served to transport the clone army across the galaxy while also engaging in ship-to-ship combat with the Confederacy navy. Following the end of the war and the formation of the Galactic Empire, the Republic Navy transitioned into the Imperial Navy.***Imperial Navy.*** The Imperial Navy, also known as the Imperial Starfleet or the Imperial fleet, was the naval branch of the Galactic Empire's military. It was created in the wake of the Clone Wars, when Chancellor Sheev Palpatine transformed the Galactic Republic he led into an authoritarian Empire. Consisting mainly of Star Destroyers and TIE fighters, the Imperial Navy was tasked with maintaining order in the galaxy.***First Order Navy.*** The First Order Navy, also referred to as the First Order fleet, was the naval branch of the First Order military. It superseded the Imperial Navy of the former Galactic Empire, it would be paramount to the gradual conquest and colonization of the Unknown Regions by the Imperial successor state, the First Order."
@@ -27,6 +27,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful balanced"
 armorType = "combat suit"
+armorClass = 13
 hitPoints = 9
 speed = 30
 strength = 8
@@ -43,6 +44,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 13"])
 languages = Array[String](["Galactic Basic"])
-challengeRating = 18
+challengeRating = "1/8"
 experiencePoints = 25
-behaviors = Array[ExtResource("1_vl4xe")]([SubResource("Resource_ewsit")])
+behaviors = Array[ExtResource("1_x7o2k")]([SubResource("Resource_o8ynq")])

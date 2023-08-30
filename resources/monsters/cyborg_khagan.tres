@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=17 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8l7th"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mij6l"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_x1l4b"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_fou4f"]
 
-[sub_resource type="Resource" id="Resource_jd1xg"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_2imof"]
+script = ExtResource("1_x1l4b")
 name = "Villainous Hit Points"
 monsterBehaviorType = 0
 description = "Damage and healing only applies to the currently active hit point pool. When a pool is depleted of all hit points, it becomes inactive. Only one pool can be active at any time. If a hit point pool is depleted, the Cyborg Khagan immediately saves against all ongoing conditions and effects. Any abilities which can reset do so. If all pools of hit points are inactive, Cyborg Khagan is killed. If Cyborg Khagan takes a long rest, it fully heals the currently active pool and fully heals one depleted pool.  Cyborg Khagan has multiple pools of hit points, each of which is tracked separately."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vx7ba"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_roupn"]
+script = ExtResource("1_x1l4b")
 name = "Villainous Exhaustion"
 monsterBehaviorType = 0
 description = "If a hit point pool is depleted, Cyborg Khagan also loses one villainous action. Cyborg Khagan may use a villainous action after any other creature takes a turn. If Cyborg Khagan does so, it regains its reaction. A villainous action is a complete turn. They have an action, bonus action and may move up to their full speed. The villainous actions refresh at the start of Cyborg Khagan's turn and any remaining actions from the previous turn are lost.  Cyborg Khagan rolls initiative with advantage. Cyborg Khagan starts with a number of villainous actions equal to one less than it's villainous multiplier."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_tmp6m"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_iosbd"]
+script = ExtResource("1_x1l4b")
 name = "Jedi Slayer"
 monsterBehaviorType = 0
 description = " Cyborg Khagan has advantage on saving throws against force powers cast by enemies within 5 feett. When an enemy within 5 feet casts a force power, Cyborg Khagan can make a melee attack against that character as a reaction. When Cyborg Khagan damages an enemy character, they have disadvantage on Concentration saves to maintain their Force powers."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2m0yb"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_6vgnk"]
+script = ExtResource("1_x1l4b")
 name = "Rage"
 monsterBehaviorType = 0
 description = " On Cyborg Khagan's turn, he may choose to go into a Rage as a bonus action. While in a rage, his attacks deal +3 damage, he has Advantage on strength-based skill checks and saving throws, and he has resistance to kinetic and energy damage. As part of the bonus action to go into a Rage, he can make a Lightsaber or unarmed attack. While in a Rage, all attacks against him have Advantage. The Rage lasts for 1 minute, or until Cyborg Khagan ends his rage as a Bonus action, or until Cyborg Khagan falls unconscious or loses all hitpoints in his current health pool."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8xsyw"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_svc1r"]
+script = ExtResource("1_x1l4b")
 name = "More Machine than Man"
 monsterBehaviorType = 0
 description = " Cyborg Khagan has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_t72dg"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_6jrr1"]
+script = ExtResource("1_x1l4b")
 name = "Cowardice"
 monsterBehaviorType = 0
 description = " While Cyborg Khagan has only one health pool remaining, he has Advantage on Stealth and Acrobatics checks, and he can take the Dash or Disengage actions as a Bonus action."
@@ -93,8 +93,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ng2ms"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_2hcn1"]
+script = ExtResource("1_x1l4b")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " On each of his turns, Cyborg Khagan can use one of Crush Them!, Frightful Presence, or Whirling Advance and then make one Unarmed Slam, Lightsaber, or Blaster attack; or he may make two attacks."
@@ -108,8 +108,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3g8wf"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_oo7qg"]
+script = ExtResource("1_x1l4b")
 name = "Lightsaber"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack. +9 to hit, reach 5 ft., one target. Hit: 1d6+5 energy damage."
@@ -123,8 +123,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_h3dy1"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_6yrir"]
+script = ExtResource("1_x1l4b")
 name = "Unarmed Slam"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack.+9 to hit, reach 5 ft., one target. Hit: 1d6+5 kinetic damage"
@@ -138,8 +138,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ylnsf"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_ncxc4"]
+script = ExtResource("1_x1l4b")
 name = "Heavy Blaster Pistol"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack. +7 to hit, range 40/160, one target. Hit: 1d8+3 energy damage."
@@ -153,8 +153,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1fc4m"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_xjpnc"]
+script = ExtResource("1_x1l4b")
 name = "Crush Them!"
 monsterBehaviorType = 0
 description = " Choose an ally within 30'. That ally can use their reaction to make an attack. If that attack hits, it deals an additional 1d8 damage."
@@ -168,8 +168,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kw1a2"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_2nmvj"]
+script = ExtResource("1_x1l4b")
 name = "Frightful Presence"
 monsterBehaviorType = 0
 description = " Choose any number of characters within 80'. Each of those characters who fails a Wisdom saving throw (DC 14) becomes frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Cyborg Khagan's Frightful Presence for the next 24 hours."
@@ -183,8 +183,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m1tao"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_exuch"]
+script = ExtResource("1_x1l4b")
 name = "Whirling Advance"
 monsterBehaviorType = 0
 description = " Whirling his blades, Cyborg Khagan advances with a shield of sparks and light. Choose a creature within 30 feet to make a DC 19 Dexterity saving throw. On a fail, the target is pushed 10 feet, Cyborg Khagan moves into their current square ignoring opportunity attacks, and he has advantage on his next attack against them this combat. On a success, Cyborg Khagan moves into a square adjacent to the target and opportunity attacks against Cyborg Khagan have disadvantage during that move."
@@ -198,8 +198,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gbyk8"]
-script = ExtResource("1_8l7th")
+[sub_resource type="Resource" id="Resource_g2ycs"]
+script = ExtResource("1_x1l4b")
 name = "Parry"
 monsterBehaviorType = 0
 description = " When Cyborg Khagan is attacked and hit by an adjacent character while he is holding one or more Lightsabers, he may use his reaction to reduce the damage taken by 1d10+15. If the damage is reduced to 0, he may use this reaction to make a Lightsaber attack against the attacker."
@@ -214,7 +214,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_mij6l")
+script = ExtResource("2_fou4f")
 name = "Cyborg Khagan"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
@@ -222,6 +222,7 @@ size = 0
 types = Array[String](["humanoid (Villainous"])
 alignment = "kaleesh)"
 armorType = "natural armor"
+armorClass = 17
 hitPoints = 77
 speed = 40
 strength = 20
@@ -238,6 +239,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String](["Poisoned"])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["Galactic Basic", "Huttese", "Kaleesh", "Nemodian"])
-challengeRating = 10
+challengeRating = "10"
 experiencePoints = 5900
-behaviors = Array[ExtResource("1_8l7th")]([SubResource("Resource_jd1xg"), SubResource("Resource_vx7ba"), SubResource("Resource_tmp6m"), SubResource("Resource_2m0yb"), SubResource("Resource_8xsyw"), SubResource("Resource_t72dg"), SubResource("Resource_ng2ms"), SubResource("Resource_3g8wf"), SubResource("Resource_h3dy1"), SubResource("Resource_ylnsf"), SubResource("Resource_1fc4m"), SubResource("Resource_kw1a2"), SubResource("Resource_m1tao"), SubResource("Resource_gbyk8")])
+behaviors = Array[ExtResource("1_x1l4b")]([SubResource("Resource_2imof"), SubResource("Resource_roupn"), SubResource("Resource_iosbd"), SubResource("Resource_6vgnk"), SubResource("Resource_svc1r"), SubResource("Resource_6jrr1"), SubResource("Resource_2hcn1"), SubResource("Resource_oo7qg"), SubResource("Resource_6yrir"), SubResource("Resource_ncxc4"), SubResource("Resource_xjpnc"), SubResource("Resource_2nmvj"), SubResource("Resource_exuch"), SubResource("Resource_g2ycs")])

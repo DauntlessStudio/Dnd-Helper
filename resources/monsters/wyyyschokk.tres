@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ijnf6"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_hpgsh"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_sk264"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bh2n4"]
 
-[sub_resource type="Resource" id="Resource_ydk6k"]
-script = ExtResource("1_ijnf6")
+[sub_resource type="Resource" id="Resource_w7qwx"]
+script = ExtResource("1_sk264")
 name = "Pack Tactics"
 monsterBehaviorType = 0
 description = " The wyyyschokk has advantage on an attack roll against a creature if at least one of the wyyyschokk's allies is within 5 feet of the creature and the ally isn't incapacitated."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cub03"]
-script = ExtResource("1_ijnf6")
+[sub_resource type="Resource" id="Resource_56qsr"]
+script = ExtResource("1_sk264")
 name = "Spider Climb"
 monsterBehaviorType = 0
 description = " The wyyyschokk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uqu4i"]
-script = ExtResource("1_ijnf6")
+[sub_resource type="Resource" id="Resource_ep8a3"]
+script = ExtResource("1_sk264")
 name = "Web Walker"
 monsterBehaviorType = 0
 description = " The wyyyschokk ignores movement restrictions caused by webbing."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4hpby"]
-script = ExtResource("1_ijnf6")
+[sub_resource type="Resource" id="Resource_6a6qv"]
+script = ExtResource("1_sk264")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) kinetic damage, and the target must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
@@ -63,8 +63,8 @@ damage = 12
 damageRoll = "2d8 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_t8xjr"]
-script = ExtResource("1_ijnf6")
+[sub_resource type="Resource" id="Resource_l18ud"]
+script = ExtResource("1_sk264")
 name = "Web"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to kinetic, poison, and psychic damage)."
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_hpgsh")
+script = ExtResource("2_bh2n4")
 name = "Wyyyschokk"
 flavorText = ""
 sectionText = "Also known as webweavers, or Kashyyykian giant weavers, Wyyyschokk are arachnids that live in the lower levels of Kashyyyk's \"multilayered deathtrap\" ecosystem. Wyyyschokk hold the distinction of being the most dangerous predator on Kashyyyk, signifying them as one of the most dangerous in the galaxy.***Behavior.*** They are intelligent enough to coordinate ambushes on unsuspecting creatures, and have the tenacity to track their prey for over a kilometer. When attacking, they immobilize their victims with thick strands of web and copious amounts of poisonous fluid from their upraised mandibles.***Range.*** While most wyyyschokk live deep in the lower levels of the wroshyr forests, some populations can also be found in the Etyyy region where no kilometer-high forests grow, while others live in the ShadowWeave Caverns in the Kkowir Forest."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 14
 hitPoints = 78
 speed = 40
 strength = 14
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["blindsight 10 ft.", "darkvision 60 ft.", "passive Perception 11"])
 languages = Array[String](["ï¿½"])
-challengeRating = 4
+challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_ijnf6")]([SubResource("Resource_ydk6k"), SubResource("Resource_cub03"), SubResource("Resource_uqu4i"), SubResource("Resource_4hpby"), SubResource("Resource_t8xjr")])
+behaviors = Array[ExtResource("1_sk264")]([SubResource("Resource_w7qwx"), SubResource("Resource_56qsr"), SubResource("Resource_ep8a3"), SubResource("Resource_6a6qv"), SubResource("Resource_l18ud")])

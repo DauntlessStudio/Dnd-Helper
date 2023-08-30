@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_vaxjw"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_feuhe"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_vdrgo"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_q5wif"]
 
-[sub_resource type="Resource" id="Resource_y1tjf"]
-script = ExtResource("1_vaxjw")
+[sub_resource type="Resource" id="Resource_o4xan"]
+script = ExtResource("1_vdrgo")
 name = "Beast of Burden"
 monsterBehaviorType = 0
 description = " The bogwing is considered to be a Medium animal for the purposes of determining its carrying capacity."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0dsts"]
-script = ExtResource("1_vaxjw")
+[sub_resource type="Resource" id="Resource_wlqkf"]
+script = ExtResource("1_vdrgo")
 name = "Claws"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) kinetic damage."
@@ -34,7 +34,7 @@ damageRoll = "1d4 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_feuhe")
+script = ExtResource("2_q5wif")
 name = "Bogwing, Lesser"
 flavorText = ""
 sectionText = "Bogwings are a reptavian species found on the planets of Naboo and Dagobah.  During the Cold War between the Galactic Republic and the reconstituted Sith Empire, bogwings were also seen in the swamps of the ruins of Taris.  ***Biology.*** Bogwings are known to be able to carry nine times their own weight and are very territorial. There are two races of bogwings: the greater bogwing and the lesser bogwing. They both feed on small creatures dwelling in the canopy, but the greater bogwing feeds in the upper levels, while the lesser bogwing feeds in the lower levels where it avoids larger predators such as the jubba bird.***Naboo.*** During Gulliball games played by Gungans, bogwings were released into the sky to signal halftime."
@@ -42,6 +42,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 12
 hitPoints = 4
 speed = 10
 strength = 5
@@ -58,6 +59,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 13"])
 languages = Array[String](["ï¿½"])
-challengeRating = 18
+challengeRating = "1/8"
 experiencePoints = 25
-behaviors = Array[ExtResource("1_vaxjw")]([SubResource("Resource_y1tjf"), SubResource("Resource_0dsts")])
+behaviors = Array[ExtResource("1_vdrgo")]([SubResource("Resource_o4xan"), SubResource("Resource_wlqkf")])

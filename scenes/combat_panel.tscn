@@ -1,9 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cejp7in6euedf"]
+[gd_scene load_steps=8 format=3 uid="uid://cejp7in6euedf"]
 
-[ext_resource type="FontFile" uid="uid://cf0ukg763o0wd" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="1_682so"]
-[ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="2_mgmh0"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jveu4"]
+[ext_resource type="Script" path="res://scripts/add_monster_panel.gd" id="1_7plxy"]
+[ext_resource type="FontFile" uid="uid://cf0ukg763o0wd" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="1_eq2lb"]
+[ext_resource type="Script" path="res://scripts/combat_panel.gd" id="1_sd6cn"]
+[ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="2_bfgwa"]
+[ext_resource type="Texture2D" uid="uid://l3sgwykad38j" path="res://assets/icon_GUI_dropdown.svg" id="3_aict6"]
+[ext_resource type="FontFile" uid="uid://2eeic83tu8h1" path="res://addons/fontawesome/fonts/fa-regular-400.woff2" id="3_k2po3"]
+[ext_resource type="PackedScene" uid="uid://bqn88wm6ok4hu" path="res://scenes/monster_container.tscn" id="4_ujv5v"]
 
 [node name="combat_panel" type="Control"]
 layout_mode = 3
@@ -12,74 +15,159 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sd6cn")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 161.0
-offset_bottom = 40.0
+[node name="CombatentStack" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatentStack"]
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_jveu4")
-placeholder_text = "000 Protocol Droid"
-flat = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CombatentStack/VBoxContainer"]
 layout_mode = 2
 
-[node name="InitiativeLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
+[node name="NewPlayerButton" type="Button" parent="CombatentStack/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "25"
+text = "New Player"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="NewMonsterButton" type="Button" parent="CombatentStack/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
+text = "New Monster"
 
-[node name="HPLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatentStack/VBoxContainer"]
 layout_mode = 2
-auto_translate = false
-localize_numeral_system = false
-theme_override_fonts/font = ExtResource("1_682so")
-theme_override_font_sizes/font_size = 16
-text = ""
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("2_mgmh0")
-icon_name = "heart"
+size_flags_vertical = 3
 
-[node name="HSlider" type="HSlider" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="InitiativeStack" type="VBoxContainer" parent="CombatentStack/VBoxContainer/ScrollContainer"]
 layout_mode = 2
-rounded = true
-ticks_on_borders = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="AddMonsterPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -513.0
+offset_top = -261.0
+offset_right = 313.0
+offset_bottom = 261.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7plxy")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AddMonsterPanel"]
+custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="SpeedLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="ExitButton" type="Button" parent="AddMonsterPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("3_k2po3")
+text = "x"
+
+[node name="SearchFlowContainer" type="HFlowContainer" parent="AddMonsterPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="SearchContainer" type="PanelContainer" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer"]
+custom_minimum_size = Vector2(395, 0)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer/SearchContainer"]
+layout_mode = 2
+
+[node name="SearchEdit" type="LineEdit" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer/SearchContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Search"
+flat = true
+
+[node name="Label" type="Label" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer/SearchContainer/HBoxContainer"]
 layout_mode = 2
 auto_translate = false
 localize_numeral_system = false
-theme_override_fonts/font = ExtResource("1_682so")
+theme_override_fonts/font = ExtResource("1_eq2lb")
 theme_override_font_sizes/font_size = 16
-text = ""
+text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("2_mgmh0")
-icon_name = "shoe-prints"
+script = ExtResource("2_bfgwa")
+icon_name = "magnifying-glass"
 
-[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="SizeMenuButton" type="MenuButton" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer"]
+custom_minimum_size = Vector2(395, 0)
+layout_mode = 2
+text = "Size"
+icon = ExtResource("3_aict6")
+flat = false
+alignment = 0
+icon_alignment = 2
+
+[node name="TypeMenuButton" type="MenuButton" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer"]
+custom_minimum_size = Vector2(395, 0)
+layout_mode = 2
+text = "Type"
+icon = ExtResource("3_aict6")
+flat = false
+alignment = 0
+icon_alignment = 2
+
+[node name="CRMenuButton" type="MenuButton" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer"]
+custom_minimum_size = Vector2(395, 0)
+layout_mode = 2
+text = "CR"
+icon = ExtResource("3_aict6")
+flat = false
+alignment = 0
+icon_alignment = 2
+
+[node name="AlignmentMenuButton" type="MenuButton" parent="AddMonsterPanel/VBoxContainer/SearchFlowContainer"]
+custom_minimum_size = Vector2(795, 0)
+layout_mode = 2
+text = "Alignment"
+icon = ExtResource("3_aict6")
+flat = false
+alignment = 0
+icon_alignment = 2
+
+[node name="MonsterListHolder" type="VBoxContainer" parent="AddMonsterPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MonsterContainer" parent="AddMonsterPanel/VBoxContainer/MonsterListHolder" instance=ExtResource("4_ujv5v")]
 layout_mode = 2
 
-[node name="ArmorLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="AddMonsterPanel/VBoxContainer/MonsterListHolder"]
 layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MonsterListContainer" type="VBoxContainer" parent="AddMonsterPanel/VBoxContainer/MonsterListHolder/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 auto_translate = false
 localize_numeral_system = false
-theme_override_fonts/font = ExtResource("1_682so")
+theme_override_fonts/font = ExtResource("1_eq2lb")
 theme_override_font_sizes/font_size = 16
-text = ""
+text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("2_mgmh0")
-icon_name = "shield"
+script = ExtResource("2_bfgwa")
+icon_name = "xmark"
+
+[connection signal="pressed" from="CombatentStack/VBoxContainer/HBoxContainer/NewMonsterButton" to="." method="_on_new_monster_button_pressed"]
+[connection signal="pressed" from="AddMonsterPanel/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="text_changed" from="AddMonsterPanel/VBoxContainer/SearchFlowContainer/SearchContainer/HBoxContainer/SearchEdit" to="AddMonsterPanel" method="_on_search_edit_text_changed"]

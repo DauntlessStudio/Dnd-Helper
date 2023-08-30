@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_q4v4f"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_fmlg7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_6q24c"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xlekq"]
 
-[sub_resource type="Resource" id="Resource_vxikn"]
-script = ExtResource("1_q4v4f")
+[sub_resource type="Resource" id="Resource_e538l"]
+script = ExtResource("1_6q24c")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iwgh5"]
-script = ExtResource("1_q4v4f")
+[sub_resource type="Resource" id="Resource_71xy4"]
+script = ExtResource("1_6q24c")
 name = "Innate Tech-casting"
 monsterBehaviorType = 0
 description = " The T-series Tactical droid can innately cast the following tech powers (tech save DC 14): assess the situation, encrypted message, on/off, alarm, element of surprise (3/day), repair droid, stack the deck"
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4c2dl"]
-script = ExtResource("1_q4v4f")
+[sub_resource type="Resource" id="Resource_nhcwa"]
+script = ExtResource("1_6q24c")
 name = "Predictive AI"
 monsterBehaviorType = 0
 description = " The tactical droid can enter a state of higher programming as an action. While concentrating, the droid can't be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target. This lasts for 1 hour."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_g3rg0"]
-script = ExtResource("1_q4v4f")
+[sub_resource type="Resource" id="Resource_gi00v"]
+script = ExtResource("1_6q24c")
 name = "Blaster Pistol"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, Ammunition (range40/160), one target. Hit 5 (1d6 + 2) energy damage."
@@ -64,7 +64,7 @@ damageRoll = "1d6 + 2"
 damageType = 3
 
 [resource]
-script = ExtResource("2_fmlg7")
+script = ExtResource("2_xlekq")
 name = "T-Series Tactical Droid"
 flavorText = "Super tactical droids are advanced tactical droids that had command capabilities during the Clone Wars, acting as generals of the Separatist Droid Army. They would often resort to threats and torture as interrogation routes. These droids were created to analyze a battle, calculate a possible battle-winning solution, and a time frame to carry out their plan. Being programmed with Separatist beliefs, they ruled through fear and through the lack of courage and hope in their victims and specifically \"freedom from the tyranny of the republic.\" Although Super Tactical Droids were not directly involved in combat, they were able to effectively use self-defense and an E-5 blaster rifle. Being programmed for success, they are willing to kill for the advancement of the Confederacy of Independent Systems.Building off their predecessors, the T-series tactical droid, they had a much more robotic inflection to their voices, as well a larger, more imposing and more damage-resistant body. These droids were also able to better process and adapt to sudden changes and unexpected complications and have more variables in their calculations. Although better than those before them, flaws in their programming were still prevalent. These included the difficulty to see approaches and plans that differ from their own, and the overconfidence in the Confederacy of Independent Systems and its army."
 sectionText = "Tactical droids are a type of battle droid designed to plan battle strategies. Baktoid Combat Automata manufactured several models of tactical droid, including the T-series tactical droid and a more advanced super tactical droid. Later, L-1 tactical droids would be used during the Galactic Civil War."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "lawful dark"
 armorType = "armor plating"
+armorClass = 13
 hitPoints = 50
 speed = 30
 strength = 10
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["Galactic basic", "binary", "", "two others"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_q4v4f")]([SubResource("Resource_vxikn"), SubResource("Resource_iwgh5"), SubResource("Resource_4c2dl"), SubResource("Resource_g3rg0")])
+behaviors = Array[ExtResource("1_6q24c")]([SubResource("Resource_e538l"), SubResource("Resource_71xy4"), SubResource("Resource_nhcwa"), SubResource("Resource_gi00v")])

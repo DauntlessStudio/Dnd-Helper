@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_g7g6d"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7w4vb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1nkv2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ftrdk"]
 
-[sub_resource type="Resource" id="Resource_nyfdy"]
-script = ExtResource("1_g7g6d")
+[sub_resource type="Resource" id="Resource_ivqbj"]
+script = ExtResource("1_1nkv2")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xbsbd"]
-script = ExtResource("1_g7g6d")
+[sub_resource type="Resource" id="Resource_qcutg"]
+script = ExtResource("1_1nkv2")
 name = "Interfaced Healing Protocol"
 monsterBehaviorType = 0
 description = " While you are interfaced with this droid via the tracker droid interface tech power, when you restore hit points to a creature that is within 5 feet of your droid, you can roll the dice twice and take either total."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_avtpu"]
-script = ExtResource("1_g7g6d")
+[sub_resource type="Resource" id="Resource_hnigf"]
+script = ExtResource("1_1nkv2")
 name = "Medkit"
 monsterBehaviorType = 0
 description = " As an action, the droid can expend a use of a medkit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3wxkr"]
-script = ExtResource("1_g7g6d")
+[sub_resource type="Resource" id="Resource_ki6cs"]
+script = ExtResource("1_1nkv2")
 name = "Medpac"
 monsterBehaviorType = 0
 description = " As an action, the droid uses a medpac to restore 2d4+2 hit points to a creature within 5 feet."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wiiju"]
-script = ExtResource("1_g7g6d")
+[sub_resource type="Resource" id="Resource_iol8a"]
+script = ExtResource("1_1nkv2")
 name = "Administer Antidote"
 monsterBehaviorType = 0
 description = " As an action, the droid can administer a charge of an antidote kit to cure a target of one poison affecting them or to give them advantage on saving throws against poison for 1 hour. It confers no benefit to droids or constructs."
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_7w4vb")
+script = ExtResource("2_ftrdk")
 name = "GH-7 Medical Analysis Unit"
 flavorText = "The GH-7 medical analysis unit is a multi-purpose automaton designed to handle diagnostics and surgical assistance duties. Though reminiscent of a humanoid form, the GH-7 is not modeled on any particular species, instead designed to perform efficiently on a variety of outlying worlds among any number of alien races. The droid has access to a range of medical knowledge and can serve as an assistant to an organic medic with all of its tools being easily accessible."
 sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 11
 hitPoints = 1
 speed = 25
 strength = 7
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 11"])
 languages = Array[String](["Galactic Basic", "one other of your choice"])
-challengeRating = 0
+challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_g7g6d")]([SubResource("Resource_nyfdy"), SubResource("Resource_xbsbd"), SubResource("Resource_avtpu"), SubResource("Resource_3wxkr"), SubResource("Resource_wiiju")])
+behaviors = Array[ExtResource("1_1nkv2")]([SubResource("Resource_ivqbj"), SubResource("Resource_qcutg"), SubResource("Resource_hnigf"), SubResource("Resource_ki6cs"), SubResource("Resource_iol8a")])

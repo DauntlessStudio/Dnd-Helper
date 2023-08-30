@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gqql4"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_3jt45"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_pcryh"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_571g1"]
 
-[sub_resource type="Resource" id="Resource_tadv1"]
-script = ExtResource("1_gqql4")
+[sub_resource type="Resource" id="Resource_0w2ip"]
+script = ExtResource("1_pcryh")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Tarkhan makes two meelee attacks with its Greater Shoni Spear."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i3aac"]
-script = ExtResource("1_gqql4")
+[sub_resource type="Resource" id="Resource_60av4"]
+script = ExtResource("1_pcryh")
 name = "Lig Sword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit 6 (1d8 + 3) kinetic damage."
@@ -33,8 +33,8 @@ damage = 6
 damageRoll = "1d8 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_sjldu"]
-script = ExtResource("1_gqql4")
+[sub_resource type="Resource" id="Resource_bwc0t"]
+script = ExtResource("1_pcryh")
 name = "Greater Shoni Spear"
 monsterBehaviorType = 0
 description = " Melee or Ranged Weapon Attack: +5 to hit, reach 10 ft., one target. Hit 8 (1d10 + 3) kinetic damage."
@@ -48,8 +48,8 @@ damage = 8
 damageRoll = "1d10 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_k6mb6"]
-script = ExtResource("1_gqql4")
+[sub_resource type="Resource" id="Resource_fsbnn"]
+script = ExtResource("1_pcryh")
 name = "Outland Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 30/120, one target. Hit 5 (1d6 + 2) kinetic damage."
@@ -63,8 +63,8 @@ damage = 5
 damageRoll = "1d6 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_7d45n"]
-script = ExtResource("1_gqql4")
+[sub_resource type="Resource" id="Resource_rjywq"]
+script = ExtResource("1_pcryh")
 name = "Battle Cry"
 monsterBehaviorType = 0
 description = " Each creature of the Tarkhan's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the Tarkhan's next turn. The war chief can then make one attack as a bonus action."
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_3jt45")
+script = ExtResource("2_571g1")
 name = "Kolkpravis Tarkhan"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful balanced"
 armorType = "battle armor"
+armorClass = 16
 hitPoints = 55
 speed = 30
 strength = 15
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60ft", "passive Perception 10"])
 languages = Array[String](["Kaleesh", "Galactic Basic"])
-challengeRating = 3
+challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_gqql4")]([SubResource("Resource_tadv1"), SubResource("Resource_i3aac"), SubResource("Resource_sjldu"), SubResource("Resource_k6mb6"), SubResource("Resource_7d45n")])
+behaviors = Array[ExtResource("1_pcryh")]([SubResource("Resource_0w2ip"), SubResource("Resource_60av4"), SubResource("Resource_bwc0t"), SubResource("Resource_fsbnn"), SubResource("Resource_rjywq")])

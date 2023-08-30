@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1f23n"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cfufu"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_knn3r"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_m1sx8"]
 
-[sub_resource type="Resource" id="Resource_6kv3k"]
-script = ExtResource("1_1f23n")
+[sub_resource type="Resource" id="Resource_x0nt5"]
+script = ExtResource("1_knn3r")
 name = "Tunneler"
 monsterBehaviorType = 0
 description = " The lylek can burrow through solid rock at half it burrowing speed and leaves a 10-foot-diameter tunnel in its wake."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mk1j0"]
-script = ExtResource("1_1f23n")
+[sub_resource type="Resource" id="Resource_atqwv"]
+script = ExtResource("1_knn3r")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The lylek can make three attacks: two with its legs or tentacles and one with its tail stinger."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4myn5"]
-script = ExtResource("1_1f23n")
+[sub_resource type="Resource" id="Resource_j3t80"]
+script = ExtResource("1_knn3r")
 name = "Leg Spear"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) kinetic damage."
@@ -48,8 +48,8 @@ damage = 12
 damageRoll = "2d8 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_swclb"]
-script = ExtResource("1_1f23n")
+[sub_resource type="Resource" id="Resource_shol3"]
+script = ExtResource("1_knn3r")
 name = "Tail Stinger"
 monsterBehaviorType = 0
 description = "  Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) kinetic damage, and the target must succeed on a DC 15 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
@@ -63,8 +63,8 @@ damage = 10
 damageRoll = "2d6 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_0f5y8"]
-script = ExtResource("1_1f23n")
+[sub_resource type="Resource" id="Resource_ommqv"]
+script = ExtResource("1_knn3r")
 name = "Tentacle"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) kinetic damage. If the target is Medium or smaller, it is grappled (escape DC 15). The lylek can have up to two creatures grappled at the same time."
@@ -79,7 +79,7 @@ damageRoll = "2d6 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_cfufu")
+script = ExtResource("2_m1sx8")
 name = "Lylek"
 flavorText = ""
 sectionText = "Lyleks are a species of large insectoid predators native to the equatorial forests of the planet Ryloth. With their spiked pincers and powerful mandibles with a pair of tentacles near it, the lyleks are the only Rylothian lifeform more dangerous than the predatory gutkurrs. Their ridged, spiked carapaces can deflect blaster bolts. Although the Lyleks live in hordes, the bigger individuals often dismember the smaller individuals of their kind. These hordes are led by a Lylek queen, and their elaborate underground nests can cover up to 15 square kilometers. They communicate by hissing, clicking and chittering. Their carapaces are tough enough to repel even heavy blaster fire, though a precisely aimed shot to the head can put one down."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 14
 hitPoints = 85
 speed = 30
 strength = 17
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 16"])
 languages = Array[String](["ï¿½"])
-challengeRating = 7
+challengeRating = "7"
 experiencePoints = 2900
-behaviors = Array[ExtResource("1_1f23n")]([SubResource("Resource_6kv3k"), SubResource("Resource_mk1j0"), SubResource("Resource_4myn5"), SubResource("Resource_swclb"), SubResource("Resource_0f5y8")])
+behaviors = Array[ExtResource("1_knn3r")]([SubResource("Resource_x0nt5"), SubResource("Resource_atqwv"), SubResource("Resource_j3t80"), SubResource("Resource_shol3"), SubResource("Resource_ommqv")])

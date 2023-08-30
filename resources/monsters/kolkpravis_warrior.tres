@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_afu4v"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bahyd"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_5ea1p"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_eyf4q"]
 
-[sub_resource type="Resource" id="Resource_cfwji"]
-script = ExtResource("1_afu4v")
+[sub_resource type="Resource" id="Resource_owpix"]
+script = ExtResource("1_5ea1p")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Kolkpravis Warrior makes two meelee attacks with its Shoni Spear or two ranged attack with its slugthrower."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yp4j6"]
-script = ExtResource("1_afu4v")
+[sub_resource type="Resource" id="Resource_77651"]
+script = ExtResource("1_5ea1p")
 name = "Lig Sword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit 5 (1d8 + 1) kinetic damage."
@@ -33,8 +33,8 @@ damage = 5
 damageRoll = "1d8 + 1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_fx4je"]
-script = ExtResource("1_afu4v")
+[sub_resource type="Resource" id="Resource_3ip3s"]
+script = ExtResource("1_5ea1p")
 name = "Shoni Spear"
 monsterBehaviorType = 0
 description = " Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60, one target. Hit 4 (1d6 + 1) kinetic damage."
@@ -48,8 +48,8 @@ damage = 4
 damageRoll = "1d6 + 1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_tvfps"]
-script = ExtResource("1_afu4v")
+[sub_resource type="Resource" id="Resource_6v3mm"]
+script = ExtResource("1_5ea1p")
 name = "Sudden Rush"
 monsterBehaviorType = 0
 description = " Until the end of the turn, the Kolkpravis Warrior's speed increases by 60 feet and it doesn't provoke opportunity attacks."
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_bahyd")
+script = ExtResource("2_eyf4q")
 name = "Kolkpravis Warrior"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful balanced"
 armorType = "heavy combat suit"
+armorClass = 14
 hitPoints = 22
 speed = 30
 strength = 12
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60ft", "passive Perception 12"])
 languages = Array[String](["Kaleesh", "Galactic Basic"])
-challengeRating = 1
+challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_afu4v")]([SubResource("Resource_cfwji"), SubResource("Resource_yp4j6"), SubResource("Resource_fx4je"), SubResource("Resource_tvfps")])
+behaviors = Array[ExtResource("1_5ea1p")]([SubResource("Resource_owpix"), SubResource("Resource_77651"), SubResource("Resource_3ip3s"), SubResource("Resource_6v3mm")])

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0j552"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wv3bn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dbfbi"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_t87k4"]
 
-[sub_resource type="Resource" id="Resource_0nrct"]
-script = ExtResource("1_0j552")
+[sub_resource type="Resource" id="Resource_r5ku3"]
+script = ExtResource("1_dbfbi")
 name = "Hunter's Eye"
 monsterBehaviorType = 0
 description = " As a bonus, the tradoshan can add 1d10 to its next attack or damage roll with a blaster weapon."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_n36cp"]
-script = ExtResource("1_0j552")
+[sub_resource type="Resource" id="Resource_e1pnn"]
+script = ExtResource("1_dbfbi")
 name = "Infrared Vision"
 monsterBehaviorType = 0
 description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_foff3"]
-script = ExtResource("1_0j552")
+[sub_resource type="Resource" id="Resource_1hy54"]
+script = ExtResource("1_dbfbi")
 name = "Regeneration"
 monsterBehaviorType = 0
 description = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bgko3"]
-script = ExtResource("1_0j552")
+[sub_resource type="Resource" id="Resource_k4q1v"]
+script = ExtResource("1_dbfbi")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trandoshan makes two ranged weapon attacks."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_b5i0x"]
-script = ExtResource("1_0j552")
+[sub_resource type="Resource" id="Resource_8lcwx"]
+script = ExtResource("1_dbfbi")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
@@ -78,8 +78,8 @@ damage = 8
 damageRoll = "1d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_dqa4y"]
-script = ExtResource("1_0j552")
+[sub_resource type="Resource" id="Resource_3v6eu"]
+script = ExtResource("1_dbfbi")
 name = "Trandoshan Shortsword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) kinetic damage."
@@ -94,7 +94,7 @@ damageRoll = "1d6 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_wv3bn")
+script = ExtResource("2_t87k4")
 name = "Trandoshan Hunter"
 flavorText = ""
 sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
@@ -102,6 +102,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "any dark"
 armorType = "combat suit"
+armorClass = 15
 hitPoints = 77
 speed = 30
 strength = 16
@@ -118,6 +119,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["Galactic Basic", "Dosh"])
-challengeRating = 3
+challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_0j552")]([SubResource("Resource_0nrct"), SubResource("Resource_n36cp"), SubResource("Resource_foff3"), SubResource("Resource_bgko3"), SubResource("Resource_b5i0x"), SubResource("Resource_dqa4y")])
+behaviors = Array[ExtResource("1_dbfbi")]([SubResource("Resource_r5ku3"), SubResource("Resource_e1pnn"), SubResource("Resource_1hy54"), SubResource("Resource_k4q1v"), SubResource("Resource_8lcwx"), SubResource("Resource_3v6eu")])

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_qpix4"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uklxh"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_5kngi"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_heowi"]
 
-[sub_resource type="Resource" id="Resource_t1ydd"]
-script = ExtResource("1_qpix4")
+[sub_resource type="Resource" id="Resource_8wasb"]
+script = ExtResource("1_5kngi")
 name = "Strength in Numbers"
 monsterBehaviorType = 0
 description = " The swarm has advantage on Strength and Constitution checks and saving throws."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m86t2"]
-script = ExtResource("1_qpix4")
+[sub_resource type="Resource" id="Resource_5ddsx"]
+script = ExtResource("1_5kngi")
 name = "Swarm"
 monsterBehaviorType = 0
 description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Medium humanoid. The swarm can't regain hit points or gain temporary hit points."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iymiv"]
-script = ExtResource("1_qpix4")
+[sub_resource type="Resource" id="Resource_xox8h"]
+script = ExtResource("1_5kngi")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The swarm makes three improvised weapons attacks."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uyvvg"]
-script = ExtResource("1_qpix4")
+[sub_resource type="Resource" id="Resource_0flmo"]
+script = ExtResource("1_5kngi")
 name = "Improvised Weapons"
 monsterBehaviorType = 0
 description = " Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20/60 ft., one target in the swarm's space or within range. Hit: 15 (3d6 + 5) kinetic damage plus 10 (3d6) fire damage, or 9 (2d6 + 2) kinetic damage plus 7 (2d6) fire damage if the swarm has half of its hit points or fewer."
@@ -64,7 +64,7 @@ damageRoll = "3d6 + 5"
 damageType = 7
 
 [resource]
-script = ExtResource("2_uklxh")
+script = ExtResource("2_heowi")
 name = "Riot"
 flavorText = "An uprising can encompass countless numbers and only an army or a group of incredibly powerful individuals could hope to stand against a crowd of that extent. An organization mustering such numbers has a planetwide, and perhaps galactic, influence, gathering members from many regions into a single location. A entire city or metropolis revolting could provide the numbers for an uprising, spreading over several districts and into the countryside.***Dispersing a Crowd.*** Defeating a crowd doesn't mean killing any single individual, but instead breaking the resolve of the crowd and dispersing it. When a crowd drops to 0 hit points the crowd disperses into a number of humanoids based on how large the crowd had been. Alternatively, a large crowd such as a riot or an uprising could deescalate into a smaller crowd type when it drops to 0 hit points or has fewer than half of its hit points remaining."
 sectionText = "The galaxy is a dangerous and cruel place. Wars, cruel empires, criminal syndicates, and the predation of terrible beasts can destroy whole towns and force their inhabitants to become beggars, vagabonds and brigands. All who endure such hardships are hardened by their losses, staring at the face of danger and saying, ï¿½no more!ï¿½, taking their protection into their own hands.***Unity is Strength.*** Fear and resignation are the strength of beasts and tyrants, despair is the fuel of revolt. Despair makes you stand and fight until the last sentient. When abandoned by lords, Jedi and the Force, the common man turns toward his neighbor for mutual protection. If separately they are no match for a beast or a trained trooper, an entire village or town banding together and fueled by despair, faith or hatred can take down their foe. Theses masses can become a force to reckon with, embodying the proverb ï¿½unity is strengthï¿½. A crowd can potentially include several individuals of high power, which would be left standing or escape once the crowd disperses.***Crowd Mind.*** Racist pogrom chasing wookiees down the streets, slaves fighting for their freedom and ousting a tyrant, or commoners taking to the streets to protest the emperor; all are good examples of a crowd. A crowd is moved by its own motivations and the individuals that form it can differ widely, but once the crowd mind takes them, they act in unison toward a single purpose. Reasoning with a crowd can prove difficult, as the behaviors of both the individual crowd members and the crowd is heavily influenced by the loss of responsibility of the individual and the impression of universality of behavior, increasing with the size of the crowd.***Dispersing a Crowd.*** Defeating a crowd doesn't mean killing any single individual, but instead breaking the resolve of the crowd and dispersing it. When a crowd drops to 0 hit points the crowd disperses into a number of humanoids based on how large the crowd had been. Alternatively, a large crowd such as a riot or an uprising could deescalate into a smaller crowd type when it drops to 0 hit points or has fewer than half of its hit points remaining."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["swarm of Medium humanoids"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 11
 hitPoints = 199
 speed = 30
 strength = 20
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String](["Charmed", "Frightened", "Paralyzed", "Petrified", "Prone", "Restrained", "Stunned"])
 senses = Array[String](["passive Perception 10"])
 languages = Array[String](["any one language (usually Basic)"])
-challengeRating = 10
+challengeRating = "10"
 experiencePoints = 5900
-behaviors = Array[ExtResource("1_qpix4")]([SubResource("Resource_t1ydd"), SubResource("Resource_m86t2"), SubResource("Resource_iymiv"), SubResource("Resource_uyvvg")])
+behaviors = Array[ExtResource("1_5kngi")]([SubResource("Resource_8wasb"), SubResource("Resource_5ddsx"), SubResource("Resource_xox8h"), SubResource("Resource_0flmo")])

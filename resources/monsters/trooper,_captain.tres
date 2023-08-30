@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_pra55"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_3dlpb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_7trx2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ftgqc"]
 
-[sub_resource type="Resource" id="Resource_0qnd5"]
-script = ExtResource("1_pra55")
+[sub_resource type="Resource" id="Resource_vjnpl"]
+script = ExtResource("1_7trx2")
 name = "Brave"
 monsterBehaviorType = 0
 description = " The captain has advantage on saving throws against being frightened."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_76ipd"]
-script = ExtResource("1_pra55")
+[sub_resource type="Resource" id="Resource_bp4u0"]
+script = ExtResource("1_7trx2")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The captain makes two blaster rifle attacks and throws a fragmentation grenade, if available."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_13fxt"]
-script = ExtResource("1_pra55")
+[sub_resource type="Resource" id="Resource_wd0ft"]
+script = ExtResource("1_7trx2")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8+4) energy damage."
@@ -48,8 +48,8 @@ damage = 8
 damageRoll = "1d8+4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_3tu6n"]
-script = ExtResource("1_pra55")
+[sub_resource type="Resource" id="Resource_i0r42"]
+script = ExtResource("1_7trx2")
 name = "Frag Grenade"
 monsterBehaviorType = 0
 description = " The captain throws a grenade, choosing a point within 40 feet Each creature within 10 feet must make a DC 12 Dexterity saving throw. A creature takes 2d6 kinetic damage on a failed save, or half as much as on a successful one."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jtnyd"]
-script = ExtResource("1_pra55")
+[sub_resource type="Resource" id="Resource_riwsk"]
+script = ExtResource("1_7trx2")
 name = "Stock Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
@@ -78,8 +78,8 @@ damage = 4
 damageRoll = "1d4+2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_fousm"]
-script = ExtResource("1_pra55")
+[sub_resource type="Resource" id="Resource_kg4rt"]
+script = ExtResource("1_7trx2")
 name = "Leadership"
 monsterBehaviorType = 0
 description = " The Trooper Captain can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Trooper Captain. A creature can benefit from only one Leadership die at a time."
@@ -94,7 +94,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_3dlpb")
+script = ExtResource("2_ftgqc")
 name = "Trooper, Captain"
 flavorText = "Whether clones, conscripts, or academy recruits, the backbone of the central government's war and peace machine are well trained, well armed, and well armored individuals.  Deployed throughout the galaxy to deal with threats to authority, these troopers have various roles and specialties."
 sectionText = "As the branch of the galactic military that dealt with surface operations, the galactic army was composed of many sub-units and organizations, and utilized a vast array of vehicles to achieve its objectives throughout the years.***Grand Army of the Republic.*** The Grand Army of the Republic (GAR), also known as the Republic Army or the clone army, was the army branch of the Republic Military during the Clone Wars. The Grand Army initially consisted of over a million clone troopers; genetically identical soldiers cloned from a human template, outfitted with armor, weapons and gear, and programmed for absolute loyalty to the Galactic Republic. Formed as a result of the Republic's efforts to create a centralized army in response to the threat of separatism, the Grand Army represented the evolution of galactic warfare at the time of its introduction on Geonosis, and was instrumental to the Sith Order's secret plot to take over the galaxy.***Imperial Army.*** As the ultimate evolution of the Grand Army of the Republic, the Imperial Army swiftly asserted dominance throughout the galaxy, making use of highly trained soldiers, mechanized walkers, and overwhelming numbers. The Imperial Army worked in tandem with the forces of the Imperial Navy, relying on the numerous fleets to transport legions of troopers across the far reaches of the galaxy. The most common soldiers of the Empire's ground forces were known as Imperial Army soldiers, the core infantry of the army tasked with establishing Imperial regimes and pacifying troublesome worlds. As the Imperials reinforced their grip on the galaxy, these units were gradually phased out in favor of stormtroopers, elite shock troops fanatically loyal to the Emperor himself.***First Order.*** The First Order army was the ground-based service branch of the First Order military. Formed from the Imperial Army of the Galactic Empire, it was responsible for maintaining order throughout First Order space as well as the gradual conquest and colonization of the Unknown Regions."
@@ -102,6 +102,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "any alignment"
 armorType = "durasteel armor"
+armorClass = 16
 hitPoints = 90
 speed = 30
 strength = 13
@@ -118,6 +119,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["Galactic Basic", "two others"])
-challengeRating = 4
+challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_pra55")]([SubResource("Resource_0qnd5"), SubResource("Resource_76ipd"), SubResource("Resource_13fxt"), SubResource("Resource_3tu6n"), SubResource("Resource_jtnyd"), SubResource("Resource_fousm")])
+behaviors = Array[ExtResource("1_7trx2")]([SubResource("Resource_vjnpl"), SubResource("Resource_bp4u0"), SubResource("Resource_wd0ft"), SubResource("Resource_i0r42"), SubResource("Resource_riwsk"), SubResource("Resource_kg4rt")])

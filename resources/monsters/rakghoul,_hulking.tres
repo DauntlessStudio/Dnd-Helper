@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_s7fld"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ng4fy"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jsll3"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0lh7v"]
 
-[sub_resource type="Resource" id="Resource_uc1nh"]
-script = ExtResource("1_s7fld")
+[sub_resource type="Resource" id="Resource_cbg61"]
+script = ExtResource("1_jsll3")
 name = "Rakghoul Plague"
 monsterBehaviorType = 0
 description = " Creatures that come in contact with the rakghoul may become afflicted with rakghoul plague, a virulent disease that transforms the creature into a rakghoul over the next 24 (7d6) hours. The plague is only effective against humanoids."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7cq8r"]
-script = ExtResource("1_s7fld")
+[sub_resource type="Resource" id="Resource_ejejl"]
+script = ExtResource("1_jsll3")
 name = "Savage Leap"
 monsterBehaviorType = 0
 description = " If the rakghoul moves at least 20 feet toward a creature and then hits it with a claw attack on the same turn, the target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the rakghoul can make one bite attack against it as a bonus action."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yhqva"]
-script = ExtResource("1_s7fld")
+[sub_resource type="Resource" id="Resource_7ixbb"]
+script = ExtResource("1_jsll3")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The rakghoul makes two claw attacks."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u865n"]
-script = ExtResource("1_s7fld")
+[sub_resource type="Resource" id="Resource_r4idg"]
+script = ExtResource("1_jsll3")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 12 (2d8+3) Kinetic damage. If the target is a humanoid creature, it must succeed on a DC 13 Constitution saving throw or become infected with the Rakghoul Plague."
@@ -63,8 +63,8 @@ damage = 12
 damageRoll = "2d8+3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_37qis"]
-script = ExtResource("1_s7fld")
+[sub_resource type="Resource" id="Resource_gpult"]
+script = ExtResource("1_jsll3")
 name = "Claws"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (2d6+3) Kinetic damage. If the target is a humanoid creature, it must succeed on a DC 13 Constitution saving throw or become infected with the Rakghoul Plague."
@@ -79,7 +79,7 @@ damageRoll = "2d6+3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ng4fy")
+script = ExtResource("2_0lh7v")
 name = "Rakghoul, Hulking"
 flavorText = ""
 sectionText = "Rakghouls are a living plagueï¿½the manifestation of a highly communicable disease capable of swiftly transforming its victims into twisted, degenerate monsters with predatory instincts. The rakghoul virus can infect hundreds of known species and is most often delivered through a rakghoul's bite; a person attacked by a rakghoul and ï¿½luckyï¿½ enough to survive typically becomes a rakghoul him- or herself. Some victims resist the virus for days, succumbing to rakghoul instincts while retaining their original bodies.***Behavior.*** Hideous and possessing an appetite for flesh, Rakghouls are non-sentient, and are most commonly simple and animalistic in behavior. These feral rakghouls, known also as \"lower rakghouls\", are slaves to their instincts and especially their hunger, often traveling in packs numbering between four and eight, and attacking anything that looks or smells like potential food. Though they hold to no form of heirarchy, certain rakghouls, known to some as \"rakghoul fiends\", exhibit a manner of influence over their \"lower\" rakghoul brethren. Hardy and vicious, these rakghouls are generally believed to somehow maintain bits of their former intelligence, and direct other rakghouls to trap and ambush prey; it is even rumored that these rakghouls can use weapons.***Muur Talisman.*** Rakghouls are a product of the Sith alchemy performed by the ancient Sith Lord, Karness Muur. When he forged the talisman in which he would later invest his mind and will, Muur imbued the amulet with the power to almost instantaneously transform nearby sentients into rakghouls that he could command and control. When a being possesses the Muur Talisman, they are able to enslave the rakghouls to their will, and command them as an army with the potential for nearly infinite expansion. Under the talisman's effects, rakghouls become more demure, and are able to call upon the knowledge and skills they had possessed in their former lives. Unfortunately, though, their former personalities can not be restored, as all that remains in the rakghouls is an imprint of who they had once been.***The Plague.*** The talisman's powers did not work on all: Force-users and certain non-Human species are immune to the talisman's effects. To rectify this, Muur engineered the \"rakghoul plague\", a virus-like disease which is spread from a rakghoul's bite or scratch. Individuals infected with this disease later transform into rakghouls themselves; incubation periods varied, though the infection's manifestation was generally a rapid and painful experience, becoming a rakghoul within a timeframe of six to forty-eight hours. The body becomes twisted, skin pigmentation drains and the victim attains a whitened corpse-like state. Victims also bleed from pores in the skin, and from orifices such as the eyes. In the years following the Mandalorian Wars, the Sith Empire born of Darths Revan and Malak possessed a curative serum that could save an individual infected with the plague, and the Jedi Cade Skywalker could cure an infected individual with his unique healing ability, but once a victim fully transformed into a rakghoul, the only means of salvation lay in death."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["aberration"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 15
 hitPoints = 120
 speed = 40
 strength = 17
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 12"])
 languages = Array[String](["ï¿½"])
-challengeRating = 5
+challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_s7fld")]([SubResource("Resource_uc1nh"), SubResource("Resource_7cq8r"), SubResource("Resource_yhqva"), SubResource("Resource_u865n"), SubResource("Resource_37qis")])
+behaviors = Array[ExtResource("1_jsll3")]([SubResource("Resource_cbg61"), SubResource("Resource_ejejl"), SubResource("Resource_7ixbb"), SubResource("Resource_r4idg"), SubResource("Resource_gpult")])

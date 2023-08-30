@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_j524e"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_njjlq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_m04wn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1dqux"]
 
-[sub_resource type="Resource" id="Resource_bypd6"]
-script = ExtResource("1_j524e")
+[sub_resource type="Resource" id="Resource_q6ix1"]
+script = ExtResource("1_m04wn")
 name = "Choreography of Belligerence"
 monsterBehaviorType = 0
 description = " The Imperial Senate Sentinel has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_og2s5"]
-script = ExtResource("1_j524e")
+[sub_resource type="Resource" id="Resource_0jeu3"]
+script = ExtResource("1_m04wn")
 name = "Force Pike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit 8 (1d10 + 3) kinetic damage plus 6 (2d6) lightning damage. On a hit, the target must then succeed on a Constitution Saving Throw (DC 14) or become stunned."
@@ -34,7 +34,7 @@ damageRoll = "1d10 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_njjlq")
+script = ExtResource("2_1dqux")
 name = "Imperial Guard Sentinel"
 flavorText = "A subdivision of the Senate Guard, the Senate Sentinels were charged with protecting the Jedi Temple on Coruscant from looters and were specially trained to kill Jedi. Their armor and robes were gray and white, and they wield powerful force pikes that can effectively block a Jedi's lightsaber. They have robotic voices and are thought to be cyborgs."
 sectionText = "The Galactic Empire, also known as the Old Empire, the First Galactic Empire, Palpatine's New Order, the Imperium or simply the Empire, is the galactic government established by Supreme Chancellor Palpatine to replace the Galactic Republic in 19 BBY and bring Sith rule to the galaxy.  The government personnel of this new Empire are protected by some of its most highly trained warriors. "
@@ -42,6 +42,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful dark"
 armorType = "powered durasteel armor"
+armorClass = 17
 hitPoints = 84
 speed = 30
 strength = 17
@@ -58,6 +59,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 15"])
 languages = Array[String](["Galactic Basic"])
-challengeRating = 6
+challengeRating = "6"
 experiencePoints = 2300
-behaviors = Array[ExtResource("1_j524e")]([SubResource("Resource_bypd6"), SubResource("Resource_og2s5")])
+behaviors = Array[ExtResource("1_m04wn")]([SubResource("Resource_q6ix1"), SubResource("Resource_0jeu3")])

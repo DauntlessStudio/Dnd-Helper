@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_unky2"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_3h2ke"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_e6ghl"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_yf6ej"]
 
-[sub_resource type="Resource" id="Resource_ri445"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_qqf3j"]
+script = ExtResource("1_e6ghl")
 name = "Towering"
 monsterBehaviorType = 0
 description = " Creatures of Medium size or smaller can stand in the AT-ST's space."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ilkdj"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_bjn2o"]
+script = ExtResource("1_e6ghl")
 name = "Piloted"
 monsterBehaviorType = 0
 description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_y1wlp"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_adnpv"]
+script = ExtResource("1_e6ghl")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u5f0u"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_a2r8s"]
+script = ExtResource("1_e6ghl")
 name = "Vulnerable Interior"
 monsterBehaviorType = 0
 description = " The AT-ST's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_plxhx"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_h47jl"]
+script = ExtResource("1_e6ghl")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The AT-ST can use its Frightful Presence. It then makes two attacks with its medium repeating blasters or takes the Stomp action."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_um731"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_f22ht"]
+script = ExtResource("1_e6ghl")
 name = "Medium Repeating Blasters"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +7 to hit, range 120/240 ft., one target. Hit: 25 (4d10+3) energy damage."
@@ -93,8 +93,8 @@ damage = 25
 damageRoll = "4d10+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_5l7hg"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_i7bno"]
+script = ExtResource("1_e6ghl")
 name = "Stomp"
 monsterBehaviorType = 0
 description = " All creatures standing within the AT-ST's space or within 5 feet of it must make a DC 18 Dexterity saving throw, taking 39 (6d12) kinetic damage on a failed save, or half as much damage on a successful one."
@@ -108,8 +108,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4e5xj"]
-script = ExtResource("1_unky2")
+[sub_resource type="Resource" id="Resource_bt014"]
+script = ExtResource("1_e6ghl")
 name = "Frightful Presence"
 monsterBehaviorType = 0
 description = " Each creature of the AT-ST's choice that is within 80 feet of the AT-ST and aware of it must succeed on a DC 15 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the AT-ST's Frightful Presence for the next 24 hours."
@@ -124,7 +124,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_3h2ke")
+script = ExtResource("2_yf6ej")
 name = "AT-ST"
 flavorText = "The All Terrain Scout Transport (or AT-ST), also known as the chicken walker for its two-legged design, is a bipedal walker used by the Galactic Republic during the late Clone Wars and, later and more extensively, by the Galactic Empire during the Galactic Civil War.AT-STs are commonly used to screen the flanks of larger assault walkers for major ground operations. The Empire used them for swift reconnaissance and troop support. As such, they are essential for cleaning up minor resistance along the path of a planned invasion route, and can quickly eliminate small threats that evade an AT-AT's barrage. The walker is commonly used on anti-personnel hunting missions, and is piloted by two AT-ST drivers.Despite its speed and agility, an AT-ST walker's offensive and defensive power are significantly compromised. Offensively, its weapons systems are only good against lightly armored targets at close range. Defensively, its lighter armor can repel attacks from small-arms fire, but not laser cannons, missiles, or other heavy ordnance. Its armor does not cover its entire frame, lest the walker lose its agility. Striking the walker's unprotected gyros underneath the command module can destabilize the walker and cause it to fall. Additionally, deep trenches or cable lines leveled at the height of the AT-ST's ankles and knees can cause it to trip and topple the vehicle.The modular design of the AT-ST allows for ease in customizing the walker with armaments and tools for specific mission parameters such as mortar launchers attached to the command pod."
 sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
@@ -132,6 +132,7 @@ size = 0
 types = Array[String](["construct"])
 alignment = "unaligned"
 armorType = "armor plating"
+armorClass = 17
 hitPoints = 168
 speed = 40
 strength = 23
@@ -148,6 +149,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String](["Poisoned", "Frightened", "Petrified", "Restrained", "Incapacitated", "Stunned", "Prone", "Blinded", "Charmed"])
 senses = Array[String](["ï¿½"])
 languages = Array[String](["ï¿½"])
-challengeRating = 11
+challengeRating = "11"
 experiencePoints = 7200
-behaviors = Array[ExtResource("1_unky2")]([SubResource("Resource_ri445"), SubResource("Resource_ilkdj"), SubResource("Resource_y1wlp"), SubResource("Resource_u5f0u"), SubResource("Resource_plxhx"), SubResource("Resource_um731"), SubResource("Resource_5l7hg"), SubResource("Resource_4e5xj")])
+behaviors = Array[ExtResource("1_e6ghl")]([SubResource("Resource_qqf3j"), SubResource("Resource_bjn2o"), SubResource("Resource_adnpv"), SubResource("Resource_a2r8s"), SubResource("Resource_h47jl"), SubResource("Resource_f22ht"), SubResource("Resource_i7bno"), SubResource("Resource_bt014")])

@@ -14,6 +14,7 @@ func generate():
 		resCharacter.types.append_array(monster.types)
 		resCharacter.alignment = monster.alignment
 		resCharacter.armorType = monster.armorType if monster.armorType else "None"
+		resCharacter.armorClass = monster.armorClass
 		resCharacter.hitPoints = monster.hitPoints
 		resCharacter.speed = monster.speed
 		resCharacter.strength = monster.strength

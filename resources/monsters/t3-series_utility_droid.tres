@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0b45t"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_pdbh3"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_uqosa"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_f2xa3"]
 
-[sub_resource type="Resource" id="Resource_16k31"]
-script = ExtResource("1_0b45t")
+[sub_resource type="Resource" id="Resource_nwqjw"]
+script = ExtResource("1_uqosa")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1cbfe"]
-script = ExtResource("1_0b45t")
+[sub_resource type="Resource" id="Resource_k70or"]
+script = ExtResource("1_uqosa")
 name = "Techcasting"
 monsterBehaviorType = 0
 description = " At-will: electroshock, encrypted message, mending, on/off  1st level: decryption program, energy shield, holographic disguise, repair droid, tracer bolt   The technician droid is a 2nd-level techcaster. Its techcasting ability is Intelligence (spell save DC 12, +4 to hit with tech attacks). It has 10 tech points and knows the following tech powers:"
@@ -37,8 +37,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xtrhb"]
-script = ExtResource("1_0b45t")
+[sub_resource type="Resource" id="Resource_iowxb"]
+script = ExtResource("1_uqosa")
 name = "Hold-Out"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +2 to hit, range 30/120 ft., one target. Hit: 2 (1d4) energy damage."
@@ -53,7 +53,7 @@ damageRoll = "1d4"
 damageType = 3
 
 [resource]
-script = ExtResource("2_pdbh3")
+script = ExtResource("2_f2xa3")
 name = "T3-Series Utility Droid"
 flavorText = "The T3-series utility droid was a Utility droid produced by Duwani Mechanical Products at some point prior to the Great Droid Revolution. They remained popular for years to come and were still the most recent of a long line of physically identical models as of 3956 BBY. Earlier models in the same series included the 3C, IT, and T1 models. Designed to function as a maintenance droid for a variety of mechanical and electronic systems, the T3 was internally more advanced than its predecessors.The T3 droid was originally designed for repair and general maintenance duties and worked at its optimum level aboard starships. As with other utility droids of the era, the T3 unit had four wheeled legs, of which the front two were attached to the droid's blocky chassis by rotating joints, allowing the droid to slide backwards and forwards to adjust the unit's height. The T3's roughly toroidal head featured a large main photoreceptor and two secondary ones, a broadcast antenna and vocabulator that allowed the droid to communicate in Droidspeak. Without periodic memory wipes, these models developed personality and behavioral traits. It was even known for some units to form gangs, making a living as thieves. Others sold their computer-slicing skills to criminals.The sophisticated mechanical and computer training software loaded into the T3 utility droid allowed it to function in the capacity of an engineer or even a copilot aboard a starship, making it a favored purchase for traders and smugglers alike. One common modification was the addition of a starfighter interface package, allowing the droid to plug directly into a specialized slot on a starfighter, granting starfighter pilots the same benefit that transport pilots have come to expect from the T3.Some custom T3 droids also had weapon mounts able to fit a number of readily available blaster pistols mounted in the droid."
 sectionText = "Repair droids (also known as maintenance droids and utility robots) are droids designed to perform repair and general maintenance tasks. Models of repair droids include the WED Treadwell repair droid, the MSE-6 series repair droid, and the DUM-series pit droid."
@@ -61,6 +61,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 10
 hitPoints = 7
 speed = 30
 strength = 10
@@ -77,6 +78,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 10"])
 languages = Array[String](["Binary", "Galactic Basic"])
-challengeRating = 18
+challengeRating = "1/8"
 experiencePoints = 25
-behaviors = Array[ExtResource("1_0b45t")]([SubResource("Resource_16k31"), SubResource("Resource_1cbfe"), SubResource("Resource_xtrhb")])
+behaviors = Array[ExtResource("1_uqosa")]([SubResource("Resource_nwqjw"), SubResource("Resource_k70or"), SubResource("Resource_iowxb")])

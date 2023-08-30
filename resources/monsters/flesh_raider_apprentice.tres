@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xeu5h"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0bxvc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rpp2f"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_i3igf"]
 
-[sub_resource type="Resource" id="Resource_ryp66"]
-script = ExtResource("1_xeu5h")
+[sub_resource type="Resource" id="Resource_8o64y"]
+script = ExtResource("1_rpp2f")
 name = "Forcecasting"
 monsterBehaviorType = 0
 description = "The Flesh Raider Apprentice knows the following force powers:  At-will: denounce, lightning charge, saber reflect, saber ward.  1st-level: curse, sap vitality.  2nd-level: drain vitality, force camouflage.  The Flesh Raider Apprentice is a 4th-level forcecaster. Its forcecasting ability is Charisma (Power save DC 12, +3 to hit with force attacks) and it has 13 force points."
@@ -26,8 +26,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_sn6r2"]
-script = ExtResource("1_xeu5h")
+[sub_resource type="Resource" id="Resource_k4e64"]
+script = ExtResource("1_rpp2f")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Flesh Raider Apprentice makes 2 Lightsaber Strikes."
@@ -41,8 +41,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dwypb"]
-script = ExtResource("1_xeu5h")
+[sub_resource type="Resource" id="Resource_5gt3r"]
+script = ExtResource("1_rpp2f")
 name = "Lightsaber Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft.,  Hit: 5 (1d8 + 1) kinetic damage."
@@ -56,8 +56,8 @@ damage = 5
 damageRoll = "1d8 + 1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_kwugo"]
-script = ExtResource("1_xeu5h")
+[sub_resource type="Resource" id="Resource_vbkpl"]
+script = ExtResource("1_rpp2f")
 name = "Feasting Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft.,  Hit: 3 (1d4 + 1) kinetic damage and the flesh raider apprentice takes a chunk of flesh out of its target, swallowing it whole and gaining temporary hit points equal to its constitution modifier."
@@ -72,7 +72,7 @@ damageRoll = "1d4 + 1"
 damageType = 7
 
 [resource]
-script = ExtResource("2_0bxvc")
+script = ExtResource("2_i3igf")
 name = "Flesh Raider Apprentice"
 flavorText = ""
 sectionText = "Flesh Raiders are a species of mutated soldiers who originally served the Infinite Empire. Originally lower-caste members of the Rakata species, they were mutated and bred by the Infinite Empire by the thousands as soldiers. By the time of the Cold War, some Flesh Raiders survived on the planet Tython.***Biology & Appearance.*** The Flesh Raiders are extremely primitive and violent. Bulky bipedal humanoids, Flesh Raiders have razor-sharp teeth, which they used to strip the bones of both sentient and non-sentient prey. Eight small olfactory slits line their upper lip and two stumpy eye stalks protrude from the sides of their box-shaped heads.***History.*** The origin of the Flesh Raiders is lost to history and they do not appear to keep records. From what little study of the creatures the Jedi Order was able to perform, the Flesh Raiders appear to have evolved from a more civilized society that devolved into their primitive and cannibalistic forms after the other colonists of Tython disappeared. Another theory is that the aforementioned society was attacked by the Sith and subjected to bizarre experiments which reduced them to maddened hostiles.***Society & Culture.*** Having no established cities or formal government, the Flesh Raiders are tribal and erect temporary shelters on the Tythos Ridge. Flesh Raiders practice a form of spiritual worship: shamans have been seen inside their small settlements. Preferring naked earth, the Flesh Raiders scour the land they chose to occupy, burning away grass and trees and littering the earth with the bones of their prey. The raiders use signal fires to communicate over great distances."
@@ -80,6 +80,7 @@ size = 0
 types = Array[String](["aberration"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 13
 hitPoints = 30
 speed = 30
 strength = 12
@@ -96,6 +97,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 10"])
 languages = Array[String](["Rakata", "Galactic Basic"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_xeu5h")]([SubResource("Resource_ryp66"), SubResource("Resource_sn6r2"), SubResource("Resource_dwypb"), SubResource("Resource_kwugo")])
+behaviors = Array[ExtResource("1_rpp2f")]([SubResource("Resource_8o64y"), SubResource("Resource_k4e64"), SubResource("Resource_5gt3r"), SubResource("Resource_vbkpl")])

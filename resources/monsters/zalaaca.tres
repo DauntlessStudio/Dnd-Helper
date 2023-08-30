@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ivlk2"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ugs76"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gg23s"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_43oxm"]
 
-[sub_resource type="Resource" id="Resource_bea86"]
-script = ExtResource("1_ivlk2")
+[sub_resource type="Resource" id="Resource_rxt8b"]
+script = ExtResource("1_gg23s")
 name = "Aggressive"
 monsterBehaviorType = 0
 description = " As a bonus action, the zalaaca can move up to its speed toward a hostile creature that it can see."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7v82y"]
-script = ExtResource("1_ivlk2")
+[sub_resource type="Resource" id="Resource_8l3g7"]
+script = ExtResource("1_gg23s")
 name = "Keen Sight"
 monsterBehaviorType = 0
 description = " The zalaaca has advantage on Wisdom (Perception) checks that rely on sight."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_47hat"]
-script = ExtResource("1_ivlk2")
+[sub_resource type="Resource" id="Resource_uilkr"]
+script = ExtResource("1_gg23s")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = "  The zalaaca can make two bite attacks."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4qpe4"]
-script = ExtResource("1_ivlk2")
+[sub_resource type="Resource" id="Resource_elmre"]
+script = ExtResource("1_gg23s")
 name = "Bite"
 monsterBehaviorType = 0
 description = "  Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "1d12 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ugs76")
+script = ExtResource("2_43oxm")
 name = "Zalaaca"
 flavorText = "Zalaacas are swift, intelligent, and fierce omnivores native to the Gungan swamps of Naboo.Rather little is known about their habits. They seem to dwell primarily in woody uplands, yet are strong swimmers. Narglatch will not attack adult-sized zalaacas."
 sectionText = "Ysalamiri are furry, lizard-like tree-dwellers about 2 feet in length, native to the planet Myrkr, and most known for their ability to create a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances ï¿½ sometimes by kilometers.Ysalamiri sink their claws into the Olbio trees on which they live and draw nutrients. It is very difficult to remove a ysalamir from its tree without killing it, although this has been known to happen. Some few have developed back harness or nutrient frames which allow transport of the ysalamiri and, therefore, their Force repelling bubble. Ysalamiri do not actually negate the Force; since all existence is infused with Force energy, this would not be possible. Rather, they project a bubble inside which users are unable to exert any influence over the Force. A single bubble measures a few meters in diameter; large groups of ysalamiri could extend their collective bubble by kilometers, but only in great numbers.Miriskin was a commodity  made from ysalamir skin."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 12
 hitPoints = 45
 speed = 50
 strength = 18
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["ï¿½"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_ivlk2")]([SubResource("Resource_bea86"), SubResource("Resource_7v82y"), SubResource("Resource_47hat"), SubResource("Resource_4qpe4")])
+behaviors = Array[ExtResource("1_gg23s")]([SubResource("Resource_rxt8b"), SubResource("Resource_8l3g7"), SubResource("Resource_uilkr"), SubResource("Resource_elmre")])

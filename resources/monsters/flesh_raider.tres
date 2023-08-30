@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_3tovi"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ywwa6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xhetq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1n6jx"]
 
-[sub_resource type="Resource" id="Resource_h14t6"]
-script = ExtResource("1_3tovi")
+[sub_resource type="Resource" id="Resource_1jkag"]
+script = ExtResource("1_xhetq")
 name = "Blade Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft.,  Hit: 4 (1d6 + 1) kinetic damage."
@@ -18,8 +18,8 @@ damage = 4
 damageRoll = "1d6 + 1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_rrnf1"]
-script = ExtResource("1_3tovi")
+[sub_resource type="Resource" id="Resource_m18yn"]
+script = ExtResource("1_xhetq")
 name = "Feasting Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft.,  Hit: 3 (1d4 + 1) kinetic damage and the flesh raider takes a chunk of flesh out of its target, swallowing it whole and gaining temporary hit points equal to its constitution modifier."
@@ -34,7 +34,7 @@ damageRoll = "1d4 + 1"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ywwa6")
+script = ExtResource("2_1n6jx")
 name = "Flesh Raider"
 flavorText = ""
 sectionText = "Flesh Raiders are a species of mutated soldiers who originally served the Infinite Empire. Originally lower-caste members of the Rakata species, they were mutated and bred by the Infinite Empire by the thousands as soldiers. By the time of the Cold War, some Flesh Raiders survived on the planet Tython.***Biology & Appearance.*** The Flesh Raiders are extremely primitive and violent. Bulky bipedal humanoids, Flesh Raiders have razor-sharp teeth, which they used to strip the bones of both sentient and non-sentient prey. Eight small olfactory slits line their upper lip and two stumpy eye stalks protrude from the sides of their box-shaped heads.***History.*** The origin of the Flesh Raiders is lost to history and they do not appear to keep records. From what little study of the creatures the Jedi Order was able to perform, the Flesh Raiders appear to have evolved from a more civilized society that devolved into their primitive and cannibalistic forms after the other colonists of Tython disappeared. Another theory is that the aforementioned society was attacked by the Sith and subjected to bizarre experiments which reduced them to maddened hostiles.***Society & Culture.*** Having no established cities or formal government, the Flesh Raiders are tribal and erect temporary shelters on the Tythos Ridge. Flesh Raiders practice a form of spiritual worship: shamans have been seen inside their small settlements. Preferring naked earth, the Flesh Raiders scour the land they chose to occupy, burning away grass and trees and littering the earth with the bones of their prey. The raiders use signal fires to communicate over great distances."
@@ -42,6 +42,7 @@ size = 0
 types = Array[String](["aberration"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 12
 hitPoints = 8
 speed = 30
 strength = 12
@@ -58,6 +59,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 10"])
 languages = Array[String](["Rakata"])
-challengeRating = 18
+challengeRating = "1/8"
 experiencePoints = 25
-behaviors = Array[ExtResource("1_3tovi")]([SubResource("Resource_h14t6"), SubResource("Resource_rrnf1")])
+behaviors = Array[ExtResource("1_xhetq")]([SubResource("Resource_1jkag"), SubResource("Resource_m18yn")])

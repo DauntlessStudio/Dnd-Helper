@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_707h5"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_j18pd"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_eijui"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_dtevd"]
 
-[sub_resource type="Resource" id="Resource_7mqdq"]
-script = ExtResource("1_707h5")
+[sub_resource type="Resource" id="Resource_atkc2"]
+script = ExtResource("1_eijui")
 name = "Ambusher"
 monsterBehaviorType = 0
 description = " In the first round of a combat, the ghest has advantage on attack rolls against any creature it surprised."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mcr36"]
-script = ExtResource("1_707h5")
+[sub_resource type="Resource" id="Resource_aubmx"]
+script = ExtResource("1_eijui")
 name = "Hold Breath"
 monsterBehaviorType = 0
 description = " The ghest can hold its breath for 30 minutes."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5cx4m"]
-script = ExtResource("1_707h5")
+[sub_resource type="Resource" id="Resource_3nmrv"]
+script = ExtResource("1_eijui")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The ghest can make two attacks: one with its bite and one with its claws."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_r8o46"]
-script = ExtResource("1_707h5")
+[sub_resource type="Resource" id="Resource_8p6q3"]
+script = ExtResource("1_eijui")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) kinetic damage and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the ghest can't bite another target."
@@ -63,8 +63,8 @@ damage = 21
 damageRoll = "3d10 + 5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_lxpt4"]
-script = ExtResource("1_707h5")
+[sub_resource type="Resource" id="Resource_umgs2"]
+script = ExtResource("1_eijui")
 name = "Claws"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) kinetic damage."
@@ -78,8 +78,8 @@ damage = 14
 damageRoll = "2d8 + 5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_0j6uf"]
-script = ExtResource("1_707h5")
+[sub_resource type="Resource" id="Resource_nrflh"]
+script = ExtResource("1_eijui")
 name = "Swallow"
 monsterBehaviorType = 0
 description = "  If the ghest takes 25 damage or more on a single turn from a creature inside it, the ghest must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the swallowed creatures, which fall prone in a space within 10 feet of the ghest. If the ghest dies, the swallowed creatures are no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.  The ghest makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the ghest, and it takes 10 (3d6) acid damage at the start of each of the ghest's turns. The ghest can have only one target swallowed at a time."
@@ -94,7 +94,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_j18pd")
+script = ExtResource("2_dtevd")
 name = "Ghest"
 flavorText = ""
 sectionText = "A non-sentient, predatory, serpentine species native to the jungle swamps of the planet Rodia. ***Biology & Appearance.*** Ghests possess cartilaginous skeletons, a pair of bulbous, featureless eyes and a maw full of razor-sharp teeth. Their head is located at the end of a long, slender body, which is, on average, six meters in length. They possess slick skin, a tail, and four relatively thin limbs: two forelimbs and two larger hindlimbs, all ending in four thick, clawed digits. Where the forelimbs attach to the body beneath the head, the skin is particularly wrinkled.The species reproduces sexually, and females can even extract and use sperm from dead male members of the species. Once fertilized, a female lays hundreds of eggs which will hatch into juveniles, which appear as tiny versions of their parents. They are capable of extended hibernation.***Behavior.*** Ghests hunt large species of herbivore and can walk on their hind limbs while on land, but hunt and mate while submerged in water. Ghests swim slowly when hunting, keeping all but their eyes and forehead submerged below the surface. It is not unknown for ghests to attack small Rodian settlements, devouring all residents within a few hours. Ghests have no natural predators on Rodia.***Rodian Culture.*** Ghests hold an important place in Rodian myth and legend. Ancient Rodians believed that ghests, or swamp demons, captured the spirits of the dead; thus, sightings of the species were considered bad omens. Killing a ghest is sometimes believed to remove a curse, such as a drought or famine, so groups of male Rodians sometimes band together to ritually hunt down a ghest and kill it."
@@ -102,6 +102,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 14
 hitPoints = 104
 speed = 20
 strength = 21
@@ -118,6 +119,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 13"])
 languages = Array[String](["ï¿½"])
-challengeRating = 6
+challengeRating = "6"
 experiencePoints = 2300
-behaviors = Array[ExtResource("1_707h5")]([SubResource("Resource_7mqdq"), SubResource("Resource_mcr36"), SubResource("Resource_5cx4m"), SubResource("Resource_r8o46"), SubResource("Resource_lxpt4"), SubResource("Resource_0j6uf")])
+behaviors = Array[ExtResource("1_eijui")]([SubResource("Resource_atkc2"), SubResource("Resource_aubmx"), SubResource("Resource_3nmrv"), SubResource("Resource_8p6q3"), SubResource("Resource_umgs2"), SubResource("Resource_nrflh")])

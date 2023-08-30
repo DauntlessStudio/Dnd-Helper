@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_bcfcx"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_qrktc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_cueym"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_s8js3"]
 
-[sub_resource type="Resource" id="Resource_wktl3"]
-script = ExtResource("1_bcfcx")
+[sub_resource type="Resource" id="Resource_d5gn6"]
+script = ExtResource("1_cueym")
 name = "Cunning Action"
 monsterBehaviorType = 0
 description = " On each of its turns, the trooper can use a bonus action to take the Dash, Disengage, or Hide action."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_txwig"]
-script = ExtResource("1_bcfcx")
+[sub_resource type="Resource" id="Resource_adlk2"]
+script = ExtResource("1_cueym")
 name = "Sneak Attack"
 monsterBehaviorType = 0
 description = " The trooper deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the trooper that isn't incapacitated and the trooper doesn't have disadvantage on the attack roll."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ci0oq"]
-script = ExtResource("1_bcfcx")
+[sub_resource type="Resource" id="Resource_qf1gx"]
+script = ExtResource("1_cueym")
 name = "Sniper Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 9 (1d12+3) energy damage."
@@ -48,8 +48,8 @@ damage = 9
 damageRoll = "1d12+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_4pbuh"]
-script = ExtResource("1_bcfcx")
+[sub_resource type="Resource" id="Resource_mkf3w"]
+script = ExtResource("1_cueym")
 name = "Vibrodagger"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "1d4+3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_qrktc")
+script = ExtResource("2_s8js3")
 name = "Trooper, Headhunter"
 flavorText = "Whether clones, conscripts, or academy recruits, the backbone of the central government's war and peace machine are well trained, well armed, and well armored individuals.  Deployed throughout the galaxy to deal with threats to authority, these troopers have various roles and specialties."
 sectionText = "As the branch of the galactic military that dealt with surface operations, the galactic army was composed of many sub-units and organizations, and utilized a vast array of vehicles to achieve its objectives throughout the years.***Grand Army of the Republic.*** The Grand Army of the Republic (GAR), also known as the Republic Army or the clone army, was the army branch of the Republic Military during the Clone Wars. The Grand Army initially consisted of over a million clone troopers; genetically identical soldiers cloned from a human template, outfitted with armor, weapons and gear, and programmed for absolute loyalty to the Galactic Republic. Formed as a result of the Republic's efforts to create a centralized army in response to the threat of separatism, the Grand Army represented the evolution of galactic warfare at the time of its introduction on Geonosis, and was instrumental to the Sith Order's secret plot to take over the galaxy.***Imperial Army.*** As the ultimate evolution of the Grand Army of the Republic, the Imperial Army swiftly asserted dominance throughout the galaxy, making use of highly trained soldiers, mechanized walkers, and overwhelming numbers. The Imperial Army worked in tandem with the forces of the Imperial Navy, relying on the numerous fleets to transport legions of troopers across the far reaches of the galaxy. The most common soldiers of the Empire's ground forces were known as Imperial Army soldiers, the core infantry of the army tasked with establishing Imperial regimes and pacifying troublesome worlds. As the Imperials reinforced their grip on the galaxy, these units were gradually phased out in favor of stormtroopers, elite shock troops fanatically loyal to the Emperor himself.***First Order.*** The First Order army was the ground-based service branch of the First Order military. Formed from the Imperial Army of the Galactic Empire, it was responsible for maintaining order throughout First Order space as well as the gradual conquest and colonization of the Unknown Regions."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "any alignment"
 armorType = "combat suit"
+armorClass = 14
 hitPoints = 23
 speed = 30
 strength = 11
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 14"])
 languages = Array[String](["Galactic Basic", "one other"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_bcfcx")]([SubResource("Resource_wktl3"), SubResource("Resource_txwig"), SubResource("Resource_ci0oq"), SubResource("Resource_4pbuh")])
+behaviors = Array[ExtResource("1_cueym")]([SubResource("Resource_d5gn6"), SubResource("Resource_adlk2"), SubResource("Resource_qf1gx"), SubResource("Resource_mkf3w")])

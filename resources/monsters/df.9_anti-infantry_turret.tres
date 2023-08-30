@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_b08o5"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_3e0qb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_14kxr"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_l4rnf"]
 
-[sub_resource type="Resource" id="Resource_5v0p3"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_cbrki"]
+script = ExtResource("1_14kxr")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The turret has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yht3h"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_ncifk"]
+script = ExtResource("1_14kxr")
 name = "Heavy Armor & Shielding"
 monsterBehaviorType = 0
 description = " The outer layer of the turret is covered in heavy armor and shielding, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the turret takes no damage from that attack. If the turret takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0606l"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_0sv2q"]
+script = ExtResource("1_14kxr")
 name = "Gunner"
 monsterBehaviorType = 0
 description = " The construct requires an active gunner to take any actions, and if the gunner is subjected to any conditions that the construct is not immune to, the gunner is also subjected to those conditions. The gunner may take their own action or one of the actions granted by the construct."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mfnyk"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_bf7ek"]
+script = ExtResource("1_14kxr")
 name = "Vulnerable Interior"
 monsterBehaviorType = 0
 description = " The turret's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4qthi"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_rdmos"]
+script = ExtResource("1_14kxr")
 name = "Targeting Systems"
 monsterBehaviorType = 0
 description = " The turret uses its Intelligence modifier for attack, damage, and initiative rolls."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_thab0"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_mb6kv"]
+script = ExtResource("1_14kxr")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The turret makes two laser cannon attacks."
@@ -93,8 +93,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3g1yi"]
-script = ExtResource("1_b08o5")
+[sub_resource type="Resource" id="Resource_6xlom"]
+script = ExtResource("1_14kxr")
 name = "Laser Canon"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 300/900 ft., one target that must be at least 60 ft away from the turret. Hit 16 (4d6+2) energy damage. Additionally, hit or miss, the target and each creature within 20 feet must make a Dexterity saving throw (DC 15), taking 14 (4d6) energy damage on a failed save, or half as much damage on a successful one."
@@ -109,7 +109,7 @@ damageRoll = "4d6+2"
 damageType = 3
 
 [resource]
-script = ExtResource("2_3e0qb")
+script = ExtResource("2_l4rnf")
 name = "DF.9 Anti-Infantry Turret"
 flavorText = "Manufactured by Golan Arms, the DF.9 is a fixed emplacement anti-infantry weapon. It incorporates a single DF.9 laser cannon mounted atop a four-meter tall cylindrical housing composed of heavily-armored durasteel, with proton-shielding that is resistant to close-quarters blaster fire. The tower features a front access panel, and an upper observation hatch.The turreted laser cannon employs precision targeting computers and has an optimal rang of three kilometers, although the laser cannon is capable of hitting targets at a distance of sixteen kilometers at the cost of decreased accuracy. The DF.9 is capable of firing a shot every three seconds, with the impact of the energy beam scattering explosive energy and producing a secondary blast of radiation with an eight-meter radius impact point that can effectively destroy entire squads of soldiers. Skilled gunners can use the DF.9's accuracy to effectively disable army support systems and light vehicles, and it is devastating to foot soldiers and a threat to vehicles such as the All Terrain Scout Transport.The DF.9 is best used in conjunction with other similar units and anti-vehicle lasers to defend military bases, spaceports and other strategic installations. It can be installed on multiple terrain types. The nature of the DF.9's fixed emplacement means that the unit is not able to be moved easily."
 sectionText = "A turret is a mount for a weapon that enabled it to turn and pivot, allowing it to fire in many different directions. They are mounted on many vehicles, starfighters, and starships.  Other turrets are mounted on the ground, and can be both manned and un-manned. Weapons mounted on turrets included laser cannons and other types of projectile cannons."
@@ -117,6 +117,7 @@ size = 0
 types = Array[String](["construct"])
 alignment = "unaligned"
 armorType = "armor plating"
+armorClass = 10
 hitPoints = 75
 speed = 0
 strength = 16
@@ -133,6 +134,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["â€”"])
-challengeRating = 8
+challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_b08o5")]([SubResource("Resource_5v0p3"), SubResource("Resource_yht3h"), SubResource("Resource_0606l"), SubResource("Resource_mfnyk"), SubResource("Resource_4qthi"), SubResource("Resource_thab0"), SubResource("Resource_3g1yi")])
+behaviors = Array[ExtResource("1_14kxr")]([SubResource("Resource_cbrki"), SubResource("Resource_ncifk"), SubResource("Resource_0sv2q"), SubResource("Resource_bf7ek"), SubResource("Resource_rdmos"), SubResource("Resource_mb6kv"), SubResource("Resource_6xlom")])

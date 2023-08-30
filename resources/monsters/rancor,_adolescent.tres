@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dsjiy"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ft51s"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ynhji"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_eurrq"]
 
-[sub_resource type="Resource" id="Resource_vtrvd"]
-script = ExtResource("1_dsjiy")
+[sub_resource type="Resource" id="Resource_oux01"]
+script = ExtResource("1_ynhji")
 name = "Siege Monster"
 monsterBehaviorType = 0
 description = " The rancor deals double damage to objects and structures."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ca46v"]
-script = ExtResource("1_dsjiy")
+[sub_resource type="Resource" id="Resource_lrcmu"]
+script = ExtResource("1_ynhji")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = "  The rancor makes three attacks: two with its claws, and one with its bite."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_obbol"]
-script = ExtResource("1_dsjiy")
+[sub_resource type="Resource" id="Resource_01kfl"]
+script = ExtResource("1_ynhji")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit 12 (2d6+5) kinetic damage."
@@ -48,8 +48,8 @@ damage = 12
 damageRoll = "2d6+5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_wpk1a"]
-script = ExtResource("1_dsjiy")
+[sub_resource type="Resource" id="Resource_1wdw0"]
+script = ExtResource("1_ynhji")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit 16 (2d10+5) kinetic damage."
@@ -63,8 +63,8 @@ damage = 16
 damageRoll = "2d10+5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_awi5n"]
-script = ExtResource("1_dsjiy")
+[sub_resource type="Resource" id="Resource_1r4mk"]
+script = ExtResource("1_ynhji")
 name = "Throw Boulder"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +8 to hit, reach 60/240 ft., one target. Hit 21 (3d10 + 5) kinetic damage."
@@ -79,7 +79,7 @@ damageRoll = "3d10 + 5"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ft51s")
+script = ExtResource("2_eurrq")
 name = "Rancor, Adolescent"
 flavorText = ""
 sectionText = "Rancors are large carnivorous reptomammals native to the planet of Dathomir.  They are commonly kept as pets by affluent, less-than-reputable types."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 14
 hitPoints = 157
 speed = 30
 strength = 20
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 120 ft.", "passive Perception 9"])
 languages = Array[String](["ï¿½"])
-challengeRating = 8
+challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_dsjiy")]([SubResource("Resource_vtrvd"), SubResource("Resource_ca46v"), SubResource("Resource_obbol"), SubResource("Resource_wpk1a"), SubResource("Resource_awi5n")])
+behaviors = Array[ExtResource("1_ynhji")]([SubResource("Resource_oux01"), SubResource("Resource_lrcmu"), SubResource("Resource_01kfl"), SubResource("Resource_1wdw0"), SubResource("Resource_1r4mk")])

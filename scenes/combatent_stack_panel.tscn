@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhjhcmoq0ldor"]
+
+[ext_resource type="Script" path="res://scripts/combatent_stack_panel.gd" id="1_hogko"]
+[ext_resource type="FontFile" uid="uid://cf0ukg763o0wd" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="1_m8ml3"]
+[ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="2_enxv8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jveu4"]
+
+[node name="Combatent" type="Panel"]
+custom_minimum_size = Vector2(180, 115)
+offset_right = 178.0
+offset_bottom = 108.0
+size_flags_vertical = 0
+script = ExtResource("1_hogko")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -81.0
+offset_top = -52.5
+offset_right = 81.0
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NameLineEdit" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jveu4")
+placeholder_text = "Monster Name"
+alignment = 1
+flat = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="InitiativeLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "00"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HPLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("1_m8ml3")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_enxv8")
+icon_name = "heart"
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+value = 100.0
+rounded = true
+ticks_on_borders = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="SpeedLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("1_m8ml3")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_enxv8")
+icon_name = "shoe-prints"
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="ArmorLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_fonts/font = ExtResource("1_m8ml3")
+theme_override_font_sizes/font_size = 16
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_enxv8")
+icon_name = "shield"
+
+[connection signal="value_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HSlider" to="." method="_on_hp_slider_value_changed"]

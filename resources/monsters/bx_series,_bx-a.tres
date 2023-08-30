@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_sfu43"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xdi8o"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ljhtx"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_u4sod"]
 
-[sub_resource type="Resource" id="Resource_se3fq"]
-script = ExtResource("1_sfu43")
+[sub_resource type="Resource" id="Resource_cu015"]
+script = ExtResource("1_ljhtx")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_lulrl"]
-script = ExtResource("1_sfu43")
+[sub_resource type="Resource" id="Resource_chhub"]
+script = ExtResource("1_ljhtx")
 name = "Droid Synergy"
 monsterBehaviorType = 0
 description = " Once per turn, the commando droid can deal an extra 3 (1d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the commando droid that isn't incapacitated."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6iypt"]
-script = ExtResource("1_sfu43")
+[sub_resource type="Resource" id="Resource_ybh52"]
+script = ExtResource("1_ljhtx")
 name = "Blaster Carbine"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
@@ -48,8 +48,8 @@ damage = 6
 damageRoll = "1d6+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_v6r73"]
-script = ExtResource("1_sfu43")
+[sub_resource type="Resource" id="Resource_x6l8r"]
+script = ExtResource("1_ljhtx")
 name = "Techblade"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) kinetic damage."
@@ -63,8 +63,8 @@ damage = 6
 damageRoll = "1d6+3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_hc82k"]
-script = ExtResource("1_sfu43")
+[sub_resource type="Resource" id="Resource_lje5o"]
+script = ExtResource("1_ljhtx")
 name = "Stealth Field Generator"
 monsterBehaviorType = 0
 description = " The droid becomes invisible. Anything the droid is carrying is invisible as long as it is on the droid. The droid may end the invisibility as a free action.  The invisibility ends if the droid attacks."
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_xdi8o")
+script = ExtResource("2_u4sod")
 name = "BX Series, BX-A"
 flavorText = "B2 super battle droids were an advanced battle droid used by the Confederacy of Independent Systems during the Clone Wars. Like the updated B1s used by the Confederacy, they did not require a command system to operate, which gave the droids limited independence. Another improvement was their thick armor casing, which contained their fragile sensors. However, B2s were designed with simple processors, limiting their ability to formulate strategies. As a result, they relied on organic commanders or tactical droids in order to effectively operate. The B2 was much stronger than the B1s, with enough strength to lift a clone trooper off the ground as seen at the Battle of Teth. The B2-HA super battle droid was a variant of the B2 equipped with a cannon arm that could fire homing rockets."
 sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
+armorClass = 15
 hitPoints = 49
 speed = 30
 strength = 12
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["Binary", "Galactic Basic"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_sfu43")]([SubResource("Resource_se3fq"), SubResource("Resource_lulrl"), SubResource("Resource_6iypt"), SubResource("Resource_v6r73"), SubResource("Resource_hc82k")])
+behaviors = Array[ExtResource("1_ljhtx")]([SubResource("Resource_cu015"), SubResource("Resource_chhub"), SubResource("Resource_ybh52"), SubResource("Resource_x6l8r"), SubResource("Resource_lje5o")])

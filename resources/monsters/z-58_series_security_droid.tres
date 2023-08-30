@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_iov5q"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_t1ta7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_itsby"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_up42p"]
 
-[sub_resource type="Resource" id="Resource_2agrg"]
-script = ExtResource("1_iov5q")
+[sub_resource type="Resource" id="Resource_qmgg1"]
+script = ExtResource("1_itsby")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3olh5"]
-script = ExtResource("1_iov5q")
+[sub_resource type="Resource" id="Resource_2hrm6"]
+script = ExtResource("1_itsby")
 name = "Security Protocol"
 monsterBehaviorType = 0
 description = " The droid comes with proficiency in security and slicer tools."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_d3wfp"]
-script = ExtResource("1_iov5q")
+[sub_resource type="Resource" id="Resource_s3448"]
+script = ExtResource("1_itsby")
 name = "Interfaced Assistance Protocol"
 monsterBehaviorType = 0
 description = " While you are interfaced with this droid via the tracker droid interface tech power, whenever you have advantage on an ability check or attack roll granted by the droid taking the Help action you can reroll one of the dice once."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xq11i"]
-script = ExtResource("1_iov5q")
+[sub_resource type="Resource" id="Resource_s0te3"]
+script = ExtResource("1_itsby")
 name = "Shockprod"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jnms6"]
-script = ExtResource("1_iov5q")
+[sub_resource type="Resource" id="Resource_u3jls"]
+script = ExtResource("1_itsby")
 name = "Sentry"
 monsterBehaviorType = 0
 description = " The Security Droid may enter a sentry state, granting the benefits of the alarm tech power to a target creature within 10 feet of the droid at the time of entering the sentry state.  The Security Droid must remain within 60 feet of the warded location or the ability ends."
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_t1ta7")
+script = ExtResource("2_up42p")
 name = "Z-58 Series Security Droid"
 flavorText = "The Z-58 series security droid is a floating security droid manufactured by Arakyd Industries that has limited capabilities in technical and physical security."
 sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
@@ -87,6 +87,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "None"
+armorClass = 11
 hitPoints = 2
 speed = 40
 strength = 3
@@ -103,6 +104,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String]([])
 senses = Array[String](["Darkvision 120 ft.", "passive Perception 13"])
 languages = Array[String](["â€”"])
-challengeRating = 0
+challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_iov5q")]([SubResource("Resource_2agrg"), SubResource("Resource_3olh5"), SubResource("Resource_d3wfp"), SubResource("Resource_xq11i"), SubResource("Resource_jnms6")])
+behaviors = Array[ExtResource("1_itsby")]([SubResource("Resource_qmgg1"), SubResource("Resource_2hrm6"), SubResource("Resource_s3448"), SubResource("Resource_s0te3"), SubResource("Resource_u3jls")])

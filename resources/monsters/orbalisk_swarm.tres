@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_kestj"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8uhwg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8jnoi"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mivp6"]
 
-[sub_resource type="Resource" id="Resource_e85k4"]
-script = ExtResource("1_kestj")
+[sub_resource type="Resource" id="Resource_nrun7"]
+script = ExtResource("1_8jnoi")
 name = "Detect Dark Side"
 monsterBehaviorType = 0
 description = "  The orbalisk swarm can sense the presence and location of any dark side aligned creature within 300 feet."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8r07c"]
-script = ExtResource("1_kestj")
+[sub_resource type="Resource" id="Resource_harx5"]
+script = ExtResource("1_8jnoi")
 name = "Swarm"
 monsterBehaviorType = 0
 description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a tiny orbalisk. The swarm can't regain hit points or gain temporary hit points."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jlicg"]
-script = ExtResource("1_kestj")
+[sub_resource type="Resource" id="Resource_igqg8"]
+script = ExtResource("1_8jnoi")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Orbalisk Swarm makes two Attach attacks while it is above half HP, and one attack while below."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5bdd3"]
-script = ExtResource("1_kestj")
+[sub_resource type="Resource" id="Resource_2b8i2"]
+script = ExtResource("1_8jnoi")
 name = "Attach"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 0 ft., one creature. Hit: 13 (2d8 + 4) kinetic damage, and a small portion of the swarm attaches to the target. Once attached to a target, those orbalisks begin to reproduce through fragmentation. Whenever the host completes a long rest, they must make a DC 14 Wisdom saving throw. For each saving throw the host fails, the size of their Hit Dice is reduced: from d12 to d10, from d10 to d8, from d8 to d6, from d6 to d4, or from d4 to d2. If the host fails a saving throw while their Hit Die is a d2, they die as the orbalisks consume them."
@@ -64,7 +64,7 @@ damageRoll = "2d8 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_8uhwg")
+script = ExtResource("2_mivp6")
 name = "Orbalisk Swarm"
 flavorText = ""
 sectionText = "Orbalisks are parasitic creatures native to Dxun. They lay inactive in caves or other dark places, until they find a suitable host creature on whose skin they can attach themselves to in order to feed. Orbalisks, once attached to a host, rapidly multiply, eventually enveloping and suffocating their victim. However, the holocron of Freedon Nadd contains the knowledge to make armament to prevent the orbalisks from covering the face, hands, and feet of the host, allowing them to keep this armor hidden.Perhaps by nature or as a result of residing on Dxun (which was itself a great focus of dark side power), orbalisks are able to feed on the Force-sensitivity of dark side wielders. It is said that the orbalisk armor's durability was such that lightsabers have a hard time penetrating it, making a wearer effectively immune to lightsaber attacks. The only weaknesses to this armor are the exposed joints at the neck and wrists, but these gaps are so small a lightsaber can only barely slice through. However, orbalisk armor is unable to protect the wearer from electricity. Orbalisks cause the wearer to feel pain, fueling the wearers dark side power; if they are removed or killed, they release a highly potent toxin into the host's body."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["swarm of Tiny beasts"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 14
 hitPoints = 39
 speed = 5
 strength = 18
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([8])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 7"])
 languages = Array[String](["â€”"])
-challengeRating = 3
+challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_kestj")]([SubResource("Resource_e85k4"), SubResource("Resource_8r07c"), SubResource("Resource_jlicg"), SubResource("Resource_5bdd3")])
+behaviors = Array[ExtResource("1_8jnoi")]([SubResource("Resource_nrun7"), SubResource("Resource_harx5"), SubResource("Resource_igqg8"), SubResource("Resource_2b8i2")])

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_b3in0"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_vw2sx"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_on3u5"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_yu3t1"]
 
-[sub_resource type="Resource" id="Resource_v5tx1"]
-script = ExtResource("1_b3in0")
+[sub_resource type="Resource" id="Resource_pa67f"]
+script = ExtResource("1_on3u5")
 name = "Aggressive"
 monsterBehaviorType = 0
 description = " As a bonus action, the wookiee can move up to its speed toward a hostile creature that it can see."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vpfcl"]
-script = ExtResource("1_b3in0")
+[sub_resource type="Resource" id="Resource_5s587"]
+script = ExtResource("1_on3u5")
 name = "Reckless"
 monsterBehaviorType = 0
 description = " At the start of its turn, the wookiee can can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_s7oeg"]
-script = ExtResource("1_b3in0")
+[sub_resource type="Resource" id="Resource_3k5ps"]
+script = ExtResource("1_on3u5")
 name = "Blood Rage"
 monsterBehaviorType = 0
 description = " When a creature within 5 feet of the wookiee hits it with an attack, the wookiee may use its reaction to immediately make a melee weapon attack with advantage against that creature."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iytge"]
-script = ExtResource("1_b3in0")
+[sub_resource type="Resource" id="Resource_gorpc"]
+script = ExtResource("1_on3u5")
 name = "Vibroaxe"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, one target. Hit: 9 (1d12 + 3) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "1d12 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_vw2sx")
+script = ExtResource("2_yu3t1")
 name = "Wookiee Berserker"
 flavorText = ""
 sectionText = "Wookiees are a tall species of furry humanoids from the planet Kashyyyk, who grow to a height of nearly three meters. They are covered from head to toe in a thick, shaggy coat of hair with water-shedding properties that notably comes in shades of brown, black, gray, and white. The species has two sexes, female and male. The latter grow long beards in adult life. Wookiee eye color ranges from blue to brown. Wookiees are big eaters, with the average adult requiring 3,500-6,000 calories a day of food.Wookiees have extendable claws which they use for climbing; using them for anything else violates the Wookiee honor code. Despite their fearsome appearance and volatile temperament, Wookiees are regarded as intelligent, sophisticated, loyal and trusting. When angered, Wookiees are known to descend into a berserker rage. Wookiees have a long lifespan, appearing not to age over a span of fifty years. ***History.*** The softening and repeal of anti-slavery laws under the Empire ultimately led to classifying the Wookiees as non-sentient. The Empire enslaved the Wookiees not because they were a meaningful threat to the Empire but because their massive, robust physiology allowed them to work long and hard in extreme conditions. As a result, many Wookiees were forced into slavery building much of the Imperial war machine, sent to be worked to death in the dangerous spice mines of the planet Kessel, or on construction sites such as the Death Star. Numerous Wookiees were bred for use in medical experimentation, and some were used as playthings, hunted for sport, or forced into gladiatorial combat.  Some of these wookiees turned towards darker pursuits after their rough treatment, such as the infamous bounty hunter Black Krrsantan."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "unaligned"
 armorType = "hide"
+armorClass = 14
 hitPoints = 30
 speed = 30
 strength = 16
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 10"])
 languages = Array[String](["Galactic Basic", "Shyriiwook"])
-challengeRating = 1
+challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_b3in0")]([SubResource("Resource_v5tx1"), SubResource("Resource_vpfcl"), SubResource("Resource_s7oeg"), SubResource("Resource_iytge")])
+behaviors = Array[ExtResource("1_on3u5")]([SubResource("Resource_pa67f"), SubResource("Resource_5s587"), SubResource("Resource_3k5ps"), SubResource("Resource_gorpc")])

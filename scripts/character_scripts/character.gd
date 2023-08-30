@@ -10,6 +10,7 @@ enum damageTypeValues {Unknown, Acid, Cold, Energy, Fire, Force, Ion, Kinetic, L
 @export var types: Array[String]
 @export var alignment: String
 @export var armorType: String
+@export var armorClass: int
 @export var hitPoints: int
 @export var speed: int
 @export var strength: int
@@ -26,7 +27,7 @@ enum damageTypeValues {Unknown, Acid, Cold, Energy, Fire, Force, Ion, Kinetic, L
 @export var conditionImmunities: Array[String]
 @export var senses: Array[String]
 @export var languages: Array[String]
-@export var challengeRating: int
+@export var challengeRating: String
 @export var experiencePoints: int
 @export var behaviors: Array[Behavior]
 

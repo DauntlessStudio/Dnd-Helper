@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2ud01"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_tk1jg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_orj4k"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wqld4"]
 
-[sub_resource type="Resource" id="Resource_uoc5u"]
-script = ExtResource("1_2ud01")
+[sub_resource type="Resource" id="Resource_p6f65"]
+script = ExtResource("1_orj4k")
 name = "Stone Camouflage"
 monsterBehaviorType = 0
 description = " The worrt has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iwotl"]
-script = ExtResource("1_2ud01")
+[sub_resource type="Resource" id="Resource_n1l7d"]
+script = ExtResource("1_orj4k")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) kinetic damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the worrt can't bite another target. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a success."
@@ -33,8 +33,8 @@ damage = 5
 damageRoll = "1d6 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_50r85"]
-script = ExtResource("1_2ud01")
+[sub_resource type="Resource" id="Resource_i0j1u"]
+script = ExtResource("1_orj4k")
 name = "Tongue"
 monsterBehaviorType = 0
 description = " The worrt targets one Small or smaller creature that it can see within 15 feet of it. The target must make a DC 12 Strength saving throw. On a failed save, the target is pulled into an unoccupied space within 5 feet of the worrt, and the worrt can make a bite attack against it as a bonus action."
@@ -49,7 +49,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_tk1jg")
+script = ExtResource("2_wqld4")
 name = "Worrt"
 flavorText = ""
 sectionText = "Worrts are a non-sentient species that hail from the desert of the planet Tatooine, although they can also be found on Nal Hutta and Phaeda. ***Biology & Appearance.***  Worrts are squat and spiky creatures whose appearance bears similarities to that of chubas. They have brown, warty skin and measure 1.5 meters in height. They are quadrupeds with dexterous forelimbs. A worrt's head features a pair of sensitive cranial palps; two bulbous eyes, yellow in hue; two nostrils; and a large mouth containing a long tongue and strong teeth laced with a venom potent enough to kill a bantha. Worrts lay large amounts of soft eggs, which are harvested for food and used as ingredients in drinks such as Jabba Juice.***Behavior.*** Worrts feed mostly on insects and rodents. When hungry, a worrt settles into the sand, becoming indistinguishable from a rocky outcropping, and waits for prey to pass. When its victim comes close enough, the worrt throws its tongue out of its mouth and wraps it around the prey. The worrt's tongue then snaps back, throwing the food down its throat."
@@ -57,6 +57,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 13
 hitPoints = 22
 speed = 20
 strength = 14
@@ -73,6 +74,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String](["Poisoned"])
 senses = Array[String](["darkvision 30 ft.", "passive Perception 13"])
 languages = Array[String](["â€”"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_2ud01")]([SubResource("Resource_uoc5u"), SubResource("Resource_iwotl"), SubResource("Resource_50r85")])
+behaviors = Array[ExtResource("1_orj4k")]([SubResource("Resource_p6f65"), SubResource("Resource_n1l7d"), SubResource("Resource_i0j1u")])

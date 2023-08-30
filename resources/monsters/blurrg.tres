@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_nyy3w"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ucgod"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_b8cud"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_585nr"]
 
-[sub_resource type="Resource" id="Resource_1rs7l"]
-script = ExtResource("1_nyy3w")
+[sub_resource type="Resource" id="Resource_itcis"]
+script = ExtResource("1_b8cud")
 name = "Siege Monster"
 monsterBehaviorType = 0
 description = " The blurrg deals double damage to objects and structures."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5ta7a"]
-script = ExtResource("1_nyy3w")
+[sub_resource type="Resource" id="Resource_oixyt"]
+script = ExtResource("1_b8cud")
 name = "Sure-Footed"
 monsterBehaviorType = 0
 description = " The blurrg has advantage on Strength and Dexterity saving throws made against effects that would shove it or knock it prone."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7vgy3"]
-script = ExtResource("1_nyy3w")
+[sub_resource type="Resource" id="Resource_nlgxu"]
+script = ExtResource("1_b8cud")
 name = "Beast of Burden"
 monsterBehaviorType = 0
 description = " The blurrg is considered to be a Huge animal for the purposes of determining its carrying capacity."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wy2ko"]
-script = ExtResource("1_nyy3w")
+[sub_resource type="Resource" id="Resource_5jtuh"]
+script = ExtResource("1_b8cud")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = "1d12 + 5"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ucgod")
+script = ExtResource("2_585nr")
 name = "Blurrg"
 flavorText = ""
 sectionText = "Blurrgs were a two-legged non-sentient species that were used as beasts of burden on a number of worlds located across the galaxy, including Endor, Ryloth, and Zygerria. Stoic and strong, they are used for everything from agricultural labor to war; the Twi'lek Resistance on Ryloth rode blurrgs in battle during the Battle of Ryloth, where they were used at the final offensive against Separatist forces in Lessu, charging at droid troops with the Grand Army of the Republic's Lightning Squadron.The blurrg's huge mouth could chew through almost anything edible, which made it perfect for clearing savanna grass, weeds, and saplings. Blurrgs were strong, fast, but stupidï¿½so much so that they walked right into small trees, knocking them down. The egg-laying creatures usually produced 5 or 6 babies at a time. In their early years babies stayed very close to their mothers for protection from Boar-wolves. Blurrgs communicated through a series of roars. They are also vicious when driven to a fury, and are reputedly noisy when agitated."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 11
 hitPoints = 67
 speed = 30
 strength = 20
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 8"])
 languages = Array[String](["ï¿½"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_nyy3w")]([SubResource("Resource_1rs7l"), SubResource("Resource_5ta7a"), SubResource("Resource_7vgy3"), SubResource("Resource_wy2ko")])
+behaviors = Array[ExtResource("1_b8cud")]([SubResource("Resource_itcis"), SubResource("Resource_oixyt"), SubResource("Resource_nlgxu"), SubResource("Resource_5jtuh")])

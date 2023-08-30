@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_w3un7"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r2nw4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8nqba"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_v0v3y"]
 
-[sub_resource type="Resource" id="Resource_r4dyr"]
-script = ExtResource("1_w3un7")
+[sub_resource type="Resource" id="Resource_ralbk"]
+script = ExtResource("1_8nqba")
 name = "Swarm Tactics"
 monsterBehaviorType = 0
 description = " The K'lor'slug has advantage on an attack roll against a creature if at least one of the k'lor'slug's allies is within 5 feet of the creature and the ally isn't incapacitated."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_eu28u"]
-script = ExtResource("1_w3un7")
+[sub_resource type="Resource" id="Resource_mk6l7"]
+script = ExtResource("1_8nqba")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) kinetic damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
@@ -34,7 +34,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_r2nw4")
+script = ExtResource("2_v0v3y")
 name = "K'lor'slug"
 flavorText = ""
 sectionText = "K'lor'slugs are dangerous vermiforms native to the swamps of Noe'ha'on. They were also found on Korriban and Taris.***Biology & Appearance.*** K'lor'slugs are large worm-like creatures that possess a serpentine body propelled by many dangerously-edged legs. The mouth is a gaping circular maw filled with concentric rings of teeth.***Behavior.*** K'lor'slugs are carnivorous hunters on their homeworld, possessing keen olfactory and visual senses in addition to a deadly venom. For reproduction, the creatures lay more than 300 eggs in a single birthing period. When hatched, the young k'lor'slug is immediately ravenous for food. In addition to their aggressiveness, these creatures are considered pests aboard starships. They are known to invade the darkest spots on unsanitary space vehicles and breed. When dealing with more than 300 eggs hatching, an infestation aboard a space vehicle could become harder to controlï¿½and more potentially fatalï¿½the longer it is tolerated.***Cultural Impact.*** Because of their notoriety as an aggressive and deadly species, they are used as a holomonster playing piece in the popular strategy game, dejarik."
@@ -42,6 +42,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 13
 hitPoints = 4
 speed = 30
 strength = 5
@@ -58,6 +59,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["blindsight 30 ft.", "passive Perception 11"])
 languages = Array[String](["â€”"])
-challengeRating = 14
+challengeRating = "1/4"
 experiencePoints = 0
-behaviors = Array[ExtResource("1_w3un7")]([SubResource("Resource_r4dyr"), SubResource("Resource_eu28u")])
+behaviors = Array[ExtResource("1_8nqba")]([SubResource("Resource_ralbk"), SubResource("Resource_mk6l7")])

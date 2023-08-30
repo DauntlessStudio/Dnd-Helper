@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_nvc0s"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_pg0h6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0bwfj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_32o12"]
 
-[sub_resource type="Resource" id="Resource_t6flw"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_rs4lb"]
+script = ExtResource("1_0bwfj")
 name = "Jedi Hunter"
 monsterBehaviorType = 0
 description = " The trooper has advantage on Wisdom (Survival) checks to track humanoids that can cast force powers and on Intelligence (Lore) checks to recall information about Jedi and the Force."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vrs6o"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_7ceap"]
+script = ExtResource("1_0bwfj")
 name = "Force Combat Training"
 monsterBehaviorType = 0
 description = " The trooper has advantage on saving throws against Force powers."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_av2aq"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_r3s68"]
+script = ExtResource("1_0bwfj")
 name = "Surprise Attack"
 monsterBehaviorType = 0
 description = " If the trooper surprises a creature and hits it with an attack during the first round of combat , the target takes an extra 7 (2d6) damage from the attack."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_scsro"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_3oktl"]
+script = ExtResource("1_0bwfj")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trooper makes two melee or three ranged attacks."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_h2jm4"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_a4j71"]
+script = ExtResource("1_0bwfj")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
@@ -78,8 +78,8 @@ damage = 8
 damageRoll = "1d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_bd1eg"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_ny5mh"]
+script = ExtResource("1_0bwfj")
 name = "Electrostaff"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack. +6 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
@@ -93,8 +93,8 @@ damage = 7
 damageRoll = "2d4 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_8eoc5"]
-script = ExtResource("1_nvc0s")
+[sub_resource type="Resource" id="Resource_0ro41"]
+script = ExtResource("1_0bwfj")
 name = "Volley"
 monsterBehaviorType = 0
 description = " The trooper makes one ranged attack against every enemy within 10 feet of a point it can see."
@@ -109,7 +109,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_pg0h6")
+script = ExtResource("2_32o12")
 name = "Purge Trooper"
 flavorText = "Purge troopers were Imperial clones led by the Sith Lord Darth Vader and the Inquisitorius during the reign of the Galactic Empire. Trained as expendable death squads, they were activated after the Jedi Purge and subsequent termination of the cloning operation on Kamino, making them the last generation produced from the Jango Fett template. As with their precursors in the Grand Army of the Galactic Republic, Purge Troopers were programmed to obey Order 66, making them hostile towards all Jedi.  Purge Troopers were organized into death squads, although some Purge Troopers were known to engage their enemies without any nearby support. Each member had a red tattoo on the right side of their faces and had no hair.Every member was equipped with black armor that included several red or silver designs, kamas, and black helmets similar to that of clone paratroopers, with some sections of red. At least three members were also equipped with red pauldrons and at least three other members had a black pauldron with red lining, which was worn on their right shoulder. Each member had the Imperial crest on both shoulder pads. They utilized DC-15 blaster rifles and electrostaffs in combat. The troopers made use of Zeta-class shuttles and Imperial submarines as transports to carry out their duties."
 sectionText = "Also known as the Order of Inquisitors, The Inquisitorious was an organization of Force-sensitive agents who worked for the Galactic Empire. Members of the Inquisitorius were known as Imperial Inquisitors, Inquisitors, Red Blades, Mystics by Imperial officers, and sometimes even Jedi hunters. They were tasked with hunting down the remaining Jedi who had survived Order 66 at the end of the Clone Wars."
@@ -117,6 +117,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful dark"
 armorType = "battle armor"
+armorClass = 16
 hitPoints = 77
 speed = 30
 strength = 12
@@ -133,6 +134,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 15"])
 languages = Array[String](["Galactic Basic", "one other of your choice"])
-challengeRating = 3
+challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_nvc0s")]([SubResource("Resource_t6flw"), SubResource("Resource_vrs6o"), SubResource("Resource_av2aq"), SubResource("Resource_scsro"), SubResource("Resource_h2jm4"), SubResource("Resource_bd1eg"), SubResource("Resource_8eoc5")])
+behaviors = Array[ExtResource("1_0bwfj")]([SubResource("Resource_rs4lb"), SubResource("Resource_7ceap"), SubResource("Resource_r3s68"), SubResource("Resource_3oktl"), SubResource("Resource_a4j71"), SubResource("Resource_ny5mh"), SubResource("Resource_0ro41")])

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_68exc"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_q7hbi"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i44ik"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_kfk5e"]
 
-[sub_resource type="Resource" id="Resource_dggb8"]
-script = ExtResource("1_68exc")
+[sub_resource type="Resource" id="Resource_3uhe1"]
+script = ExtResource("1_i44ik")
 name = "Legendary Resistance"
 monsterBehaviorType = 0
 description = " If the droid fails a saving throw, he can choose to succeed instead."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dby76"]
-script = ExtResource("1_68exc")
+[sub_resource type="Resource" id="Resource_p1a0d"]
+script = ExtResource("1_i44ik")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The droid makes two blaster rifle attacks."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_24r55"]
-script = ExtResource("1_68exc")
+[sub_resource type="Resource" id="Resource_cbmmf"]
+script = ExtResource("1_i44ik")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 5 (1d8+1) energy damage."
@@ -49,7 +49,7 @@ damageRoll = "1d8+1"
 damageType = 3
 
 [resource]
-script = ExtResource("2_q7hbi")
+script = ExtResource("2_kfk5e")
 name = "L0M Series"
 flavorText = "The LOM-series protocol droid was manufactured by Industrial Automaton and were designed with insectile features to emulate the species they were created to serve: the sentient Gand. The LOM-series had a flaw that allowed the personality software of a droid to be corrupted. Many LOM-series droids became enforcers in the galaxy's Outer Rim Territories. The most notable, 4-LOM, became a bounty hunter, sometimes seen with the Gand, Zuckuss.Aside from the insectile face, the LOM protocol droid was very similar to the 3PO-seriesï¿½indeed, Industrial Automaton made crafty deals with companies such as SyntheTech, to use many components initially used by Cybot Galactica. Thus, the LOM-series possessed an AA-1 VerboBrain and a TranLang III communications module programmed with millions of languages; it even had a similar body frame and plating design. Such blatant use of its trademark hardware caused Cybot Galactica to file a number of lawsuits against its rival company. Though their LOM units sold well in limited release, Industrial Automaton's future plans to monopolize the protocol droid market were dashed."
 sectionText = "Protocol droids are programmed mostly for etiquette, and are often used as translators between sentients or between sentients and computers. They are generally designed to look like the sentients they serve; for example, 3PO-series protocol droids are humanoid.They possess knowledge about various cultures and customs, both to advise those for whom they were working, and to ensure their own behavior is diplomatic and culturally sensitive.***History.*** Protocol droids constructed around 4000 BBY (around the time of the Great Sith War and the Jedi Civil War) were frequently engineered with certain behavioral shifts set to occur whenever another design-generation was reached. A number of these droids underwent radical changes with each new generationï¿½for example, when a C7-model droid supplanted the C6 variety. Each numeric \"jump\" in sequence could have had wide-ranging changes in functionality and temperament during that historical period.***Programming Units.*** Cybot Galactica, the most famous and successful manufacturer of protocol droids, outfit them with SyntheTech AA-1 VerboBrains to give their droids personalities with emotions and the ability to learn and grow very similar to organic beings. The 3PO unit possesses a TranLang III communications module that can reproduce over six million languages, as well as reproduce any sound it picks up. Linguistic modules are also used to improve their speech functions. Some models, such as the pricey E-3POs, also include the TechSpan I module, making it possible to interface with Imperial networks and undocumented technologies of Imperial subcontractors."
@@ -57,6 +57,7 @@ size = 0
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
+armorClass = 12
 hitPoints = 27
 speed = 25
 strength = 10
@@ -73,6 +74,6 @@ damageVulnerabilities = Array[int]([6])
 conditionImmunities = Array[String](["Poisoned"])
 senses = Array[String](["darkvision 60 ft.", "passive Perception 11"])
 languages = Array[String](["All registered languages"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_68exc")]([SubResource("Resource_dggb8"), SubResource("Resource_dby76"), SubResource("Resource_24r55")])
+behaviors = Array[ExtResource("1_i44ik")]([SubResource("Resource_3uhe1"), SubResource("Resource_p1a0d"), SubResource("Resource_cbmmf")])

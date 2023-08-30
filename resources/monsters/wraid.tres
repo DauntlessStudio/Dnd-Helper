@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_3nka6"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_muf4l"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_83r2h"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_esaoj"]
 
-[sub_resource type="Resource" id="Resource_pggv8"]
-script = ExtResource("1_3nka6")
+[sub_resource type="Resource" id="Resource_oyqhb"]
+script = ExtResource("1_83r2h")
 name = "Charge"
 monsterBehaviorType = 0
 description = " If the Wraid moves at least 20 feet straight toward a target and then hits it with a ram Attack on the same turn, the target takes an extra 4 (2d8) kinetic damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3k2uh"]
-script = ExtResource("1_3nka6")
+[sub_resource type="Resource" id="Resource_ktanr"]
+script = ExtResource("1_83r2h")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Wraid makes two attacks, once with its ram and one with its claws."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_tgf1h"]
-script = ExtResource("1_3nka6")
+[sub_resource type="Resource" id="Resource_gf7qs"]
+script = ExtResource("1_83r2h")
 name = "Ram"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 11 (3d6 + 3) kinetic damage."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_k5xkr"]
-script = ExtResource("1_3nka6")
+[sub_resource type="Resource" id="Resource_2lahu"]
+script = ExtResource("1_83r2h")
 name = "Claws"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 7 (2d4+3) kinetic damage."
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_muf4l")
+script = ExtResource("2_esaoj")
 name = "Wraid"
 flavorText = ""
 sectionText = "Wraids are large reptilian creatures found on many desert planets around the galaxy, including Tatooine, Korriban, and Tython. ***Biology & Appearance.*** Wraids are pinkish-red in color and have very powerful front legs, enabling them to move quickly when agitated by means of long, bounding strides. They have large claws at the end of their feet and sharp teeth, making them dangerous to the unwary. They also have two small back legs.***Behavior.*** Wraids are often seen in clusters from two to six members. Generally, they will not harm passersby unless provoked, at which point their danger becomes immediately apparent.***Hunting.*** Because of their ferocious appearance and short temper, they are a popular quarry of less-experienced big game sport hunters from around the galaxy. When the settlement of Anchorhead was founded, hunting wraids developed into a marketable trade with the opening of hunting lodges and salespeople dealing in wraid skull plates purchased from hunters.Their skull plates are rumored to have medicinal uses, but the market for them is very specific."
@@ -72,6 +72,7 @@ size = 0
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
+armorClass = 16
 hitPoints = 68
 speed = 30
 strength = 16
@@ -88,6 +89,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["passive Perception 10"])
 languages = Array[String](["â€”"])
-challengeRating = 2
+challengeRating = "2"
 experiencePoints = 0
-behaviors = Array[ExtResource("1_3nka6")]([SubResource("Resource_pggv8"), SubResource("Resource_3k2uh"), SubResource("Resource_tgf1h"), SubResource("Resource_k5xkr")])
+behaviors = Array[ExtResource("1_83r2h")]([SubResource("Resource_oyqhb"), SubResource("Resource_ktanr"), SubResource("Resource_gf7qs"), SubResource("Resource_2lahu")])

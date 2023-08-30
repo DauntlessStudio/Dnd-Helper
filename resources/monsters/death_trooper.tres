@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Character" load_steps=13 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_437ci"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ga8ef"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_7b5j7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_y2gmn"]
 
-[sub_resource type="Resource" id="Resource_61alt"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_a345u"]
+script = ExtResource("1_7b5j7")
 name = "Skirmish"
 monsterBehaviorType = 0
 description = " The trooper can use Disengage as a bonus action."
@@ -18,8 +18,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0fjj0"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_iiym4"]
+script = ExtResource("1_7b5j7")
 name = "Precise Shot"
 monsterBehaviorType = 0
 description = " As a bonus action before making a ranged weapon attack, the trooper can take aim at a vital point of a target causing an extra 7 (2d6) energy damage on a hit."
@@ -33,8 +33,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_nceug"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_v0jgb"]
+script = ExtResource("1_7b5j7")
 name = "Enhanced Sensors"
 monsterBehaviorType = 0
 description = "  The trooper has advantage on Wisdom (Perception) checks that rely on hearing or sight."
@@ -48,8 +48,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bjrrx"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_1qqja"]
+script = ExtResource("1_7b5j7")
 name = "Enhanced Weapons"
 monsterBehaviorType = 0
 description = " The troopers weapon attacks are enhanced."
@@ -63,8 +63,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_y7ep8"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_onsft"]
+script = ExtResource("1_7b5j7")
 name = "Stealthy"
 monsterBehaviorType = 0
 description = " The trooper can take the Hide action as a bonus action."
@@ -78,8 +78,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i2bb5"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_1jbyp"]
+script = ExtResource("1_7b5j7")
 name = "Surprise Attack"
 monsterBehaviorType = 0
 description = " If the trooper surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack."
@@ -93,8 +93,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_anome"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_ma0mi"]
+script = ExtResource("1_7b5j7")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trooper makes two melee attacks or four ranged attacks."
@@ -108,8 +108,8 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_56516"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_4hay8"]
+script = ExtResource("1_7b5j7")
 name = "Techblade"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 +4) kinetic damage."
@@ -123,8 +123,8 @@ damage = 7
 damageRoll = "1d6 +4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_c0dt1"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_ak4x3"]
+script = ExtResource("1_7b5j7")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +7 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
@@ -138,8 +138,8 @@ damage = 8
 damageRoll = "1d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_ureis"]
-script = ExtResource("1_437ci")
+[sub_resource type="Resource" id="Resource_3cp4d"]
+script = ExtResource("1_7b5j7")
 name = "Volley"
 monsterBehaviorType = 0
 description = " The trooper shoots a rain of deadly blaster bolts in a 30-foot cone.  Each creature in that area must make a DC 15 Dexterity saving throw, taking 22 (4d8 + 4) energy damage on a failed save, or half as much damage on a successful one."
@@ -154,7 +154,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_ga8ef")
+script = ExtResource("2_y2gmn")
 name = "Death Trooper"
 flavorText = ""
 sectionText = "Death troopers were an elite variant of stormtroopers designed for stealth, espionage and lethality. Operating under Imperial Intelligence, they served as protective details and bodyguards for significant Imperial officers as well as special-assignment commandos. Death troopers were trained in unarmed combat, heavy weapons, demolitions, and marksmanship. They were experts at covering their tracks, leaving little to no evidence of their missions.Stormtrooper candidates who excelled at their training were reassigned to the advanced death trooper camp on Scarif. They were required to exceed traditional stormtrooper standards, including height and weight, and had to meet certain ideological standards. The candidates were also subjected to a battery of physical tests and classified surgical enhancements as well as more rigorous training than standard stormtroopers. They wore black suits of armor that was much more advanced than standard stormtrooper armor. Their helmet had vocal scramblers, micro-motion sensors, targeting systems, and heads-up displays with data on enemy and friendly positions on the battlefield to give them total situational awareness. Their armor was also covered by a spray polymer called reflec, which warped electromagnetic signals commonly found in sensor arrays, making them well suited for stealth operations. Death troopers were equipped with a variety of weapons depending on their specialities including the SE-14r light repeating blasters, E-11Ds, DLT-19D heavy blaster rifles, C-25 fragmentation grenades and Sonic Imploders."
@@ -162,6 +162,7 @@ size = 0
 types = Array[String](["humanoid"])
 alignment = "lawful dark"
 armorType = "battle armor"
+armorClass = 16
 hitPoints = 97
 speed = 30
 strength = 14
@@ -178,6 +179,6 @@ damageVulnerabilities = Array[int]([])
 conditionImmunities = Array[String]([])
 senses = Array[String](["truesight 15 ft.", "blindsight 30 ft.", "darkvision 60 ft.", "passive Perception 17"])
 languages = Array[String](["Galactic Basic", "one other of your choice"])
-challengeRating = 6
+challengeRating = "6"
 experiencePoints = 2300
-behaviors = Array[ExtResource("1_437ci")]([SubResource("Resource_61alt"), SubResource("Resource_0fjj0"), SubResource("Resource_nceug"), SubResource("Resource_bjrrx"), SubResource("Resource_y7ep8"), SubResource("Resource_i2bb5"), SubResource("Resource_anome"), SubResource("Resource_56516"), SubResource("Resource_c0dt1"), SubResource("Resource_ureis")])
+behaviors = Array[ExtResource("1_7b5j7")]([SubResource("Resource_a345u"), SubResource("Resource_iiym4"), SubResource("Resource_v0jgb"), SubResource("Resource_1qqja"), SubResource("Resource_onsft"), SubResource("Resource_1jbyp"), SubResource("Resource_ma0mi"), SubResource("Resource_4hay8"), SubResource("Resource_ak4x3"), SubResource("Resource_3cp4d")])
