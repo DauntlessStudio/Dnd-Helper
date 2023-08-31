@@ -20,6 +20,20 @@ func set_character(character: Character):
 	$VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/SpeedLabel.text = " %s" % sourceCharacter.speed
 	$VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/ArmorLabel.text = " %s" % sourceCharacter.armorClass
 
+func set_player(name: String, init: int, armor: String, movement: String, hp: int):
+	initiative = init
+	maximumHP = hp
+	currentHP = maximumHP
+	movement = movement if !movement.is_empty() else "30"
+	armor = armor if !armor.is_empty() else "0"
+	$VBoxContainer/HBoxContainer/InitiativeLabel.text = "%02d" % initiative
+	$VBoxContainer/HBoxContainer/VBoxContainer/HPLabel.text = " %d/%d" % [currentHP, maximumHP]
+	$VBoxContainer/HBoxContainer/VBoxContainer/HSlider.max_value = maximumHP
+	$VBoxContainer/HBoxContainer/VBoxContainer/HSlider.value = currentHP
+	$VBoxContainer/NameLineEdit.text = name if !name.is_empty() else "Player"
+	$VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/SpeedLabel.text = " %s" % movement
+	$VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/ArmorLabel.text = " %s" % armor
+
 func _on_hp_slider_value_changed(value):
 	currentHP = value
 	$VBoxContainer/HBoxContainer/VBoxContainer/HPLabel.text = " %d/%d" % [currentHP, maximumHP]
