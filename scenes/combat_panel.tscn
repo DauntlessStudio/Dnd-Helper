@@ -24,6 +24,7 @@ anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -281.0
 grow_horizontal = 0
 grow_vertical = 2
 
@@ -41,30 +42,32 @@ text = "New Player"
 layout_mode = 2
 text = "New Monster"
 
+[node name="ClearButton" type="Button" parent="CombatentStack/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Clear"
+
 [node name="ScrollContainer" type="ScrollContainer" parent="CombatentStack/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="InitiativeStack" type="VBoxContainer" parent="CombatentStack/VBoxContainer/ScrollContainer"]
 layout_mode = 2
+theme_override_constants/separation = 5
 
 [node name="AddMonsterPanel" type="PanelContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -513.0
-offset_top = -261.0
-offset_right = 313.0
-offset_bottom = 261.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 51.0
+offset_top = -710.0
+offset_right = 1313.0
+offset_bottom = -48.0
+grow_vertical = 0
 script = ExtResource("1_7plxy")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="AddMonsterPanel"]
-custom_minimum_size = Vector2(800, 0)
+custom_minimum_size = Vector2(1200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 
@@ -154,20 +157,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-auto_translate = false
-localize_numeral_system = false
-theme_override_fonts/font = ExtResource("1_eq2lb")
-theme_override_font_sizes/font_size = 16
-text = ""
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("2_bfgwa")
-icon_name = "xmark"
-
 [connection signal="pressed" from="CombatentStack/VBoxContainer/HBoxContainer/NewMonsterButton" to="." method="_on_new_monster_button_pressed"]
+[connection signal="pressed" from="CombatentStack/VBoxContainer/HBoxContainer/ClearButton" to="." method="_on_clear_button_pressed"]
 [connection signal="pressed" from="AddMonsterPanel/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
 [connection signal="text_changed" from="AddMonsterPanel/VBoxContainer/SearchFlowContainer/SearchContainer/HBoxContainer/SearchEdit" to="AddMonsterPanel" method="_on_search_edit_text_changed"]

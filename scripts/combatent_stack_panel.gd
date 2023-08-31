@@ -10,7 +10,7 @@ func set_character(character: Character):
 	sourceCharacter = character
 	maximumHP = sourceCharacter.hitPoints
 	currentHP = maximumHP
-	initiative = randi_range(0, 20)
+	initiative = randi_range(1, 20)
 	
 	$VBoxContainer/NameLineEdit.placeholder_text = sourceCharacter.name
 	$VBoxContainer/HBoxContainer/InitiativeLabel.text = "%02d" % initiative

@@ -7,9 +7,10 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jveu4"]
 
 [node name="Combatent" type="Panel"]
-custom_minimum_size = Vector2(180, 115)
+custom_minimum_size = Vector2(250, 115)
 offset_right = 178.0
 offset_bottom = 108.0
+size_flags_horizontal = 3
 size_flags_vertical = 0
 script = ExtResource("1_hogko")
 
