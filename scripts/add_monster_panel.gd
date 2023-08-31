@@ -20,6 +20,8 @@ func _ready():
 	var files = DirAccess.get_files_at(dir_path)
 	
 	for file in files:
+		if '.tres.remap' in file: # <---- NEW
+			file = file.trim_suffix('.remap') # <---- NEW
 		var monster = load(dir_path + "/" + file) as Character
 		var container = load("res://scenes/monster_container.tscn") as PackedScene
 		var instance = container.instantiate() as MonsterContainer
@@ -29,8 +31,8 @@ func _ready():
 		$VBoxContainer/MonsterListHolder/ScrollContainer/MonsterListContainer.add_child(instance)
 		add_search_categories(monster)
 	
-	for size in allSizeArr:
-		$VBoxContainer/SearchFlowContainer/SizeMenuButton.get_popup().add_check_item(size)
+	for monsterSize in allSizeArr:
+		$VBoxContainer/SearchFlowContainer/SizeMenuButton.get_popup().add_check_item(monsterSize)
 	$VBoxContainer/SearchFlowContainer/SizeMenuButton.get_popup().id_pressed.connect(_on_size_menu_pressed)
 	
 	for type in allTypeArr:

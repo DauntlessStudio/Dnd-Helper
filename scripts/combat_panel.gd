@@ -52,7 +52,7 @@ func _on_new_player_button_pressed():
 
 
 func _on_add_player_dialog_confirmed():
-	var name = $AddPlayerDialog/HFlowContainer/NameEdit.text
+	var playerName = $AddPlayerDialog/HFlowContainer/NameEdit.text
 	var initiative = $AddPlayerDialog/HFlowContainer/InitiativeBox.value
 	var armor = $AddPlayerDialog/HFlowContainer/ArmorEdit.text
 	var movement = $AddPlayerDialog/HFlowContainer/MovementEdit.text
@@ -60,7 +60,7 @@ func _on_add_player_dialog_confirmed():
 	
 	var panel = load("res://scenes/combatent_stack_panel.tscn") as PackedScene
 	var instance = panel.instantiate() as CombatentStackPanel
-	instance.set_player(name, initiative, armor, movement, hp)
+	instance.set_player(playerName, initiative, armor, movement, hp)
 	$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(instance)
 	sortInitiativePanel()
 	reset_player_dialog()
