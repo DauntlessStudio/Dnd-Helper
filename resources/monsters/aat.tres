@@ -1,182 +1,182 @@
 [gd_resource type="Resource" script_class="Character" load_steps=15 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_aon61"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r54dg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_n238i"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_g1ks4"]
 
-[sub_resource type="Resource" id="Resource_7h203"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_1rmle"]
+script = ExtResource("1_n238i")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wx5g1"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_28dbb"]
+script = ExtResource("1_n238i")
 name = "Operated"
 monsterBehaviorType = 0
 description = " by a Pilot & Gunner roll a separate initiative for both"
 descriptionWithLinks = " by a Pilot & Gunner roll a separate initiative for both"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m5yut"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_gamv3"]
+script = ExtResource("1_n238i")
 name = "Piloted"
 monsterBehaviorType = 0
 description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. Pilot Controls movement, Ram action, & Rocket launchers"
 descriptionWithLinks = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. Pilot Controls movement, Ram action, & Rocket launchers"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fby8y"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_5dhx2"]
+script = ExtResource("1_n238i")
 name = "Gunner"
 monsterBehaviorType = 0
 description = " The construct requires an active gunner to operate the vehicles weaponry. Gunner controls Plasma Cannon & Medium Repeating Blasters"
 descriptionWithLinks = " The construct requires an active gunner to operate the vehicles weaponry. Gunner controls Plasma Cannon & Medium Repeating Blasters"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6aeoi"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_fyjc5"]
+script = ExtResource("1_n238i")
 name = "Freedom of Movement"
 monsterBehaviorType = 0
 description = " The AAT ignores difficult terrain and can pass through occupied hostile spaces"
 descriptionWithLinks = " The AAT ignores difficult terrain and can pass through occupied hostile spaces"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vtvh5"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_06c2m"]
+script = ExtResource("1_n238i")
 name = "Vulnerable Interior"
 monsterBehaviorType = 0
 description = " The AAT's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
 descriptionWithLinks = " The AAT's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u1t12"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_emyq4"]
+script = ExtResource("1_n238i")
 name = "Pilot"
 monsterBehaviorType = 0
 description = " of the AAT can use the Ram action and make 1 attack utilizing the Rocket Launcher"
 descriptionWithLinks = " of the AAT can use the Ram action and make 1 attack utilizing the Rocket Launcher"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qadth"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_uygkc"]
+script = ExtResource("1_n238i")
 name = "Ram"
 monsterBehaviorType = 0
 description = " Any creature within the AAT's movement path must make a DC 17 Dexterity saving throw, taking 26 (4d12) kinetic damage on a failed save and is knocked prone, or half as much damage on a successful one."
 descriptionWithLinks = " Any creature within the AAT's movement path must make a DC 17 Dexterity saving throw, taking 26 (4d12) kinetic damage on a failed save and is knocked prone, or half as much damage on a successful one."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_01ivr"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_wtiov"]
+script = ExtResource("1_n238i")
 name = "Rocket Launchers"
 monsterBehaviorType = 0
 description = " Ranged weapon range 100/400 DC 14 launches a barrage of rockets at a target and any creature within 10 feet Taking 6d6 kinetic damage on a failed save and half as much on a successful one"
 descriptionWithLinks = " Ranged weapon range 100/400 DC 14 launches a barrage of rockets at a target and any creature within 10 feet Taking 6d6 kinetic damage on a failed save and half as much on a successful one"
 attackType = 0
 restrictions = "6/day Reload 1 turn"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3ln05"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_5p7k8"]
+script = ExtResource("1_n238i")
 name = "Gunner"
 monsterBehaviorType = 0
 description = " can make two attacks using the medium repeating blasters"
 descriptionWithLinks = " can make two attacks using the medium repeating blasters"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1sckw"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_4t4bq"]
+script = ExtResource("1_n238i")
 name = "Medium Repeating Blasters"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +10 to hit, range 120/240 ft., one target. Hit: 25 (4d10+6) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +10 to hit, range 120/240 ft., one target. Hit: 25 (4d10+6) energy damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_eets2"]
-script = ExtResource("1_aon61")
+[sub_resource type="Resource" id="Resource_hbksu"]
+script = ExtResource("1_n238i")
 name = "Plasma Cannon"
 monsterBehaviorType = 0
 description = " The AAT launches a plasma shell 150/300 ft range target must be at least 15 ft away from the AAT.  Blast has a 15 foot radius. Each creature in that area must make a DC 18 Dexterity saving throw, taking 52 (8d12) fire damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " The AAT launches a plasma shell 150/300 ft range target must be at least 15 ft away from the AAT.  Blast has a 15 foot radius. Each creature in that area must make a DC 18 Dexterity saving throw, taking 52 (8d12) fire damage on a failed save, or half as much damage on a successful one."
 attackType = 0
 restrictions = "Recharge 5-6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -184,11 +184,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_r54dg")
+script = ExtResource("2_g1ks4")
 name = "AAT"
 flavorText = "The Armored Assault Tank, also known as the AAT battle tank or the AAT-1 Hover Tank, was a tank vehicle used by the Trade Federation[4] and later donated to the Confederacy of Independent Systems where it served as one of its backbone infantry defenses and backbone vehicles during the Clone Wars. Many of the AATs used by the Confederacy were painted in Confederate colors, such as blue, however there were still tanks used by the CIS in the previous tan used by the Trade Federation. The tanks were also donated to Death Watch during their alliance with the Confederacy."
 sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
-size = 0
+size = 5
 types = Array[String](["construct"])
 alignment = "unaligned"
 armorType = "None"
@@ -211,4 +211,4 @@ senses = Array[String](["passive perception 12"])
 languages = Array[String](["ï¿½"])
 challengeRating = "13"
 experiencePoints = 10000
-behaviors = Array[ExtResource("1_aon61")]([SubResource("Resource_7h203"), SubResource("Resource_wx5g1"), SubResource("Resource_m5yut"), SubResource("Resource_fby8y"), SubResource("Resource_6aeoi"), SubResource("Resource_vtvh5"), SubResource("Resource_u1t12"), SubResource("Resource_qadth"), SubResource("Resource_01ivr"), SubResource("Resource_3ln05"), SubResource("Resource_1sckw"), SubResource("Resource_eets2")])
+behaviors = Array[ExtResource("1_n238i")]([SubResource("Resource_1rmle"), SubResource("Resource_28dbb"), SubResource("Resource_gamv3"), SubResource("Resource_5dhx2"), SubResource("Resource_fyjc5"), SubResource("Resource_06c2m"), SubResource("Resource_emyq4"), SubResource("Resource_uygkc"), SubResource("Resource_wtiov"), SubResource("Resource_5p7k8"), SubResource("Resource_4t4bq"), SubResource("Resource_hbksu")])

@@ -1,152 +1,152 @@
 [gd_resource type="Resource" script_class="Character" load_steps=13 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ei3sj"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_qq658"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_lckiq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_kv7od"]
 
-[sub_resource type="Resource" id="Resource_x76oy"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_ondwc"]
+script = ExtResource("1_lckiq")
 name = "Air Form"
 monsterBehaviorType = 0
 description = " The eye can enter a hostile creature's space and stop there.  It can move through a space as narrow as 1 inch wide without squeezing."
 descriptionWithLinks = " The eye can enter a hostile creature's space and stop there.  It can move through a space as narrow as 1 inch wide without squeezing."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kekqu"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_c80xq"]
+script = ExtResource("1_lckiq")
 name = "Flyby"
 monsterBehaviorType = 0
 description = " The eye doesn't provoke opportunity attacks when it flies out of an enemy's reach."
 descriptionWithLinks = " The eye doesn't provoke opportunity attacks when it flies out of an enemy's reach."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_l2bb4"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_g72es"]
+script = ExtResource("1_lckiq")
 name = "Legendary Resistance"
 monsterBehaviorType = 0
 description = " If the eye fails a saving throw, it can choose to succeed instead."
 descriptionWithLinks = " If the eye fails a saving throw, it can choose to succeed instead."
 attackType = 0
 restrictions = "3/day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fen2s"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_0jygn"]
+script = ExtResource("1_lckiq")
 name = "Siege Conditions"
 monsterBehaviorType = 0
 description = " The eye deals double damage to objects and structures."
 descriptionWithLinks = " The eye deals double damage to objects and structures."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pe1yq"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_oq7xc"]
+script = ExtResource("1_lckiq")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The eye attacks twice with thunder slam."
 descriptionWithLinks = " The eye attacks twice with thunder slam."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dusv7"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_lqhsv"]
+script = ExtResource("1_lckiq")
 name = "Thunder Slam"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 23 (4d6+9) sonic damage."
 descriptionWithLinks = " Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 23 (4d6+9) sonic damage."
 attackType = 0
 restrictions = ""
-range = "reach 20 ft."
+attackRange = "reach 20 ft."
 attackBonus = 16
 numberOfTargets = "one target."
 damage = 23
 damageRoll = "4d6+9"
 damageType = 12
 
-[sub_resource type="Resource" id="Resource_qdxxs"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_prj0a"]
+script = ExtResource("1_lckiq")
 name = "Lightning Storm"
 monsterBehaviorType = 0
 description = " All other creatures within 120 feet of the eye must each make a DC 20 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much damage on a successful one.  If a target's saving throw fails by 5 or more, the creature is also stunned until the end of its next turn."
 descriptionWithLinks = " All other creatures within 120 feet of the eye must each make a DC 20 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much damage on a successful one.  If a target's saving throw fails by 5 or more, the creature is also stunned until the end of its next turn."
 attackType = 0
 restrictions = "Recharge 6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0af0i"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_3q7u2"]
+script = ExtResource("1_lckiq")
 name = "Move"
 monsterBehaviorType = 0
 description = " The eye moves up to its speed."
 descriptionWithLinks = " The eye moves up to its speed."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5gijs"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_1e1mp"]
+script = ExtResource("1_lckiq")
 name = "Lightning Strike"
 monsterBehaviorType = 0
 description = " The eye can cause a bolt of lightning to strike a point anywhere under its storm.  Each creature within 5 feet of that point must make a DC 20 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much sonic damage on a successful one."
 descriptionWithLinks = " The eye can cause a bolt of lightning to strike a point anywhere under its storm.  Each creature within 5 feet of that point must make a DC 20 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much sonic damage on a successful one."
 attackType = 0
 restrictions = "Costs 2 Actions"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8qqo3"]
-script = ExtResource("1_ei3sj")
+[sub_resource type="Resource" id="Resource_bx4xf"]
+script = ExtResource("1_lckiq")
 name = "Screaming Gale"
 monsterBehaviorType = 0
 description = " The eye releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide.  Objects in that area take 22 (4d10) sonic damage.  Each creature there must succeed on a DC 21 Dexterity saving throw or take 22 (4d10) sonic damage and be flung up to 60 feet in a direction away from the line.  If a thrown target collides with immovable object, such as a wall or floor, the target takes 3 (1d6) kinetic damage for every 10 feet it was thrown before impact.  If the target would collide with another creature instead, that other creature must succeed on a DC19 Dexterity saving throw or take the same damage and be knocked prone."
 descriptionWithLinks = " The eye releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide.  Objects in that area take 22 (4d10) sonic damage.  Each creature there must succeed on a DC 21 Dexterity saving throw or take 22 (4d10) sonic damage and be flung up to 60 feet in a direction away from the line.  If a thrown target collides with immovable object, such as a wall or floor, the target takes 3 (1d6) kinetic damage for every 10 feet it was thrown before impact.  If the target would collide with another creature instead, that other creature must succeed on a DC19 Dexterity saving throw or take the same damage and be knocked prone."
 attackType = 0
 restrictions = "Costs 3 Actions"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -154,11 +154,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_qq658")
+script = ExtResource("2_kv7od")
 name = "Force Storm Eye"
 flavorText = ""
 sectionText = "When the Force is strongly out of balance in a particular region, a Force Storm may form. Most Force Storms consisted of significant and violent weather patterns, while some were occasionally accompanied by volcanic or seismic activities. Force Storms could be caused by powerful presences in either the light or dark sides of the Force, the arrival of many Force-sensitives on the planet, or the death of many Force-sensitives all at once.  The eye of a force storm may be temporarily neutralized, greatly diminishing the effects of the storm for a short while.  However, only the resolution of the imbalance in the Force can truly stop a Force Storm once started.#### Lair ActionsOn initiative count 20 (losing initiative ties), the force storm can take a lair action to cause one of the following effects; it can't use the same effect two rounds in a row:- Force Storm causes a blast of cold to burst from the clouds at a point it can see within 120 feet of it.  The cold fills a cube, 10 feet on each side, centered on that point.  Each creature in that area must succeed on a DC 20 Constitution saving throw or take 28 (8d6) cold damage.- Force Storm casts the *force repulse* power.- Force Storm targets one creature it can see within 60 feet of it.  The target must succeed on a DC 20 Wisdom saving throw or become restrained for 1 minute.  The target can end the effect on itself if it deals any damage to one or more of its allies.#### Regional Effects- The eye is always at the center of a storm 6 miles in diameter. Heavy precipitation in the form of either rain of snow falls there, causing the area to be lightly obsured.  Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom (Perception) checks that rely on hearing. - Freezing strong winds howl around the area within 1 mile of the eye of the force storm. The heavy winds impose disadvantage on ranged attack rolls, extinguish open flames, and disperse fog.- Howling wind and thunder claps fill the air within 1 mile of the eye.  Any creature that finishes a short or long rest in this area must succeed on a DC 21 Wisdom saving through or derive no benefit from the rest.If the Force Storm Eye is destroyed, these effects fade over 1d10 hours.  These effects return, along with the eye, over 1d10 days unless the conditions causing the imbalance in the Force are resolved."
-size = 0
+size = 6
 types = Array[String](["elemental"])
 alignment = "unaligned"
 armorType = "None"
@@ -181,4 +181,4 @@ senses = Array[String](["truesight 120 ft.", "passive Perception 15"])
 languages = Array[String](["None"])
 challengeRating = "23"
 experiencePoints = 50000
-behaviors = Array[ExtResource("1_ei3sj")]([SubResource("Resource_x76oy"), SubResource("Resource_kekqu"), SubResource("Resource_l2bb4"), SubResource("Resource_fen2s"), SubResource("Resource_pe1yq"), SubResource("Resource_dusv7"), SubResource("Resource_qdxxs"), SubResource("Resource_0af0i"), SubResource("Resource_5gijs"), SubResource("Resource_8qqo3")])
+behaviors = Array[ExtResource("1_lckiq")]([SubResource("Resource_ondwc"), SubResource("Resource_c80xq"), SubResource("Resource_g72es"), SubResource("Resource_0jygn"), SubResource("Resource_oq7xc"), SubResource("Resource_lqhsv"), SubResource("Resource_prj0a"), SubResource("Resource_3q7u2"), SubResource("Resource_1e1mp"), SubResource("Resource_bx4xf")])

@@ -1,137 +1,137 @@
 [gd_resource type="Resource" script_class="Character" load_steps=12 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2o32s"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_52x0v"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_c62fq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_f6lq3"]
 
-[sub_resource type="Resource" id="Resource_il1uu"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_a2tyj"]
+script = ExtResource("1_c62fq")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
 descriptionWithLinks = " The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wmooi"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_q75ld"]
+script = ExtResource("1_c62fq")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) kinetic damage plus 7 (3d4) toxin damage. The target must then succeed on a Constitution saving throw (DC 19) or become poisoned."
 descriptionWithLinks = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) kinetic damage plus 7 (3d4) toxin damage. The target must then succeed on a Constitution saving throw (DC 19) or become poisoned."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_juk6g"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_hajea"]
+script = ExtResource("1_c62fq")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) kinetic damage. plus 7 (3d4) toxin damage."
 descriptionWithLinks = " Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) kinetic damage. plus 7 (3d4) toxin damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_rjdtb"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_fke7g"]
+script = ExtResource("1_c62fq")
 name = "Tail"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 19 (2d8 + 10) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 19 (2d8 + 10) kinetic damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mvbp0"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_d4v3b"]
+script = ExtResource("1_c62fq")
 name = "Frightful Presence"
 monsterBehaviorType = 0
 description = " Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
 descriptionWithLinks = " Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u3h0l"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_uj7ha"]
+script = ExtResource("1_c62fq")
 name = "Poisonous Saliva"
 monsterBehaviorType = 0
 description = " The dragon spits its poisonous saliva  in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) toxin damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " The dragon spits its poisonous saliva  in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) toxin damage on a failed save, or half as much damage on a successful one."
 attackType = 0
 restrictions = "Recharge 5-6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_slwlp"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_iuj5s"]
+script = ExtResource("1_c62fq")
 name = "Detect"
 monsterBehaviorType = 0
 description = " The dragon makes a Wisdom (Perception) check."
 descriptionWithLinks = " The dragon makes a Wisdom (Perception) check."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_rr73j"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_6xiui"]
+script = ExtResource("1_c62fq")
 name = "Tail Attack"
 monsterBehaviorType = 0
 description = " The dragon makes a tail attack."
 descriptionWithLinks = " The dragon makes a tail attack."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_08byu"]
-script = ExtResource("1_2o32s")
+[sub_resource type="Resource" id="Resource_kcu62"]
+script = ExtResource("1_c62fq")
 name = "Sand Swimmer"
 monsterBehaviorType = 0
 description = " The greater krayt dragon dives into the ground, sand blasting all creatures around it. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) kinetic damage and be knocked prone. The greater krayt dragon is now burrowed."
 descriptionWithLinks = " The greater krayt dragon dives into the ground, sand blasting all creatures around it. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) kinetic damage and be knocked prone. The greater krayt dragon is now burrowed."
 attackType = 0
 restrictions = "Costs 2 Actions"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -139,11 +139,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_52x0v")
+script = ExtResource("2_f6lq3")
 name = "Krayt Dragon, Greater"
 flavorText = "The greater krayt was a rarer, larger species of krayt dragon, known for its tremendous size and continual growth over time. Creatures of near legendary status, greater krayt dragons had ten legs, measured at least 100 meters from snout to tail tip and had the ability to move through or on Tatooine's desert sand. Greater krayt dragons attacked with their massive jaws or whip-like spike-tail, using their claws only to move through the sand."
 sectionText = "Krayt dragons were large, carnivorous reptiles that hailed from Tatooine, a desert planet in the galaxy's Outer Rim Territories. They came in two subspecies and, despite their fierceness, were hunted for the precious pearls found in their bodies."
-size = 0
+size = 6
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -166,4 +166,4 @@ senses = Array[String](["darkvision 120ft", "passive perception 21"])
 languages = Array[String](["â€”"])
 challengeRating = "23"
 experiencePoints = 0
-behaviors = Array[ExtResource("1_2o32s")]([SubResource("Resource_il1uu"), SubResource("Resource_wmooi"), SubResource("Resource_juk6g"), SubResource("Resource_rjdtb"), SubResource("Resource_mvbp0"), SubResource("Resource_u3h0l"), SubResource("Resource_slwlp"), SubResource("Resource_rr73j"), SubResource("Resource_08byu")])
+behaviors = Array[ExtResource("1_c62fq")]([SubResource("Resource_a2tyj"), SubResource("Resource_q75ld"), SubResource("Resource_hajea"), SubResource("Resource_fke7g"), SubResource("Resource_d4v3b"), SubResource("Resource_uj7ha"), SubResource("Resource_iuj5s"), SubResource("Resource_6xiui"), SubResource("Resource_kcu62")])

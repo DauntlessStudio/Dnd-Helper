@@ -1,25 +1,25 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_s6l13"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cyc02"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_82hsu"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_d0a4b"]
 
-[sub_resource type="Resource" id="Resource_5bcn0"]
-script = ExtResource("1_s6l13")
+[sub_resource type="Resource" id="Resource_ivb2q"]
+script = ExtResource("1_82hsu")
 name = "Nimble Escape"
 monsterBehaviorType = 0
 description = " Hide action as a bonus action on each of its turns.  The jawa can take the Disengage or"
 descriptionWithLinks = " Hide action as a bonus action on each of its turns.  The jawa can take the Disengage or"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_r8ria"]
-script = ExtResource("1_s6l13")
+[sub_resource type="Resource" id="Resource_j557g"]
+script = ExtResource("1_82hsu")
 name = "Tech-Casting"
 monsterBehaviorType = 0
 description = "tech-casting ability is Inteligence (save DC 12, +4 to hit with power attacks). The jawa has 6 tech points and knows the following powers: At will: electroshock, mending, on/off 1st level: oil slick, overload, repair droid  The jawa is a 1st-level tech-caster. Its"
@@ -34,22 +34,22 @@ At will: [url=electroshock]electroshock[/url], [url=mending]mending[/url], [url=
 1st level: [url=oil_slick]oil slick[/url], [url=overload]overload[/url], [url=repair_droid]repair droid[/url]"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gohid"]
-script = ExtResource("1_s6l13")
+[sub_resource type="Resource" id="Resource_i8prj"]
+script = ExtResource("1_82hsu")
 name = "Grovel, Cower, and Beg"
 monsterBehaviorType = 0
 description = " The jawa cowers pathetically to distract nearby foes. Until the end of its next turn, its allies gain advantage on attack rolls against any target within 10 feet of the jawa."
 descriptionWithLinks = " The jawa cowers pathetically to distract nearby foes. Until the end of its next turn, its allies gain advantage on attack rolls against any target within 10 feet of the jawa."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -57,11 +57,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_cyc02")
+script = ExtResource("2_d0a4b")
 name = "Jawa Tinkerer"
 flavorText = ""
 sectionText = "Jawas were a sentient species of meter-tall humanoids native to the desert world of Tatooine. Jawas are thought by some to be giant rodents or devolved humans. Jawas had a musky, animal odor akin to a fraternity of wet rats.Jawas were a communal species who spent most of their life devoted to scavenging the deserts in search of any scrap metal, droid, or mechanical part left behind from millennia of star travel and technological advancement, where the dry climate of Tatooine preserved almost all debris. They had a reputation for swindling and for selling hastily refurbished equipment and faulty droids.Each clan family had distinct territories for living and scavenging. Each clan was led by a Clan-Chief, who was male. However the overall operation of the Jawa clan was overseen by a female Shaman. A female Jawa became a shaman by either possessing some kind of Force ability with which to perform magic, overcoming an illness accompanied by a hallucinatory vision or was chosen and trained as the successor to the current Shaman."
-size = 0
+size = 2
 types = Array[String](["humanoid"])
 alignment = "chaotic balanced"
 armorType = "None"
@@ -84,4 +84,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 10"])
 languages = Array[String](["Jawaese", "underst", "s but doesn't speak Galactic Basic"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_s6l13")]([SubResource("Resource_5bcn0"), SubResource("Resource_r8ria"), SubResource("Resource_gohid")])
+behaviors = Array[ExtResource("1_82hsu")]([SubResource("Resource_ivb2q"), SubResource("Resource_j557g"), SubResource("Resource_i8prj")])

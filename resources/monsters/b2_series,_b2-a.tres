@@ -1,77 +1,77 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_apjk6"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_vwdn4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_l7hy0"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_i4uyu"]
 
-[sub_resource type="Resource" id="Resource_ab1or"]
-script = ExtResource("1_apjk6")
+[sub_resource type="Resource" id="Resource_bpncl"]
+script = ExtResource("1_l7hy0")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qgjh4"]
-script = ExtResource("1_apjk6")
+[sub_resource type="Resource" id="Resource_05hxm"]
+script = ExtResource("1_l7hy0")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The super battle droid makes two weapon attacks with its strike or wrist blaster."
 descriptionWithLinks = " The super battle droid makes two weapon attacks with its strike or wrist blaster."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_c43vl"]
-script = ExtResource("1_apjk6")
+[sub_resource type="Resource" id="Resource_4vh3c"]
+script = ExtResource("1_l7hy0")
 name = "Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 3
 numberOfTargets = "one target."
 damage = 3
 damageRoll = "1d4+1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_iqv1o"]
-script = ExtResource("1_apjk6")
+[sub_resource type="Resource" id="Resource_ly3k3"]
+script = ExtResource("1_l7hy0")
 name = "Wrist Blaster"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 60/240 ft."
+attackRange = "range 60/240 ft."
 attackBonus = 5
 numberOfTargets = "one target."
 damage = 6
 damageRoll = "1d6+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_3nqgf"]
-script = ExtResource("1_apjk6")
+[sub_resource type="Resource" id="Resource_nwefy"]
+script = ExtResource("1_l7hy0")
 name = "Wrist Blaster Volley"
 monsterBehaviorType = 0
 description = " The super battle droid sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 13 Dexterity saving throw, taking normal weapon damage on a failed save."
 descriptionWithLinks = " The super battle droid sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 13 Dexterity saving throw, taking normal weapon damage on a failed save."
 attackType = 0
 restrictions = "Recharge 6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -79,11 +79,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_vwdn4")
+script = ExtResource("2_i4uyu")
 name = "B2 Series, B2-A"
 flavorText = "B2 super battle droids were an advanced battle droid used by the Confederacy of Independent Systems during the Clone Wars. Like the updated B1s used by the Confederacy, they did not require a command system to operate, which gave the droids limited independence. Another improvement was their thick armor casing, which contained their fragile sensors. However, B2s were designed with simple processors, limiting their ability to formulate strategies. As a result, they relied on organic commanders or tactical droids in order to effectively operate. The B2 was much stronger than the B1s, with enough strength to lift a clone trooper off the ground as seen at the Battle of Teth. The B2-HA super battle droid was a variant of the B2 equipped with a cannon arm that could fire homing rockets."
 sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
-size = 0
+size = 3
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -106,4 +106,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 11"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_apjk6")]([SubResource("Resource_ab1or"), SubResource("Resource_qgjh4"), SubResource("Resource_c43vl"), SubResource("Resource_iqv1o"), SubResource("Resource_3nqgf")])
+behaviors = Array[ExtResource("1_l7hy0")]([SubResource("Resource_bpncl"), SubResource("Resource_05hxm"), SubResource("Resource_4vh3c"), SubResource("Resource_ly3k3"), SubResource("Resource_nwefy")])

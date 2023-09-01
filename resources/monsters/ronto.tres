@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xc44k"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_myati"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_655kk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bnc46"]
 
-[sub_resource type="Resource" id="Resource_pwm6a"]
-script = ExtResource("1_xc44k")
+[sub_resource type="Resource" id="Resource_8yndj"]
+script = ExtResource("1_655kk")
 name = "Trampling Charge"
 monsterBehaviorType = 0
 description = " If the Ronto moves at least 20 feet straight toward a creature and then hits it with a Ram attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the Ronto can make one stomp attack against it as a bonus action."
 descriptionWithLinks = " If the Ronto moves at least 20 feet straight toward a creature and then hits it with a Ram attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the Ronto can make one stomp attack against it as a bonus action."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iih2t"]
-script = ExtResource("1_xc44k")
+[sub_resource type="Resource" id="Resource_j5ayk"]
+script = ExtResource("1_655kk")
 name = "Slam"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "one target."
 damage = 19
 damageRoll = "3d8 + 6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_5wgh3"]
-script = ExtResource("1_xc44k")
+[sub_resource type="Resource" id="Resource_dxf13"]
+script = ExtResource("1_655kk")
 name = "Stomp"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 22 (3d10 + 6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 22 (3d10 + 6) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "one prone creature."
 damage = 22
@@ -49,11 +49,11 @@ damageRoll = "3d10 + 6"
 damageType = 7
 
 [resource]
-script = ExtResource("2_myati")
+script = ExtResource("2_bnc46")
 name = "Ronto"
 flavorText = ""
 sectionText = "Ronto are large, quadruped mammals that are commonly used as beasts of burden by the Jawas of Tatooine. They are known for their loyalty and strength, being able to carry hundreds of kilograms of weight. Like the native dewbacks of Tatooine, ronto are easy to train and become quite fond of their masters, whose faces they associat with food. They are large enough to frighten off Tusken Raiders, though they are easily spooked by machines, such as speeder bikes. "
-size = 0
+size = 5
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 30 ft.", "passive perception 10"])
 languages = Array[String](["â€”"])
 challengeRating = "4"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_xc44k")]([SubResource("Resource_pwm6a"), SubResource("Resource_iih2t"), SubResource("Resource_5wgh3")])
+behaviors = Array[ExtResource("1_655kk")]([SubResource("Resource_8yndj"), SubResource("Resource_j5ayk"), SubResource("Resource_dxf13")])

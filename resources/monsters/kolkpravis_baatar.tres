@@ -1,62 +1,62 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_yy654"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8eqbt"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i3i54"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_skuqj"]
 
-[sub_resource type="Resource" id="Resource_quehr"]
-script = ExtResource("1_yy654")
+[sub_resource type="Resource" id="Resource_nnfud"]
+script = ExtResource("1_i3i54")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Kolkpravis Baatar makes two attacks with its Greater Lig Sword or its Shoni Spear."
 descriptionWithLinks = " The Kolkpravis Baatar makes two attacks with its Greater Lig Sword or its Shoni Spear."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gmxvs"]
-script = ExtResource("1_yy654")
+[sub_resource type="Resource" id="Resource_ajb72"]
+script = ExtResource("1_i3i54")
 name = "Greater Lig Sword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit 12 (1d8 + 4 plus 1d8) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit 12 (1d8 + 4 plus 1d8) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft"
+attackRange = "reach 5 ft"
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 12
 damageRoll = "1d8 + 4 plus 1d8"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_0x4w5"]
-script = ExtResource("1_yy654")
+[sub_resource type="Resource" id="Resource_sl721"]
+script = ExtResource("1_i3i54")
 name = "Shoni Spear"
 monsterBehaviorType = 0
 description = " Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60, one target. Hit 11 (1d6 + 4 plus 1d8) kinetic damage."
 descriptionWithLinks = " Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60, one target. Hit 11 (1d6 + 4 plus 1d8) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft. or range 20/60"
+attackRange = "reach 5 ft. or range 20/60"
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 11
 damageRoll = "1d6 + 4 plus 1d8"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_jf4j4"]
-script = ExtResource("1_yy654")
+[sub_resource type="Resource" id="Resource_i75sd"]
+script = ExtResource("1_i3i54")
 name = "Leadership"
 monsterBehaviorType = 0
 description = " For 1 minute, the Baatar can utter a special command or warning whenever a nonhostile creature that it can see within 30 feetof it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Baatar. A creature can benefit from only one Leadership die at a time. This effect ends if the Baatar is incapacitated."
 descriptionWithLinks = " For 1 minute, the Baatar can utter a special command or warning whenever a nonhostile creature that it can see within 30 feetof it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Baatar. A creature can benefit from only one Leadership die at a time. This effect ends if the Baatar is incapacitated."
 attackType = 0
 restrictions = "Recharges after a Short or Long Rest"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -64,11 +64,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_8eqbt")
+script = ExtResource("2_skuqj")
 name = "Kolkpravis Baatar"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "lawful balanced"
 armorType = "powered battle armor"
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60ft", "passive Perception 10"])
 languages = Array[String](["Kaleesh", "Galactic Basic"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_yy654")]([SubResource("Resource_quehr"), SubResource("Resource_gmxvs"), SubResource("Resource_0x4w5"), SubResource("Resource_jf4j4")])
+behaviors = Array[ExtResource("1_i3i54")]([SubResource("Resource_nnfud"), SubResource("Resource_ajb72"), SubResource("Resource_sl721"), SubResource("Resource_i75sd")])

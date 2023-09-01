@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_a8lqu"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_k84d6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_bdpjo"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_jxctw"]
 
-[sub_resource type="Resource" id="Resource_qw4vi"]
-script = ExtResource("1_a8lqu")
+[sub_resource type="Resource" id="Resource_k380q"]
+script = ExtResource("1_bdpjo")
 name = "Distress Spores"
 monsterBehaviorType = 0
 description = " When the spider takes damage, all other spiders within 240 feet of it can sense its pain."
 descriptionWithLinks = " When the spider takes damage, all other spiders within 240 feet of it can sense its pain."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_b21i8"]
-script = ExtResource("1_a8lqu")
+[sub_resource type="Resource" id="Resource_m33t1"]
+script = ExtResource("1_bdpjo")
 name = "False Appearance"
 monsterBehaviorType = 0
 description = " While the spider remains motionless, it is indistinguishable from a normal gnarltree."
 descriptionWithLinks = " While the spider remains motionless, it is indistinguishable from a normal gnarltree."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_q2n6h"]
-script = ExtResource("1_a8lqu")
+[sub_resource type="Resource" id="Resource_bxy75"]
+script = ExtResource("1_bdpjo")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The spider makes two slam attacks."
 descriptionWithLinks = " The spider makes two slam attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qmyn6"]
-script = ExtResource("1_a8lqu")
+[sub_resource type="Resource" id="Resource_xwla6"]
+script = ExtResource("1_bdpjo")
 name = "Slam"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 10 ft."
+attackRange = "reach 10 ft."
 attackBonus = 7
 numberOfTargets = "one target."
 damage = 13
 damageRoll = "2d8 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_r307a"]
-script = ExtResource("1_a8lqu")
+[sub_resource type="Resource" id="Resource_s548k"]
+script = ExtResource("1_bdpjo")
 name = "Pacifying Spores"
 monsterBehaviorType = 0
 description = " The spider ejects spores in 15-foot cone. All creatures in the area must succeed on a DC 14 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 descriptionWithLinks = " The spider ejects spores in 15-foot cone. All creatures in the area must succeed on a DC 14 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 attackType = 0
 restrictions = "3/Day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_eqcqn"]
-script = ExtResource("1_a8lqu")
+[sub_resource type="Resource" id="Resource_4korf"]
+script = ExtResource("1_bdpjo")
 name = "Stinger"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) kinetic damage, and the target must make a DC 15 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) kinetic damage, and the target must make a DC 15 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -94,11 +94,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_k84d6")
+script = ExtResource("2_jxctw")
 name = "Knobby White Spider"
 flavorText = ""
 sectionText = "The Knobby white spider was a large landspeeder-sized arachnid-like organism native to the swamp world of Dagobah.In addition to the very large ones, there are also some smaller, knee-heigh spiderlings.***Appearance.*** It had a large, lumpy body with a bloated, bulbous head, eight gnarled legs and one large stinger used to capture and sedate its prey.***Biology.*** One of the most bizarre organisms on Dagobah, the knobby white spider was in fact a mobile root that was part of the gnarltree's life cycle. Composed primarily of calcified wood, it would break free of its parent tree to roam the swamps and devour animals. After gathering enough nutrients, the spider would find a clear spot to anchor its legs, and if it survived that period, it would eventually transform into roots that allow the spider to grow into a towering tree. During this period it was vulnerable to bogwings and jubba birds."
-size = 0
+size = 4
 types = Array[String](["plant"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -121,4 +121,4 @@ senses = Array[String](["blindsight 60 ft. (blind beyond this radius)", "passive
 languages = Array[String](["ï¿½"])
 challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_a8lqu")]([SubResource("Resource_qw4vi"), SubResource("Resource_b21i8"), SubResource("Resource_q2n6h"), SubResource("Resource_qmyn6"), SubResource("Resource_r307a"), SubResource("Resource_eqcqn")])
+behaviors = Array[ExtResource("1_bdpjo")]([SubResource("Resource_k380q"), SubResource("Resource_m33t1"), SubResource("Resource_bxy75"), SubResource("Resource_xwla6"), SubResource("Resource_s548k"), SubResource("Resource_4korf")])

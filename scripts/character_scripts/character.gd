@@ -1,7 +1,7 @@
 class_name Character
 extends Resource
 
-enum sizeValues {Tiny, Small, Medium, Large, Huge, Gargantuan}
+enum sizeValues {Unknown, Tiny, Small, Medium, Large, Huge, Gargantuan}
 enum damageTypeValues {Unknown, Acid, Cold, Energy, Fire, Force, Ion, Kinetic, Lightning, Necrotic, Poison, Psychic, Sonic}
 @export var name: String
 @export var flavorText: String

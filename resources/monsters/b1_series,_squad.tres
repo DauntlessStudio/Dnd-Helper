@@ -1,107 +1,107 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_uej8i"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ay6ah"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1xlpg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_sc641"]
 
-[sub_resource type="Resource" id="Resource_o0wyl"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_r0je6"]
+script = ExtResource("1_1xlpg")
 name = "Battle Droid Swarm"
 monsterBehaviorType = 0
 description = " When an ally of the battle droid hits a hostile creature that it can see with a weapon attack, the battle droid can use its reaction to make one weapon attack, with disadvantage, against that creature."
 descriptionWithLinks = " When an ally of the battle droid hits a hostile creature that it can see with a weapon attack, the battle droid can use its reaction to make one weapon attack, with disadvantage, against that creature."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_b73i5"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_q4i6m"]
+script = ExtResource("1_1xlpg")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5ehcb"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_tm28v"]
+script = ExtResource("1_1xlpg")
 name = "Reactive"
 monsterBehaviorType = 0
 description = " The squad can take one reaction each turn."
 descriptionWithLinks = " The squad can take one reaction each turn."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m6gqq"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_iqnc2"]
+script = ExtResource("1_1xlpg")
 name = "Squad"
 monsterBehaviorType = 0
 description = " The squad can occupy another creature's space and vice versa, and can move through openings large enough for a Medium droid. The squad is immune to any power or effect that would alter its form."
 descriptionWithLinks = " The squad can occupy another creature's space and vice versa, and can move through openings large enough for a Medium droid. The squad is immune to any power or effect that would alter its form."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yaxyy"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_0u5qt"]
+script = ExtResource("1_1xlpg")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The squad makes four blaster rifle attacks, or two blaster rifle attacks if it has half its hit points or fewer."
 descriptionWithLinks = " The squad makes four blaster rifle attacks, or two blaster rifle attacks if it has half its hit points or fewer."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1xkjl"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_oejqn"]
+script = ExtResource("1_1xlpg")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 6 (1d8+2) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 6 (1d8+2) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 100/400 ft."
+attackRange = "range 100/400 ft."
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 6
 damageRoll = "1d8+2"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_17hxl"]
-script = ExtResource("1_uej8i")
+[sub_resource type="Resource" id="Resource_j3alx"]
+script = ExtResource("1_1xlpg")
 name = "Massed Fire"
 monsterBehaviorType = 0
 description = " The squad fires en masse at a point within 150 feetEach creature of the squad's choice in a 10-foot-radius sphere centered on that point must make a DC 13 Dexterity saving throw. On a failed save, a creature takes 36 (8d8) energy damage, or 18 (4d8) energy damage if the squad has half its hit points or fewer. On a successful save, it takes half as much damage."
 descriptionWithLinks = " The squad fires en masse at a point within 150 feetEach creature of the squad's choice in a 10-foot-radius sphere centered on that point must make a DC 13 Dexterity saving throw. On a failed save, a creature takes 36 (8d8) energy damage, or 18 (4d8) energy damage if the squad has half its hit points or fewer. On a successful save, it takes half as much damage."
 attackType = 0
 restrictions = ""
-range = "a creature takes 36 (8d8) energy damage"
+attackRange = "a creature takes 36 (8d8) energy damage"
 attackBonus = 150
 numberOfTargets = "or 18 (4d8) energy damage if the squad has half its hit points or fewer. On a successful save"
 damage = 0
@@ -109,11 +109,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_ay6ah")
+script = ExtResource("2_sc641")
 name = "B1 Series, Squad"
 flavorText = "B1 battle droids, also referred to as standard battle droids, are the most widely-used battle droids manufactured by Baktoid Combat Automata and Baktoid Armor Workshop and were the successor to the OOM-series battle droids. The B1 battle droid sees extensive service as the mainlines soldiers due to their cheap, mass produced nature. The B1-X model serves as an officer unit.***History.*** Early versions of the model required the use of a Central Control Computer, but despite these weaknesses they saw extensive service as the mainlines soldier of the Trade Federation's mechanized droid army.  Despite their limitations and despite battle droids being outlawed under the Empire, B1 battle droids continued to see use through Separatist holdouts and the black market during the Imperial Era."
 sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
-size = 0
+size = 5
 types = Array[String](["swarm of Medium droids"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -136,4 +136,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_uej8i")]([SubResource("Resource_o0wyl"), SubResource("Resource_b73i5"), SubResource("Resource_5ehcb"), SubResource("Resource_m6gqq"), SubResource("Resource_yaxyy"), SubResource("Resource_1xkjl"), SubResource("Resource_17hxl")])
+behaviors = Array[ExtResource("1_1xlpg")]([SubResource("Resource_r0je6"), SubResource("Resource_q4i6m"), SubResource("Resource_tm28v"), SubResource("Resource_iqnc2"), SubResource("Resource_0u5qt"), SubResource("Resource_oejqn"), SubResource("Resource_j3alx")])

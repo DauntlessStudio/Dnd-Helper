@@ -1,32 +1,32 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ttbdr"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1hcml"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_o5pkp"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2a8kj"]
 
-[sub_resource type="Resource" id="Resource_xji6u"]
-script = ExtResource("1_ttbdr")
+[sub_resource type="Resource" id="Resource_luwfm"]
+script = ExtResource("1_o5pkp")
 name = "Barbs"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +9 to hit, reach 0 ft., one creature. Hit: 15 (4d4-1) kinetic damage, and the target must succeed on a DC 12 Constitution saving throw or take 2 poison damage and become paralyzed."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 0 ft., one creature. Hit: 15 (4d4-1) kinetic damage, and the target must succeed on a DC 12 Constitution saving throw or take 2 poison damage and become paralyzed."
 attackType = 0
 restrictions = "swarm has more than half HP"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2rpgb"]
-script = ExtResource("1_ttbdr")
+[sub_resource type="Resource" id="Resource_1gn0v"]
+script = ExtResource("1_o5pkp")
 name = "Barbs"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +9 to hit, reach 0 ft., one creature. Hit: 7 (2d4-1) kinetic damage, and the target must succeed on a DC 12 Constitution saving throw or take 2 poison damage and become paralyzed."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 0 ft., one creature. Hit: 7 (2d4-1) kinetic damage, and the target must succeed on a DC 12 Constitution saving throw or take 2 poison damage and become paralyzed."
 attackType = 0
 restrictions = "swarm has half HP or less"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -34,11 +34,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_1hcml")
+script = ExtResource("2_2a8kj")
 name = "Pelko Bug Swarm"
 flavorText = ""
 sectionText = "Pelko bugs are small creatures that are covered in millions of microscopic barbs that deliver a paralytic, blistering toxin which can penetrate armor. They live only beneath sands of the Valley of the Dark Lords on Korriban, and are attracted to Force-sensitives. They stalk and swarm their prey in the darkness. The bug's attunement to the Force allows them to determine if a creature is suitable prey. The barbs are used in training sabers at the Sith Academy because of the toxin's effects, which mimick the effects of losing a limb to a lightsaber."
-size = 0
+size = 4
 types = Array[String](["swarm of Tiny beasts"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -61,4 +61,4 @@ senses = Array[String](["darkvision 30ft", "passive Perception 10"])
 languages = Array[String](["â€”"])
 challengeRating = "3"
 experiencePoints = 0
-behaviors = Array[ExtResource("1_ttbdr")]([SubResource("Resource_xji6u"), SubResource("Resource_2rpgb")])
+behaviors = Array[ExtResource("1_o5pkp")]([SubResource("Resource_luwfm"), SubResource("Resource_1gn0v")])

@@ -1,55 +1,55 @@
 [gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1l64y"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_oabss"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gh4ek"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_x5rco"]
 
-[sub_resource type="Resource" id="Resource_1ior0"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_vqq38"]
+script = ExtResource("1_gh4ek")
 name = "Space-borne"
 monsterBehaviorType = 0
 description = " The starweird can survive in the vacuum of space."
 descriptionWithLinks = " The starweird can survive in the vacuum of space."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xgolu"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_rjfsj"]
+script = ExtResource("1_gh4ek")
 name = "Devil's Sight"
 monsterBehaviorType = 0
 description = " Force and tech created darkness does not impede the starweird's darkvision."
 descriptionWithLinks = " Force and tech created darkness does not impede the starweird's darkvision."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_622gl"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_bmh5i"]
+script = ExtResource("1_gh4ek")
 name = "Force Resistance"
 monsterBehaviorType = 0
 description = " The starweird has advantage on saving throws against force powers."
 descriptionWithLinks = " The starweird has advantage on saving throws against force powers."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vio7i"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_td2mo"]
+script = ExtResource("1_gh4ek")
 name = "Forcecasting"
 monsterBehaviorType = 0
 description = " At-will: denounce, force push/pull, shock     1st-level: curse, sap vitality, sense force   2nd-level: drain vitality, force sight    3rd-level: choke, force lightning     4th-level: drain life     The starweird is a 7th-level forcecaster. Its forcecasting ability is Wisdom (power save DC 15, +7 to hit with force attacks) and it has 31 force points. The starweird knows the following force powers:"
@@ -66,67 +66,67 @@ descriptionWithLinks = " Forcecasting. The starweird is a 7th-level forcecaster.
  4th-level: [url=drain_life]drain life[/url]"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jlcli"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_1d6ww"]
+script = ExtResource("1_gh4ek")
 name = "Phase Shift"
 monsterBehaviorType = 0
 description = " The starweird can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) kinetic damage if it ends its turn inside an object."
 descriptionWithLinks = " The starweird can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) kinetic damage if it ends its turn inside an object."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0gmnl"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_j4j2a"]
+script = ExtResource("1_gh4ek")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = "  The starweird can make two claw attacks."
 descriptionWithLinks = "  The starweird can make two claw attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_v6kkx"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_1iby7"]
+script = ExtResource("1_gh4ek")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) kinetic damage and 3 (1d6) necrotic damage."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) kinetic damage and 3 (1d6) necrotic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 5
 damageRoll = "1d6 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_avdit"]
-script = ExtResource("1_1l64y")
+[sub_resource type="Resource" id="Resource_4fpjd"]
+script = ExtResource("1_gh4ek")
 name = "Telepathic Scream"
 monsterBehaviorType = 0
 description = " The starweird releases a terrifying scream. Each creature of the starweird's choice that is within 30 feet of the starweird and aware of it must succeed on a DC 15 Wisdom saving throw. On a failure, a creature takes 21 (6d6) psychic damage plus 21 (6d6) necrotic damage and is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself. On a success, a creature takes half damage and is not frightened."
 descriptionWithLinks = " The starweird releases a terrifying scream. Each creature of the starweird's choice that is within 30 feet of the starweird and aware of it must succeed on a DC 15 Wisdom saving throw. On a failure, a creature takes 21 (6d6) psychic damage plus 21 (6d6) necrotic damage and is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself. On a success, a creature takes half damage and is not frightened."
 attackType = 0
 restrictions = "1/Day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -134,11 +134,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_oabss")
+script = ExtResource("2_x5rco")
 name = "Starweird"
 flavorText = ""
 sectionText = "Starweirds are incorporeal, humanoid, Force-using creatures found only in the vacuum of space. ***Biology and Appearance.*** They are tall and extremely gaunt, wearing ephemeral rags that hang from their arms. Starweirds have long, wild white hair that floats around their heads, ignoring gravity. The creatures have pale skin and their faces are desiccated. Many witnesses state that the creature's face somewhat resembles their own. Starweirds each have a large, toothy mouth and eyes that glow. Their arms are bony and end in hands with three large, sharp, black talons. The species' incorporeal nature makes it possible for the creatures to resist conventional attacks and pass through solid objects, although force fields still stop the creatures. They are also fully affected by the use of the Force. Starweirds hover or fly silently instead of walking. While fairly intelligent, the creatures do not communicate and had no known language. They have no known ecological role, and after dying, a starweird leaves no traces of itself.***Behavior.*** Starweirds may appear to spacers repairing their damaged starship in deep space, or manifest aboard a ship traveling in hyperspace. Upon being spotted, starweirds become enraged and released a loud, piercing telepathic shriek. The creatures are noted for having a particular hatred for Force-sensitives, who they will mindlessly concentrate on killing even if there are other creatures present.Some Jedi hypothesize that they are physical manifestations of the dark side of the Force. However, there is little evidence to supported the theory."
-size = 0
+size = 3
 types = Array[String](["aberration"])
 alignment = "chaotic balanced"
 armorType = "natural armor"
@@ -161,4 +161,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 11"])
 languages = Array[String](["ï¿½"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_1l64y")]([SubResource("Resource_1ior0"), SubResource("Resource_xgolu"), SubResource("Resource_622gl"), SubResource("Resource_vio7i"), SubResource("Resource_jlcli"), SubResource("Resource_0gmnl"), SubResource("Resource_v6kkx"), SubResource("Resource_avdit")])
+behaviors = Array[ExtResource("1_gh4ek")]([SubResource("Resource_vqq38"), SubResource("Resource_rjfsj"), SubResource("Resource_bmh5i"), SubResource("Resource_td2mo"), SubResource("Resource_1d6ww"), SubResource("Resource_j4j2a"), SubResource("Resource_1iby7"), SubResource("Resource_4fpjd")])

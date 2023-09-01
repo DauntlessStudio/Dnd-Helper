@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_crygq"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_qseog"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_bs46c"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_u00nu"]
 
-[sub_resource type="Resource" id="Resource_6c4t7"]
-script = ExtResource("1_crygq")
+[sub_resource type="Resource" id="Resource_osfhb"]
+script = ExtResource("1_bs46c")
 name = "Siege Monster"
 monsterBehaviorType = 0
 description = " The rancor deals double damage to objects and structures."
 descriptionWithLinks = " The rancor deals double damage to objects and structures."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cp5p3"]
-script = ExtResource("1_crygq")
+[sub_resource type="Resource" id="Resource_ivpdf"]
+script = ExtResource("1_bs46c")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = "instead of its bite.   The rancor makes three attacks: two with its claws, and one with its bite. It can use its swallow"
 descriptionWithLinks = "instead of its bite.   The rancor makes three attacks: two with its claws, and one with its bite. It can use its swallow"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kee11"]
-script = ExtResource("1_crygq")
+[sub_resource type="Resource" id="Resource_6gp4m"]
+script = ExtResource("1_bs46c")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit 15 (2d8+6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit 15 (2d8+6) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 10 ft."
+attackRange = "reach 10 ft."
 attackBonus = 10
 numberOfTargets = "one target."
 damage = 15
 damageRoll = "2d8+6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_gugt6"]
-script = ExtResource("1_crygq")
+[sub_resource type="Resource" id="Resource_22oue"]
+script = ExtResource("1_bs46c")
 name = "Bite"
 monsterBehaviorType = 0
 description = "a creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the rancor can't bite another target.  Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit 19 (2d12+6) kinetic damage. If the target is"
 descriptionWithLinks = "a creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the rancor can't bite another target.  Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit 19 (2d12+6) kinetic damage. If the target is"
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 10
 numberOfTargets = "one target."
 damage = 19
 damageRoll = "2d12+6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_i2wdc"]
-script = ExtResource("1_crygq")
+[sub_resource type="Resource" id="Resource_8eeck"]
+script = ExtResource("1_bs46c")
 name = "Throw Boulder"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +10 to hit, reach 60/240 ft., one target. Hit 25 (3d12+6) kinetic damage."
 descriptionWithLinks = " Ranged Weapon Attack: +10 to hit, reach 60/240 ft., one target. Hit 25 (3d12+6) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 60/240 ft."
+attackRange = "reach 60/240 ft."
 attackBonus = 10
 numberOfTargets = "one target."
 damage = 25
 damageRoll = "3d12+6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_r4vvu"]
-script = ExtResource("1_crygq")
+[sub_resource type="Resource" id="Resource_elrvf"]
+script = ExtResource("1_bs46c")
 name = "Swallow"
 monsterBehaviorType = 0
 description = "hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is  blinded and restrained, it has total cover against attacks and other effects outside the rancor, and it takes 21 (6d6)  acid damage at the start of each of the rancor's turns.   If the rancor takes 25 damage or more on a single turn from a creature inside it, the Rancor must succeed on a DC 20  Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space  within 10 feet of the Rancor. If the Rancor dies, a swallowed creature is no longer restrained by it and can escape  from the corpse by using 10 feet of movement, exiting prone.  The rancor makes one bite attack against a Medium or smaller creature it is grappling. If the attack"
 descriptionWithLinks = "hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is  blinded and restrained, it has total cover against attacks and other effects outside the rancor, and it takes 21 (6d6)  acid damage at the start of each of the rancor's turns.   If the rancor takes 25 damage or more on a single turn from a creature inside it, the Rancor must succeed on a DC 20  Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space  within 10 feet of the Rancor. If the Rancor dies, a swallowed creature is no longer restrained by it and can escape  from the corpse by using 10 feet of movement, exiting prone.  The rancor makes one bite attack against a Medium or smaller creature it is grappling. If the attack"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -94,11 +94,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_qseog")
+script = ExtResource("2_u00nu")
 name = "Rancor, Adult"
 flavorText = ""
 sectionText = "Rancors are large carnivorous reptomammals native to the planet of Dathomir.  They are commonly kept as pets by affluent, less-than-reputable types."
-size = 0
+size = 5
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 120 ft.", "passive Perception 14"])
 languages = Array[String](["ï¿½"])
 challengeRating = "12"
 experiencePoints = 8400
-behaviors = Array[ExtResource("1_crygq")]([SubResource("Resource_6c4t7"), SubResource("Resource_cp5p3"), SubResource("Resource_kee11"), SubResource("Resource_gugt6"), SubResource("Resource_i2wdc"), SubResource("Resource_r4vvu")])
+behaviors = Array[ExtResource("1_bs46c")]([SubResource("Resource_osfhb"), SubResource("Resource_ivpdf"), SubResource("Resource_6gp4m"), SubResource("Resource_22oue"), SubResource("Resource_8eeck"), SubResource("Resource_elrvf")])

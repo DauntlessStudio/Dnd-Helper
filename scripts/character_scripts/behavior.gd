@@ -10,7 +10,7 @@ enum damageTypeValues {Unknown, Acid, Cold, Energy, Fire, Force, Ion, Kinetic, L
 @export var descriptionWithLinks: String
 @export var attackType: attackValues
 @export var restrictions: String
-@export var range: String
+@export var attackRange: String
 @export var attackBonus: int
 @export var numberOfTargets: String
 @export var damage: int

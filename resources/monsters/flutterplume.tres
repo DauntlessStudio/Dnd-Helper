@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_u8gmq"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0cn71"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_iwt2g"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_35sex"]
 
-[sub_resource type="Resource" id="Resource_nk2qr"]
-script = ExtResource("1_u8gmq")
+[sub_resource type="Resource" id="Resource_vp0g1"]
+script = ExtResource("1_iwt2g")
 name = "Keen Sight and Smell"
 monsterBehaviorType = 0
 description = " The flutterplume has advantage on Wisdom (Perception) checks that rely on sight or smell."
 descriptionWithLinks = " The flutterplume has advantage on Wisdom (Perception) checks that rely on sight or smell."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ddlty"]
-script = ExtResource("1_u8gmq")
+[sub_resource type="Resource" id="Resource_adriw"]
+script = ExtResource("1_iwt2g")
 name = "Pack Tactics"
 monsterBehaviorType = 0
 description = " The flutterplume has advantage on an attack roll against a creature if at least one of the flutterplume's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The flutterplume has advantage on an attack roll against a creature if at least one of the flutterplume's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xn33h"]
-script = ExtResource("1_u8gmq")
+[sub_resource type="Resource" id="Resource_38vkl"]
+script = ExtResource("1_iwt2g")
 name = "Beak"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: (1d4) kinetic damage"
 descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: (1d4) kinetic damage"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -49,11 +49,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_0cn71")
+script = ExtResource("2_35sex")
 name = "Flutterplume"
 flavorText = ""
 sectionText = "Flutterplumes were feathered carrion-eaters native to the planet of Ord Mantell, but also had a sizable population on Alderaan. The enormous scavenger bird was noted for its impressive hook-like beak and four sets of curled talons that it used to tear apart and consume rotting carcasses. Its beautiful feathers were also valued as good luck charms. An abundant supply of fresh battlefield kills attracted flocks of these carrion eaters and there were stories of wounded men unable to defend them-selves being eaten by the hungry winged predators. Flutterplumes hunted in flocks of three or four, gliding on the thermal currents that blew across the planet"
-size = 0
+size = 3
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
@@ -76,4 +76,4 @@ senses = Array[String](["passive Perception 13"])
 languages = Array[String](["ï¿½"])
 challengeRating = "0"
 experiencePoints = 25
-behaviors = Array[ExtResource("1_u8gmq")]([SubResource("Resource_nk2qr"), SubResource("Resource_ddlty"), SubResource("Resource_xn33h")])
+behaviors = Array[ExtResource("1_iwt2g")]([SubResource("Resource_vp0g1"), SubResource("Resource_adriw"), SubResource("Resource_38vkl")])

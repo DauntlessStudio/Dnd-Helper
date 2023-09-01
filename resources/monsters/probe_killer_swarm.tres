@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_y7cob"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mkhc6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_x78ps"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_l5p0f"]
 
-[sub_resource type="Resource" id="Resource_umx2o"]
-script = ExtResource("1_y7cob")
+[sub_resource type="Resource" id="Resource_caxqr"]
+script = ExtResource("1_x78ps")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The swarm makes 4 leg slash attacks."
 descriptionWithLinks = " The swarm makes 4 leg slash attacks."
 attackType = 0
 restrictions = "swarm has more than half HP"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2vtuw"]
-script = ExtResource("1_y7cob")
+[sub_resource type="Resource" id="Resource_4my1v"]
+script = ExtResource("1_x78ps")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The swarm makes 2 leg slash attacks."
 descriptionWithLinks = " The swarm makes 2 leg slash attacks."
 attackType = 0
 restrictions = "swarm has less than or equal to half HP"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mc6f4"]
-script = ExtResource("1_y7cob")
+[sub_resource type="Resource" id="Resource_dvigf"]
+script = ExtResource("1_x78ps")
 name = "Leg Slash"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 6 (1d4+4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 6 (1d4+4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -49,11 +49,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_mkhc6")
+script = ExtResource("2_l5p0f")
 name = "Probe Killer Swarm"
 flavorText = "The SD-K4 assassin droid, also known as the assassin probe, is a model of assassin droid manufactured by the Techno Union. Used by the Confederacy of Independent Systems during the Clone Wars, it was also referred to as the Separatist assassin probe and Separatist assassin droid.The SD-K4 assassin droid is designed to assassinate targets with high efficiency. Spider-like droids programmed for quiet killing, SD-K4s move quietly on eight razored legs. They are equipped with multiple red photoreceptors for scanning their surroundings. If cornered or destroyed, an SD-K4 can release dozens of smaller probe killers from pores on its head to finish any job the assassin probe started. Probe killers, similar in appearance to their SD-K4 host but on a much smaller scale, lay dormant until the activated. "
 sectionText = "Assassin droids are a type of droid built specifically for the purpose of assassination. These droids generally perform with unflinching loyalty to their masters, but rogue assassin droids are not unknown. Since their missions generally require a far higher degree of independent skill, savvy, and judgment than normally possessed by simple war droids, their programming subroutines, circuitry, and memory cores are of correspondingly higher sophistication.Equipped with an array of weapons, assassin droids are also used as elite infantry when the need for skillful and quickly adaptable soldiers with unquestionable loyalty arises.An inordinate number of assassin droids have achieved sentient independence, including IG-88 and C-3PX, presumably due to the higher level of autonomy incorporated into their processor design. These droids typically fund their independent existences through the use of their innate abilities, often plying their trade as bounty hunters."
-size = 0
+size = 3
 types = Array[String](["swarm of Tiny droids"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 30ft", "passive Perception 11"])
 languages = Array[String](["â€”"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_y7cob")]([SubResource("Resource_umx2o"), SubResource("Resource_2vtuw"), SubResource("Resource_mc6f4")])
+behaviors = Array[ExtResource("1_x78ps")]([SubResource("Resource_caxqr"), SubResource("Resource_4my1v"), SubResource("Resource_dvigf")])

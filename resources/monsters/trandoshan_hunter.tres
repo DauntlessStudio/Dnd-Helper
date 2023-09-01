@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dbfbi"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_t87k4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fqfka"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_jr6vl"]
 
-[sub_resource type="Resource" id="Resource_r5ku3"]
-script = ExtResource("1_dbfbi")
+[sub_resource type="Resource" id="Resource_s6sg3"]
+script = ExtResource("1_fqfka")
 name = "Hunter's Eye"
 monsterBehaviorType = 0
 description = " As a bonus, the tradoshan can add 1d10 to its next attack or damage roll with a blaster weapon."
 descriptionWithLinks = " As a bonus, the tradoshan can add 1d10 to its next attack or damage roll with a blaster weapon."
 attackType = 0
 restrictions = "3/Day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_e1pnn"]
-script = ExtResource("1_dbfbi")
+[sub_resource type="Resource" id="Resource_sj62k"]
+script = ExtResource("1_fqfka")
 name = "Infrared Vision"
 monsterBehaviorType = 0
 description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
 descriptionWithLinks = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1hy54"]
-script = ExtResource("1_dbfbi")
+[sub_resource type="Resource" id="Resource_a27oi"]
+script = ExtResource("1_fqfka")
 name = "Regeneration"
 monsterBehaviorType = 0
 description = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
 descriptionWithLinks = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_k4q1v"]
-script = ExtResource("1_dbfbi")
+[sub_resource type="Resource" id="Resource_ceaha"]
+script = ExtResource("1_fqfka")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trandoshan makes two ranged weapon attacks."
 descriptionWithLinks = " The trandoshan makes two ranged weapon attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8lcwx"]
-script = ExtResource("1_dbfbi")
+[sub_resource type="Resource" id="Resource_t2kxa"]
+script = ExtResource("1_fqfka")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 100/400 ft."
+attackRange = "range 100/400 ft."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 8
 damageRoll = "1d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_3v6eu"]
-script = ExtResource("1_dbfbi")
+[sub_resource type="Resource" id="Resource_d2s15"]
+script = ExtResource("1_fqfka")
 name = "Trandoshan Shortsword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 7
@@ -94,11 +94,11 @@ damageRoll = "1d6 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_t87k4")
+script = ExtResource("2_jr6vl")
 name = "Trandoshan Hunter"
 flavorText = ""
 sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "any dark"
 armorType = "combat suit"
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["Galactic Basic", "Dosh"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_dbfbi")]([SubResource("Resource_r5ku3"), SubResource("Resource_e1pnn"), SubResource("Resource_1hy54"), SubResource("Resource_k4q1v"), SubResource("Resource_8lcwx"), SubResource("Resource_3v6eu")])
+behaviors = Array[ExtResource("1_fqfka")]([SubResource("Resource_s6sg3"), SubResource("Resource_sj62k"), SubResource("Resource_a27oi"), SubResource("Resource_ceaha"), SubResource("Resource_t2kxa"), SubResource("Resource_d2s15")])

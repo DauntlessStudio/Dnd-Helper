@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rqdqq"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_pwh66"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jtb4y"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8fwys"]
 
-[sub_resource type="Resource" id="Resource_ux1vs"]
-script = ExtResource("1_rqdqq")
+[sub_resource type="Resource" id="Resource_gr3sj"]
+script = ExtResource("1_jtb4y")
 name = "Trampling Charge"
 monsterBehaviorType = 0
 description = " If the acklay moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 19 Strength saving throw or be knocked prone. If the target is prone, the acklay can make one claw attack against it as a bonus action."
 descriptionWithLinks = " If the acklay moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 19 Strength saving throw or be knocked prone. If the target is prone, the acklay can make one claw attack against it as a bonus action."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ufq17"]
-script = ExtResource("1_rqdqq")
+[sub_resource type="Resource" id="Resource_khe5d"]
+script = ExtResource("1_jtb4y")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) kinetic damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_q2xlg"]
-script = ExtResource("1_rqdqq")
+[sub_resource type="Resource" id="Resource_w51ph"]
+script = ExtResource("1_jtb4y")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 29 (4d10 + 7) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 29 (4d10 + 7) kinetic damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -49,11 +49,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_pwh66")
+script = ExtResource("2_8fwys")
 name = "Acklay, Adult"
 flavorText = ""
 sectionText = "The acklay is a non-sentient mix of crustacean and reptile with amphibious traits that allow it to inhabit the water and land of its homeworld of Vendaxa. The gigantic creature is protected by a hard, shell-like carapace of bony nodules. They walk on six hardened, skin-covered claws, and have grappling hands. Its mouth is filled with razor-sharp teeth, and uses an organ beneath its chin to sense the electricical field given off by its prey, which it then spears with its pointed legs. The species has stretchy stomachs and three eyes."
-size = 0
+size = 5
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -76,4 +76,4 @@ senses = Array[String](["passive perception 10"])
 languages = Array[String](["ï¿½"])
 challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_rqdqq")]([SubResource("Resource_ux1vs"), SubResource("Resource_ufq17"), SubResource("Resource_q2xlg")])
+behaviors = Array[ExtResource("1_jtb4y")]([SubResource("Resource_gr3sj"), SubResource("Resource_khe5d"), SubResource("Resource_w51ph")])

@@ -1,62 +1,62 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_q306j"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r1gdv"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_17dj2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ui153"]
 
-[sub_resource type="Resource" id="Resource_cg77q"]
-script = ExtResource("1_q306j")
+[sub_resource type="Resource" id="Resource_uff4v"]
+script = ExtResource("1_17dj2")
 name = "Keen Sight and Smell"
 monsterBehaviorType = 0
 description = " The tusk cat has advantage on Wisdom (Perception) checks that rely on sight and smell."
 descriptionWithLinks = " The tusk cat has advantage on Wisdom (Perception) checks that rely on sight and smell."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bsrls"]
-script = ExtResource("1_q306j")
+[sub_resource type="Resource" id="Resource_uoyj0"]
+script = ExtResource("1_17dj2")
 name = "Trampling Charge"
 monsterBehaviorType = 0
 description = " If the tusk cat moves at least 20 feet straight toward a creature and then hits it with a tusk attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the tusk cat can make one hooves attack against it as a bonus action."
 descriptionWithLinks = " If the tusk cat moves at least 20 feet straight toward a creature and then hits it with a tusk attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the tusk cat can make one hooves attack against it as a bonus action."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uvug7"]
-script = ExtResource("1_q306j")
+[sub_resource type="Resource" id="Resource_5hmux"]
+script = ExtResource("1_17dj2")
 name = "Hooves"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "one target."
 damage = 9
 damageRoll = "1d10 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_skp5m"]
-script = ExtResource("1_q306j")
+[sub_resource type="Resource" id="Resource_t87be"]
+script = ExtResource("1_17dj2")
 name = "Tusks"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "one target."
 damage = 13
@@ -64,11 +64,11 @@ damageRoll = "2d8 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_r1gdv")
+script = ExtResource("2_ui153")
 name = "Tusk Cat"
 flavorText = "The tusk cat is a fawn-colored feline predator found on Naboo and its moon Rori. Domesticated tusk cats are naturally protective and gentle towards children, and they are often used as mounts for shepherds and the military."
 sectionText = "Ysalamiri are furry, lizard-like tree-dwellers about 2 feet in length, native to the planet Myrkr, and most known for their ability to create a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances ï¿½ sometimes by kilometers.Ysalamiri sink their claws into the Olbio trees on which they live and draw nutrients. It is very difficult to remove a ysalamir from its tree without killing it, although this has been known to happen. Some few have developed back harness or nutrient frames which allow transport of the ysalamiri and, therefore, their Force repelling bubble. Ysalamiri do not actually negate the Force; since all existence is infused with Force energy, this would not be possible. Rather, they project a bubble inside which users are unable to exert any influence over the Force. A single bubble measures a few meters in diameter; large groups of ysalamiri could extend their collective bubble by kilometers, but only in great numbers.Miriskin was a commodity  made from ysalamir skin."
-size = 0
+size = 4
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["ï¿½"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_q306j")]([SubResource("Resource_cg77q"), SubResource("Resource_bsrls"), SubResource("Resource_uvug7"), SubResource("Resource_skp5m")])
+behaviors = Array[ExtResource("1_17dj2")]([SubResource("Resource_uff4v"), SubResource("Resource_uoyj0"), SubResource("Resource_5hmux"), SubResource("Resource_t87be")])

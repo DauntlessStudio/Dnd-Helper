@@ -1,152 +1,152 @@
 [gd_resource type="Resource" script_class="Character" load_steps=13 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8amqv"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6858x"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_wr5if"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r7mbf"]
 
-[sub_resource type="Resource" id="Resource_vhay4"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_5jmq4"]
+script = ExtResource("1_wr5if")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0firk"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_8iuiv"]
+script = ExtResource("1_wr5if")
 name = "Droid Synergy"
 monsterBehaviorType = 0
 description = " Once per turn, the assassin droid can deal an extra 14 (4d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the assassin droid that isn't incapacitated."
 descriptionWithLinks = " Once per turn, the assassin droid can deal an extra 14 (4d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the assassin droid that isn't incapacitated."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jtyjw"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_mtm01"]
+script = ExtResource("1_wr5if")
 name = "Legendary Resistance"
 monsterBehaviorType = 0
 description = " If the assassin droid fails a saving throw, it can choose to succeed instead."
 descriptionWithLinks = " If the assassin droid fails a saving throw, it can choose to succeed instead."
 attackType = 0
 restrictions = "3/Day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_30cic"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_hjh2t"]
+script = ExtResource("1_wr5if")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The assassin droid makes three weapon attacks."
 descriptionWithLinks = " The assassin droid makes three weapon attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_y2n0x"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_bg1kk"]
+script = ExtResource("1_wr5if")
 name = "Blaster Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +9 to hit, range 100/400 ft., one target. Hit: 9 (1d8+5) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +9 to hit, range 100/400 ft., one target. Hit: 9 (1d8+5) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 100/400 ft."
+attackRange = "range 100/400 ft."
 attackBonus = 9
 numberOfTargets = "one target."
 damage = 9
 damageRoll = "1d8+5"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_8m64f"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_3sswq"]
+script = ExtResource("1_wr5if")
 name = "Stock Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 2
 numberOfTargets = "one target."
 damage = 4
 damageRoll = "1d4+2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_xp7so"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_1u7c0"]
+script = ExtResource("1_wr5if")
 name = "Reactive Shield"
 monsterBehaviorType = 0
 description = " Until the start of its next turn, the assassin droid has a +5 bonus to AC. This includes the triggering attack."
 descriptionWithLinks = " Until the start of its next turn, the assassin droid has a +5 bonus to AC. This includes the triggering attack."
 attackType = 0
 restrictions = "1/day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_n6hwe"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_l4f7i"]
+script = ExtResource("1_wr5if")
 name = "Attack"
 monsterBehaviorType = 0
 description = " The assassin droid makes one weapon attack."
 descriptionWithLinks = " The assassin droid makes one weapon attack."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iuiuq"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_kdeoq"]
+script = ExtResource("1_wr5if")
 name = "Detect"
 monsterBehaviorType = 0
 description = " The assassin droid makes a Wisdom (Perception) check."
 descriptionWithLinks = " The assassin droid makes a Wisdom (Perception) check."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qlo8p"]
-script = ExtResource("1_8amqv")
+[sub_resource type="Resource" id="Resource_0sl4c"]
+script = ExtResource("1_wr5if")
 name = "Rocket Boost"
 monsterBehaviorType = 0
 description = " The assassin droid leaps up to 40 feet in any direction. This movement does not provoke opportunity attacks."
 descriptionWithLinks = " The assassin droid leaps up to 40 feet in any direction. This movement does not provoke opportunity attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -154,11 +154,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_6858x")
+script = ExtResource("2_r7mbf")
 name = "HK Series, HK-47"
 flavorText = "The HK series assassin droid, also known as the HK series protocol droid, is a combination of an assassin droid and protocol droid. The series designation stands for \"Hunter Killer,\" befitting their primary functions as assassins. They are manufactured by Czerka Corporation. Their ability to perform the functions of a protocol droid became a major reason for their unmatched lethality, as they could and would often act as normal (if quite sinister looking) protocol droids, thus concealing their true function and allowing them to get closer to intended targets. HK series assassin droids are equipped with an integrated emergency shield and jet pack."
 sectionText = "Assassin droids are a type of droid built specifically for the purpose of assassination. These droids generally perform with unflinching loyalty to their masters, but rogue assassin droids are not unknown. Since their missions generally require a far higher degree of independent skill, savvy, and judgment than normally possessed by simple war droids, their programming subroutines, circuitry, and memory cores are of correspondingly higher sophistication.Equipped with an array of weapons, assassin droids are also used as elite infantry when the need for skillful and quickly adaptable soldiers with unquestionable loyalty arises.An inordinate number of assassin droids have achieved sentient independence, including IG-88 and C-3PX, presumably due to the higher level of autonomy incorporated into their processor design. These droids typically fund their independent existences through the use of their innate abilities, often plying their trade as bounty hunters."
-size = 0
+size = 3
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -181,4 +181,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 17"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_8amqv")]([SubResource("Resource_vhay4"), SubResource("Resource_0firk"), SubResource("Resource_jtyjw"), SubResource("Resource_30cic"), SubResource("Resource_y2n0x"), SubResource("Resource_8m64f"), SubResource("Resource_xp7so"), SubResource("Resource_n6hwe"), SubResource("Resource_iuiuq"), SubResource("Resource_qlo8p")])
+behaviors = Array[ExtResource("1_wr5if")]([SubResource("Resource_5jmq4"), SubResource("Resource_8iuiv"), SubResource("Resource_mtm01"), SubResource("Resource_hjh2t"), SubResource("Resource_bg1kk"), SubResource("Resource_3sswq"), SubResource("Resource_1u7c0"), SubResource("Resource_l4f7i"), SubResource("Resource_kdeoq"), SubResource("Resource_0sl4c")])

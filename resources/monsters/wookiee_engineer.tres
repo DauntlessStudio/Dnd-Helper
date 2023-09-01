@@ -1,40 +1,40 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_wft1q"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1qbo4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_wlmkl"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_kw4v1"]
 
-[sub_resource type="Resource" id="Resource_h2ptd"]
-script = ExtResource("1_wft1q")
+[sub_resource type="Resource" id="Resource_6b4q8"]
+script = ExtResource("1_wlmkl")
 name = "Brute"
 monsterBehaviorType = 0
 description = " A melee weapon does one extra die of damage when the wookiee hits with it (included in the attack)."
 descriptionWithLinks = " A melee weapon does one extra die of damage when the wookiee hits with it (included in the attack)."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ysg0o"]
-script = ExtResource("1_wft1q")
+[sub_resource type="Resource" id="Resource_slimh"]
+script = ExtResource("1_wlmkl")
 name = "Berserk Charge"
 monsterBehaviorType = 0
 description = " If the wookiee surprises a creature and hits it with an attack during the first round of combat, the target takes an extar 7 (2d6) damage from the attack."
 descriptionWithLinks = " If the wookiee surprises a creature and hits it with an attack during the first round of combat, the target takes an extar 7 (2d6) damage from the attack."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vq4m8"]
-script = ExtResource("1_wft1q")
+[sub_resource type="Resource" id="Resource_x3m6e"]
+script = ExtResource("1_wlmkl")
 name = "Tech Casting"
 monsterBehaviorType = 0
 description = " At will: electrical burst, mending, on/off  1st level: element of surprise, kolto pack, repair droid  2nd level: hold droid, overheat  3rd level: enhance weapon, fabricate trap  The wookiee engineer is a 5th level tech caster (tech save DC 13, + 5 to hit with tech attacks).  The wookiee engineer has 23 tech points and knows the following tech powers:"
@@ -49,37 +49,37 @@ descriptionWithLinks = " Tech Casting. The wookiee engineer is a 5th level tech 
  3rd level: [url=enhance_weapon]enhance weapon[/url], [url=fabricate_trap]fabricate trap[/url]"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_o3arv"]
-script = ExtResource("1_wft1q")
+[sub_resource type="Resource" id="Resource_3l230"]
+script = ExtResource("1_wlmkl")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The wookiee engineer makes two melee attacks."
 descriptionWithLinks = " The wookiee engineer makes two melee attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_hmu3k"]
-script = ExtResource("1_wft1q")
+[sub_resource type="Resource" id="Resource_h3cek"]
+script = ExtResource("1_wlmkl")
 name = "Vibromace"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, one target. Hit: 12 (2d10 + 3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, one target. Hit: 12 (2d10 + 3) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "one target. *Hit:* 12 (2d10 + 3) kinetic damage."
+attackRange = "one target. *Hit:* 12 (2d10 + 3) kinetic damage."
 attackBonus = 5
 numberOfTargets = ""
 damage = 12
@@ -87,11 +87,11 @@ damageRoll = "2d10 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_1qbo4")
+script = ExtResource("2_kw4v1")
 name = "Wookiee Engineer"
 flavorText = ""
 sectionText = "Wookiees are a tall species of furry humanoids from the planet Kashyyyk, who grow to a height of nearly three meters. They are covered from head to toe in a thick, shaggy coat of hair with water-shedding properties that notably comes in shades of brown, black, gray, and white. The species has two sexes, female and male. The latter grow long beards in adult life. Wookiee eye color ranges from blue to brown. Wookiees are big eaters, with the average adult requiring 3,500-6,000 calories a day of food.Wookiees have extendable claws which they use for climbing; using them for anything else violates the Wookiee honor code. Despite their fearsome appearance and volatile temperament, Wookiees are regarded as intelligent, sophisticated, loyal and trusting. When angered, Wookiees are known to descend into a berserker rage. Wookiees have a long lifespan, appearing not to age over a span of fifty years. ***History.*** The softening and repeal of anti-slavery laws under the Empire ultimately led to classifying the Wookiees as non-sentient. The Empire enslaved the Wookiees not because they were a meaningful threat to the Empire but because their massive, robust physiology allowed them to work long and hard in extreme conditions. As a result, many Wookiees were forced into slavery building much of the Imperial war machine, sent to be worked to death in the dangerous spice mines of the planet Kessel, or on construction sites such as the Death Star. Numerous Wookiees were bred for use in medical experimentation, and some were used as playthings, hunted for sport, or forced into gladiatorial combat.  Some of these wookiees turned towards darker pursuits after their rough treatment, such as the infamous bounty hunter Black Krrsantan."
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "unaligned"
 armorType = "hide"
@@ -114,4 +114,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["Galactic Basic", "Shyriiwook"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_wft1q")]([SubResource("Resource_h2ptd"), SubResource("Resource_ysg0o"), SubResource("Resource_vq4m8"), SubResource("Resource_o3arv"), SubResource("Resource_hmu3k")])
+behaviors = Array[ExtResource("1_wlmkl")]([SubResource("Resource_6b4q8"), SubResource("Resource_slimh"), SubResource("Resource_x3m6e"), SubResource("Resource_3l230"), SubResource("Resource_h3cek")])

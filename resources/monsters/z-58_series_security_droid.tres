@@ -1,77 +1,77 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_itsby"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_up42p"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0a1aa"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6d2ww"]
 
-[sub_resource type="Resource" id="Resource_qmgg1"]
-script = ExtResource("1_itsby")
+[sub_resource type="Resource" id="Resource_781hp"]
+script = ExtResource("1_0a1aa")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2hrm6"]
-script = ExtResource("1_itsby")
+[sub_resource type="Resource" id="Resource_rudrm"]
+script = ExtResource("1_0a1aa")
 name = "Security Protocol"
 monsterBehaviorType = 0
 description = " The droid comes with proficiency in security and slicer tools."
 descriptionWithLinks = " The droid comes with proficiency in security and slicer tools."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_s3448"]
-script = ExtResource("1_itsby")
+[sub_resource type="Resource" id="Resource_6l0ro"]
+script = ExtResource("1_0a1aa")
 name = "Interfaced Assistance Protocol"
 monsterBehaviorType = 0
 description = " While you are interfaced with this droid via the tracker droid interface tech power, whenever you have advantage on an ability check or attack roll granted by the droid taking the Help action you can reroll one of the dice once."
 descriptionWithLinks = " While you are interfaced with this droid via the tracker droid interface tech power, whenever you have advantage on an ability check or attack roll granted by the droid taking the Help action you can reroll one of the dice once."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_s0te3"]
-script = ExtResource("1_itsby")
+[sub_resource type="Resource" id="Resource_gdatw"]
+script = ExtResource("1_0a1aa")
 name = "Shockprod"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 3
 numberOfTargets = "one target."
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u3jls"]
-script = ExtResource("1_itsby")
+[sub_resource type="Resource" id="Resource_vtp7b"]
+script = ExtResource("1_0a1aa")
 name = "Sentry"
 monsterBehaviorType = 0
 description = " The Security Droid may enter a sentry state, granting the benefits of the alarm tech power to a target creature within 10 feet of the droid at the time of entering the sentry state.  The Security Droid must remain within 60 feet of the warded location or the ability ends."
 descriptionWithLinks = " The Security Droid may enter a sentry state, granting the benefits of the alarm tech power to a target creature within 10 feet of the droid at the time of entering the sentry state.  The Security Droid must remain within 60 feet of the warded location or the ability ends."
 attackType = 0
 restrictions = "1/day"
-range = "granting the benefits of the *alarm* tech power to a target creature within 10 feet of the droid at the time of entering the sentry state.  The Security Droid must remain within 60 feet of the warded location or the ability ends."
+attackRange = "granting the benefits of the *alarm* tech power to a target creature within 10 feet of the droid at the time of entering the sentry state.  The Security Droid must remain within 60 feet of the warded location or the ability ends."
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -79,11 +79,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_up42p")
+script = ExtResource("2_6d2ww")
 name = "Z-58 Series Security Droid"
 flavorText = "The Z-58 series security droid is a floating security droid manufactured by Arakyd Industries that has limited capabilities in technical and physical security."
 sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
-size = 0
+size = 1
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "None"
@@ -106,4 +106,4 @@ senses = Array[String](["Darkvision 120 ft.", "passive Perception 13"])
 languages = Array[String](["â€”"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_itsby")]([SubResource("Resource_qmgg1"), SubResource("Resource_2hrm6"), SubResource("Resource_s3448"), SubResource("Resource_s0te3"), SubResource("Resource_u3jls")])
+behaviors = Array[ExtResource("1_0a1aa")]([SubResource("Resource_781hp"), SubResource("Resource_rudrm"), SubResource("Resource_6l0ro"), SubResource("Resource_gdatw"), SubResource("Resource_vtp7b")])

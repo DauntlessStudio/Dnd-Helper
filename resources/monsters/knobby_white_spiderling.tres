@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_x8p1v"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_v27q4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_c42xs"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_peyj1"]
 
-[sub_resource type="Resource" id="Resource_twc84"]
-script = ExtResource("1_x8p1v")
+[sub_resource type="Resource" id="Resource_g01tw"]
+script = ExtResource("1_c42xs")
 name = "Distress Spores"
 monsterBehaviorType = 0
 description = " When the spider takes damage, all other spiders within 240 feet of it can sense its pain."
 descriptionWithLinks = " When the spider takes damage, all other spiders within 240 feet of it can sense its pain."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8rbqy"]
-script = ExtResource("1_x8p1v")
+[sub_resource type="Resource" id="Resource_ta5ua"]
+script = ExtResource("1_c42xs")
 name = "Slam"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 2
 numberOfTargets = "one target."
 damage = 2
 damageRoll = "1d4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_ojumn"]
-script = ExtResource("1_x8p1v")
+[sub_resource type="Resource" id="Resource_d6n7u"]
+script = ExtResource("1_c42xs")
 name = "Stinger"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 3 (1d6) kinetic damage, and the target must make a DC 14 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 3 (1d6) kinetic damage, and the target must make a DC 14 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -49,11 +49,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_v27q4")
+script = ExtResource("2_peyj1")
 name = "Knobby White Spiderling"
 flavorText = ""
 sectionText = "The Knobby white spider was a large landspeeder-sized arachnid-like organism native to the swamp world of Dagobah.In addition to the very large ones, there are also some smaller, knee-heigh spiderlings.***Appearance.*** It had a large, lumpy body with a bloated, bulbous head, eight gnarled legs and one large stinger used to capture and sedate its prey.***Biology.*** One of the most bizarre organisms on Dagobah, the knobby white spider was in fact a mobile root that was part of the gnarltree's life cycle. Composed primarily of calcified wood, it would break free of its parent tree to roam the swamps and devour animals. After gathering enough nutrients, the spider would find a clear spot to anchor its legs, and if it survived that period, it would eventually transform into roots that allow the spider to grow into a towering tree. During this period it was vulnerable to bogwings and jubba birds."
-size = 0
+size = 1
 types = Array[String](["plant"])
 alignment = "unaligned"
 armorType = "None"
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 10"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_x8p1v")]([SubResource("Resource_twc84"), SubResource("Resource_8rbqy"), SubResource("Resource_ojumn")])
+behaviors = Array[ExtResource("1_c42xs")]([SubResource("Resource_g01tw"), SubResource("Resource_ta5ua"), SubResource("Resource_d6n7u")])

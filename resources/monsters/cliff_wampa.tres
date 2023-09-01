@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_4erut"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ubwee"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_urkcn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_58ywm"]
 
-[sub_resource type="Resource" id="Resource_6r1re"]
-script = ExtResource("1_4erut")
+[sub_resource type="Resource" id="Resource_km6nw"]
+script = ExtResource("1_urkcn")
 name = "Keen Smell"
 monsterBehaviorType = 0
 description = " The wampa has advantage on Wisdom (Perception) checks that rely on smell."
 descriptionWithLinks = " The wampa has advantage on Wisdom (Perception) checks that rely on smell."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4dh2x"]
-script = ExtResource("1_4erut")
+[sub_resource type="Resource" id="Resource_dihib"]
+script = ExtResource("1_urkcn")
 name = "Rocky Camouflage"
 monsterBehaviorType = 0
 description = " The wampa has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
 descriptionWithLinks = " The wampa has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ua8u7"]
-script = ExtResource("1_4erut")
+[sub_resource type="Resource" id="Resource_wq5fd"]
+script = ExtResource("1_urkcn")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The wampa makes two attacks, one with its claw and one with its bite."
 descriptionWithLinks = " The wampa makes two attacks, one with its claw and one with its bite."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uskcy"]
-script = ExtResource("1_4erut")
+[sub_resource type="Resource" id="Resource_cpgjh"]
+script = ExtResource("1_urkcn")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (2d6+5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (2d6+5) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "one target."
 damage = 7
 damageRoll = "2d6+5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_1wb3m"]
-script = ExtResource("1_4erut")
+[sub_resource type="Resource" id="Resource_fsfd6"]
+script = ExtResource("1_urkcn")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 7 (1d10+5) kinetic damage. The target is grappled (escape DC 16) Until this grapple ends, the target is restrained, and the wampa can't bite another target."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 7 (1d10+5) kinetic damage. The target is grappled (escape DC 16) Until this grapple ends, the target is restrained, and the wampa can't bite another target."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "one creature."
 damage = 7
 damageRoll = "1d10+5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_fi8x4"]
-script = ExtResource("1_4erut")
+[sub_resource type="Resource" id="Resource_vbupo"]
+script = ExtResource("1_urkcn")
 name = "Throw Boulder"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +8 to hit, reach 5 ft., range 25/50 ft., one target. Hit: 8 (1d8+5) kinetic damage. If the target is a creature, it must succeed a DC 15 Strength saving throw or be knocked prone."
 descriptionWithLinks = " Ranged Weapon Attack: +8 to hit, reach 5 ft., range 25/50 ft., one target. Hit: 8 (1d8+5) kinetic damage. If the target is a creature, it must succeed a DC 15 Strength saving throw or be knocked prone."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 8
 numberOfTargets = "range 25/50 ft."
 damage = 8
@@ -94,11 +94,11 @@ damageRoll = "1d8+5"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ubwee")
+script = ExtResource("2_58ywm")
 name = "Cliff Wampa"
 flavorText = ""
 sectionText = "Wampas are semi-sentient predators with humanoid proportions that stand up to 12 feet tall. While they all share characteristics in common, there are three variations of wampa that are distinct based on their native planet."
-size = 0
+size = 4
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["ï¿½"])
 challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_4erut")]([SubResource("Resource_6r1re"), SubResource("Resource_4dh2x"), SubResource("Resource_ua8u7"), SubResource("Resource_uskcy"), SubResource("Resource_1wb3m"), SubResource("Resource_fi8x4")])
+behaviors = Array[ExtResource("1_urkcn")]([SubResource("Resource_km6nw"), SubResource("Resource_dihib"), SubResource("Resource_wq5fd"), SubResource("Resource_cpgjh"), SubResource("Resource_fsfd6"), SubResource("Resource_vbupo")])

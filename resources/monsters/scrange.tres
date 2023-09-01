@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_wm2n5"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wyjqu"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_3ipci"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_edo7c"]
 
-[sub_resource type="Resource" id="Resource_ittpg"]
-script = ExtResource("1_wm2n5")
+[sub_resource type="Resource" id="Resource_uwekx"]
+script = ExtResource("1_3ipci")
 name = "Ambusher"
 monsterBehaviorType = 0
 description = " In the first round of a combat, the scrange has advantage on attack rolls against any creature it surprised."
 descriptionWithLinks = " In the first round of a combat, the scrange has advantage on attack rolls against any creature it surprised."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_tpymg"]
-script = ExtResource("1_wm2n5")
+[sub_resource type="Resource" id="Resource_2aosf"]
+script = ExtResource("1_3ipci")
 name = "Bioluminescent"
 monsterBehaviorType = 0
 description = " The scrange either emits dim light in a 10-foot radius, or bright light in a 10-foot radius and dim light for an additional 10 ft.. It can switch between the options as a bonus action."
 descriptionWithLinks = " The scrange either emits dim light in a 10-foot radius, or bright light in a 10-foot radius and dim light for an additional 10 ft.. It can switch between the options as a bonus action."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_eyxwk"]
-script = ExtResource("1_wm2n5")
+[sub_resource type="Resource" id="Resource_lk1nk"]
+script = ExtResource("1_3ipci")
 name = "Mud Camouflage"
 monsterBehaviorType = 0
 description = " The scrange has advantage on Dexterity (Stealth) checks made to hide in muddy terrain."
 descriptionWithLinks = " The scrange has advantage on Dexterity (Stealth) checks made to hide in muddy terrain."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_oqsvr"]
-script = ExtResource("1_wm2n5")
+[sub_resource type="Resource" id="Resource_nnm36"]
+script = ExtResource("1_3ipci")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The scrange makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target."
 descriptionWithLinks = " The scrange makes two attacks: one with its bite and one with its tail. It can't make both attacks against the same target."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3onu2"]
-script = ExtResource("1_wm2n5")
+[sub_resource type="Resource" id="Resource_sglx4"]
+script = ExtResource("1_3ipci")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 6) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 10 ft."
+attackRange = "reach 10 ft."
 attackBonus = 9
 numberOfTargets = "one target."
 damage = 20
 damageRoll = "3d10 + 6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_gnyli"]
-script = ExtResource("1_wm2n5")
+[sub_resource type="Resource" id="Resource_nhxtj"]
+script = ExtResource("1_3ipci")
 name = "Tail"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 24 (4d10 + 6) kinetic damage, and the target must succeed on a DC 16 Strength saving throw or be knocked prone."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 24 (4d10 + 6) kinetic damage, and the target must succeed on a DC 16 Strength saving throw or be knocked prone."
 attackType = 0
 restrictions = ""
-range = "reach 10 ft."
+attackRange = "reach 10 ft."
 attackBonus = 9
 numberOfTargets = "one target."
 damage = 24
@@ -94,11 +94,11 @@ damageRoll = "4d10 + 6"
 damageType = 7
 
 [resource]
-script = ExtResource("2_wyjqu")
+script = ExtResource("2_edo7c")
 name = "Scrange"
 flavorText = ""
 sectionText = "The scrange was a large tusk-tailed, reptilian apex predator of Dagobah, attacking its prey with a great ferocity. Scranges were beaked and had many bioluminescent patches on their body, arranged in a ridge along its spine. When prey got close, attracted by the lights, the scrange would lift out of the mud on its six crustacean-like hind legs to make a quick attack or it would use its four tail tusks to impale its prey."
-size = 0
+size = 5
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "natural armor"
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["ï¿½"])
 challengeRating = "7"
 experiencePoints = 2900
-behaviors = Array[ExtResource("1_wm2n5")]([SubResource("Resource_ittpg"), SubResource("Resource_tpymg"), SubResource("Resource_eyxwk"), SubResource("Resource_oqsvr"), SubResource("Resource_3onu2"), SubResource("Resource_gnyli")])
+behaviors = Array[ExtResource("1_3ipci")]([SubResource("Resource_uwekx"), SubResource("Resource_2aosf"), SubResource("Resource_lk1nk"), SubResource("Resource_nnm36"), SubResource("Resource_sglx4"), SubResource("Resource_nhxtj")])

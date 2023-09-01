@@ -1,182 +1,182 @@
 [gd_resource type="Resource" script_class="Character" load_steps=15 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_oiwnh"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cbwlc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_we2o0"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5nrtn"]
 
-[sub_resource type="Resource" id="Resource_g31r6"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_3mj4t"]
+script = ExtResource("1_we2o0")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_hknye"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_je7j7"]
+script = ExtResource("1_we2o0")
 name = "Electromagnetic Shielding"
 monsterBehaviorType = 0
 description = " The AT-TE is Immune to Ion damage."
 descriptionWithLinks = " The AT-TE is Immune to Ion damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4txtm"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_pymww"]
+script = ExtResource("1_we2o0")
 name = "Heavy Durasteel Armor"
 monsterBehaviorType = 0
 description = " The outer layer of the AT-TE is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the AT-TE takes no damage from that attack. If the AT-TE takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 descriptionWithLinks = " The outer layer of the AT-TE is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the AT-TE takes no damage from that attack. If the AT-TE takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7g5x4"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_nkwfn"]
+script = ExtResource("1_we2o0")
 name = "Piloted"
 monsterBehaviorType = 0
 description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
 descriptionWithLinks = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_27ol1"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_837j6"]
+script = ExtResource("1_we2o0")
 name = "Towering"
 monsterBehaviorType = 0
 description = " Creatures of Medium size or smaller can stand in the AT-TE's space."
 descriptionWithLinks = " Creatures of Medium size or smaller can stand in the AT-TE's space."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_c6n0k"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_ofby7"]
+script = ExtResource("1_we2o0")
 name = "Troop Transport"
 monsterBehaviorType = 0
 description = " The AT-TE can transport a maximum of 20 stormtroopers and five speeder bikes, which it can deploy using its Deploy Troops legendary action, or which can be fought by creatures inside of the AT-TE."
 descriptionWithLinks = " The AT-TE can transport a maximum of 20 stormtroopers and five speeder bikes, which it can deploy using its Deploy Troops legendary action, or which can be fought by creatures inside of the AT-TE."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_t2far"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_qe84v"]
+script = ExtResource("1_we2o0")
 name = "Vulnerable Interior"
 monsterBehaviorType = 0
 description = " The AT-TE's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
 descriptionWithLinks = " The AT-TE's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3oauh"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_y55pn"]
+script = ExtResource("1_we2o0")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The AT-TE makes four attacks: one with its laser cannon volley and three with its medium repeaters."
 descriptionWithLinks = " The AT-TE makes four attacks: one with its laser cannon volley and three with its medium repeaters."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5mxr3"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_oqaix"]
+script = ExtResource("1_we2o0")
 name = "Laser Cannon Volley"
 monsterBehaviorType = 0
 description = " The AT-TE chooses a point within 240 ft and lets loose a blast from its heavy laser cannon that explodes in a 15ft cube around that point. Each creature within the cube must succeed on a DC 16 Dexterity saving throw, taking 33 (6d10) energy damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " The AT-TE chooses a point within 240 ft and lets loose a blast from its heavy laser cannon that explodes in a 15ft cube around that point. Each creature within the cube must succeed on a DC 16 Dexterity saving throw, taking 33 (6d10) energy damage on a failed save, or half as much damage on a successful one."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xpvdu"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_aj6ar"]
+script = ExtResource("1_we2o0")
 name = "Medium Repeaters"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +8 to hit, range 120/240 ft., one target. Hit: 19 (3d10+3) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +8 to hit, range 120/240 ft., one target. Hit: 19 (3d10+3) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 120/240 ft."
+attackRange = "range 120/240 ft."
 attackBonus = 8
 numberOfTargets = "one target."
 damage = 19
 damageRoll = "3d10+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_ofsll"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_mvnh2"]
+script = ExtResource("1_we2o0")
 name = "Repeating Blasters"
 monsterBehaviorType = 0
 description = " The AT-TE makes a single attack with its medium repeaters."
 descriptionWithLinks = " The AT-TE makes a single attack with its medium repeaters."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vhwju"]
-script = ExtResource("1_oiwnh")
+[sub_resource type="Resource" id="Resource_6j7to"]
+script = ExtResource("1_we2o0")
 name = "Deploy Troops"
 monsterBehaviorType = 0
 description = " The AT-TE mobilizes some of the soldiers traveling within it. It deploys 1d4+2 Troopers. These troops appear in any unoccupied spaces within 10 feet of the AT-TE."
 descriptionWithLinks = " The AT-TE mobilizes some of the soldiers traveling within it. It deploys 1d4+2 Troopers. These troops appear in any unoccupied spaces within 10 feet of the AT-TE."
 attackType = 0
 restrictions = "Costs 2 Actions"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -184,11 +184,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_cbwlc")
+script = ExtResource("2_5nrtn")
 name = "AT-TE"
 flavorText = "The All Terrain Tactical Enforcer (AT-TE), is an all terrain assault walker developed for the Grand Army of the Republic during the Clone Wars. The walker is used for transporting platoons of troopers and attacking enemy installations. The AT-TE's cramped rear compartment contains computer hologram communication devices and space for troopers to stand during transportation. On the back end of the machine is a large door for quick deployment of troopers. Some versions of the walker were able to scale vertical cliffs. The typical arsenal includes a top-mounted mass-driver cannon, along with six other laser cannons placed strategically around the outside of the vehicle."
 sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
-size = 0
+size = 6
 types = Array[String](["construct"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -211,4 +211,4 @@ senses = Array[String](["-"])
 languages = Array[String](["-"])
 challengeRating = "18"
 experiencePoints = 20000
-behaviors = Array[ExtResource("1_oiwnh")]([SubResource("Resource_g31r6"), SubResource("Resource_hknye"), SubResource("Resource_4txtm"), SubResource("Resource_7g5x4"), SubResource("Resource_27ol1"), SubResource("Resource_c6n0k"), SubResource("Resource_t2far"), SubResource("Resource_3oauh"), SubResource("Resource_5mxr3"), SubResource("Resource_xpvdu"), SubResource("Resource_ofsll"), SubResource("Resource_vhwju")])
+behaviors = Array[ExtResource("1_we2o0")]([SubResource("Resource_3mj4t"), SubResource("Resource_je7j7"), SubResource("Resource_pymww"), SubResource("Resource_nkwfn"), SubResource("Resource_837j6"), SubResource("Resource_ofby7"), SubResource("Resource_qe84v"), SubResource("Resource_y55pn"), SubResource("Resource_oqaix"), SubResource("Resource_aj6ar"), SubResource("Resource_mvnh2"), SubResource("Resource_6j7to")])

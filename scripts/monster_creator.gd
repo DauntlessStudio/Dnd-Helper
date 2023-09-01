@@ -10,7 +10,7 @@ func generate():
 		resCharacter.name = monster.name
 		resCharacter.flavorText = monster.flavorText
 		resCharacter.sectionText = monster.sectionText
-		resCharacter.size = monster.size
+		resCharacter.size = monster.sizeEnum
 		resCharacter.types.append_array(monster.types)
 		resCharacter.alignment = monster.alignment
 		resCharacter.armorType = monster.armorType if monster.armorType else "None"
@@ -62,7 +62,7 @@ func create_behavior(behavior: Dictionary) -> Behavior:
 	createdBehavior.descriptionWithLinks = formatted_string
 	createdBehavior.attackType = behavior.attackType
 	createdBehavior.restrictions = behavior.restrictions if behavior.restrictions else ""
-	createdBehavior.range = behavior.range if behavior.range else ""
+	createdBehavior.attackRange = behavior.range if behavior.range else ""
 	createdBehavior.attackBonus = behavior.attackBonus
 	createdBehavior.numberOfTargets = behavior.numberOfTargets if behavior.numberOfTargets else ""
 	createdBehavior.damage = behavior.damage if behavior.damage else 0

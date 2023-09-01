@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_p2837"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_hegha"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_lptih"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cqplv"]
 
-[sub_resource type="Resource" id="Resource_uu3ga"]
-script = ExtResource("1_p2837")
+[sub_resource type="Resource" id="Resource_hamfk"]
+script = ExtResource("1_lptih")
 name = "Liquid Courage"
 monsterBehaviorType = 0
 description = " As a bonus action, the cantina brawl imbibes nearby alcohol to gain access to a hidden reservoir of audacity and grit.  The cantina brawl gains 7 (2d6) temporary hp for 1 minute."
 descriptionWithLinks = " As a bonus action, the cantina brawl imbibes nearby alcohol to gain access to a hidden reservoir of audacity and grit.  The cantina brawl gains 7 (2d6) temporary hp for 1 minute."
 attackType = 0
 restrictions = "Recharge 5-6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_au2su"]
-script = ExtResource("1_p2837")
+[sub_resource type="Resource" id="Resource_3kgu3"]
+script = ExtResource("1_lptih")
 name = "Swarm"
 monsterBehaviorType = 0
 description = " The cantina brawl can occupy another creature's space and vice versa, and the cantina brawl can move through any opening large enough for a medium humanoid.  Except for Liquid Courage, the cantina brawl can't regain hp or gain temporary hp."
 descriptionWithLinks = " The cantina brawl can occupy another creature's space and vice versa, and the cantina brawl can move through any opening large enough for a medium humanoid.  Except for Liquid Courage, the cantina brawl can't regain hp or gain temporary hp."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7m6kj"]
-script = ExtResource("1_p2837")
+[sub_resource type="Resource" id="Resource_pfaxx"]
+script = ExtResource("1_lptih")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The cantina brawl makes two melee attacks or two darts attacks."
 descriptionWithLinks = " The cantina brawl makes two melee attacks or two darts attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wt38s"]
-script = ExtResource("1_p2837")
+[sub_resource type="Resource" id="Resource_0a6gj"]
+script = ExtResource("1_lptih")
 name = "Stool"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, range 0 ft., one target in the cantina brawl's space. Hit: 14 (4d4 + 4) kinetic damage, or 7 (2d4 + 2) if the cantina brawl has half its hit points or fewer."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, range 0 ft., one target in the cantina brawl's space. Hit: 14 (4d4 + 4) kinetic damage, or 7 (2d4 + 2) if the cantina brawl has half its hit points or fewer."
 attackType = 0
 restrictions = ""
-range = "range 0 ft."
+attackRange = "range 0 ft."
 attackBonus = 4
 numberOfTargets = "one target in the cantina brawl's space."
 damage = 14
 damageRoll = "4d4 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_qsc2k"]
-script = ExtResource("1_p2837")
+[sub_resource type="Resource" id="Resource_cd138"]
+script = ExtResource("1_lptih")
 name = "Broken Bottles"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, range 0 ft., one target in the cantina brawl's space. Hit: 17 (6d4 + 2) kinetic damage, or 8 (3d4 + 1) if the cantina brawl has half its hit points or fewer."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, range 0 ft., one target in the cantina brawl's space. Hit: 17 (6d4 + 2) kinetic damage, or 8 (3d4 + 1) if the cantina brawl has half its hit points or fewer."
 attackType = 0
 restrictions = ""
-range = "range 0 ft."
+attackRange = "range 0 ft."
 attackBonus = 3
 numberOfTargets = "one target in the cantina brawl's space."
 damage = 17
 damageRoll = "6d4 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_o7d3e"]
-script = ExtResource("1_p2837")
+[sub_resource type="Resource" id="Resource_2rete"]
+script = ExtResource("1_lptih")
 name = "Darts"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +3 to hit, range 20/40 ft., Hit: 10 (4d4) kinetic damage, or 5 (2d4) if the cantina brawl has half its hit points or fewer."
 descriptionWithLinks = " Ranged Weapon Attack: +3 to hit, range 20/40 ft., Hit: 10 (4d4) kinetic damage, or 5 (2d4) if the cantina brawl has half its hit points or fewer."
 attackType = 0
 restrictions = ""
-range = "range 20/40 ft."
+attackRange = "range 20/40 ft."
 attackBonus = 3
 numberOfTargets = ""
 damage = 10
@@ -94,11 +94,11 @@ damageRoll = "4d4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_hegha")
+script = ExtResource("2_cqplv")
 name = "Cantina Brawl"
 flavorText = ""
 sectionText = "A cantina, also known as a saloon, bar, or pub is a place where spacers, smugglers, and other denizens of the nearby area come to drink and play board and card games, such as pazaak or sabacc. Cantinas are located on almost every major planet and are often a center of criminal activity such as smuggling and spice trading. Many cantinas provid live entertainment in the form of musicians, dancers, or fighters. Gambling is also popular in these locales. The main attractions, however, are the beverages served by mixologists or automixers, and the opportunity to meet friends or business associates (illicit or otherwise).Cantinas are generally poorly lit and crowded. They are dangerous centers of criminal activity, and it is not uncommon for patrons to be maimed or killed within the walls, without so much as a flinch from the staff or the other patrons.  Sometimes, however, things can get out of hand."
-size = 0
+size = 5
 types = Array[String](["swarm of Medium humanoids"])
 alignment = "unaligned"
 armorType = "combat suit"
@@ -121,4 +121,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["Galactic Basic", "any one other language"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_p2837")]([SubResource("Resource_uu3ga"), SubResource("Resource_au2su"), SubResource("Resource_7m6kj"), SubResource("Resource_wt38s"), SubResource("Resource_qsc2k"), SubResource("Resource_o7d3e")])
+behaviors = Array[ExtResource("1_lptih")]([SubResource("Resource_hamfk"), SubResource("Resource_3kgu3"), SubResource("Resource_pfaxx"), SubResource("Resource_0a6gj"), SubResource("Resource_cd138"), SubResource("Resource_2rete")])

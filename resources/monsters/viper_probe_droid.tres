@@ -1,62 +1,62 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_atbo2"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_i5xsv"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rivjj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_s3o3n"]
 
-[sub_resource type="Resource" id="Resource_1ukqe"]
-script = ExtResource("1_atbo2")
+[sub_resource type="Resource" id="Resource_upbto"]
+script = ExtResource("1_rivjj")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_he2j4"]
-script = ExtResource("1_atbo2")
+[sub_resource type="Resource" id="Resource_0kvac"]
+script = ExtResource("1_rivjj")
 name = "Keen Hearing and Sight"
 monsterBehaviorType = 0
 description = " The probe droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 descriptionWithLinks = " The probe droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7yply"]
-script = ExtResource("1_atbo2")
+[sub_resource type="Resource" id="Resource_i5ci7"]
+script = ExtResource("1_rivjj")
 name = "Blaster Cannon"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit,  range 60/240 ft., one target. Hit: 7 (1d10+2) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +4 to hit,  range 60/240 ft., one target. Hit: 7 (1d10+2) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 60/240 ft."
+attackRange = "range 60/240 ft."
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 7
 damageRoll = "1d10+2"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_24xfn"]
-script = ExtResource("1_atbo2")
+[sub_resource type="Resource" id="Resource_qdo1l"]
+script = ExtResource("1_rivjj")
 name = "Self-Destruct"
 monsterBehaviorType = 0
 description = " When the probe droid is reduced to half of its hit point maximum, it attempts to self-destruct. Each creature within 20 feet of it must make a DC 13 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much on a successful one."
 descriptionWithLinks = " When the probe droid is reduced to half of its hit point maximum, it attempts to self-destruct. Each creature within 20 feet of it must make a DC 13 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much on a successful one."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -64,11 +64,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_i5xsv")
+script = ExtResource("2_s3o3n")
 name = "Viper Probe Droid"
 flavorText = "The Viper Probe Droid is a deep-space exploration and reconnaissance probe droid produced by Arakyd Industries. The probe droid is equipped with a blaster cannon and a self-destruct mechanism. The lightly-armored Viper droid measures 1.6 meters in height with six manipulator arms extending from a central pod and several retractable sensor arms for gathering samples. High resolution receivers and sensors cover the domed headï¿½including motion, acoustic, sonic, and seismic sensors, a radiation meter, magnetic imager, and holocamera. It has an atmosphere sensor capable of determining a planet's atmosphere class within one half-hour. It moves on a repulsorlift generator which is equipped to operate over any terrain. One of the arms is high-torque, and the droid is equipped with a floodlight on its head. Information is relayed back to superiors via a high-frequency HoloNet transceiver. Vipers are delivered to their targets through single-use custom built hyperspace pods. They are commonly deployed along the perimeters of key strategic star systems and hyperlanes to act as automated guardians.Typically, a Viper probe droid costs 14,500 credits. ***History.*** Many thousands of the Imperial Viper probe droids were manufactured on Mechis III, and were in production when the rogue assassin droid IG-88 took control of the planet's automated factories. IG-88 included a secondary set of programming into the Viper droids to relay any obtained intelligence back to Mechis III, as well as to the Empire. Thus, they simultaneously served as the eyes and ears of the Droid Revolution. The Imperial Intelligence's Analysis Bureau also used them as remote surveillance droids posted largely in the Outer Rim Territories. In conflict zones, probots often worked alongside the Imperial Navy to monitor traffic and provide early warnings of attack. They could also be programmed to engage pursuit mode, whereupon the Viper would track an enemy vessel and report back on its location and destination.***Variants.*** Arakyd's success with the military model of the Viper yielded the C-Viper probe droid variant designed for planetary law enforcement organizations, the Infiltrator probe droid for sabotage missions, and the Hunter-Killer probot."
 sectionText = "Probe droids (AKA probots or recon droids) are droids specifically designed to perform reconnaissance, reporting anything of significance as defined by specific preprogrammed protocols. Some models are equipped with a self-destruct mechanism in order to prevent those whom it had been sent to observe from studying them and determining their source, as well as a small blaster-type weapon for defense."
-size = 0
+size = 4
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -91,4 +91,4 @@ senses = Array[String](["Darkvision 120 ft.", "passive Perception 14"])
 languages = Array[String](["â€”"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_atbo2")]([SubResource("Resource_1ukqe"), SubResource("Resource_he2j4"), SubResource("Resource_7yply"), SubResource("Resource_24xfn")])
+behaviors = Array[ExtResource("1_rivjj")]([SubResource("Resource_upbto"), SubResource("Resource_0kvac"), SubResource("Resource_i5ci7"), SubResource("Resource_qdo1l")])

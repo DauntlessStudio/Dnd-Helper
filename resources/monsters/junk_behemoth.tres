@@ -1,62 +1,62 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2kw43"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nn5mo"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_cugpk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_jsxns"]
 
-[sub_resource type="Resource" id="Resource_70t5v"]
-script = ExtResource("1_2kw43")
+[sub_resource type="Resource" id="Resource_71l00"]
+script = ExtResource("1_cugpk")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7mhs0"]
-script = ExtResource("1_2kw43")
+[sub_resource type="Resource" id="Resource_ov2o1"]
+script = ExtResource("1_cugpk")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The junk behemoth makes two blaster cannon attacks or two slam attacks."
 descriptionWithLinks = " The junk behemoth makes two blaster cannon attacks or two slam attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wb6j6"]
-script = ExtResource("1_2kw43")
+[sub_resource type="Resource" id="Resource_eqhw6"]
+script = ExtResource("1_cugpk")
 name = "Blaster Cannon"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d10+1) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d10+1) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 80/320 ft."
+attackRange = "range 80/320 ft."
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 6
 damageRoll = "1d10+1"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_7px36"]
-script = ExtResource("1_2kw43")
+[sub_resource type="Resource" id="Resource_nd1wr"]
+script = ExtResource("1_cugpk")
 name = "Slam"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d10+3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d10+3) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 10 ft."
+attackRange = "reach 10 ft."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 8
@@ -64,11 +64,11 @@ damageRoll = "1d10+3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_nn5mo")
+script = ExtResource("2_jsxns")
 name = "Junk Behemoth"
 flavorText = ""
 sectionText = "Junk Droid, or Monster Droid, is the term used to describe any droid that is created by piecing together component parts of many other droids.Though anyone with the know-how can cobble together a junk droid, they are most notably created by the various Jawa tribes on Tatooine. Because they mainly sell their wares to moisture farmers and small town businesses, Jawas know what peoples' needs are, and are able to create custom droids to meet the individual needs of any customer.  Some junk droids are even made by themselves.  Because of their often mashed-together programming, they are considered dangerous by most civilized people, for they could go on a rampage, confuse orders, or even start building more of their own kind when having enough junk to do so.Though no two junk droids are exactly the same, they are generally constructed in four classes:* The Mechano-droid was a heavy labor unit* The Tracto-droid was a mobile scanning/radar unit* The Quad-pod droid was a cargo carrier* The Rollarc droid was a multipurpose unit suited to variable tasksJunk droids are sometimes sought after by eccentric collectors looking to find the most functional droid comprised the most incorporated parts that is the most pleasing to the eye."
-size = 0
+size = 5
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor scraps"
@@ -91,4 +91,4 @@ senses = Array[String]([])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_2kw43")]([SubResource("Resource_70t5v"), SubResource("Resource_7mhs0"), SubResource("Resource_wb6j6"), SubResource("Resource_7px36")])
+behaviors = Array[ExtResource("1_cugpk")]([SubResource("Resource_71l00"), SubResource("Resource_ov2o1"), SubResource("Resource_eqhw6"), SubResource("Resource_nd1wr")])

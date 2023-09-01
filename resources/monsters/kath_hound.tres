@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_nack6"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r7r7v"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_shnyu"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bx8sm"]
 
-[sub_resource type="Resource" id="Resource_apjvj"]
-script = ExtResource("1_nack6")
+[sub_resource type="Resource" id="Resource_8wy84"]
+script = ExtResource("1_shnyu")
 name = "Keen Hearing and Smell"
 monsterBehaviorType = 0
 description = " The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 descriptionWithLinks = " The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u4jlt"]
-script = ExtResource("1_nack6")
+[sub_resource type="Resource" id="Resource_ur8hj"]
+script = ExtResource("1_shnyu")
 name = "Pack Tactics"
 monsterBehaviorType = 0
 description = " The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mlqh8"]
-script = ExtResource("1_nack6")
+[sub_resource type="Resource" id="Resource_oaw0y"]
+script = ExtResource("1_shnyu")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 7
@@ -49,11 +49,11 @@ damageRoll = "2d4 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_r7r7v")
+script = ExtResource("2_bx8sm")
 name = "Kath Hound"
 flavorText = ""
 sectionText = "Kath hounds are about the size of a large dog, fur-covered, and each limb ends in four hoofed digits. They are generally not very hostile, unless provoked. At one point, the kath hounds started attacking the citizens of Dantooine and were blamed for numerous crimes, including the theft of a protocol droid. Kath hounds are also a popular pet for the crime lords of Nar Shaddaa, including Visquis and Vogga the Hutt. Domesticated kath hounds, called salkies, are also popular pets on Coruscant."
-size = 0
+size = 2
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 30 ft.", "passive Perception 13"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_nack6")]([SubResource("Resource_apjvj"), SubResource("Resource_u4jlt"), SubResource("Resource_mlqh8")])
+behaviors = Array[ExtResource("1_shnyu")]([SubResource("Resource_8wy84"), SubResource("Resource_ur8hj"), SubResource("Resource_oaw0y")])

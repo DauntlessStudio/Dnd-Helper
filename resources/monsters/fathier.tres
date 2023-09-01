@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_vic5v"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_g4366"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_nr6s6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_luybm"]
 
-[sub_resource type="Resource" id="Resource_dkkt6"]
-script = ExtResource("1_vic5v")
+[sub_resource type="Resource" id="Resource_qbl8a"]
+script = ExtResource("1_nr6s6")
 name = "Keen Hearing"
 monsterBehaviorType = 0
 description = " The fathier has advantage on Wisdom (Perception) checks that rely on hearing."
 descriptionWithLinks = " The fathier has advantage on Wisdom (Perception) checks that rely on hearing."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_eoorn"]
-script = ExtResource("1_vic5v")
+[sub_resource type="Resource" id="Resource_3d1i7"]
+script = ExtResource("1_nr6s6")
 name = "Trampling Charge"
 monsterBehaviorType = 0
 description = " If the fathier moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the fathier can make another attack with its hooves against it as a bonus action."
 descriptionWithLinks = " If the fathier moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the fathier can make another attack with its hooves against it as a bonus action."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kgwrt"]
-script = ExtResource("1_vic5v")
+[sub_resource type="Resource" id="Resource_mued7"]
+script = ExtResource("1_nr6s6")
 name = "Hooves"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 11
@@ -49,11 +49,11 @@ damageRoll = "2d6 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_g4366")
+script = ExtResource("2_luybm")
 name = "Fathier"
 flavorText = "Fathiers are a species of non-sentient quadrupeds that are often used as mounts. Wealthy inhabitants of Kergans and Cantonica ride them in competition."
 sectionText = "Ysalamiri are furry, lizard-like tree-dwellers about 2 feet in length, native to the planet Myrkr, and most known for their ability to create a Force-neutral bubble. This ability evolved in response to predation by the Force-sensitive vornskrs. Many ysalamiri grouped together would expand their Force-neutral bubble by varying distances ï¿½ sometimes by kilometers.Ysalamiri sink their claws into the Olbio trees on which they live and draw nutrients. It is very difficult to remove a ysalamir from its tree without killing it, although this has been known to happen. Some few have developed back harness or nutrient frames which allow transport of the ysalamiri and, therefore, their Force repelling bubble. Ysalamiri do not actually negate the Force; since all existence is infused with Force energy, this would not be possible. Rather, they project a bubble inside which users are unable to exert any influence over the Force. A single bubble measures a few meters in diameter; large groups of ysalamiri could extend their collective bubble by kilometers, but only in great numbers.Miriskin was a commodity  made from ysalamir skin."
-size = 0
+size = 4
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "None"
@@ -76,4 +76,4 @@ senses = Array[String](["passive Perception 11"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_vic5v")]([SubResource("Resource_dkkt6"), SubResource("Resource_eoorn"), SubResource("Resource_kgwrt")])
+behaviors = Array[ExtResource("1_nr6s6")]([SubResource("Resource_qbl8a"), SubResource("Resource_3d1i7"), SubResource("Resource_mued7")])

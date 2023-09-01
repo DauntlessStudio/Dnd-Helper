@@ -1,6 +1,7 @@
 class_name AddMonsterPanel
 extends PanelContainer
 
+enum sizeValues {Unknown, Tiny, Small, Medium, Large, Huge, Gargantuan}
 var displayMonsters: Array[MonsterContainer]
 var searchString: String = ""
 var sizeArr: Array[int] = []
@@ -31,7 +32,7 @@ func _ready():
 		$VBoxContainer/MonsterListHolder/ScrollContainer/MonsterListContainer.add_child(instance)
 		add_search_categories(monster)
 	
-	for monsterSize in allSizeArr:
+	for monsterSize in sizeValues:
 		$VBoxContainer/SearchFlowContainer/SizeMenuButton.get_popup().add_check_item(monsterSize)
 	$VBoxContainer/SearchFlowContainer/SizeMenuButton.get_popup().id_pressed.connect(_on_size_menu_pressed)
 	

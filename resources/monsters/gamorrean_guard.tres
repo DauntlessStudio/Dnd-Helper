@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_grpnw"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8xq46"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_evv14"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_kuuc6"]
 
-[sub_resource type="Resource" id="Resource_15nhu"]
-script = ExtResource("1_grpnw")
+[sub_resource type="Resource" id="Resource_83cgk"]
+script = ExtResource("1_evv14")
 name = "Reckless"
 monsterBehaviorType = 0
 description = " At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
 descriptionWithLinks = " At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_w3ioy"]
-script = ExtResource("1_grpnw")
+[sub_resource type="Resource" id="Resource_3jrl5"]
+script = ExtResource("1_evv14")
 name = "Brutal Critical"
 monsterBehaviorType = 0
 description = " When the guards scores a critical hit with a melee weapon attack, roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
 descriptionWithLinks = " When the guards scores a critical hit with a melee weapon attack, roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i2fke"]
-script = ExtResource("1_grpnw")
+[sub_resource type="Resource" id="Resource_t8mag"]
+script = ExtResource("1_evv14")
 name = "Vibroaxe"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit 12 (1d12 + 6)"
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit 12 (1d12 + 6)"
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 7
 numberOfTargets = "one target."
 damage = 12
@@ -49,11 +49,11 @@ damageRoll = "1d12 + 6"
 damageType = 0
 
 [resource]
-script = ExtResource("2_8xq46")
+script = ExtResource("2_kuuc6")
 name = "Gamorrean Guard"
 flavorText = ""
 sectionText = "Gamorreans were a sentient species of green-skinned porcine humanoids that hailed from the Outer Rim planet of Gamorr.***Biology & Appearance.*** A species of tall, strong bipeds, the Gamorreans have porcine traits, like an upturned, large-nostriled cartilaginous snout, jowls, and upturned tusks. Their hulking bodies are covered in green, thick and hairless skin. They have five digits on every extremity, each sporting a hard nail. The digits of their hands include an opposable thumb, which allows the Gamorreans to easily grasp and handle objects. The species has two sexes: the males, referred to as boars, and the females, called sows.***Society & Culture.*** Gamorreans have a clan-based society. Each clan is ruled by a female leader, the Clan Matron, and a male leader, the Warlord, although the Gamorrean society is, at heart, a matriarchy. Indeed, a Warlord holds his position by way of marriage to a Matron rather than force, although Matrons make their selections based on the boars' combat skills. Gamorreans see war as glorious, and violent clashes between clans are rife.Because of their low intelligence, Gamorreans tend to be both stubborn and loyal; philosophically, they believe that any problem can be solved by hitting it with brute force. They have a language of their own that sounds like mere grunts and squeals to outsiders. Although they can understand other languages, such as Galactic Basic, they find most of them too difficult to pronounce.Technologically speaking, the Gamorreans are primitive, and they favor melee weapons like vibro-axes and vibro-lances over blasters. They did not discover space travel on their own. Moreover, Gamorrean boars fail to maintain personal hygiene, rarely changing their clothes or wiping the streaming mucus from under their snouts.***Across the Galaxy.*** Offworld Gamorreans are a common sight, be they mercenaries or enforcers working for crime lords.  They also colonized the planet Pzob in the K749 system and are the majority sentient species on Lanthrym in the Elrood sector."
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "chaotic dark"
 armorType = "natural armor"
@@ -76,4 +76,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["Gamorrese", "Galactic Basic (underst", "s but can't speak)"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_grpnw")]([SubResource("Resource_15nhu"), SubResource("Resource_w3ioy"), SubResource("Resource_i2fke")])
+behaviors = Array[ExtResource("1_evv14")]([SubResource("Resource_83cgk"), SubResource("Resource_3jrl5"), SubResource("Resource_t8mag")])

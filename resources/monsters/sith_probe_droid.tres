@@ -1,62 +1,62 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_mukad"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_t7c6r"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_7ekx4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wqupu"]
 
-[sub_resource type="Resource" id="Resource_c7wya"]
-script = ExtResource("1_mukad")
+[sub_resource type="Resource" id="Resource_0y654"]
+script = ExtResource("1_7ekx4")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_x7olf"]
-script = ExtResource("1_mukad")
+[sub_resource type="Resource" id="Resource_a8e50"]
+script = ExtResource("1_7ekx4")
 name = "Flyby"
 monsterBehaviorType = 0
 description = " The droid doesn't provoke opportunity attacks when it flies out of an enemy's reach."
 descriptionWithLinks = " The droid doesn't provoke opportunity attacks when it flies out of an enemy's reach."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dhosi"]
-script = ExtResource("1_mukad")
+[sub_resource type="Resource" id="Resource_e77d4"]
+script = ExtResource("1_7ekx4")
 name = "Keen Hearing and Sight"
 monsterBehaviorType = 0
 description = " The droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 descriptionWithLinks = " The droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_s4xe4"]
-script = ExtResource("1_mukad")
+[sub_resource type="Resource" id="Resource_c004l"]
+script = ExtResource("1_7ekx4")
 name = "Shockprod"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 lightning damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 3
 numberOfTargets = "one target."
 damage = 0
@@ -64,11 +64,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_t7c6r")
+script = ExtResource("2_wqupu")
 name = "Sith Probe Droid"
 flavorText = "Sith probe droids were designed as passive spy units, and were plated with energy-absorbing stealth armor that baffled most sensor scans. However, weaponry could be mounted on the Sith Probe Droids in many configurations: the most common being a miniaturized grenade launcher. Armaments adopted by the Sith included blaster cannons, stun blasters, and dart launchers loaded with poison needles."
 sectionText = "Probe droids (AKA probots or recon droids) are droids specifically designed to perform reconnaissance, reporting anything of significance as defined by specific preprogrammed protocols. Some models are equipped with a self-destruct mechanism in order to prevent those whom it had been sent to observe from studying them and determining their source, as well as a small blaster-type weapon for defense."
-size = 0
+size = 1
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -91,4 +91,4 @@ senses = Array[String](["Darkvision 120 ft.", "passive Perception 13"])
 languages = Array[String](["â€”"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_mukad")]([SubResource("Resource_c7wya"), SubResource("Resource_x7olf"), SubResource("Resource_dhosi"), SubResource("Resource_s4xe4")])
+behaviors = Array[ExtResource("1_7ekx4")]([SubResource("Resource_0y654"), SubResource("Resource_a8e50"), SubResource("Resource_e77d4"), SubResource("Resource_c004l")])

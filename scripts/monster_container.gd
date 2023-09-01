@@ -7,7 +7,7 @@ signal addMonster(character: Character)
 func initialize(character: Character):
 	sourceCharacter = character
 	$Button/Name.text = sourceCharacter.name
-	$Button/Size.text = str(sourceCharacter.size)
+	$Button/Size.text = str(sourceCharacter.sizeValues.keys()[sourceCharacter.size])
 	$Button/Type.text = ", ".join(sourceCharacter.types)
 	$Button/CR.text = character.challengeRating
 	$Button/Alignment.text = character.alignment

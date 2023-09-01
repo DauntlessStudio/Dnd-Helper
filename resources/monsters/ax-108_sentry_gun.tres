@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_vtshu"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_w5gg5"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i57qp"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_jveo6"]
 
-[sub_resource type="Resource" id="Resource_dsch1"]
-script = ExtResource("1_vtshu")
+[sub_resource type="Resource" id="Resource_r30a6"]
+script = ExtResource("1_i57qp")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wceg4"]
-script = ExtResource("1_vtshu")
+[sub_resource type="Resource" id="Resource_636x0"]
+script = ExtResource("1_i57qp")
 name = "Targeting Systems"
 monsterBehaviorType = 0
 description = " The sentry gun uses its Intelligence modifier for attack, damage, and intitiative rolls."
 descriptionWithLinks = " The sentry gun uses its Intelligence modifier for attack, damage, and intitiative rolls."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_svjkd"]
-script = ExtResource("1_vtshu")
+[sub_resource type="Resource" id="Resource_rowa4"]
+script = ExtResource("1_i57qp")
 name = "Repeating Blaster Burst"
 monsterBehaviorType = 0
 description = " The sentry gun sprays a 10-foot-cube area within 100 feet with shots. Each creature in the area must make a Dexterity saving throw (DC 14).  On a failure, the creature takes 9 (1d12 + 3) energy damage. On a success, the creature takes half damage."
 descriptionWithLinks = " The sentry gun sprays a 10-foot-cube area within 100 feet with shots. Each creature in the area must make a Dexterity saving throw (DC 14).  On a failure, the creature takes 9 (1d12 + 3) energy damage. On a success, the creature takes half damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -49,11 +49,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_w5gg5")
+script = ExtResource("2_jveo6")
 name = "Ax-108 Sentry Gun"
 flavorText = "Sentry guns come in a wide variety of different sizes, yields, and types. These weapons can typically be found near high-value areas such as detention cells, command centers, and laboratories. For best results, they are placed in areas such as corners, above security doors, or other positions that afford them a wide field of fire. Sentry guns are usually linked to the central security system, but can be operated manually by remote. Once activated, these turrets may use active sensors and preprogrammed criteria to identify threats and fire upon any hostiles they encounter.  Sentry guns are also used on starships and may automatically engage nearby hostiles and are linked to the ship's central security system.  Some sentry guns include targeting sensors that seek out energy signatures from enemy weapons, with built-in computers to determine which targets pose the most immediate threat."
 sectionText = "A turret is a mount for a weapon that enabled it to turn and pivot, allowing it to fire in many different directions. They are mounted on many vehicles, starfighters, and starships.  Other turrets are mounted on the ground, and can be both manned and un-manned. Weapons mounted on turrets included laser cannons and other types of projectile cannons."
-size = 0
+size = 3
 types = Array[String](["construct"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["â€”"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_vtshu")]([SubResource("Resource_dsch1"), SubResource("Resource_wceg4"), SubResource("Resource_svjkd")])
+behaviors = Array[ExtResource("1_i57qp")]([SubResource("Resource_r30a6"), SubResource("Resource_636x0"), SubResource("Resource_rowa4")])

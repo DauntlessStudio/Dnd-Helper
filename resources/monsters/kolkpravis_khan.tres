@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_m7pal"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_v0uei"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_3p4j2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1jhr7"]
 
-[sub_resource type="Resource" id="Resource_iv15l"]
-script = ExtResource("1_m7pal")
+[sub_resource type="Resource" id="Resource_sg0dn"]
+script = ExtResource("1_3p4j2")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Kolkpravis Khan makes three melee attacks with its Lig Sword or its Greater Shoni Spear."
 descriptionWithLinks = " The Kolkpravis Khan makes three melee attacks with its Lig Sword or its Greater Shoni Spear."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_p2qkg"]
-script = ExtResource("1_m7pal")
+[sub_resource type="Resource" id="Resource_i7lg6"]
+script = ExtResource("1_3p4j2")
 name = "Lig Sword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft, one target. Hit 12 (1d8 + 4 plus 1d8) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft, one target. Hit 12 (1d8 + 4 plus 1d8) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft"
+attackRange = "reach 5 ft"
 attackBonus = 7
 numberOfTargets = "one target."
 damage = 12
 damageRoll = "1d8 + 4 plus 1d8"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_kfiqj"]
-script = ExtResource("1_m7pal")
+[sub_resource type="Resource" id="Resource_mi7gx"]
+script = ExtResource("1_3p4j2")
 name = "Greater Shoni Spear"
 monsterBehaviorType = 0
 description = " Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60, one target. Hit 13 (1d10 + 4 plus 1d8) kinetic damage."
 descriptionWithLinks = " Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60, one target. Hit 13 (1d10 + 4 plus 1d8) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft. or range 20/60"
+attackRange = "reach 5 ft. or range 20/60"
 attackBonus = 7
 numberOfTargets = "one target."
 damage = 13
 damageRoll = "1d10 + 4 plus 1d8"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_tngmc"]
-script = ExtResource("1_m7pal")
+[sub_resource type="Resource" id="Resource_qavpe"]
+script = ExtResource("1_3p4j2")
 name = "Outland Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 30/120, one target. Hit 5 (1d6 + 3) kinetic damage"
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 30/120, one target. Hit 5 (1d6 + 3) kinetic damage"
 attackType = 0
 restrictions = ""
-range = "range 30/120"
+attackRange = "range 30/120"
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 5
 damageRoll = "1d6 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_2667j"]
-script = ExtResource("1_m7pal")
+[sub_resource type="Resource" id="Resource_k467p"]
+script = ExtResource("1_3p4j2")
 name = "Leadership"
 monsterBehaviorType = 0
 description = " For 1 minute, the Khan can utter a special command or warning whenever a nonhostile creature that it can see within 30 feetof it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Khan. A creature can benefit from only one Leadership die at a time. This effect ends if the Khan is incapacitated."
 descriptionWithLinks = " For 1 minute, the Khan can utter a special command or warning whenever a nonhostile creature that it can see within 30 feetof it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Khan. A creature can benefit from only one Leadership die at a time. This effect ends if the Khan is incapacitated."
 attackType = 0
 restrictions = "Recharges after a Short or Long Rest"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kcw23"]
-script = ExtResource("1_m7pal")
+[sub_resource type="Resource" id="Resource_5qdu3"]
+script = ExtResource("1_3p4j2")
 name = "Parry"
 monsterBehaviorType = 0
 description = " The Khan adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard must see the attacker and bewielding a melee weapon."
 descriptionWithLinks = " The Khan adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard must see the attacker and bewielding a melee weapon."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -94,11 +94,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_v0uei")
+script = ExtResource("2_1jhr7")
 name = "Kolkpravis Khan"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "lawful balanced"
 armorType = "powered battle armor"
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60ft", "passive Perception 10"])
 languages = Array[String](["Kaleesh", "Galactic Basic"])
 challengeRating = "6"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_m7pal")]([SubResource("Resource_iv15l"), SubResource("Resource_p2qkg"), SubResource("Resource_kfiqj"), SubResource("Resource_tngmc"), SubResource("Resource_2667j"), SubResource("Resource_kcw23")])
+behaviors = Array[ExtResource("1_3p4j2")]([SubResource("Resource_sg0dn"), SubResource("Resource_i7lg6"), SubResource("Resource_mi7gx"), SubResource("Resource_qavpe"), SubResource("Resource_k467p"), SubResource("Resource_5qdu3")])

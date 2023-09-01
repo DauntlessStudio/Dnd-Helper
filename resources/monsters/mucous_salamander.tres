@@ -1,122 +1,122 @@
 [gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ucdsy"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6iep0"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_to84g"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_g7uvn"]
 
-[sub_resource type="Resource" id="Resource_vq1yo"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_2pk0f"]
+script = ExtResource("1_to84g")
 name = "Shifting Molecules"
 monsterBehaviorType = 0
 description = " When the salamander enters or exits water, it changes the form of its molecular structure to mimic its surroundings. Other than its AC, its statistics are the same in each form. Any object it is wearing or carrying isn't transformed."
 descriptionWithLinks = " When the salamander enters or exits water, it changes the form of its molecular structure to mimic its surroundings. Other than its AC, its statistics are the same in each form. Any object it is wearing or carrying isn't transformed."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bdcyd"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_77bfc"]
+script = ExtResource("1_to84g")
 name = "Amphibious"
 monsterBehaviorType = 0
 description = " The salamander can breathe air and water."
 descriptionWithLinks = " The salamander can breathe air and water."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_f8soj"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_w6fls"]
+script = ExtResource("1_to84g")
 name = "Diffuse Body"
 monsterBehaviorType = 0
 description = " The salamander can move through other creatures and objects no more than 10 feet in diameter as if they were difficult terrain. It takes 5 (1d10) kinetic damage if it ends its turn inside an object."
 descriptionWithLinks = " The salamander can move through other creatures and objects no more than 10 feet in diameter as if they were difficult terrain. It takes 5 (1d10) kinetic damage if it ends its turn inside an object."
 attackType = 0
 restrictions = "Liquid Form Only"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m0dky"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_qdage"]
+script = ExtResource("1_to84g")
 name = "Spider Climb"
 monsterBehaviorType = 0
 description = " The salamander can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 descriptionWithLinks = " The salamander can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 attackType = 0
 restrictions = "Solid Form Only"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jq4hs"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_2fdr8"]
+script = ExtResource("1_to84g")
 name = "Spiked Hide"
 monsterBehaviorType = 0
 description = " Any creature that grapples the salamander takes 3 (1d6) kinetic damage at the end of its turn."
 descriptionWithLinks = " Any creature that grapples the salamander takes 3 (1d6) kinetic damage at the end of its turn."
 attackType = 0
 restrictions = "Solid Form Only"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yfrpe"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_iiyrj"]
+script = ExtResource("1_to84g")
 name = "Watery Stealth"
 monsterBehaviorType = 0
 description = " While underwater, the salamander has advantage on Dexterity (Stealth) checks made to hide, and it can take the Hide action as a bonus action."
 descriptionWithLinks = " While underwater, the salamander has advantage on Dexterity (Stealth) checks made to hide, and it can take the Hide action as a bonus action."
 attackType = 0
 restrictions = "Liquid Form Only"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6xdsi"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_8eoab"]
+script = ExtResource("1_to84g")
 name = "Bite"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 5
 numberOfTargets = "one target."
 damage = 7
 damageRoll = "1d8 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_ym4jd"]
-script = ExtResource("1_ucdsy")
+[sub_resource type="Resource" id="Resource_peomw"]
+script = ExtResource("1_to84g")
 name = "Claw"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) kinetic damage."
 attackType = 0
 restrictions = "Solid Form Only"
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 5
 numberOfTargets = "one target."
 damage = 8
@@ -124,11 +124,11 @@ damageRoll = "1d10 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_6iep0")
+script = ExtResource("2_g7uvn")
 name = "Mucous Salamander"
 flavorText = ""
 sectionText = "Mucous salamanders, or pinkish salamanders, are amphibians native to the bogs of Yavin 4. They possess the distinct ability to diffuse their molecular structures underwater, which allow them to swim faster and pass through hunters' nets. When a mucous salamander enters dry areas, it cN change its molecular structure into hardened scales for protection from predators, particularly the angler. "
-size = 0
+size = 3
 types = Array[String](["beast"])
 alignment = "unaligned"
 armorType = "15 natural armor in solid form"
@@ -151,4 +151,4 @@ senses = Array[String](["passive Perception 11"])
 languages = Array[String](["ï¿½"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_ucdsy")]([SubResource("Resource_vq1yo"), SubResource("Resource_bdcyd"), SubResource("Resource_f8soj"), SubResource("Resource_m0dky"), SubResource("Resource_jq4hs"), SubResource("Resource_yfrpe"), SubResource("Resource_6xdsi"), SubResource("Resource_ym4jd")])
+behaviors = Array[ExtResource("1_to84g")]([SubResource("Resource_2pk0f"), SubResource("Resource_77bfc"), SubResource("Resource_w6fls"), SubResource("Resource_qdage"), SubResource("Resource_2fdr8"), SubResource("Resource_iiyrj"), SubResource("Resource_8eoab"), SubResource("Resource_peomw")])

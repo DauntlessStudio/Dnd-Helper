@@ -1,77 +1,77 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_upbqx"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5vbfb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dv5ty"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_epfmh"]
 
-[sub_resource type="Resource" id="Resource_lhd74"]
-script = ExtResource("1_upbqx")
+[sub_resource type="Resource" id="Resource_b4avj"]
+script = ExtResource("1_dv5ty")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The Blackarm makes two attacks, either with its Greater Shoni Spear or its Outland Rifle, and uses Incite Rampage if it can."
 descriptionWithLinks = " The Blackarm makes two attacks, either with its Greater Shoni Spear or its Outland Rifle, and uses Incite Rampage if it can."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_es43d"]
-script = ExtResource("1_upbqx")
+[sub_resource type="Resource" id="Resource_ydbv4"]
+script = ExtResource("1_dv5ty")
 name = "Lig Sword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit 6 (1d8 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit 6 (1d8 + 2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft"
+attackRange = "reach 5 ft"
 attackBonus = 5
 numberOfTargets = "one target."
 damage = 6
 damageRoll = "1d8 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_76cfn"]
-script = ExtResource("1_upbqx")
+[sub_resource type="Resource" id="Resource_f8hp2"]
+script = ExtResource("1_dv5ty")
 name = "Greater Shoni Spear"
 monsterBehaviorType = 0
 description = " Melee or Ranged Weapon Attack: +5 to hit, reach 10 ft., one target. Hit 8 (1d10 + 3) kinetic damage."
 descriptionWithLinks = " Melee or Ranged Weapon Attack: +5 to hit, reach 10 ft., one target. Hit 8 (1d10 + 3) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 10 ft."
+attackRange = "reach 10 ft."
 attackBonus = 5
 numberOfTargets = "one target."
 damage = 8
 damageRoll = "1d10 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_lbgsg"]
-script = ExtResource("1_upbqx")
+[sub_resource type="Resource" id="Resource_ew7qt"]
+script = ExtResource("1_dv5ty")
 name = "Outland Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 30/120, one target. Hit 5 (1d6 + 2) kinetic damage."
 descriptionWithLinks = " Ranged Weapon Attack: +4 to hit, range 30/120, one target. Hit 5 (1d6 + 2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "range 30/120"
+attackRange = "range 30/120"
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 5
 damageRoll = "1d6 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_6fvmj"]
-script = ExtResource("1_upbqx")
+[sub_resource type="Resource" id="Resource_bswvb"]
+script = ExtResource("1_dv5ty")
 name = "Incite Rampage"
 monsterBehaviorType = 0
 description = " One creature the Kolkpravis' Blackarm can see within 30 feet of it can use its reaction to make a melee attack if it can hear the Kolkpravis Blackarm and has the Rampage trait."
 descriptionWithLinks = " One creature the Kolkpravis' Blackarm can see within 30 feet of it can use its reaction to make a melee attack if it can hear the Kolkpravis Blackarm and has the Rampage trait."
 attackType = 0
 restrictions = "Recharge 5-6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -79,11 +79,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_5vbfb")
+script = ExtResource("2_epfmh")
 name = "Kolkpravis Blackarm"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "lawful balanced"
 armorType = "light battle armor"
@@ -106,4 +106,4 @@ senses = Array[String](["darkvision 60ft", "passive Perception 12"])
 languages = Array[String](["Kaleesh", "Galactic Basic"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_upbqx")]([SubResource("Resource_lhd74"), SubResource("Resource_es43d"), SubResource("Resource_76cfn"), SubResource("Resource_lbgsg"), SubResource("Resource_6fvmj")])
+behaviors = Array[ExtResource("1_dv5ty")]([SubResource("Resource_b4avj"), SubResource("Resource_ydbv4"), SubResource("Resource_f8hp2"), SubResource("Resource_ew7qt"), SubResource("Resource_bswvb")])

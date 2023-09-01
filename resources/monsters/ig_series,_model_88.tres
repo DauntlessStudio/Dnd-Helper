@@ -1,122 +1,122 @@
 [gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dc8xp"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7r1l2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_tkxp5"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_watin"]
 
-[sub_resource type="Resource" id="Resource_gw78m"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_otkf4"]
+script = ExtResource("1_tkxp5")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8s68c"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_gog1r"]
+script = ExtResource("1_tkxp5")
 name = "Legendary Resistance"
 monsterBehaviorType = 0
 description = " If IG-88 fails a saving throw, it can choose to succeed instead."
 descriptionWithLinks = " If IG-88 fails a saving throw, it can choose to succeed instead."
 attackType = 0
 restrictions = "3/Day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_v07cv"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_4mffs"]
+script = ExtResource("1_tkxp5")
 name = "Sneak Attack"
 monsterBehaviorType = 0
 description = " IG-88 deals an extra 28 (8d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of IG-88 that isn't incapacitated and IG-88 doesn't have disadvantage on the roll."
 descriptionWithLinks = " IG-88 deals an extra 28 (8d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of IG-88 that isn't incapacitated and IG-88 doesn't have disadvantage on the roll."
 attackType = 0
 restrictions = "1/Turn"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xjq4n"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_fiw5f"]
+script = ExtResource("1_tkxp5")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " IG-88 makes three weapon attacks."
 descriptionWithLinks = " IG-88 makes three weapon attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pqujw"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_jpxif"]
+script = ExtResource("1_tkxp5")
 name = "Sniper Rifle"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 10 (1d12+4) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 10 (1d12+4) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 150/600 ft."
+attackRange = "range 150/600 ft."
 attackBonus = 9
 numberOfTargets = "one target."
 damage = 10
 damageRoll = "1d12+4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_54owe"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_ie1o1"]
+script = ExtResource("1_tkxp5")
 name = "Stock Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 7
 numberOfTargets = "one target."
 damage = 4
 damageRoll = "1d4+2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_xo7d8"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_52bfj"]
+script = ExtResource("1_tkxp5")
 name = "Attack"
 monsterBehaviorType = 0
 description = " IG-88 makes one weapon attack."
 descriptionWithLinks = " IG-88 makes one weapon attack."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qyo4i"]
-script = ExtResource("1_dc8xp")
+[sub_resource type="Resource" id="Resource_qgfba"]
+script = ExtResource("1_tkxp5")
 name = "Detect"
 monsterBehaviorType = 0
 description = " IG-88 makes a Wisdom (Perception) check."
 descriptionWithLinks = " IG-88 makes a Wisdom (Perception) check."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -124,11 +124,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_7r1l2")
+script = ExtResource("2_watin")
 name = "IG Series, Model 88"
 flavorText = "The IG series is a series of droids manufactured by Holowan Laboratories. They are often used as both bodyguards and assassins."
 sectionText = "Assassin droids are a type of droid built specifically for the purpose of assassination. These droids generally perform with unflinching loyalty to their masters, but rogue assassin droids are not unknown. Since their missions generally require a far higher degree of independent skill, savvy, and judgment than normally possessed by simple war droids, their programming subroutines, circuitry, and memory cores are of correspondingly higher sophistication.Equipped with an array of weapons, assassin droids are also used as elite infantry when the need for skillful and quickly adaptable soldiers with unquestionable loyalty arises.An inordinate number of assassin droids have achieved sentient independence, including IG-88 and C-3PX, presumably due to the higher level of autonomy incorporated into their processor design. These droids typically fund their independent existences through the use of their innate abilities, often plying their trade as bounty hunters."
-size = 0
+size = 3
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -151,4 +151,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 17"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "10"
 experiencePoints = 5900
-behaviors = Array[ExtResource("1_dc8xp")]([SubResource("Resource_gw78m"), SubResource("Resource_8s68c"), SubResource("Resource_v07cv"), SubResource("Resource_xjq4n"), SubResource("Resource_pqujw"), SubResource("Resource_54owe"), SubResource("Resource_xo7d8"), SubResource("Resource_qyo4i")])
+behaviors = Array[ExtResource("1_tkxp5")]([SubResource("Resource_otkf4"), SubResource("Resource_gog1r"), SubResource("Resource_4mffs"), SubResource("Resource_fiw5f"), SubResource("Resource_jpxif"), SubResource("Resource_ie1o1"), SubResource("Resource_52bfj"), SubResource("Resource_qgfba")])

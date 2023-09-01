@@ -1,62 +1,62 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_iy860"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6pxcm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_m655d"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_pv1iy"]
 
-[sub_resource type="Resource" id="Resource_rwum6"]
-script = ExtResource("1_iy860")
+[sub_resource type="Resource" id="Resource_6us3y"]
+script = ExtResource("1_m655d")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jtcqf"]
-script = ExtResource("1_iy860")
+[sub_resource type="Resource" id="Resource_658v6"]
+script = ExtResource("1_m655d")
 name = "Targeting Systems"
 monsterBehaviorType = 0
 description = " The turret uses its Intelligence modifier for attack, damage, and intitiative rolls."
 descriptionWithLinks = " The turret uses its Intelligence modifier for attack, damage, and intitiative rolls."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_tn6al"]
-script = ExtResource("1_iy860")
+[sub_resource type="Resource" id="Resource_fdkjg"]
+script = ExtResource("1_m655d")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The turret makes two repeating blaster attacks."
 descriptionWithLinks = " The turret makes two repeating blaster attacks."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7kajy"]
-script = ExtResource("1_iy860")
+[sub_resource type="Resource" id="Resource_us0af"]
+script = ExtResource("1_m655d")
 name = "Repeating Blaster"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +4 to hit, range 40/160 ft., one target. Hit 5 (1d6+2) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +4 to hit, range 40/160 ft., one target. Hit 5 (1d6+2) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 40/160 ft."
+attackRange = "range 40/160 ft."
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 5
@@ -64,11 +64,11 @@ damageRoll = "1d6+2"
 damageType = 3
 
 [resource]
-script = ExtResource("2_6pxcm")
+script = ExtResource("2_pv1iy")
 name = "Auto-Turret"
 flavorText = "An autoturret is a blaster turret emplacement used to defend an area. Known for their killing power and effectiveness, they are employed by many factions throughout galactic history. Autoturrets were used widely during the Jedi Civil War, with the Sith Empire deploying them to restrict access to the Undercity of Taris and to defend their military bases. Often, they were installed at the entrances to hidden bases, onboard capital ships, or near personal valuables.In the later stages of the Clone Wars, portable autoturrets were used by both the Grand Army of the Republiic and the Separatist Droid Army for covering fire or to reinforce the defense of field command posts. These autoturrets became the standard equipment of clone and droid snipers, who were entrusted with their deployment."
 sectionText = "A turret is a mount for a weapon that enabled it to turn and pivot, allowing it to fire in many different directions. They are mounted on many vehicles, starfighters, and starships.  Other turrets are mounted on the ground, and can be both manned and un-manned. Weapons mounted on turrets included laser cannons and other types of projectile cannons."
-size = 0
+size = 3
 types = Array[String](["construct"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["â€”"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_iy860")]([SubResource("Resource_rwum6"), SubResource("Resource_jtcqf"), SubResource("Resource_tn6al"), SubResource("Resource_7kajy")])
+behaviors = Array[ExtResource("1_m655d")]([SubResource("Resource_6us3y"), SubResource("Resource_658v6"), SubResource("Resource_fdkjg"), SubResource("Resource_us0af")])

@@ -1,32 +1,32 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ojkxb"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wykce"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_e8dxn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5lrvc"]
 
-[sub_resource type="Resource" id="Resource_p1he2"]
-script = ExtResource("1_ojkxb")
+[sub_resource type="Resource" id="Resource_whc2o"]
+script = ExtResource("1_e8dxn")
 name = "False Appearance"
 monsterBehaviorType = 0
 description = " While the tree remains motionless, it is indistinguishable from a normal tree."
 descriptionWithLinks = " While the tree remains motionless, it is indistinguishable from a normal tree."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_b1fjd"]
-script = ExtResource("1_ojkxb")
+[sub_resource type="Resource" id="Resource_4tjs1"]
+script = ExtResource("1_e8dxn")
 name = "Rake"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 1
 numberOfTargets = "one target."
 damage = 1
@@ -34,11 +34,11 @@ damageRoll = "1d4 - 1"
 damageType = 7
 
 [resource]
-script = ExtResource("2_wykce")
+script = ExtResource("2_5lrvc")
 name = "Shrub"
 flavorText = ""
 sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
-size = 0
+size = 2
 types = Array[String](["plant"])
 alignment = "unaligned"
 armorType = "None"
@@ -61,4 +61,4 @@ senses = Array[String](["Tremorsense 120 ft. (blind beyond this radius)", "passi
 languages = Array[String](["â€”"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_ojkxb")]([SubResource("Resource_p1he2"), SubResource("Resource_b1fjd")])
+behaviors = Array[ExtResource("1_e8dxn")]([SubResource("Resource_whc2o"), SubResource("Resource_4tjs1")])

@@ -1,137 +1,137 @@
 [gd_resource type="Resource" script_class="Character" load_steps=12 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fr20q"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_23f5a"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_yiqs8"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nc8xg"]
 
-[sub_resource type="Resource" id="Resource_tmfw3"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_h0f3f"]
+script = ExtResource("1_yiqs8")
 name = "Brute"
 monsterBehaviorType = 0
 description = " The trandoshan deals an extra 3 (1d6) damage when it hits with a melee weapon attack (included in the attacks)."
 descriptionWithLinks = " The trandoshan deals an extra 3 (1d6) damage when it hits with a melee weapon attack (included in the attacks)."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mplpu"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_5nhyj"]
+script = ExtResource("1_yiqs8")
 name = "Frenzy"
 monsterBehaviorType = 0
 description = " When the trandoshan reduces a creature to 0 hit points with a melee attack on its turn, it can immediately move up to half its speed and make a vibrosword attack."
 descriptionWithLinks = " When the trandoshan reduces a creature to 0 hit points with a melee attack on its turn, it can immediately move up to half its speed and make a vibrosword attack."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_07kc0"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_dxpev"]
+script = ExtResource("1_yiqs8")
 name = "Infrared Vision"
 monsterBehaviorType = 0
 description = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
 descriptionWithLinks = " The trandoshan has advantage on Wisdom (Perception) checks that rely on sight."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_efo2f"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_o5b06"]
+script = ExtResource("1_yiqs8")
 name = "Regeneration"
 monsterBehaviorType = 0
 description = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
 descriptionWithLinks = " The trandoshan regains 10 hit points at the start of its turn if it has at least 1 hit point."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_o6p21"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_4vnl4"]
+script = ExtResource("1_yiqs8")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The trandoshan makes three attacks with its sword or slugthrower."
 descriptionWithLinks = " The trandoshan makes three attacks with its sword or slugthrower."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_utuoo"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_3bweg"]
+script = ExtResource("1_yiqs8")
 name = "Trandoshan Greatsword"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 4) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 7
 numberOfTargets = "one target."
 damage = 13
 damageRoll = "3d6 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_deknc"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_spoh5"]
+script = ExtResource("1_yiqs8")
 name = "Slugthrower"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +6 to hit, range 100/400., one target. Hit: 7 (1d8 + 3) kinetic damage."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 100/400., one target. Hit: 7 (1d8 + 3) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "range 100/400."
+attackRange = "range 100/400."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 7
 damageRoll = "1d8 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_dwakp"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_ttpxh"]
+script = ExtResource("1_yiqs8")
 name = "Burst"
 monsterBehaviorType = 0
 description = " The trandoshan sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 14 Dexterity saving throw, taking 7 (1d8 + 3) kinetic damage on a failed save, or half as much on a successful one."
 descriptionWithLinks = " The trandoshan sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 14 Dexterity saving throw, taking 7 (1d8 + 3) kinetic damage on a failed save, or half as much on a successful one."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kfrew"]
-script = ExtResource("1_fr20q")
+[sub_resource type="Resource" id="Resource_6mvo2"]
+script = ExtResource("1_yiqs8")
 name = "Parry"
 monsterBehaviorType = 0
 description = " The trandoshan adds 3 to his AC against one melee attack that would hit him. To do so, the trandoshan must see the attacker and be wielding a melee weapon."
 descriptionWithLinks = " The trandoshan adds 3 to his AC against one melee attack that would hit him. To do so, the trandoshan must see the attacker and be wielding a melee weapon."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -139,11 +139,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_23f5a")
+script = ExtResource("2_nc8xg")
 name = "Trandoshan Elite Warrior"
 flavorText = ""
 sectionText = "Trandoshans, also called T'doshok, were large, bipedal reptilian sentient humanoids from the planet Trandosha, and were renowned as great hunters who relished the thrill of the hunt.  Trandoshans are known to embark on a hunting related rite of passage.  ***Notable Trandoshans.*** A Trandoshan known as Garnac ran a hunting guild based out of a floating fortress that hovered above an island-designated Island Four-on the moon Wasskah. Garnac's scouts traveled to different worlds to collect other sentient beings to dump on Island Four, where the prisoners would be hunted for sport.Bossk, a famous Trandoshan bounty hunter, worked alongside fellow hunters Aurra Sing and Castas to mentor the orphaned Boba Fett. Bossk owned and operated a modified YV-666 light freighter named the Hound's Tooth. Bossk was renowned and feared for his effectiveness at killing Wookiees. He was ruthless and efficient, but upheld the Bounty Hunter Code and was known to keep his promises to the letter of the law. "
-size = 0
+size = 3
 types = Array[String](["humanoid"])
 alignment = "any dark"
 armorType = "heavy combat suit"
@@ -166,4 +166,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 15"])
 languages = Array[String](["Galactic Basic", "Dosh"])
 challengeRating = "6"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_fr20q")]([SubResource("Resource_tmfw3"), SubResource("Resource_mplpu"), SubResource("Resource_07kc0"), SubResource("Resource_efo2f"), SubResource("Resource_o6p21"), SubResource("Resource_utuoo"), SubResource("Resource_deknc"), SubResource("Resource_dwakp"), SubResource("Resource_kfrew")])
+behaviors = Array[ExtResource("1_yiqs8")]([SubResource("Resource_h0f3f"), SubResource("Resource_5nhyj"), SubResource("Resource_dxpev"), SubResource("Resource_o5b06"), SubResource("Resource_4vnl4"), SubResource("Resource_3bweg"), SubResource("Resource_spoh5"), SubResource("Resource_ttpxh"), SubResource("Resource_6mvo2")])

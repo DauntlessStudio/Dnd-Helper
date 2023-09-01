@@ -1,32 +1,32 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2o7tv"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_aa5mj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i5m64"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_y8tfq"]
 
-[sub_resource type="Resource" id="Resource_v1i08"]
-script = ExtResource("1_2o7tv")
+[sub_resource type="Resource" id="Resource_d0qf3"]
+script = ExtResource("1_i5m64")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The B'omarr Brain Walker makes Two Mind Thrust attacks"
 descriptionWithLinks = " The B'omarr Brain Walker makes Two Mind Thrust attacks"
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_n7t3f"]
-script = ExtResource("1_2o7tv")
+[sub_resource type="Resource" id="Resource_b4l6y"]
+script = ExtResource("1_i5m64")
 name = "Mind Thrust"
 monsterBehaviorType = 0
 description = " One creature within 60 feet of the B'omarr Brain Walker must make a DC 13 Wisdom saving throw, taking 13 (4d6) psychic damage on a failed save, or half as much on a successful one."
 descriptionWithLinks = " One creature within 60 feet of the B'omarr Brain Walker must make a DC 13 Wisdom saving throw, taking 13 (4d6) psychic damage on a failed save, or half as much on a successful one."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -34,11 +34,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_aa5mj")
+script = ExtResource("2_y8tfq")
 name = "B'omarr Brain Walker"
 flavorText = ""
 sectionText = "The B'omarr Order, which consisted of the B'omarr Monks, was a mysterious religious order that moved to the planet Tatooine around 700 BBY. The B'omarr believed that cutting themselves off from all physical sensation would further their studies, and allow them to ponder the galaxy and achieve enlightenment. When a monk became enlightened, his brain was removed through a special procedure, and was placed in a nutrient-filled jar. The brains were held in very high regard by the lower, embodied monks, who saw to their every need, though the brains rarely did anything other than think and wonder. When they did need to travel around their monastery on Tatooine, the brains were transferred into specially modified BT-16 perimeter droids."
-size = 0
+size = 3
 types = Array[String](["construct"])
 alignment = "any dark"
 armorType = "armor plating"
@@ -61,4 +61,4 @@ senses = Array[String](["blindsight 60 ft.", "passive Perception 11"])
 languages = Array[String](["Galactic Basic", "Huttese"])
 challengeRating = "4"
 experiencePoints = 3
-behaviors = Array[ExtResource("1_2o7tv")]([SubResource("Resource_v1i08"), SubResource("Resource_n7t3f")])
+behaviors = Array[ExtResource("1_i5m64")]([SubResource("Resource_d0qf3"), SubResource("Resource_b4l6y")])

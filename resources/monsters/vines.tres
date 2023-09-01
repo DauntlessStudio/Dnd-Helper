@@ -1,47 +1,47 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8v041"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nmlxp"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dy0rd"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_msadv"]
 
-[sub_resource type="Resource" id="Resource_bvvio"]
-script = ExtResource("1_8v041")
+[sub_resource type="Resource" id="Resource_ountn"]
+script = ExtResource("1_dy0rd")
 name = "Constrict"
 monsterBehaviorType = 0
 description = " Creatures grappled by the vines take 4 (1d8) kinetic damage at the start of every round."
 descriptionWithLinks = " Creatures grappled by the vines take 4 (1d8) kinetic damage at the start of every round."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_s2mw4"]
-script = ExtResource("1_8v041")
+[sub_resource type="Resource" id="Resource_23bo8"]
+script = ExtResource("1_dy0rd")
 name = "False Appearance"
 monsterBehaviorType = 0
 description = " While the vines remains motionless, they are indistinguishable from normal vines."
 descriptionWithLinks = " While the vines remains motionless, they are indistinguishable from normal vines."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_nrljn"]
-script = ExtResource("1_8v041")
+[sub_resource type="Resource" id="Resource_byqi8"]
+script = ExtResource("1_dy0rd")
 name = "Vines"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 22 (4d8 + 4) kinetic damage, and the target is Grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the vines can't constrict another target."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 22 (4d8 + 4) kinetic damage, and the target is Grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the vines can't constrict another target."
 attackType = 0
 restrictions = ""
-range = "reach 15 ft."
+attackRange = "reach 15 ft."
 attackBonus = 6
 numberOfTargets = "one target."
 damage = 22
@@ -49,11 +49,11 @@ damageRoll = "4d8 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_nmlxp")
+script = ExtResource("2_msadv")
 name = "Vines"
 flavorText = ""
 sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
-size = 0
+size = 4
 types = Array[String](["plant"])
 alignment = "unaligned"
 armorType = "None"
@@ -76,4 +76,4 @@ senses = Array[String](["Blindsight 60 ft. (blind beyond this radius)", "passive
 languages = Array[String](["â€”"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_8v041")]([SubResource("Resource_bvvio"), SubResource("Resource_s2mw4"), SubResource("Resource_nrljn")])
+behaviors = Array[ExtResource("1_dy0rd")]([SubResource("Resource_ountn"), SubResource("Resource_23bo8"), SubResource("Resource_byqi8")])

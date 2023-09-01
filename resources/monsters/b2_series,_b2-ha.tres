@@ -1,92 +1,92 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_tfcbh"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_txkgt"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8rfyh"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_fcd8l"]
 
-[sub_resource type="Resource" id="Resource_8ckt8"]
-script = ExtResource("1_tfcbh")
+[sub_resource type="Resource" id="Resource_nhfud"]
+script = ExtResource("1_8rfyh")
 name = "Circuitry"
 monsterBehaviorType = 0
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uf5by"]
-script = ExtResource("1_tfcbh")
+[sub_resource type="Resource" id="Resource_371ys"]
+script = ExtResource("1_8rfyh")
 name = "Multiattack"
 monsterBehaviorType = 0
 description = " The super battle droid makes two weapon attacks with its strike or wrist blaster."
 descriptionWithLinks = " The super battle droid makes two weapon attacks with its strike or wrist blaster."
 attackType = 0
 restrictions = ""
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gvkhu"]
-script = ExtResource("1_tfcbh")
+[sub_resource type="Resource" id="Resource_ar4m8"]
+script = ExtResource("1_8rfyh")
 name = "Strike"
 monsterBehaviorType = 0
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 attackType = 0
 restrictions = ""
-range = "reach 5 ft."
+attackRange = "reach 5 ft."
 attackBonus = 4
 numberOfTargets = "one target."
 damage = 4
 damageRoll = "1d4+2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_db8rc"]
-script = ExtResource("1_tfcbh")
+[sub_resource type="Resource" id="Resource_2xr2b"]
+script = ExtResource("1_8rfyh")
 name = "Wrist Blaster"
 monsterBehaviorType = 0
 description = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
 attackType = 0
 restrictions = ""
-range = "range 60/240 ft."
+attackRange = "range 60/240 ft."
 attackBonus = 5
 numberOfTargets = "one target."
 damage = 6
 damageRoll = "1d6+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_j4cre"]
-script = ExtResource("1_tfcbh")
+[sub_resource type="Resource" id="Resource_227ed"]
+script = ExtResource("1_8rfyh")
 name = "Wrist Blaster Volley"
 monsterBehaviorType = 0
 description = " The super battle droid sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 13 Dexterity saving throw, taking normal weapon damage on a failed save."
 descriptionWithLinks = " The super battle droid sprays a 10-foot-cube area within normal range with shots. Each creature in the area must make a DC 13 Dexterity saving throw, taking normal weapon damage on a failed save."
 attackType = 0
 restrictions = "Recharge 5-6"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_s1aqs"]
-script = ExtResource("1_tfcbh")
+[sub_resource type="Resource" id="Resource_rv4y4"]
+script = ExtResource("1_8rfyh")
 name = "Rocket Launcher"
 monsterBehaviorType = 0
 description = " Each creature in a 20-foot-radius sphere centered on a point that you can see within 150 feet must make a DC 13 Dexterity saving throw.  A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " Each creature in a 20-foot-radius sphere centered on a point that you can see within 150 feet must make a DC 13 Dexterity saving throw.  A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one."
 attackType = 0
 restrictions = "1/Day"
-range = ""
+attackRange = ""
 attackBonus = 0
 numberOfTargets = ""
 damage = 0
@@ -94,11 +94,11 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_txkgt")
+script = ExtResource("2_fcd8l")
 name = "B2 Series, B2-HA"
 flavorText = "B2 super battle droids were an advanced battle droid used by the Confederacy of Independent Systems during the Clone Wars. Like the updated B1s used by the Confederacy, they did not require a command system to operate, which gave the droids limited independence. Another improvement was their thick armor casing, which contained their fragile sensors. However, B2s were designed with simple processors, limiting their ability to formulate strategies. As a result, they relied on organic commanders or tactical droids in order to effectively operate. The B2 was much stronger than the B1s, with enough strength to lift a clone trooper off the ground as seen at the Battle of Teth. The B2-HA super battle droid was a variant of the B2 equipped with a cannon arm that could fire homing rockets."
 sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
-size = 0
+size = 3
 types = Array[String](["droid"])
 alignment = "unaligned"
 armorType = "armor plating"
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_tfcbh")]([SubResource("Resource_8ckt8"), SubResource("Resource_uf5by"), SubResource("Resource_gvkhu"), SubResource("Resource_db8rc"), SubResource("Resource_j4cre"), SubResource("Resource_s1aqs")])
+behaviors = Array[ExtResource("1_8rfyh")]([SubResource("Resource_nhfud"), SubResource("Resource_371ys"), SubResource("Resource_ar4m8"), SubResource("Resource_2xr2b"), SubResource("Resource_227ed"), SubResource("Resource_rv4y4")])
