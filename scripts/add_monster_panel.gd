@@ -1,5 +1,5 @@
 class_name AddMonsterPanel
-extends PanelContainer
+extends Window
 
 enum sizeValues {Unknown, Tiny, Small, Medium, Large, Huge, Gargantuan}
 var displayMonsters: Array[MonsterContainer]

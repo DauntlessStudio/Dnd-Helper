@@ -4,12 +4,12 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AddMonsterPanel.addMonster.connect(addMonster)
+	$AddMonsterWindow.addMonster.connect(addMonster)
 
 
 
 func _on_new_monster_button_pressed():
-	$AddMonsterPanel.visible = true
+	$AddMonsterWindow.show()
 
 
 func addMonster(character: Character):
@@ -34,10 +34,6 @@ func sortInitiativePanel():
 
 	for node in sorted_nodes:
 		$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(node)
-
-
-func _on_exit_button_pressed():
-	$AddMonsterPanel.visible = false
 
 
 func _on_clear_button_pressed():
@@ -72,3 +68,7 @@ func reset_player_dialog():
 	$AddPlayerDialog/HFlowContainer/MovementEdit.text = ""
 	$AddPlayerDialog/HFlowContainer/HPBox.value = 0
 	$AddPlayerDialog.hide()
+
+
+func _on_add_monster_window_close_requested():
+	$AddMonsterWindow.hide()
