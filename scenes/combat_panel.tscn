@@ -12,48 +12,9 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -192.0
-offset_bottom = -311.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_sd6cn")
-
-[node name="CombatentStack" type="PanelContainer" parent="."]
-custom_minimum_size = Vector2(180, 0)
-layout_mode = 1
-anchors_preset = 11
-anchor_left = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -281.0
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CombatentStack"]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CombatentStack/VBoxContainer"]
-layout_mode = 2
-
-[node name="NewPlayerButton" type="Button" parent="CombatentStack/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "New Player"
-
-[node name="NewMonsterButton" type="Button" parent="CombatentStack/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "New Monster"
-
-[node name="ClearButton" type="Button" parent="CombatentStack/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "Clear"
-
-[node name="ScrollContainer" type="ScrollContainer" parent="CombatentStack/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="InitiativeStack" type="VBoxContainer" parent="CombatentStack/VBoxContainer/ScrollContainer"]
-layout_mode = 2
-theme_override_constants/separation = 5
 
 [node name="AddPlayerDialog" type="ConfirmationDialog" parent="."]
 title = "Add Player"
@@ -198,8 +159,73 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[connection signal="pressed" from="CombatentStack/VBoxContainer/HBoxContainer/NewPlayerButton" to="." method="_on_new_player_button_pressed"]
-[connection signal="pressed" from="CombatentStack/VBoxContainer/HBoxContainer/NewMonsterButton" to="." method="_on_new_monster_button_pressed"]
-[connection signal="pressed" from="CombatentStack/VBoxContainer/HBoxContainer/ClearButton" to="." method="_on_clear_button_pressed"]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[align=center][b][size=6]Combat[/size][/b][/align]
+[align=center][b]Reminders[/b][/align][list][*]A [b]round[/b] [i]not a turn[/i] lasts 6 seconds.
+[*][b]Surprise[/b] generally means comparing Wisdom (Perception) against Dexterity (Stealth). If a combatant is aware of a threat, they [i]cannot[/i] be surprised. One combatant can be surprised while others on their side are not.
+[*]On your turn you can perform [b]one action[/b], [b]one bonus action[/b] (if granted by an ability), [b]one object interaction[/b], and before the start of your next turn [b]one reaction[/b]. Unless an ability explicitly allows you to perform multiple of these, you must select [i]no more than one[/i] of each action type no matter how many options you have.
+[*]Combatants can only pass through another’s space if (a) the one occupying that space lets them, (b) there are at least two levels of size difference between them. Another creature’s space counts as difficult terrain, and you cannot end your turn in another’s space willingly.
+[*][b]Opportunity Attacks[/b] are a [i]reaction[/i] provoked when one creature [i]leaves[/i] another’s space.
+[*]Working on a [b]grid[/b] means each square represents 5 ft. Diagonal movement costs 1.5 movement (done as one square costs 5 and the second costs 10, alternating) and cannot cross walls or corners.[/list][align=center][b]Common Actions[/b][/align][list][*][b]Attack[/b]. When attacking: a target is picked, then you add your ability modifiers (Strength for Melee, Dexterity for Ranged, unless otherwise stated) and  your proficiency bonus if applicable to the attack roll. If it meets or exceeds the target’s armor class, the attack hits. Rolling a 1 is an automatic miss and rolling a 20 is an automatic hit regardless of modifiers.
+On a hit, you roll the attack dice (from the weapon or power) and add the relevant modifiers (Strength for Melee, Dexterity for Ranged, Powers [i]may[/i] describe a modifier to add).
+If the attack was a [b]Critical Hit[/b] (Rolling a 20 or the critical hit range of the weapon) then you roll the attack dice twice [i]then[/i] add your modifiers (modifiers don’t get applied twice).
+After calculating the damage factor in [b]resistances[/b] (deals double damage), [b]vulnerabilities[/b] (deals half damage), or [b]immunities[/b] (negates damage) based on the damage type.
+[b]Ranged Attacks[/b] have an effective range/max range system. If the distance exceeds the effective range you attack with disadvantage, if it exceeds the max range you cannot attack that target. Ranged attacks have disadvantage on non-incapacitated creatures within 5 ft.
+[b]Double Weapon[/b] if a weapon has the [i]light[/i] and [i]double[/i] properties and you are two-handing it and you have just taken the attack action, then you can perform another attack as a [i]bonus action[/i]. You [b]do not[/b] add your ability modifiers, but you [b]do[/b] add your proficiency bonus to the [i]attack roll[/i]. You [b]do[/b] add your ability modifiers to the [i]damage roll[/i].
+[*][b]Casting Powers[/b]. Some powers have a casting time of action, which can be performed according to that power’s specific rule.
+[*][b]Dash[/b]. Dashing increases your movement this turn by your speed plus any modifiers.
+[*][b]Disengage[/b]. Prevents provoking opportunity attacks for the rest of your turn.
+[*][b]Dodge[/b]. Until the start of your next turn, attack rolls against you have disadvantage if you can see the attacker. You make Dexterity saving throws with advantage.
+[*][b]Guard[/b]. Defend a creature within 5 ft. Any attack roll against the guarded has disadvantage if you can see the attacker and the guarded is within 5 ft. If the attack would hit, you can chose to let it hit you instead, and you take max damage instead of rolling.
+[*][b]Help[/b]. The helped creature gains advantage on the next ability check on the task you are helping with. This includes attack rolls.
+[*][b]Hide[/b]. Make a Dexterity (Stealth) check to hide.
+[*][b]Ready[/b]. Define a trigger and the action you will take in response to that trigger. You store that as a [i]reaction[/i]. If you ready a power, you cast it (consuming Force/Tech points). Readied powers require concentration, so any other concentration power ends and you might break concentration if hit before using the power.
+[*][b]Search[/b]. Make a (GM’s choice) Wisdom (Perception) or Intelligence (Investigation) check to find something.
+[*][b]Use An Object[/b]. This can either be a second [i]object interaction[/i], or the use of an item that requires an action (i.e. Grenades or Medpacs).[/list]"
+
+[node name="CombatentStack" type="PanelContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/CombatentStack"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/CombatentStack/VBoxContainer"]
+layout_mode = 2
+
+[node name="NewPlayerButton" type="Button" parent="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "New Player"
+
+[node name="NewMonsterButton" type="Button" parent="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "New Monster"
+
+[node name="ClearButton" type="Button" parent="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Clear"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/CombatentStack/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InitiativeStack" type="VBoxContainer" parent="HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
 [connection signal="confirmed" from="AddPlayerDialog" to="." method="_on_add_player_dialog_confirmed"]
 [connection signal="close_requested" from="AddMonsterWindow" to="." method="_on_add_monster_window_close_requested"]
+[connection signal="pressed" from="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer/NewPlayerButton" to="." method="_on_new_player_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer/NewMonsterButton" to="." method="_on_new_monster_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer/ClearButton" to="." method="_on_clear_button_pressed"]
