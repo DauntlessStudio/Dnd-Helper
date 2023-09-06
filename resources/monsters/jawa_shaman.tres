@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_aksr0"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_e6eje"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_t2xyn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bvlyy"]
 
-[sub_resource type="Resource" id="Resource_tfmbd"]
-script = ExtResource("1_aksr0")
+[sub_resource type="Resource" id="Resource_vai7g"]
+script = ExtResource("1_t2xyn")
 name = "Nimble Escape"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Hide action as a bonus action on each of its turns.  The jawa can take the Disengage or"
 descriptionWithLinks = " Hide action as a bonus action on each of its turns.  The jawa can take the Disengage or"
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uha3y"]
-script = ExtResource("1_aksr0")
+[sub_resource type="Resource" id="Resource_6dwae"]
+script = ExtResource("1_t2xyn")
 name = "Forcecasting"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = "forcecasting ability is Wisdom (save DC 12, +4 to hit with power attacks). The jawa has 18 force points and knows the following powers: At will: affect mind, give life, spare the dying 1st level: beast trick, heal, heroism 2nd level: restoration, stun  The jawa is a 4th-level forcecaster. Its"
 descriptionWithLinks = " Forcecasting. The jawa is a 4th-level forcecaster. Its
 
@@ -43,10 +43,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_tgh0i"]
-script = ExtResource("1_aksr0")
+[sub_resource type="Resource" id="Resource_b15qh"]
+script = ExtResource("1_t2xyn")
 name = "Vibrostaff"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " one target. Hit 5 (2d4) kinetic damage.  Melee Weapon Attack: +2 to hit, reach 5 ft.,"
 descriptionWithLinks = " one target. Hit 5 (2d4) kinetic damage.  Melee Weapon Attack: +2 to hit, reach 5 ft.,"
 attackType = 0
@@ -58,10 +58,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xgrde"]
-script = ExtResource("1_aksr0")
+[sub_resource type="Resource" id="Resource_w7ojc"]
+script = ExtResource("1_t2xyn")
 name = "Grovel, Cower, and Beg"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The jawa cowers pathetically to distract nearby foes. Until the end of its next turn, its allies gain advantage on attack rolls against any target within 10 feet of the jawa."
 descriptionWithLinks = " The jawa cowers pathetically to distract nearby foes. Until the end of its next turn, its allies gain advantage on attack rolls against any target within 10 feet of the jawa."
 attackType = 0
@@ -74,7 +74,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_e6eje")
+script = ExtResource("2_bvlyy")
 name = "Jawa Shaman"
 flavorText = ""
 sectionText = "Jawas were a sentient species of meter-tall humanoids native to the desert world of Tatooine. Jawas are thought by some to be giant rodents or devolved humans. Jawas had a musky, animal odor akin to a fraternity of wet rats.Jawas were a communal species who spent most of their life devoted to scavenging the deserts in search of any scrap metal, droid, or mechanical part left behind from millennia of star travel and technological advancement, where the dry climate of Tatooine preserved almost all debris. They had a reputation for swindling and for selling hastily refurbished equipment and faulty droids.Each clan family had distinct territories for living and scavenging. Each clan was led by a Clan-Chief, who was male. However the overall operation of the Jawa clan was overseen by a female Shaman. A female Jawa became a shaman by either possessing some kind of Force ability with which to perform magic, overcoming an illness accompanied by a hallucinatory vision or was chosen and trained as the successor to the current Shaman."
@@ -101,4 +101,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["Jawaese", "underst", "s but doesn't speak Galactic Basic"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_aksr0")]([SubResource("Resource_tfmbd"), SubResource("Resource_uha3y"), SubResource("Resource_tgh0i"), SubResource("Resource_xgrde")])
+behaviors = Array[ExtResource("1_t2xyn")]([SubResource("Resource_vai7g"), SubResource("Resource_6dwae"), SubResource("Resource_b15qh"), SubResource("Resource_w7ojc")])

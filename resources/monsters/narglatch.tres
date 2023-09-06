@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_30q7o"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7ckxy"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_mhmax"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_i1acx"]
 
-[sub_resource type="Resource" id="Resource_ervnd"]
-script = ExtResource("1_30q7o")
+[sub_resource type="Resource" id="Resource_u1sir"]
+script = ExtResource("1_mhmax")
 name = "Shadow Stealth"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " While lightly or heavily obscured, the narglatch can take the Hide action as a bonus action."
 descriptionWithLinks = " While lightly or heavily obscured, the narglatch can take the Hide action as a bonus action."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ijjx2"]
-script = ExtResource("1_30q7o")
+[sub_resource type="Resource" id="Resource_ss35e"]
+script = ExtResource("1_mhmax")
 name = "Sure-Footed"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The narglatch has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
 descriptionWithLinks = " The narglatch has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_w7ju7"]
-script = ExtResource("1_30q7o")
+[sub_resource type="Resource" id="Resource_7et4y"]
+script = ExtResource("1_mhmax")
 name = "Pounce"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " If the narglatch moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the narglatch can make one bite attack against it as a bonus action."
 descriptionWithLinks = " If the narglatch moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the narglatch can make one bite attack against it as a bonus action."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wyci8"]
-script = ExtResource("1_30q7o")
+[sub_resource type="Resource" id="Resource_aa41l"]
+script = ExtResource("1_mhmax")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d10 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d10 + 2) kinetic damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 11
 damageRoll = "2d10 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_8fmdr"]
-script = ExtResource("1_30q7o")
+[sub_resource type="Resource" id="Resource_6u8ws"]
+script = ExtResource("1_mhmax")
 name = "Claw"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 2) kinetic damage."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = "2d8 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_7ckxy")
+script = ExtResource("2_i1acx")
 name = "Narglatch"
 flavorText = ""
 sectionText = "The narglatch is a stealthy, feline, apex predator which can be found in diverse environments, such as the Gungan swamps of Naboo or the frozen tundras of its native Orto Plutonia. Escaped narglatches are a threat on Coruscant.  The narglatch are considered to be sacred by the indigenous Talz, who use them as mounts and a source of food.***Biology & Appearance.*** The narglatch male had additional fleshy spikes, while females were smoother. They both had non-retractable claws and a fan-like tail that acted as a rudder during high-speed chases and turns. The narglatch also had densely padded feet that made for silent footfalls.A pregnant narglatch always gave birth to twins, one of each gender. Since young narglatch could hunt immediately upon birth, mothers abandoned them. ***Behavior.*** Cubs hunted together until maturity, making themselves less vulnerable to such Naboo creatures, as saw-toothed granks, veermoks, and even more mature male narglatch. As they approached maturity, the cubs separated.A solitary hunter, narglatch silently stalked and quickly killed its prey, usually kaadu or jimvu. Narglatch generally avoided deep water, although they were capable swimmers should the need arise. One of the few creatures they actively avoided were zalaacas."
@@ -106,4 +106,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["ï¿½"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_30q7o")]([SubResource("Resource_ervnd"), SubResource("Resource_ijjx2"), SubResource("Resource_w7ju7"), SubResource("Resource_wyci8"), SubResource("Resource_8fmdr")])
+behaviors = Array[ExtResource("1_mhmax")]([SubResource("Resource_u1sir"), SubResource("Resource_ss35e"), SubResource("Resource_7et4y"), SubResource("Resource_aa41l"), SubResource("Resource_6u8ws")])

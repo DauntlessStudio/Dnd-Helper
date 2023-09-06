@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_o7j47"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_n6lmd"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i11t3"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_3cblo"]
 
-[sub_resource type="Resource" id="Resource_ln2ve"]
-script = ExtResource("1_o7j47")
+[sub_resource type="Resource" id="Resource_hutnb"]
+script = ExtResource("1_i11t3")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yvue1"]
-script = ExtResource("1_o7j47")
+[sub_resource type="Resource" id="Resource_5x8ur"]
+script = ExtResource("1_i11t3")
 name = "Keen Hearing and Sight"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The astromech droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 descriptionWithLinks = " The astromech droid has advantage on Wisdom (Perception) checks that rely on hearing or sight."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_p6gej"]
-script = ExtResource("1_o7j47")
+[sub_resource type="Resource" id="Resource_syslh"]
+script = ExtResource("1_i11t3")
 name = "Rocket Boost"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The astromech droid leaps up to 40 feet in any direction."
 descriptionWithLinks = " The astromech droid leaps up to 40 feet in any direction."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xgqau"]
-script = ExtResource("1_o7j47")
+[sub_resource type="Resource" id="Resource_ye2hb"]
+script = ExtResource("1_i11t3")
 name = "Shockprod"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) lightning damage."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) lightning damage."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = "1d4+1"
 damageType = 8
 
 [resource]
-script = ExtResource("2_n6lmd")
+script = ExtResource("2_3cblo")
 name = "C1 Series Astromech Droid"
 flavorText = "The C1 series astromech droid, was a model of C-series astromech droid manufactured by Industrial Automaton. They were used during the Clone Warsand the reign of the Galactic Empire, though by then they were considered antiques and had passed their manufacturer's expiry date a few decades prior. They had three mechanical arms to manipulate objects with, and featured an electrical arc welder."
 sectionText = "An astromech droid, also referred to as an astro droid or mech, was a type of repair droid that served as an automated mechanic on starships. These compact droids used tool-tipped appendages stored in recessed compartments. Many starfighters relied on astromech copilots to control flight and power distribution systems. Sitting in an astromech socket exposed to space, the droid, in addition to its piloting duties, could calculate hyperspace jumps and perform simple repairs.Most astromechs were only able to communicate in writing, conveyed via another computer system, or through a special code of clicks, bleeps, and similar sounds, known as binary. However, certain other droids, such as C-3PO, could understand the binary code of astromechs, and often translated from binary to other languages."
@@ -91,4 +91,4 @@ senses = Array[String](["Darkvision 60 Ft.", "passive Perception 13"])
 languages = Array[String](["Speaks binary", "underst", "s Basic"])
 challengeRating = "1/8"
 experiencePoints = 25
-behaviors = Array[ExtResource("1_o7j47")]([SubResource("Resource_ln2ve"), SubResource("Resource_yvue1"), SubResource("Resource_p6gej"), SubResource("Resource_xgqau")])
+behaviors = Array[ExtResource("1_i11t3")]([SubResource("Resource_hutnb"), SubResource("Resource_5x8ur"), SubResource("Resource_syslh"), SubResource("Resource_ye2hb")])

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_h2idw"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_1h1dn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ptfju"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5435k"]
 
-[sub_resource type="Resource" id="Resource_arswl"]
-script = ExtResource("1_h2idw")
+[sub_resource type="Resource" id="Resource_8xnna"]
+script = ExtResource("1_ptfju")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iqxnm"]
-script = ExtResource("1_h2idw")
+[sub_resource type="Resource" id="Resource_hiow0"]
+script = ExtResource("1_ptfju")
 name = "Droid Synergy"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Once per turn, the commando droid can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the commando droid that isn't incapacitated."
 descriptionWithLinks = " Once per turn, the commando droid can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the commando droid that isn't incapacitated."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pb6gs"]
-script = ExtResource("1_h2idw")
+[sub_resource type="Resource" id="Resource_bebdb"]
+script = ExtResource("1_ptfju")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The supercommando droid makes two weapon attacks."
 descriptionWithLinks = " The supercommando droid makes two weapon attacks."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6i1sh"]
-script = ExtResource("1_h2idw")
+[sub_resource type="Resource" id="Resource_y84pi"]
+script = ExtResource("1_ptfju")
 name = "Blaster Carbine"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +7 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +7 to hit, range 60/240 ft., one target. Hit: 6 (1d6+3) energy damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 6
 damageRoll = "1d6+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_kv4j3"]
-script = ExtResource("1_h2idw")
+[sub_resource type="Resource" id="Resource_3e6ub"]
+script = ExtResource("1_ptfju")
 name = "Techblade"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) kinetic damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 6
 damageRoll = "1d6+3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_3inud"]
-script = ExtResource("1_h2idw")
+[sub_resource type="Resource" id="Resource_atjox"]
+script = ExtResource("1_ptfju")
 name = "Stealth Field Generator"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The droid becomes invisible. Anything the droid is carrying is invisible as long as it is on the droid. The droid may end the invisibility as a free action. The invisibility ends if the droid attacks."
 descriptionWithLinks = " The droid becomes invisible. Anything the droid is carrying is invisible as long as it is on the droid. The droid may end the invisibility as a free action. The invisibility ends if the droid attacks."
 attackType = 0
@@ -94,7 +94,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_1h1dn")
+script = ExtResource("2_5435k")
 name = "BX Series, BX-5C"
 flavorText = "The BX series commando droid was an elite battle droid model made for stealth assignments. Equipped with a stealth field generator, they were perfectly designed for espionage.They had the same operating abilities as B1 battle droids, with the addition of infiltration software. This, along with their humanoid shape, gave them the unique ability to fit into human-sized armor. In addition to this, the droids were capable of modulating their voices to match that of others, though they could not accurately copy their mannerisms or vocabulary, nor respond properly to unexpected situations outside of combatBX-series droid commandos were designed to accomplish tasks that an overwhelming force of droids could not. They were capable of hand-to-hand combat, had greater accuracy than their B1 predecessors. "
 sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 12"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_h2idw")]([SubResource("Resource_arswl"), SubResource("Resource_iqxnm"), SubResource("Resource_pb6gs"), SubResource("Resource_6i1sh"), SubResource("Resource_kv4j3"), SubResource("Resource_3inud")])
+behaviors = Array[ExtResource("1_ptfju")]([SubResource("Resource_8xnna"), SubResource("Resource_hiow0"), SubResource("Resource_bebdb"), SubResource("Resource_y84pi"), SubResource("Resource_3e6ub"), SubResource("Resource_atjox")])

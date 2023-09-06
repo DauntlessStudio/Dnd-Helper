@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_qslqj"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_qnhta"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_d3t5x"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_gd14b"]
 
-[sub_resource type="Resource" id="Resource_f0kse"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_2lmrj"]
+script = ExtResource("1_d3t5x")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_do0pp"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_q41fa"]
+script = ExtResource("1_d3t5x")
 name = "Droid Encasement"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = "Without its armor, the Dashta Eel has the following statistics: AC 12, hp 19 (3d8 + 6), Strength 8 (-1), and its speed becomes 15 feet.  In addition, it has no attack actions.  The Dashta Eel within the machine is a somewhat shapeless mass.  When the JK-13 Security Droid is reduced to 0 hp, the droid armor breaks and the Dashta Eel exits it.  Once out of its armor, the creature's pulpy mass no longer receives the benefits of the listed Damage Resistances."
 descriptionWithLinks = "Without its armor, the Dashta Eel has the following statistics: AC 12, hp 19 (3d8 + 6), Strength 8 (-1), and its speed becomes 15 feet.  In addition, it has no attack actions.  The Dashta Eel within the machine is a somewhat shapeless mass.  When the JK-13 Security Droid is reduced to 0 hp, the droid armor breaks and the Dashta Eel exits it.  Once out of its armor, the creature's pulpy mass no longer receives the benefits of the listed Damage Resistances."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m6tgf"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_15lde"]
+script = ExtResource("1_d3t5x")
 name = "Jedi Slayer"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " JK-13 Security Droid has advantage on saving throws versus force powers used by creatures within 5 feet of it. When an enemy within 5 feet casts a force power, JK-13 Security Droid can make a melee attack against that character as a reaction. When JK-13 Security Droid damages an enemy, they have disadvantage on concentration saving throws to maintain their force powers."
 descriptionWithLinks = " JK-13 Security Droid has advantage on saving throws versus force powers used by creatures within 5 feet of it. When an enemy within 5 feet casts a force power, JK-13 Security Droid can make a melee attack against that character as a reaction. When JK-13 Security Droid damages an enemy, they have disadvantage on concentration saving throws to maintain their force powers."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pqao6"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_mp65e"]
+script = ExtResource("1_d3t5x")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The JK-13 Security Droid makes any combination of three Slicing Tentacle attacks and Stunning Tentacle attacks."
 descriptionWithLinks = " The JK-13 Security Droid makes any combination of three Slicing Tentacle attacks and Stunning Tentacle attacks."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7s2dx"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_tdayx"]
+script = ExtResource("1_d3t5x")
 name = "Stunning Tentacle"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (3d4 +4) kinetic damage and the target must succeed on a Constitution save (DC 17) or be stunned until the end of its next turn."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (3d4 +4) kinetic damage and the target must succeed on a Constitution save (DC 17) or be stunned until the end of its next turn."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 11
 damageRoll = "3d4 +4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_pmsus"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_bhxec"]
+script = ExtResource("1_d3t5x")
 name = "Slicing Tentacle"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 18 (3d8 +5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 18 (3d8 +5) kinetic damage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 18
 damageRoll = "3d8 +5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_w4mjn"]
-script = ExtResource("1_qslqj")
+[sub_resource type="Resource" id="Resource_orjv0"]
+script = ExtResource("1_d3t5x")
 name = "Deflector Shield"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " The JK-13 Security Droid adds 3 to its AC against one attack that would hit it. To do so, the droid must see the attacker."
 descriptionWithLinks = " The JK-13 Security Droid adds 3 to its AC against one attack that would hit it. To do so, the droid must see the attacker."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_qnhta")
+script = ExtResource("2_gd14b")
 name = "JK-13 Security Droid"
 flavorText = "The JK-13 security droid, unofficially known as the \"Jedi Killer,\" is a JK-series security droid manufactured on the planet Ord Cestus. ***Appearance & Weaponry.*** The JK-13 is approximately chest-high and is divided into sections, giving it an insect-like appearance in its attack mode-so much so that the cave spiders, who used to rule Cestus, thought of them a natural enemy Its primary weapon is a set of stun tentacles extending from virtually every point on its body: these tentacles can be used to cut an opponent or deliver a disabling charge. Its primary defense is a deflector shield generator-like technology that allows it to absorb weapons fire before it even comes into contact with the droid itself.Like all Cestus Cybernetics droids of its period, the JK-13 is unusually ornate and flexible, with a golden finish and enormous articulation of its tentacles, which can become a fine strand or thicker rope or cable as needed.***Bio Droid.*** The JK-13s are bio-droids: they use a living circuit design incorporating organics into the core processor, which is actually a life-support unit for a creature known as a dashta eel. Because the eels are Force-sensitive, they grant the droid some measure of precognitive abilities. This, in turn, grant it great combat ability.  However, Dashta eels cannot kill another sentient being without going insane, meaning that the droids can never be deployed as general purpose combat units.***Availability.*** They sell faster than they can be produced, and cost 80,000 credits. They are assembled by Clandes Industrial in the city of Clandes."
 sectionText = "Security droids are a type of droid used as bodyguards, or to protect objects of value. During the Clone Wars, the term commonly referred to the security battle droid used by the Trade Federation and Confederacy of Independent Systems. The KX-series is one such example of a security droid model used by the Galactic Empire."
@@ -136,4 +136,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 16"])
 languages = Array[String](["Galactic basic", "binary"])
 challengeRating = "9"
 experiencePoints = 5000
-behaviors = Array[ExtResource("1_qslqj")]([SubResource("Resource_f0kse"), SubResource("Resource_do0pp"), SubResource("Resource_m6tgf"), SubResource("Resource_pqao6"), SubResource("Resource_7s2dx"), SubResource("Resource_pmsus"), SubResource("Resource_w4mjn")])
+behaviors = Array[ExtResource("1_d3t5x")]([SubResource("Resource_2lmrj"), SubResource("Resource_q41fa"), SubResource("Resource_15lde"), SubResource("Resource_mp65e"), SubResource("Resource_tdayx"), SubResource("Resource_bhxec"), SubResource("Resource_orjv0")])

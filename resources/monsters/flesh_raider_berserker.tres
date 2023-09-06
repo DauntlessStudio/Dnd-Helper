@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rwefv"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_65sdf"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jkqj4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_d56xq"]
 
-[sub_resource type="Resource" id="Resource_lsa6w"]
-script = ExtResource("1_rwefv")
+[sub_resource type="Resource" id="Resource_irbgo"]
+script = ExtResource("1_jkqj4")
 name = "Rage"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " -  +2 damage on all melee attacks.  -  Resistance to kinetic damage.  On it's turn, the flesh raider berserker can enter a rage as a bonus action in combat. The rage lasts for 1 minute and can be used once per day, gaining the following abilities:"
 descriptionWithLinks = " -  +2 damage on all melee attacks.  -  Resistance to kinetic damage.  On it's turn, the flesh raider berserker can enter a rage as a bonus action in combat. The rage lasts for 1 minute and can be used once per day, gaining the following abilities:"
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7k8vk"]
-script = ExtResource("1_rwefv")
+[sub_resource type="Resource" id="Resource_cp48b"]
+script = ExtResource("1_jkqj4")
 name = "Blade Strike"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft.,  Hit: 6 (1d8 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft.,  Hit: 6 (1d8 + 2) kinetic damage."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 6
 damageRoll = "1d8 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_orx6r"]
-script = ExtResource("1_rwefv")
+[sub_resource type="Resource" id="Resource_wrl6o"]
+script = ExtResource("1_jkqj4")
 name = "Feasting Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft.,  Hit: 4 (1d4 + 2) kinetic damage and the flesh raider berserker takes a chunk of flesh out of its target, swallowing it whole and gaining temporary hit points equal to its constitution modifier."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft.,  Hit: 4 (1d4 + 2) kinetic damage and the flesh raider berserker takes a chunk of flesh out of its target, swallowing it whole and gaining temporary hit points equal to its constitution modifier."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = "1d4 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_65sdf")
+script = ExtResource("2_d56xq")
 name = "Flesh Raider Berserker"
 flavorText = ""
 sectionText = "Flesh Raiders are a species of mutated soldiers who originally served the Infinite Empire. Originally lower-caste members of the Rakata species, they were mutated and bred by the Infinite Empire by the thousands as soldiers. By the time of the Cold War, some Flesh Raiders survived on the planet Tython.***Biology & Appearance.*** The Flesh Raiders are extremely primitive and violent. Bulky bipedal humanoids, Flesh Raiders have razor-sharp teeth, which they used to strip the bones of both sentient and non-sentient prey. Eight small olfactory slits line their upper lip and two stumpy eye stalks protrude from the sides of their box-shaped heads.***History.*** The origin of the Flesh Raiders is lost to history and they do not appear to keep records. From what little study of the creatures the Jedi Order was able to perform, the Flesh Raiders appear to have evolved from a more civilized society that devolved into their primitive and cannibalistic forms after the other colonists of Tython disappeared. Another theory is that the aforementioned society was attacked by the Sith and subjected to bizarre experiments which reduced them to maddened hostiles.***Society & Culture.*** Having no established cities or formal government, the Flesh Raiders are tribal and erect temporary shelters on the Tythos Ridge. Flesh Raiders practice a form of spiritual worship: shamans have been seen inside their small settlements. Preferring naked earth, the Flesh Raiders scour the land they chose to occupy, burning away grass and trees and littering the earth with the bones of their prey. The raiders use signal fires to communicate over great distances."
@@ -76,4 +76,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["Rakata"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_rwefv")]([SubResource("Resource_lsa6w"), SubResource("Resource_7k8vk"), SubResource("Resource_orx6r")])
+behaviors = Array[ExtResource("1_jkqj4")]([SubResource("Resource_irbgo"), SubResource("Resource_cp48b"), SubResource("Resource_wrl6o")])

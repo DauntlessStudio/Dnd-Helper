@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_p36t8"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_gl6wk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_cieoq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7lx7j"]
 
-[sub_resource type="Resource" id="Resource_8pk7w"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_tvsdn"]
+script = ExtResource("1_cieoq")
 name = "Reactive Heads"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The hydra gets an extra reaction that can be used only for opportunity attacks."
 descriptionWithLinks = " The hydra gets an extra reaction that can be used only for opportunity attacks."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ygfpk"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_knk6x"]
+script = ExtResource("1_cieoq")
 name = "Two Heads"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = "  The hydra has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious."
 descriptionWithLinks = "  The hydra has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_d3vas"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_8c1p4"]
+script = ExtResource("1_cieoq")
 name = "Wakeful"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When one of the hydra's heads is asleep, its other head is awake."
 descriptionWithLinks = " When one of the hydra's heads is asleep, its other head is awake."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8fwm5"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_xxc71"]
+script = ExtResource("1_cieoq")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "  The hydra can make three attacks: two with its bite and one with its claws."
 descriptionWithLinks = "  The hydra can make three attacks: two with its bite and one with its claws."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5qhjs"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_jen4c"]
+script = ExtResource("1_cieoq")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) kinetic damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 10
 damageRoll = "1d10 + 5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_ygu6j"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_264ib"]
+script = ExtResource("1_cieoq")
 name = "Claws"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) kinetic damage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 12
 damageRoll = "2d6 + 5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_ytwea"]
-script = ExtResource("1_p36t8")
+[sub_resource type="Resource" id="Resource_bs48s"]
+script = ExtResource("1_cieoq")
 name = "Stinger"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) kinetic damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) kinetic damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = "1d8 + 5"
 damageType = 7
 
 [resource]
-script = ExtResource("2_gl6wk")
+script = ExtResource("2_7lx7j")
 name = "Battle Hydra"
 flavorText = ""
 sectionText = "The Battle Hydra is a type of large reptilian dragon-like Sithspawn that was created by the Sith Lord Exar Kun. They are known to have two heads that sit atop long, fluid necks. The heads hold a pair of yellow slitted eyes. There were some varieties of these beasts that have more than two heads.***Behavior.*** When left to their own devices, these beasts are mindless and shy creatures-a sharp contrast to their fearsome appearance. Battle hydras are known to be solitary animals that hunt alone. They spend most time aloft where they ride thermal currents in search of prey or threats. When prey is spotted, the battle hydra dives through the air, snapping with multiple jaws as well as their poisoned stinger. Once prey succumbs to either the attack or poison, the beast takes the corpse back to its lair where it is torn apart and devoured. These animals are, however, susceptible to influence or commands from Force-sensitive dark side users. Many of battle hydras have been used as personal shocktroopers for these dark-lords. Battle hydras are known to be particularly attracted to sites that are strong in the dark side of the Force. It is believed that perhaps these beasts draw some form of nourishment from these locations."
@@ -136,4 +136,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 17"])
 languages = Array[String](["ï¿½"])
 challengeRating = "9"
 experiencePoints = 5000
-behaviors = Array[ExtResource("1_p36t8")]([SubResource("Resource_8pk7w"), SubResource("Resource_ygfpk"), SubResource("Resource_d3vas"), SubResource("Resource_8fwm5"), SubResource("Resource_5qhjs"), SubResource("Resource_ygu6j"), SubResource("Resource_ytwea")])
+behaviors = Array[ExtResource("1_cieoq")]([SubResource("Resource_tvsdn"), SubResource("Resource_knk6x"), SubResource("Resource_8c1p4"), SubResource("Resource_xxc71"), SubResource("Resource_jen4c"), SubResource("Resource_264ib"), SubResource("Resource_bs48s")])

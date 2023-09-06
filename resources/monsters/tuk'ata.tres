@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_g32me"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_j3xg2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_g0g2y"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xbwxp"]
 
-[sub_resource type="Resource" id="Resource_gvmj4"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_6w0uc"]
+script = ExtResource("1_g0g2y")
 name = "Keen Senses"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Tuk'ata has advantage on Wisdom (Perception) checks."
 descriptionWithLinks = " The Tuk'ata has advantage on Wisdom (Perception) checks."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u7d3r"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_28w2r"]
+script = ExtResource("1_g0g2y")
 name = "Sith-born"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against Tuk'ata."
 descriptionWithLinks = " Dark forcecasters and Sith (species) have advantage on Animal Handling checks against Tuk'ata."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_aonme"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_e3op5"]
+script = ExtResource("1_g0g2y")
 name = "Telepathy"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Tuk'ata can communicate telepathically with other creature within it's line of sight."
 descriptionWithLinks = " Tuk'ata can communicate telepathically with other creature within it's line of sight."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i00v5"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_rngv6"]
+script = ExtResource("1_g0g2y")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Tuk'ata makes two attacks, once with its bite and once with its claws or poisonous stingers."
 descriptionWithLinks = " The Tuk'ata makes two attacks, once with its bite and once with its claws or poisonous stingers."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_k7bkp"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_n84on"]
+script = ExtResource("1_g0g2y")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8+3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8+3) kinetic damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_o83vq"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_uofbq"]
+script = ExtResource("1_g0g2y")
 name = "Claws"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6+3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6+3) kinetic damage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yfwvm"]
-script = ExtResource("1_g32me")
+[sub_resource type="Resource" id="Resource_knowq"]
+script = ExtResource("1_g0g2y")
 name = "Poisonous Stingers"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4+3) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 13) or become poisoned."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4+3) kinetic damage. The creature must then succeed on a Constitution saving throw (DC 13) or become poisoned."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_j3xg2")
+script = ExtResource("2_xbwxp")
 name = "Tuk'ata"
 flavorText = ""
 sectionText = "The Force-sensitive tuk'ata, or Sith hounds, have been used for thousands of years to guard the tombs of the Dark Lords of the Sith on Korriban. ***Biology & Appearance.*** Sith hounds are oversized beasts that are bred to be both fearless and relentless. Their distinctive characteristics included sharp horns, long claws and savage teeth. Tuk'ata are unusually intelligent and are even able to communicate with one another through means unknown. It is claimed that originally the species was non-violent and grazing before being corrupted by Sith alchemy experiments that awakened latent parts of their brain which transformed them into unnatural abominations. On occasion, random mutations produce some tuk'ata that are able to live for centuries and grow to immense proportions.Considering that many Sith hounds were sealed inside the tombs themselves, some believe that they are immortal or draw nourishment from the Force itself, the latter part of which is likely true. It is also possible that they survive by feeding on small vermin or other creatures that infest the tombs as decay and time create new openings in the stone walls."
@@ -136,4 +136,4 @@ senses = Array[String](["Darkvision 60ft", "passive Perception 12"])
 languages = Array[String](["Sith (telepathically)"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_g32me")]([SubResource("Resource_gvmj4"), SubResource("Resource_u7d3r"), SubResource("Resource_aonme"), SubResource("Resource_i00v5"), SubResource("Resource_k7bkp"), SubResource("Resource_o83vq"), SubResource("Resource_yfwvm")])
+behaviors = Array[ExtResource("1_g0g2y")]([SubResource("Resource_6w0uc"), SubResource("Resource_28w2r"), SubResource("Resource_e3op5"), SubResource("Resource_rngv6"), SubResource("Resource_n84on"), SubResource("Resource_uofbq"), SubResource("Resource_knowq")])

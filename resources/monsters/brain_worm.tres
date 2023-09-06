@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_avrjv"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ao6sa"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_sstfn"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_fojkl"]
 
-[sub_resource type="Resource" id="Resource_85skd"]
-script = ExtResource("1_avrjv")
+[sub_resource type="Resource" id="Resource_shhmt"]
+script = ExtResource("1_sstfn")
 name = "Detect Sentience"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The brain worm can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a mind blank force power."
 descriptionWithLinks = " The brain worm can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a mind blank force power."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5dvwc"]
-script = ExtResource("1_avrjv")
+[sub_resource type="Resource" id="Resource_en5sm"]
+script = ExtResource("1_sstfn")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The brain worm makes one enter orifice attack and uses consume mind."
 descriptionWithLinks = " The brain worm makes one enter orifice attack and uses consume mind."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_w3sya"]
-script = ExtResource("1_avrjv")
+[sub_resource type="Resource" id="Resource_p1n3i"]
+script = ExtResource("1_sstfn")
 name = "Enter Orifice"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage"
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage"
 attackType = 0
@@ -48,10 +48,10 @@ damage = 7
 damageRoll = "2d4 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_infkt"]
-script = ExtResource("1_avrjv")
+[sub_resource type="Resource" id="Resource_kuq2h"]
+script = ExtResource("1_sstfn")
 name = "Consume Mind"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The brain worm targets one creature it can see within 10 feet of it that has a brain. The target must succeed on a DC 12 Intelligence saving throw against this magic or take 11 (2d10) psychic damage. Also on a failure, roll 3d6: If the total equals or exceeds the target's Intelligence score, that score is reduced to 0. The target is stunned until it regains at least one point of Intelligence."
 descriptionWithLinks = " The brain worm targets one creature it can see within 10 feet of it that has a brain. The target must succeed on a DC 12 Intelligence saving throw against this magic or take 11 (2d10) psychic damage. Also on a failure, roll 3d6: If the total equals or exceeds the target's Intelligence score, that score is reduced to 0. The target is stunned until it regains at least one point of Intelligence."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xq1v7"]
-script = ExtResource("1_avrjv")
+[sub_resource type="Resource" id="Resource_gcwus"]
+script = ExtResource("1_sstfn")
 name = "Body Thief"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "If the host body takes 20 points of cold damage in a single round, the brain worm must make a DC 15 Constitution saving throw using its own Constitution score, not the host's. On a failure, the brain worm leaves the body, slithering out to a space within 5 feetof the host. After exiting the host, it is paralyzed until the start of its next turn. If the host body dies, the brain worm must leave it. The brain worm is also forced out if the target regains its devoured brain by means of a master heal force power. By spending 5 feet of its movement, the brain worm can voluntarily leave the body, slithering out to the nearest unoccupied space within 5 feet of it.   The brain worm initiates an Intelligence contest with an incapacitated humanoid within 5 feet of it. If it wins the contest, the brain worm burrows into the target's brain and takes control of the target's body. While inside a creature, the brain worm has total cover against attacks and other effects originating outside its host. The brain worm retains its Intelligence, Wisdom, and Charisma scores, as well as its understanding of Geonosian, its telepathy, and its traits. It otherwise adopts the target's statistics. It knows everything the creature knew, including force powers, tech powers, and languages."
 descriptionWithLinks = "If the host body takes 20 points of cold damage in a single round, the brain worm must make a DC 15 Constitution saving throw using its own Constitution score, not the host's. On a failure, the brain worm leaves the body, slithering out to a space within 5 feetof the host. After exiting the host, it is paralyzed until the start of its next turn. If the host body dies, the brain worm must leave it. The brain worm is also forced out if the target regains its devoured brain by means of a master heal force power. By spending 5 feet of its movement, the brain worm can voluntarily leave the body, slithering out to the nearest unoccupied space within 5 feet of it.   The brain worm initiates an Intelligence contest with an incapacitated humanoid within 5 feet of it. If it wins the contest, the brain worm burrows into the target's brain and takes control of the target's body. While inside a creature, the brain worm has total cover against attacks and other effects originating outside its host. The brain worm retains its Intelligence, Wisdom, and Charisma scores, as well as its understanding of Geonosian, its telepathy, and its traits. It otherwise adopts the target's statistics. It knows everything the creature knew, including force powers, tech powers, and languages."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_ao6sa")
+script = ExtResource("2_fojkl")
 name = "Brain Worm"
 flavorText = ""
 sectionText = "Brain worms are worm-like parasites from Geonosis that have the capability of controlling minds. They hatch from yellow eggs, and are known to have been used by the Geonosian Queen Karina the Great during the Clone Wars on her Geonosian minions. The worms would sometimes enter the host via the nose, and were able to control dead Geonosians.Brain worms react negatively to cold temperatures."
@@ -106,4 +106,4 @@ senses = Array[String](["Blindsight 60 ft. (blind beyond this radius", "passive 
 languages = Array[String](["Geonosian (underst", "s but can't speak)"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_avrjv")]([SubResource("Resource_85skd"), SubResource("Resource_5dvwc"), SubResource("Resource_w3sya"), SubResource("Resource_infkt"), SubResource("Resource_xq1v7")])
+behaviors = Array[ExtResource("1_sstfn")]([SubResource("Resource_shhmt"), SubResource("Resource_en5sm"), SubResource("Resource_p1n3i"), SubResource("Resource_kuq2h"), SubResource("Resource_gcwus")])

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fst7l"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bx4fo"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_qhkfq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xvoml"]
 
-[sub_resource type="Resource" id="Resource_6wdgy"]
-script = ExtResource("1_fst7l")
+[sub_resource type="Resource" id="Resource_81ceg"]
+script = ExtResource("1_qhkfq")
 name = "Force Sensitive"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " At-will: force camouflage     The maalraas's forcecasting ability is Wisdom (power save DC 11, +3 to hit with force attacks). The maalraas innately knows the following force powers:"
 descriptionWithLinks = " At-will: force camouflage     The maalraas's forcecasting ability is Wisdom (power save DC 11, +3 to hit with force attacks). The maalraas innately knows the following force powers:"
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kx436"]
-script = ExtResource("1_fst7l")
+[sub_resource type="Resource" id="Resource_7gj5x"]
+script = ExtResource("1_qhkfq")
 name = "Keen Hearing and Smell"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The maalraas has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 descriptionWithLinks = " The maalraas has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ctuht"]
-script = ExtResource("1_fst7l")
+[sub_resource type="Resource" id="Resource_oojgv"]
+script = ExtResource("1_qhkfq")
 name = "Mutliattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The maalraas can make a bite attack and a claw attack."
 descriptionWithLinks = " The maalraas can make a bite attack and a claw attack."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mydki"]
-script = ExtResource("1_fst7l")
+[sub_resource type="Resource" id="Resource_voyw1"]
+script = ExtResource("1_qhkfq")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) kinetic damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) kinetic damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 11
 damageRoll = "2d8 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_af5q5"]
-script = ExtResource("1_fst7l")
+[sub_resource type="Resource" id="Resource_rsg5d"]
+script = ExtResource("1_qhkfq")
 name = "Claws"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = "2d4 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_bx4fo")
+script = ExtResource("2_xvoml")
 name = "Maalraas"
 flavorText = ""
 sectionText = "Maalraas or Nighthuntersre a non-sentient species of predatory quadrupeds. Nighthunters hunted in packs, using long claws and powerful fanged jaws to disable their victims. ***Characteristics.*** Using the Force to cloak themselves, making themselves nearly indistinguishable from the darkest shadows, only extremely well-trained Jedi or Sith cah recognize their silhouettes. Their Hides and bones are heavily resistant to lightsabers as well as intense heat. Maalraas have huge fangs that protrude from their round heads and are possibly the ancestors of nighthunters. ***Behavior.***  Maalraas hunted in packs primarily preyed upon cannoks, although if there were too many of them the cannoks could drive the predator away or even kill it. Maalraas were in turn preyed upon by the zakkeg.***Domestication.*** Easy to train from infancy or from older ages, Nighthunters are utilised as Loyal guard beasts and are exported from their unrecorded home world by crime syndicates as well as other wealthy individuals willing to trade on the black market. ***Spread.*** While plentiful at the time of the old republic era, by the time of the Clone Wars, they were thought to be extinct, but at least one still survived on Parein II 4. A population exists on the forest moon of Dxun in the Onderon system and possibly Onderon itself. "
@@ -106,4 +106,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 11"])
 languages = Array[String](["ï¿½"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_fst7l")]([SubResource("Resource_6wdgy"), SubResource("Resource_kx436"), SubResource("Resource_ctuht"), SubResource("Resource_mydki"), SubResource("Resource_af5q5")])
+behaviors = Array[ExtResource("1_qhkfq")]([SubResource("Resource_81ceg"), SubResource("Resource_7gj5x"), SubResource("Resource_oojgv"), SubResource("Resource_voyw1"), SubResource("Resource_rsg5d")])

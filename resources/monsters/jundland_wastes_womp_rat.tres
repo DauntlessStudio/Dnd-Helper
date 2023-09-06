@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_qv8or"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_883vj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_07adl"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ojmck"]
 
-[sub_resource type="Resource" id="Resource_61qn7"]
-script = ExtResource("1_qv8or")
+[sub_resource type="Resource" id="Resource_fk4t4"]
+script = ExtResource("1_07adl")
 name = "Keen Hearing and Smell"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The rat has advantage on on Wisdom (Perception) checks that rely on hearing and smell."
 descriptionWithLinks = " The rat has advantage on on Wisdom (Perception) checks that rely on hearing and smell."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bbick"]
-script = ExtResource("1_qv8or")
+[sub_resource type="Resource" id="Resource_uy8re"]
+script = ExtResource("1_07adl")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) kinetic damage.  If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) kinetic damage.  If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = "2d6 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_883vj")
+script = ExtResource("2_ojmck")
 name = "Jundland Wastes Womp Rat"
 flavorText = ""
 sectionText = "Native to Tatooine, the womp rat is a breed of rodent, and considered hairy, monstrous pests. They moved on four legs tipped with three-clawed paws, and had long tails and ears. Typically not much bigger than two meters, they possessed big, sharp fangs used to seize prey, and had large, yellow eyes.Womp rats were not timid creatures, hunting in packs and using their fangs to seize prey. When alone, a single womp rat was known to devour the garbage left by moisture farmers. When traveling in packs of up to 20 individuals, Womp Rats were known to overwhelm larger prey items, such as Dewbacks and Banthas. When they bite, their teeth set in and the animals will not release their hold, even if they are killed. There were three species of womp rats: ones that lived in Beggar's Canyon, ones that lived in the Jundland Wastes, and swamp womp rats. The Jundland Wastes womp rat appeared shortly after Imperials arrived on Tatooine, and some have speculated it was a mutated form of the Beggar's Canyon womp rat, affected by chemicals from Imperial waste dumps. Some of its mutations include a larger size, slower reproduction rate, and lower numbers than Beggar's Canyon womp rat. Their ears are also elongated and winglike. Another variety, the swamp womp rat, was found on a few fringe worlds as well as on Cularin."
@@ -61,4 +61,4 @@ senses = Array[String](["passive Perception 14"])
 languages = Array[String](["None"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_qv8or")]([SubResource("Resource_61qn7"), SubResource("Resource_bbick")])
+behaviors = Array[ExtResource("1_07adl")]([SubResource("Resource_fk4t4"), SubResource("Resource_uy8re")])

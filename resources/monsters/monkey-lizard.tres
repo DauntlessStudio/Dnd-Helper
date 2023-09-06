@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jj84x"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_wwfel"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8e4fq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uye55"]
 
-[sub_resource type="Resource" id="Resource_oty23"]
-script = ExtResource("1_jj84x")
+[sub_resource type="Resource" id="Resource_p7m04"]
+script = ExtResource("1_8e4fq")
 name = "Pack Tactics"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The monkey-lizard has advantage on attack rolls against a creature if at least one of the monkey-lizard's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The monkey-lizard has advantage on attack rolls against a creature if at least one of the monkey-lizard's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_sittv"]
-script = ExtResource("1_jj84x")
+[sub_resource type="Resource" id="Resource_jfau1"]
+script = ExtResource("1_8e4fq")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4-1) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4-1) kinetic damage."
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = "1d4-1"
 damageType = 7
 
 [resource]
-script = ExtResource("2_wwfel")
+script = ExtResource("2_uye55")
 name = "Monkey-Lizard"
 flavorText = ""
 sectionText = "Kowakian monkey-lizards are a bipedal reptilian species native to a jungle-like Outer Rim planet called Kowak. Although have had no established culture, Kowakian monkey-lizards were quite intelligent, and despite their silly, cruel nature, they are considered sentient by many sentientologists in the galaxy, although there was much debate over that designation. They are often kept as pets due to their mischievous nature."
@@ -61,4 +61,4 @@ senses = Array[String](["passive Perception 11"])
 languages = Array[String](["ï¿½"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_jj84x")]([SubResource("Resource_oty23"), SubResource("Resource_sittv")])
+behaviors = Array[ExtResource("1_8e4fq")]([SubResource("Resource_p7m04"), SubResource("Resource_jfau1")])

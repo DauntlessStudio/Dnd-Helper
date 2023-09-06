@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_3nlw1"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bdr40"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_mf35u"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_lwjvx"]
 
-[sub_resource type="Resource" id="Resource_lt8c2"]
-script = ExtResource("1_3nlw1")
+[sub_resource type="Resource" id="Resource_w81dr"]
+script = ExtResource("1_mf35u")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1uxut"]
-script = ExtResource("1_3nlw1")
+[sub_resource type="Resource" id="Resource_djra5"]
+script = ExtResource("1_mf35u")
 name = "Piloted"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
 descriptionWithLinks = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4mpkn"]
-script = ExtResource("1_3nlw1")
+[sub_resource type="Resource" id="Resource_5s007"]
+script = ExtResource("1_mf35u")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The construct makes two attacks with its repeating blaster cannon or uses its mortar launcher."
 descriptionWithLinks = " The construct makes two attacks with its repeating blaster cannon or uses its mortar launcher."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gih02"]
-script = ExtResource("1_3nlw1")
+[sub_resource type="Resource" id="Resource_3bp7l"]
+script = ExtResource("1_mf35u")
 name = "Repeating Blaster Cannon"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 10 (2d6+3) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 60/240 ft., one target. Hit: 10 (2d6+3) energy damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 10
 damageRoll = "2d6+3"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_yokuc"]
-script = ExtResource("1_3nlw1")
+[sub_resource type="Resource" id="Resource_10ubn"]
+script = ExtResource("1_mf35u")
 name = "Mortar Launcher"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The construct launches a mortar at a point it can see within 100 feet. Each creature in a 20-foot radius centered on that point must make a DC 13 Dexterity saving throw. A target takes 14 (4d6) damage on a failed save, or half as much on a successful one."
 descriptionWithLinks = " The construct launches a mortar at a point it can see within 100 feet. Each creature in a 20-foot radius centered on that point must make a DC 13 Dexterity saving throw. A target takes 14 (4d6) damage on a failed save, or half as much on a successful one."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_d378b"]
-script = ExtResource("1_3nlw1")
+[sub_resource type="Resource" id="Resource_4h3q8"]
+script = ExtResource("1_mf35u")
 name = "Redirect"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " If the construct's pilot takes damage from a source the pilot is aware of and can see, the construct can use its reaction to instead take that damage."
 descriptionWithLinks = " If the construct's pilot takes damage from a source the pilot is aware of and can see, the construct can use its reaction to instead take that damage."
 attackType = 0
@@ -94,7 +94,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_bdr40")
+script = ExtResource("2_lwjvx")
 name = "AT-RT"
 flavorText = "The All Terrain Recon Transport (AT-RT), is a one-man bipedal walker used for reconnaissance and patrolling made by Kuat Drive Yards as part of their All Terrain series. It is equipped with a single seat for a pilot, as well as a repeating blaster cannon and mortar launcher, and is 3.2 meters tall and 2.9 meters long,. Also known as the Republic scout walker, the AT-RT was used mainly during the Clone Wars by Advanced Recon Force troopers. It was the precursor to both the All Terrain Defense Pod and the All Terrain Scout Transport. During the Galactic Civil War, these walkers were adopted by both the Galactic Empire, who used Scout troopers to man the vehicles, and the Alliance to Restore the Republic, who upgraded them to compete with the advancements of the Empire.The AT-RT's were usually used for a variety of missions including ground support, police support, civil defense, and post-battle cleanup efforts. They occasionally took up position on the front lines of ground battles when difficult terrain prevented the use of larger vehicles."
 sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
@@ -121,4 +121,4 @@ senses = Array[String](["ï¿½"])
 languages = Array[String](["ï¿½"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_3nlw1")]([SubResource("Resource_lt8c2"), SubResource("Resource_1uxut"), SubResource("Resource_4mpkn"), SubResource("Resource_gih02"), SubResource("Resource_yokuc"), SubResource("Resource_d378b")])
+behaviors = Array[ExtResource("1_mf35u")]([SubResource("Resource_w81dr"), SubResource("Resource_djra5"), SubResource("Resource_5s007"), SubResource("Resource_3bp7l"), SubResource("Resource_10ubn"), SubResource("Resource_4h3q8")])

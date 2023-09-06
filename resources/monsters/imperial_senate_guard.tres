@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_npwof"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ylumd"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xwftm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ro70w"]
 
-[sub_resource type="Resource" id="Resource_556ka"]
-script = ExtResource("1_npwof")
+[sub_resource type="Resource" id="Resource_q3vf1"]
+script = ExtResource("1_xwftm")
 name = "Choreography of Belligerence"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Imperial Senate Guard has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The Imperial Senate Guard has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8mdr6"]
-script = ExtResource("1_npwof")
+[sub_resource type="Resource" id="Resource_jpk41"]
+script = ExtResource("1_xwftm")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Imperial Senate Guard makes two attacks."
 descriptionWithLinks = " The Imperial Senate Guard makes two attacks."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_blu3s"]
-script = ExtResource("1_npwof")
+[sub_resource type="Resource" id="Resource_o4ulf"]
+script = ExtResource("1_xwftm")
 name = "Cortosis Staff"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 5 (1d6 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 5 (1d6 + 2) kinetic damage."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = "1d6 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_ylumd")
+script = ExtResource("2_ro70w")
 name = "Imperial Senate Guard"
 flavorText = "The Imperial Senate Guard is an elite unit of soldiers in the Galactic Empire. Stemming from the original Senate Guard of the Galactic Republic, the Imperial Senate Guard inherited the duty to protect senators and to accompany them as they traveled the galaxy. However, their true purpose is to ensure that the Imperial Senate remains loyal to Emperor Palpatine, the architect of the New Order. The Imperial Senate Guard's armor is blue-colored, and they are trained solely in melee combat, being equipped with cortosis staffs and personal energy shields that are powerful enough to deflect lightsaber attacks."
 sectionText = "The Galactic Empire, also known as the Old Empire, the First Galactic Empire, Palpatine's New Order, the Imperium or simply the Empire, is the galactic government established by Supreme Chancellor Palpatine to replace the Galactic Republic in 19 BBY and bring Sith rule to the galaxy.  The government personnel of this new Empire are protected by some of its most highly trained warriors. "
@@ -76,4 +76,4 @@ senses = Array[String](["passive Perception 13"])
 languages = Array[String](["Galactic Basic"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_npwof")]([SubResource("Resource_556ka"), SubResource("Resource_8mdr6"), SubResource("Resource_blu3s")])
+behaviors = Array[ExtResource("1_xwftm")]([SubResource("Resource_q3vf1"), SubResource("Resource_jpk41"), SubResource("Resource_o4ulf")])

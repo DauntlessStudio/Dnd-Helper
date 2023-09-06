@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=18 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_behb2"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_jcmrb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8i41b"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_157lh"]
 
-[sub_resource type="Resource" id="Resource_utea8"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_lissw"]
+script = ExtResource("1_8i41b")
 name = "Amphibious"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The monster can breathe air and water."
 descriptionWithLinks = " The monster can breathe air and water."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_uqywx"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_mi5d6"]
+script = ExtResource("1_8i41b")
 name = "Freedom of Movement"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The monster ignores difficult terrain, and effects can't reduce its speed. It can spend 5 feet of movement to escape from being grappled."
 descriptionWithLinks = " The monster ignores difficult terrain, and effects can't reduce its speed. It can spend 5 feet of movement to escape from being grappled."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_d8aiw"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_dqfa5"]
+script = ExtResource("1_8i41b")
 name = "Legendary Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the monster fails a saving throw, it can choose to succeed instead"
 descriptionWithLinks = " If the monster fails a saving throw, it can choose to succeed instead"
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ttoc8"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_6tjml"]
+script = ExtResource("1_8i41b")
 name = "Gargantan Strength"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The monster's weapon attacks are considered enhanced."
 descriptionWithLinks = " The monster's weapon attacks are considered enhanced."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_hkbbu"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_f27h3"]
+script = ExtResource("1_8i41b")
 name = "Siege Monster"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The monster does double damage on objects and structures."
 descriptionWithLinks = " The monster does double damage on objects and structures."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ujheu"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_pf1tl"]
+script = ExtResource("1_8i41b")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The monster uses its Frightful Presence. It then makes three attacks: one with its bite and two with its claws. It can use its Swallow instead of its bite."
 descriptionWithLinks = " The monster uses its Frightful Presence. It then makes three attacks: one with its bite and two with its claws. It can use its Swallow instead of its bite."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_yhxiq"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_qxmj8"]
+script = ExtResource("1_8i41b")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) kinetic damage. If the target is a creature it is grappled (escape DC 20). Until the grapple ends, the target is restrained, and the monster can't bite another target."
 descriptionWithLinks = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) kinetic damage. If the target is a creature it is grappled (escape DC 20). Until the grapple ends, the target is restrained, and the monster can't bite another target."
 attackType = 0
@@ -108,10 +108,10 @@ damage = 21
 damageRoll = "2d10 + 10"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_tu6rk"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_423pt"]
+script = ExtResource("1_8i41b")
 name = "Claw"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 17 (2d6 + 10) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 17 (2d6 + 10) kinetic damage."
 attackType = 0
@@ -123,10 +123,10 @@ damage = 17
 damageRoll = "2d6 + 10"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_6r5ke"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_gdqep"]
+script = ExtResource("1_8i41b")
 name = "Tail"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 19 (2d8 + 10) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 19 (2d8 + 10) kinetic damage."
 attackType = 0
@@ -138,10 +138,10 @@ damage = 19
 damageRoll = "2d8 + 10"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_6xk1l"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_quyyg"]
+script = ExtResource("1_8i41b")
 name = "Frightful Presence"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Each creature of the monster's choice within 120 feet of the monster and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each turn, ending the effect on itself on a success. If a creature's saving throw is successful or the effects ends for it, the creature is immune to the monster's Frightful Presence for 24 hours."
 descriptionWithLinks = " Each creature of the monster's choice within 120 feet of the monster and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each turn, ending the effect on itself on a success. If a creature's saving throw is successful or the effects ends for it, the creature is immune to the monster's Frightful Presence for 24 hours."
 attackType = 0
@@ -153,10 +153,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pwbrq"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_dxf5l"]
+script = ExtResource("1_8i41b")
 name = "Water Torrent"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " the monster exhales a torrent of water in a 120 foot cone. Each creature in the area must make a DC 24 Dexterity saving throw, taking 42 (12d6) kinetic damage and 42 (12d6) cold damage on a failed save, or half as much on a successful one."
 descriptionWithLinks = " the monster exhales a torrent of water in a 120 foot cone. Each creature in the area must make a DC 24 Dexterity saving throw, taking 42 (12d6) kinetic damage and 42 (12d6) cold damage on a failed save, or half as much on a successful one."
 attackType = 0
@@ -168,10 +168,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cg850"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_cc65a"]
+script = ExtResource("1_8i41b")
 name = "Swallow"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "If the monster takes 50 damage or more on a single turn from a creature inside it, the monster must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the monster. If the monster dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.  The monster makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the monster, and it takes 42 (12d6) acid damage at the start of each of the monster's turns."
 descriptionWithLinks = "If the monster takes 50 damage or more on a single turn from a creature inside it, the monster must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the monster. If the monster dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.  The monster makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the monster, and it takes 42 (12d6) acid damage at the start of each of the monster's turns."
 attackType = 0
@@ -183,10 +183,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_py6nv"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_slehq"]
+script = ExtResource("1_8i41b")
 name = "Detect"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The monster makes a Wisdom (Perception) check."
 descriptionWithLinks = " The monster makes a Wisdom (Perception) check."
 attackType = 0
@@ -198,10 +198,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0v4lx"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_vj4fq"]
+script = ExtResource("1_8i41b")
 name = "Tail Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The monster makes a tail attack."
 descriptionWithLinks = " The monster makes a tail attack."
 attackType = 0
@@ -213,10 +213,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_q33kp"]
-script = ExtResource("1_behb2")
+[sub_resource type="Resource" id="Resource_62jtm"]
+script = ExtResource("1_8i41b")
 name = "Whirlpool"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = "A creature must make a DC 21 Dexterity saving throw the first time on a turn that it enters the whirlpool or that the whirlpool enters its space, including when the whirlpool first appears. A creature takes 6d8 kinetic damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a DC 21 Strength saving throw or become restrained in the whirlpool until the power ends. When a creature starts its turn restrained by the whirlpool, the creature is pulled 5 feet deeper inside it, unless the creature is at the bottom. A restrained creature moves with the whirlpool and is submerged when the effect ends, unless the creature has some means to stay afloat. A restrained creature can use an action to make a DC 21 Strength or Dexterity check. If successful, the creature is no longer restrained by the whirlpool and is hurled 3d6x10 feet away from it in a random direction. The whirlpool ends at the beginning of the monster's turn unless the monster used the Whirlpool legendary action to maintain the whirlpool.  The monster creates a whirlpool in the water at a point within 30 feet that it can see. The whirlwind is a 10-foot-radius, 30-foot-deep cylinder centered on that point. On subsequent turns, the monster can use the Whirlpool legendary action to maintain and move the whirlpool up to 30 feet in any direction along the surface of the water. The whirlpool sucks up any medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone."
 descriptionWithLinks = "A creature must make a DC 21 Dexterity saving throw the first time on a turn that it enters the whirlpool or that the whirlpool enters its space, including when the whirlpool first appears. A creature takes 6d8 kinetic damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a DC 21 Strength saving throw or become restrained in the whirlpool until the power ends. When a creature starts its turn restrained by the whirlpool, the creature is pulled 5 feet deeper inside it, unless the creature is at the bottom. A restrained creature moves with the whirlpool and is submerged when the effect ends, unless the creature has some means to stay afloat. A restrained creature can use an action to make a DC 21 Strength or Dexterity check. If successful, the creature is no longer restrained by the whirlpool and is hurled 3d6x10 feet away from it in a random direction. The whirlpool ends at the beginning of the monster's turn unless the monster used the Whirlpool legendary action to maintain the whirlpool.  The monster creates a whirlpool in the water at a point within 30 feet that it can see. The whirlwind is a 10-foot-radius, 30-foot-deep cylinder centered on that point. On subsequent turns, the monster can use the Whirlpool legendary action to maintain and move the whirlpool up to 30 feet in any direction along the surface of the water. The whirlpool sucks up any medium or smaller objects that aren't secured to anything and that aren't worn or carried by anyone."
 attackType = 0
@@ -229,7 +229,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_jcmrb")
+script = ExtResource("2_157lh")
 name = "Sando Aqua Monster"
 flavorText = ""
 sectionText = "Sando aqua monsters are enormous, muscular predators that could be found in the oceans and lakes of Naboo. ***Biology and Appearance.*** Despite measuring between 160 and 200 meters in length, the sando aqua monsters manage to hide in their native oceanic depths. Sandos have heavily muscled bodies that look almost feline, with strong limbs ending in finned claws that propell them through the depths.Their huge   mouths allow them to swallow most other creatures of the Abyss in a single gulp. Using their razor-sharp teeth, they are also the only predators capable of biting through the hard shells of the opee sea killers.Being mammalian, females nursed their young for about a year. Females bore  only one pup per birth. Their life-spans typically  reach one hundred standard years.***Behavior.*** The sando aqua monsters were carnivores. In order to maintain their gigantic bodies, those voracious creatures needed to feed constantly, and they often devoured entire schools of fish.  There have even been reports of sando monsters surfacing in swamp lakes and attacking falumpaset and fambaa herds, and unsubstantiated reports of them sunning themselves on sandbars."
@@ -256,4 +256,4 @@ senses = Array[String](["blindsight (while submerged) 120 ft.", "darkvision 120 
 languages = Array[String](["ï¿½"])
 challengeRating = "25"
 experiencePoints = 75000
-behaviors = Array[ExtResource("1_behb2")]([SubResource("Resource_utea8"), SubResource("Resource_uqywx"), SubResource("Resource_d8aiw"), SubResource("Resource_ttoc8"), SubResource("Resource_hkbbu"), SubResource("Resource_ujheu"), SubResource("Resource_yhxiq"), SubResource("Resource_tu6rk"), SubResource("Resource_6r5ke"), SubResource("Resource_6xk1l"), SubResource("Resource_pwbrq"), SubResource("Resource_cg850"), SubResource("Resource_py6nv"), SubResource("Resource_0v4lx"), SubResource("Resource_q33kp")])
+behaviors = Array[ExtResource("1_8i41b")]([SubResource("Resource_lissw"), SubResource("Resource_mi5d6"), SubResource("Resource_dqfa5"), SubResource("Resource_6tjml"), SubResource("Resource_f27h3"), SubResource("Resource_pf1tl"), SubResource("Resource_qxmj8"), SubResource("Resource_423pt"), SubResource("Resource_gdqep"), SubResource("Resource_quyyg"), SubResource("Resource_dxf5l"), SubResource("Resource_cc65a"), SubResource("Resource_slehq"), SubResource("Resource_vj4fq"), SubResource("Resource_62jtm")])

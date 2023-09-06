@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_wvxx1"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_u10pf"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2ob7d"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_y5wbb"]
 
-[sub_resource type="Resource" id="Resource_jjegn"]
-script = ExtResource("1_wvxx1")
+[sub_resource type="Resource" id="Resource_o2mv2"]
+script = ExtResource("1_2ob7d")
 name = "Forcecasting"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = "At-Will: denounce, force disarm, force push/pull, mind trick, saber throw, slow  1st level: dark side tendrils, force jump, sap vitality, sense force  2nd level: animate weapon, drain vitality, force sight, stun  3rd level: improved dark side tendrils, choke, force suppression, sever force  4th level: drain life  The inquisitor is a 10th-level forcecaster.  It's forcecasting ability is Charisma (force save DC 14, +6 to hit with power attacks).  The inquisitor has 33 force points and knows the following force powers:"
 descriptionWithLinks = " Forcecasting. The inquisitor is a 10th-level forcecaster.  It's forcecasting ability is Charisma (force save DC 14, +6 to hit with power attacks).  The inquisitor has 33 force points and knows the following force powers: [url=][/url]
 
@@ -28,10 +28,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ae4tv"]
-script = ExtResource("1_wvxx1")
+[sub_resource type="Resource" id="Resource_s2bnn"]
+script = ExtResource("1_2ob7d")
 name = "Force Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = "  The inquisitor has advantage on saving throws against force powers."
 descriptionWithLinks = "  The inquisitor has advantage on saving throws against force powers."
 attackType = 0
@@ -43,10 +43,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_etxxv"]
-script = ExtResource("1_wvxx1")
+[sub_resource type="Resource" id="Resource_7gpw6"]
+script = ExtResource("1_2ob7d")
 name = "War Casting"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When the inquisitor uses an action to cast a force power, they can use a bonus action to make a Double Saber attack."
 descriptionWithLinks = " War Casting. When the inquisitor uses an action to cast a force power, they can use a bonus action to make a Double Saber attack."
 attackType = 0
@@ -58,10 +58,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_nptja"]
-script = ExtResource("1_wvxx1")
+[sub_resource type="Resource" id="Resource_cbqjv"]
+script = ExtResource("1_2ob7d")
 name = "Spinning Double Saber"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) energy damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) energy damage."
 attackType = 0
@@ -73,10 +73,10 @@ damage = 17
 damageRoll = "3d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_7xjmt"]
-script = ExtResource("1_wvxx1")
+[sub_resource type="Resource" id="Resource_m1hk1"]
+script = ExtResource("1_2ob7d")
 name = "Double Saber"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) energy damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) energy damage."
 attackType = 0
@@ -88,10 +88,10 @@ damage = 8
 damageRoll = "1d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_605f3"]
-script = ExtResource("1_wvxx1")
+[sub_resource type="Resource" id="Resource_pkrwu"]
+script = ExtResource("1_2ob7d")
 name = "Dark Lightning"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Power Attack: +6 to hit, range 120 ft., one or two targets. Hit: 14 (4d6) necrotic damage.  The target must succeed on a DC 16 Strength saving throw or become restrained until the end of the inquisitor's next turn."
 descriptionWithLinks = " Ranged Power Attack: +6 to hit, range 120 ft., one or two targets. Hit: 14 (4d6) necrotic damage.  The target must succeed on a DC 16 Strength saving throw or become restrained until the end of the inquisitor's next turn."
 attackType = 0
@@ -104,7 +104,7 @@ damageRoll = "4d6"
 damageType = 9
 
 [resource]
-script = ExtResource("2_u10pf")
+script = ExtResource("2_y5wbb")
 name = "Inquisitor, Master"
 flavorText = "The Inquisitors were all former Jedi that had turned to the dark side in someway or another, with the Grand Inquisitor having served as a Jedi Temple Guard and the Tenth Brother being the former Jedi Master Prosset Dibs. The Emperor's apprentice Darth Vader soon discovered the program and was put in charge of them. Vader trained the Inquisitors in the ways of the dark side of the Force. As part of their training, a number of Inquisitors had parts of their body severed by Vader's lightsaber so that they would not forget the lesson of loss and to learn to abandon the tendency to fight defensively as former Jedi and adopt more offensive moves.Inquisitors also commanded Purge Troopers, which were elite death squads of clones. Due to the nature of their mission, Inquisitors had the power to commandeer any required Imperial Military forces, and all officers were to obey their orders. Any officer who came into contact with Force-sensitive beings was to immediately contact an Inquisitor to investigate the situation. Also, some Imperial officers disliked the interference of Inquisitors with some dismissing them as \"mystics.\" When the Inquisitors became part of the Inquisitorius, they left behind their former names and took up new names, with Brother or Sister denoting their sexes."
 sectionText = "Also known as the Order of Inquisitors, The Inquisitorious was an organization of Force-sensitive agents who worked for the Galactic Empire. Members of the Inquisitorius were known as Imperial Inquisitors, Inquisitors, Red Blades, Mystics by Imperial officers, and sometimes even Jedi hunters. They were tasked with hunting down the remaining Jedi who had survived Order 66 at the end of the Clone Wars."
@@ -131,4 +131,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["Galactic Basic", "two more of your choice"])
 challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_wvxx1")]([SubResource("Resource_jjegn"), SubResource("Resource_ae4tv"), SubResource("Resource_etxxv"), SubResource("Resource_nptja"), SubResource("Resource_7xjmt"), SubResource("Resource_605f3")])
+behaviors = Array[ExtResource("1_2ob7d")]([SubResource("Resource_o2mv2"), SubResource("Resource_s2bnn"), SubResource("Resource_7gpw6"), SubResource("Resource_cbqjv"), SubResource("Resource_m1hk1"), SubResource("Resource_pkrwu")])

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_l653d"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_kf872"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_iiv6u"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_x3mjy"]
 
-[sub_resource type="Resource" id="Resource_xvi26"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_23vx3"]
+script = ExtResource("1_iiv6u")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid tank has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid tank has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8c0v0"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_sitlw"]
+script = ExtResource("1_iiv6u")
 name = "Heavy Durasteel Armor"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The outer layer of the droid is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 10 points, the droid takes no damage from that attack. If the droid takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 descriptionWithLinks = " The outer layer of the droid is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 10 points, the droid takes no damage from that attack. If the droid takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_erwlr"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_ffyx5"]
+script = ExtResource("1_iiv6u")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The droid tank makes one crushing stride attack, one heavy repeating blaster attack and one ion cannon attack."
 descriptionWithLinks = " The droid tank makes one crushing stride attack, one heavy repeating blaster attack and one ion cannon attack."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5njyo"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_6n8gw"]
+script = ExtResource("1_iiv6u")
 name = "Ion Cannons"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack +6 to hit, 150/300, one target. Hit 27 (4d10 + 5) ion damage."
 descriptionWithLinks = " Ranged Weapon Attack +6 to hit, 150/300, one target. Hit 27 (4d10 + 5) ion damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1urtv"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_awlwy"]
+script = ExtResource("1_iiv6u")
 name = "Heavy Repeating Blasters"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +6 to hit, range 120/240 ft., one target. Hit: 27 (4d10+5) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 120/240 ft., one target. Hit: 27 (4d10+5) energy damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 27
 damageRoll = "4d10+5"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_mk5wy"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_37dhm"]
+script = ExtResource("1_iiv6u")
 name = "Crushing Stride"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The droid moves up to its speed in a straight line. During this move, it can enter Large or smaller creatures' spaces. A creature whose space the droid enters must make a DC 18 Dexterity saving throw. On a failed save, the creature falls prone and takes 36 (8d8) kinetic damage. On a successful save, the creature takes half damage and is pushed 5 feet to the nearest space out of the droid's path.If the droid remains in the prone creature's space, the creature is also restrained until it's no longer in the same space as the droid. While restrained in this way, the creature, or another creature within 5 feet of it, can make a DC 18 Strength check. On a success, the creature is shunted to an unoccupied space of its choice within 5 feet of the droid tank and is no longer restrained."
 descriptionWithLinks = " The droid moves up to its speed in a straight line. During this move, it can enter Large or smaller creatures' spaces. A creature whose space the droid enters must make a DC 18 Dexterity saving throw. On a failed save, the creature falls prone and takes 36 (8d8) kinetic damage. On a successful save, the creature takes half damage and is pushed 5 feet to the nearest space out of the droid's path.If the droid remains in the prone creature's space, the creature is also restrained until it's no longer in the same space as the droid. While restrained in this way, the creature, or another creature within 5 feet of it, can make a DC 18 Strength check. On a success, the creature is shunted to an unoccupied space of its choice within 5 feet of the droid tank and is no longer restrained."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_g6x0q"]
-script = ExtResource("1_l653d")
+[sub_resource type="Resource" id="Resource_x62pe"]
+script = ExtResource("1_iiv6u")
 name = "Ram"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The droid moves up to its speed in a straight line towards a structure or construct target. A structure or construct whose space the droid ends its turn adjacent must make a DC 18 Strength saving throw. On a failed save, the structure or construct takes 70 (10d12 + 5) kinetic damage.  On a successful save, the droid and the structure or construct both take half damage."
 descriptionWithLinks = " The droid moves up to its speed in a straight line towards a structure or construct target. A structure or construct whose space the droid ends its turn adjacent must make a DC 18 Strength saving throw. On a failed save, the structure or construct takes 70 (10d12 + 5) kinetic damage.  On a successful save, the droid and the structure or construct both take half damage."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_kf872")
+script = ExtResource("2_x3mjy")
 name = "NR-N99 Persuader-Class Enforcer"
 flavorText = "The NR-N99 Persuader-class droid enforcer of the Confederacy of Independent Systems is a droid tank manufactured by the Techno Union and mainly utilized by Corporate Alliance.  The impressive armament of the tank includes ion cannons and heavy repeating blasters, although this weapons package could be swapped out with alternative packages that included shock rifles or concussion missile launchers. The tank moves by way of its huge central tread, and it is augmented on either of its sides by forward-mounted outrigger wheels on a pontoon tread, which gives additional stability. Infantry soldiers are also able to ride on top of these tanks. The NR-N99 Persuader-class tank droid is able to move up to 40 mph, but this droid tank lacks the agility of walking droid tanks. It is also able to plow through battlefields and ram barricades. The droid is able to function through a variety of terrain, and the droid is also able to move on top of water. The NR-N99 Persuader-class droid enforcer  is well-armored, possesses heat exchange panels and communications antennae, and the unit has armor-shielded photoreceptors. It was designed to be able to function with its computer brain, but the vehicle could also be controlled by a pilot droid."
 sectionText = "Droid tanks are massive droids that retain the abilities of a droid but come in a larger package, with different functionality and appearance."
@@ -136,4 +136,4 @@ senses = Array[String](["darkvision 120 ft.", "passive Perception 10"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_l653d")]([SubResource("Resource_xvi26"), SubResource("Resource_8c0v0"), SubResource("Resource_erwlr"), SubResource("Resource_5njyo"), SubResource("Resource_1urtv"), SubResource("Resource_mk5wy"), SubResource("Resource_g6x0q")])
+behaviors = Array[ExtResource("1_iiv6u")]([SubResource("Resource_23vx3"), SubResource("Resource_sitlw"), SubResource("Resource_ffyx5"), SubResource("Resource_6n8gw"), SubResource("Resource_awlwy"), SubResource("Resource_37dhm"), SubResource("Resource_x62pe")])

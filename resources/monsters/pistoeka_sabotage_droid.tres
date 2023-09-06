@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ry5fx"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_lagtl"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_82d1x"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_05kwy"]
 
-[sub_resource type="Resource" id="Resource_ghah8"]
-script = ExtResource("1_ry5fx")
+[sub_resource type="Resource" id="Resource_14cwu"]
+script = ExtResource("1_82d1x")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_n1r5v"]
-script = ExtResource("1_ry5fx")
+[sub_resource type="Resource" id="Resource_u1ily"]
+script = ExtResource("1_82d1x")
 name = "Magnetic Lock"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 descriptionWithLinks = " The droid can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_hho2s"]
-script = ExtResource("1_ry5fx")
+[sub_resource type="Resource" id="Resource_x6fvp"]
+script = ExtResource("1_82d1x")
 name = "Interfaced Damage Protocol"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " While you are interfaced with this droid via the tracker droid interface tech power, when you roll a 1 or 2 on a damage die for a tech power while your droid is within 5 feet of you, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
 descriptionWithLinks = " While you are interfaced with this droid via the tracker droid interface tech power, when you roll a 1 or 2 on a damage die for a tech power while your droid is within 5 feet of you, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_aflba"]
-script = ExtResource("1_ry5fx")
+[sub_resource type="Resource" id="Resource_6dseo"]
+script = ExtResource("1_82d1x")
 name = "Pack Tactics"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid has advantage on attack rolls against a creature if at least one of the buzz droid's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The droid has advantage on attack rolls against a creature if at least one of the buzz droid's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dtgbx"]
-script = ExtResource("1_ry5fx")
+[sub_resource type="Resource" id="Resource_pq86m"]
+script = ExtResource("1_82d1x")
 name = "Miniature Plasma Cutter"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 ion damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 ion damage."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_lagtl")
+script = ExtResource("2_05kwy")
 name = "Pistoeka sabotage droid"
 flavorText = "Pistoeka sabotage droids, better known simply as buzz droids, were a type of insect-like automatons that were deployed in swarms during battlefleet actions by the Confederacy of Independent Systems. They could wreak havoc upon squadrons of starfighters that happened to fly through a formation of such deployed droids. Approximately one-quarter of a meter in diameter and well armed for their role, they were typically delivered by discord missiles from droid tri-fighters and Vulture droid starfighters. "
 sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
@@ -106,4 +106,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["â€”"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_ry5fx")]([SubResource("Resource_ghah8"), SubResource("Resource_n1r5v"), SubResource("Resource_hho2s"), SubResource("Resource_aflba"), SubResource("Resource_dtgbx")])
+behaviors = Array[ExtResource("1_82d1x")]([SubResource("Resource_14cwu"), SubResource("Resource_u1ily"), SubResource("Resource_x6fvp"), SubResource("Resource_6dseo"), SubResource("Resource_pq86m")])

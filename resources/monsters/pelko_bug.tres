@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=4 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1q2r8"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_m2ynb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1dvdd"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_emira"]
 
-[sub_resource type="Resource" id="Resource_74xsj"]
-script = ExtResource("1_1q2r8")
+[sub_resource type="Resource" id="Resource_ull56"]
+script = ExtResource("1_1dvdd")
 name = "Barbs"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 0 ft., one creature. Hit: 1 (2d4-1) kinetic damage, and the target must succeed on a DC 12 Constitution saving throw or take 2 poison damage and become paralyzed."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 0 ft., one creature. Hit: 1 (2d4-1) kinetic damage, and the target must succeed on a DC 12 Constitution saving throw or take 2 poison damage and become paralyzed."
 attackType = 0
@@ -19,7 +19,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_m2ynb")
+script = ExtResource("2_emira")
 name = "Pelko Bug"
 flavorText = ""
 sectionText = "Pelko bugs are small creatures that are covered in millions of microscopic barbs that deliver a paralytic, blistering toxin which can penetrate armor. They live only beneath sands of the Valley of the Dark Lords on Korriban, and are attracted to Force-sensitives. They stalk and swarm their prey in the darkness. The bug's attunement to the Force allows them to determine if a creature is suitable prey. The barbs are used in training sabers at the Sith Academy because of the toxin's effects, which mimick the effects of losing a limb to a lightsaber."
@@ -46,4 +46,4 @@ senses = Array[String](["darkvision 30 ft.", "passive Perception 10"])
 languages = Array[String](["â€”"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_1q2r8")]([SubResource("Resource_74xsj")])
+behaviors = Array[ExtResource("1_1dvdd")]([SubResource("Resource_ull56")])

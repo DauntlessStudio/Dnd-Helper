@@ -17,28 +17,29 @@ func addMonster(character: Character):
 	var panel = load("res://scenes/combatent_stack_panel.tscn") as PackedScene
 	var instance = panel.instantiate() as CombatentStackPanel
 	instance.set_character(character)
-	$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(instance)
+	instance.combatantInfo.connect(_on_show_combatant_info)
+	$HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(instance)
 	sortInitiativePanel()
 
 
 func sortInitiativePanel():
-	var sorted_nodes := $CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.get_children()
+	var sorted_nodes := $HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.get_children()
 
 	sorted_nodes.sort_custom(
 	# For descending order use > 0
 	func(a: Node, b: Node): return a.initiative > b.initiative
 )
 
-	for node in $CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.get_children():
-		$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.remove_child(node)
+	for node in $HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.get_children():
+		$HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.remove_child(node)
 
 	for node in sorted_nodes:
-		$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(node)
+		$HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(node)
 
 
 func _on_clear_button_pressed():
-	for node in $CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.get_children():
-		$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.remove_child(node)
+	for node in $HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.get_children():
+		$HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.remove_child(node)
 		node.queue_free()
 
 
@@ -57,7 +58,7 @@ func _on_add_player_dialog_confirmed():
 	var panel = load("res://scenes/combatent_stack_panel.tscn") as PackedScene
 	var instance = panel.instantiate() as CombatentStackPanel
 	instance.set_player(playerName, initiative, armor, movement, hp)
-	$CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(instance)
+	$HBoxContainer/CombatentStack/VBoxContainer/ScrollContainer/InitiativeStack.add_child(instance)
 	sortInitiativePanel()
 	reset_player_dialog()
 
@@ -72,3 +73,12 @@ func reset_player_dialog():
 
 func _on_add_monster_window_close_requested():
 	$AddMonsterWindow.hide()
+
+func _on_show_combatant_info(combatant: CombatentStackPanel):
+	$MonsterInfoWindow._on_show_combatant_info(combatant)
+
+
+func _on_trait_contents_meta_clicked(meta):
+	print(meta)
+	var resource = load("res://resources/powers/%s.tres" % meta) as Power
+	$PowerInfo._on_show_power_info(resource)

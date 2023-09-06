@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=13 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_g33uf"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_4dq0t"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jaajv"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_38a1c"]
 
-[sub_resource type="Resource" id="Resource_7sxpk"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_uh8tb"]
+script = ExtResource("1_jaajv")
 name = "Legendary Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If Abeloth fails a saving throw, she can choose to succeed instead."
 descriptionWithLinks = " If Abeloth fails a saving throw, she can choose to succeed instead."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pbux5"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_3il6c"]
+script = ExtResource("1_jaajv")
 name = "Force Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Abeloth has advantage on saving throws against Force Powers."
 descriptionWithLinks = " Abeloth has advantage on saving throws against Force Powers."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0cob1"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_k7jah"]
+script = ExtResource("1_jaajv")
 name = "Font of Power"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When Abeloth rolls damage for a power, she can spend 1 additional force point to reroll a number of the damage dice up to her Charisma modifier (5). She must use the new rolls."
 descriptionWithLinks = " When Abeloth rolls damage for a power, she can spend 1 additional force point to reroll a number of the damage dice up to her Charisma modifier (5). She must use the new rolls."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dhjfx"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_qiej7"]
+script = ExtResource("1_jaajv")
 name = "Pool of Knowledge"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When you cast a power that has a casting time of 1 action, you can spend 2 additional force points to change the casting time to 1 bonus action for this casting."
 descriptionWithLinks = " When you cast a power that has a casting time of 1 action, you can spend 2 additional force points to change the casting time to 1 bonus action for this casting."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_am51g"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_vo8px"]
+script = ExtResource("1_jaajv")
 name = "Forcecasting"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " At will: burst, feedback, force push/pull, give life, saber reflect, shock  1st level: cloud mind, force mask, force throw, project  2nd level: coerce mind, hallucination  3rd level: force lightning, force repulse, knight speed, telekinetic storm  4th level: drain life, mind trap  5th level: dominate mind, greater feedback, siphon life  6th level: mass coerce mind, telekinetic burst  7th level: force project, whirlwind  8th level: death field, earthquake, telekinetic wave  9th level: master feedback  Abeloth is an 18th-level forcecaster. Her Forcecasting Ability is Charisma (force save DC 20, +12 to hit with force powers). Abeloth has 77 force points and knows the following force powers:"
 descriptionWithLinks = " Forcecasting. Abeloth is an 18th-level forcecaster. Her Forcecasting Ability is Charisma (force save DC 20, +12 to hit with force powers). Abeloth has 77 force points and knows the following force powers: [url=][/url]
 
@@ -98,10 +98,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_u8s7h"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_d2x41"]
+script = ExtResource("1_jaajv")
 name = "Shotosaber"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +10 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) energy damage."
 descriptionWithLinks = " Melee Weapon Attack: +10 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) energy damage."
 attackType = 0
@@ -113,10 +113,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dxe23"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_fp78s"]
+script = ExtResource("1_jaajv")
 name = "Teleport"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Abeloth teleports up to 120 feet into an unoccupied space she can see."
 descriptionWithLinks = " Abeloth teleports up to 120 feet into an unoccupied space she can see."
 attackType = 0
@@ -128,10 +128,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8iugq"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_rb4aa"]
+script = ExtResource("1_jaajv")
 name = "At Will Power"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " Abeloth casts an at will power."
 descriptionWithLinks = " Abeloth casts an at will power."
 attackType = 0
@@ -143,10 +143,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_p4va3"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_lr4q4"]
+script = ExtResource("1_jaajv")
 name = "Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " Abeloth attacks once with shotosaber."
 descriptionWithLinks = " Abeloth attacks once with shotosaber."
 attackType = 0
@@ -158,10 +158,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_efr8b"]
-script = ExtResource("1_g33uf")
+[sub_resource type="Resource" id="Resource_r3ob6"]
+script = ExtResource("1_jaajv")
 name = "Teleport"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " Abeloth uses her teleport action."
 descriptionWithLinks = " Abeloth uses her teleport action."
 attackType = 0
@@ -174,7 +174,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_4dq0t")
+script = ExtResource("2_38a1c")
 name = "Vessel of Abeloth"
 flavorText = ""
 sectionText = "Abeloth, also known as the Bringer of Chaos and Beloved Queen of the Stars, is a being very powerful in both the dark the light sides of the Force. She first lived as the Servant, a mortal woman who served the powerful Ones on an unknown jungle planet over a hundred thousand years before the Battle of Yavin. Over the course of her life, she became the Mother: she kept the peace between the Father's warring Son and Daughter and became a loving part of the family. But she was still mortalï¿½she grew old while her ageless family lived onï¿½and she feared she would lose her precious family. In a desperate attempt to hold onto the life she so loved, she drank from the Font of Power and bathed in the Pool of Knowledge. Her actions corrupted her, transforming the Mother into the twisted, immortal entity known as Abeloth.***Loneliness.*** Abeloth is antagonized by loneliness; she feels an absolute need to be loved and adored. She has fed her cravings by instilling in Force-sensitives a desire to be with her, and in turn catered to their every need and assumed the role as their mother. This need stems from her original fear of losing her family. When her family abandoned her on their planetï¿½the very reason she committed her crimes in the first placeï¿½she was driven insane by loneliness and despair. She feeds on fear and destruction in an attempt to gain more power; her ultimate goal is to recreate her lost family. She may try to force players to drink from the Font of Power, attempting to make replacements for the Son and Daughter.***Appearance.*** Abeloth has the ability to change her appearance at will. However, Abeloth's true form is that of a humanoid and barely-female being with deeply-sunken black eye sockets and tiny silver eyes reminiscent of tiny stars at the bottom of a deep well. She has a long cascade of straw-like, honey-blond hair that reaches to the ground and a large, full-lipped mouth that stretches from ear-to-ear and contains needle-like teeth. Her arms are stubby, protruding no more than ten centimeters from her shoulders, with hands that had long, writhing tentacles for fingers with suction cup tips. Her body is rigid and straight, and when she walks or runs, her legs ripple forward more than they swing. In addition, her body may be enshrouded in mist, giving her an ethereal aspect to her already frightening appearance.***Powers & Abilities.***  Abeloth's strength in the Force is a dozen times that of the most powerful Force user in the galaxy.  She wields exceptional telekinetic powers, being able to release waves of Force energy that cause beings in her vicinity to implode, those farther away to be ripped to pieces, and buildings to melt to the ground. She is also able to teleport herself from one place to another. Abeloth can produce a Force-flash, affecting the visuals of ships in an entire star system. Abeloth can command the native flora of her planet.  She has the ability to influence the minds of Force-sensitive beings who have spent an extended period of time in the Maw, causing a psychosis which makes them believe that everyoneï¿½except for other such psychotic beingsï¿½has been replaced by impostors and instilling in them a desire to find her. ***Possession.*** Abeloth is capable of possessing or absorbing the consciousness of beings in order to further enhance her power. Abeloth is able to take on the physical appearances of beings that she has consumed, and she is also able to project images of other beings.  She prefers to inhabit the bodies of Force-sensitives, as non Force-sensitives' bodies fail to last for long before deteriorating.  However, her dependency on avatars may ultimately be her greatest weakness: killing a significant number of avatars in her possession appears to result in her strength weakening such that her manifestation may be defeated. ***Imprisonment.*** For thousands of years, Abeloth has been imprisoned in the Maw, which is a cluster of black holes artificially created by Centerpoint Station and maintained from within by Sinkhole Station.  These stations are believed to have been created by the Celestials.  Abeloth's release from the Maw may be due to a number of reasons including the destruction or compromise of Sinkhole Station, or by a Current of the Force being altered and the flow of time changing. ***Defeat.*** If enough of her avatars are defeated, Abeloth's primary manifestation, usually in and about her home planet in the Maw, may be defeated in combat.  Such a Force entity cannot be \"truly\" killed by normal means. It is thought that, if defeated, Abeloth would return: perhaps in one hundred years or perhaps in one hundred thousand years. However, it is believed by some that the Dagger of Mortis would be capable of killing Abeloth permanently. Additionally or alternatively, Abeloth may be contained by recreating the prison of the Maw or by some other equivalent means. "
@@ -201,4 +201,4 @@ senses = Array[String](["truesight 120 ft.", "passive Perception 19"])
 languages = Array[String](["all", "telepathy 120 ft."])
 challengeRating = "21"
 experiencePoints = 33000
-behaviors = Array[ExtResource("1_g33uf")]([SubResource("Resource_7sxpk"), SubResource("Resource_pbux5"), SubResource("Resource_0cob1"), SubResource("Resource_dhjfx"), SubResource("Resource_am51g"), SubResource("Resource_u8s7h"), SubResource("Resource_dxe23"), SubResource("Resource_8iugq"), SubResource("Resource_p4va3"), SubResource("Resource_efr8b")])
+behaviors = Array[ExtResource("1_jaajv")]([SubResource("Resource_uh8tb"), SubResource("Resource_3il6c"), SubResource("Resource_k7jah"), SubResource("Resource_qiej7"), SubResource("Resource_vo8px"), SubResource("Resource_d2x41"), SubResource("Resource_fp78s"), SubResource("Resource_rb4aa"), SubResource("Resource_lr4q4"), SubResource("Resource_r3ob6")])

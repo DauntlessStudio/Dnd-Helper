@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ls06e"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_gd4bh"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2djm8"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0t1x2"]
 
-[sub_resource type="Resource" id="Resource_61cb5"]
-script = ExtResource("1_ls06e")
+[sub_resource type="Resource" id="Resource_ypvbd"]
+script = ExtResource("1_2djm8")
 name = "Unhindered Movement"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The dragon's movement speed is not reduced while moving with a grappled creature."
 descriptionWithLinks = " The dragon's movement speed is not reduced while moving with a grappled creature."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_h8020"]
-script = ExtResource("1_ls06e")
+[sub_resource type="Resource" id="Resource_ge7ug"]
+script = ExtResource("1_2djm8")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "  The dragon can make three attacks: two with its claws and one with its bite."
 descriptionWithLinks = "  The dragon can make three attacks: two with its claws and one with its bite."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_whwwx"]
-script = ExtResource("1_ls06e")
+[sub_resource type="Resource" id="Resource_uqybk"]
+script = ExtResource("1_2djm8")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0nefx"]
-script = ExtResource("1_ls06e")
+[sub_resource type="Resource" id="Resource_rooeo"]
+script = ExtResource("1_2djm8")
 name = "Claws"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) kinetic damage."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_gd4bh")
+script = ExtResource("2_0t1x2")
 name = "Condor Dragon"
 flavorText = ""
 sectionText = "Condor dragons were flying, carnivorous reptavians native to the craggy cliffs, deserts, and deep woods of Endor's forest moon. They walked on their hind legs and their forearms were used to hold prey. They had bony ridges along their spine, and a wing span of approximately 3 meters."
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["ï¿½"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_ls06e")]([SubResource("Resource_61cb5"), SubResource("Resource_h8020"), SubResource("Resource_whwwx"), SubResource("Resource_0nefx")])
+behaviors = Array[ExtResource("1_2djm8")]([SubResource("Resource_ypvbd"), SubResource("Resource_ge7ug"), SubResource("Resource_uqybk"), SubResource("Resource_rooeo")])

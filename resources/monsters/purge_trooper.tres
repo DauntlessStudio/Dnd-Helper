@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_l5sv5"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ehlpr"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_pryjc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_412bs"]
 
-[sub_resource type="Resource" id="Resource_jccw1"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_5520x"]
+script = ExtResource("1_pryjc")
 name = "Jedi Hunter"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The trooper has advantage on Wisdom (Survival) checks to track humanoids that can cast force powers and on Intelligence (Lore) checks to recall information about Jedi and the Force."
 descriptionWithLinks = " The trooper has advantage on Wisdom (Survival) checks to track humanoids that can cast force powers and on Intelligence (Lore) checks to recall information about Jedi and the Force."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_plkks"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_v4dmu"]
+script = ExtResource("1_pryjc")
 name = "Force Combat Training"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The trooper has advantage on saving throws against Force powers."
 descriptionWithLinks = " The trooper has advantage on saving throws against Force powers."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_45sem"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_ortg8"]
+script = ExtResource("1_pryjc")
 name = "Surprise Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the trooper surprises a creature and hits it with an attack during the first round of combat , the target takes an extra 7 (2d6) damage from the attack."
 descriptionWithLinks = " If the trooper surprises a creature and hits it with an attack during the first round of combat , the target takes an extra 7 (2d6) damage from the attack."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dxk1a"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_efx5q"]
+script = ExtResource("1_pryjc")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The trooper makes two melee or three ranged attacks."
 descriptionWithLinks = " The trooper makes two melee or three ranged attacks."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m3rw1"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_00j6x"]
+script = ExtResource("1_pryjc")
 name = "Blaster Rifle"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 100/400 ft., one target. Hit: 8 (1d8 + 4) energy damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 8
 damageRoll = "1d8 + 4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_onbot"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_pldkt"]
+script = ExtResource("1_pryjc")
 name = "Electrostaff"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack. +6 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack. +6 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 7
 damageRoll = "2d4 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_ucv4k"]
-script = ExtResource("1_l5sv5")
+[sub_resource type="Resource" id="Resource_3kkxw"]
+script = ExtResource("1_pryjc")
 name = "Volley"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The trooper makes one ranged attack against every enemy within 10 feet of a point it can see."
 descriptionWithLinks = " The trooper makes one ranged attack against every enemy within 10 feet of a point it can see."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_ehlpr")
+script = ExtResource("2_412bs")
 name = "Purge Trooper"
 flavorText = "Purge troopers were Imperial clones led by the Sith Lord Darth Vader and the Inquisitorius during the reign of the Galactic Empire. Trained as expendable death squads, they were activated after the Jedi Purge and subsequent termination of the cloning operation on Kamino, making them the last generation produced from the Jango Fett template. As with their precursors in the Grand Army of the Galactic Republic, Purge Troopers were programmed to obey Order 66, making them hostile towards all Jedi.  Purge Troopers were organized into death squads, although some Purge Troopers were known to engage their enemies without any nearby support. Each member had a red tattoo on the right side of their faces and had no hair.Every member was equipped with black armor that included several red or silver designs, kamas, and black helmets similar to that of clone paratroopers, with some sections of red. At least three members were also equipped with red pauldrons and at least three other members had a black pauldron with red lining, which was worn on their right shoulder. Each member had the Imperial crest on both shoulder pads. They utilized DC-15 blaster rifles and electrostaffs in combat. The troopers made use of Zeta-class shuttles and Imperial submarines as transports to carry out their duties."
 sectionText = "Also known as the Order of Inquisitors, The Inquisitorious was an organization of Force-sensitive agents who worked for the Galactic Empire. Members of the Inquisitorius were known as Imperial Inquisitors, Inquisitors, Red Blades, Mystics by Imperial officers, and sometimes even Jedi hunters. They were tasked with hunting down the remaining Jedi who had survived Order 66 at the end of the Clone Wars."
@@ -136,4 +136,4 @@ senses = Array[String](["passive Perception 15"])
 languages = Array[String](["Galactic Basic", "one other of your choice"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_l5sv5")]([SubResource("Resource_jccw1"), SubResource("Resource_plkks"), SubResource("Resource_45sem"), SubResource("Resource_dxk1a"), SubResource("Resource_m3rw1"), SubResource("Resource_onbot"), SubResource("Resource_ucv4k")])
+behaviors = Array[ExtResource("1_pryjc")]([SubResource("Resource_5520x"), SubResource("Resource_v4dmu"), SubResource("Resource_ortg8"), SubResource("Resource_efx5q"), SubResource("Resource_00j6x"), SubResource("Resource_pldkt"), SubResource("Resource_3kkxw")])

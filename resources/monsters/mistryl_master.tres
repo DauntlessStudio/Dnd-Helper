@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_tc0q5"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6h2cb"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1nxi7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bfny3"]
 
-[sub_resource type="Resource" id="Resource_1lsy5"]
-script = ExtResource("1_tc0q5")
+[sub_resource type="Resource" id="Resource_klqf5"]
+script = ExtResource("1_1nxi7")
 name = "Cunning Action"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = "  On each of her turns, the Mistryl can use a bonus action to take the Dash, Disengage, or Hide action."
 descriptionWithLinks = "  On each of her turns, the Mistryl can use a bonus action to take the Dash, Disengage, or Hide action."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2wagt"]
-script = ExtResource("1_tc0q5")
+[sub_resource type="Resource" id="Resource_hm1nh"]
+script = ExtResource("1_1nxi7")
 name = "Sneak Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Mistryl deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Mistryl that isn't incapacitated and the Mistryl doesn't have disadvantage on the attack roll."
 descriptionWithLinks = " The Mistryl deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Mistryl that isn't incapacitated and the Mistryl doesn't have disadvantage on the attack roll."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8ebwc"]
-script = ExtResource("1_tc0q5")
+[sub_resource type="Resource" id="Resource_6kpvv"]
+script = ExtResource("1_1nxi7")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Mistryl makes three melee weapon attacks or three ranged weapon attacks."
 descriptionWithLinks = " The Mistryl makes three melee weapon attacks or three ranged weapon attacks."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_e6gip"]
-script = ExtResource("1_tc0q5")
+[sub_resource type="Resource" id="Resource_fqjgb"]
+script = ExtResource("1_1nxi7")
 name = "Techblade"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) kinetic damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 7
 damageRoll = "1d6 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_5ttcx"]
-script = ExtResource("1_tc0q5")
+[sub_resource type="Resource" id="Resource_d8rju"]
+script = ExtResource("1_1nxi7")
 name = "Holdout Blaster"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 6 (1d4 + 4) kinetic damage."
 descriptionWithLinks = " Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 6 (1d4 + 4) kinetic damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 6
 damageRoll = "1d4 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_4jc7j"]
-script = ExtResource("1_tc0q5")
+[sub_resource type="Resource" id="Resource_f633a"]
+script = ExtResource("1_1nxi7")
 name = "Uncanny Dodge"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " The Mistryl halves the damage that she takes from an attack that hits her.  The Mistryl must be able to see the attacker."
 descriptionWithLinks = " The Mistryl halves the damage that she takes from an attack that hits her.  The Mistryl must be able to see the attacker."
 attackType = 0
@@ -94,7 +94,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_6h2cb")
+script = ExtResource("2_bfny3")
 name = "Mistryl Master"
 flavorText = ""
 sectionText = "The Mistryl Shadow Guards were an elite group of all-female Human mercenaries, sent from their home planet of Emberlene to earn money in support of the devastated communities of their world.***Emberlene.*** Using its might and wealth to conquer its neighbors, Emberlene subjugated dozens of worlds in their sector, plundering their wealth, and destroyed anything of value couldn't be taken.***The Destruction.*** The remaining planets in the sector pooled their resources and hired a mercenary army to fight for them. The mercenaries struck hard and fast, devastating Emberlene's forces and reducing the planet's infrastructure to rubble. Ensuing firestorms and air strikes against populated areas effectively ended the Emberlene threat, reducing its people to abject poverty.***The Lie.*** In the years after their destruction and partial reconstruction, the Eleven Elders decided to create a lie from this disaster. From a young age, the citizens of Emberlene were taught that many years ago, while the Galactic Empire was still young and early resistance had not been crushed, Emperor Palpatine ordered the destruction of Emberlene as an example to all who thought they could escape the rule of the Empire. This lie was created to instill a sense of loyalty and pride in the people of Emberlene, as well as a false sense of duty amongst the Mistryl.***Organization.*** The Shadow Guard typically operated in small teams led by a commander known as the Team Prime. On the other hand, Mistryl sometimes traveled as master-and-apprentice pairs, and individual warriors could be contracted out long-term as bodyguards. True to their mythos that Emberlene had been ravaged by Imperial forces, the Mistryl claimed that they never worked for the New Order, although when that loathing got in the way of a job, they often forgot this animosity, either through convenience or necessity.***Equipment & Methods.*** While the Guard were deadly at any time, the Shadow Guard were especially adept at close-quarters combat. They were well trained in martial arts, and also had a large amount of weapons training as well. They were trained to use hold-out blasters and vibroblades, and were also educated in the use of more exotic weapons such as hand claws, shock whips, and zenji needles.The Mistryl were legendary for their stealth and ability to remain unnoticed at all times. They had access to a huge database of profiles of galactic citizens. When needed, a guard could quickly use one of these and assume that person's identity in order to either get close to a target or get away from an area."
@@ -121,4 +121,4 @@ senses = Array[String](["passive Perception 16"])
 languages = Array[String](["â€”"])
 challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_tc0q5")]([SubResource("Resource_1lsy5"), SubResource("Resource_2wagt"), SubResource("Resource_8ebwc"), SubResource("Resource_e6gip"), SubResource("Resource_5ttcx"), SubResource("Resource_4jc7j")])
+behaviors = Array[ExtResource("1_1nxi7")]([SubResource("Resource_klqf5"), SubResource("Resource_hm1nh"), SubResource("Resource_6kpvv"), SubResource("Resource_fqjgb"), SubResource("Resource_d8rju"), SubResource("Resource_f633a")])

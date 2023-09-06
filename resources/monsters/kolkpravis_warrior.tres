@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xpeaq"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_c3wp3"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_r3wfp"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mdnwy"]
 
-[sub_resource type="Resource" id="Resource_yg4tb"]
-script = ExtResource("1_xpeaq")
+[sub_resource type="Resource" id="Resource_2tjul"]
+script = ExtResource("1_r3wfp")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Kolkpravis Warrior makes two meelee attacks with its Shoni Spear or two ranged attack with its slugthrower."
 descriptionWithLinks = " The Kolkpravis Warrior makes two meelee attacks with its Shoni Spear or two ranged attack with its slugthrower."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_v0d0r"]
-script = ExtResource("1_xpeaq")
+[sub_resource type="Resource" id="Resource_8mboq"]
+script = ExtResource("1_r3wfp")
 name = "Lig Sword"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit 5 (1d8 + 1) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit 5 (1d8 + 1) kinetic damage."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 5
 damageRoll = "1d8 + 1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_h6ue5"]
-script = ExtResource("1_xpeaq")
+[sub_resource type="Resource" id="Resource_2vsbm"]
+script = ExtResource("1_r3wfp")
 name = "Shoni Spear"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60, one target. Hit 4 (1d6 + 1) kinetic damage."
 descriptionWithLinks = " Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60, one target. Hit 4 (1d6 + 1) kinetic damage."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 4
 damageRoll = "1d6 + 1"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_igdv8"]
-script = ExtResource("1_xpeaq")
+[sub_resource type="Resource" id="Resource_xqr5b"]
+script = ExtResource("1_r3wfp")
 name = "Sudden Rush"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Until the end of the turn, the Kolkpravis Warrior's speed increases by 60 feet and it doesn't provoke opportunity attacks."
 descriptionWithLinks = " Until the end of the turn, the Kolkpravis Warrior's speed increases by 60 feet and it doesn't provoke opportunity attacks."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_c3wp3")
+script = ExtResource("2_mdnwy")
 name = "Kolkpravis Warrior"
 flavorText = "The Kolkpravis were a large united band of Kaleesh tribal warriors from the eastern hemisphere of the planet Kalee. The organization of the kolkpravis was naturally tribal, as well as the names. The beginning rank of the kolkpravis was a warrior, who made up a kamen. Kamen was lead by a blackarm. Roughly 100 kamen made up a horde, which was lead by a tarkhan. Around 100 to 200 hordes made up a brigade which was lead by baatars.From several brigades came a khanate' which was lead by one of the eight khans of the Izvoshra. The Supreme Commander of the kolkpravis was the khagan, a title held first by Qymaen jai Sheelal, the infamous Lord Grievous."
 sectionText = "Kaleesh were reptilian humanoids from the planet Kalee. They had scaly skin, tusks, and long nostrils, though few outsiders ever saw a Kaleesh face that wasn't obscured behind a traditional mask. Kaleesh culture was deeply spiritual and warlike. War was seen as an essential part of life, and wars between tribes were common."
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60ft", "passive Perception 12"])
 languages = Array[String](["Kaleesh", "Galactic Basic"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_xpeaq")]([SubResource("Resource_yg4tb"), SubResource("Resource_v0d0r"), SubResource("Resource_h6ue5"), SubResource("Resource_igdv8")])
+behaviors = Array[ExtResource("1_r3wfp")]([SubResource("Resource_2tjul"), SubResource("Resource_8mboq"), SubResource("Resource_2vsbm"), SubResource("Resource_xqr5b")])

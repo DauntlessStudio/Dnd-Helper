@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_lk55i"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mp6h0"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_23cso"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7h88h"]
 
-[sub_resource type="Resource" id="Resource_1erhv"]
-script = ExtResource("1_lk55i")
+[sub_resource type="Resource" id="Resource_i48tw"]
+script = ExtResource("1_23cso")
 name = "Keen Hearing and Smell"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 descriptionWithLinks = " The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8dibn"]
-script = ExtResource("1_lk55i")
+[sub_resource type="Resource" id="Resource_gop2l"]
+script = ExtResource("1_23cso")
 name = "Charge"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the hound moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the hound can make another attack with its tusks against it as a bonus action."
 descriptionWithLinks = " If the hound moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the hound can make another attack with its tusks against it as a bonus action."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7a38w"]
-script = ExtResource("1_lk55i")
+[sub_resource type="Resource" id="Resource_2dkx5"]
+script = ExtResource("1_23cso")
 name = "Pack Tactics"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_w47hk"]
-script = ExtResource("1_lk55i")
+[sub_resource type="Resource" id="Resource_tufpo"]
+script = ExtResource("1_23cso")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) kinetic damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 7
 damageRoll = "2d4 + 2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_xk1uu"]
-script = ExtResource("1_lk55i")
+[sub_resource type="Resource" id="Resource_kegr3"]
+script = ExtResource("1_23cso")
 name = "Tusk"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) kinetic damage."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = "2d6 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_mp6h0")
+script = ExtResource("2_7h88h")
 name = "Horned Kath Hound"
 flavorText = ""
 sectionText = "Kath hounds are about the size of a large dog, fur-covered, and each limb ends in four hoofed digits. They are generally not very hostile, unless provoked. At one point, the kath hounds started attacking the citizens of Dantooine and were blamed for numerous crimes, including the theft of a protocol droid. Kath hounds are also a popular pet for the crime lords of Nar Shaddaa, including Visquis and Vogga the Hutt. Domesticated kath hounds, called salkies, are also popular pets on Coruscant."
@@ -106,4 +106,4 @@ senses = Array[String](["darkvision 30 ft.", "passive Perception 13"])
 languages = Array[String](["ï¿½"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_lk55i")]([SubResource("Resource_1erhv"), SubResource("Resource_8dibn"), SubResource("Resource_7a38w"), SubResource("Resource_w47hk"), SubResource("Resource_xk1uu")])
+behaviors = Array[ExtResource("1_23cso")]([SubResource("Resource_i48tw"), SubResource("Resource_gop2l"), SubResource("Resource_2dkx5"), SubResource("Resource_tufpo"), SubResource("Resource_kegr3")])

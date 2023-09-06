@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_j4ydo"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_hh7ib"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_357mf"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0uwre"]
 
-[sub_resource type="Resource" id="Resource_bam4h"]
-script = ExtResource("1_j4ydo")
+[sub_resource type="Resource" id="Resource_2h7xc"]
+script = ExtResource("1_357mf")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Navy Trooper makes two blaster carbine attacks."
 descriptionWithLinks = " The Navy Trooper makes two blaster carbine attacks."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jaywh"]
-script = ExtResource("1_j4ydo")
+[sub_resource type="Resource" id="Resource_lcj0v"]
+script = ExtResource("1_357mf")
 name = "Blaster Carbine"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +4 to hit, range 60/240 ft., one target. Hit: 5 (1d6 + 2) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +4 to hit, range 60/240 ft., one target. Hit: 5 (1d6 + 2) energy damage."
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_hh7ib")
+script = ExtResource("2_0uwre")
 name = "Navy Trooper"
 flavorText = ""
 sectionText = "As the branch of the galactic military that deals with space operations, the galactic navy has been composed of many sub-units and organizations, and has utilized a vast array of starships to achieve its objectives throughout the years.***Republic Navy.*** The Republic Navy, also referred to as the Republic fleet, Republic starfleet or the Galactic Republic fleet, was the military naval force of the Galactic Republic during the Clone Wars. The Navy served to transport the clone army across the galaxy while also engaging in ship-to-ship combat with the Confederacy navy. Following the end of the war and the formation of the Galactic Empire, the Republic Navy transitioned into the Imperial Navy.***Imperial Navy.*** The Imperial Navy, also known as the Imperial Starfleet or the Imperial fleet, was the naval branch of the Galactic Empire's military. It was created in the wake of the Clone Wars, when Chancellor Sheev Palpatine transformed the Galactic Republic he led into an authoritarian Empire. Consisting mainly of Star Destroyers and TIE fighters, the Imperial Navy was tasked with maintaining order in the galaxy.***First Order Navy.*** The First Order Navy, also referred to as the First Order fleet, was the naval branch of the First Order military. It superseded the Imperial Navy of the former Galactic Empire, it would be paramount to the gradual conquest and colonization of the Unknown Regions by the Imperial successor state, the First Order."
@@ -61,4 +61,4 @@ senses = Array[String](["Passive Perception 12"])
 languages = Array[String](["Galactic Basic"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_j4ydo")]([SubResource("Resource_bam4h"), SubResource("Resource_jaywh")])
+behaviors = Array[ExtResource("1_357mf")]([SubResource("Resource_2h7xc"), SubResource("Resource_lcj0v")])

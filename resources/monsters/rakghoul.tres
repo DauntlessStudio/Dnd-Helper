@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rub2y"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_r28ko"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_00lbt"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_uomqc"]
 
-[sub_resource type="Resource" id="Resource_squy0"]
-script = ExtResource("1_rub2y")
+[sub_resource type="Resource" id="Resource_qgcev"]
+script = ExtResource("1_00lbt")
 name = "Rakghoul Plague"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Creatures that come in contact with the rakghoul may become afflicted with rakghoul plague, a virulent disease that transforms the creature into a rakghoul over the next 24 (7d6) hours. The plague is only effective against humanoids."
 descriptionWithLinks = " Creatures that come in contact with the rakghoul may become afflicted with rakghoul plague, a virulent disease that transforms the creature into a rakghoul over the next 24 (7d6) hours. The plague is only effective against humanoids."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i6csc"]
-script = ExtResource("1_rub2y")
+[sub_resource type="Resource" id="Resource_bmdr1"]
+script = ExtResource("1_00lbt")
 name = "Savage Leap"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the rakghoul moves at least 20 feet toward a creature and then hits it with a claw attack on the same turn, the target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the rakghoul can make one bite attack against it as a bonus action."
 descriptionWithLinks = " If the rakghoul moves at least 20 feet toward a creature and then hits it with a claw attack on the same turn, the target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the rakghoul can make one bite attack against it as a bonus action."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ltosj"]
-script = ExtResource("1_rub2y")
+[sub_resource type="Resource" id="Resource_gamb7"]
+script = ExtResource("1_00lbt")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 9 (2d6+2) Kinetic damage. If the target is a humanoid creature, it must succeed on a DC 12 Constitution saving throw or become infected with the Rakghoul Plague."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit 9 (2d6+2) Kinetic damage. If the target is a humanoid creature, it must succeed on a DC 12 Constitution saving throw or become infected with the Rakghoul Plague."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 9
 damageRoll = "2d6+2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_wgshe"]
-script = ExtResource("1_rub2y")
+[sub_resource type="Resource" id="Resource_q8bof"]
+script = ExtResource("1_00lbt")
 name = "Claws"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4+2) Kinetic damage. If the target is a humanoid creature, it must succeed on a DC 12 Constitution saving throw or become infected with the Rakghoul Plague."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4+2) Kinetic damage. If the target is a humanoid creature, it must succeed on a DC 12 Constitution saving throw or become infected with the Rakghoul Plague."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = "2d4+2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_r28ko")
+script = ExtResource("2_uomqc")
 name = "Rakghoul"
 flavorText = ""
 sectionText = "Rakghouls are a living plagueï¿½the manifestation of a highly communicable disease capable of swiftly transforming its victims into twisted, degenerate monsters with predatory instincts. The rakghoul virus can infect hundreds of known species and is most often delivered through a rakghoul's bite; a person attacked by a rakghoul and ï¿½luckyï¿½ enough to survive typically becomes a rakghoul him- or herself. Some victims resist the virus for days, succumbing to rakghoul instincts while retaining their original bodies.***Behavior.*** Hideous and possessing an appetite for flesh, Rakghouls are non-sentient, and are most commonly simple and animalistic in behavior. These feral rakghouls, known also as \"lower rakghouls\", are slaves to their instincts and especially their hunger, often traveling in packs numbering between four and eight, and attacking anything that looks or smells like potential food. Though they hold to no form of heirarchy, certain rakghouls, known to some as \"rakghoul fiends\", exhibit a manner of influence over their \"lower\" rakghoul brethren. Hardy and vicious, these rakghouls are generally believed to somehow maintain bits of their former intelligence, and direct other rakghouls to trap and ambush prey; it is even rumored that these rakghouls can use weapons.***Muur Talisman.*** Rakghouls are a product of the Sith alchemy performed by the ancient Sith Lord, Karness Muur. When he forged the talisman in which he would later invest his mind and will, Muur imbued the amulet with the power to almost instantaneously transform nearby sentients into rakghouls that he could command and control. When a being possesses the Muur Talisman, they are able to enslave the rakghouls to their will, and command them as an army with the potential for nearly infinite expansion. Under the talisman's effects, rakghouls become more demure, and are able to call upon the knowledge and skills they had possessed in their former lives. Unfortunately, though, their former personalities can not be restored, as all that remains in the rakghouls is an imprint of who they had once been.***The Plague.*** The talisman's powers did not work on all: Force-users and certain non-Human species are immune to the talisman's effects. To rectify this, Muur engineered the \"rakghoul plague\", a virus-like disease which is spread from a rakghoul's bite or scratch. Individuals infected with this disease later transform into rakghouls themselves; incubation periods varied, though the infection's manifestation was generally a rapid and painful experience, becoming a rakghoul within a timeframe of six to forty-eight hours. The body becomes twisted, skin pigmentation drains and the victim attains a whitened corpse-like state. Victims also bleed from pores in the skin, and from orifices such as the eyes. In the years following the Mandalorian Wars, the Sith Empire born of Darths Revan and Malak possessed a curative serum that could save an individual infected with the plague, and the Jedi Cade Skywalker could cure an infected individual with his unique healing ability, but once a victim fully transformed into a rakghoul, the only means of salvation lay in death."
@@ -91,4 +91,4 @@ senses = Array[String](["passive Perception 12"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_rub2y")]([SubResource("Resource_squy0"), SubResource("Resource_i6csc"), SubResource("Resource_ltosj"), SubResource("Resource_wgshe")])
+behaviors = Array[ExtResource("1_00lbt")]([SubResource("Resource_qgcev"), SubResource("Resource_bmdr1"), SubResource("Resource_gamb7"), SubResource("Resource_q8bof")])

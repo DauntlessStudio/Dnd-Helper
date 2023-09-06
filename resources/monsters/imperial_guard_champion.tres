@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8ix7t"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_geg6i"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_52gsw"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_k5pom"]
 
-[sub_resource type="Resource" id="Resource_r1jwa"]
-script = ExtResource("1_8ix7t")
+[sub_resource type="Resource" id="Resource_wfaqh"]
+script = ExtResource("1_52gsw")
 name = "Forcecasting"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " At will: enfeeble  2/day each: battle meditation, fear, battle precognition  The Royal Guard Champion's innate forcecasting ability is Wisdom (force save DC 16, +8 to hit with force powers). It can innately cast the following Force Powers:"
 descriptionWithLinks = " Forcecasting. The Royal Guard Champion's innate forcecasting ability is Wisdom (force save DC 16, +8 to hit with force powers). It can innately cast the following Force Powers: [url=][/url]
 
@@ -22,10 +22,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bpirp"]
-script = ExtResource("1_8ix7t")
+[sub_resource type="Resource" id="Resource_r3ulr"]
+script = ExtResource("1_52gsw")
 name = "Choreography of Belligerence"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Royal Guard Champion has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The Royal Guard Champion has advantage on attack rolls against a creature if at least one other Imperial Guard is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -37,10 +37,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_1fmni"]
-script = ExtResource("1_8ix7t")
+[sub_resource type="Resource" id="Resource_f1n7y"]
+script = ExtResource("1_52gsw")
 name = "Rally the Troops"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " As a bonus action, the Imperial Royal Guard Champion can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
 descriptionWithLinks = " As a bonus action, the Imperial Royal Guard Champion can magically end the charmed and frightened conditions on itself and each creature of its choice that it can see within 30 feet of it."
 attackType = 0
@@ -52,10 +52,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6o2sh"]
-script = ExtResource("1_8ix7t")
+[sub_resource type="Resource" id="Resource_e2rih"]
+script = ExtResource("1_52gsw")
 name = "Blaster Pistol"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +5 to hit, range 40/160, one target. Hit: 4 (1d6 + 1) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +5 to hit, range 40/160, one target. Hit: 4 (1d6 + 1) energy damage."
 attackType = 0
@@ -67,10 +67,10 @@ damage = 4
 damageRoll = "1d6 + 1"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_1f83f"]
-script = ExtResource("1_8ix7t")
+[sub_resource type="Resource" id="Resource_p0pvl"]
+script = ExtResource("1_52gsw")
 name = "Doublesword"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 13 (2d8 + 4) kinetic energy."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 13 (2d8 + 4) kinetic energy."
 attackType = 0
@@ -82,10 +82,10 @@ damage = 13
 damageRoll = "2d8 + 4"
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6urkw"]
-script = ExtResource("1_8ix7t")
+[sub_resource type="Resource" id="Resource_an64h"]
+script = ExtResource("1_52gsw")
 name = "Parry"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " The Royal Guard Champion adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard Champion must see the attacker and be wielding a melee weapon."
 descriptionWithLinks = " The Royal Guard Champion adds 3 to his AC against one melee attack that would hit him. To do so, the Royal Guard Champion must see the attacker and be wielding a melee weapon."
 attackType = 0
@@ -98,7 +98,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_geg6i")
+script = ExtResource("2_k5pom")
 name = "Imperial Guard Champion"
 flavorText = "Imperial Guard Champions, also known as Sovereign Protectors, are the most elite cadre of guardsmen in Imperial service.  Only the best of the elite Emperor's Royal Guard are specially chosen to become Sovereign Protectors. They endure years of selection procedures and training aimed at achieving perfection in soldiering. Extreme standards are set for combat fitness, stamina, strength, dexterity, mental acuity, reaction time, loyalty and intelligence. Their combat training includes the use of heavy blaster pistols and the deadly double vibroblade. They also have access to Emperor's Royal Guard TIE/IN starfighters, and are often sent on extremely vital missions."
 sectionText = "The Galactic Empire, also known as the Old Empire, the First Galactic Empire, Palpatine's New Order, the Imperium or simply the Empire, is the galactic government established by Supreme Chancellor Palpatine to replace the Galactic Republic in 19 BBY and bring Sith rule to the galaxy.  The government personnel of this new Empire are protected by some of its most highly trained warriors. "
@@ -125,4 +125,4 @@ senses = Array[String](["passive Perception 117"])
 languages = Array[String](["Galactic Basic"])
 challengeRating = "11"
 experiencePoints = 7200
-behaviors = Array[ExtResource("1_8ix7t")]([SubResource("Resource_r1jwa"), SubResource("Resource_bpirp"), SubResource("Resource_1fmni"), SubResource("Resource_6o2sh"), SubResource("Resource_1f83f"), SubResource("Resource_6urkw")])
+behaviors = Array[ExtResource("1_52gsw")]([SubResource("Resource_wfaqh"), SubResource("Resource_r3ulr"), SubResource("Resource_f1n7y"), SubResource("Resource_e2rih"), SubResource("Resource_p0pvl"), SubResource("Resource_an64h")])

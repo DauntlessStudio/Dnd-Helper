@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_6ticu"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xofke"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_knnal"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8nmoi"]
 
-[sub_resource type="Resource" id="Resource_c2vjg"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_pu0u3"]
+script = ExtResource("1_knnal")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The turret has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The turret has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pt1i5"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_lxym1"]
+script = ExtResource("1_knnal")
 name = "Heavy Armor & Shielding"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The outer layer of the turret is covered in heavy armor and shielding, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the turret takes no damage from that attack. If the turret takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 descriptionWithLinks = " The outer layer of the turret is covered in heavy armor and shielding, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 15 points, the turret takes no damage from that attack. If the turret takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_disin"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_w6cl1"]
+script = ExtResource("1_knnal")
 name = "Gunner"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct requires an active gunner to take any actions, and if the gunner is subjected to any conditions that the construct is not immune to, the gunner is also subjected to those conditions. The gunner may take their own action or one of the actions granted by the construct."
 descriptionWithLinks = " The construct requires an active gunner to take any actions, and if the gunner is subjected to any conditions that the construct is not immune to, the gunner is also subjected to those conditions. The gunner may take their own action or one of the actions granted by the construct."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fxuqw"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_10hnu"]
+script = ExtResource("1_knnal")
 name = "Vulnerable Interior"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The turret's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage."
 descriptionWithLinks = " The turret's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_i7gre"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_2or8t"]
+script = ExtResource("1_knnal")
 name = "Targeting Systems"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The turret uses its Intelligence modifier for attack, damage, and initiative rolls."
 descriptionWithLinks = " The turret uses its Intelligence modifier for attack, damage, and initiative rolls."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7mgfl"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_sc76o"]
+script = ExtResource("1_knnal")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The turret makes two laser cannon attacks."
 descriptionWithLinks = " The turret makes two laser cannon attacks."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qqcea"]
-script = ExtResource("1_6ticu")
+[sub_resource type="Resource" id="Resource_ajmyu"]
+script = ExtResource("1_knnal")
 name = "Laser Canon"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +6 to hit, range 300/900 ft., one target that must be at least 60 ft away from the turret. Hit 16 (4d6+2) energy damage. Additionally, hit or miss, the target and each creature within 20 feet must make a Dexterity saving throw (DC 15), taking 14 (4d6) energy damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 300/900 ft., one target that must be at least 60 ft away from the turret. Hit 16 (4d6+2) energy damage. Additionally, hit or miss, the target and each creature within 20 feet must make a Dexterity saving throw (DC 15), taking 14 (4d6) energy damage on a failed save, or half as much damage on a successful one."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = "4d6+2"
 damageType = 3
 
 [resource]
-script = ExtResource("2_xofke")
+script = ExtResource("2_8nmoi")
 name = "DF.9 Anti-Infantry Turret"
 flavorText = "Manufactured by Golan Arms, the DF.9 is a fixed emplacement anti-infantry weapon. It incorporates a single DF.9 laser cannon mounted atop a four-meter tall cylindrical housing composed of heavily-armored durasteel, with proton-shielding that is resistant to close-quarters blaster fire. The tower features a front access panel, and an upper observation hatch.The turreted laser cannon employs precision targeting computers and has an optimal rang of three kilometers, although the laser cannon is capable of hitting targets at a distance of sixteen kilometers at the cost of decreased accuracy. The DF.9 is capable of firing a shot every three seconds, with the impact of the energy beam scattering explosive energy and producing a secondary blast of radiation with an eight-meter radius impact point that can effectively destroy entire squads of soldiers. Skilled gunners can use the DF.9's accuracy to effectively disable army support systems and light vehicles, and it is devastating to foot soldiers and a threat to vehicles such as the All Terrain Scout Transport.The DF.9 is best used in conjunction with other similar units and anti-vehicle lasers to defend military bases, spaceports and other strategic installations. It can be installed on multiple terrain types. The nature of the DF.9's fixed emplacement means that the unit is not able to be moved easily."
 sectionText = "A turret is a mount for a weapon that enabled it to turn and pivot, allowing it to fire in many different directions. They are mounted on many vehicles, starfighters, and starships.  Other turrets are mounted on the ground, and can be both manned and un-manned. Weapons mounted on turrets included laser cannons and other types of projectile cannons."
@@ -136,4 +136,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["â€”"])
 challengeRating = "8"
 experiencePoints = 3900
-behaviors = Array[ExtResource("1_6ticu")]([SubResource("Resource_c2vjg"), SubResource("Resource_pt1i5"), SubResource("Resource_disin"), SubResource("Resource_fxuqw"), SubResource("Resource_i7gre"), SubResource("Resource_7mgfl"), SubResource("Resource_qqcea")])
+behaviors = Array[ExtResource("1_knnal")]([SubResource("Resource_pu0u3"), SubResource("Resource_lxym1"), SubResource("Resource_w6cl1"), SubResource("Resource_10hnu"), SubResource("Resource_2or8t"), SubResource("Resource_sc76o"), SubResource("Resource_ajmyu")])

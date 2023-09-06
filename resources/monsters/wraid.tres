@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_1437m"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mgsqr"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_cwljj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_egjr5"]
 
-[sub_resource type="Resource" id="Resource_x6ajj"]
-script = ExtResource("1_1437m")
+[sub_resource type="Resource" id="Resource_u2dwu"]
+script = ExtResource("1_cwljj")
 name = "Charge"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the Wraid moves at least 20 feet straight toward a target and then hits it with a ram Attack on the same turn, the target takes an extra 4 (2d8) kinetic damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone."
 descriptionWithLinks = " If the Wraid moves at least 20 feet straight toward a target and then hits it with a ram Attack on the same turn, the target takes an extra 4 (2d8) kinetic damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mq8if"]
-script = ExtResource("1_1437m")
+[sub_resource type="Resource" id="Resource_m0udf"]
+script = ExtResource("1_cwljj")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Wraid makes two attacks, once with its ram and one with its claws."
 descriptionWithLinks = " The Wraid makes two attacks, once with its ram and one with its claws."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_7k80j"]
-script = ExtResource("1_1437m")
+[sub_resource type="Resource" id="Resource_qmmvt"]
+script = ExtResource("1_cwljj")
 name = "Ram"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 11 (3d6 + 3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 11 (3d6 + 3) kinetic damage."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2j42u"]
-script = ExtResource("1_1437m")
+[sub_resource type="Resource" id="Resource_gyni3"]
+script = ExtResource("1_cwljj")
 name = "Claws"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 7 (2d4+3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 7 (2d4+3) kinetic damage."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_mgsqr")
+script = ExtResource("2_egjr5")
 name = "Wraid"
 flavorText = ""
 sectionText = "Wraids are large reptilian creatures found on many desert planets around the galaxy, including Tatooine, Korriban, and Tython. ***Biology & Appearance.*** Wraids are pinkish-red in color and have very powerful front legs, enabling them to move quickly when agitated by means of long, bounding strides. They have large claws at the end of their feet and sharp teeth, making them dangerous to the unwary. They also have two small back legs.***Behavior.*** Wraids are often seen in clusters from two to six members. Generally, they will not harm passersby unless provoked, at which point their danger becomes immediately apparent.***Hunting.*** Because of their ferocious appearance and short temper, they are a popular quarry of less-experienced big game sport hunters from around the galaxy. When the settlement of Anchorhead was founded, hunting wraids developed into a marketable trade with the opening of hunting lodges and salespeople dealing in wraid skull plates purchased from hunters.Their skull plates are rumored to have medicinal uses, but the market for them is very specific."
@@ -91,4 +91,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["â€”"])
 challengeRating = "2"
 experiencePoints = 0
-behaviors = Array[ExtResource("1_1437m")]([SubResource("Resource_x6ajj"), SubResource("Resource_mq8if"), SubResource("Resource_7k80j"), SubResource("Resource_2j42u")])
+behaviors = Array[ExtResource("1_cwljj")]([SubResource("Resource_u2dwu"), SubResource("Resource_m0udf"), SubResource("Resource_qmmvt"), SubResource("Resource_gyni3")])

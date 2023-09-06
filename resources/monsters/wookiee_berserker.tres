@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_hcnih"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nebsr"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gbc0k"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_u0ykb"]
 
-[sub_resource type="Resource" id="Resource_tuk1x"]
-script = ExtResource("1_hcnih")
+[sub_resource type="Resource" id="Resource_og0ga"]
+script = ExtResource("1_gbc0k")
 name = "Aggressive"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " As a bonus action, the wookiee can move up to its speed toward a hostile creature that it can see."
 descriptionWithLinks = " As a bonus action, the wookiee can move up to its speed toward a hostile creature that it can see."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_h3hrv"]
-script = ExtResource("1_hcnih")
+[sub_resource type="Resource" id="Resource_bq6yv"]
+script = ExtResource("1_gbc0k")
 name = "Reckless"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " At the start of its turn, the wookiee can can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
 descriptionWithLinks = " At the start of its turn, the wookiee can can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dmykt"]
-script = ExtResource("1_hcnih")
+[sub_resource type="Resource" id="Resource_t40lx"]
+script = ExtResource("1_gbc0k")
 name = "Blood Rage"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When a creature within 5 feet of the wookiee hits it with an attack, the wookiee may use its reaction to immediately make a melee weapon attack with advantage against that creature."
 descriptionWithLinks = " When a creature within 5 feet of the wookiee hits it with an attack, the wookiee may use its reaction to immediately make a melee weapon attack with advantage against that creature."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qpl60"]
-script = ExtResource("1_hcnih")
+[sub_resource type="Resource" id="Resource_ovvy0"]
+script = ExtResource("1_gbc0k")
 name = "Vibroaxe"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, one target. Hit: 9 (1d12 + 3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, one target. Hit: 9 (1d12 + 3) kinetic damage."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = "1d12 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_nebsr")
+script = ExtResource("2_u0ykb")
 name = "Wookiee Berserker"
 flavorText = ""
 sectionText = "Wookiees are a tall species of furry humanoids from the planet Kashyyyk, who grow to a height of nearly three meters. They are covered from head to toe in a thick, shaggy coat of hair with water-shedding properties that notably comes in shades of brown, black, gray, and white. The species has two sexes, female and male. The latter grow long beards in adult life. Wookiee eye color ranges from blue to brown. Wookiees are big eaters, with the average adult requiring 3,500-6,000 calories a day of food.Wookiees have extendable claws which they use for climbing; using them for anything else violates the Wookiee honor code. Despite their fearsome appearance and volatile temperament, Wookiees are regarded as intelligent, sophisticated, loyal and trusting. When angered, Wookiees are known to descend into a berserker rage. Wookiees have a long lifespan, appearing not to age over a span of fifty years. ***History.*** The softening and repeal of anti-slavery laws under the Empire ultimately led to classifying the Wookiees as non-sentient. The Empire enslaved the Wookiees not because they were a meaningful threat to the Empire but because their massive, robust physiology allowed them to work long and hard in extreme conditions. As a result, many Wookiees were forced into slavery building much of the Imperial war machine, sent to be worked to death in the dangerous spice mines of the planet Kessel, or on construction sites such as the Death Star. Numerous Wookiees were bred for use in medical experimentation, and some were used as playthings, hunted for sport, or forced into gladiatorial combat.  Some of these wookiees turned towards darker pursuits after their rough treatment, such as the infamous bounty hunter Black Krrsantan."
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 10"])
 languages = Array[String](["Galactic Basic", "Shyriiwook"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_hcnih")]([SubResource("Resource_tuk1x"), SubResource("Resource_h3hrv"), SubResource("Resource_dmykt"), SubResource("Resource_qpl60")])
+behaviors = Array[ExtResource("1_gbc0k")]([SubResource("Resource_og0ga"), SubResource("Resource_bq6yv"), SubResource("Resource_t40lx"), SubResource("Resource_ovvy0")])

@@ -2,6 +2,7 @@ class_name CombatentStackPanel
 extends Panel
 
 @export var sourceCharacter: Character
+signal combatantInfo(combatant: CombatentStackPanel)
 var currentHP: int
 var maximumHP: int
 var initiative: int
@@ -37,3 +38,12 @@ func set_player(playerName: String, init: int, armor: String, movement: String, 
 func _on_hp_slider_value_changed(value):
 	currentHP = value
 	$VBoxContainer/HBoxContainer/VBoxContainer/HPLabel.text = " %d/%d" % [currentHP, maximumHP]
+
+
+func _on_clear_button_pressed():
+	queue_free()
+
+
+func _on_gui_input(event):
+	if event is InputEventMouseButton and event.pressed:
+		combatantInfo.emit(self)

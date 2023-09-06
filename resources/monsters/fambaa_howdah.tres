@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_htkxn"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_lohi6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2dwch"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_27kbh"]
 
-[sub_resource type="Resource" id="Resource_4cwu5"]
-script = ExtResource("1_htkxn")
+[sub_resource type="Resource" id="Resource_enrft"]
+script = ExtResource("1_2dwch")
 name = "Amphibious"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The fambaa can breathe air and water."
 descriptionWithLinks = " The fambaa can breathe air and water."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jnv0i"]
-script = ExtResource("1_htkxn")
+[sub_resource type="Resource" id="Resource_vgt6y"]
+script = ExtResource("1_2dwch")
 name = "Howdah"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The fambaa carries a fortified platform on its back. Up to six Medium creatures can ride on the platform without squeezing. Creatures on the platform have three-quarters cover against attacks and effects from outside it. If the fambaa dies, creatures on the platform are placed in occupied spaces within 10 feet of the fambaa."
 descriptionWithLinks = " The fambaa carries a fortified platform on its back. Up to six Medium creatures can ride on the platform without squeezing. Creatures on the platform have three-quarters cover against attacks and effects from outside it. If the fambaa dies, creatures on the platform are placed in occupied spaces within 10 feet of the fambaa."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6u52h"]
-script = ExtResource("1_htkxn")
+[sub_resource type="Resource" id="Resource_sshyu"]
+script = ExtResource("1_2dwch")
 name = "Siege Monster"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The fambaa deals double damage to objects and structures."
 descriptionWithLinks = " The fambaa deals double damage to objects and structures."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ox30m"]
-script = ExtResource("1_htkxn")
+[sub_resource type="Resource" id="Resource_njw2g"]
+script = ExtResource("1_2dwch")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 11 (3d6 + 6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 11 (3d6 + 6) kinetic damage."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 11
 damageRoll = "3d6 + 6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_md16r"]
-script = ExtResource("1_htkxn")
+[sub_resource type="Resource" id="Resource_7lwfh"]
+script = ExtResource("1_2dwch")
 name = "Stomp"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 24 (4d8 + 6) kinetic damage, and the target must succeed on a DC 16 Strength saving throw or be knocked prone."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 24 (4d8 + 6) kinetic damage, and the target must succeed on a DC 16 Strength saving throw or be knocked prone."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = "4d8 + 6"
 damageType = 7
 
 [resource]
-script = ExtResource("2_lohi6")
+script = ExtResource("2_27kbh")
 name = "Fambaa Howdah"
 flavorText = ""
 sectionText = "Large non-sentient amphibians native to Naboo and Onderon, biologists surmise that both the fambaas and the falumpasets of Onderon were originally brought there by Naboo merchants, but there is little fossil evidence to back up that hypothesis. Their only known predators are sando aqua monsters breaching the surface of the swamp.***Biology.*** Fambaas obtain food by knocking over trees to get at leaves and berries. They also forage for underwater plants, breathing underwater and swimming with ease. Fambaas reach sizes of up to 9 meters.Females lay large numbers of sticky, gelatinous eggs, which they deposit in puddles and underwater. The young hatch with moist skin and gills, and upon maturity, the gills disappear and their skin hardens.***Herds.*** In the wild, fambaas travel in herds of up to twelve, but form breeding herds of hundreds of family units that are so large they are traditionally put to pasture in sacred swampy areas. There are also special fambaa stables contained inside the underwater hydrostatic bubble-enclosed cities for the domesticated breeds kept by Gungans. ***Domestication.*** The fambaa have been domesticated by Gungans for millennia as beasts of burden and cavalry/artillery draft beasts, sometimes carrying portable deflector shield generators or large booma cannons."
@@ -106,4 +106,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["ï¿½"])
 challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_htkxn")]([SubResource("Resource_4cwu5"), SubResource("Resource_jnv0i"), SubResource("Resource_6u52h"), SubResource("Resource_ox30m"), SubResource("Resource_md16r")])
+behaviors = Array[ExtResource("1_2dwch")]([SubResource("Resource_enrft"), SubResource("Resource_vgt6y"), SubResource("Resource_sshyu"), SubResource("Resource_njw2g"), SubResource("Resource_7lwfh")])

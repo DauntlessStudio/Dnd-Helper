@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_d7sfi"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_6x0n7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_sfen4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_f0wxd"]
 
-[sub_resource type="Resource" id="Resource_gx7t6"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_3fbjt"]
+script = ExtResource("1_sfen4")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_37avl"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_qe3bs"]
+script = ExtResource("1_sfen4")
 name = "Crafter Protocol"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid comes with proficiency in three tools, chosen when it is crafted."
 descriptionWithLinks = " The droid comes with proficiency in three tools, chosen when it is crafted."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2nly0"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_rlmyc"]
+script = ExtResource("1_sfen4")
 name = "Interfaced Crafting Protocol"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " While you are interfaced with this droid via the tracker droid interface tech power, whenever you make an ability check using tools with which the droid is also proficient, you have advantage on the check. If you already have advantage, you can instead reroll one of the dice once."
 descriptionWithLinks = " While you are interfaced with this droid via the tracker droid interface tech power, whenever you make an ability check using tools with which the droid is also proficient, you have advantage on the check. If you already have advantage, you can instead reroll one of the dice once."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_dauhc"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_c33s0"]
+script = ExtResource("1_sfen4")
 name = "Powerful Build"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid counts as one size larger when determining carrying capacity and the weight it can push, drag, or lift."
 descriptionWithLinks = " The droid counts as one size larger when determining carrying capacity and the weight it can push, drag, or lift."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_0832u"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_ygenk"]
+script = ExtResource("1_sfen4")
 name = "Turtle"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The first time the droid would drop to zero hit points, the droid can instead remain at one hit point and temporarily deactivate and fold up into a tougher, immobile form. While turtled, the droid has an AC of 14, and is considered paralyzed.  The creature interfaced with this droid can use a bonus action to restore this droid to it's unturtled condition."
 descriptionWithLinks = " The first time the droid would drop to zero hit points, the droid can instead remain at one hit point and temporarily deactivate and fold up into a tougher, immobile form. While turtled, the droid has an AC of 14, and is considered paralyzed.  The creature interfaced with this droid can use a bonus action to restore this droid to it's unturtled condition."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_42gy3"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_axivr"]
+script = ExtResource("1_sfen4")
 name = "Kick"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 kinetic damage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ea15s"]
-script = ExtResource("1_d7sfi")
+[sub_resource type="Resource" id="Resource_ritfx"]
+script = ExtResource("1_sfen4")
 name = "Repair"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " As an action, the droid can expend one use of a repair kit to restore 2d4+2 hit points to a droid or construct within 5 feet."
 descriptionWithLinks = " As an action, the droid can expend one use of a repair kit to restore 2d4+2 hit points to a droid or construct within 5 feet."
 attackType = 0
@@ -109,7 +109,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_6x0n7")
+script = ExtResource("2_f0wxd")
 name = "DUM-Series PIT Droid"
 flavorText = "A DUM-series pit droid, manufactured by Serv-O-Droid, Inc., are used for labor, repair and light construction. In the center of their head is a large, round photoreceptor equipped with multi-spectrum scanners capable of detecting microscopic damage. Pit droids stand 1.19 meters tall but can compress themselves into a compact, box-shaped package. A tap on their photorecepter signals them to return to their upright position, and vice-versa. Their most remarkable feature is their immense strength, able to carry objects many times their own size or weight.  "
 sectionText = "Tracker Droids are a general term used to describe simple droids that are capable of being permanently linked to via the tech power *tracker droid interface*.  Tracker droids are not all dedicated tracking or probe droids as the name might suggest, but these are the most common types of droids to become linked with in most cultures throughout the galaxy, explaining this commonly used shorthand.  "
@@ -136,4 +136,4 @@ senses = Array[String](["passive Perception 11"])
 languages = Array[String](["â€”"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_d7sfi")]([SubResource("Resource_gx7t6"), SubResource("Resource_37avl"), SubResource("Resource_2nly0"), SubResource("Resource_dauhc"), SubResource("Resource_0832u"), SubResource("Resource_42gy3"), SubResource("Resource_ea15s")])
+behaviors = Array[ExtResource("1_sfen4")]([SubResource("Resource_3fbjt"), SubResource("Resource_qe3bs"), SubResource("Resource_rlmyc"), SubResource("Resource_c33s0"), SubResource("Resource_ygenk"), SubResource("Resource_axivr"), SubResource("Resource_ritfx")])

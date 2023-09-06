@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_40q2n"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_w3stj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_tkk0k"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_dnyny"]
 
-[sub_resource type="Resource" id="Resource_cu28p"]
-script = ExtResource("1_40q2n")
+[sub_resource type="Resource" id="Resource_eh2n7"]
+script = ExtResource("1_tkk0k")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The MagnaGuard makes two electrostaff attacks."
 descriptionWithLinks = " The MagnaGuard makes two electrostaff attacks."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vjlg8"]
-script = ExtResource("1_40q2n")
+[sub_resource type="Resource" id="Resource_yhanu"]
+script = ExtResource("1_tkk0k")
 name = "Electrostaff"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4+4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4+4) kinetic damage."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 9
 damageRoll = "2d4+4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_nbn4s"]
-script = ExtResource("1_40q2n")
+[sub_resource type="Resource" id="Resource_pot8p"]
+script = ExtResource("1_tkk0k")
 name = "Blaster Pistol"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 7 (1d6+4) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 7 (1d6+4) energy damage."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 7
 damageRoll = "1d6+4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_1asvh"]
-script = ExtResource("1_40q2n")
+[sub_resource type="Resource" id="Resource_nwcop"]
+script = ExtResource("1_tkk0k")
 name = "Parry"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " The droid adds 3 to its AC against one melee attack that would hit it. To do so, the droid must see the attacker and be wielding a melee weapon."
 descriptionWithLinks = " The droid adds 3 to its AC against one melee attack that would hit it. To do so, the droid must see the attacker and be wielding a melee weapon."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_w3stj")
+script = ExtResource("2_dnyny")
 name = "IG-100 Series"
 flavorText = "After the InterGalactic Banking Clan secured Grievous's services as an enforcer, they refused to hire his Kaleesh, and thus the cyborg general demanded a cadre of \"more intelligent battle droids\" to serve him. The construction of the MagnaGuards was then commissioned for Grievous's service. Constructed by Holowan Mechanicals, MagnaGuards were roughly two meters tall, with a humanoid body shape, but possessed a far-superior mechanical anatomy. This allowed for superhuman acrobatics, speed, and combat ability. Their internal systems were furnished with advanced combat learning programs, which, compared to most of the droids utilized by the Confederacy of Independent Systems, allowed the MagnaGuards to adapt to a highly diverse variety of tasks. These tasks ranged from melee and ranged combat to starfighter control. MagnaGuards were also capable of speech and were programmed to taunt their opponents in a low growling Basic.The MagnaGuard's weapon of choice was the lightsaber-resistant electrostaff, and wore cloaks and head wraps similar to the garments of Grievous's old Izvoshra elite during the general's time as a Kaleesh warlord.Grievous personally trained his bodyguards in the seven classic styles of lightsaber combat so that they could effectively engage and then kill Jedi. Grievous would not allow any repairs to be made to the droids, believing that their numerous scrapes and battle scars made them more intimidating to enemies. "
 sectionText = "Battle droids, also known as combat droids or battle bots, are a type of droid designed for combat. One thing most battle droids have in common is limited intelligence. They are programmed to follow orders, and not much else, though they do have personalities. Some battle droids, however, have some form of intelligence. These droids are much more expensive to make, due to their advanced brains.***Clone Wars.*** Over the years, many different models of battle droid have been utilized by various factions throughout the galaxy. The Confederacy of Independent Systems, for example, used a number of different models of battle droid during the Clone Wars to make up the Separatist Droid Army. Under the command of General Grievous, varying models of battle droid fought against the Galactic Republic's clone troopers until the final days of the war, when the Confederate battle droids were deactivated by the Galactic Empire."
@@ -91,4 +91,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_40q2n")]([SubResource("Resource_cu28p"), SubResource("Resource_vjlg8"), SubResource("Resource_nbn4s"), SubResource("Resource_1asvh")])
+behaviors = Array[ExtResource("1_tkk0k")]([SubResource("Resource_eh2n7"), SubResource("Resource_yhanu"), SubResource("Resource_pot8p"), SubResource("Resource_nwcop")])

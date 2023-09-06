@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0w85r"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_vlg7n"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_dbvqc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_mfexq"]
 
-[sub_resource type="Resource" id="Resource_k6k06"]
-script = ExtResource("1_0w85r")
+[sub_resource type="Resource" id="Resource_v04j1"]
+script = ExtResource("1_dbvqc")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_g715h"]
-script = ExtResource("1_0w85r")
+[sub_resource type="Resource" id="Resource_wdfxs"]
+script = ExtResource("1_dbvqc")
 name = "Gunner"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct requires an active gunner to take any actions, and if the gunner is subjected to any conditions that the construct is not immune to, the gunner is also subjected to those conditions. The gunner may take their own action or one of the actions granted by the construct."
 descriptionWithLinks = " The construct requires an active gunner to take any actions, and if the gunner is subjected to any conditions that the construct is not immune to, the gunner is also subjected to those conditions. The gunner may take their own action or one of the actions granted by the construct."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6sl6x"]
-script = ExtResource("1_0w85r")
+[sub_resource type="Resource" id="Resource_8mf1e"]
+script = ExtResource("1_dbvqc")
 name = "Sonic Blast"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The sonic cannon lets loose a devastating blast of sonic energy in a direction it chooses.  Each creature and construct in a 60-foot cone must make a Constitution saving throw (DC 14). A creature takes 24 (6d6 + 3) sonic damage and is knocked prone on a failed save.  On a success, the creature takes half damage."
 descriptionWithLinks = " The sonic cannon lets loose a devastating blast of sonic energy in a direction it chooses.  Each creature and construct in a 60-foot cone must make a Constitution saving throw (DC 14). A creature takes 24 (6d6 + 3) sonic damage and is knocked prone on a failed save.  On a success, the creature takes half damage."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_vlg7n")
+script = ExtResource("2_mfexq")
 name = "LR1K Sonic Cannon"
 flavorText = "The LR1K sonic cannon, also known as the Geonosian sonic cannon or the Geonosian defense platform, is a high-powered artillery emplacement weapon produced by the Gordarl Weaponsmiths on Geonosis prior to and during the Clone Wars.The LR1K cannon uses sonic blaster technology that employs internal oscillators to produce a devastating sonic blast. The high impact concussive sonic energy is stabilized by a containment sphere within the cannon. The LR1K requires one or two gunners to operate, although the cannon's advanced, highly-precise targeting computers are capable of doing most of the work. A critical hit with this weapon will instantly kill any average clone."
 sectionText = "A turret is a mount for a weapon that enabled it to turn and pivot, allowing it to fire in many different directions. They are mounted on many vehicles, starfighters, and starships.  Other turrets are mounted on the ground, and can be both manned and un-manned. Weapons mounted on turrets included laser cannons and other types of projectile cannons."
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 10"])
 languages = Array[String](["â€”"])
 challengeRating = "3"
 experiencePoints = 700
-behaviors = Array[ExtResource("1_0w85r")]([SubResource("Resource_k6k06"), SubResource("Resource_g715h"), SubResource("Resource_6sl6x")])
+behaviors = Array[ExtResource("1_dbvqc")]([SubResource("Resource_v04j1"), SubResource("Resource_wdfxs"), SubResource("Resource_8mf1e")])

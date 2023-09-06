@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_4brf0"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_4s3x1"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_n4cia"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_51vof"]
 
-[sub_resource type="Resource" id="Resource_yowls"]
-script = ExtResource("1_4brf0")
+[sub_resource type="Resource" id="Resource_6nwlc"]
+script = ExtResource("1_n4cia")
 name = "Stone Camouflage"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The worrt has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
 descriptionWithLinks = " The worrt has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_06x45"]
-script = ExtResource("1_4brf0")
+[sub_resource type="Resource" id="Resource_l8y02"]
+script = ExtResource("1_n4cia")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) kinetic damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the worrt can't bite another target. The target must make a DC 10 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a success."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) kinetic damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the worrt can't bite another target. The target must make a DC 10 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a success."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 8
 damageRoll = "1d10 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_adiim"]
-script = ExtResource("1_4brf0")
+[sub_resource type="Resource" id="Resource_4ww2p"]
+script = ExtResource("1_n4cia")
 name = "Swallow"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "If the worrt dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.  The worrt makes a bite attack against a Medium or smaller target it is grappling. On a hit, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the worrt, and it takes 14 (4d6) acid damage at the start of each of the worrt's turns. The worrt can have only one target swallowed at a time."
 descriptionWithLinks = "If the worrt dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.  The worrt makes a bite attack against a Medium or smaller target it is grappling. On a hit, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the worrt, and it takes 14 (4d6) acid damage at the start of each of the worrt's turns. The worrt can have only one target swallowed at a time."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_4s3x1")
+script = ExtResource("2_51vof")
 name = "Giant Worrt"
 flavorText = ""
 sectionText = "Worrts are a non-sentient species that hail from the desert of the planet Tatooine, although they can also be found on Nal Hutta and Phaeda. ***Biology & Appearance.***  Worrts are squat and spiky creatures whose appearance bears similarities to that of chubas. They have brown, warty skin and measure 1.5 meters in height. They are quadrupeds with dexterous forelimbs. A worrt's head features a pair of sensitive cranial palps; two bulbous eyes, yellow in hue; two nostrils; and a large mouth containing a long tongue and strong teeth laced with a venom potent enough to kill a bantha. Worrts lay large amounts of soft eggs, which are harvested for food and used as ingredients in drinks such as Jabba Juice.***Behavior.*** Worrts feed mostly on insects and rodents. When hungry, a worrt settles into the sand, becoming indistinguishable from a rocky outcropping, and waits for prey to pass. When its victim comes close enough, the worrt throws its tongue out of its mouth and wraps it around the prey. The worrt's tongue then snaps back, throwing the food down its throat."
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 14"])
 languages = Array[String](["â€”"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_4brf0")]([SubResource("Resource_yowls"), SubResource("Resource_06x45"), SubResource("Resource_adiim")])
+behaviors = Array[ExtResource("1_n4cia")]([SubResource("Resource_6nwlc"), SubResource("Resource_l8y02"), SubResource("Resource_4ww2p")])

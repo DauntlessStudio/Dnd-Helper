@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_f22sp"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_7suht"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_j12f7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_moosv"]
 
-[sub_resource type="Resource" id="Resource_7sowc"]
-script = ExtResource("1_f22sp")
+[sub_resource type="Resource" id="Resource_suwtq"]
+script = ExtResource("1_j12f7")
 name = "False Appearance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " While the tree remains motionless, it is indistinguishable from a normal tree."
 descriptionWithLinks = " While the tree remains motionless, it is indistinguishable from a normal tree."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_x1j2c"]
-script = ExtResource("1_f22sp")
+[sub_resource type="Resource" id="Resource_806pa"]
+script = ExtResource("1_j12f7")
 name = "Slam"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 23 (4d8 + 5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 23 (4d8 + 5) kinetic damage."
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = "4d8 + 5"
 damageType = 7
 
 [resource]
-script = ExtResource("2_7suht")
+script = ExtResource("2_moosv")
 name = "Tree"
 flavorText = ""
 sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
@@ -61,4 +61,4 @@ senses = Array[String](["Tremorsense 120 ft. (blind beyond this radius)", "passi
 languages = Array[String](["â€”"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_f22sp")]([SubResource("Resource_7sowc"), SubResource("Resource_x1j2c")])
+behaviors = Array[ExtResource("1_j12f7")]([SubResource("Resource_suwtq"), SubResource("Resource_806pa")])

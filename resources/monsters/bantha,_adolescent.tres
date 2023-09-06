@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_07vk3"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_4w1jm"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_e75ms"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_f58oc"]
 
-[sub_resource type="Resource" id="Resource_0d1gw"]
-script = ExtResource("1_07vk3")
+[sub_resource type="Resource" id="Resource_6b7ft"]
+script = ExtResource("1_e75ms")
 name = "Trampling Charge"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the bantha moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the bantha can make one stomp attack against it as a bonus action."
 descriptionWithLinks = " If the bantha moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the bantha can make one stomp attack against it as a bonus action."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8tlp5"]
-script = ExtResource("1_07vk3")
+[sub_resource type="Resource" id="Resource_xihrf"]
+script = ExtResource("1_e75ms")
 name = "Ram"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 6) kinetic damage."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 18
 damageRoll = "3d8 + 6"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_vq65j"]
-script = ExtResource("1_07vk3")
+[sub_resource type="Resource" id="Resource_d1p5x"]
+script = ExtResource("1_e75ms")
 name = "Stomp"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 21 (3d10 + 6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 21 (3d10 + 6) kinetic damage."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = "3d10 + 6"
 damageType = 7
 
 [resource]
-script = ExtResource("2_4w1jm")
+script = ExtResource("2_f58oc")
 name = "Bantha, Adolescent"
 flavorText = ""
 sectionText = "Banthas are a species of large, hairy mammals with sharp, spiraling horns. They inhabit the desert planet Tatooine, though they are bred on many worlds throughout the galaxy. They are social herd animals, and are often domesticated, and used prominently, by Tusken Raiders as mounts and companionship.  Although the Tusken Raiders never kill Banthas for their food or hide, they are utilized by many other species for products such as Bantha steak, butter and clothes or furniture.***Biology and Appearance.*** Banthas are quadrupedal mammals that average in height 2 to 2.5 meters. An adult's average weight is 4,000 kilograms, and they have extensive shaggy fur, which is brown or black in color. Both females and males of the species have a pair of spiraling horns that extrude from their skull and grow at a knob a year. Banthas possess a wide mouth, bright, inquisitive eyes, and a large tail which drags on the ground as they walk. They have wide, flat feet with four digits.***Pop Culture.*** \"Bantha fodder\" (or \"Bantha poodoo\" in Huttese) is a phrase used as the equivalent of \"worthless\"; a person or thing deemed to have no value beyond something for a bantha to graze on, because of bantha food's unpleasant smell. \"Not give two bantha ticks (about something) meant to not care in the slightest (about something or someone), \"Son of a bantha\" was an insult, and \"A wild bantha chase\" meant a futile errand."
@@ -76,4 +76,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["ï¿½"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_07vk3")]([SubResource("Resource_0d1gw"), SubResource("Resource_8tlp5"), SubResource("Resource_vq65j")])
+behaviors = Array[ExtResource("1_e75ms")]([SubResource("Resource_6b7ft"), SubResource("Resource_xihrf"), SubResource("Resource_d1p5x")])

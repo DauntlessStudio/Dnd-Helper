@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=19 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_iyrck"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_fvw1b"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_drja4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_snd5q"]
 
-[sub_resource type="Resource" id="Resource_qhoip"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_43xjf"]
+script = ExtResource("1_drja4")
 name = "Hardened Mind"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When the Grand Admiral makes a saving throw against illusions or to resist charm and fear effects, it may add its Intelligence modifier (8) to the roll."
 descriptionWithLinks = " When the Grand Admiral makes a saving throw against illusions or to resist charm and fear effects, it may add its Intelligence modifier (8) to the roll."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4awjl"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_ilj2b"]
+script = ExtResource("1_drja4")
 name = "Hyper Intelligence"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " At-will: assess the situation, analyze, decryption program, detect enhancement, spot the weakness, detect invisibility, detect traps  3/day each: element of surprise, explosion, tactical advantage, ballistic shield, salvo, friendly fire, greater analyze  1/day each: contingency, find the path, tactical superiority, stun, predictive AI  The Grand Admiral's techcasting ability is Intelligence (tech save DC 23, +15 to hit with tech attacks). The Grand Admiral innately knows the following tech powers:"
 descriptionWithLinks = " At-will: assess the situation, analyze, decryption program, detect enhancement, spot the weakness, detect invisibility, detect traps  3/day each: element of surprise, explosion, tactical advantage, ballistic shield, salvo, friendly fire, greater analyze  1/day each: contingency, find the path, tactical superiority, stun, predictive AI  The Grand Admiral's techcasting ability is Intelligence (tech save DC 23, +15 to hit with tech attacks). The Grand Admiral innately knows the following tech powers:"
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cjoyr"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_ryd07"]
+script = ExtResource("1_drja4")
 name = "Leadership"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " For 1 minute, the Grand Admiral can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Grand Admiral. A creature can benefit from only one Leadership die at a time. This effect ends if the Grand Admiral is incapacitated."
 descriptionWithLinks = " For 1 minute, the Grand Admiral can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the Grand Admiral. A creature can benefit from only one Leadership die at a time. This effect ends if the Grand Admiral is incapacitated."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_q88de"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_l1u2y"]
+script = ExtResource("1_drja4")
 name = "Legendary Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the Grand Admiral fails a saving throw, it can choose to succeed instead."
 descriptionWithLinks = " If the Grand Admiral fails a saving throw, it can choose to succeed instead."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_f2bfp"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_621xc"]
+script = ExtResource("1_drja4")
 name = "Sidearm Mastery"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Grand Admiral's ranged weapon attacks ignore half cover against targets within 15 feet of the Grand Admiral.  The Grand Admiral gains a +3 bonus to attack rolls made with a pistol."
 descriptionWithLinks = " The Grand Admiral's ranged weapon attacks ignore half cover against targets within 15 feet of the Grand Admiral.  The Grand Admiral gains a +3 bonus to attack rolls made with a pistol."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iyqob"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_vm15v"]
+script = ExtResource("1_drja4")
 name = "Targeted Analysis"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Grand Admiral's attack rolls cannot suffer from disadvantage."
 descriptionWithLinks = " The Grand Admiral's attack rolls cannot suffer from disadvantage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_elixk"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_qxhh1"]
+script = ExtResource("1_drja4")
 name = "Tech Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The Grand Admiral has advantage on saving throws against tech powers."
 descriptionWithLinks = " The Grand Admiral has advantage on saving throws against tech powers."
 attackType = 0
@@ -108,10 +108,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vmw54"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_jahc6"]
+script = ExtResource("1_drja4")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Grand Admiral makes three melee weapon attacks or three ranged weapon attacks."
 descriptionWithLinks = " The Grand Admiral makes three melee weapon attacks or three ranged weapon attacks."
 attackType = 0
@@ -123,10 +123,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_bb107"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_k074d"]
+script = ExtResource("1_drja4")
 name = "Heavy Pistol"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +15 to hit, range 40/160 ft., one target. Hit: 16 (1d8 + 2d6 + 5) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +15 to hit, range 40/160 ft., one target. Hit: 16 (1d8 + 2d6 + 5) energy damage."
 attackType = 0
@@ -138,10 +138,10 @@ damage = 16
 damageRoll = "1d8 + 2d6 + 5"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_utccb"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_30tfe"]
+script = ExtResource("1_drja4")
 name = "Techblade"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) kinetic damage."
 attackType = 0
@@ -153,10 +153,10 @@ damage = 15
 damageRoll = "3d6 + 5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_h6kwt"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_nnbc7"]
+script = ExtResource("1_drja4")
 name = "Unarmed Strike"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (1d4 + 2d6 + 5) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (1d4 + 2d6 + 5) kinetic damage."
 attackType = 0
@@ -168,10 +168,10 @@ damage = 14
 damageRoll = "1d4 + 2d6 + 5"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_18hmh"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_8yvg8"]
+script = ExtResource("1_drja4")
 name = "All-Out Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The Grand Admiral chooses a number of allies up to its Intelligence modifier (8) within 60 feet who can see or hear it. The chosen allies may then immediately use their reaction to make one weapon attack against a target of the Grand Admiral's choice. It may choose the target for each attack separately."
 descriptionWithLinks = " The Grand Admiral chooses a number of allies up to its Intelligence modifier (8) within 60 feet who can see or hear it. The chosen allies may then immediately use their reaction to make one weapon attack against a target of the Grand Admiral's choice. It may choose the target for each attack separately."
 attackType = 0
@@ -183,10 +183,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ajw82"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_mlov7"]
+script = ExtResource("1_drja4")
 name = "Calculated Timing"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " The Grand Admiral can focus a target down with the help with an ally. Once per round, whenever a creature is attacked by someone other than the Grand Admiral, the Grand Admiral can use its reaction to make one weapon attack against them."
 descriptionWithLinks = " The Grand Admiral can focus a target down with the help with an ally. Once per round, whenever a creature is attacked by someone other than the Grand Admiral, the Grand Admiral can use its reaction to make one weapon attack against them."
 attackType = 0
@@ -198,10 +198,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wg8ig"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_ji8c0"]
+script = ExtResource("1_drja4")
 name = "Move"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = "The Grand Admiral can move up to its speed without provoking opportunity attacks."
 descriptionWithLinks = "The Grand Admiral can move up to its speed without provoking opportunity attacks."
 attackType = 0
@@ -213,10 +213,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_k5w0j"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_dbiha"]
+script = ExtResource("1_drja4")
 name = "Casting"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = "The Grand Admiral can cast an at-will power."
 descriptionWithLinks = "The Grand Admiral can cast an at-will power."
 attackType = 0
@@ -228,10 +228,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_o4rpg"]
-script = ExtResource("1_iyrck")
+[sub_resource type="Resource" id="Resource_dhw21"]
+script = ExtResource("1_drja4")
 name = "Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = "The Grand Admiral makes one Heavy Pistol, Techblade, or Unarmed Strike attack."
 descriptionWithLinks = "The Grand Admiral makes one Heavy Pistol, Techblade, or Unarmed Strike attack."
 attackType = 0
@@ -244,7 +244,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_fvw1b")
+script = ExtResource("2_snd5q")
 name = "Grand Admiral"
 flavorText = ""
 sectionText = "As the branch of the galactic military that deals with space operations, the galactic navy has been composed of many sub-units and organizations, and has utilized a vast array of starships to achieve its objectives throughout the years.***Republic Navy.*** The Republic Navy, also referred to as the Republic fleet, Republic starfleet or the Galactic Republic fleet, was the military naval force of the Galactic Republic during the Clone Wars. The Navy served to transport the clone army across the galaxy while also engaging in ship-to-ship combat with the Confederacy navy. Following the end of the war and the formation of the Galactic Empire, the Republic Navy transitioned into the Imperial Navy.***Imperial Navy.*** The Imperial Navy, also known as the Imperial Starfleet or the Imperial fleet, was the naval branch of the Galactic Empire's military. It was created in the wake of the Clone Wars, when Chancellor Sheev Palpatine transformed the Galactic Republic he led into an authoritarian Empire. Consisting mainly of Star Destroyers and TIE fighters, the Imperial Navy was tasked with maintaining order in the galaxy.***First Order Navy.*** The First Order Navy, also referred to as the First Order fleet, was the naval branch of the First Order military. It superseded the Imperial Navy of the former Galactic Empire, it would be paramount to the gradual conquest and colonization of the Unknown Regions by the Imperial successor state, the First Order."
@@ -271,4 +271,4 @@ senses = Array[String](["Darkvision 120 ft.", "passive Perception 30"])
 languages = Array[String](["Galactic basic", "Cheunh", "", "any 3 others"])
 challengeRating = "20"
 experiencePoints = 25000
-behaviors = Array[ExtResource("1_iyrck")]([SubResource("Resource_qhoip"), SubResource("Resource_4awjl"), SubResource("Resource_cjoyr"), SubResource("Resource_q88de"), SubResource("Resource_f2bfp"), SubResource("Resource_iyqob"), SubResource("Resource_elixk"), SubResource("Resource_vmw54"), SubResource("Resource_bb107"), SubResource("Resource_utccb"), SubResource("Resource_h6kwt"), SubResource("Resource_18hmh"), SubResource("Resource_ajw82"), SubResource("Resource_wg8ig"), SubResource("Resource_k5w0j"), SubResource("Resource_o4rpg")])
+behaviors = Array[ExtResource("1_drja4")]([SubResource("Resource_43xjf"), SubResource("Resource_ilj2b"), SubResource("Resource_ryd07"), SubResource("Resource_l1u2y"), SubResource("Resource_621xc"), SubResource("Resource_vm15v"), SubResource("Resource_qxhh1"), SubResource("Resource_jahc6"), SubResource("Resource_k074d"), SubResource("Resource_30tfe"), SubResource("Resource_nnbc7"), SubResource("Resource_8yvg8"), SubResource("Resource_mlov7"), SubResource("Resource_ji8c0"), SubResource("Resource_dbiha"), SubResource("Resource_dhw21")])

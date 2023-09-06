@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_x40qp"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_l20y2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_lab76"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cfcrt"]
 
-[sub_resource type="Resource" id="Resource_sn735"]
-script = ExtResource("1_x40qp")
+[sub_resource type="Resource" id="Resource_0k2xd"]
+script = ExtResource("1_lab76")
 name = "Charge"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the reek moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 18 (4d8) kinetic damage. If the target is a Huge or smaller, it must succeed on a DC 15 Strength saving throw or be knocked prone."
 descriptionWithLinks = " If the reek moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 18 (4d8) kinetic damage. If the target is a Huge or smaller, it must succeed on a DC 15 Strength saving throw or be knocked prone."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_enaa2"]
-script = ExtResource("1_x40qp")
+[sub_resource type="Resource" id="Resource_t8r18"]
+script = ExtResource("1_lab76")
 name = "Gore"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8+6) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8+6) kinetic damage."
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = "4d8+6"
 damageType = 7
 
 [resource]
-script = ExtResource("2_l20y2")
+script = ExtResource("2_cfcrt")
 name = "Reek, Adult"
 flavorText = ""
 sectionText = "Reeks are large, muscular quadrupeds native to the planet Ylesia. Though naturally herbivores, a starved reek can become a ravenous meat-eater. They sport two large cheek horns that can be used for head-locking in combat with another Reek as a sign of dominance."
@@ -61,4 +61,4 @@ senses = Array[String](["passive Perception 11"])
 languages = Array[String](["ï¿½"])
 challengeRating = "7"
 experiencePoints = 2900
-behaviors = Array[ExtResource("1_x40qp")]([SubResource("Resource_sn735"), SubResource("Resource_enaa2")])
+behaviors = Array[ExtResource("1_lab76")]([SubResource("Resource_0k2xd"), SubResource("Resource_t8r18")])

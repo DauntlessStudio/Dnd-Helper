@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2hd4h"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_xml8e"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_fuoky"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_jy1jv"]
 
-[sub_resource type="Resource" id="Resource_unlxd"]
-script = ExtResource("1_2hd4h")
+[sub_resource type="Resource" id="Resource_mkh67"]
+script = ExtResource("1_fuoky")
 name = "Swarm"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Small hawk-bats. The swarm can't regain hit points or gain temporary hit points."
 descriptionWithLinks = " The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Small hawk-bats. The swarm can't regain hit points or gain temporary hit points."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_q2aav"]
-script = ExtResource("1_2hd4h")
+[sub_resource type="Resource" id="Resource_crosg"]
+script = ExtResource("1_fuoky")
 name = "Echolocation"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The swarm can't use its blindsight while deafened."
 descriptionWithLinks = " The swarm can't use its blindsight while deafened."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_oox2p"]
-script = ExtResource("1_2hd4h")
+[sub_resource type="Resource" id="Resource_o7bb1"]
+script = ExtResource("1_fuoky")
 name = "Keen Hearing and Sight"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The swarm has advantage on Wisdom (Perception) checks that rely on hearing and sight."
 descriptionWithLinks = " The swarm has advantage on Wisdom (Perception) checks that rely on hearing and sight."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3n2yw"]
-script = ExtResource("1_2hd4h")
+[sub_resource type="Resource" id="Resource_0ducn"]
+script = ExtResource("1_fuoky")
 name = "Talons"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 11 (2d8 + 2) kinetic damage or 7 (1d8 + 2) kinetic damage if the swarm has half of its hit points or fewer."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 11 (2d8 + 2) kinetic damage or 7 (1d8 + 2) kinetic damage if the swarm has half of its hit points or fewer."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = "2d8 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_xml8e")
+script = ExtResource("2_jy1jv")
 name = "Hawk-bat Swarm"
 flavorText = ""
 sectionText = "Hawk-bats are reptavian creatures with a curved beak and leathery wings that can be found on urbanized worlds like Coruscant and Taris.***Biology & Appearance.*** The wingspan of a hawk-bat averages 1.5 meters. The wings consist of a thin membrane stretched over a series of wing-bones. The membrane itself is studded with spiky growths. The hooked beak of a hawk-bat contains tiny teeth that can tear prey to shreds, which they find with a combination of accurate eyesight and echolocation.Young hawk-bats hatch from eggs, lack feathers, have green skin, and are fully independent. Upon reaching maturity, the hawk-bat sheds its green skin for a purplish-gray skin.***Behavior.*** Flocks of hawk-bats hunt and attack their prey as one. Though they favor granite slugs and shadowmoth larvae, hawk-bats will feed on anything that moves. Even large enemies can be taken down by a large flock of hawk-bats. If one hawk-bat is disturbed, all of its companions attack the aggravator at once. They usually travel in large flocks through the pipes and lower levels of Coruscant. Every few months, they migrate despite lack of seasons within the lower levels. Hawk-bats hate the cold and usually stay away from it. Many live on power cables or in heated vents, hanging upside down from warm pipes below buildings."
@@ -91,4 +91,4 @@ senses = Array[String](["blindsight 60 ft.", "passive Perception 16"])
 languages = Array[String](["ï¿½"])
 challengeRating = "2"
 experiencePoints = 450
-behaviors = Array[ExtResource("1_2hd4h")]([SubResource("Resource_unlxd"), SubResource("Resource_q2aav"), SubResource("Resource_oox2p"), SubResource("Resource_3n2yw")])
+behaviors = Array[ExtResource("1_fuoky")]([SubResource("Resource_mkh67"), SubResource("Resource_crosg"), SubResource("Resource_o7bb1"), SubResource("Resource_0ducn")])

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_h85pe"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8tph4"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jdnb2"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0giqr"]
 
-[sub_resource type="Resource" id="Resource_6btlh"]
-script = ExtResource("1_h85pe")
+[sub_resource type="Resource" id="Resource_bmkdc"]
+script = ExtResource("1_jdnb2")
 name = "Wounded Fury"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " While it has 10 hit points or fewer, the gutkurr has advantage on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack."
 descriptionWithLinks = " While it has 10 hit points or fewer, the gutkurr has advantage on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cvn4b"]
-script = ExtResource("1_h85pe")
+[sub_resource type="Resource" id="Resource_gtkc0"]
+script = ExtResource("1_jdnb2")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "  The gutkuur can make two claw attacks."
 descriptionWithLinks = "  The gutkuur can make two claw attacks."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mwflv"]
-script = ExtResource("1_h85pe")
+[sub_resource type="Resource" id="Resource_ve7wq"]
+script = ExtResource("1_jdnb2")
 name = "Claw"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) kinetic damage."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = "2d8 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_8tph4")
+script = ExtResource("2_0giqr")
 name = "Gutkurr"
 flavorText = ""
 sectionText = "Gutkurrs are a species of predatory insectoid carnivores native to the planet Ryloth.  ***Biology & Appearance.*** Gutkurrs have both reptilian and insectoid characteristics. Their two-legged gait is very similar to that of a reptilian species, whereas their hard-shelled, spined carapace and sharp-mandible heads appear very insect-like. They ere approximately two meters high, and their tough hide and carapace are able to withstand several blaster shots. They are also carnivorous and very aggressive.  They display little intelligence. They make a noise that sounds between a roar and a hiss.***Clone Wars.*** During the Clone Wars, the Confederacy of Independent Systems deployed gutkurrs to attack Galactic Republic clone troopers during the Battle of Ryloth. Gutkurrs were resistant to blaster bolts and were said to be the second-most dangerous predator on Ryloth, the first being lyleks. ***Distribution.*** Gutkurrs were found on the planet Ryloth and on the planet Onderon."
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 9"])
 languages = Array[String](["ï¿½"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_h85pe")]([SubResource("Resource_6btlh"), SubResource("Resource_cvn4b"), SubResource("Resource_mwflv")])
+behaviors = Array[ExtResource("1_jdnb2")]([SubResource("Resource_bmkdc"), SubResource("Resource_gtkc0"), SubResource("Resource_ve7wq")])

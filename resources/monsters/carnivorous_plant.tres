@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_h6o8e"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_y4460"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_oq1iy"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_enqgs"]
 
-[sub_resource type="Resource" id="Resource_q47dj"]
-script = ExtResource("1_h6o8e")
+[sub_resource type="Resource" id="Resource_j5h06"]
+script = ExtResource("1_oq1iy")
 name = "Corrode Metal"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Any unenhanced weapon made of metal that hits the plant corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. The plant can eat through 2-inch-thick, unenhanced metal in 1 round."
 descriptionWithLinks = " Any unenhanced weapon made of metal that hits the plant corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. The plant can eat through 2-inch-thick, unenhanced metal in 1 round."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cr1vr"]
-script = ExtResource("1_h6o8e")
+[sub_resource type="Resource" id="Resource_eaa32"]
+script = ExtResource("1_oq1iy")
 name = "False Appearance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " While the plant remains motionless, it is indistinguishable from a normal plant."
 descriptionWithLinks = " While the plant remains motionless, it is indistinguishable from a normal plant."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_orvq6"]
-script = ExtResource("1_h6o8e")
+[sub_resource type="Resource" id="Resource_kjwox"]
+script = ExtResource("1_oq1iy")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) kinetic damage plus 7 (2d6) acid damage."
 descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) kinetic damage plus 7 (2d6) acid damage."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = "1d6 + 1"
 damageType = 7
 
 [resource]
-script = ExtResource("2_y4460")
+script = ExtResource("2_enqgs")
 name = "Carnivorous Plant"
 flavorText = ""
 sectionText = "While most plants are harmless, many plants are malicious and self-aware, becoming formidable foes."
@@ -76,4 +76,4 @@ senses = Array[String](["Blindsight 60 ft. (blind beyond this radius)", "passive
 languages = Array[String](["â€”"])
 challengeRating = "1"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_h6o8e")]([SubResource("Resource_q47dj"), SubResource("Resource_cr1vr"), SubResource("Resource_orvq6")])
+behaviors = Array[ExtResource("1_oq1iy")]([SubResource("Resource_j5h06"), SubResource("Resource_eaa32"), SubResource("Resource_kjwox")])

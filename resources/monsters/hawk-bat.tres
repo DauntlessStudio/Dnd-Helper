@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_lh02f"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_w75ax"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_2gxen"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_4i0ur"]
 
-[sub_resource type="Resource" id="Resource_rdkyk"]
-script = ExtResource("1_lh02f")
+[sub_resource type="Resource" id="Resource_wnaly"]
+script = ExtResource("1_2gxen")
 name = "Echolocation"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The hawk-bat loses blindsight when deafened."
 descriptionWithLinks = " The hawk-bat loses blindsight when deafened."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_16q1v"]
-script = ExtResource("1_lh02f")
+[sub_resource type="Resource" id="Resource_3uk80"]
+script = ExtResource("1_2gxen")
 name = "Keen Hearing and Sight"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The hawk-bat has advantage on Wisdom (Perception) checks that rely on hearing and sight."
 descriptionWithLinks = " The hawk-bat has advantage on Wisdom (Perception) checks that rely on hearing and sight."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_8e8bn"]
-script = ExtResource("1_lh02f")
+[sub_resource type="Resource" id="Resource_ma2cw"]
+script = ExtResource("1_2gxen")
 name = "Pack Tactics"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The hawk-bat has advantage on an attack roll against a creature if at least one of the hawk-bat's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The hawk-bat has advantage on an attack roll against a creature if at least one of the hawk-bat's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_x3apw"]
-script = ExtResource("1_lh02f")
+[sub_resource type="Resource" id="Resource_wd8vx"]
+script = ExtResource("1_2gxen")
 name = "Talons"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) kinetic damage."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = "1d4 + 2"
 damageType = 7
 
 [resource]
-script = ExtResource("2_w75ax")
+script = ExtResource("2_4i0ur")
 name = "Hawk-bat"
 flavorText = ""
 sectionText = "Hawk-bats are reptavian creatures with a curved beak and leathery wings that can be found on urbanized worlds like Coruscant and Taris.***Biology & Appearance.*** The wingspan of a hawk-bat averages 1.5 meters. The wings consist of a thin membrane stretched over a series of wing-bones. The membrane itself is studded with spiky growths. The hooked beak of a hawk-bat contains tiny teeth that can tear prey to shreds, which they find with a combination of accurate eyesight and echolocation.Young hawk-bats hatch from eggs, lack feathers, have green skin, and are fully independent. Upon reaching maturity, the hawk-bat sheds its green skin for a purplish-gray skin.***Behavior.*** Flocks of hawk-bats hunt and attack their prey as one. Though they favor granite slugs and shadowmoth larvae, hawk-bats will feed on anything that moves. Even large enemies can be taken down by a large flock of hawk-bats. If one hawk-bat is disturbed, all of its companions attack the aggravator at once. They usually travel in large flocks through the pipes and lower levels of Coruscant. Every few months, they migrate despite lack of seasons within the lower levels. Hawk-bats hate the cold and usually stay away from it. Many live on power cables or in heated vents, hanging upside down from warm pipes below buildings."
@@ -91,4 +91,4 @@ senses = Array[String](["blindsight 60 ft.", "passive Perception 16"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1/4"
 experiencePoints = 50
-behaviors = Array[ExtResource("1_lh02f")]([SubResource("Resource_rdkyk"), SubResource("Resource_16q1v"), SubResource("Resource_8e8bn"), SubResource("Resource_x3apw")])
+behaviors = Array[ExtResource("1_2gxen")]([SubResource("Resource_wnaly"), SubResource("Resource_3uk80"), SubResource("Resource_ma2cw"), SubResource("Resource_wd8vx")])

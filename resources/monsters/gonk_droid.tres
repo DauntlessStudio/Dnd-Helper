@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_vth4g"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_0ekqs"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_b8rml"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_2hihi"]
 
-[sub_resource type="Resource" id="Resource_mwtr6"]
-script = ExtResource("1_vth4g")
+[sub_resource type="Resource" id="Resource_ni5o4"]
+script = ExtResource("1_b8rml")
 name = "Explosive Destruction"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " When the Gonk droid is reduced to zero hit points, it explodes. Each creature within 20 feet of it must make a DC 13 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much on a successful one."
 descriptionWithLinks = " When the Gonk droid is reduced to zero hit points, it explodes. Each creature within 20 feet of it must make a DC 13 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much on a successful one."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_nrgw8"]
-script = ExtResource("1_vth4g")
+[sub_resource type="Resource" id="Resource_0qyew"]
+script = ExtResource("1_b8rml")
 name = "Kick"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit 2 (1d4 + 0)"
 descriptionWithLinks = " Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit 2 (1d4 + 0)"
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = "1d4 + 0"
 damageType = 0
 
 [resource]
-script = ExtResource("2_0ekqs")
+script = ExtResource("2_2hihi")
 name = "Gonk Droid"
 flavorText = "While Gonk Droids are generally harmless, Groodo the Hutt, in his bid to destroy the Fondor Shipyards and Spaceport, employed, as part of his Droid Control Army, GNK Power Droids that were modified with rapid-repeating blasters in their upper casings.Likewise, the Alliance to Restore the Republic modified GNK units so they would march slowly across the battlefield, until they collided with an enemy building, and explode."
 sectionText = "Power droids are boxy droids with two or four legs that serve as mobile batteries, capable of powering a variety of machinery and vehicles. They are, effectively, power generators with legs and simple artificial intelligence so that they can understand rudimentary commands. They are most commonly found on under-developed worlds that do not have an expansive power grid, or in mobile (often military) operations.They often make a low honking noise that sounds like the word \"gonk,\" resulting in the nickname gonk droid or simply gonk. This form of droidspeak was referred to as \"Gonkian.\"***Models.*** Notable power droid models included the EG-4 and EG-6 power droids produced by Veril Line Systems; the S9-series heavy power droid, a larger and more powerful version of the EG-6; the PLNK \"plunk\" power droid; and the popular GNK power droid manufactured by Industrial Automaton."
@@ -61,4 +61,4 @@ senses = Array[String](["passive Perception 8"])
 languages = Array[String](["Binary", "Galactic Basic", "Gonkian"])
 challengeRating = "0"
 experiencePoints = 10
-behaviors = Array[ExtResource("1_vth4g")]([SubResource("Resource_mwtr6"), SubResource("Resource_nrgw8")])
+behaviors = Array[ExtResource("1_b8rml")]([SubResource("Resource_ni5o4"), SubResource("Resource_0qyew")])

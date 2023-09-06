@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_q3114"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_w5dcs"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0bgn7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_hxquo"]
 
-[sub_resource type="Resource" id="Resource_yct0x"]
-script = ExtResource("1_q3114")
+[sub_resource type="Resource" id="Resource_arkn4"]
+script = ExtResource("1_0bgn7")
 name = "Avoidance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the nexu is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails ."
 descriptionWithLinks = " If the nexu is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails ."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_vomjp"]
-script = ExtResource("1_q3114")
+[sub_resource type="Resource" id="Resource_6hval"]
+script = ExtResource("1_0bgn7")
 name = "Keen Sight and Smell"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The nexu has advantage on Wisdom (Perception) checks that rely on sight and smell."
 descriptionWithLinks = " The nexu has advantage on Wisdom (Perception) checks that rely on sight and smell."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_k687x"]
-script = ExtResource("1_q3114")
+[sub_resource type="Resource" id="Resource_o0i2q"]
+script = ExtResource("1_0bgn7")
 name = "Pounce"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the nexu moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the nexu can make one bite attack against it as a bonus action."
 descriptionWithLinks = " If the nexu moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the nexu can make one bite attack against it as a bonus action."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gdwwl"]
-script = ExtResource("1_q3114")
+[sub_resource type="Resource" id="Resource_k4467"]
+script = ExtResource("1_0bgn7")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The nexu can make two claw attacks."
 descriptionWithLinks = " The nexu can make two claw attacks."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_51uos"]
-script = ExtResource("1_q3114")
+[sub_resource type="Resource" id="Resource_2fhuu"]
+script = ExtResource("1_0bgn7")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) kinetic damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 15
 damageRoll = "2d10 + 4"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_htery"]
-script = ExtResource("1_q3114")
+[sub_resource type="Resource" id="Resource_l6mxp"]
+script = ExtResource("1_0bgn7")
 name = "Claw"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) kinetic damage."
 attackType = 0
@@ -94,7 +94,7 @@ damageRoll = "2d8 + 4"
 damageType = 7
 
 [resource]
-script = ExtResource("2_w5dcs")
+script = ExtResource("2_hxquo")
 name = "Forest Nexu, Adult"
 flavorText = ""
 sectionText = "Nexu are predatory felines native to the planet Cholganna. They are also found on Zhanox.***Biology & Appearance.*** There are other breeds of nexu on Cholganna's other continents, but only the forest nexu has an additional set of eyes able to view in infrared wavelength, which aid in their hunting of bark rats and tree-climbing octopi. Nexu are 4.5 meters long and generally 1 meter tall.The nexu has claws which can slice a Human in half. They have quills along their back, and a long tail that allows the nexu to swing from tree branch to tree branch. The tail also splits into two equal sections for a better grip on the tree branch they are swinging from. They have extremely sharp instincts and reflexes, although they are known to tire easily, and often use swift movements to finish an enemy quickly, biting down and thrashing their head about to break their victim's neck. Cubs are born pure white.The black nexu is particularly stealthy and rare."
@@ -121,4 +121,4 @@ senses = Array[String](["darkvision 60 ft.", "truesight 60 ft.", "passive Percep
 languages = Array[String](["ï¿½"])
 challengeRating = "5"
 experiencePoints = 1800
-behaviors = Array[ExtResource("1_q3114")]([SubResource("Resource_yct0x"), SubResource("Resource_vomjp"), SubResource("Resource_k687x"), SubResource("Resource_gdwwl"), SubResource("Resource_51uos"), SubResource("Resource_htery")])
+behaviors = Array[ExtResource("1_0bgn7")]([SubResource("Resource_arkn4"), SubResource("Resource_6hval"), SubResource("Resource_o0i2q"), SubResource("Resource_k4467"), SubResource("Resource_2fhuu"), SubResource("Resource_l6mxp")])

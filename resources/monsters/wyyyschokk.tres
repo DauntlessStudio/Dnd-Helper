@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_h2gry"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_78e38"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_7waei"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_75sqs"]
 
-[sub_resource type="Resource" id="Resource_wop7p"]
-script = ExtResource("1_h2gry")
+[sub_resource type="Resource" id="Resource_1yp4q"]
+script = ExtResource("1_7waei")
 name = "Pack Tactics"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The wyyyschokk has advantage on an attack roll against a creature if at least one of the wyyyschokk's allies is within 5 feet of the creature and the ally isn't incapacitated."
 descriptionWithLinks = " The wyyyschokk has advantage on an attack roll against a creature if at least one of the wyyyschokk's allies is within 5 feet of the creature and the ally isn't incapacitated."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ijx3g"]
-script = ExtResource("1_h2gry")
+[sub_resource type="Resource" id="Resource_bwkmk"]
+script = ExtResource("1_7waei")
 name = "Spider Climb"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The wyyyschokk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 descriptionWithLinks = " The wyyyschokk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_javmh"]
-script = ExtResource("1_h2gry")
+[sub_resource type="Resource" id="Resource_vnxiy"]
+script = ExtResource("1_7waei")
 name = "Web Walker"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The wyyyschokk ignores movement restrictions caused by webbing."
 descriptionWithLinks = " The wyyyschokk ignores movement restrictions caused by webbing."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_5yhi5"]
-script = ExtResource("1_h2gry")
+[sub_resource type="Resource" id="Resource_83txa"]
+script = ExtResource("1_7waei")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) kinetic damage, and the target must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
 descriptionWithLinks = " Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) kinetic damage, and the target must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 12
 damageRoll = "2d8 + 3"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_eujbp"]
-script = ExtResource("1_h2gry")
+[sub_resource type="Resource" id="Resource_55d1c"]
+script = ExtResource("1_7waei")
 name = "Web"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +6 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to kinetic, poison, and psychic damage)."
 descriptionWithLinks = " Ranged Weapon Attack: +6 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to kinetic, poison, and psychic damage)."
 attackType = 0
@@ -79,7 +79,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_78e38")
+script = ExtResource("2_75sqs")
 name = "Wyyyschokk"
 flavorText = ""
 sectionText = "Also known as webweavers, or Kashyyykian giant weavers, Wyyyschokk are arachnids that live in the lower levels of Kashyyyk's \"multilayered deathtrap\" ecosystem. Wyyyschokk hold the distinction of being the most dangerous predator on Kashyyyk, signifying them as one of the most dangerous in the galaxy.***Behavior.*** They are intelligent enough to coordinate ambushes on unsuspecting creatures, and have the tenacity to track their prey for over a kilometer. When attacking, they immobilize their victims with thick strands of web and copious amounts of poisonous fluid from their upraised mandibles.***Range.*** While most wyyyschokk live deep in the lower levels of the wroshyr forests, some populations can also be found in the Etyyy region where no kilometer-high forests grow, while others live in the ShadowWeave Caverns in the Kkowir Forest."
@@ -106,4 +106,4 @@ senses = Array[String](["blindsight 10 ft.", "darkvision 60 ft.", "passive Perce
 languages = Array[String](["ï¿½"])
 challengeRating = "4"
 experiencePoints = 1100
-behaviors = Array[ExtResource("1_h2gry")]([SubResource("Resource_wop7p"), SubResource("Resource_ijx3g"), SubResource("Resource_javmh"), SubResource("Resource_5yhi5"), SubResource("Resource_eujbp")])
+behaviors = Array[ExtResource("1_7waei")]([SubResource("Resource_1yp4q"), SubResource("Resource_bwkmk"), SubResource("Resource_vnxiy"), SubResource("Resource_83txa"), SubResource("Resource_55d1c")])

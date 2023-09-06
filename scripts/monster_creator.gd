@@ -47,7 +47,7 @@ func generate():
 func create_behavior(behavior: Dictionary) -> Behavior:
 	var createdBehavior = Behavior.new()
 	createdBehavior.name = behavior.name
-	createdBehavior.monsterBehaviorType = behavior.monsterBehaviorType
+	createdBehavior.monsterBehaviorType = behavior.monsterBehaviorTypeEnum
 	createdBehavior.description = behavior.description
 	
 	var formatted_string = behavior.descriptionWithLinks

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_tkxp5"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_watin"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_eiqv1"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_f3u2y"]
 
-[sub_resource type="Resource" id="Resource_otkf4"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_ip3te"]
+script = ExtResource("1_eiqv1")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The droid has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_gog1r"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_0araa"]
+script = ExtResource("1_eiqv1")
 name = "Legendary Resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If IG-88 fails a saving throw, it can choose to succeed instead."
 descriptionWithLinks = " If IG-88 fails a saving throw, it can choose to succeed instead."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_4mffs"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_hxpmm"]
+script = ExtResource("1_eiqv1")
 name = "Sneak Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " IG-88 deals an extra 28 (8d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of IG-88 that isn't incapacitated and IG-88 doesn't have disadvantage on the roll."
 descriptionWithLinks = " IG-88 deals an extra 28 (8d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of IG-88 that isn't incapacitated and IG-88 doesn't have disadvantage on the roll."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fiw5f"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_nre3i"]
+script = ExtResource("1_eiqv1")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " IG-88 makes three weapon attacks."
 descriptionWithLinks = " IG-88 makes three weapon attacks."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jpxif"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_7grhd"]
+script = ExtResource("1_eiqv1")
 name = "Sniper Rifle"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 10 (1d12+4) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 10 (1d12+4) energy damage."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 10
 damageRoll = "1d12+4"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_ie1o1"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_or3kj"]
+script = ExtResource("1_eiqv1")
 name = "Stock Strike"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) kinetic damage."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 4
 damageRoll = "1d4+2"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_52bfj"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_e4fgw"]
+script = ExtResource("1_eiqv1")
 name = "Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " IG-88 makes one weapon attack."
 descriptionWithLinks = " IG-88 makes one weapon attack."
 attackType = 0
@@ -108,10 +108,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qgfba"]
-script = ExtResource("1_tkxp5")
+[sub_resource type="Resource" id="Resource_34cvq"]
+script = ExtResource("1_eiqv1")
 name = "Detect"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " IG-88 makes a Wisdom (Perception) check."
 descriptionWithLinks = " IG-88 makes a Wisdom (Perception) check."
 attackType = 0
@@ -124,7 +124,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_watin")
+script = ExtResource("2_f3u2y")
 name = "IG Series, Model 88"
 flavorText = "The IG series is a series of droids manufactured by Holowan Laboratories. They are often used as both bodyguards and assassins."
 sectionText = "Assassin droids are a type of droid built specifically for the purpose of assassination. These droids generally perform with unflinching loyalty to their masters, but rogue assassin droids are not unknown. Since their missions generally require a far higher degree of independent skill, savvy, and judgment than normally possessed by simple war droids, their programming subroutines, circuitry, and memory cores are of correspondingly higher sophistication.Equipped with an array of weapons, assassin droids are also used as elite infantry when the need for skillful and quickly adaptable soldiers with unquestionable loyalty arises.An inordinate number of assassin droids have achieved sentient independence, including IG-88 and C-3PX, presumably due to the higher level of autonomy incorporated into their processor design. These droids typically fund their independent existences through the use of their innate abilities, often plying their trade as bounty hunters."
@@ -151,4 +151,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 17"])
 languages = Array[String](["Binary", "Galactic Basic"])
 challengeRating = "10"
 experiencePoints = 5900
-behaviors = Array[ExtResource("1_tkxp5")]([SubResource("Resource_otkf4"), SubResource("Resource_gog1r"), SubResource("Resource_4mffs"), SubResource("Resource_fiw5f"), SubResource("Resource_jpxif"), SubResource("Resource_ie1o1"), SubResource("Resource_52bfj"), SubResource("Resource_qgfba")])
+behaviors = Array[ExtResource("1_eiqv1")]([SubResource("Resource_ip3te"), SubResource("Resource_0araa"), SubResource("Resource_hxpmm"), SubResource("Resource_nre3i"), SubResource("Resource_7grhd"), SubResource("Resource_or3kj"), SubResource("Resource_e4fgw"), SubResource("Resource_34cvq")])

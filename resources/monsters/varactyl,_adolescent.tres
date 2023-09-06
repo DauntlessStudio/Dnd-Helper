@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_jf2ho"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_8nshj"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_ctjjq"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_l1jdl"]
 
-[sub_resource type="Resource" id="Resource_6n6cj"]
-script = ExtResource("1_jf2ho")
+[sub_resource type="Resource" id="Resource_xmy0a"]
+script = ExtResource("1_ctjjq")
 name = "Trampling Charge"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the varactyl moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the varactyl can make another attack with its bite against it as a bonus action."
 descriptionWithLinks = " If the varactyl moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the varactyl can make another attack with its bite against it as a bonus action."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_n04fb"]
-script = ExtResource("1_jf2ho")
+[sub_resource type="Resource" id="Resource_t4whg"]
+script = ExtResource("1_ctjjq")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4+3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4+3) kinetic damage."
 attackType = 0
@@ -34,7 +34,7 @@ damageRoll = "2d4+3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_8nshj")
+script = ExtResource("2_l1jdl")
 name = "Varactyl, Adolescent"
 flavorText = ""
 sectionText = "Varactyls are a species of majestic, giant reptavian herbivores native to the world of Utapau. They typically have blue and green feather manes and feather ridges along their back. They are incredibly loyal and obedient mounts, that had strong long strides to navigate the uneven and vertical surfaces of their homeworld."
@@ -61,4 +61,4 @@ senses = Array[String](["passive Perception 10"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1/4"
 experiencePoints = 50
-behaviors = Array[ExtResource("1_jf2ho")]([SubResource("Resource_6n6cj"), SubResource("Resource_n04fb")])
+behaviors = Array[ExtResource("1_ctjjq")]([SubResource("Resource_xmy0a"), SubResource("Resource_t4whg")])

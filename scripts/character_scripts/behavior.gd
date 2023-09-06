@@ -1,7 +1,7 @@
 class_name Behavior
 extends Resource
 
-enum behaviorValues {Trait, Action, Reaction, Legendary}
+enum behaviorValues {None, Trait, Action, Reaction, Legendary}
 enum attackValues {None, MeleeWeapon, RangedWeapon}
 enum damageTypeValues {Unknown, Acid, Cold, Energy, Fire, Force, Ion, Kinetic, Lightning, Necrotic, Poison, Psychic, Sonic}
 @export var name: String

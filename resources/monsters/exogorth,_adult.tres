@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_l3s6n"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_shnne"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_8qh70"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_rm80t"]
 
-[sub_resource type="Resource" id="Resource_xb2tr"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_47mkx"]
+script = ExtResource("1_8qh70")
 name = "Tunneler"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The exogorth can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
 descriptionWithLinks = " The exogorth can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ufubb"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_x2v8y"]
+script = ExtResource("1_8qh70")
 name = "Legendary resistance"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " If the exogorth fails a saving throw, it can choose to succeed instead."
 descriptionWithLinks = " If the exogorth fails a saving throw, it can choose to succeed instead."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jbuco"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_avtwi"]
+script = ExtResource("1_8qh70")
 name = "Gargantuan Strength"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The exogorth's melee weapon attacks are considered enhanced."
 descriptionWithLinks = " The exogorth's melee weapon attacks are considered enhanced."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xxrgh"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_b0yw1"]
+script = ExtResource("1_8qh70")
 name = "Siege Monster"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The exogorth deals double damage to objects and structures."
 descriptionWithLinks = " The exogorth deals double damage to objects and structures."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_mc3cx"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_b0kt7"]
+script = ExtResource("1_8qh70")
 name = "Space-borne"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The exogorth can survive in the vacuum of space."
 descriptionWithLinks = " The exogorth can survive in the vacuum of space."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_k0of7"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_lgpav"]
+script = ExtResource("1_8qh70")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The exogorth makes two attacks: one with its bite and one with its tail."
 descriptionWithLinks = " The exogorth makes two attacks: one with its bite and one with its tail."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_os8qu"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_wv8p3"]
+script = ExtResource("1_8qh70")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = "If the exogorth takes 30 damage or more on a single turn from a creature inside it, the exogorth must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the exogorth. If the exogorth dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.  Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) kinetic damage. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the exogorth. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the exogorth, and it takes 21 (6d6) acid damage at the start of each of the exogorth's turns."
 descriptionWithLinks = "If the exogorth takes 30 damage or more on a single turn from a creature inside it, the exogorth must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the exogorth. If the exogorth dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.  Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) kinetic damage. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the exogorth. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the exogorth, and it takes 21 (6d6) acid damage at the start of each of the exogorth's turns."
 attackType = 0
@@ -108,10 +108,10 @@ damage = 22
 damageRoll = "3d8 + 9"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_w78t2"]
-script = ExtResource("1_l3s6n")
+[sub_resource type="Resource" id="Resource_dxmfo"]
+script = ExtResource("1_8qh70")
 name = "Tail"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d6 + 9) kinetic damage. If the target is a creature, it must succeed on a DC 19 Strength saving throw or be knocked prone."
 descriptionWithLinks = " Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d6 + 9) kinetic damage. If the target is a creature, it must succeed on a DC 19 Strength saving throw or be knocked prone."
 attackType = 0
@@ -124,7 +124,7 @@ damageRoll = "3d6 + 9"
 damageType = 7
 
 [resource]
-script = ExtResource("2_shnne")
+script = ExtResource("2_rm80t")
 name = "Exogorth, Adult"
 flavorText = ""
 sectionText = "The exogorth, colloquially known as the space slug, is a gigantic species of toothed gastropod. ***Biology.*** They are silicon-based lifeforms that survive in the vacuum of space by making their homes in the caverns and craters of asteroids. The average adult space slug grows to about 10 meters in length. Space slugs reproduce asexually by fission. Once an adult slug reaches a about 10 meters in length, a chemical trigger causes it to split apart into two identical but smaller slugs. Occasionally, this mechanism is overridden, and the slug grows to monstrous sizes that rival capital ships in sheer bulk, with some weighing over a million kilograms.***Travel.*** A space slug travels through the asteroid fields they inhabit by pushing off the surface of one asteroid and floating through space to land on another. They also use stellar winds to help propel themselves through space. Through highly evolved sense of spatial awareness, they are capable of calculating the trajectory and distance of perilous moving bodies around them. This sense of spatial acuity also aids them in hunting food. ***Feeding.*** They feed on the minerals of asteroids, various stellar energy fields, mynocks (another silicon-based lifeform), ships, and other unfortunate creatures that unknowingly pass into its mouth. They are able to anchor themselves into a cave in an asteroid with tendrils, which also draws nutrition directly from the asteroid itself. Although their primary diet, similar to Mynocks, is passive radiation, they tend to chomp on rocks and metal as well. On occasion, a naturally occurring chemical trigger causes the space slug to kill whatever is near them. Colossal slugs are known to take sizable bites out of capital ships that pass too close to the slug's current dwelling, and even swallow smaller vessels whole. At these sizes, the mynocks they eat will often become internal parasites, rather than nourishment, living inside the cave-like esophagus of the slugs that ate them. Some slugs have entire ecosystems of other life living within their digestive tracts.***Variations.*** Giant space slugs are larger than average ones. It remains unclear if they were a separate species from the common space slug, or just individuals larger than normally reported.Crimson slugs are native to the asteroids of Tapani sector and distinguished by a red stripe down either side of the body.Cularin space slugs are found in the Cularin system and are comparatively easy to train. Some theorize that they are descended from a domesticated form of space slug. Other theories hold that these exogorths are descended from natives to the world which formed the Cularin system asteroid belt (Oblis) before its destruction, and that these creatures survived and adapted to the void of space. They may have been related toï¿½or the same creature asï¿½the space worms which hollowed out the moon Eskaron."
@@ -151,4 +151,4 @@ senses = Array[String](["Blindsight 30 Ft.", "Tremorsense 60 Ft.", "passive Perc
 languages = Array[String](["ï¿½"])
 challengeRating = "15"
 experiencePoints = 13000
-behaviors = Array[ExtResource("1_l3s6n")]([SubResource("Resource_xb2tr"), SubResource("Resource_ufubb"), SubResource("Resource_jbuco"), SubResource("Resource_xxrgh"), SubResource("Resource_mc3cx"), SubResource("Resource_k0of7"), SubResource("Resource_os8qu"), SubResource("Resource_w78t2")])
+behaviors = Array[ExtResource("1_8qh70")]([SubResource("Resource_47mkx"), SubResource("Resource_x2v8y"), SubResource("Resource_avtwi"), SubResource("Resource_b0yw1"), SubResource("Resource_b0kt7"), SubResource("Resource_lgpav"), SubResource("Resource_wv8p3"), SubResource("Resource_dxmfo")])

@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=7 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_xs6q0"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_bdvbg"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_i0rrf"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_tyfo1"]
 
-[sub_resource type="Resource" id="Resource_qdk0o"]
-script = ExtResource("1_xs6q0")
+[sub_resource type="Resource" id="Resource_284lb"]
+script = ExtResource("1_i0rrf")
 name = "Aura of Command"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Friendly creatures that it can see and hear the officer within 30 feet of it add a +1 bonus to their attack and damage rolls. This effect ends if the officer is incapacitated."
 descriptionWithLinks = " Friendly creatures that it can see and hear the officer within 30 feet of it add a +1 bonus to their attack and damage rolls. This effect ends if the officer is incapacitated."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_fv6qp"]
-script = ExtResource("1_xs6q0")
+[sub_resource type="Resource" id="Resource_okvoi"]
+script = ExtResource("1_i0rrf")
 name = "Blaster Carbine"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +3 to hit, range 60/240 ft., one target. Hit: 4 (1d6 + 1) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +3 to hit, range 60/240 ft., one target. Hit: 4 (1d6 + 1) energy damage."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 4
 damageRoll = "1d6 + 1"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_gxipj"]
-script = ExtResource("1_xs6q0")
+[sub_resource type="Resource" id="Resource_rtx6x"]
+script = ExtResource("1_i0rrf")
 name = "Command Ally"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The junior officer targets one ally within 30 feet of it. If the target can hear the officer, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
 descriptionWithLinks = " The junior officer targets one ally within 30 feet of it. If the target can hear the officer, the target can make one weapon attack as a reaction and gains advantage on the attack roll."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_iyn1v"]
-script = ExtResource("1_xs6q0")
+[sub_resource type="Resource" id="Resource_e4blh"]
+script = ExtResource("1_i0rrf")
 name = "Human Shield"
-monsterBehaviorType = 0
+monsterBehaviorType = 3
 description = " When the officer is targeted by a ranged attack while an ally is within 5 ft of it, the officer can use its reaction to cause that ally to be targeted by the attack instead."
 descriptionWithLinks = " When the officer is targeted by a ranged attack while an ally is within 5 ft of it, the officer can use its reaction to cause that ally to be targeted by the attack instead."
 attackType = 0
@@ -64,7 +64,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_bdvbg")
+script = ExtResource("2_tyfo1")
 name = "Officer, Junior"
 flavorText = ""
 sectionText = "As the branch of the galactic military that deals with space operations, the galactic navy has been composed of many sub-units and organizations, and has utilized a vast array of starships to achieve its objectives throughout the years.***Republic Navy.*** The Republic Navy, also referred to as the Republic fleet, Republic starfleet or the Galactic Republic fleet, was the military naval force of the Galactic Republic during the Clone Wars. The Navy served to transport the clone army across the galaxy while also engaging in ship-to-ship combat with the Confederacy navy. Following the end of the war and the formation of the Galactic Empire, the Republic Navy transitioned into the Imperial Navy.***Imperial Navy.*** The Imperial Navy, also known as the Imperial Starfleet or the Imperial fleet, was the naval branch of the Galactic Empire's military. It was created in the wake of the Clone Wars, when Chancellor Sheev Palpatine transformed the Galactic Republic he led into an authoritarian Empire. Consisting mainly of Star Destroyers and TIE fighters, the Imperial Navy was tasked with maintaining order in the galaxy.***First Order Navy.*** The First Order Navy, also referred to as the First Order fleet, was the naval branch of the First Order military. It superseded the Imperial Navy of the former Galactic Empire, it would be paramount to the gradual conquest and colonization of the Unknown Regions by the Imperial successor state, the First Order."
@@ -91,4 +91,4 @@ senses = Array[String](["Passive Perception 12"])
 languages = Array[String](["Galactic Basic"])
 challengeRating = "1/2"
 experiencePoints = 100
-behaviors = Array[ExtResource("1_xs6q0")]([SubResource("Resource_qdk0o"), SubResource("Resource_fv6qp"), SubResource("Resource_gxipj"), SubResource("Resource_iyn1v")])
+behaviors = Array[ExtResource("1_i0rrf")]([SubResource("Resource_284lb"), SubResource("Resource_okvoi"), SubResource("Resource_rtx6x"), SubResource("Resource_e4blh")])

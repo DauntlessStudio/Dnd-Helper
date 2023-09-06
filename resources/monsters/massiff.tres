@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rknuy"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_5rpjk"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_enmka"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_76f2q"]
 
-[sub_resource type="Resource" id="Resource_r6bs4"]
-script = ExtResource("1_rknuy")
+[sub_resource type="Resource" id="Resource_1wkj2"]
+script = ExtResource("1_enmka")
 name = "Keen Hearing and Smell"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The massiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 descriptionWithLinks = " The massiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_kqmc0"]
-script = ExtResource("1_rknuy")
+[sub_resource type="Resource" id="Resource_4x3mx"]
+script = ExtResource("1_enmka")
 name = "Spiked Hide"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Any creature that grapples the massif takes 3 (1d6) kinetic damage at the end of its turn."
 descriptionWithLinks = " Any creature that grapples the massif takes 3 (1d6) kinetic damage at the end of its turn."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jkx5v"]
-script = ExtResource("1_rknuy")
+[sub_resource type="Resource" id="Resource_68vvr"]
+script = ExtResource("1_enmka")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) kinetic damage."
 attackType = 0
@@ -49,7 +49,7 @@ damageRoll = "2d6 + 3"
 damageType = 7
 
 [resource]
-script = ExtResource("2_5rpjk")
+script = ExtResource("2_76f2q")
 name = "Massiff"
 flavorText = ""
 sectionText = "The massiff was a species of dangerous hunters found on desert planets including Tatooine and Geonosis. Massiffs were domesticated for sentry and guard tasks, and were used by the Tusken Raiders of Tatooine.***Biology & Appearance.*** A massiff is a squat quadruped with a row of spines along their humped backs. Native to desert environments, massiffs are snarling hunters with powerful and dangerous bites. The creature's spines afford it an extra level of defense, and its large eyes allow it to see well at night. An average massiff stood at roughly one meter high, and the species is found on a variety of worlds, typically in desert habitats such as Tatooine, Geonosis, and Florrum.It is easy to tell the age of a massiff, for they grow a new pair of antlers every standard year.***Domestication.*** Many massiffs are domesticated and trained for sentry and guard duty. Tusken Raiders, Weequay pirates, and even clone troopers of the Grand Army of the Republic utilize massiffs as guard beasts. During the Clone Wars, ARF troopers trained massiffs as trackers. On occasion, massiffs were used in arena fighting.***Geonosis.*** The Geonosians and massiffs have a somewhat symbiotic relationship; in exchange for shelter, the creatures rid the hives of pests.  On Geonosis, possession of a massiff is a sign of authority and aristocracy."
@@ -76,4 +76,4 @@ senses = Array[String](["darkvision 60 ft.", "passive Perception 13"])
 languages = Array[String](["ï¿½"])
 challengeRating = "1"
 experiencePoints = 200
-behaviors = Array[ExtResource("1_rknuy")]([SubResource("Resource_r6bs4"), SubResource("Resource_kqmc0"), SubResource("Resource_jkx5v")])
+behaviors = Array[ExtResource("1_enmka")]([SubResource("Resource_1wkj2"), SubResource("Resource_4x3mx"), SubResource("Resource_68vvr")])

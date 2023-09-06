@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=12 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_rnn8e"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_nntp7"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_venn6"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_l2k1a"]
 
-[sub_resource type="Resource" id="Resource_qhi86"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_pwyb3"]
+script = ExtResource("1_venn6")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
 descriptionWithLinks = " The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_6700p"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_7umjy"]
+script = ExtResource("1_venn6")
 name = "Bite"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) kinetic damage plus 7 (2d6) poison damage."
 descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) kinetic damage plus 7 (2d6) poison damage."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 18
 damageRoll = "2d10 + 7"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_wshu3"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_2a1en"]
+script = ExtResource("1_venn6")
 name = "Claw"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) kinetic damage."
 descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) kinetic damage."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 14
 damageRoll = "2d6 + 7"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_hbqio"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_htq1t"]
+script = ExtResource("1_venn6")
 name = "Tail Stinger"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) kinetic damage. The target must make a DC 15 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) kinetic damage. The target must make a DC 15 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 16
 damageRoll = "2d8 + 7"
 damageType = 7
 
-[sub_resource type="Resource" id="Resource_x186w"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_7jlcx"]
+script = ExtResource("1_venn6")
 name = "Frightful Presence"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
 descriptionWithLinks = " Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_enxnf"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_2kf4b"]
+script = ExtResource("1_venn6")
 name = "Venom Spray"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The dragon spits poison in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " The dragon spits poison in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage damage on a failed save, or half as much damage on a successful one."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_jq8s6"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_5l0kn"]
+script = ExtResource("1_venn6")
 name = "Detect"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The dragon makes a Wisdom (Perception) check."
 descriptionWithLinks = " The dragon makes a Wisdom (Perception) check."
 attackType = 0
@@ -108,10 +108,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_qv6w7"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_b8km0"]
+script = ExtResource("1_venn6")
 name = "Swat Away"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The dragon makes a claw attack. If the attack hits, the target must succeed on a DC 18 Strength saving throw or be pushed 15 feet in a straight line away from the dragon. If the saving throw fails by 5 or more, the target falls prone."
 descriptionWithLinks = " The dragon makes a claw attack. If the attack hits, the target must succeed on a DC 18 Strength saving throw or be pushed 15 feet in a straight line away from the dragon. If the saving throw fails by 5 or more, the target falls prone."
 attackType = 0
@@ -123,10 +123,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_l6rxt"]
-script = ExtResource("1_rnn8e")
+[sub_resource type="Resource" id="Resource_16o28"]
+script = ExtResource("1_venn6")
 name = "Tail Attack"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The dragon makes a tail stinger attack."
 descriptionWithLinks = " The dragon makes a tail stinger attack."
 attackType = 0
@@ -139,7 +139,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_nntp7")
+script = ExtResource("2_l2k1a")
 name = "Krayt Dragon, Adult"
 flavorText = "The greater krayt was a rarer, larger species of krayt dragon, known for its tremendous size and continual growth over time. Creatures of near legendary status, greater krayt dragons had ten legs, measured at least 100 meters from snout to tail tip and had the ability to move through or on Tatooine's desert sand. Greater krayt dragons attacked with their massive jaws or whip-like spike-tail, using their claws only to move through the sand."
 sectionText = "Krayt dragons were large, carnivorous reptiles that hailed from Tatooine, a desert planet in the galaxy's Outer Rim Territories. They came in two subspecies and, despite their fierceness, were hunted for the precious pearls found in their bodies."
@@ -166,4 +166,4 @@ senses = Array[String](["blindsight 60 ft.", "darkvision 60 ft.", "passive Perce
 languages = Array[String](["ï¿½"])
 challengeRating = "17"
 experiencePoints = 18000
-behaviors = Array[ExtResource("1_rnn8e")]([SubResource("Resource_qhi86"), SubResource("Resource_6700p"), SubResource("Resource_wshu3"), SubResource("Resource_hbqio"), SubResource("Resource_x186w"), SubResource("Resource_enxnf"), SubResource("Resource_jq8s6"), SubResource("Resource_qv6w7"), SubResource("Resource_l6rxt")])
+behaviors = Array[ExtResource("1_venn6")]([SubResource("Resource_pwyb3"), SubResource("Resource_7umjy"), SubResource("Resource_2a1en"), SubResource("Resource_htq1t"), SubResource("Resource_7jlcx"), SubResource("Resource_2kf4b"), SubResource("Resource_5l0kn"), SubResource("Resource_b8km0"), SubResource("Resource_16o28")])

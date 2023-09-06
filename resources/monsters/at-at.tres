@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="Character" load_steps=17 format=3]
 
-[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_0o0ri"]
-[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_cx8wr"]
+[ext_resource type="Script" path="res://scripts/character_scripts/behavior.gd" id="1_gv1yc"]
+[ext_resource type="Script" path="res://scripts/character_scripts/character.gd" id="2_ooii6"]
 
-[sub_resource type="Resource" id="Resource_jbiax"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_83ivc"]
+script = ExtResource("1_gv1yc")
 name = "Circuitry"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 descriptionWithLinks = " The construct has disadvantage on saving throws against effects that would deal ion or lightning damage."
 attackType = 0
@@ -18,10 +18,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_xoloj"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_chl26"]
+script = ExtResource("1_gv1yc")
 name = "Heavy Durasteel Armor"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The outer layer of the AT-AT is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 30 points, the AT-AT takes no damage from that attack. If the AT-AT takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 descriptionWithLinks = " The outer layer of the AT-AT is covered in heavy armor, making it difficult for smaller arms to damage it. Unless the damage from a single attack or effect exceeds 30 points, the AT-AT takes no damage from that attack. If the AT-AT takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, it takes damage as normal."
 attackType = 0
@@ -33,10 +33,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_20h0r"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_wbw2t"]
+script = ExtResource("1_gv1yc")
 name = "Piloted"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
 descriptionWithLinks = " The construct requires an active pilot to take any actions, and if the pilot is subjected to any conditions that the construct is not immune to, the construct is also subjected to those conditions. The pilot may take their own action or one of the actions granted by the construct."
 attackType = 0
@@ -48,10 +48,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_m25k3"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_sog0j"]
+script = ExtResource("1_gv1yc")
 name = "Towering"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " Creatures of Large size or smaller can stand in the AT-AT's space."
 descriptionWithLinks = " Creatures of Large size or smaller can stand in the AT-AT's space."
 attackType = 0
@@ -63,10 +63,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_ugi0n"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_kb6bk"]
+script = ExtResource("1_gv1yc")
 name = "Troop Transport"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The AT-AT can transport a maximum of 40 stormtroopers and five speeder bikes, which it can deploy using its Deploy Troops legendary action, or which can be fought by creatures inside of the AT-AT."
 descriptionWithLinks = " The AT-AT can transport a maximum of 40 stormtroopers and five speeder bikes, which it can deploy using its Deploy Troops legendary action, or which can be fought by creatures inside of the AT-AT."
 attackType = 0
@@ -78,10 +78,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_pa306"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_r8urs"]
+script = ExtResource("1_gv1yc")
 name = "Vulnerable Interior"
-monsterBehaviorType = 0
+monsterBehaviorType = 1
 description = " The AT-AT's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
 descriptionWithLinks = " The AT-AT's interior is vulnerable to damage done by grenades, mines and charges, unless it is immune to that damage. It also automatically fails all Dexterity saving throws from such effects that occur in its interior."
 attackType = 0
@@ -93,10 +93,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_lgj6t"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_uy23o"]
+script = ExtResource("1_gv1yc")
 name = "Multiattack"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The AT-AT can use its Frightful Presence. It then makes three attacks: one with its laser cannon volley and two with its medium repeaters."
 descriptionWithLinks = " The AT-AT can use its Frightful Presence. It then makes three attacks: one with its laser cannon volley and two with its medium repeaters."
 attackType = 0
@@ -108,10 +108,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_sid5q"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_dfxpv"]
+script = ExtResource("1_gv1yc")
 name = "Laser Cannon Volley"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " The AT-AT chooses a point within 320 ft and lets loose a blast from each of its heavy laser cannons that explodes in a 15ft cube around that point. Each creature within the cube must succeed on a DC 16 Dexterity saving throw, taking 54 (12d8) energy damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " The AT-AT chooses a point within 320 ft and lets loose a blast from each of its heavy laser cannons that explodes in a 15ft cube around that point. Each creature within the cube must succeed on a DC 16 Dexterity saving throw, taking 54 (12d8) energy damage on a failed save, or half as much damage on a successful one."
 attackType = 0
@@ -123,10 +123,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_cs4rg"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_ygqwy"]
+script = ExtResource("1_gv1yc")
 name = "Medium Repeaters"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Ranged Weapon Attack: +8 to hit, range 240/360 ft., one target. Hit: 22 (4d10) energy damage."
 descriptionWithLinks = " Ranged Weapon Attack: +8 to hit, range 240/360 ft., one target. Hit: 22 (4d10) energy damage."
 attackType = 0
@@ -138,10 +138,10 @@ damage = 22
 damageRoll = "4d10"
 damageType = 3
 
-[sub_resource type="Resource" id="Resource_xeai5"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_ja5up"]
+script = ExtResource("1_gv1yc")
 name = "Stomp"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " All creatures standing within the AT-AT's space or within 5ft of it must make a DC 20 Dexterity saving throw, taking 78 (12d12) kinetic damage on a failed save, or half as much damage on a successful one."
 descriptionWithLinks = " All creatures standing within the AT-AT's space or within 5ft of it must make a DC 20 Dexterity saving throw, taking 78 (12d12) kinetic damage on a failed save, or half as much damage on a successful one."
 attackType = 0
@@ -153,10 +153,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_wgyrc"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_d6u08"]
+script = ExtResource("1_gv1yc")
 name = "Frightful Presence"
-monsterBehaviorType = 0
+monsterBehaviorType = 2
 description = " Each creature of the AT-AT's choice within 240 feet of the AT-AT and aware of it must succeed on a DC 16 Wisdom saving throw or become Frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the AT-AT's Frightful Presence for 24 hours."
 descriptionWithLinks = " Each creature of the AT-AT's choice within 240 feet of the AT-AT and aware of it must succeed on a DC 16 Wisdom saving throw or become Frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the AT-AT's Frightful Presence for 24 hours."
 attackType = 0
@@ -168,10 +168,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_3jejj"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_esxve"]
+script = ExtResource("1_gv1yc")
 name = "Stomp"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The AT-AT makes a stomp attack."
 descriptionWithLinks = " The AT-AT makes a stomp attack."
 attackType = 0
@@ -183,10 +183,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_2samq"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_da7ps"]
+script = ExtResource("1_gv1yc")
 name = "Repeating Blasters"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The AT-AT makes a single attack with its medium repeaters."
 descriptionWithLinks = " The AT-AT makes a single attack with its medium repeaters."
 attackType = 0
@@ -198,10 +198,10 @@ damage = 0
 damageRoll = ""
 damageType = 0
 
-[sub_resource type="Resource" id="Resource_lgag7"]
-script = ExtResource("1_0o0ri")
+[sub_resource type="Resource" id="Resource_ae7av"]
+script = ExtResource("1_gv1yc")
 name = "Deploy Troops"
-monsterBehaviorType = 0
+monsterBehaviorType = 4
 description = " The AT-AT mobilizes some of the soldiers traveling within it. It deploys 1d4+2 Troopers and 1 74-Z speeder bike. These troops appear in any unoccupied spaces within 10 feet of the AT-AT."
 descriptionWithLinks = " The AT-AT mobilizes some of the soldiers traveling within it. It deploys 1d4+2 Troopers and 1 74-Z speeder bike. These troops appear in any unoccupied spaces within 10 feet of the AT-AT."
 attackType = 0
@@ -214,7 +214,7 @@ damageRoll = ""
 damageType = 0
 
 [resource]
-script = ExtResource("2_cx8wr")
+script = ExtResource("2_ooii6")
 name = "AT-AT"
 flavorText = "The All Terrain Armored Transport is an imposing, heavily armored, quadrupedal combat walker that stands 22.5 meters tall and can move at 60 kph. In addition to it's armaments, it also served as transport for combat personnel. The vehicle's cockpit and sensor array are located in the \"head\" of the walker, which also carries spotlights and the main armaments: dual Piperii-Cerlurn R-90C medium blasters located on the sides or \"temples,\" and a pair of heavier Taim & Bak MS-1 heavy blaster cannons fitted on the \"chin.\" The main body houses a troop compartment capable of ferrying numerous soldiers, along with a vehicle bay at the walker's rear that holds five 74-Z speeder bikes. The main, troop hatch is located in the middle of the walker's side, two smaller escape hatches are located both to the main hatch's immediate left and right, and the auxiliary hatch is located in the walker's underside."
 sectionText = "The armies of the galaxy use a variety of land vehicles used to transport troops and as weapons of war to bring overwhelming firepower against their enemies."
@@ -241,4 +241,4 @@ senses = Array[String](["-"])
 languages = Array[String](["-"])
 challengeRating = "19"
 experiencePoints = 22000
-behaviors = Array[ExtResource("1_0o0ri")]([SubResource("Resource_jbiax"), SubResource("Resource_xoloj"), SubResource("Resource_20h0r"), SubResource("Resource_m25k3"), SubResource("Resource_ugi0n"), SubResource("Resource_pa306"), SubResource("Resource_lgj6t"), SubResource("Resource_sid5q"), SubResource("Resource_cs4rg"), SubResource("Resource_xeai5"), SubResource("Resource_wgyrc"), SubResource("Resource_3jejj"), SubResource("Resource_2samq"), SubResource("Resource_lgag7")])
+behaviors = Array[ExtResource("1_gv1yc")]([SubResource("Resource_83ivc"), SubResource("Resource_chl26"), SubResource("Resource_wbw2t"), SubResource("Resource_sog0j"), SubResource("Resource_kb6bk"), SubResource("Resource_r8urs"), SubResource("Resource_uy23o"), SubResource("Resource_dfxpv"), SubResource("Resource_ygqwy"), SubResource("Resource_ja5up"), SubResource("Resource_d6u08"), SubResource("Resource_esxve"), SubResource("Resource_da7ps"), SubResource("Resource_ae7av")])
