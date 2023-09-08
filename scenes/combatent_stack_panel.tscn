@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhjhcmoq0ldor"]
+[gd_scene load_steps=7 format=3 uid="uid://bhjhcmoq0ldor"]
 
 [ext_resource type="Script" path="res://scripts/combatent_stack_panel.gd" id="1_hogko"]
 [ext_resource type="FontFile" uid="uid://cf0ukg763o0wd" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="1_m8ml3"]
+[ext_resource type="Theme" uid="uid://i3oiikl2225l" path="res://themes/default.tres" id="1_yfm5a"]
 [ext_resource type="Script" path="res://addons/fontawesome/FontAwesome.gd" id="2_enxv8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jveu4"]
@@ -9,11 +10,12 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e81kn"]
 
 [node name="Combatent" type="Panel"]
-custom_minimum_size = Vector2(250, 115)
+custom_minimum_size = Vector2(200, 115)
 offset_right = 178.0
 offset_bottom = 108.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
+theme = ExtResource("1_yfm5a")
 script = ExtResource("1_hogko")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -68,6 +70,7 @@ script = ExtResource("2_enxv8")
 icon_name = "heart"
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+modulate = Color(0.768627, 0.0588235, 0.0588235, 1)
 layout_mode = 2
 value = 100.0
 rounded = true

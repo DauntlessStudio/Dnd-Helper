@@ -4,18 +4,16 @@
 [ext_resource type="Script" path="res://scripts/dice_button.gd" id="2_oi2w1"]
 [ext_resource type="Resource" uid="uid://d0hjjki7jknfu" path="res://resources/dice_tally.tres" id="3_bmntj"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m04dg"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gr6lx"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abiy7"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k10rk"]
 
 [node name="dice_button" type="Button"]
 custom_minimum_size = Vector2(85, 85)
 offset_right = 85.0
 offset_bottom = 85.0
-theme_override_colors/icon_pressed_color = Color(0.223529, 0.223529, 0.223529, 1)
-theme_override_colors/icon_hover_color = Color(0.658824, 0.658824, 0.658824, 1)
-theme_override_styles/hover = SubResource("StyleBoxFlat_m04dg")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_abiy7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gr6lx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k10rk")
 icon = ExtResource("1_f54no")
 flat = true
 expand_icon = true
@@ -30,6 +28,7 @@ anchor_right = 1.0
 offset_left = -40.0
 offset_bottom = 23.0
 grow_horizontal = 0
+theme_override_colors/font_color = Color(0.768627, 0.0588235, 0.0588235, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
