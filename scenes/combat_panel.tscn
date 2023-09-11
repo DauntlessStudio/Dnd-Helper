@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cejp7in6euedf"]
+[gd_scene load_steps=13 format=3 uid="uid://cejp7in6euedf"]
 
 [ext_resource type="Theme" uid="uid://i3oiikl2225l" path="res://themes/default.tres" id="1_4r5vh"]
 [ext_resource type="Script" path="res://scripts/add_monster_panel.gd" id="1_7plxy"]
@@ -9,6 +9,13 @@
 [ext_resource type="PackedScene" uid="uid://bqn88wm6ok4hu" path="res://scenes/monster_container.tscn" id="4_ujv5v"]
 [ext_resource type="Script" path="res://scripts/monster_info_window.gd" id="7_ts27b"]
 [ext_resource type="Script" path="res://scripts/power_info.gd" id="8_h113y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpu08"]
+bg_color = Color(1, 1, 1, 1)
+expand_margin_left = 3.0
+expand_margin_right = 3.0
+shadow_size = 3
+shadow_offset = Vector2(4, 4)
 
 [sub_resource type="Theme" id="Theme_y2f8n"]
 
@@ -24,20 +31,20 @@ grow_vertical = 2
 theme = ExtResource("1_4r5vh")
 script = ExtResource("1_sd6cn")
 
-[node name="AddPlayerDialog" type="ConfirmationDialog" parent="."]
+[node name="AddPlayerDialog" type="Window" parent="."]
 title = "Add Player"
 initial_position = 2
-size = Vector2i(616, 400)
-min_size = Vector2i(600, 400)
-max_size = Vector2i(1920, 1080)
-ok_button_text = "Accept"
-dialog_hide_on_ok = false
+size = Vector2i(600, 200)
+visible = false
+transient = true
+exclusive = true
 
 [node name="Panel" type="Panel" parent="AddPlayerDialog"]
-offset_left = 8.0
-offset_top = 8.0
-offset_right = 608.0
-offset_bottom = 359.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="HFlowContainer" type="HFlowContainer" parent="AddPlayerDialog"]
 offset_left = 8.0
@@ -73,6 +80,21 @@ placeholder_text = "Armor Class"
 custom_minimum_size = Vector2(295, 0)
 layout_mode = 2
 placeholder_text = "Movement"
+
+[node name="AcceptButton" type="Button" parent="AddPlayerDialog"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -26.0
+offset_top = -50.0
+offset_right = 26.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jpu08")
+text = "Accept"
 
 [node name="AddMonsterWindow" type="Window" parent="."]
 initial_position = 2
@@ -202,11 +224,8 @@ grow_vertical = 2
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 30.0
-offset_right = 30.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MonsterInfoWindow/ScrollContainer"]
 custom_minimum_size = Vector2(1200, 0)
@@ -486,7 +505,7 @@ fit_content = true
 [node name="PowerInfo" type="Popup" parent="."]
 initial_position = 2
 size = Vector2i(600, 400)
-theme = SubResource("Theme_y2f8n")
+borderless = false
 script = ExtResource("8_h113y")
 
 [node name="Panel" type="Panel" parent="PowerInfo"]
@@ -503,10 +522,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="NameContainer" type="PanelContainer" parent="PowerInfo/VBox"]
-layout_mode = 2
-
-[node name="Name" type="Label" parent="PowerInfo/VBox/NameContainer"]
+[node name="Name" type="Label" parent="PowerInfo/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.768627, 0.0588235, 0.0588235, 1)
 theme_override_font_sizes/font_size = 26
@@ -669,7 +685,8 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 5
 
-[connection signal="confirmed" from="AddPlayerDialog" to="." method="_on_add_player_dialog_confirmed"]
+[connection signal="close_requested" from="AddPlayerDialog" to="." method="reset_player_dialog"]
+[connection signal="pressed" from="AddPlayerDialog/AcceptButton" to="." method="_on_add_player_dialog_confirmed"]
 [connection signal="close_requested" from="AddMonsterWindow" to="." method="_on_add_monster_window_close_requested"]
 [connection signal="close_requested" from="MonsterInfoWindow" to="MonsterInfoWindow" method="_on_close_requested"]
 [connection signal="meta_clicked" from="MonsterInfoWindow/ScrollContainer/VBoxContainer/TraitContainer/Contents" to="." method="_on_trait_contents_meta_clicked"]

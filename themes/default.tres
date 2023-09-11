@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=36 format=3 uid="uid://i3oiikl2225l"]
+[gd_resource type="Theme" load_steps=37 format=3 uid="uid://i3oiikl2225l"]
 
 [ext_resource type="Texture2D" uid="uid://lnfrw254vc73" path="res://assets/icon_gui_close_red.svg" id="1_7eyeg"]
 
@@ -96,6 +96,8 @@ texture = SubResource("GradientTexture1D_ccge5")
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87wvf"]
 bg_color = Color(1, 1, 1, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xxasr"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdw1x"]
 bg_color = Color(0.752941, 0.784314, 0.768627, 1)
 
@@ -142,6 +144,8 @@ bg_color = Color(0.949219, 0.949219, 0.949219, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpney"]
 bg_color = Color(1, 1, 1, 1)
 expand_margin_top = 30.0
+shadow_size = 10
+shadow_offset = Vector2(5, 5)
 
 [resource]
 Button/colors/font_color = Color(0.768627, 0.0588235, 0.0588235, 1)
@@ -182,6 +186,7 @@ MenuButton/styles/normal = SubResource("StyleBoxFlat_ib346")
 MenuButton/styles/pressed = SubResource("StyleBoxFlat_jt777")
 Panel/styles/panel = SubResource("StyleBoxTexture_5oggv")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_87wvf")
+PopupDialog/styles/panel = SubResource("StyleBoxFlat_xxasr")
 PopupMenu/colors/font_color = Color(0.203922, 0.203922, 0.203922, 1)
 PopupMenu/colors/font_hover_color = Color(0.768627, 0.0588235, 0.0588235, 1)
 PopupMenu/styles/hover = SubResource("StyleBoxFlat_vdw1x")
@@ -198,7 +203,7 @@ TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_oxhgg")
 TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_rd3x0")
 TextEdit/colors/font_color = Color(0.205117, 0.205117, 0.205117, 1)
 TextEdit/styles/normal = SubResource("StyleBoxFlat_idym0")
-Window/colors/title_color = Color(0.242188, 0.242188, 0.242188, 1)
+Window/colors/title_color = Color(0.768627, 0.0588235, 0.0588235, 1)
 Window/icons/close = ExtResource("1_7eyeg")
 Window/icons/close_pressed = ExtResource("1_7eyeg")
 Window/styles/embedded_border = SubResource("StyleBoxFlat_bpney")
