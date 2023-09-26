@@ -29,9 +29,13 @@ gradient = SubResource("Gradient_62ika")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b8tbl"]
 texture = SubResource("GradientTexture1D_wxp0s")
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fxtxx"]
 texture = SubResource("GradientTexture1D_wxp0s")
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2p5j"]
 content_margin_left = 5.0
@@ -41,6 +45,8 @@ content_margin_bottom = 5.0
 bg_color = Color(0.203922, 0.203922, 0.203922, 1)
 border_width_left = 5
 border_color = Color(0.203922, 0.203922, 0.203922, 1)
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcmnw"]
 draw_center = false
@@ -171,6 +177,7 @@ HSlider/styles/grabber_area = SubResource("StyleBoxTexture_b8tbl")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_fxtxx")
 HSlider/styles/slider = SubResource("StyleBoxFlat_x2p5j")
 Label/colors/font_color = Color(0.203922, 0.203922, 0.203922, 1)
+LineEdit/colors/caret_color = Color(0.768627, 0.0588235, 0.0588235, 1)
 LineEdit/colors/font_color = Color(0.203922, 0.203922, 0.203922, 1)
 LineEdit/colors/font_placeholder_color = Color(0.203922, 0.203922, 0.203922, 0.784314)
 LineEdit/styles/focus = SubResource("StyleBoxFlat_wcmnw")

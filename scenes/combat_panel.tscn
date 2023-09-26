@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cejp7in6euedf"]
+[gd_scene load_steps=14 format=3 uid="uid://cejp7in6euedf"]
 
 [ext_resource type="Theme" uid="uid://i3oiikl2225l" path="res://themes/default.tres" id="1_4r5vh"]
 [ext_resource type="Script" path="res://scripts/add_monster_panel.gd" id="1_7plxy"]
@@ -20,6 +20,8 @@ shadow_offset = Vector2(4, 4)
 [sub_resource type="Theme" id="Theme_y2f8n"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5g2b3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uk4h0"]
 
 [node name="combat_panel" type="Control"]
 layout_mode = 3
@@ -655,26 +657,41 @@ After calculating the damage factor in [b]resistances[/b] (deals double damage),
 fit_content = true
 
 [node name="CombatentStack" type="PanelContainer" parent="HBoxContainer"]
-custom_minimum_size = Vector2(180, 0)
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/CombatentStack"]
 layout_mode = 2
 
+[node name="Spacer" type="Control" parent="HBoxContainer/CombatentStack/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/CombatentStack/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
 
 [node name="NewPlayerButton" type="Button" parent="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "New Player"
+theme_override_fonts/font = ExtResource("1_eq2lb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uk4h0")
+text = ""
 
 [node name="NewMonsterButton" type="Button" parent="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "New Monster"
+theme_override_fonts/font = ExtResource("1_eq2lb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uk4h0")
+text = ""
 
 [node name="ClearButton" type="Button" parent="HBoxContainer/CombatentStack/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "Clear"
+theme_override_fonts/font = ExtResource("1_eq2lb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uk4h0")
+text = ""
 
 [node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/CombatentStack/VBoxContainer"]
 layout_mode = 2
@@ -688,6 +705,7 @@ theme_override_constants/separation = 5
 [connection signal="close_requested" from="AddPlayerDialog" to="." method="reset_player_dialog"]
 [connection signal="pressed" from="AddPlayerDialog/AcceptButton" to="." method="_on_add_player_dialog_confirmed"]
 [connection signal="close_requested" from="AddMonsterWindow" to="." method="_on_add_monster_window_close_requested"]
+[connection signal="text_changed" from="AddMonsterWindow/VBoxContainer/SearchFlowContainer/SearchContainer/HBoxContainer/SearchEdit" to="AddMonsterWindow" method="_on_search_edit_text_changed"]
 [connection signal="close_requested" from="MonsterInfoWindow" to="MonsterInfoWindow" method="_on_close_requested"]
 [connection signal="meta_clicked" from="MonsterInfoWindow/ScrollContainer/VBoxContainer/TraitContainer/Contents" to="." method="_on_trait_contents_meta_clicked"]
 [connection signal="close_requested" from="PowerInfo" to="PowerInfo" method="_on_close_requested"]

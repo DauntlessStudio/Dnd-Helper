@@ -118,10 +118,12 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="NoteTaker" type="VBoxContainer" parent="Panel/MainPanel/VSplitContainer"]
+visible = false
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/MainPanel/VSplitContainer/NoteTaker"]
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="OpenButton" type="Button" parent="Panel/MainPanel/VSplitContainer/NoteTaker/HBoxContainer"]
 layout_mode = 2

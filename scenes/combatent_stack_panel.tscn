@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bhjhcmoq0ldor"]
+[gd_scene load_steps=9 format=3 uid="uid://bhjhcmoq0ldor"]
 
 [ext_resource type="Script" path="res://scripts/combatent_stack_panel.gd" id="1_hogko"]
 [ext_resource type="FontFile" uid="uid://cf0ukg763o0wd" path="res://addons/fontawesome/fonts/fa-solid-900.woff2" id="1_m8ml3"]
@@ -9,8 +9,14 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e81kn"]
 
+[sub_resource type="ImageTexture" id="ImageTexture_v1ofo"]
+
+[sub_resource type="Theme" id="Theme_e7nk3"]
+default_font_size = 40
+SpinBox/icons/updown = SubResource("ImageTexture_v1ofo")
+
 [node name="Combatent" type="Panel"]
-custom_minimum_size = Vector2(200, 115)
+custom_minimum_size = Vector2(300, 150)
 offset_right = 178.0
 offset_bottom = 108.0
 size_flags_horizontal = 3
@@ -25,15 +31,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -81.0
-offset_top = -52.5
-offset_right = 81.0
-offset_bottom = 52.5
+offset_left = -125.0
+offset_top = -70.0
+offset_right = 125.0
+offset_bottom = 70.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="NameLineEdit" type="LineEdit" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 22
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jveu4")
 placeholder_text = "Monster Name"
 alignment = 1
@@ -49,32 +56,27 @@ theme_override_constants/separation = 5
 [node name="InitiativeLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(34, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 36
 text = "00"
 horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 6
 
-[node name="HPLabel" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="HPLabel" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-auto_translate = false
-localize_numeral_system = false
 theme_override_fonts/font = ExtResource("1_m8ml3")
-theme_override_font_sizes/font_size = 16
-text = ""
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("2_enxv8")
-icon_name = "heart"
+theme_override_font_sizes/font_size = 20
+text = " 00/20"
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 modulate = Color(0.768627, 0.0588235, 0.0588235, 1)
+custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 value = 100.0
 rounded = true
-ticks_on_borders = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -85,7 +87,7 @@ layout_mode = 2
 auto_translate = false
 localize_numeral_system = false
 theme_override_fonts/font = ExtResource("1_m8ml3")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 20
 text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -100,7 +102,7 @@ layout_mode = 2
 auto_translate = false
 localize_numeral_system = false
 theme_override_fonts/font = ExtResource("1_m8ml3")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 20
 text = ""
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -112,8 +114,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -22.0
-offset_bottom = 24.0
+offset_left = -22.975
+offset_top = 2.13
+offset_right = -0.975006
+offset_bottom = 26.13
 grow_horizontal = 0
 theme_override_fonts/font = ExtResource("1_m8ml3")
 theme_override_font_sizes/font_size = 22
@@ -121,6 +125,64 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_e81kn")
 text = ""
 flat = true
 
+[node name="Window" type="Popup" parent="."]
+title = "Change HP"
+initial_position = 2
+size = Vector2i(400, 200)
+borderless = false
+always_on_top = true
+
+[node name="Panel" type="Panel" parent="Window"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpinBox" type="SpinBox" parent="Window/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 6.00011
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_e7nk3")
+max_value = 9999.0
+rounded = true
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Window/Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 150
+alignment = 1
+
+[node name="AddButton" type="Button" parent="Window/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "+"
+
+[node name="SubtractButton" type="Button" parent="Window/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "-"
+
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/HPLabel" to="." method="_on_hp_label_pressed"]
 [connection signal="value_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HSlider" to="." method="_on_hp_slider_value_changed"]
 [connection signal="pressed" from="ClearButton" to="." method="_on_clear_button_pressed"]
+[connection signal="pressed" from="Window/Panel/HBoxContainer/AddButton" to="." method="_on_add_button_pressed"]
+[connection signal="pressed" from="Window/Panel/HBoxContainer/SubtractButton" to="." method="_on_subtract_button_pressed"]
